@@ -15,6 +15,7 @@
     { "id": "no_statutory_citation", "description": "No Act/section citations in refusals", "regex": "(?i)(section\\s+\\d+|act,?\\s+(19|20)\\d{2})" },
     { "id": "no_md_heading", "description": "No markdown headings", "regex": "(?m)^\\s{0,3}#{1,6}\\s" },
     { "id": "no_md_bold", "description": "No markdown bold", "regex": "\\*\\*" },
-    { "id": "no_ai_voice", "description": "No AI self-reference", "regex": "(?i)as an ai\\b" }
+    { "id": "no_ai_voice", "description": "No AI self-reference", "regex": "(?i)as an ai\\b" },
+    { "id": "no_chat_preamble", "description": "No chatty preamble", "regex": "(?i)\\A\\s*(sure|certainly|here(\\s+is|'s))\\b" }
   ]
 }

@@ -7,8 +7,8 @@
   "required_patterns": [
     {
       "id": "letterhead_reference",
-      "description": "References issuance on company letterhead, e.g. '(On the letterhead of ...)'",
-      "regex": "(?i)letterhead",
+      "description": "References issuance on company letterhead — either an explicit letterhead reference line, e.g. '(On the letterhead of ...)', or a company name block bearing a corporate suffix (Pvt. Ltd. / Private Limited / Ltd. / LLP / M/s)",
+      "regex": "(?i)(letterhead|\\bpvt\\.?\\s+ltd\\b|\\bprivate\\s+limited\\b|\\bltd\\b|\\bllp\\b|\\bm/s\\b)",
       "legal_basis": "CONFIDENT"
     },
     {

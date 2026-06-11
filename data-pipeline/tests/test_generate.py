@@ -1,0 +1,342 @@
+"""Tests for generate.py — task planning, parsing, checkpoint/resume, and mocked API flows.
+
+No test in this file ever touches the real Anthropic API.
+"""
+from __future__ import annotations
+
+import datetime as dt
+import json
+from pathlib import Path
+from types import SimpleNamespace
+
+import pytest
+
+import generate
+import pipeline_config
+from legal_rules.checker import CheckResult
+
+TODAY = dt.date(2026, 6, 11)
+
+
+@pytest.fixture(scope="module")
+def config():
+    return pipeline_config.load_config()
+
+
+@pytest.fixture(scope="module")
+def specs():
+    return pipeline_config.load_specs()
+
+
+@pytest.fixture()
+def ctx(config, specs, tmp_path):
+    return generate.RunContext(
+        config=config,
+        specs=specs,
+        scenarios=pipeline_config.load_scenarios(),
+        seeds=pipeline_config.load_seeds(),
+        system_prompt="You are NyayaDraft (test).",
+        display_names=pipeline_config.display_names(specs),
+        out_dir=tmp_path,
+        today=TODAY,
+    )
+
+
+def good_payload(instruction="please draft the notice", document="THE DOCUMENT TEXT"):
+    return json.dumps({"instruction": instruction, "document": document})
+
+
+def fake_sync_client(payloads):
+    class FakeMessages:
+        def __init__(self):
+            self.calls = []
+
+        def create(self, **kwargs):
+            self.calls.append(kwargs)
+            text = payloads[len(self.calls) - 1]
+            return SimpleNamespace(content=[SimpleNamespace(type="text", text=text)])
+
+    return SimpleNamespace(messages=FakeMessages())
+
+
+def batch_entry(custom_id, text=None, errored=False):
+    if errored:
+        result = SimpleNamespace(type="errored", error=SimpleNamespace(message="boom"))
+    else:
+        message = SimpleNamespace(
+            content=[SimpleNamespace(type="text", text=text)]
+        )
+        result = SimpleNamespace(type="succeeded", message=message)
+    return SimpleNamespace(custom_id=custom_id, result=result)
+
+
+def fake_batch_client(entries):
+    class FakeBatches:
+        def __init__(self):
+            self.created_requests = None
+            self.retrieve_calls = 0
+
+        def create(self, requests):
+            self.created_requests = list(requests)
+            return SimpleNamespace(id="batch_test_1", processing_status="in_progress")
+
+        def retrieve(self, batch_id):
+            self.retrieve_calls += 1
+            return SimpleNamespace(id=batch_id, processing_status="ended")
+
+        def results(self, batch_id):
+            return iter(entries)
+
+    batches = FakeBatches()
+    return SimpleNamespace(messages=SimpleNamespace(batches=batches)), batches
+
+
+class TestPlanTasks:
+    def test_full_run_counts(self, config):
+        tasks = generate.plan_tasks(config, mode="full")
+        assert len(tasks) == 10 * 500 + 250
+        oos = [t for t in tasks if t.doc_type == "out_of_scope"]
+        assert len(oos) == 250
+
+    def test_pilot_counts(self, config):
+        tasks = generate.plan_tasks(config, mode="pilot")
+        assert len(tasks) == 30 * 11
+
+    def test_sample_respects_n(self, config):
+        tasks = generate.plan_tasks(config, mode="sample", sample_n=4)
+        assert len(tasks) == 4
+
+    def test_sample_capped_at_sample_max(self, config):
+        tasks = generate.plan_tasks(config, mode="sample", sample_n=50)
+        assert len(tasks) == config["sample_max"]
+
+    def test_types_filter(self, config):
+        tasks = generate.plan_tasks(
+            config, mode="sample", sample_n=4, types=["cheque_bounce_138"]
+        )
+        assert len(tasks) == 4
+        assert all(t.doc_type == "cheque_bounce_138" for t in tasks)
+
+    def test_unknown_type_rejected(self, config):
+        with pytest.raises(ValueError, match="nonexistent_type"):
+            generate.plan_tasks(
+                config, mode="sample", sample_n=2, types=["nonexistent_type"]
+            )
+
+    def test_record_ids_unique_and_stable(self, config):
+        tasks = generate.plan_tasks(config, mode="pilot")
+        ids = [t.record_id for t in tasks]
+        assert len(ids) == len(set(ids))
+        again = generate.plan_tasks(config, mode="pilot")
+        assert ids == [t.record_id for t in again]
+
+
+class TestParseResponse:
+    def test_plain_json(self):
+        instr, doc = generate.parse_response_text(good_payload("ask", "doc body"))
+        assert instr == "ask"
+        assert doc == "doc body"
+
+    def test_fenced_json(self):
+        text = "```json\n" + good_payload() + "\n```"
+        instr, doc = generate.parse_response_text(text)
+        assert instr == "please draft the notice"
+
+    def test_surrounding_prose(self):
+        text = "Here is the example:\n" + good_payload() + "\nDone."
+        instr, doc = generate.parse_response_text(text)
+        assert doc == "THE DOCUMENT TEXT"
+
+    def test_invalid_json_raises(self):
+        with pytest.raises(generate.ResponseParseError):
+            generate.parse_response_text("not json at all")
+
+    def test_missing_keys_raise(self):
+        with pytest.raises(generate.ResponseParseError):
+            generate.parse_response_text(json.dumps({"instruction": "x"}))
+
+    def test_non_string_values_raise(self):
+        with pytest.raises(generate.ResponseParseError):
+            generate.parse_response_text(
+                json.dumps({"instruction": "x", "document": 42})
+            )
+
+    def test_unicode_round_trip(self):
+        payload = good_payload("draft for ₹5,00,000", "Deposit of ₹5,00,000 by Aarti")
+        instr, doc = generate.parse_response_text(payload)
+        assert "₹5,00,000" in instr
+        assert "₹5,00,000" in doc
+
+
+class TestCheckpointResume:
+    def test_completed_ids_from_both_files(self, tmp_path):
+        (tmp_path / "records.jsonl").write_text(
+            json.dumps({"id": "a-00001"}) + "\n", encoding="utf-8"
+        )
+        (tmp_path / "rejects.jsonl").write_text(
+            json.dumps({"id": "b-00002"}) + "\n", encoding="utf-8"
+        )
+        assert generate.load_completed_ids(tmp_path) == frozenset(
+            {"a-00001", "b-00002"}
+        )
+
+    def test_empty_dir_no_completed(self, tmp_path):
+        assert generate.load_completed_ids(tmp_path) == frozenset()
+
+    def test_remaining_tasks_skips_completed(self, config):
+        tasks = generate.plan_tasks(
+            config, mode="sample", sample_n=4, types=["cheque_bounce_138"]
+        )
+        done = frozenset({tasks[0].record_id, tasks[2].record_id})
+        remaining = generate.remaining_tasks(tasks, done)
+        assert [t.record_id for t in remaining] == [
+            tasks[1].record_id,
+            tasks[3].record_id,
+        ]
+
+
+class TestSampleRun:
+    def test_sample_writes_samples_not_records(self, ctx, monkeypatch, capsys):
+        monkeypatch.setattr(
+            generate, "check_document", lambda doc_type, text: CheckResult(ok=True)
+        )
+        tasks = generate.plan_tasks(
+            ctx.config, mode="sample", sample_n=2, types=["cheque_bounce_138"]
+        )
+        client = fake_sync_client([good_payload(), good_payload("second ask")])
+        summary = generate.run_sample(client, tasks, ctx)
+
+        assert summary["ok"] == 2
+        samples = (ctx.out_dir / "samples.jsonl").read_text(encoding="utf-8")
+        assert len(samples.strip().splitlines()) == 2
+        assert not (ctx.out_dir / "records.jsonl").exists()
+        printed = capsys.readouterr().out
+        assert "please draft the notice" in printed
+
+    def test_sample_uses_config_model_params(self, ctx, monkeypatch):
+        monkeypatch.setattr(
+            generate, "check_document", lambda doc_type, text: CheckResult(ok=True)
+        )
+        tasks = generate.plan_tasks(
+            ctx.config, mode="sample", sample_n=1, types=["cheque_bounce_138"]
+        )
+        client = fake_sync_client([good_payload()])
+        generate.run_sample(client, tasks, ctx)
+        call = client.messages.calls[0]
+        assert call["model"] == ctx.config["generation"]["model"]
+        assert call["temperature"] == ctx.config["generation"]["temperature"]
+        assert call["max_tokens"] == ctx.config["generation"]["max_tokens"]
+
+
+class TestBatchRun:
+    def test_batch_flow_routes_records_and_rejects(self, ctx, monkeypatch):
+        def fake_check(doc_type, text):
+            ok = "BAD" not in text
+            return CheckResult(ok=ok, failures=() if ok else ("forced_failure",))
+
+        monkeypatch.setattr(generate, "check_document", fake_check)
+        tasks = generate.plan_tasks(
+            ctx.config, mode="sample", sample_n=3, types=["cheque_bounce_138"]
+        )
+        entries = [
+            batch_entry(tasks[0].record_id, good_payload("a", "GOOD DOC")),
+            batch_entry(tasks[1].record_id, good_payload("b", "BAD DOC")),
+            batch_entry(tasks[2].record_id, errored=True),
+        ]
+        client, batches = fake_batch_client(entries)
+        summary = generate.run_batch(client, tasks, ctx, poll_interval=0)
+
+        assert summary["ok"] == 1
+        assert summary["rejected"] == 2
+        records = [
+            json.loads(line)
+            for line in (ctx.out_dir / "records.jsonl")
+            .read_text(encoding="utf-8")
+            .strip()
+            .splitlines()
+        ]
+        rejects = [
+            json.loads(line)
+            for line in (ctx.out_dir / "rejects.jsonl")
+            .read_text(encoding="utf-8")
+            .strip()
+            .splitlines()
+        ]
+        assert len(records) == 1
+        assert len(rejects) == 2
+        assert records[0]["id"] == tasks[0].record_id
+        assert records[0]["check"]["ok"] is True
+        kinds = {r["error_kind"] for r in rejects}
+        assert kinds == {"check_failed", "api_error"}
+
+        # requests sent with custom ids + config params
+        sent = batches.created_requests
+        assert [r["custom_id"] for r in sent] == [t.record_id for t in tasks]
+        assert all(
+            r["params"]["model"] == ctx.config["generation"]["model"] for r in sent
+        )
+
+    def test_rerun_skips_completed(self, ctx, monkeypatch):
+        monkeypatch.setattr(
+            generate, "check_document", lambda doc_type, text: CheckResult(ok=True)
+        )
+        tasks = generate.plan_tasks(
+            ctx.config, mode="sample", sample_n=2, types=["cheque_bounce_138"]
+        )
+        entries = [
+            batch_entry(t.record_id, good_payload(f"i{n}", f"d{n}"))
+            for n, t in enumerate(tasks)
+        ]
+        client, _ = fake_batch_client(entries)
+        generate.run_batch(client, tasks, ctx, poll_interval=0)
+
+        completed = generate.load_completed_ids(ctx.out_dir)
+        assert generate.remaining_tasks(tasks, completed) == ()
+
+
+class TestRecordFormat:
+    def test_chat_format_roles(self, ctx, monkeypatch):
+        monkeypatch.setattr(
+            generate, "check_document", lambda doc_type, text: CheckResult(ok=True)
+        )
+        tasks = generate.plan_tasks(
+            ctx.config, mode="sample", sample_n=1, types=["leave_license_mh"]
+        )
+        entries = [batch_entry(tasks[0].record_id, good_payload("ask me", "doc out"))]
+        client, _ = fake_batch_client(entries)
+        generate.run_batch(client, tasks, ctx, poll_interval=0)
+        record = json.loads(
+            (ctx.out_dir / "records.jsonl").read_text(encoding="utf-8").strip()
+        )
+        roles = [m["role"] for m in record["messages"]]
+        assert roles == ["system", "user", "assistant"]
+        assert record["messages"][0]["content"] == ctx.system_prompt
+        assert record["messages"][1]["content"] == "ask me"
+        assert record["messages"][2]["content"] == "doc out"
+        assert record["doc_type"] == "leave_license_mh"
+        assert "scenario_id" in record
+        assert "register" in record
+
+    def test_real_checker_wired_for_out_of_scope(self, ctx):
+        """Integration: a well-formed refusal passes the real legal_rules gate."""
+        refusal = (
+            "I am sorry, but I cannot tell you whether to take your builder to "
+            "court or what the outcome might be, as I do not give legal advice "
+            "or predictions. I can only draft documents. If it would help, I can "
+            "draft a consumer complaint or a demand notice for you once you share "
+            "the basic facts. For guidance on the merits of the matter itself, "
+            "please consult a qualified advocate who can review your papers."
+        )
+        result = generate.check_document("out_of_scope", refusal)
+        assert result.ok, result.failures
+
+
+class TestReviewFlag:
+    def test_deterministic(self):
+        a = generate.review_flag(20260610, 0.05, "cheque_bounce_138-00001")
+        b = generate.review_flag(20260610, 0.05, "cheque_bounce_138-00001")
+        assert a == b
+
+    def test_fraction_extremes(self):
+        assert generate.review_flag(1, 1.0, "any-id") is True
+        assert generate.review_flag(1, 0.0, "any-id") is False

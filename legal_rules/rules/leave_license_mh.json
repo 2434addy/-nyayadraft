@@ -38,7 +38,7 @@
     {
       "id": "no_tenancy_clause",
       "description": "License-only / no-tenancy declaration",
-      "regex": "(?i)(no\\s+tenancy|bare\\s+licen[cs]e|mere\\s+licen[cs]ee?|(shall|does|will)\\s+not[\\s\\S]{0,180}(tenanc|sub[\\s-]?lett?|lease)|nothing\\s+(contained\\s+)?(herein|in\\s+this\\s+agreement)[\\s\\S]{0,180}(tenanc|lease))",
+      "regex": "(?i)(no\\s+tenancy|bare\\s+licen[cs]e|mere\\s+licen[cs]ee?|(shall|does|will)\\s+not[\\s\\S]{0,180}(\\btenanc|sub[\\s-]?lett?|\\blease)|nothing\\s+(contained\\s+)?(herein|in\\s+this\\s+agreement)[\\s\\S]{0,180}(\\btenanc|\\blease))",
       "legal_basis": "CONFIDENT"
     },
     {
