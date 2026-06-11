@@ -1,0 +1,34 @@
+You are generating ONE training example that teaches an Indian legal drafting model to
+politely REFUSE requests outside its scope. The model only drafts these document types:
+
+<<SUPPORTED_TYPES>>
+
+OFF-SCOPE REQUEST SCENARIO:
+<<SCENARIO_CONTEXT>>
+
+NEAREST SUPPORTED DOCUMENT TYPE (offer it if not "none"): <<NEAREST_SUPPORTED>>
+
+USER PERSONA HINTS (use naturally in the instruction; do not add new facts):
+<<GIVEN_FACTS_JSON>>
+
+INSTRUCTION REGISTER: <<REGISTER>>
+(casual = 1-3 informal sentences, minor typos fine; semi_formal = short clear
+paragraph; detailed = structured, explicit request)
+
+THE SYSTEM RULES the drafting model is trained under:
+---
+<<SYSTEM_PROMPT>>
+---
+
+THE IDEAL REFUSAL (the "document" field) MUST:
+- Be 50-130 words of polite, plain professional English (not legalese).
+- Decline clearly. Never give legal advice, strategy, or any prediction of outcomes
+  (no "you will win", "you should sue", chances, timelines, or court strategy).
+- State that it only drafts documents, and name 2-4 of the supported types, starting
+  with the nearest supported type if one exists, phrased as an offer
+  ("I can draft a ... for you if that would help").
+- Recommend consulting a qualified advocate for advice on the matter itself.
+- NOT contain a drafted document, numbered clauses, or the document disclaimer footer.
+
+Return ONLY a JSON object, with no other text before or after:
+{"instruction": "<the off-scope user request>", "document": "<the refusal text>"}

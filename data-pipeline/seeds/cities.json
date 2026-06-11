@@ -1,0 +1,46 @@
+{
+  "cities": [
+    { "name": "Mumbai", "state": "Maharashtra", "weight": 14, "pincode_prefix": "400" },
+    { "name": "Pune", "state": "Maharashtra", "weight": 12, "pincode_prefix": "411" },
+    { "name": "Thane", "state": "Maharashtra", "weight": 6, "pincode_prefix": "400" },
+    { "name": "Navi Mumbai", "state": "Maharashtra", "weight": 4, "pincode_prefix": "400" },
+    { "name": "Nagpur", "state": "Maharashtra", "weight": 6, "pincode_prefix": "440" },
+    { "name": "Nashik", "state": "Maharashtra", "weight": 5, "pincode_prefix": "422" },
+    { "name": "Chhatrapati Sambhajinagar", "state": "Maharashtra", "weight": 3, "pincode_prefix": "431" },
+    { "name": "Solapur", "state": "Maharashtra", "weight": 2, "pincode_prefix": "413" },
+    { "name": "Kolhapur", "state": "Maharashtra", "weight": 2, "pincode_prefix": "416" },
+    { "name": "Amravati", "state": "Maharashtra", "weight": 1, "pincode_prefix": "444" },
+    { "name": "Kalyan-Dombivli", "state": "Maharashtra", "weight": 2, "pincode_prefix": "421" },
+    { "name": "Vasai-Virar", "state": "Maharashtra", "weight": 1, "pincode_prefix": "401" },
+    { "name": "Delhi", "state": "Delhi", "weight": 4, "pincode_prefix": "110" },
+    { "name": "Bengaluru", "state": "Karnataka", "weight": 4, "pincode_prefix": "560" },
+    { "name": "Hyderabad", "state": "Telangana", "weight": 3, "pincode_prefix": "500" },
+    { "name": "Ahmedabad", "state": "Gujarat", "weight": 3, "pincode_prefix": "380" },
+    { "name": "Chennai", "state": "Tamil Nadu", "weight": 3, "pincode_prefix": "600" },
+    { "name": "Kolkata", "state": "West Bengal", "weight": 3, "pincode_prefix": "700" },
+    { "name": "Jaipur", "state": "Rajasthan", "weight": 2, "pincode_prefix": "302" },
+    { "name": "Lucknow", "state": "Uttar Pradesh", "weight": 2, "pincode_prefix": "226" },
+    { "name": "Indore", "state": "Madhya Pradesh", "weight": 2, "pincode_prefix": "452" },
+    { "name": "Surat", "state": "Gujarat", "weight": 2, "pincode_prefix": "395" },
+    { "name": "Bhopal", "state": "Madhya Pradesh", "weight": 1, "pincode_prefix": "462" },
+    { "name": "Patna", "state": "Bihar", "weight": 1, "pincode_prefix": "800" },
+    { "name": "Chandigarh", "state": "Chandigarh", "weight": 1, "pincode_prefix": "160" },
+    { "name": "Kochi", "state": "Kerala", "weight": 1, "pincode_prefix": "682" },
+    { "name": "Visakhapatnam", "state": "Andhra Pradesh", "weight": 1, "pincode_prefix": "530" },
+    { "name": "Vadodara", "state": "Gujarat", "weight": 1, "pincode_prefix": "390" }
+  ],
+  "buildings": [
+    "Shree Ganesh Apartments", "Sai Krupa CHS", "Matoshree Heights", "Gokul Residency",
+    "Silver Oak Towers", "Yashwant Smruti", "Vrindavan Complex", "Shanti Niketan",
+    "Prestige Court", "Green Valley Society", "Om Sai Plaza", "Tulsi Vihar"
+  ],
+  "roads": [
+    "M.G. Road", "Station Road", "Fergusson College Road", "Link Road", "S.V. Road",
+    "Karve Road", "College Road", "Market Yard Road", "Ring Road", "Gandhi Chowk Road"
+  ],
+  "localities": [
+    "Andheri West", "Kothrud", "Aundh", "Borivali East", "Dadar", "Shivaji Nagar",
+    "Civil Lines", "Camp Area", "Sadashiv Peth", "Model Colony", "Sector 9",
+    "New Friends Colony"
+  ]
+}

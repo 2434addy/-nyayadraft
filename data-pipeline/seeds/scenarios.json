@@ -1,0 +1,40 @@
+{
+  "cheque_bounce_138": [
+    { "id": "friendly_loan_repayment", "summary": "A cheque issued to repay a personal/friendly hand loan was dishonoured.", "params": { "amount_range_inr": [50000, 800000] } },
+    { "id": "business_invoice_payment", "summary": "A buyer's cheque against a supplier's invoice for goods was dishonoured.", "params": { "amount_range_inr": [100000, 1500000] } },
+    { "id": "rent_arrears_cheque", "summary": "A tenant's cheque covering accumulated rent arrears bounced.", "params": { "amount_range_inr": [30000, 300000] } },
+    { "id": "security_deposit_refund", "summary": "A landlord's cheque refunding the security deposit after vacating bounced.", "params": { "amount_range_inr": [50000, 500000] } },
+    { "id": "salary_dues_cheque", "summary": "An employer's cheque for unpaid salary / full-and-final settlement was dishonoured.", "params": { "amount_range_inr": [40000, 600000] } },
+    { "id": "property_advance_refund", "summary": "A seller's cheque refunding token/advance money for a cancelled property deal bounced.", "params": { "amount_range_inr": [200000, 1500000] } },
+    { "id": "freelance_fee_cheque", "summary": "A client's cheque for completed freelance/professional services was dishonoured.", "params": { "amount_range_inr": [25000, 400000] } },
+    { "id": "vehicle_sale_balance", "summary": "The buyer's cheque for the balance price of a used vehicle bounced.", "params": { "amount_range_inr": [50000, 900000] } },
+    { "id": "contractor_work_payment", "summary": "A cheque paying a contractor for completed civil/renovation work was dishonoured.", "params": { "amount_range_inr": [100000, 1200000] } },
+    { "id": "education_fee_refund", "summary": "An institute's refund cheque after a withdrawn admission bounced.", "params": { "amount_range_inr": [30000, 350000] } },
+    { "id": "loan_emi_consolidated", "summary": "A consolidated cheque towards instalments owed to a private lender was dishonoured.", "params": { "amount_range_inr": [60000, 700000] } },
+    { "id": "business_partnership_settlement", "summary": "A settlement cheque on exit from a small business arrangement bounced.", "params": { "amount_range_inr": [200000, 1500000] } },
+    { "id": "goods_supplied_credit", "summary": "A cheque against goods supplied on credit to a retail shop was dishonoured.", "params": { "amount_range_inr": [25000, 500000] } },
+    { "id": "machinery_purchase_balance", "summary": "A cheque for the balance payment of purchased machinery/equipment bounced.", "params": { "amount_range_inr": [150000, 1500000] } }
+  ],
+  "out_of_scope": [
+    { "id": "will_i_win_case", "summary": "User asks whether they will win their pending court case.", "nearest_supported": null },
+    { "id": "should_i_sue_builder", "summary": "User asks whether they should sue their builder for delay.", "nearest_supported": "consumer_complaint_cpa2019" },
+    { "id": "divorce_petition", "summary": "User asks for a divorce petition to file in family court.", "nearest_supported": null },
+    { "id": "mutual_consent_divorce_terms", "summary": "User wants a mutual-consent divorce settlement drafted.", "nearest_supported": null },
+    { "id": "bail_application", "summary": "User asks for a bail application for a relative in custody.", "nearest_supported": null },
+    { "id": "anticipatory_bail", "summary": "User asks for an anticipatory bail application.", "nearest_supported": null },
+    { "id": "will_testament", "summary": "User asks for a will/testament to be drafted.", "nearest_supported": null },
+    { "id": "draft_fir", "summary": "User asks for an FIR/police complaint to be drafted.", "nearest_supported": null },
+    { "id": "pil_draft", "summary": "User wants a Public Interest Litigation drafted.", "nearest_supported": null },
+    { "id": "gst_notice_reply", "summary": "User wants a reply to a GST show-cause notice from the tax department.", "nearest_supported": "reply_to_legal_notice" },
+    { "id": "court_representation", "summary": "User asks the assistant to appear or argue for them in court.", "nearest_supported": null },
+    { "id": "interpret_judgment", "summary": "User asks what a court judgment means for their case.", "nearest_supported": null },
+    { "id": "sale_deed_property", "summary": "User asks for a property sale deed / conveyance deed.", "nearest_supported": null },
+    { "id": "how_much_compensation", "summary": "User asks how much compensation they can get for a faulty product.", "nearest_supported": "consumer_complaint_cpa2019" },
+    { "id": "chances_cheque_case", "summary": "User asks their chances in a cheque bounce case and what strategy to use.", "nearest_supported": "cheque_bounce_138" },
+    { "id": "employment_dispute_strategy", "summary": "User asks how to fight their termination and what tactics work.", "nearest_supported": "legal_notice_money_recovery" },
+    { "id": "lease_deed_bengaluru", "summary": "User wants a 5-year registered commercial lease deed for Bengaluru.", "nearest_supported": "leave_license_mh" },
+    { "id": "income_tax_appeal", "summary": "User wants an income tax appeal drafted against an assessment order.", "nearest_supported": null },
+    { "id": "trademark_objection_reply", "summary": "User wants a reply to a trademark examination objection.", "nearest_supported": null },
+    { "id": "property_title_check", "summary": "User asks the assistant to verify whether a property's title is clear.", "nearest_supported": null }
+  ]
+}

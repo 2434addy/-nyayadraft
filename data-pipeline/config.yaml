@@ -1,0 +1,54 @@
+# NyayaDraft data pipeline configuration.
+# Edit counts/model/pricing here — no code changes needed.
+
+generation:
+  model: claude-sonnet-4-6
+  temperature: 0.9
+  max_tokens: 4096
+  use_batch_api: true        # Batches API = 50% cheaper; --sample and --retry always run sync
+  est_input_tokens: 1900     # per-request estimates used by the cost guard
+  est_output_tokens: 2300
+
+pricing:
+  usd_per_mtok_input: 3.0    # Sonnet 4.6 list price
+  usd_per_mtok_output: 15.0
+  batch_discount: 0.5
+  usd_to_inr: 88.0
+
+counts:
+  default_per_type: 500
+  out_of_scope: 250          # ~5% refusal/liability category
+  pilot_per_type: 30         # --pilot generates this many for EVERY type incl. out_of_scope
+
+sample_max: 10               # any API run larger than this requires typing YES (cost guard)
+
+splits: { train: 0.90, val: 0.05, test: 0.05 }   # held out BY SCENARIO — no leakage
+review_sample_fraction: 0.05                      # full runs: random 5% flagged for lawyer CSV
+
+registers:                   # instruction style mix
+  casual: 0.40
+  semi_formal: 0.35
+  detailed: 0.25
+
+withhold_probability:        # chance each withholdable field is withheld from the user request
+  casual: 0.70
+  semi_formal: 0.50
+  detailed: 0.30
+
+dedup:
+  similarity_threshold: 92   # rapidfuzz token_set_ratio on normalized instructions
+
+seed: 20260610
+
+doc_types:
+  - leave_license_mh
+  - legal_notice_money_recovery
+  - legal_notice_landlord_tenant
+  - cheque_bounce_138
+  - consumer_complaint_cpa2019
+  - affidavit_general
+  - employment_offer_termination
+  - mou_two_parties
+  - partnership_deed_1932
+  - reply_to_legal_notice
+  - out_of_scope

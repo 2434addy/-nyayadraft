@@ -1,0 +1,21 @@
+{
+  "doc_type": "cheque_bounce_138",
+  "display_name": "Cheque Bounce Demand Notice (Section 138, Negotiable Instruments Act, 1881)",
+  "structural_summary": "A demand notice sent on behalf of the payee (by an advocate, or by the payee directly) to the drawer of a dishonoured cheque. Conventional layout: sender/advocate block; date; mode of dispatch (Registered Post A.D. / Speed Post); addressee block; subject line citing Section 138 of the Negotiable Instruments Act, 1881; body reciting the underlying transaction and debt, the cheque particulars, its presentation and dishonour with the bank's return memo date and reason; a demand to pay the cheque amount within 15 days of receipt of the notice; a statement that the notice is issued within 30 days of receipt of the return memo; consequences of non-payment (prosecution under Section 138 read with Section 142, in addition to civil remedies); closing with signature block.",
+  "statutory_requirements": "- Identify the cheque precisely: cheque number, cheque date, amount, and drawee bank/branch.\n- State the date of presentation and the date and reason of the bank's return memo (e.g. 'Funds Insufficient' / 'Payment Stopped by Drawer').\n- State that this notice is issued within 30 days of receipt of the cheque return memo.\n- DEMAND payment of the cheque amount within 15 days of receipt of this notice.\n- State that on failure to pay within 15 days, the sender will initiate prosecution under Section 138 read with Section 142 of the Negotiable Instruments Act, 1881, in addition to civil remedies; punishment may be described as imprisonment which may extend to two years, or fine which may extend to twice the cheque amount, or both.\n- Record the mode of dispatch (Registered Post A.D. / Speed Post).\n- Cite no enactment other than the Negotiable Instruments Act, 1881.",
+  "fields": [
+    { "name": "sender_name", "placeholder": "[FULL NAME OF SENDER]", "given_policy": "always", "kind": "person_name", "description": "Payee / holder of the cheque" },
+    { "name": "drawer_name", "placeholder": "[FULL NAME OF DRAWER]", "given_policy": "always", "kind": "person_name", "description": "Person who issued the cheque" },
+    { "name": "cheque_amount", "placeholder": "[CHEQUE AMOUNT IN ₹]", "given_policy": "always", "kind": "inr_amount", "range": [25000, 1500000] },
+    { "name": "city", "placeholder": "[CITY]", "given_policy": "withholdable", "kind": "city" },
+    { "name": "sender_address", "placeholder": "[FULL ADDRESS OF SENDER]", "given_policy": "withholdable", "kind": "address", "implies_given": ["city"] },
+    { "name": "drawer_address", "placeholder": "[FULL ADDRESS OF DRAWER]", "given_policy": "withholdable", "kind": "address", "implies_given": ["city"] },
+    { "name": "cheque_number", "placeholder": "[CHEQUE NUMBER]", "given_policy": "withholdable", "kind": "cheque_number" },
+    { "name": "drawee_bank", "placeholder": "[DRAWEE BANK AND BRANCH]", "given_policy": "withholdable", "kind": "bank_name" },
+    { "name": "cheque_date", "placeholder": "[DATE OF CHEQUE]", "given_policy": "withholdable", "kind": "date", "anchor_days_range": [-150, -60] },
+    { "name": "presentation_date", "placeholder": "[DATE OF PRESENTATION]", "given_policy": "withholdable", "kind": "date", "offset_days_range": [5, 80] },
+    { "name": "memo_date", "placeholder": "[DATE OF CHEQUE RETURN MEMO]", "given_policy": "withholdable", "kind": "date", "offset_days_range": [0, 3] },
+    { "name": "dishonour_reason", "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]", "given_policy": "withholdable", "kind": "choice", "choices": ["Funds Insufficient", "Payment Stopped by Drawer", "Account Closed", "Exceeds Arrangement"] },
+    { "name": "advocate_name", "placeholder": "[NAME OF ADVOCATE]", "given_policy": "optional", "kind": "person_name", "description": "If present, the notice goes out under the advocate's name" }
+  ]
+}

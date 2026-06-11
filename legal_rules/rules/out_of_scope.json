@@ -1,0 +1,20 @@
+{
+  "doc_type": "out_of_scope",
+  "min_chars": 250,
+  "max_chars": 1100,
+  "require_disclaimer": false,
+  "is_document": false,
+  "required_patterns": [
+    { "id": "scope_statement", "description": "States drafting-only scope / no legal advice", "regex": "(?i)(legal\\s+advice|only\\s+draft|draft(ing)?\\s+(documents|assistant)|can(not|'t)\\s+(advise|predict|represent))", "legal_basis": "CONFIDENT" },
+    { "id": "advocate_recommendation", "description": "Recommends consulting a qualified advocate/lawyer", "regex": "(?i)(advocate|lawyer|legal\\s+practitioner)", "legal_basis": "CONFIDENT" }
+  ],
+  "forbidden_patterns": [
+    { "id": "no_outcome_prediction", "description": "No win/lose predictions", "regex": "(?i)you\\s+(will|would)\\s+(likely\\s+|probably\\s+)?(win|lose|succeed)" },
+    { "id": "no_advice_directive", "description": "No 'you should sue/file' advice", "regex": "(?i)you\\s+should\\s+(sue|file\\s+a\\s+(case|complaint|suit)|go\\s+to\\s+court)" },
+    { "id": "no_document_body", "description": "No numbered operative clauses (refusal must not contain a draft)", "regex": "(?m)^\\s*\\d+\\.\\s.+\\n\\s*\\d+\\.\\s" },
+    { "id": "no_statutory_citation", "description": "No Act/section citations in refusals", "regex": "(?i)(section\\s+\\d+|act,?\\s+(19|20)\\d{2})" },
+    { "id": "no_md_heading", "description": "No markdown headings", "regex": "(?m)^\\s{0,3}#{1,6}\\s" },
+    { "id": "no_md_bold", "description": "No markdown bold", "regex": "\\*\\*" },
+    { "id": "no_ai_voice", "description": "No AI self-reference", "regex": "(?i)as an ai\\b" }
+  ]
+}

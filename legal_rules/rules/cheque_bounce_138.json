@@ -1,0 +1,23 @@
+{
+  "doc_type": "cheque_bounce_138",
+  "min_chars": 1300,
+  "max_chars": 8000,
+  "require_disclaimer": true,
+  "is_document": true,
+  "required_patterns": [
+    { "id": "sec_138_citation", "description": "Cites Section 138", "regex": "(?i)section\\s*138", "legal_basis": "CONFIDENT" },
+    { "id": "ni_act_citation", "description": "Names the Negotiable Instruments Act, 1881", "regex": "(?i)negotiable\\s+instruments\\s+act,?\\s*1881", "legal_basis": "CONFIDENT" },
+    { "id": "demand_15_days", "description": "15-day payment demand window stated", "regex": "(?i)(fifteen\\s*(\\(\\s*15\\s*\\))?|15)\\s*days", "legal_basis": "CONFIDENT" },
+    { "id": "memo_30_days", "description": "Notice within 30 days of return memo stated", "regex": "(?i)(thirty\\s*(\\(\\s*30\\s*\\))?|30)\\s*days", "legal_basis": "CONFIDENT" },
+    { "id": "dishonour_memo", "description": "References dishonour / cheque return memo", "regex": "(?i)(dishonou?r|return(ed)?\\s+(unpaid|memo)|cheque\\s+return)", "legal_basis": "CONFIDENT" },
+    { "id": "demand_language", "description": "Formal demand language present", "regex": "(?i)(call\\s+upon\\s+you|hereby\\s+demand|demand\\s+that\\s+you|require\\s+you\\s+to\\s+pay)", "legal_basis": "CONFIDENT" },
+    { "id": "prosecution_warning", "description": "Warns of prosecution u/s 138 r/w 142", "regex": "(?i)(section\\s*142|prosecut|criminal\\s+(proceedings|complaint))", "legal_basis": "CONFIDENT" },
+    { "id": "dispatch_mode", "description": "Mode of dispatch recorded", "regex": "(?i)(registered\\s+post|r\\.?p\\.?a\\.?d|speed\\s+post|courier|by\\s+hand)", "legal_basis": "CONFIDENT" }
+  ],
+  "forbidden_patterns": [
+    { "id": "no_md_heading", "description": "No markdown headings", "regex": "(?m)^\\s{0,3}#{1,6}\\s" },
+    { "id": "no_md_bold", "description": "No markdown bold", "regex": "\\*\\*" },
+    { "id": "no_ai_voice", "description": "No AI self-reference", "regex": "(?i)as an ai\\b" },
+    { "id": "no_chat_preamble", "description": "No chatty preamble", "regex": "(?i)\\A\\s*(sure|certainly|here(\\s+is|'s))\\b" }
+  ]
+}

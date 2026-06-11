@@ -1,0 +1,49 @@
+{
+  "male_first": [
+    "Aarav", "Vihaan", "Aditya", "Rohan", "Sandeep", "Prakash", "Ramesh", "Suresh",
+    "Mahesh", "Ganesh", "Vikram", "Rajesh", "Anil", "Sunil", "Deepak", "Amol",
+    "Sachin", "Nitin", "Milind", "Sanjay", "Ajay", "Vijay", "Prashant", "Shrikant",
+    "Dattatray", "Bhushan", "Kiran", "Yogesh", "Manoj", "Abhijit", "Tushar",
+    "Swapnil", "Harshad", "Niranjan", "Pravin", "Mangesh", "Sameer", "Imran",
+    "Arjun", "Karthik", "Farhan", "Joseph", "Harpreet", "Devendra", "Omkar"
+  ],
+  "female_first": [
+    "Aarti", "Priya", "Sneha", "Pooja", "Swati", "Vaishali", "Madhuri", "Smita",
+    "Archana", "Manisha", "Kavita", "Savita", "Anita", "Sunita", "Meera", "Radhika",
+    "Shraddha", "Rutuja", "Mrunal", "Ashwini", "Pallavi", "Tejal", "Komal", "Nikita",
+    "Sayali", "Aishwarya", "Deepa", "Lakshmi", "Fatima", "Mary", "Gurpreet",
+    "Ananya", "Ishita", "Rekha", "Shobha"
+  ],
+  "surnames_maharashtra": [
+    "Deshmukh", "Kulkarni", "Patil", "Joshi", "Sawant", "Shinde", "Pawar", "Gaikwad",
+    "More", "Bhosale", "Jadhav", "Chavan", "Kale", "Deshpande", "Gokhale", "Apte",
+    "Ranade", "Salunkhe", "Mane", "Kadam", "Thorat", "Wagh", "Bhagat", "Naik",
+    "Mhatre", "Raut", "Surve", "Ghadge", "Lokhande", "Phadke"
+  ],
+  "surnames_other": [
+    "Sharma", "Gupta", "Verma", "Singh", "Mehta", "Shah", "Agarwal", "Iyer", "Menon",
+    "Nair", "Reddy", "Rao", "Naidu", "Banerjee", "Mukherjee", "Das", "Khan", "Ahmed",
+    "Sheikh", "Fernandes", "D'Souza", "Pereira", "Kaur", "Gill", "Chopra", "Malhotra",
+    "Kapoor", "Jain", "Bhatt", "Trivedi"
+  ],
+  "company_suffixes": [
+    "Enterprises", "Trading Company", "Industries", "Agencies",
+    "Solutions Private Limited", "Services LLP", "Traders", "Distributors",
+    "Infotech Private Limited", "Constructions", "Developers", "Textiles", "Foods",
+    "Engineering Works", "Marketing"
+  ],
+  "professions": [
+    "software engineer", "school teacher", "chartered accountant", "shop owner",
+    "civil contractor", "doctor", "pharmacist", "marketing manager", "bank employee",
+    "tailor", "caterer", "real estate agent", "transport operator", "garment trader",
+    "electrician", "interior designer", "insurance agent", "college professor",
+    "graphic designer", "wholesale merchant"
+  ],
+  "banks": [
+    "State Bank of India", "HDFC Bank", "ICICI Bank", "Axis Bank",
+    "Bank of Maharashtra", "Kotak Mahindra Bank", "Punjab National Bank",
+    "Canara Bank", "Union Bank of India", "Bank of Baroda", "IDBI Bank",
+    "Saraswat Co-operative Bank"
+  ],
+  "email_domains": ["gmail.com", "yahoo.in", "outlook.com", "rediffmail.com"]
+}

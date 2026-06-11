@@ -1,0 +1,38 @@
+# Secrets / env
+.env
+*.env
+!.env.example
+
+# Local tool settings
+.claude/settings.local.json
+
+# Datasets & review exports (synthetic, but keep out of git per policy)
+data-pipeline/output/
+*.jsonl
+!data-pipeline/tests/fixtures/**/*.jsonl
+lawyer_review*.csv
+
+# Model artifacts
+*.safetensors
+*.gguf
+*.bin
+*.pt
+checkpoints/
+training/runs/
+wandb/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# Node (W4)
+node_modules/
+.next/
+
+# OS
+.DS_Store
+Thumbs.db

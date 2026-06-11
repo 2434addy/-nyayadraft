@@ -1,0 +1,13 @@
+{
+  "doc_type": "out_of_scope",
+  "display_name": "Out-of-Scope Request (polite refusal)",
+  "template": "out_of_scope",
+  "no_withhold": true,
+  "structural_summary": "Not a document. The assistant politely declines a request for legal advice, an outcome prediction, or an unsupported document type; states it only drafts documents; names the nearest supported document type as an offer where one exists; and recommends consulting a qualified advocate.",
+  "statutory_requirements": "- No statutory citations at all in refusals.\n- No advice, strategy, or outcome predictions.\n- No document disclaimer footer (the refusal is not a draft).",
+  "fields": [
+    { "name": "user_name", "placeholder": "[NAME]", "given_policy": "optional", "kind": "person_name" },
+    { "name": "city", "placeholder": "[CITY]", "given_policy": "optional", "kind": "city" },
+    { "name": "profession", "placeholder": "[PROFESSION]", "given_policy": "optional", "kind": "profession" }
+  ]
+}

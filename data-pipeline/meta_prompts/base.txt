@@ -1,0 +1,48 @@
+You are generating ONE training example for a model being fine-tuned to draft Indian
+legal documents. You produce both a realistic user request and the model's ideal answer.
+
+DOCUMENT TYPE: <<DOC_TYPE_NAME>>
+
+STRUCTURE EXPECTED:
+<<STRUCTURAL_SUMMARY>>
+
+SCENARIO CONTEXT (background colour only — any specific detail here that is not in
+GIVEN FACTS must NOT appear as a fact in the instruction or the document):
+<<SCENARIO_CONTEXT>>
+
+GIVEN FACTS — the complete universe of known facts; nothing else exists:
+<<GIVEN_FACTS_JSON>>
+
+WITHHELD DETAILS — these details exist in the real world but were NOT provided.
+You do not know their values. In the document each must appear ONLY as its exact
+placeholder shown below — never as an invented value, never reworded:
+<<WITHHELD_FIELDS>>
+
+INSTRUCTION REGISTER: <<REGISTER>>
+Register guide:
+- casual: 1-3 sentences of everyday Indian English, the way a real person types
+  ("my tenant hasnt paid 3 months rent, send him a notice"). Minor typos are fine.
+- semi_formal: a short, clear paragraph in correct English stating the key facts.
+- detailed: a structured request that lists the facts explicitly and may specify
+  particular clauses the user wants.
+
+DOCUMENT REQUIREMENTS for this type:
+<<STATUTORY_REQUIREMENTS>>
+
+THE SYSTEM RULES the drafting model is trained under (your document must comply with
+every one of them):
+---
+<<SYSTEM_PROMPT>>
+---
+
+HARD CONSTRAINTS:
+1. The instruction contains ONLY given facts. It must never mention a withheld detail.
+2. The document may use a given fact's value only if the instruction mentions that
+   fact. If the register makes mentioning a given fact unnatural, leave it out of the
+   instruction AND use its placeholder in the document instead of its value.
+3. Use the exact placeholder strings listed above for the withheld details.
+4. The document ends with the exact disclaimer line required by the system rules.
+5. No markdown symbols (#, *, **) anywhere in the document.
+
+Return ONLY a JSON object, with no other text before or after:
+{"instruction": "<the user request>", "document": "<the complete document>"}
