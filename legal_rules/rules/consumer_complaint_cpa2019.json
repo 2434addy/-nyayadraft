@@ -1,0 +1,101 @@
+{
+  "doc_type": "consumer_complaint_cpa2019",
+  "min_chars": 2200,
+  "max_chars": 12000,
+  "require_disclaimer": true,
+  "is_document": true,
+  "required_patterns": [
+    {
+      "id": "forum_heading",
+      "description": "Heading names the District Consumer Disputes Redressal Commission",
+      "regex": "(?i)district\\s+consumer\\s+disputes\\s+redressal\\s+commission",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "cpa_2019_citation",
+      "description": "Names the Consumer Protection Act, 2019",
+      "regex": "(?i)consumer\\s+protection\\s+act,?\\s*2019",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "sec_35_citation",
+      "description": "Complaint stated to be under Section 35",
+      "regex": "(?i)section\\s*35\\b",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "consumer_def_2_7",
+      "description": "Pleads consumer status citing Section 2(7)",
+      "regex": "(?i)section\\s*2\\s*\\(\\s*7\\s*\\)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "deficiency_or_utp",
+      "description": "Avers deficiency in service, unfair trade practice, or defect in goods",
+      "regex": "(?i)(deficiency\\s+in\\s+(the\\s+)?services?|unfair\\s+trade\\s+practice|defects?\\s+in\\s+the\\s+goods|defective\\s+goods)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "opposite_party_term",
+      "description": "Uses the statutory term 'opposite party'",
+      "regex": "(?i)opposite\\s+part(y|ies)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "limitation_sec_69",
+      "description": "Limitation paragraph citing Section 69 (two-year period)",
+      "regex": "(?i)section\\s*69\\b",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "jurisdiction_plea",
+      "description": "Pleads territorial and/or pecuniary jurisdiction",
+      "regex": "(?i)(territorial|pecuniary)\\s+jurisdiction",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "prayer_language",
+      "description": "Formal prayer clause for reliefs",
+      "regex": "(?i)((most\\s+)?(respectfully|humbly)\\s+pray(ed|s)?|\\bprayer\\b)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "verification_block",
+      "description": "Verification clause at the foot of the complaint",
+      "regex": "(?i)(\\bverification\\b|verified\\s+at)",
+      "legal_basis": "CONFIDENT"
+    }
+  ],
+  "forbidden_patterns": [
+    {
+      "id": "no_md_heading",
+      "description": "No markdown headings",
+      "regex": "(?m)^\\s{0,3}#{1,6}\\s"
+    },
+    {
+      "id": "no_md_bold",
+      "description": "No markdown bold",
+      "regex": "\\*\\*"
+    },
+    {
+      "id": "no_ai_voice",
+      "description": "No AI self-reference",
+      "regex": "(?i)as an ai\\b"
+    },
+    {
+      "id": "no_chat_preamble",
+      "description": "No chatty preamble",
+      "regex": "(?i)\\A\\s*(sure|certainly|here(\\s+is|'s))\\b"
+    },
+    {
+      "id": "no_repealed_act_1986",
+      "description": "Must not cite the repealed Consumer Protection Act, 1986",
+      "regex": "(?i)consumer\\s+protection\\s+act,?\\s*1986"
+    },
+    {
+      "id": "no_old_forum_name",
+      "description": "Must not use the pre-2019 'District Forum' nomenclature",
+      "regex": "(?i)district\\s+(consumer\\s+)?forum\\b"
+    }
+  ]
+}

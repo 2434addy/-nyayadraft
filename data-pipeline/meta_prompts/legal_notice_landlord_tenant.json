@@ -1,0 +1,121 @@
+{
+  "doc_type": "legal_notice_landlord_tenant",
+  "display_name": "Landlord-Tenant Legal Notice (Eviction / Rent Arrears / Deposit Refund / Essential Services)",
+  "structural_summary": "A formal legal notice exchanged between landlord and tenant (or licensor and licensee), sent directly or through an advocate. Layout: sender/advocate block; date; mode of dispatch (Registered Post A.D.); addressee block; subject line identifying the premises and grievance; salutation; numbered paragraphs reciting the tenancy (premises, commencement date, monthly rent, security deposit), the default or grievance with dates, and prior reminders; the operative demand (vacate and hand over possession, pay arrears, refund deposit, restore essential supplies, issue rent receipts, or desist from harassment) within a stated compliance period of 15 or 30 days; consequences of non-compliance (eviction or possession suit, recovery proceedings, costs); reservation of rights; signature block of the party or advocate.",
+  "statutory_requirements": "- Identify the parties and relationship (landlord/licensor, tenant/licensee), the premises by full address, monthly rent or licence fee, tenancy commencement date, and security deposit if any.\n- Recite the default or grievance with dates: months of arrears, expiry of the term, date essential supplies were disconnected, or date the tenant vacated and handed over keys.\n- A landlord terminating a month-to-month tenancy must give 15 days' notice under Section 106, Transfer of Property Act, 1882.\n- Where a state rent law covers the premises, statutory grounds and procedure may override Section 106 — [VERIFY: applicable state rent control act, e.g. Maharashtra Rent Control Act, 1999] before pleading statutory grounds.\n- For restoration of essential supplies (water/electricity), rely on the agreement and [VERIFY: provision of the applicable state rent act penalising withdrawal of essential supplies].\n- Security-deposit refund demands are contractual: cite the agreement clause, the vacation/handover date, and any agreed interest; no statute need be cited.\n- State the operative demand precisely (vacate and hand over vacant possession / pay arrears / refund deposit / restore supply / issue rent receipts / desist from harassment) within a stated period of 15 or 30 days.\n- State consequences of non-compliance: eviction or possession suit, recovery proceedings with interest, or other civil/criminal remedies, at the addressee's risk as to costs.\n- Record mode of dispatch (Registered Post A.D. recommended) and preserve proof of service.",
+  "fields": [
+    {
+      "name": "landlord_name",
+      "placeholder": "[FULL NAME OF LANDLORD]",
+      "given_policy": "always",
+      "kind": "person_name"
+    },
+    {
+      "name": "tenant_name",
+      "placeholder": "[FULL NAME OF TENANT]",
+      "given_policy": "always",
+      "kind": "person_name"
+    },
+    {
+      "name": "city",
+      "placeholder": "[CITY]",
+      "given_policy": "withholdable",
+      "kind": "city"
+    },
+    {
+      "name": "premises_address",
+      "placeholder": "[FULL ADDRESS OF TENANTED PREMISES]",
+      "given_policy": "always",
+      "kind": "address",
+      "implies_given": [
+        "city"
+      ]
+    },
+    {
+      "name": "monthly_rent",
+      "placeholder": "[MONTHLY RENT IN ₹]",
+      "given_policy": "always",
+      "kind": "inr_amount",
+      "range": [
+        8000,
+        200000
+      ]
+    },
+    {
+      "name": "security_deposit",
+      "placeholder": "[SECURITY DEPOSIT AMOUNT IN ₹]",
+      "given_policy": "optional",
+      "kind": "inr_amount",
+      "range": [
+        25000,
+        1200000
+      ]
+    },
+    {
+      "name": "tenancy_start_date",
+      "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]",
+      "given_policy": "withholdable",
+      "kind": "date",
+      "anchor_days_range": [
+        -1825,
+        -395
+      ]
+    },
+    {
+      "name": "vacation_date",
+      "placeholder": "[DATE TENANT VACATED THE PREMISES]",
+      "given_policy": "withholdable",
+      "kind": "date",
+      "offset_days_range": [
+        180,
+        360
+      ],
+      "when": {
+        "tenant_vacated": true
+      },
+      "description": "Date the tenant vacated and handed over keys; only for deposit-refund/deduction scenarios. Offset keeps it after tenancy commencement and always in the past."
+    },
+    {
+      "name": "arrears_months",
+      "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]",
+      "given_policy": "withholdable",
+      "kind": "number",
+      "range": [
+        2,
+        12
+      ],
+      "when": {
+        "direction": "from_landlord"
+      }
+    },
+    {
+      "name": "notice_period_days",
+      "placeholder": "[NOTICE PERIOD IN DAYS]",
+      "given_policy": "withholdable",
+      "kind": "choice",
+      "choices": [
+        15,
+        30
+      ],
+      "description": "Compliance window demanded in the notice; 15 aligns with Section 106 TPA for month-to-month termination."
+    },
+    {
+      "name": "mode_of_dispatch",
+      "placeholder": "[MODE OF DISPATCH]",
+      "given_policy": "optional",
+      "kind": "choice",
+      "choices": [
+        "Registered Post A.D.",
+        "Speed Post",
+        "Courier",
+        "Email and Registered Post A.D."
+      ]
+    },
+    {
+      "name": "advocate_name",
+      "placeholder": "[NAME OF ADVOCATE]",
+      "given_policy": "optional",
+      "kind": "person_name"
+    }
+  ]
+}

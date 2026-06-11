@@ -1,0 +1,94 @@
+{
+  "doc_type": "legal_notice_money_recovery",
+  "min_chars": 1400,
+  "max_chars": 9000,
+  "require_disclaimer": true,
+  "is_document": true,
+  "required_patterns": [
+    {
+      "id": "legal_notice_title",
+      "description": "Document identifies itself as a Legal Notice (title or subject)",
+      "regex": "(?i)legal\\s+notice",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "subject_line",
+      "description": "Has a formal subject/reference line",
+      "regex": "(?im)^\\s*(sub(ject)?\\.?|re|ref\\.?)\\s*:",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "demand_language",
+      "description": "Formal demand language",
+      "regex": "(?i)(call\\s+upon\\s+you|hereby\\s+demand|demand\\s+that\\s+you|require\\s+you\\s+to\\s+(pay|refund|make))",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "compliance_window_days",
+      "description": "States a 15- or 30-day compliance window (customary practice, not statutory)",
+      "regex": "(?i)((fifteen|thirty)\\s*(\\(\\s*(15|30)\\s*\\))?|\\b(15|30))\\s*days",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "rupee_amount_stated",
+      "description": "States the amount due in rupees with figures",
+      "regex": "(?i)(₹|\\brs\\.?|\\brupees\\b)\\s*\\d[\\d,]*",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "interest_demanded",
+      "description": "Demands interest on the principal (contractual, stated rate, or 'thereon')",
+      "regex": "(?i)((together\\s+)?with\\s+interest|plus\\s+interest|along\\s*with\\s+interest|interest\\s+(thereon|@|at\\s+the\\s+rate|per\\s+annum|p\\.?\\s?a\\.?))",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "civil_suit_consequence",
+      "description": "Warns of civil proceedings for recovery on failure to comply",
+      "regex": "(?i)(civil\\s+suit|suit\\s+for\\s+(the\\s+)?recovery|recovery\\s+suit|summary\\s+suit|civil\\s+proceedings)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "risk_and_costs",
+      "description": "Costs/consequences placed at the debtor's risk",
+      "regex": "(?i)(at\\s+your\\s+(own\\s+|entire\\s+|sole\\s+)?(risk|cost)s?|costs?\\s+and\\s+consequences|with\\s+costs)",
+      "legal_basis": "CONFIDENT"
+    }
+  ],
+  "forbidden_patterns": [
+    {
+      "id": "no_md_heading",
+      "description": "No markdown headings",
+      "regex": "(?m)^\\s{0,3}#{1,6}\\s"
+    },
+    {
+      "id": "no_md_bold",
+      "description": "No markdown bold",
+      "regex": "\\*\\*"
+    },
+    {
+      "id": "no_ai_voice",
+      "description": "No AI self-reference",
+      "regex": "(?i)as an ai\\b"
+    },
+    {
+      "id": "no_chat_preamble",
+      "description": "No chatty preamble",
+      "regex": "(?i)\\A\\s*(sure|certainly|here(\\s+is|'s))\\b"
+    },
+    {
+      "id": "no_repealed_ipc",
+      "description": "No citations to the repealed Indian Penal Code or Section 420 cheating threats (IPC replaced by BNS 2023 w.e.f. 01.07.2024; coercive criminal threats inappropriate in a civil money-recovery notice)",
+      "regex": "(?i)indian\\s+penal\\s+code|\\bipc\\b|section\\s*420\\b"
+    },
+    {
+      "id": "no_sec_138_drift",
+      "description": "No cheque-bounce content (Section 138 / NI Act belongs to a separate notice type; no cheque facts are generated for this type)",
+      "regex": "(?i)section\\s*138\\b|negotiable\\s+instruments\\s+act"
+    },
+    {
+      "id": "no_limitation_article_numbers",
+      "description": "No specific Article numbers of the Limitation Act Schedule (unverified; the Act may be cited only generally)",
+      "regex": "(?i)article\\s+\\d+\\s+of\\s+the\\s+(schedule\\s+to\\s+the\\s+)?limitation\\s+act"
+    }
+  ]
+}

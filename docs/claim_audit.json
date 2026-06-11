@@ -1,0 +1,485 @@
+{
+  "cheque_bounce_138": {
+    "display_name": "Cheque Bounce Demand Notice (Section 138, Negotiable Instruments Act, 1881)",
+    "claims": [
+      {
+        "claim": "Notice must be sent within 30 days of receipt of the cheque return memo (S.138 proviso (b))",
+        "status": "CONFIDENT"
+      },
+      {
+        "claim": "Drawer has 15 days from receipt of notice to pay (S.138 proviso (c))",
+        "status": "CONFIDENT"
+      },
+      {
+        "claim": "Cheque validity is 3 months from its date per RBI directive",
+        "status": "VERIFY",
+        "note": "Reduced from 6 months w.e.f. 01.04.2012; encoded only as date-offset ranges, not cited in documents"
+      }
+    ]
+  },
+  "out_of_scope": {
+    "display_name": "Out-of-Scope Refusal",
+    "claims": []
+  },
+  "leave_license_mh": {
+    "display_name": "Leave and License Agreement (Maharashtra)",
+    "claims": [
+      {
+        "claim": "A leave and license is a 'license' as defined in Section 52, Indian Easements Act, 1882, creating no interest in immovable property; juridical possession remains with the licensor",
+        "status": "CONFIDENT",
+        "note": "Cited in statutory_requirements and recitals guidance; no regex enforces the section number"
+      },
+      {
+        "claim": "Section 55, Maharashtra Rent Control Act, 1999 requires leave and license agreements to be in writing and registered, with responsibility on the landlord/licensor",
+        "status": "CONFIDENT",
+        "note": "Only the Act name+year (not the section number) is enforced via the mrc_act_citation regex"
+      },
+      {
+        "claim": "Non-registration under Section 55 is punishable (commonly stated as imprisonment up to 3 months or fine up to Rs 5,000)",
+        "status": "VERIFY",
+        "note": "Quantum flagged [VERIFY] in statutory_requirements; never required in generated documents"
+      },
+      {
+        "claim": "Stamp duty on leave and license is governed by the Maharashtra Stamp Act, 1958",
+        "status": "CONFIDENT",
+        "note": "Act name only; no article or rate enforced anywhere"
+      },
+      {
+        "claim": "The applicable stamp article is 36A with a 0.25% computation on rent plus deposit components",
+        "status": "VERIFY",
+        "note": "Tagged [VERIFY] in statutory_requirements; excluded from all regexes and document text"
+      },
+      {
+        "claim": "Maharashtra permits online e-registration of leave and license agreements via the Department of Registration and Stamps (IGR Maharashtra)",
+        "status": "CONFIDENT",
+        "note": "Administrative practice claim; no statute cited"
+      },
+      {
+        "claim": "Intimation/verification of licensee particulars with the local police is required or customary in Maharashtra cities",
+        "status": "VERIFY",
+        "note": "Usually traced to Police Commissioner orders (CrPC s.144) / Maharashtra Police Act; included only as an optional customary clause with [VERIFY] tag"
+      },
+      {
+        "claim": "Registration Act, 1908 (S.17) interplay with licenses and the registration machinery before the Sub-Registrar",
+        "status": "VERIFY",
+        "note": "Mentioned only with a [VERIFY] tag; no section number in any regex"
+      },
+      {
+        "claim": "MRCA 1999 exemptions (S.3, e.g., companies above a paid-up capital threshold) may affect applicability of the Act to corporate licensees",
+        "status": "VERIFY",
+        "note": "The MRCA citation gate is retained for company scenarios as universal Maharashtra registration practice; flag for legal review"
+      },
+      {
+        "claim": "Licensor/Licensee terminology and 'license fee' (never lessor/lessee or monthly rent) preserve the license character of the document",
+        "status": "CONFIDENT",
+        "note": "Drafting convention, not a statutory citation; enforced via required parties_terminology/license_fee_clause patterns and the no_lessor_lessee/no_monthly_rent forbidden patterns"
+      }
+    ]
+  },
+  "legal_notice_money_recovery": {
+    "display_name": "Legal Notice for Recovery of Money / Outstanding Dues",
+    "claims": [
+      {
+        "claim": "Most money claims are time-barred three years from when the debt falls due, under the Limitation Act, 1963",
+        "status": "CONFIDENT",
+        "note": "Cited only generally in statutory_requirements; specific Schedule Article numbers are deliberately not cited and are blocked by the no_limitation_article_numbers forbidden pattern"
+      },
+      {
+        "claim": "A summary suit under Order XXXVII, Code of Civil Procedure, 1908 is available for liquidated money demands arising on written contracts",
+        "status": "CONFIDENT",
+        "note": "Optional reference only — appears in statutory_requirements and as one alternation in the civil_suit_consequence required pattern, never as a mandatory citation"
+      },
+      {
+        "claim": "The 15- or 30-day compliance window in a money-recovery notice is customary drafting practice, not a statutory requirement",
+        "status": "CONFIDENT",
+        "note": "The compliance_window_days required pattern enforces only that a window is stated, not any statutory basis"
+      },
+      {
+        "claim": "Where no contractual rate exists, interest may be claimed from the date of written demand under the Interest Act, 1978",
+        "status": "VERIFY",
+        "note": "The Act exists, but its precise conditions and rate mechanics are unverified; flagged [VERIFY] in statutory_requirements and not encoded in any regex"
+      },
+      {
+        "claim": "Registered MSME suppliers may invoke statutory interest on delayed payments under the MSMED Act, 2006 (commonly cited as Ss. 15-16, compound interest at 3x bank rate)",
+        "status": "VERIFY",
+        "note": "Section numbers and rate flagged [VERIFY] in statutory_requirements; never baked into a required pattern"
+      },
+      {
+        "claim": "The Indian Penal Code stands repealed and replaced by the Bharatiya Nyaya Sanhita, 2023 with effect from 1 July 2024, so IPC/Section 420 citations are forbidden",
+        "status": "CONFIDENT",
+        "note": "Basis for the no_repealed_ipc forbidden pattern; also discourages coercive criminal threats in a civil demand"
+      },
+      {
+        "claim": "Section 138, Negotiable Instruments Act 1881 is confined to cheque dishonour and does not belong in a generic money-recovery notice",
+        "status": "CONFIDENT",
+        "note": "Basis for the no_sec_138_drift forbidden pattern; prevents cross-type hallucination since no cheque facts are generated"
+      },
+      {
+        "claim": "Date anchors (debt origin -1000 to -240 days, due date +30 to +180 days after origin) keep the claim within the 3-year limitation and the default already crystallised at notice date",
+        "status": "CONFIDENT",
+        "note": "Encoded only as anchor/offset ranges, never cited in the documents themselves"
+      }
+    ]
+  },
+  "legal_notice_landlord_tenant": {
+    "display_name": "Landlord-Tenant Legal Notice (Eviction / Rent Arrears / Deposit Refund / Essential Services)",
+    "claims": [
+      {
+        "claim": "A lease from month to month is terminable by 15 days' notice under Section 106, Transfer of Property Act, 1882",
+        "status": "CONFIDENT",
+        "note": "Post-2002-amendment position. Stated in statutory_requirements only; not enforced by any regex because it applies only to landlord termination notices, not tenant-direction notices."
+      },
+      {
+        "claim": "Where a state rent control act covers the premises, Section 106 TPA termination may not suffice and statutory grounds/procedures govern",
+        "status": "VERIFY",
+        "note": "Coverage depends on state, premises type, and rent level; flagged as [VERIFY: applicable state rent control act] in statutory_requirements and never asserted in any regex or scenario."
+      },
+      {
+        "claim": "State rent legislation (e.g., Maharashtra Rent Control Act, 1999) penalises a landlord's withdrawal of essential supplies such as water and electricity",
+        "status": "VERIFY",
+        "note": "Believed correct for Maharashtra (commonly cited as Section 29) but the section is unverified; written only as a [VERIFY] tag and the specific section is blocked from drafts by forbidden pattern no_unverified_rent_act_sections."
+      },
+      {
+        "claim": "Security-deposit refund demands rest on contract; no statutory citation is required",
+        "status": "CONFIDENT",
+        "note": "Drafts cite the tenancy or leave-and-licence agreement clause and the vacation/handover date instead of a statute."
+      },
+      {
+        "claim": "A landlord cannot evict by self-help (lockout, utility disconnection, harassment); dispossession requires due legal process",
+        "status": "CONFIDENT",
+        "note": "Settled position used only to frame the from_tenant scenarios (illegal_lockout_hyderabad, water_electricity_cut_pune, harassment_for_vacation_delhi); no specific section is cited anywhere in the package."
+      },
+      {
+        "claim": "The Model Tenancy Act, 2021 is a model law and not directly operative central legislation, so drafts must not cite it as binding",
+        "status": "CONFIDENT",
+        "note": "Encoded as forbidden pattern no_model_tenancy_act. States that enacted versions have their own state acts, which drafts may name only if separately verified."
+      },
+      {
+        "claim": "Section numbers of state rent control acts used in drafts are unverified and must not appear in training data",
+        "status": "VERIFY",
+        "note": "Precautionary design choice encoded as forbidden pattern no_unverified_rent_act_sections; naming an act generally (without a section) remains permitted."
+      },
+      {
+        "claim": "A compliance window of 15 or 30 days is the customary demand period in Indian landlord-tenant notices; 15 days aligns with Section 106 TPA for termination",
+        "status": "CONFIDENT",
+        "note": "Encoded as the notice_period_days choice field and the compliance_window regex, which requires only a number of days and cites no statute."
+      }
+    ]
+  },
+  "consumer_complaint_cpa2019": {
+    "display_name": "Consumer Complaint (Section 35, Consumer Protection Act, 2019) before the District Consumer Disputes Redressal Commission",
+    "claims": [
+      {
+        "claim": "Consumer complaints before the District Commission are filed under Section 35, Consumer Protection Act, 2019",
+        "status": "CONFIDENT"
+      },
+      {
+        "claim": "'Consumer' is defined in Section 2(7), CPA 2019",
+        "status": "CONFIDENT"
+      },
+      {
+        "claim": "'Deficiency' is defined in Section 2(11), CPA 2019",
+        "status": "CONFIDENT"
+      },
+      {
+        "claim": "Limitation for filing a consumer complaint is two years from the cause of action under Section 69, CPA 2019",
+        "status": "CONFIDENT"
+      },
+      {
+        "claim": "The adjudicating forum at district level under CPA 2019 is named 'District Consumer Disputes Redressal Commission' (District Commission)",
+        "status": "CONFIDENT",
+        "note": "Basis of the forum_heading required pattern and the no_old_forum_name forbidden pattern"
+      },
+      {
+        "claim": "'Deficiency in service' and 'unfair trade practice' are statutory terms under CPA 2019",
+        "status": "CONFIDENT",
+        "note": "Used in the deficiency_or_utp regex as bare terms, with no section numbers baked in"
+      },
+      {
+        "claim": "The Consumer Protection Act, 1986 stands repealed by the CPA 2019",
+        "status": "CONFIDENT",
+        "note": "2019 Act brought into force in 2020; basis of the no_repealed_act_1986 forbidden pattern"
+      },
+      {
+        "claim": "'Defect' is defined in Section 2(10) and 'unfair trade practice' in Section 2(47), CPA 2019",
+        "status": "VERIFY",
+        "note": "Sub-clause numbering not independently confirmed; flagged only inside statutory_requirements, never in a regex"
+      },
+      {
+        "claim": "Complainant may institute the complaint where they reside or personally work for gain — Section 34(2)(d), CPA 2019",
+        "status": "VERIFY",
+        "note": "The complainant-residence venue is a known CPA 2019 innovation but the exact clause letter is flagged for verification"
+      },
+      {
+        "claim": "District Commission pecuniary jurisdiction limits are set and revised by Central Government notification (ceiling reduced to ₹50 lakh w.e.f. Dec 2021)",
+        "status": "VERIFY",
+        "note": "Notification-dependent; no figure is asserted in any document or regex — encoded only as amount ranges capped at ₹45 lakh"
+      },
+      {
+        "claim": "Section 39, CPA 2019 enumerates the reliefs the District Commission may grant (refund, replacement, compensation, costs)",
+        "status": "VERIFY",
+        "note": "Marked [VERIFY] in statutory_requirements per instruction; never used in a regex"
+      },
+      {
+        "claim": "A consumer complaint carries a verification clause and is supported by the complainant's affidavit",
+        "status": "CONFIDENT",
+        "note": "Standard drafting practice before consumer commissions; no statute is cited in the documents for this"
+      },
+      {
+        "claim": "Filing fee is payable per the Consumer Protection (Consumer Disputes Redressal Commissions) Rules, 2020",
+        "status": "VERIFY",
+        "note": "Rule name and fee slabs flagged for verification; mentioned only in statutory_requirements"
+      }
+    ]
+  },
+  "affidavit_general": {
+    "display_name": "General Affidavit (Sworn/Affirmed Before Notary Public or Oath Commissioner)",
+    "claims": [
+      {
+        "claim": "Statutory citations are not customary in the body of a general notarial affidavit",
+        "status": "CONFIDENT",
+        "note": "Drafting practice; enforced via the no_statutory_section_citation forbidden pattern"
+      },
+      {
+        "claim": "General affidavits are executed on non-judicial stamp paper whose value varies by state and purpose under the applicable State Stamp Act",
+        "status": "CONFIDENT",
+        "note": "General practice claim only; no schedule entry or article number cited anywhere in the package"
+      },
+      {
+        "claim": "Specific stamp duty value for affidavits in any particular state (e.g., Maharashtra)",
+        "status": "VERIFY",
+        "note": "Deliberately not stated; documents carry the '[VALUE] AS APPLICABLE' placeholder instead"
+      },
+      {
+        "claim": "Notaries Public are empowered to administer oaths and take affidavits under the Notaries Act, 1952",
+        "status": "CONFIDENT",
+        "note": "Act named only in statutory_requirements; no section number cited and nothing encoded in regexes"
+      },
+      {
+        "claim": "Oaths and affirmations are governed by the Oaths Act, 1969",
+        "status": "CONFIDENT",
+        "note": "Mentioned in statutory_requirements only; expressly excluded from the document body"
+      },
+      {
+        "claim": "Notarial attestation/register formalities (seal, register entry, notarial stamp) per the Notaries Rules, 1956",
+        "status": "VERIFY",
+        "note": "Flagged [VERIFY] in statutory_requirements; the regex gate only requires 'before me' attestation and the officer's designation"
+      },
+      {
+        "claim": "A false affidavit may attract prosecution for giving false evidence under provisions of the Bharatiya Nyaya Sanhita, 2023 replacing IPC ss. 191/193",
+        "status": "VERIFY",
+        "note": "Exact BNS section numbers uncertain; flagged [VERIFY] in statutory_requirements and never encoded in a regex"
+      },
+      {
+        "claim": "The Indian Penal Code, 1860 stands replaced by the Bharatiya Nyaya Sanhita, 2023 (in force 1 July 2024), so IPC citations are blocked by a forbidden pattern",
+        "status": "CONFIDENT",
+        "note": "Forbidden pattern only blocks IPC mentions; it cites nothing affirmatively"
+      },
+      {
+        "claim": "Verification clause recording place, date and that contents are true and correct to the deponent's knowledge and belief is standard affidavit practice",
+        "status": "CONFIDENT",
+        "note": "Structural convention; no CPC provision cited"
+      },
+      {
+        "claim": "'Do hereby solemnly affirm and declare' is the standard secular affirmation formula for Indian affidavits",
+        "status": "CONFIDENT",
+        "note": "Drafting convention enforced by the solemn_affirmation required pattern"
+      },
+      {
+        "claim": "EWS certificate applications involve a family income criterion",
+        "status": "CONFIDENT",
+        "note": "Existence of the criterion only; the threshold value is not stated anywhere in the package and the scenario amount range stays conservatively low"
+      },
+      {
+        "claim": "Affidavits are sworn before a Notary Public or Oath Commissioner",
+        "status": "CONFIDENT",
+        "note": "Practice claim underlying the notary_or_oath_commissioner required pattern"
+      }
+    ]
+  },
+  "employment_offer_termination": {
+    "display_name": "Employment Offer Letter / Termination Letter (Indian Private Sector)",
+    "claims": [
+      {
+        "claim": "Employees' Provident Funds and Miscellaneous Provisions Act, 1952 is the correct name of the central PF statute referenced in offer letters",
+        "status": "CONFIDENT",
+        "note": "Act name only; no section numbers or thresholds cited anywhere in the package."
+      },
+      {
+        "claim": "Payment of Gratuity Act, 1972 is the correct name of the gratuity statute referenced in offer letters",
+        "status": "CONFIDENT",
+        "note": "Act name only; the five-year continuous-service eligibility threshold is deliberately not asserted."
+      },
+      {
+        "claim": "PF and gratuity entitlements depend on establishment coverage and wage/headcount thresholds",
+        "status": "VERIFY",
+        "note": "Package qualifies both benefits with 'as applicable' instead of asserting coverage for any given employer."
+      },
+      {
+        "claim": "State Shops and Establishments Acts may govern notice and termination conditions; the applicable Act is state-specific",
+        "status": "VERIFY",
+        "note": "Documents must carry [VERIFY: applicable state Shops and Establishments Act]; no state statute is named or baked into any regex."
+      },
+      {
+        "claim": "Termination for misconduct ordinarily requires a prior domestic inquiry observing principles of natural justice",
+        "status": "VERIFY",
+        "note": "Drafter instructed to insert a [VERIFY] flag, not assert compliance; prerequisites vary with standing orders and establishment type."
+      },
+      {
+        "claim": "Industrial Disputes Act, 1947 is the correct name of the central statute governing retrenchment of workmen",
+        "status": "CONFIDENT",
+        "note": "Name appears only inside the [VERIFY] flag text mandated by statutory_requirements."
+      },
+      {
+        "claim": "Section 25F, Industrial Disputes Act, 1947 retrenchment conditions apply to a given termination",
+        "status": "VERIFY",
+        "note": "Depends on workman status, continuous service and establishment; encoded only as a [VERIFY] flag, never as a required_pattern regex."
+      },
+      {
+        "claim": "At-will employment is not a recognised doctrine in Indian employment law, so the phrase is forbidden in drafts",
+        "status": "CONFIDENT",
+        "note": "Enforced via forbidden_pattern no_at_will to keep US boilerplate out of training data."
+      },
+      {
+        "claim": "30/60/90-day notice periods and 3/6-month probation are contractual conventions, not statutory mandates",
+        "status": "CONFIDENT",
+        "note": "Encoded only as field choices; no statute is cited for these values."
+      }
+    ]
+  },
+  "mou_two_parties": {
+    "display_name": "Memorandum of Understanding between Two Parties (Indian Contract Act, 1872)",
+    "claims": [
+      {
+        "claim": "Enforceability of the binding clauses of an MOU rests on the Indian Contract Act, 1872",
+        "status": "CONFIDENT",
+        "note": "Act named without any section number, per assignment instruction; not encoded in any regex"
+      },
+      {
+        "claim": "Arbitration clauses in Indian MOUs customarily invoke the Arbitration and Conciliation Act, 1996",
+        "status": "CONFIDENT",
+        "note": "Act in force as amended; named without section numbers; dispute regex accepts courts/negotiation as alternatives so no document is forced to cite it"
+      },
+      {
+        "claim": "An MOU recording only intent is generally not a binding contract, but clauses expressly made binding (confidentiality, dispute resolution, governing law) can bind the parties",
+        "status": "CONFIDENT",
+        "note": "Standard drafting practice; ultimate enforceability turns on intention to create legal relations under Indian contract law, so documents use a clarification clause rather than asserting statutory effect"
+      },
+      {
+        "claim": "Stamp duty on an MOU varies by the state of execution under the applicable State Stamp Act schedule",
+        "status": "VERIFY",
+        "note": "Schedule entries and duty amounts differ by state (e.g., Maharashtra Stamp Act vs Indian Stamp Act states); flagged [VERIFY] in statutory_requirements and never required or quoted in documents"
+      },
+      {
+        "claim": "An MOU is generally not compulsorily registrable unless it creates rights in immovable property",
+        "status": "VERIFY",
+        "note": "Turns on Registration Act, 1908 compulsorily-registrable categories (S.17); flagged [VERIFY] and not cited in generated documents"
+      },
+      {
+        "claim": "Title, 'First Party'/'Second Party' designations, WHEREAS recitals, IN WITNESS WHEREOF testimonium, and witness attestation are conventional elements of an Indian MOU",
+        "status": "CONFIDENT",
+        "note": "Drafting conventions, not statutory mandates; witnesses are customary for MOUs, not legally required, so witness fields are optional"
+      }
+    ]
+  },
+  "partnership_deed_1932": {
+    "display_name": "Partnership Deed (Indian Partnership Act, 1932)",
+    "claims": [
+      {
+        "claim": "The Indian Partnership Act, 1932 governs general (non-LLP) partnership firms in India",
+        "status": "CONFIDENT",
+        "note": "Cited in display_name, structural_summary and the act_citation required pattern"
+      },
+      {
+        "claim": "The Arbitration and Conciliation Act, 1996 is the current statute governing arbitration agreements in India",
+        "status": "CONFIDENT",
+        "note": "Named only in statutory_requirements; the arbitration_clause regex does not require the Act name"
+      },
+      {
+        "claim": "Registration of a firm with the Registrar of Firms is optional and effected under Sections 58 and 59, Indian Partnership Act 1932",
+        "status": "VERIFY",
+        "note": "Section numbers customary but flagged per policy; not baked into any regex"
+      },
+      {
+        "claim": "An unregistered firm and its partners suffer disabilities in enforcing contractual rights by suit under Section 69, Indian Partnership Act 1932",
+        "status": "VERIFY",
+        "note": "Flagged per assignment instruction; documents should mention advisability of registration without asserting the section as settled"
+      },
+      {
+        "claim": "Section 40(b), Income-tax Act 1961 caps deductible interest on partner capital at 12% p.a. simple and limits partner remuneration by book-profit slabs",
+        "status": "VERIFY",
+        "note": "Slabs revised by Finance (No. 2) Act 2024 w.e.f. AY 2025-26; encoded only as the interest field's 6-12% generation range, never cited in a required pattern"
+      },
+      {
+        "claim": "Firm names implying government sanction or patronage are restricted (Section 58(3), Indian Partnership Act 1932)",
+        "status": "VERIFY",
+        "note": "Restriction strictly applies on registration; mentioned only as drafting advice with a VERIFY marker"
+      },
+      {
+        "claim": "Sections 11-13, Indian Partnership Act 1932 supply default mutual rights and duties of partners absent contrary agreement",
+        "status": "VERIFY",
+        "note": "Mentioned only in statutory_requirements with a VERIFY marker"
+      },
+      {
+        "claim": "Stamp duty on a partnership instrument is set by the State stamp law of the place of execution (Maharashtra Stamp Act, Schedule I, in Maharashtra)",
+        "status": "VERIFY",
+        "note": "No article number or rupee rate cited anywhere; left as a VERIFY drafting note"
+      },
+      {
+        "claim": "The testimonium ('IN WITNESS WHEREOF') and attestation by two witnesses are conventional execution formalities, not statutory mandates",
+        "status": "CONFIDENT",
+        "note": "witness_testimonium required pattern enforces convention only, no statute cited"
+      }
+    ]
+  },
+  "reply_to_legal_notice": {
+    "display_name": "Reply to Legal Notice (on behalf of the Noticee)",
+    "claims": [
+      {
+        "claim": "The WITHOUT PREJUDICE rubric and express reservation of rights in a reply to a legal notice are customary drafting practice, not statutory mandates",
+        "status": "CONFIDENT",
+        "note": "Encoded as required_patterns containing no statutory citation; statutory_requirements expressly label it customary"
+      },
+      {
+        "claim": "Para-wise reply with specific denials of each adverse allegation and preliminary objections is the conventional structure of an Indian reply to a legal notice",
+        "status": "CONFIDENT",
+        "note": "Drafting convention only; drives para_wise_reply, denial_language and preliminary_objections patterns"
+      },
+      {
+        "claim": "Statutory citations are generally unnecessary in a reply to a legal notice",
+        "status": "CONFIDENT",
+        "note": "Drafting custom; no Act or section is baked into any required_pattern regex"
+      },
+      {
+        "claim": "Negotiable Instruments Act, 1881 is the correct and current name of the Act governing cheque dishonour allegations",
+        "status": "CONFIDENT",
+        "note": "Act name only, used generally for cheque_bounce_allegation replies; no section number appears anywhere in the package"
+      },
+      {
+        "claim": "Specific NI Act defence provisions (statutory presumption of legally enforceable debt and its rebuttal) underpin security-cheque and no-enforceable-debt defences",
+        "status": "VERIFY",
+        "note": "Commonly associated with ss.118/139 but section numbers deliberately omitted; flagged [VERIFY] in statutory_requirements"
+      },
+      {
+        "claim": "Validity of an eviction/quit notice period may turn on Transfer of Property Act 1882 s.106 or applicable state rent legislation (e.g., Maharashtra Rent Control Act 1999)",
+        "status": "VERIFY",
+        "note": "Appears only behind a [VERIFY] tag in statutory_requirements; eviction scenarios rest on the contractual notice period instead"
+      },
+      {
+        "claim": "Consumer Protection Act, 2019 is the statute a consumer grievance notice would typically invoke",
+        "status": "VERIFY",
+        "note": "Almost certainly current (in force since 2020) but marked VERIFY per policy; appears only behind a [VERIFY] tag, never in a regex"
+      },
+      {
+        "claim": "A stale money demand may be resisted as time-barred (limitation)",
+        "status": "CONFIDENT",
+        "note": "General principle used in scenario money_demand_time_barred; no limitation period, Act or section is cited anywhere"
+      },
+      {
+        "claim": "Stop-payment for non-delivery of goods and prior discharge of the debt are pleadable defences to a cheque dishonour allegation",
+        "status": "VERIFY",
+        "note": "Fact- and case-law-dependent; used only as scenario fact patterns, not asserted as settled law in requirements or regexes"
+      }
+    ]
+  }
+}

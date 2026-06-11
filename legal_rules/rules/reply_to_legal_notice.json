@@ -1,0 +1,79 @@
+{
+  "doc_type": "reply_to_legal_notice",
+  "min_chars": 1500,
+  "max_chars": 10000,
+  "require_disclaimer": true,
+  "is_document": true,
+  "required_patterns": [
+    {
+      "id": "ref_received_notice",
+      "description": "References the received notice with its date",
+      "regex": "(?i)(your|the\\s+said|the\\s+captioned|the\\s+above[\\s-]*referred)\\s+(legal\\s+)?notice\\s+dated",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "denial_language",
+      "description": "Specific denial language (not bare general denial)",
+      "regex": "(?i)((specifically|categorically|emphatically|expressly|vehemently)\\s+den(y|ies|ied)|den(y|ies|ied)\\s+in\\s+toto|den(y|ies|ied)\\s+each\\s+and\\s+every|it\\s+is\\s+denied\\s+that)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "without_prejudice",
+      "description": "WITHOUT PREJUDICE rubric or recital",
+      "regex": "(?i)without\\s+prejudice",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "rights_reserved",
+      "description": "Express reservation of rights",
+      "regex": "(?i)(reserv(e|es|ing)\\s+((all|the|its|his|her|their|my|our|every)\\s+)*rights?|rights?\\s+((stand|are|is)\\s+)?(hereby\\s+)?(expressly\\s+|fully\\s+)?reserved)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "para_wise_reply",
+      "description": "Para-wise reply structure",
+      "regex": "(?i)(para(graph)?[\\s-]*wise|(with\\s+reference|in\\s+reply|in\\s+response|as\\s+regards|adverting)\\s+to\\s+para(graph)?s?\\b)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "preliminary_objections",
+      "description": "Preliminary objections section before the merits",
+      "regex": "(?i)preliminary\\s+(objections?|submissions?)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "notice_characterized",
+      "description": "Characterizes the received notice as misconceived/untenable/frivolous",
+      "regex": "(?i)(misconceived|untenable\\s+in\\s+law|false\\s+and\\s+frivolous|frivolous\\s+and\\s+vexatious|baseless\\s+and\\s+(false|vexatious|frivolous))",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "formal_closing",
+      "description": "Formal letter closing",
+      "regex": "(?i)yours\\s+(faithfully|truly|sincerely)",
+      "legal_basis": "CONFIDENT"
+    }
+  ],
+  "forbidden_patterns": [
+    {
+      "id": "no_md_heading",
+      "description": "No markdown headings",
+      "regex": "(?m)^\\s{0,3}#{1,6}\\s"
+    },
+    {
+      "id": "no_md_bold",
+      "description": "No markdown bold",
+      "regex": "\\*\\*"
+    },
+    {
+      "id": "no_ai_voice",
+      "description": "No AI self-reference",
+      "regex": "(?i)as an ai\\b"
+    },
+    {
+      "id": "no_chat_preamble",
+      "description": "No chatty preamble",
+      "regex": "(?i)\\A\\s*(sure|certainly|here(\\s+is|'s))\\b"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "doc_type": "employment_offer_termination",
+  "min_chars": 1100,
+  "max_chars": 9000,
+  "require_disclaimer": true,
+  "is_document": true,
+  "required_patterns": [
+    {
+      "id": "letterhead_reference",
+      "description": "References issuance on company letterhead, e.g. '(On the letterhead of ...)'",
+      "regex": "(?i)letterhead",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "date_line",
+      "description": "Date line near the top of the letter ('Date:' or 'Date -')",
+      "regex": "(?im)^\\s*date\\s*[:\\-]",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "subject_line",
+      "description": "Subject line ('Subject:' or 'Sub:') stating offer or termination of employment",
+      "regex": "(?im)^\\s*sub(?:ject)?\\s*:",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "salutation",
+      "description": "Salutation addressing the employee ('Dear ...')",
+      "regex": "(?im)^\\s*dear\\s+\\S+",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "designation_mention",
+      "description": "Mentions the designation/position held or offered (both sub-kinds)",
+      "regex": "(?i)((position|post|designation|role)\\s+of|designated\\s+as|in\\s+the\\s+capacity\\s+of|employ(ed|ment)\\s+as|services\\s+as)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "effective_date_language",
+      "description": "Effective-date language: joining date (offer) or with-effect-from/last working day (termination)",
+      "regex": "(?i)(date\\s+of\\s+joining|joining\\s+date|with\\s+effect\\s+from|effective\\s+(date|from)|last\\s+working\\s+day)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "notice_period_mention",
+      "description": "Mentions notice period or payment/salary in lieu of notice (both sub-kinds)",
+      "regex": "(?i)(notice\\s+period|days'?\\s+(written\\s+)?(prior\\s+)?notice|pay(ment)?\\s+in\\s+lieu\\s+of\\s+notice|salary\\s+in\\s+lieu\\s+of\\s+notice)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "for_company_signoff",
+      "description": "Sign-off line 'For <Company Name>' (or 'For [COMPANY NAME]') above the authorised signatory",
+      "regex": "(?m)^\\s*[Ff]or\\s+[A-Z\\[]",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "formal_closing",
+      "description": "Formal closing such as 'Yours sincerely' / 'Sincerely' / 'Yours faithfully'",
+      "regex": "(?i)(yours\\s+(sincerely|faithfully)|sincerely\\b)",
+      "legal_basis": "CONFIDENT"
+    }
+  ],
+  "forbidden_patterns": [
+    {
+      "id": "no_md_heading",
+      "description": "No markdown headings",
+      "regex": "(?m)^\\s{0,3}#{1,6}\\s"
+    },
+    {
+      "id": "no_md_bold",
+      "description": "No markdown bold",
+      "regex": "\\*\\*"
+    },
+    {
+      "id": "no_ai_voice",
+      "description": "No AI self-reference",
+      "regex": "(?i)as an ai\\b"
+    },
+    {
+      "id": "no_chat_preamble",
+      "description": "No chatty preamble",
+      "regex": "(?i)\\A\\s*(sure|certainly|here(\\s+is|'s))\\b"
+    },
+    {
+      "id": "no_at_will",
+      "description": "No US-style at-will employment language; not an Indian-law concept",
+      "regex": "(?i)(at[-\\s]will\\s+employment|employment\\s+at[-\\s]will)"
+    },
+    {
+      "id": "no_us_artifacts",
+      "description": "No US payroll/HR artifacts (SSN, 401(k), Form I-9, W-2)",
+      "regex": "(?i)(social\\s+security\\s+number|401\\(k\\)|form\\s+i-9|\\bw-2\\b)"
+    },
+    {
+      "id": "no_foreign_currency",
+      "description": "Compensation must be in ₹/INR, not USD/dollars",
+      "regex": "(?i)(\\bUSD\\b|US\\$|\\$\\s?\\d)"
+    }
+  ]
+}

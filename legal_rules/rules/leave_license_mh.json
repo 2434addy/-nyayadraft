@@ -1,0 +1,101 @@
+{
+  "doc_type": "leave_license_mh",
+  "min_chars": 2800,
+  "max_chars": 14000,
+  "require_disclaimer": true,
+  "is_document": true,
+  "required_patterns": [
+    {
+      "id": "ll_title",
+      "description": "Document styled as Leave and License",
+      "regex": "(?i)leave\\s+and\\s+licen[cs]e",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "parties_terminology",
+      "description": "Both Licensor and Licensee appear as party labels",
+      "regex": "(?i)\\blicensor\\b[\\s\\S]*\\blicensee\\b",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "license_fee_clause",
+      "description": "Payment styled as license fee or monthly compensation",
+      "regex": "(?i)(licen[cs]e\\s+fee|monthly\\s+compensation)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "security_deposit_clause",
+      "description": "Security deposit clause present",
+      "regex": "(?i)security\\s+deposit",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "deposit_interest_free_refundable",
+      "description": "Deposit described as interest-free and/or refundable",
+      "regex": "(?i)(interest[\\s-]*free|without\\s+(any\\s+)?interest|free\\s+of\\s+interest)[\\s\\S]{0,160}(deposit|refund)|deposit[\\s\\S]{0,160}(interest[\\s-]*free|without\\s+(any\\s+)?interest|refundab)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "no_tenancy_clause",
+      "description": "License-only / no-tenancy declaration",
+      "regex": "(?i)(no\\s+tenancy|bare\\s+licen[cs]e|mere\\s+licen[cs]ee?|(shall|does|will)\\s+not[\\s\\S]{0,180}(tenanc|sub[\\s-]?lett?|lease)|nothing\\s+(contained\\s+)?(herein|in\\s+this\\s+agreement)[\\s\\S]{0,180}(tenanc|lease))",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "registration_clause",
+      "description": "Clause on registration of the agreement (sub-registrar / e-registration)",
+      "regex": "(?i)(regist(ered|ration)\\b[\\s\\S]{0,200}(agreement|sub[\\s-]?registrar|stamps?\\b)|agreement[\\s\\S]{0,160}regist(ered|ration)|e[\\s-]registration)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "mrc_act_citation",
+      "description": "Names the Maharashtra Rent Control Act, 1999 (registration mandate)",
+      "regex": "(?i)maharashtra\\s+rent\\s+control\\s+act,?\\s*1999",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "term_in_months",
+      "description": "Term stated as a period/term of N months (value or placeholder)",
+      "regex": "(?i)(period|term)\\s+of[\\s\\S]{0,60}month",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "notice_period_clause",
+      "description": "Written notice period for revocation/vacation",
+      "regex": "(?i)(month[s'’]*\\s+(prior\\s+|advance\\s+)?(written\\s+)?notice|notice\\s+of[\\s\\S]{0,50}month|notice\\s+period)",
+      "legal_basis": "CONFIDENT"
+    }
+  ],
+  "forbidden_patterns": [
+    {
+      "id": "no_md_heading",
+      "description": "No markdown headings",
+      "regex": "(?m)^\\s{0,3}#{1,6}\\s"
+    },
+    {
+      "id": "no_md_bold",
+      "description": "No markdown bold",
+      "regex": "\\*\\*"
+    },
+    {
+      "id": "no_ai_voice",
+      "description": "No AI self-reference",
+      "regex": "(?i)as an ai\\b"
+    },
+    {
+      "id": "no_chat_preamble",
+      "description": "No chatty preamble",
+      "regex": "(?i)\\A\\s*(sure|certainly|here(\\s+is|'s))\\b"
+    },
+    {
+      "id": "no_lessor_lessee",
+      "description": "Lease terminology forbidden: parties must be Licensor/Licensee, not Lessor/Lessee",
+      "regex": "(?i)\\bless(or|ee)s?\\b"
+    },
+    {
+      "id": "no_monthly_rent",
+      "description": "Payment must be styled license fee/compensation, never monthly rent",
+      "regex": "(?i)\\bmonthly\\s+rent\\b"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "doc_type": "consumer_complaint_cpa2019",
+  "display_name": "Consumer Complaint (Section 35, Consumer Protection Act, 2019) before the District Consumer Disputes Redressal Commission",
+  "structural_summary": "A pleading filed before a District Consumer Disputes Redressal Commission. Layout: forum heading naming the Commission and district; complaint number placeholder (Consumer Complaint No. ___ of 20__); cause title giving the complainant's name, address and occupation versus the opposite party with its registered/branch address; title line \"Complaint under Section 35 of the Consumer Protection Act, 2019\"; numbered paragraphs covering parties, the transaction with dates and amounts, defect/deficiency/unfair-trade-practice averments, correspondence and demands, territorial and pecuniary jurisdiction paragraphs, and a limitation paragraph; prayer clause listing reliefs (refund, replacement, compensation, costs); place and date; signatures of complainant and advocate; verification clause; supporting affidavit block; list of documents annexed.",
+  "statutory_requirements": "- Title the complaint as filed under Section 35 of the Consumer Protection Act, 2019, before the District Consumer Disputes Redressal Commission of the relevant district.\n- Plead that the complainant is a \"consumer\" within the meaning of Section 2(7), having bought goods or hired services for consideration and not for resale or a commercial purpose.\n- Aver deficiency in service as defined in Section 2(11), and/or unfair trade practice or defect in the goods [VERIFY: Section 2(10) for \"defect\"; Section 2(47) for \"unfair trade practice\"].\n- Plead territorial jurisdiction: opposite party's office/branch, place where the cause of action arose, or the complainant's residence [VERIFY: Section 34(2)(d) for the complainant-residence option].\n- Plead pecuniary jurisdiction stating the value of the goods or services paid as consideration falls within the District Commission's limits [VERIFY: current pecuniary limits — revised by Central Government notification; do not assert figures].\n- Limitation paragraph: complaint is filed within two years of the date on which the cause of action arose, per Section 69; plead the dates establishing this.\n- Prayer: refund or replacement, removal of the deficiency, compensation for loss, mental agony and harassment, and costs of litigation [VERIFY: Section 39 as the provision enumerating reliefs].\n- Verification by the complainant with place and date, stating the contents are true and correct.\n- Supporting affidavit of the complainant; annex invoices and correspondence with a list of documents.\n- Pay the prescribed fee [VERIFY: fee schedule under the Consumer Protection (Consumer Disputes Redressal Commissions) Rules, 2020].",
+  "fields": [
+    {
+      "name": "complainant_name",
+      "placeholder": "[FULL NAME OF COMPLAINANT]",
+      "given_policy": "always",
+      "kind": "person_name"
+    },
+    {
+      "name": "opposite_party_name",
+      "placeholder": "[NAME OF OPPOSITE PARTY COMPANY]",
+      "given_policy": "always",
+      "kind": "company_name"
+    },
+    {
+      "name": "product_service",
+      "placeholder": "[PRODUCT OR SERVICE COMPLAINED OF]",
+      "given_policy": "always",
+      "kind": "choice",
+      "choices": [
+        "washing machine",
+        "refrigerator",
+        "LED television",
+        "mobile handset",
+        "laptop computer",
+        "sofa set",
+        "residential flat booking",
+        "health insurance policy",
+        "motor vehicle servicing",
+        "coaching classes enrolment",
+        "air ticket",
+        "hospital treatment package",
+        "savings bank account services",
+        "gym membership"
+      ]
+    },
+    {
+      "name": "purchase_amount",
+      "placeholder": "[PURCHASE AMOUNT IN ₹]",
+      "given_policy": "always",
+      "kind": "inr_amount",
+      "range": [
+        3000,
+        4500000
+      ]
+    },
+    {
+      "name": "purchase_date",
+      "placeholder": "[DATE OF PURCHASE OR PAYMENT]",
+      "given_policy": "withholdable",
+      "kind": "date",
+      "anchor_days_range": [
+        -600,
+        -90
+      ]
+    },
+    {
+      "name": "trigger_date",
+      "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]",
+      "given_policy": "withholdable",
+      "kind": "date",
+      "offset_days_range": [
+        7,
+        75
+      ]
+    },
+    {
+      "name": "city",
+      "placeholder": "[CITY]",
+      "given_policy": "withholdable",
+      "kind": "city"
+    },
+    {
+      "name": "complainant_address",
+      "placeholder": "[FULL ADDRESS OF COMPLAINANT]",
+      "given_policy": "withholdable",
+      "kind": "address",
+      "implies_given": [
+        "city"
+      ]
+    },
+    {
+      "name": "opposite_party_address",
+      "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]",
+      "given_policy": "withholdable",
+      "kind": "address",
+      "implies_given": [
+        "city"
+      ]
+    },
+    {
+      "name": "compensation_sought",
+      "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]",
+      "given_policy": "withholdable",
+      "kind": "inr_amount",
+      "range": [
+        10000,
+        500000
+      ]
+    },
+    {
+      "name": "invoice_or_order_number",
+      "placeholder": "[INVOICE OR ORDER NUMBER]",
+      "given_policy": "withholdable",
+      "kind": "id_number"
+    },
+    {
+      "name": "complainant_occupation",
+      "placeholder": "[OCCUPATION OF COMPLAINANT]",
+      "given_policy": "optional",
+      "kind": "profession"
+    },
+    {
+      "name": "advocate_name",
+      "placeholder": "[NAME OF ADVOCATE FOR COMPLAINANT]",
+      "given_policy": "optional",
+      "kind": "person_name"
+    }
+  ]
+}

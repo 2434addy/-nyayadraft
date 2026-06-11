@@ -1,0 +1,140 @@
+{
+  "doc_type": "mou_two_parties",
+  "display_name": "Memorandum of Understanding between Two Parties (Indian Contract Act, 1872)",
+  "structural_summary": "An understanding between two Indian parties recording intent to collaborate. Layout: centred title \"Memorandum of Understanding\"; date and place of execution; parties block describing each party with address, designated \"First Party\" and \"Second Party\"; WHEREAS recitals on background and shared intent; NOW THEREFORE operative clauses — purpose and scope, roles and responsibilities of each party, financial arrangements (if any), term and termination with written notice, confidentiality, a clarification clause stating the MOU is a statement of intent with only specified clauses (confidentiality, dispute resolution, governing law) binding; dispute resolution (good-faith negotiation, then arbitration or courts); governing law and jurisdiction city; IN WITNESS WHEREOF testimonium; signature blocks of both parties with witnesses.",
+  "statutory_requirements": "- Title the document \"Memorandum of Understanding\"; state the date and place of execution.\n- Identify both parties with full names and addresses; designate them \"First Party\" and \"Second Party\" (collectively, \"the Parties\"); for a company party, note authorised signatory.\n- Open with WHEREAS recitals stating background and shared intent.\n- Define purpose and scope; set out each party's roles and responsibilities in separate clauses.\n- Record financial contributions or consideration, if any, in INR figures and words.\n- State the term in months and termination by prior written notice, specifying the notice period.\n- Include a confidentiality clause that survives termination.\n- Include a binding/non-binding clarification: the MOU records intent and is not a binding contract, except specified clauses (confidentiality, dispute resolution, governing law) which bind the Parties; enforceability of binding clauses rests on the Indian Contract Act, 1872 (name the Act, no section needed).\n- Dispute resolution: good-faith negotiation first, then arbitration (customarily under the Arbitration and Conciliation Act, 1996) or courts.\n- Governing law: laws of India; exclusive jurisdiction of courts at the named city.\n- Stamp duty depends on the state of execution [VERIFY: applicable State Stamp Act schedule entry for an agreement/MOU]; do not quote a duty amount in the document.\n- Registration is generally not required unless the MOU creates rights in immovable property [VERIFY: Registration Act, 1908 compulsorily-registrable categories].\n- Close with IN WITNESS WHEREOF, signature blocks for both parties, and witness attestation.",
+  "fields": [
+    {
+      "name": "party_a_company_name",
+      "placeholder": "[NAME OF FIRST PARTY COMPANY]",
+      "given_policy": "always",
+      "kind": "company_name",
+      "description": "First Party entity name (used when both parties are entities)",
+      "when": {
+        "party_mix": "two_companies"
+      }
+    },
+    {
+      "name": "party_a_person_name",
+      "placeholder": "[FULL NAME OF FIRST PARTY]",
+      "given_policy": "always",
+      "kind": "person_name",
+      "description": "First Party individual name (used when First Party is a natural person)",
+      "when": {
+        "party_mix": "person_and_company"
+      }
+    },
+    {
+      "name": "party_b_company_name",
+      "placeholder": "[NAME OF SECOND PARTY COMPANY]",
+      "given_policy": "always",
+      "kind": "company_name",
+      "description": "Second Party entity name (Second Party is always an entity)"
+    },
+    {
+      "name": "city",
+      "placeholder": "[CITY OF EXECUTION]",
+      "given_policy": "withholdable",
+      "kind": "city",
+      "description": "City where the MOU is signed; appears in the date-and-place block"
+    },
+    {
+      "name": "party_a_address",
+      "placeholder": "[FULL ADDRESS OF FIRST PARTY]",
+      "given_policy": "withholdable",
+      "kind": "address",
+      "implies_given": [
+        "city"
+      ],
+      "description": "Registered office or residential address of the First Party"
+    },
+    {
+      "name": "party_b_address",
+      "placeholder": "[FULL ADDRESS OF SECOND PARTY]",
+      "given_policy": "withholdable",
+      "kind": "address",
+      "implies_given": [
+        "city"
+      ],
+      "description": "Registered office address of the Second Party"
+    },
+    {
+      "name": "signing_date",
+      "placeholder": "[DATE OF EXECUTION]",
+      "given_policy": "withholdable",
+      "kind": "date",
+      "anchor_days_range": [
+        -10,
+        30
+      ],
+      "description": "Date the MOU is executed; recent past or near future"
+    },
+    {
+      "name": "term_months",
+      "placeholder": "[TERM OF MOU IN MONTHS]",
+      "given_policy": "withholdable",
+      "kind": "duration_months",
+      "choices": [
+        6,
+        12,
+        18,
+        24,
+        36
+      ],
+      "description": "Initial term of the understanding in months"
+    },
+    {
+      "name": "jurisdiction_city",
+      "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]",
+      "given_policy": "withholdable",
+      "kind": "city",
+      "description": "City whose courts have exclusive jurisdiction; may differ from city of execution"
+    },
+    {
+      "name": "contribution_amount",
+      "placeholder": "[CONTRIBUTION AMOUNT IN ₹]",
+      "given_policy": "optional",
+      "kind": "inr_amount",
+      "range": [
+        100000,
+        5000000
+      ],
+      "description": "Financial contribution or indicative consideration under the financial-arrangements clause"
+    },
+    {
+      "name": "notice_period_days",
+      "placeholder": "[NOTICE PERIOD IN DAYS]",
+      "given_policy": "optional",
+      "kind": "number",
+      "range": [
+        30,
+        90
+      ],
+      "description": "Days of prior written notice required for termination"
+    },
+    {
+      "name": "party_a_signatory_name",
+      "placeholder": "[NAME OF AUTHORISED SIGNATORY OF FIRST PARTY]",
+      "given_policy": "optional",
+      "kind": "person_name",
+      "description": "Authorised signatory signing for the First Party entity",
+      "when": {
+        "party_mix": "two_companies"
+      }
+    },
+    {
+      "name": "party_b_signatory_name",
+      "placeholder": "[NAME OF AUTHORISED SIGNATORY OF SECOND PARTY]",
+      "given_policy": "optional",
+      "kind": "person_name",
+      "description": "Authorised signatory signing for the Second Party entity"
+    },
+    {
+      "name": "witness_one_name",
+      "placeholder": "[NAME OF WITNESS]",
+      "given_policy": "optional",
+      "kind": "person_name",
+      "description": "Attesting witness named in the signature block"
+    }
+  ]
+}

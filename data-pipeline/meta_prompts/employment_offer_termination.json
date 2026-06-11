@@ -1,0 +1,181 @@
+{
+  "doc_type": "employment_offer_termination",
+  "display_name": "Employment Offer Letter / Termination Letter (Indian Private Sector)",
+  "structural_summary": "A formal letter on company letterhead with two sub-kinds: offer of employment and termination of employment, Indian private-sector style. Layout: letterhead reference line; date line; reference number; addressee block (employee name, address); subject line; salutation; body — offers state designation, annual CTC (break-up in an annexure), joining date, probation and confirmation, notice period, work location, statutory benefits (PF, gratuity) and conditions precedent, ending with an acceptance endorsement; terminations recite the employment, the reason, notice served or pay in lieu, last working day, full and final settlement and return of company property; closing 'Yours sincerely', 'For [COMPANY NAME]', signature, name and designation of the authorised signatory.",
+  "statutory_requirements": "- Open on company letterhead with a date line, addressee employee block and a subject line stating the nature of the letter.\n- Both kinds: name the employee and designation, use clear effective-date language, mention the applicable notice period, and close with 'Yours sincerely', 'For [COMPANY NAME]' and the authorised signatory's name and designation.\n- Offers: state annual CTC (break-up in an annexure), joining date, probation period and confirmation, notice period and work location; reference provident fund under the Employees' Provident Funds and Miscellaneous Provisions Act, 1952 and gratuity under the Payment of Gratuity Act, 1972, qualified 'as applicable' since coverage and thresholds vary.\n- Offers: include conditions precedent (document and background verification) and an employee acceptance endorsement.\n- Terminations: recite the employment, state the reason, the last working day, whether notice is served or salary is paid in lieu, full and final settlement, and return of company property.\n- Where state law governs notice or termination conditions, flag [VERIFY: applicable state Shops and Establishments Act] instead of citing a specific state statute.\n- Misconduct terminations: recite the domestic inquiry and insert [VERIFY: domestic inquiry held and principles of natural justice followed]; do not assert compliance.\n- Redundancy or restructuring terminations: insert [VERIFY: workman status and Section 25F, Industrial Disputes Act, 1947 retrenchment compliance] rather than asserting it.\n- Never describe the employment as 'at-will'.",
+  "fields": [
+    {
+      "name": "company_name",
+      "placeholder": "[COMPANY NAME]",
+      "given_policy": "always",
+      "kind": "company_name",
+      "description": "Employer issuing the letter; appears in the letterhead reference and the 'For [COMPANY NAME]' sign-off."
+    },
+    {
+      "name": "employee_name",
+      "placeholder": "[FULL NAME OF EMPLOYEE]",
+      "given_policy": "always",
+      "kind": "person_name",
+      "description": "Addressee of the letter (candidate for offers, employee for terminations)."
+    },
+    {
+      "name": "designation",
+      "placeholder": "[DESIGNATION]",
+      "given_policy": "always",
+      "kind": "profession",
+      "description": "Position offered, or the position held at termination; mentioned in both sub-kinds."
+    },
+    {
+      "name": "employee_address",
+      "placeholder": "[FULL ADDRESS OF EMPLOYEE]",
+      "given_policy": "withholdable",
+      "kind": "address",
+      "implies_given": [
+        "work_location"
+      ],
+      "description": "Residential address for the addressee block; for offers assumed to be in the work location city."
+    },
+    {
+      "name": "annual_ctc",
+      "placeholder": "[ANNUAL CTC IN ₹]",
+      "given_policy": "always",
+      "kind": "inr_amount",
+      "range": [
+        300000,
+        6000000
+      ],
+      "when": {
+        "letter_kind": "offer"
+      },
+      "description": "Annual Cost to Company; break-up referred to an annexure."
+    },
+    {
+      "name": "joining_date",
+      "placeholder": "[DATE OF JOINING]",
+      "given_policy": "withholdable",
+      "kind": "date",
+      "anchor_days_range": [
+        14,
+        60
+      ],
+      "when": {
+        "letter_kind": "offer"
+      },
+      "description": "Future joining date stated in the offer."
+    },
+    {
+      "name": "probation_months",
+      "placeholder": "[PROBATION PERIOD IN MONTHS]",
+      "given_policy": "withholdable",
+      "kind": "duration_months",
+      "choices": [
+        3,
+        6
+      ],
+      "when": {
+        "letter_kind": "offer"
+      },
+      "description": "Probation period from the date of joining, with confirmation on satisfactory completion."
+    },
+    {
+      "name": "notice_period_days",
+      "placeholder": "[NOTICE PERIOD IN DAYS]",
+      "given_policy": "withholdable",
+      "kind": "choice",
+      "choices": [
+        30,
+        60,
+        90
+      ],
+      "when": {
+        "letter_kind": "offer"
+      },
+      "description": "Contractual notice period for either party, in days."
+    },
+    {
+      "name": "work_location",
+      "placeholder": "[WORK LOCATION CITY]",
+      "given_policy": "withholdable",
+      "kind": "city",
+      "when": {
+        "letter_kind": "offer"
+      },
+      "description": "City of the office or plant where the employee will be based."
+    },
+    {
+      "name": "termination_reason",
+      "placeholder": "[REASON FOR TERMINATION]",
+      "given_policy": "always",
+      "kind": "choice",
+      "choices": [
+        "redundancy arising from organisational restructuring",
+        "non-confirmation of services during the probation period",
+        "misconduct established in a domestic inquiry",
+        "continued unauthorised absence from duty"
+      ],
+      "when": {
+        "letter_kind": "termination"
+      },
+      "description": "Stated ground for termination; drives which [VERIFY] flag the document must carry."
+    },
+    {
+      "name": "last_working_day",
+      "placeholder": "[LAST WORKING DAY]",
+      "given_policy": "withholdable",
+      "kind": "date",
+      "anchor_days_range": [
+        7,
+        90
+      ],
+      "when": {
+        "letter_kind": "termination"
+      },
+      "description": "Future last working day; first and only date field generated for termination letters."
+    },
+    {
+      "name": "notice_disposition",
+      "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]",
+      "given_policy": "withholdable",
+      "kind": "choice",
+      "choices": [
+        "the notice period will be served until the last working day",
+        "payment in lieu of the notice period will be made with the full and final settlement"
+      ],
+      "when": {
+        "letter_kind": "termination"
+      },
+      "description": "Whether the contractual notice is served or salary is paid in lieu."
+    },
+    {
+      "name": "signatory_name",
+      "placeholder": "[NAME OF AUTHORISED SIGNATORY]",
+      "given_policy": "optional",
+      "kind": "person_name",
+      "description": "Name printed under the signature in the 'For [COMPANY NAME]' block."
+    },
+    {
+      "name": "signatory_designation",
+      "placeholder": "[DESIGNATION OF AUTHORISED SIGNATORY]",
+      "given_policy": "optional",
+      "kind": "choice",
+      "choices": [
+        "Head - Human Resources",
+        "HR Manager",
+        "Director",
+        "Chief People Officer",
+        "General Manager - HR"
+      ],
+      "description": "Designation of the authorised signatory."
+    },
+    {
+      "name": "employee_id",
+      "placeholder": "[EMPLOYEE ID]",
+      "given_policy": "optional",
+      "kind": "id_number",
+      "when": {
+        "letter_kind": "termination"
+      },
+      "description": "Employee code quoted in the addressee block of termination letters."
+    }
+  ]
+}

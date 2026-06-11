@@ -1,40 +1,1465 @@
 {
   "cheque_bounce_138": [
-    { "id": "friendly_loan_repayment", "summary": "A cheque issued to repay a personal/friendly hand loan was dishonoured.", "params": { "amount_range_inr": [50000, 800000] } },
-    { "id": "business_invoice_payment", "summary": "A buyer's cheque against a supplier's invoice for goods was dishonoured.", "params": { "amount_range_inr": [100000, 1500000] } },
-    { "id": "rent_arrears_cheque", "summary": "A tenant's cheque covering accumulated rent arrears bounced.", "params": { "amount_range_inr": [30000, 300000] } },
-    { "id": "security_deposit_refund", "summary": "A landlord's cheque refunding the security deposit after vacating bounced.", "params": { "amount_range_inr": [50000, 500000] } },
-    { "id": "salary_dues_cheque", "summary": "An employer's cheque for unpaid salary / full-and-final settlement was dishonoured.", "params": { "amount_range_inr": [40000, 600000] } },
-    { "id": "property_advance_refund", "summary": "A seller's cheque refunding token/advance money for a cancelled property deal bounced.", "params": { "amount_range_inr": [200000, 1500000] } },
-    { "id": "freelance_fee_cheque", "summary": "A client's cheque for completed freelance/professional services was dishonoured.", "params": { "amount_range_inr": [25000, 400000] } },
-    { "id": "vehicle_sale_balance", "summary": "The buyer's cheque for the balance price of a used vehicle bounced.", "params": { "amount_range_inr": [50000, 900000] } },
-    { "id": "contractor_work_payment", "summary": "A cheque paying a contractor for completed civil/renovation work was dishonoured.", "params": { "amount_range_inr": [100000, 1200000] } },
-    { "id": "education_fee_refund", "summary": "An institute's refund cheque after a withdrawn admission bounced.", "params": { "amount_range_inr": [30000, 350000] } },
-    { "id": "loan_emi_consolidated", "summary": "A consolidated cheque towards instalments owed to a private lender was dishonoured.", "params": { "amount_range_inr": [60000, 700000] } },
-    { "id": "business_partnership_settlement", "summary": "A settlement cheque on exit from a small business arrangement bounced.", "params": { "amount_range_inr": [200000, 1500000] } },
-    { "id": "goods_supplied_credit", "summary": "A cheque against goods supplied on credit to a retail shop was dishonoured.", "params": { "amount_range_inr": [25000, 500000] } },
-    { "id": "machinery_purchase_balance", "summary": "A cheque for the balance payment of purchased machinery/equipment bounced.", "params": { "amount_range_inr": [150000, 1500000] } }
+    {
+      "id": "friendly_loan_repayment",
+      "summary": "A cheque issued to repay a personal/friendly hand loan was dishonoured.",
+      "params": {
+        "amount_range_inr": [
+          50000,
+          800000
+        ]
+      }
+    },
+    {
+      "id": "business_invoice_payment",
+      "summary": "A buyer's cheque against a supplier's invoice for goods was dishonoured.",
+      "params": {
+        "amount_range_inr": [
+          100000,
+          1500000
+        ]
+      }
+    },
+    {
+      "id": "rent_arrears_cheque",
+      "summary": "A tenant's cheque covering accumulated rent arrears bounced.",
+      "params": {
+        "amount_range_inr": [
+          30000,
+          300000
+        ]
+      }
+    },
+    {
+      "id": "security_deposit_refund",
+      "summary": "A landlord's cheque refunding the security deposit after vacating bounced.",
+      "params": {
+        "amount_range_inr": [
+          50000,
+          500000
+        ]
+      }
+    },
+    {
+      "id": "salary_dues_cheque",
+      "summary": "An employer's cheque for unpaid salary / full-and-final settlement was dishonoured.",
+      "params": {
+        "amount_range_inr": [
+          40000,
+          600000
+        ]
+      }
+    },
+    {
+      "id": "property_advance_refund",
+      "summary": "A seller's cheque refunding token/advance money for a cancelled property deal bounced.",
+      "params": {
+        "amount_range_inr": [
+          200000,
+          1500000
+        ]
+      }
+    },
+    {
+      "id": "freelance_fee_cheque",
+      "summary": "A client's cheque for completed freelance/professional services was dishonoured.",
+      "params": {
+        "amount_range_inr": [
+          25000,
+          400000
+        ]
+      }
+    },
+    {
+      "id": "vehicle_sale_balance",
+      "summary": "The buyer's cheque for the balance price of a used vehicle bounced.",
+      "params": {
+        "amount_range_inr": [
+          50000,
+          900000
+        ]
+      }
+    },
+    {
+      "id": "contractor_work_payment",
+      "summary": "A cheque paying a contractor for completed civil/renovation work was dishonoured.",
+      "params": {
+        "amount_range_inr": [
+          100000,
+          1200000
+        ]
+      }
+    },
+    {
+      "id": "education_fee_refund",
+      "summary": "An institute's refund cheque after a withdrawn admission bounced.",
+      "params": {
+        "amount_range_inr": [
+          30000,
+          350000
+        ]
+      }
+    },
+    {
+      "id": "loan_emi_consolidated",
+      "summary": "A consolidated cheque towards instalments owed to a private lender was dishonoured.",
+      "params": {
+        "amount_range_inr": [
+          60000,
+          700000
+        ]
+      }
+    },
+    {
+      "id": "business_partnership_settlement",
+      "summary": "A settlement cheque on exit from a small business arrangement bounced.",
+      "params": {
+        "amount_range_inr": [
+          200000,
+          1500000
+        ]
+      }
+    },
+    {
+      "id": "goods_supplied_credit",
+      "summary": "A cheque against goods supplied on credit to a retail shop was dishonoured.",
+      "params": {
+        "amount_range_inr": [
+          25000,
+          500000
+        ]
+      }
+    },
+    {
+      "id": "machinery_purchase_balance",
+      "summary": "A cheque for the balance payment of purchased machinery/equipment bounced.",
+      "params": {
+        "amount_range_inr": [
+          150000,
+          1500000
+        ]
+      }
+    }
   ],
   "out_of_scope": [
-    { "id": "will_i_win_case", "summary": "User asks whether they will win their pending court case.", "nearest_supported": null },
-    { "id": "should_i_sue_builder", "summary": "User asks whether they should sue their builder for delay.", "nearest_supported": "consumer_complaint_cpa2019" },
-    { "id": "divorce_petition", "summary": "User asks for a divorce petition to file in family court.", "nearest_supported": null },
-    { "id": "mutual_consent_divorce_terms", "summary": "User wants a mutual-consent divorce settlement drafted.", "nearest_supported": null },
-    { "id": "bail_application", "summary": "User asks for a bail application for a relative in custody.", "nearest_supported": null },
-    { "id": "anticipatory_bail", "summary": "User asks for an anticipatory bail application.", "nearest_supported": null },
-    { "id": "will_testament", "summary": "User asks for a will/testament to be drafted.", "nearest_supported": null },
-    { "id": "draft_fir", "summary": "User asks for an FIR/police complaint to be drafted.", "nearest_supported": null },
-    { "id": "pil_draft", "summary": "User wants a Public Interest Litigation drafted.", "nearest_supported": null },
-    { "id": "gst_notice_reply", "summary": "User wants a reply to a GST show-cause notice from the tax department.", "nearest_supported": "reply_to_legal_notice" },
-    { "id": "court_representation", "summary": "User asks the assistant to appear or argue for them in court.", "nearest_supported": null },
-    { "id": "interpret_judgment", "summary": "User asks what a court judgment means for their case.", "nearest_supported": null },
-    { "id": "sale_deed_property", "summary": "User asks for a property sale deed / conveyance deed.", "nearest_supported": null },
-    { "id": "how_much_compensation", "summary": "User asks how much compensation they can get for a faulty product.", "nearest_supported": "consumer_complaint_cpa2019" },
-    { "id": "chances_cheque_case", "summary": "User asks their chances in a cheque bounce case and what strategy to use.", "nearest_supported": "cheque_bounce_138" },
-    { "id": "employment_dispute_strategy", "summary": "User asks how to fight their termination and what tactics work.", "nearest_supported": "legal_notice_money_recovery" },
-    { "id": "lease_deed_bengaluru", "summary": "User wants a 5-year registered commercial lease deed for Bengaluru.", "nearest_supported": "leave_license_mh" },
-    { "id": "income_tax_appeal", "summary": "User wants an income tax appeal drafted against an assessment order.", "nearest_supported": null },
-    { "id": "trademark_objection_reply", "summary": "User wants a reply to a trademark examination objection.", "nearest_supported": null },
-    { "id": "property_title_check", "summary": "User asks the assistant to verify whether a property's title is clear.", "nearest_supported": null }
+    {
+      "id": "will_i_win_case",
+      "summary": "User asks whether they will win their pending court case.",
+      "nearest_supported": null
+    },
+    {
+      "id": "should_i_sue_builder",
+      "summary": "User asks whether they should sue their builder for delay.",
+      "nearest_supported": "consumer_complaint_cpa2019"
+    },
+    {
+      "id": "divorce_petition",
+      "summary": "User asks for a divorce petition to file in family court.",
+      "nearest_supported": null
+    },
+    {
+      "id": "mutual_consent_divorce_terms",
+      "summary": "User wants a mutual-consent divorce settlement drafted.",
+      "nearest_supported": null
+    },
+    {
+      "id": "bail_application",
+      "summary": "User asks for a bail application for a relative in custody.",
+      "nearest_supported": null
+    },
+    {
+      "id": "anticipatory_bail",
+      "summary": "User asks for an anticipatory bail application.",
+      "nearest_supported": null
+    },
+    {
+      "id": "will_testament",
+      "summary": "User asks for a will/testament to be drafted.",
+      "nearest_supported": null
+    },
+    {
+      "id": "draft_fir",
+      "summary": "User asks for an FIR/police complaint to be drafted.",
+      "nearest_supported": null
+    },
+    {
+      "id": "pil_draft",
+      "summary": "User wants a Public Interest Litigation drafted.",
+      "nearest_supported": null
+    },
+    {
+      "id": "gst_notice_reply",
+      "summary": "User wants a reply to a GST show-cause notice from the tax department.",
+      "nearest_supported": "reply_to_legal_notice"
+    },
+    {
+      "id": "court_representation",
+      "summary": "User asks the assistant to appear or argue for them in court.",
+      "nearest_supported": null
+    },
+    {
+      "id": "interpret_judgment",
+      "summary": "User asks what a court judgment means for their case.",
+      "nearest_supported": null
+    },
+    {
+      "id": "sale_deed_property",
+      "summary": "User asks for a property sale deed / conveyance deed.",
+      "nearest_supported": null
+    },
+    {
+      "id": "how_much_compensation",
+      "summary": "User asks how much compensation they can get for a faulty product.",
+      "nearest_supported": "consumer_complaint_cpa2019"
+    },
+    {
+      "id": "chances_cheque_case",
+      "summary": "User asks their chances in a cheque bounce case and what strategy to use.",
+      "nearest_supported": "cheque_bounce_138"
+    },
+    {
+      "id": "employment_dispute_strategy",
+      "summary": "User asks how to fight their termination and what tactics work.",
+      "nearest_supported": "legal_notice_money_recovery"
+    },
+    {
+      "id": "lease_deed_bengaluru",
+      "summary": "User wants a 5-year registered commercial lease deed for Bengaluru.",
+      "nearest_supported": "leave_license_mh"
+    },
+    {
+      "id": "income_tax_appeal",
+      "summary": "User wants an income tax appeal drafted against an assessment order.",
+      "nearest_supported": null
+    },
+    {
+      "id": "trademark_objection_reply",
+      "summary": "User wants a reply to a trademark examination objection.",
+      "nearest_supported": null
+    },
+    {
+      "id": "property_title_check",
+      "summary": "User asks the assistant to verify whether a property's title is clear.",
+      "nearest_supported": null
+    }
+  ],
+  "leave_license_mh": [
+    {
+      "id": "residential_flat_mumbai",
+      "summary": "Owner licenses a 2BHK flat in Andheri West, Mumbai to a salaried couple for 11 months; society intimation and maintenance terms included.",
+      "params": {
+        "licensee_kind": "individual",
+        "amount_range_inr": [
+          25000,
+          90000
+        ]
+      }
+    },
+    {
+      "id": "residential_flat_pune",
+      "summary": "Retired teacher licenses a semi-furnished 1BHK in Kothrud, Pune to an IT professional; 11-month term with a three-month lock-in.",
+      "params": {
+        "licensee_kind": "individual",
+        "amount_range_inr": [
+          15000,
+          45000
+        ]
+      }
+    },
+    {
+      "id": "single_room_pg_thane",
+      "summary": "Homeowner licenses one furnished room with shared kitchen in a Thane flat to a postgraduate student as paying-guest style accommodation.",
+      "params": {
+        "licensee_kind": "individual",
+        "amount_range_inr": [
+          6000,
+          18000
+        ]
+      }
+    },
+    {
+      "id": "shop_premises_thane",
+      "summary": "Shop owner licenses a ground-floor 250 sq ft shop on Gokhale Road, Thane to a kirana store proprietor; commercial use only.",
+      "params": {
+        "licensee_kind": "individual",
+        "amount_range_inr": [
+          20000,
+          80000
+        ]
+      }
+    },
+    {
+      "id": "small_office_pune",
+      "summary": "Private limited startup licenses a 600 sq ft office in Baner, Pune for its registered office; 36-month term with annual escalation.",
+      "params": {
+        "licensee_kind": "company",
+        "amount_range_inr": [
+          25000,
+          100000
+        ]
+      }
+    },
+    {
+      "id": "bungalow_floor_nashik",
+      "summary": "Owner licenses the ground floor of a Nashik bungalow with garden access to a retired bank officer couple for 22 months.",
+      "params": {
+        "licensee_kind": "individual",
+        "amount_range_inr": [
+          12000,
+          35000
+        ]
+      }
+    },
+    {
+      "id": "flat_parking_navi_mumbai",
+      "summary": "Flat in Vashi, Navi Mumbai licensed with one covered stilt parking slot included; licensee a shipping executive on an 11-month term.",
+      "params": {
+        "licensee_kind": "individual",
+        "amount_range_inr": [
+          20000,
+          60000
+        ]
+      }
+    },
+    {
+      "id": "company_employee_housing_mumbai",
+      "summary": "IT company licenses a furnished 3BHK in Powai, Mumbai as residence for its vice-president; company pays fee and deposit, employee occupies.",
+      "params": {
+        "licensee_kind": "company",
+        "amount_range_inr": [
+          60000,
+          250000
+        ]
+      }
+    },
+    {
+      "id": "corporate_guest_house_pune",
+      "summary": "Manufacturing company licenses a furnished 2BHK in Hinjawadi, Pune as a guest house for visiting engineers; housekeeping by licensee.",
+      "params": {
+        "licensee_kind": "company",
+        "amount_range_inr": [
+          30000,
+          120000
+        ]
+      }
+    },
+    {
+      "id": "retail_showroom_nagpur",
+      "summary": "Apparel retail chain licenses a main-road showroom in Sitabuldi, Nagpur with signage rights; 60-month term and six-month lock-in.",
+      "params": {
+        "licensee_kind": "company",
+        "amount_range_inr": [
+          40000,
+          150000
+        ]
+      }
+    },
+    {
+      "id": "clinic_premises_mumbai",
+      "summary": "Dentist licenses a commercial unit in Borivali West, Mumbai for a dental clinic; municipal permissions are the licensee's responsibility.",
+      "params": {
+        "licensee_kind": "individual",
+        "amount_range_inr": [
+          30000,
+          100000
+        ]
+      }
+    },
+    {
+      "id": "nri_licensor_bandra",
+      "summary": "NRI owner working in Dubai licenses her furnished Bandra flat to an expatriate manager; fee payable to her NRO account.",
+      "params": {
+        "licensee_kind": "individual",
+        "amount_range_inr": [
+          50000,
+          200000
+        ]
+      }
+    },
+    {
+      "id": "relocating_professional_pune",
+      "summary": "Chartered accountant relocating from Delhi to Pune takes a furnished 2BHK in Wakad on license; police intimation clause emphasised.",
+      "params": {
+        "licensee_kind": "individual",
+        "amount_range_inr": [
+          20000,
+          60000
+        ]
+      }
+    },
+    {
+      "id": "godown_bhiwandi_company",
+      "summary": "Logistics company licenses a small godown in Bhiwandi, Thane district for storage; fire-safety compliance is the licensee's responsibility.",
+      "params": {
+        "licensee_kind": "company",
+        "amount_range_inr": [
+          35000,
+          150000
+        ]
+      }
+    }
+  ],
+  "legal_notice_money_recovery": [
+    {
+      "id": "unpaid_invoice_supplier",
+      "summary": "A Pune auto-components supplier's invoices to a Mumbai distributor remain unpaid ninety days beyond agreed credit terms despite repeated reminders.",
+      "params": {
+        "amount_range_inr": [
+          100000,
+          2000000
+        ]
+      }
+    },
+    {
+      "id": "friendly_hand_loan",
+      "summary": "A hand loan given to a college friend in Mumbai for a medical emergency has not been repaid despite repeated promises.",
+      "params": {
+        "amount_range_inr": [
+          50000,
+          800000
+        ]
+      }
+    },
+    {
+      "id": "unpaid_salary_dues",
+      "summary": "A marketing executive who resigned from a Thane company is owed two months' salary and reimbursements; HR has stopped responding.",
+      "params": {
+        "amount_range_inr": [
+          40000,
+          400000
+        ]
+      }
+    },
+    {
+      "id": "advance_undelivered_goods",
+      "summary": "A homeowner paid a Nashik furniture workshop a large advance for modular furniture that was never delivered or refunded.",
+      "params": {
+        "amount_range_inr": [
+          30000,
+          500000
+        ]
+      }
+    },
+    {
+      "id": "freelancer_fee_unpaid",
+      "summary": "A freelance graphic designer in Mumbai completed a branding project for a startup; her invoices have been ignored for months.",
+      "params": {
+        "amount_range_inr": [
+          25000,
+          300000
+        ]
+      }
+    },
+    {
+      "id": "rent_arrears_recovery",
+      "summary": "A Nagpur landlord seeks four months of unpaid rent (money claim only) from a tenant who vacated without settling dues.",
+      "params": {
+        "amount_range_inr": [
+          60000,
+          600000
+        ]
+      }
+    },
+    {
+      "id": "society_maintenance_dues",
+      "summary": "A Navi Mumbai co-operative housing society demands long-pending maintenance arrears from a flat owner who ignores bills and reminders.",
+      "params": {
+        "amount_range_inr": [
+          30000,
+          300000
+        ]
+      }
+    },
+    {
+      "id": "refundable_deposit_not_returned",
+      "summary": "A tenant who vacated a Pune flat after due notice has not received the refundable security deposit despite handing over possession.",
+      "params": {
+        "amount_range_inr": [
+          50000,
+          500000
+        ]
+      }
+    },
+    {
+      "id": "contractor_final_bill",
+      "summary": "An Aurangabad civil contractor's final bill for completed interior work is withheld by the developer without raising any defect.",
+      "params": {
+        "amount_range_inr": [
+          200000,
+          2500000
+        ]
+      }
+    },
+    {
+      "id": "coaching_fee_refund",
+      "summary": "A Delhi coaching institute cancelled a batch but refuses to refund the admission and tuition fees paid in advance.",
+      "params": {
+        "amount_range_inr": [
+          20000,
+          150000
+        ]
+      }
+    },
+    {
+      "id": "wedding_caterer_advance",
+      "summary": "A Jaipur caterer took a substantial advance for a wedding, failed to provide the services, and refuses to return the money.",
+      "params": {
+        "amount_range_inr": [
+          50000,
+          400000
+        ]
+      }
+    },
+    {
+      "id": "transporter_freight_dues",
+      "summary": "An Ahmedabad transport operator is owed freight charges for multiple consignments carried on credit for a textile consignor.",
+      "params": {
+        "amount_range_inr": [
+          80000,
+          900000
+        ]
+      }
+    },
+    {
+      "id": "partnership_exit_settlement",
+      "summary": "A retiring partner of a Kolhapur trading firm has not been paid the settlement amount recorded in the retirement deed.",
+      "params": {
+        "amount_range_inr": [
+          200000,
+          1500000
+        ]
+      }
+    },
+    {
+      "id": "pharma_credit_supplies",
+      "summary": "A Nagpur pharmaceutical distributor supplied medicines on credit to a chemist who has defaulted on the agreed running account.",
+      "params": {
+        "amount_range_inr": [
+          50000,
+          600000
+        ]
+      }
+    }
+  ],
+  "legal_notice_landlord_tenant": [
+    {
+      "id": "arrears_eviction_mumbai_flat",
+      "summary": "Tenant of a 1BHK flat in Andheri, Mumbai has not paid rent for months; landlord demands arrears and vacant possession.",
+      "params": {
+        "direction": "from_landlord",
+        "amount_range_inr": [
+          15000,
+          80000
+        ]
+      }
+    },
+    {
+      "id": "personal_use_pune_flat",
+      "summary": "Pune landlord requires the flat for his son's family after marriage; notice to quit month-to-month tenancy.",
+      "params": {
+        "direction": "from_landlord"
+      }
+    },
+    {
+      "id": "holdover_after_licence_expiry_thane",
+      "summary": "Leave-and-licence for a Thane flat expired; licensee continues in occupation without renewal; landlord demands handover of possession.",
+      "params": {
+        "direction": "from_landlord",
+        "amount_range_inr": [
+          12000,
+          60000
+        ]
+      }
+    },
+    {
+      "id": "illegal_subletting_nagpur_shop",
+      "summary": "Nagpur shop tenant sublet part of the premises to a third party without the landlord's written consent; termination notice.",
+      "params": {
+        "direction": "from_landlord",
+        "amount_range_inr": [
+          10000,
+          70000
+        ]
+      }
+    },
+    {
+      "id": "damage_alterations_nashik",
+      "summary": "Nashik tenant carried out unauthorised structural alterations damaging the premises; landlord demands restoration and possession.",
+      "params": {
+        "direction": "from_landlord"
+      }
+    },
+    {
+      "id": "persistent_late_payment_bengaluru",
+      "summary": "Bengaluru apartment tenant habitually pays rent weeks late despite repeated reminders; landlord terminates the tenancy.",
+      "params": {
+        "direction": "from_landlord",
+        "amount_range_inr": [
+          18000,
+          90000
+        ]
+      }
+    },
+    {
+      "id": "commercial_arrears_delhi_shop",
+      "summary": "Delhi market shop tenant is in arrears of rent and maintenance charges; landlord demands payment and possession.",
+      "params": {
+        "direction": "from_landlord",
+        "amount_range_inr": [
+          40000,
+          150000
+        ]
+      }
+    },
+    {
+      "id": "deposit_not_refunded_mumbai",
+      "summary": "Tenant vacated a Mumbai flat and handed over keys; landlord has not refunded the security deposit despite reminders.",
+      "params": {
+        "direction": "from_tenant",
+        "tenant_vacated": true,
+        "amount_range_inr": [
+          50000,
+          500000
+        ]
+      }
+    },
+    {
+      "id": "unjustified_deposit_deductions_thane",
+      "summary": "Thane landlord returned only part of the deposit, deducting arbitrary painting and repair charges; tenant demands the balance.",
+      "params": {
+        "direction": "from_tenant",
+        "tenant_vacated": true,
+        "amount_range_inr": [
+          40000,
+          350000
+        ]
+      }
+    },
+    {
+      "id": "water_electricity_cut_pune",
+      "summary": "Pune landlord disconnected water and electricity to pressure the tenant to vacate; tenant demands immediate restoration.",
+      "params": {
+        "direction": "from_tenant"
+      }
+    },
+    {
+      "id": "rent_receipts_refused_kolhapur",
+      "summary": "Kolhapur landlord accepts cash rent but refuses to issue rent receipts; tenant demands receipts for all payments made.",
+      "params": {
+        "direction": "from_tenant",
+        "amount_range_inr": [
+          6000,
+          25000
+        ]
+      }
+    },
+    {
+      "id": "illegal_lockout_hyderabad",
+      "summary": "Hyderabad landlord changed the locks while the tenant was travelling; tenant demands restoration of possession and belongings.",
+      "params": {
+        "direction": "from_tenant"
+      }
+    },
+    {
+      "id": "harassment_for_vacation_delhi",
+      "summary": "Delhi landlord and brokers repeatedly visit and threaten the tenant's family to force vacation; tenant demands they desist.",
+      "params": {
+        "direction": "from_tenant"
+      }
+    },
+    {
+      "id": "unauthorised_entry_bengaluru",
+      "summary": "Bengaluru landlord enters the flat without notice and shows it to prospective buyers; tenant demands cessation of interference.",
+      "params": {
+        "direction": "from_tenant"
+      }
+    }
+  ],
+  "consumer_complaint_cpa2019": [
+    {
+      "id": "defective_washing_machine",
+      "summary": "A Mumbai homemaker's front-load washing machine failed within warranty; the manufacturer's service centre made three failed repair visits and refuses replacement.",
+      "params": {
+        "amount_range_inr": [
+          15000,
+          90000
+        ]
+      }
+    },
+    {
+      "id": "ecommerce_non_delivery",
+      "summary": "A Pune student paid online for a laptop on an e-commerce marketplace; the order was never delivered and refund requests were ignored.",
+      "params": {
+        "amount_range_inr": [
+          25000,
+          120000
+        ]
+      }
+    },
+    {
+      "id": "insurance_claim_repudiated",
+      "summary": "A Nagpur schoolteacher's health insurance claim for hospitalisation was repudiated citing pre-existing disease despite full disclosure at proposal stage.",
+      "params": {
+        "amount_range_inr": [
+          60000,
+          900000
+        ]
+      }
+    },
+    {
+      "id": "builder_possession_delay",
+      "summary": "A Thane buyer paid most of the consideration for a 1BHK flat; the builder has delayed possession well beyond the agreed date despite repeated demands.",
+      "params": {
+        "amount_range_inr": [
+          1500000,
+          4500000
+        ]
+      }
+    },
+    {
+      "id": "faulty_vehicle_servicing",
+      "summary": "A Nashik businessman's car came back from authorised servicing with engine damage; the workshop denies responsibility and demands further charges.",
+      "params": {
+        "amount_range_inr": [
+          10000,
+          200000
+        ]
+      }
+    },
+    {
+      "id": "coaching_class_refund_refusal",
+      "summary": "A Latur student paid full fees for a JEE coaching batch the institute later cancelled; the institute refuses any refund citing a no-refund clause.",
+      "params": {
+        "amount_range_inr": [
+          30000,
+          250000
+        ]
+      }
+    },
+    {
+      "id": "airline_refund_denied",
+      "summary": "A Delhi consultant's flight was cancelled by the airline, which has not refunded the fare months later despite repeated written complaints.",
+      "params": {
+        "amount_range_inr": [
+          4000,
+          90000
+        ]
+      }
+    },
+    {
+      "id": "hospital_overbilling",
+      "summary": "An Aurangabad patient was billed far above the agreed package rate for surgery; the hospital withheld discharge papers until excess payment, a deficiency in service.",
+      "params": {
+        "amount_range_inr": [
+          80000,
+          700000
+        ]
+      }
+    },
+    {
+      "id": "bank_charges_dispute",
+      "summary": "A Mumbai senior citizen's savings account was debited with unexplained service charges; the bank failed to reverse them despite written complaints.",
+      "params": {
+        "amount_range_inr": [
+          5000,
+          60000
+        ]
+      }
+    },
+    {
+      "id": "defective_furniture",
+      "summary": "A Kolhapur couple's sofa set arrived with cracked frames and torn upholstery; the dealer ignored replacement requests throughout the warranty period.",
+      "params": {
+        "amount_range_inr": [
+          20000,
+          150000
+        ]
+      }
+    },
+    {
+      "id": "mobile_dead_on_arrival",
+      "summary": "A Solapur shopkeeper's new smartphone was dead on arrival; both the retailer and the brand refuse the promised DOA replacement.",
+      "params": {
+        "amount_range_inr": [
+          10000,
+          120000
+        ]
+      }
+    },
+    {
+      "id": "gym_membership_refund",
+      "summary": "A Navi Mumbai IT employee paid for an annual gym membership; the branch shut within a month and the operator refuses any refund.",
+      "params": {
+        "amount_range_inr": [
+          8000,
+          60000
+        ]
+      }
+    },
+    {
+      "id": "broadband_advance_disconnection",
+      "summary": "A Bengaluru freelancer paid annual broadband charges in advance; the provider disconnected service within weeks and refuses refund or restoration.",
+      "params": {
+        "amount_range_inr": [
+          6000,
+          50000
+        ]
+      }
+    }
+  ],
+  "affidavit_general": [
+    {
+      "id": "passport_aadhaar_name_mismatch",
+      "summary": "Pune software engineer's name is spelt differently in passport and Aadhaar; affidavit affirms both names denote one and the same person for passport reissue.",
+      "params": {
+        "purpose": "name_mismatch"
+      }
+    },
+    {
+      "id": "bank_kyc_initials_expansion",
+      "summary": "Nagpur account holder's PAN carries initials while bank records show the expanded name; bank seeks a one-and-the-same-person affidavit for KYC updation.",
+      "params": {
+        "purpose": "name_mismatch"
+      }
+    },
+    {
+      "id": "married_name_property_records",
+      "summary": "Chennai homemaker appears under maiden and married names across property papers; affidavit confirms one and the same person for mutation entry.",
+      "params": {
+        "purpose": "name_mismatch"
+      }
+    },
+    {
+      "id": "lpg_connection_address_proof",
+      "summary": "Mumbai tenant lacks a utility bill in his own name; affidavit of current residence required for a new LPG gas connection.",
+      "params": {
+        "purpose": "address_proof"
+      }
+    },
+    {
+      "id": "voter_enrolment_address_proof",
+      "summary": "Family recently shifted to Thane; deponent swears an address affidavit to support voter ID enrolment at the new residence.",
+      "params": {
+        "purpose": "address_proof"
+      }
+    },
+    {
+      "id": "jee_gap_year_admission",
+      "summary": "Nashik student took a year after HSC to prepare for engineering entrance examinations; college demands a gap-year affidavit at admission.",
+      "params": {
+        "purpose": "education_gap_year"
+      }
+    },
+    {
+      "id": "pg_admission_family_illness_gap",
+      "summary": "Delhi graduate explains a two-year break before post-graduation caused by a parent's prolonged illness; university requires a sworn explanation.",
+      "params": {
+        "purpose": "education_gap_year"
+      }
+    },
+    {
+      "id": "duplicate_share_certificate",
+      "summary": "Mumbai investor misplaced original share certificates during house shifting; the company's registrar requires an affidavit before issuing duplicates.",
+      "params": {
+        "purpose": "lost_document"
+      }
+    },
+    {
+      "id": "lost_ssc_marksheet",
+      "summary": "Chhatrapati Sambhajinagar candidate lost his SSC marksheet in transit; the divisional board requires an affidavit before issuing a duplicate.",
+      "params": {
+        "purpose": "lost_document"
+      }
+    },
+    {
+      "id": "lost_sale_deed_refinance",
+      "summary": "Bengaluru flat owner cannot trace the original sale deed; affidavit needed to obtain a certified copy and complete bank loan refinance.",
+      "params": {
+        "purpose": "lost_document"
+      }
+    },
+    {
+      "id": "scholarship_income_affidavit",
+      "summary": "Solapur farmer declares modest annual family income to support his daughter's state post-matric scholarship application.",
+      "params": {
+        "purpose": "income_declaration",
+        "amount_range_inr": [
+          60000,
+          250000
+        ]
+      }
+    },
+    {
+      "id": "ews_income_affidavit",
+      "summary": "Lucknow applicant declares gross annual family income for an EWS certificate; the tehsil office requires a sworn income affidavit.",
+      "params": {
+        "purpose": "income_declaration",
+        "amount_range_inr": [
+          150000,
+          750000
+        ]
+      }
+    },
+    {
+      "id": "passport_dob_affidavit",
+      "summary": "Kolhapur applicant's school records carry no date of birth entry; affidavit affirms his correct date of birth for passport issuance.",
+      "params": {
+        "purpose": "dob_support"
+      }
+    },
+    {
+      "id": "pension_dob_correction",
+      "summary": "Retired Jalgaon teacher's service book records a clerical error in date of birth; affidavit states the correct date for pension processing.",
+      "params": {
+        "purpose": "dob_support"
+      }
+    }
+  ],
+  "employment_offer_termination": [
+    {
+      "id": "it_services_offer_pune",
+      "summary": "Pune IT services company offers a software engineer role on six-month probation with a sixty-day notice period.",
+      "params": {
+        "letter_kind": "offer",
+        "amount_range_inr": [
+          600000,
+          2400000
+        ]
+      }
+    },
+    {
+      "id": "auto_components_offer_aurangabad",
+      "summary": "Auto-components manufacturer at Chhatrapati Sambhajinagar (Aurangabad) appoints a production supervisor at its MIDC Waluj plant.",
+      "params": {
+        "letter_kind": "offer",
+        "amount_range_inr": [
+          350000,
+          900000
+        ]
+      }
+    },
+    {
+      "id": "fintech_offer_bengaluru",
+      "summary": "Bengaluru fintech startup offers a senior product manager role at a senior CTC band with ninety-day notice.",
+      "params": {
+        "letter_kind": "offer",
+        "amount_range_inr": [
+          1800000,
+          6000000
+        ]
+      }
+    },
+    {
+      "id": "bpo_offer_mumbai",
+      "summary": "Mumbai BPO hires a customer support executive for a night-shift voice process at entry-level pay.",
+      "params": {
+        "letter_kind": "offer",
+        "amount_range_inr": [
+          300000,
+          550000
+        ]
+      }
+    },
+    {
+      "id": "pharma_offer_hyderabad",
+      "summary": "Hyderabad pharmaceutical company offers a quality-assurance chemist position at its Genome Valley facility.",
+      "params": {
+        "letter_kind": "offer",
+        "amount_range_inr": [
+          400000,
+          1000000
+        ]
+      }
+    },
+    {
+      "id": "retail_offer_nagpur",
+      "summary": "Nagpur retail chain appoints a store manager for its new Sitabuldi outlet on three-month probation.",
+      "params": {
+        "letter_kind": "offer",
+        "amount_range_inr": [
+          400000,
+          900000
+        ]
+      }
+    },
+    {
+      "id": "hospitality_offer_goa",
+      "summary": "Goa beach resort offers a front-office manager role ahead of the tourist season.",
+      "params": {
+        "letter_kind": "offer",
+        "amount_range_inr": [
+          350000,
+          800000
+        ]
+      }
+    },
+    {
+      "id": "restructuring_termination_mumbai",
+      "summary": "Mumbai media house terminates a marketing executive after a divisional shutdown, offering pay in lieu of notice.",
+      "params": {
+        "letter_kind": "termination"
+      }
+    },
+    {
+      "id": "probation_nonconfirmation_pune",
+      "summary": "Pune logistics firm declines to confirm an operations trainee whose probation performance fell short of targets.",
+      "params": {
+        "letter_kind": "termination"
+      }
+    },
+    {
+      "id": "misconduct_termination_thane",
+      "summary": "Thane engineering unit dismisses a storekeeper for stock pilferage established in a domestic inquiry.",
+      "params": {
+        "letter_kind": "termination"
+      }
+    },
+    {
+      "id": "absence_termination_nashik",
+      "summary": "Nashik FMCG distributor terminates a sales representative for continued unauthorised absence despite written warnings.",
+      "params": {
+        "letter_kind": "termination"
+      }
+    },
+    {
+      "id": "saas_layoff_gurugram",
+      "summary": "Gurugram SaaS company retrenches a backend engineer amid funding-driven restructuring, with pay in lieu of notice.",
+      "params": {
+        "letter_kind": "termination"
+      }
+    },
+    {
+      "id": "probation_termination_chennai",
+      "summary": "Chennai IT services firm ends a junior developer's service during probation for non-confirmation.",
+      "params": {
+        "letter_kind": "termination"
+      }
+    },
+    {
+      "id": "misconduct_termination_kolkata",
+      "summary": "Kolkata trading company terminates an accounts assistant for misconduct established in an internal inquiry.",
+      "params": {
+        "letter_kind": "termination"
+      }
+    }
+  ],
+  "mou_two_parties": [
+    {
+      "id": "business_collaboration",
+      "summary": "A Pune industrial-automation firm and a Mumbai design studio record intent to jointly bid for factory retrofit projects across Maharashtra.",
+      "params": {
+        "party_mix": "two_companies",
+        "amount_range_inr": [
+          500000,
+          5000000
+        ]
+      }
+    },
+    {
+      "id": "joint_venture_exploration",
+      "summary": "A Nagpur infrastructure contractor and a Mumbai construction company explore a joint venture for PWD road tenders in Vidarbha.",
+      "params": {
+        "party_mix": "two_companies",
+        "amount_range_inr": [
+          2000000,
+          20000000
+        ]
+      }
+    },
+    {
+      "id": "vendor_distributor_arrangement",
+      "summary": "An Aurangabad FMCG manufacturer and a Nashik distributor record intent for snacks distribution across North Maharashtra districts.",
+      "params": {
+        "party_mix": "two_companies",
+        "amount_range_inr": [
+          300000,
+          3000000
+        ]
+      }
+    },
+    {
+      "id": "ngo_csr_partnership",
+      "summary": "A listed Mumbai company's CSR foundation and a Pune NGO agree on a youth skilling programme in Pimpri-Chinchwad.",
+      "params": {
+        "party_mix": "two_companies",
+        "amount_range_inr": [
+          500000,
+          5000000
+        ]
+      }
+    },
+    {
+      "id": "tech_licensing_intent",
+      "summary": "A Hyderabad software company and a Kolhapur auto-parts manufacturer record intent to license a production-planning software suite.",
+      "params": {
+        "party_mix": "two_companies",
+        "amount_range_inr": [
+          400000,
+          2500000
+        ]
+      }
+    },
+    {
+      "id": "college_industry_internship",
+      "summary": "A Pune engineering college and a Chakan auto components company set up internships, plant visits, and joint student projects.",
+      "params": {
+        "party_mix": "two_companies"
+      }
+    },
+    {
+      "id": "supplier_exclusivity_intent",
+      "summary": "A Kolhapur foundry and a Chennai pump manufacturer record intent for exclusive supply of graded castings pending a definitive agreement.",
+      "params": {
+        "party_mix": "two_companies",
+        "amount_range_inr": [
+          1000000,
+          10000000
+        ]
+      }
+    },
+    {
+      "id": "franchise_exploration",
+      "summary": "A Nashik entrepreneur and a Bengaluru cafe chain explore a franchise outlet, with due diligence and a pilot before any franchise agreement.",
+      "params": {
+        "party_mix": "person_and_company",
+        "amount_range_inr": [
+          800000,
+          4000000
+        ]
+      }
+    },
+    {
+      "id": "doctor_clinic_rotation",
+      "summary": "A Mumbai-based MD physician and a Thane multi-speciality clinic agree on weekly OPD rotations and referral protocols.",
+      "params": {
+        "party_mix": "person_and_company",
+        "amount_range_inr": [
+          200000,
+          1200000
+        ]
+      }
+    },
+    {
+      "id": "event_co_organisation",
+      "summary": "A freelance event producer and a Pune cultural trust co-organise a three-day Diwali trade fair at a city exhibition ground.",
+      "params": {
+        "party_mix": "person_and_company",
+        "amount_range_inr": [
+          300000,
+          2000000
+        ]
+      }
+    },
+    {
+      "id": "co_working_space_arrangement",
+      "summary": "A freelance architect and a Navi Mumbai co-working operator record an understanding for dedicated studio desks and shared meeting credits.",
+      "params": {
+        "party_mix": "person_and_company",
+        "amount_range_inr": [
+          100000,
+          800000
+        ]
+      }
+    },
+    {
+      "id": "family_business_transition",
+      "summary": "A daughter returning from Ahmedabad and the family's Solapur textile company record a phased management transition understanding.",
+      "params": {
+        "party_mix": "person_and_company"
+      }
+    },
+    {
+      "id": "startup_incubation",
+      "summary": "A first-time founder and a Mumbai university incubator record an understanding on mentoring, seed support, and workspace access.",
+      "params": {
+        "party_mix": "person_and_company",
+        "amount_range_inr": [
+          200000,
+          1000000
+        ]
+      }
+    }
+  ],
+  "partnership_deed_1932": [
+    {
+      "id": "two_friends_retail_shop",
+      "summary": "Two college friends in Pune formalise a kirana-and-general-stores retail trading partnership in Kothrud, contributing unequal capital.",
+      "params": {
+        "partners": 2,
+        "amount_range_inr": [
+          200000,
+          1500000
+        ]
+      }
+    },
+    {
+      "id": "family_restaurant",
+      "summary": "Three siblings open a Maharashtrian thali restaurant in Nashik pooling family savings; the eldest manages day-to-day operations.",
+      "params": {
+        "partners": 3,
+        "amount_range_inr": [
+          500000,
+          3000000
+        ]
+      }
+    },
+    {
+      "id": "ca_consultancy",
+      "summary": "Two Chartered Accountants in Mumbai's Fort area form a consultancy partnership offering taxation, audit support and compliance services.",
+      "params": {
+        "partners": 2,
+        "amount_range_inr": [
+          100000,
+          1000000
+        ]
+      }
+    },
+    {
+      "id": "three_partner_garment_unit",
+      "summary": "Three partners set up a garment manufacturing unit in Bhiwandi doing power-loom job work and export stitching orders.",
+      "params": {
+        "partners": 3,
+        "amount_range_inr": [
+          1000000,
+          5000000
+        ]
+      }
+    },
+    {
+      "id": "transport_business",
+      "summary": "Two partners in Nagpur run a goods transport service with three trucks plying the Nagpur-Raipur route.",
+      "params": {
+        "partners": 2,
+        "amount_range_inr": [
+          800000,
+          4000000
+        ]
+      }
+    },
+    {
+      "id": "agency_distribution",
+      "summary": "Three partners take an FMCG distribution agency for Kolhapur district covering retail outlets across five talukas.",
+      "params": {
+        "partners": 3,
+        "amount_range_inr": [
+          500000,
+          2500000
+        ]
+      }
+    },
+    {
+      "id": "cloud_kitchen",
+      "summary": "Two home chefs in Thane start a cloud-kitchen restaurant business on delivery apps; one contributes kitchen equipment as capital.",
+      "params": {
+        "partners": 2,
+        "amount_range_inr": [
+          300000,
+          1500000
+        ]
+      }
+    },
+    {
+      "id": "coaching_institute",
+      "summary": "Two teachers in Chhatrapati Sambhajinagar partner to run a JEE/NEET coaching and educational consultancy near the railway station.",
+      "params": {
+        "partners": 2,
+        "amount_range_inr": [
+          200000,
+          1200000
+        ]
+      }
+    },
+    {
+      "id": "hardware_store_formalisation",
+      "summary": "A long-running family hardware retail store in Indore is formalised as a partnership when the founder's son-in-law joins with fresh capital.",
+      "params": {
+        "partners": 2,
+        "amount_range_inr": [
+          500000,
+          2000000
+        ]
+      }
+    },
+    {
+      "id": "ecommerce_reselling",
+      "summary": "Two friends in Jaipur formalise an e-commerce retail trading business reselling handicrafts on national marketplaces.",
+      "params": {
+        "partners": 2,
+        "amount_range_inr": [
+          100000,
+          800000
+        ]
+      }
+    },
+    {
+      "id": "salon_chain",
+      "summary": "Three partners in Bengaluru launch a unisex salon services chain, starting with two outlets in Koramangala and HSR Layout.",
+      "params": {
+        "partners": 3,
+        "amount_range_inr": [
+          400000,
+          2000000
+        ]
+      }
+    },
+    {
+      "id": "construction_subcontracting",
+      "summary": "Three partners in Surat form a firm to take civil construction subcontracts for plastering and tiling works.",
+      "params": {
+        "partners": 3,
+        "amount_range_inr": [
+          500000,
+          3000000
+        ]
+      }
+    }
+  ],
+  "reply_to_legal_notice": [
+    {
+      "id": "money_demand_already_repaid",
+      "summary": "Pune businessman replies that the friendly loan demanded was repaid in full by bank transfer months ago; bank statement annexed; demands withdrawal of the notice.",
+      "params": {
+        "notice_kind": "money_demand",
+        "amount_range_inr": [
+          100000,
+          1500000
+        ]
+      }
+    },
+    {
+      "id": "money_demand_defective_goods",
+      "summary": "Nashik trader withheld invoice payment because supplied machine components were defective and rejected on inspection; counter-claims testing and storage costs.",
+      "params": {
+        "notice_kind": "money_demand",
+        "amount_range_inr": [
+          50000,
+          1200000
+        ]
+      }
+    },
+    {
+      "id": "money_demand_time_barred",
+      "summary": "Mumbai resident denies a stale 2019 hand-loan demand as time-barred and never acknowledged; no liability admitted.",
+      "params": {
+        "notice_kind": "money_demand",
+        "amount_range_inr": [
+          200000,
+          2000000
+        ]
+      }
+    },
+    {
+      "id": "eviction_invalid_notice_period",
+      "summary": "Thane tenant contests a quit notice that gives less than the notice period stipulated in the registered leave and licence agreement.",
+      "params": {
+        "notice_kind": "eviction"
+      }
+    },
+    {
+      "id": "eviction_rent_paid_receipts",
+      "summary": "Nagpur tenant denies alleged rent default, relying on rent receipts and UPI records; says the notice is a pretext to extract higher rent.",
+      "params": {
+        "notice_kind": "eviction",
+        "amount_range_inr": [
+          30000,
+          300000
+        ]
+      }
+    },
+    {
+      "id": "eviction_bona_fide_need_disputed",
+      "summary": "Delhi tenant disputes the landlord's claimed bona fide requirement, pointing to two vacant flats the landlord owns in the same building.",
+      "params": {
+        "notice_kind": "eviction"
+      }
+    },
+    {
+      "id": "cheque_security_cheque_misused",
+      "summary": "Aurangabad distributor says a blank security cheque was filled in and presented despite the account being fully settled; denies any legally enforceable debt.",
+      "params": {
+        "notice_kind": "cheque_bounce_allegation",
+        "amount_range_inr": [
+          100000,
+          1500000
+        ]
+      }
+    },
+    {
+      "id": "cheque_goods_never_delivered",
+      "summary": "Mumbai buyer stopped payment because the consignment was never delivered; denies liability for the dishonoured cheque and demands withdrawal of the notice.",
+      "params": {
+        "notice_kind": "cheque_bounce_allegation",
+        "amount_range_inr": [
+          75000,
+          1000000
+        ]
+      }
+    },
+    {
+      "id": "cheque_debt_discharged_in_cash",
+      "summary": "Kolhapur borrower replies that the loan behind the dishonoured cheque was discharged in cash against a signed receipt before presentation.",
+      "params": {
+        "notice_kind": "cheque_bounce_allegation",
+        "amount_range_inr": [
+          50000,
+          600000
+        ]
+      }
+    },
+    {
+      "id": "consumer_service_records_furnished",
+      "summary": "Pune appliance dealer answers a consumer notice with service-visit records showing two free warranty repairs and an offered replacement the complainant refused.",
+      "params": {
+        "notice_kind": "consumer_grievance",
+        "amount_range_inr": [
+          10000,
+          200000
+        ]
+      }
+    },
+    {
+      "id": "consumer_damage_not_defect",
+      "summary": "Bengaluru electronics retailer denies deficiency in service, asserting physical damage from mishandling voided the warranty; technician's inspection report relied upon.",
+      "params": {
+        "notice_kind": "consumer_grievance",
+        "amount_range_inr": [
+          15000,
+          150000
+        ]
+      }
+    },
+    {
+      "id": "consumer_builder_delay_grace_period",
+      "summary": "Mumbai developer replies that possession delay flowed from pandemic stop-work orders and falls within the agreement's grace period; denies refund liability.",
+      "params": {
+        "notice_kind": "consumer_grievance",
+        "amount_range_inr": [
+          500000,
+          2000000
+        ]
+      }
+    },
+    {
+      "id": "employment_fnf_settled",
+      "summary": "Mumbai IT employer denies an ex-employee's claim for unpaid dues, annexing the signed full-and-final settlement and bank payment proof.",
+      "params": {
+        "notice_kind": "employment_dues",
+        "amount_range_inr": [
+          50000,
+          800000
+        ]
+      }
+    },
+    {
+      "id": "employment_notice_pay_adjustment",
+      "summary": "Pune manufacturer replies that the resigning engineer left without serving notice; dues stand lawfully adjusted against notice-pay recovery under the appointment letter.",
+      "params": {
+        "notice_kind": "employment_dues",
+        "amount_range_inr": [
+          40000,
+          500000
+        ]
+      }
+    }
   ]
 }

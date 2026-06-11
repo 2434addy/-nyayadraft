@@ -1,0 +1,112 @@
+{
+  "doc_type": "reply_to_legal_notice",
+  "display_name": "Reply to Legal Notice (on behalf of the Noticee)",
+  "structural_summary": "A formal reply sent by or for the noticee answering a legal notice received from the opposite party or their advocate. Layout: replying party's/advocate's block; date; mode of dispatch (Registered Post A.D./email); addressee block (original notice sender or their advocate); subject line referencing the notice under reply with its date and reference number; WITHOUT PREJUDICE rubric; introduction recording receipt of the notice; preliminary objections terming the notice misconceived and untenable; para-wise reply specifically denying each adverse allegation; the noticee's true version of facts with documents relied on; counter-demands (withdrawal of the notice, costs); express reservation of all rights, civil and criminal; formal closing and signature block.",
+  "statutory_requirements": "- Identify the notice under reply precisely: its date, sender, sender's advocate (if any) and reference number where available.\n- Mark the reply WITHOUT PREJUDICE and state it issues without prejudice to the noticee's rights and contentions (customary drafting practice, not a statutory mandate).\n- Raise preliminary objections before the merits: e.g., the notice is false, frivolous, misconceived or untenable in law.\n- Reply para-wise to the notice; deny each adverse allegation specifically (not by bare general denial); add the customary saving that nothing is admitted save what is specifically admitted.\n- Set out the noticee's true version of facts with dates and the documents relied upon.\n- Make counter-demands where appropriate: withdrawal of the notice and costs of the reply.\n- Expressly reserve all rights and remedies, civil and criminal.\n- Record the mode of dispatch.\n- Statutory citations are generally unnecessary in a reply; cite an Act only where the underlying dispute requires it.\n- Cheque-bounce-allegation replies may reference the Negotiable Instruments Act, 1881 generally (e.g., absence of a legally enforceable debt); specific defence provisions [VERIFY: NI Act presumption/defence sections].\n- Eviction replies may contest notice-period validity under the tenancy agreement and [VERIFY: Transfer of Property Act 1882 s.106 / applicable state rent legislation, e.g. Maharashtra Rent Control Act 1999].\n- Consumer replies answer the alleged deficiency in service or defect in goods; [VERIFY: Consumer Protection Act 2019 reference where the notice invokes it].",
+  "fields": [
+    {
+      "name": "sender_name",
+      "placeholder": "[FULL NAME OF SENDER OF REPLY]",
+      "given_policy": "always",
+      "kind": "person_name",
+      "description": "The noticee on whose behalf the reply is sent"
+    },
+    {
+      "name": "original_sender_name",
+      "placeholder": "[FULL NAME OF ORIGINAL NOTICE SENDER]",
+      "given_policy": "always",
+      "kind": "person_name",
+      "description": "Party who sent the legal notice being replied to"
+    },
+    {
+      "name": "notice_date",
+      "placeholder": "[DATE OF NOTICE UNDER REPLY]",
+      "given_policy": "withholdable",
+      "kind": "date",
+      "anchor_days_range": [
+        -45,
+        -10
+      ],
+      "description": "Date of the received legal notice"
+    },
+    {
+      "name": "reply_date",
+      "placeholder": "[DATE OF THIS REPLY]",
+      "given_policy": "withholdable",
+      "kind": "date",
+      "offset_days_range": [
+        3,
+        9
+      ],
+      "description": "Date of dispatch of this reply; offset keeps it after the notice date and never in the future given the anchor range"
+    },
+    {
+      "name": "disputed_amount",
+      "placeholder": "[DISPUTED AMOUNT IN ₹]",
+      "given_policy": "optional",
+      "kind": "inr_amount",
+      "range": [
+        25000,
+        2000000
+      ],
+      "description": "Amount demanded in the original notice and disputed in the reply"
+    },
+    {
+      "name": "city",
+      "placeholder": "[CITY]",
+      "given_policy": "withholdable",
+      "kind": "city"
+    },
+    {
+      "name": "sender_address",
+      "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]",
+      "given_policy": "withholdable",
+      "kind": "address",
+      "implies_given": [
+        "city"
+      ]
+    },
+    {
+      "name": "addressee_address",
+      "placeholder": "[FULL ADDRESS OF ADDRESSEE]",
+      "given_policy": "withholdable",
+      "kind": "address",
+      "implies_given": [
+        "city"
+      ],
+      "description": "Address of the original notice sender or their advocate"
+    },
+    {
+      "name": "dispatch_mode",
+      "placeholder": "[MODE OF DISPATCH]",
+      "given_policy": "withholdable",
+      "kind": "choice",
+      "choices": [
+        "Registered Post A.D.",
+        "Speed Post",
+        "Courier",
+        "Email and Registered Post A.D."
+      ]
+    },
+    {
+      "name": "advocate_name",
+      "placeholder": "[NAME OF ADVOCATE FOR SENDER OF REPLY]",
+      "given_policy": "optional",
+      "kind": "person_name"
+    },
+    {
+      "name": "original_advocate_name",
+      "placeholder": "[NAME OF ADVOCATE FOR ORIGINAL NOTICE SENDER]",
+      "given_policy": "optional",
+      "kind": "person_name",
+      "description": "If the received notice was issued through counsel, the reply is addressed to this advocate"
+    },
+    {
+      "name": "notice_reference_number",
+      "placeholder": "[REFERENCE NUMBER OF NOTICE]",
+      "given_policy": "optional",
+      "kind": "id_number",
+      "description": "Outward/reference number quoted on the received notice"
+    }
+  ]
+}

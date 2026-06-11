@@ -1,0 +1,96 @@
+{
+  "doc_type": "partnership_deed_1932",
+  "min_chars": 3500,
+  "max_chars": 15000,
+  "require_disclaimer": true,
+  "is_document": true,
+  "required_patterns": [
+    {
+      "id": "deed_title",
+      "description": "Document titled as a partnership deed",
+      "regex": "(?i)\\b(deed\\s+of\\s+partnership|partnership\\s+deed)\\b",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "act_citation",
+      "description": "Names the Indian Partnership Act 1932",
+      "regex": "(?i)indian\\s+partnership\\s+act,?\\s*1932",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "firm_name_style",
+      "description": "Firm name and style clause",
+      "regex": "(?i)(name\\s+and\\s+style\\s+of|firm\\s+name\\s+shall\\s+be)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "capital_clause",
+      "description": "Capital contribution clause",
+      "regex": "(?i)capital\\s+(contribution|of\\s+the\\s+(firm|partnership))",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "profit_loss_sharing",
+      "description": "Profit and loss sharing clause with ratio/share/divide language",
+      "regex": "(?is)profits?\\s+and\\s+loss(es)?.{0,160}?(ratio|shar|divid)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "commencement_clause",
+      "description": "Commencement of partnership clause",
+      "regex": "(?i)(commencement\\s+of\\s+the\\s+partnership|shall\\s+commence\\s+(on|from|with\\s+effect\\s+from)|deemed\\s+to\\s+have\\s+commenced)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "retirement_death_clause",
+      "description": "Retirement/death of partner provision",
+      "regex": "(?i)((retirement|death|insolvency)\\s+of\\s+(a|any)\\s+partner|partner\\s+(retires|dies)|retire\\s+from\\s+the\\s+(firm|partnership))",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "dissolution_clause",
+      "description": "Dissolution provision",
+      "regex": "(?i)dissol(ution|ved?)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "arbitration_clause",
+      "description": "Arbitration clause for partner disputes",
+      "regex": "(?i)arbitrat(ion|or|ed)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "witness_testimonium",
+      "description": "Testimonium clause before signatures",
+      "regex": "(?i)in\\s+witness\\s+whereof",
+      "legal_basis": "CONFIDENT"
+    }
+  ],
+  "forbidden_patterns": [
+    {
+      "id": "no_md_heading",
+      "description": "No markdown headings",
+      "regex": "(?m)^\\s{0,3}#{1,6}\\s"
+    },
+    {
+      "id": "no_md_bold",
+      "description": "No markdown bold",
+      "regex": "\\*\\*"
+    },
+    {
+      "id": "no_ai_voice",
+      "description": "No AI self-reference",
+      "regex": "(?i)as an ai\\b"
+    },
+    {
+      "id": "no_chat_preamble",
+      "description": "No chatty preamble",
+      "regex": "(?i)\\A\\s*(sure|certainly|here(\\s+is|'s))\\b"
+    },
+    {
+      "id": "no_llp_confusion",
+      "description": "A general partnership deed must not invoke the LLP regime",
+      "regex": "(?i)limited\\s+liability\\s+partnership|\\bLLP\\b"
+    }
+  ]
+}

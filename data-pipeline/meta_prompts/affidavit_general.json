@@ -1,0 +1,167 @@
+{
+  "doc_type": "affidavit_general",
+  "display_name": "General Affidavit (Sworn/Affirmed Before Notary Public or Oath Commissioner)",
+  "structural_summary": "A general-purpose affidavit sworn or affirmed before a Notary Public or Oath Commissioner. Layout: stamp-paper guidance line; centred title AFFIDAVIT; deponent introduction (name, parentage, age, occupation, residential address); solemn affirmation opening (\"I, ..., do hereby solemnly affirm and declare as under\"); numbered declarations each beginning \"That\", reciting the operative facts (name variants, residence, study gap, lost document, income, or date of birth depending on purpose); a purpose paragraph naming the authority before which the affidavit will be produced; verification clause with place and date affirming the contents are true and correct to the deponent's knowledge and belief; deponent signature block (DEPONENT); notarial attestation block (\"Solemnly affirmed before me\") with seal. No statutory citations appear in the body.",
+  "statutory_requirements": "- Recite the deponent's full name, parentage, age, occupation and residential address in the opening.\n- Open with the secular affirmation: \"do hereby solemnly affirm and declare as under\".\n- Number every substantive declaration; conventionally each paragraph begins \"That\".\n- Include a purpose paragraph stating why the affidavit is sworn and the authority before which it will be produced.\n- End with a verification clause recording place and date and affirming the contents are true and correct to the deponent's knowledge and belief.\n- Provide a DEPONENT signature block and a notarial attestation block (\"Solemnly affirmed before me\") with the notary's seal and register particulars [VERIFY: attestation/register formalities under the Notaries Rules, 1956].\n- Statutory citations are NOT customary in the body of a general affidavit; the declarations should cite no Acts or sections.\n- Execute on non-judicial stamp paper; the value varies by state and purpose, so carry placeholder guidance such as \"[TO BE EXECUTED ON NON-JUDICIAL STAMP PAPER OF ₹ [VALUE] AS APPLICABLE IN THE STATE]\" instead of a fixed amount [VERIFY: applicable State Stamp Act schedule entry for affidavits].\n- The notary's power to take affidavits flows from the Notaries Act, 1952; affirmations are governed by the Oaths Act, 1969 — cite neither in the body.\n- A false affidavit may attract prosecution for giving false evidence [VERIFY: Bharatiya Nyaya Sanhita, 2023 provisions replacing IPC ss. 191/193]; any cautionary recital should omit section numbers.",
+  "fields": [
+    {
+      "name": "deponent_name",
+      "placeholder": "[FULL NAME OF DEPONENT]",
+      "given_policy": "always",
+      "kind": "person_name",
+      "description": "Person swearing the affidavit"
+    },
+    {
+      "name": "deponent_parent_name",
+      "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]",
+      "given_policy": "withholdable",
+      "kind": "person_name",
+      "description": "Parentage recital (son of / daughter of / wife of)"
+    },
+    {
+      "name": "deponent_age",
+      "placeholder": "[AGE OF DEPONENT IN YEARS]",
+      "given_policy": "always",
+      "kind": "number",
+      "range": [
+        21,
+        70
+      ],
+      "description": "Stated as 'aged about N years' in the opening recital"
+    },
+    {
+      "name": "deponent_occupation",
+      "placeholder": "[OCCUPATION OF DEPONENT]",
+      "given_policy": "withholdable",
+      "kind": "profession"
+    },
+    {
+      "name": "city",
+      "placeholder": "[CITY]",
+      "given_policy": "withholdable",
+      "kind": "city",
+      "description": "City of residence and of verification/swearing"
+    },
+    {
+      "name": "deponent_address",
+      "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]",
+      "given_policy": "withholdable",
+      "kind": "address",
+      "implies_given": [
+        "city"
+      ]
+    },
+    {
+      "name": "deponent_id_number",
+      "placeholder": "[AADHAAR OR PAN NUMBER OF DEPONENT]",
+      "given_policy": "optional",
+      "kind": "id_number",
+      "description": "Optional identity recital in the introduction"
+    },
+    {
+      "name": "name_variant_a",
+      "placeholder": "[NAME AS APPEARING IN FIRST DOCUMENT]",
+      "given_policy": "always",
+      "kind": "person_name",
+      "when": {
+        "purpose": "name_mismatch"
+      },
+      "description": "First spelling/form of the name, with the document it appears in"
+    },
+    {
+      "name": "name_variant_b",
+      "placeholder": "[NAME AS APPEARING IN SECOND DOCUMENT]",
+      "given_policy": "always",
+      "kind": "person_name",
+      "when": {
+        "purpose": "name_mismatch"
+      },
+      "description": "Second spelling/form; affidavit affirms both denote one and the same person"
+    },
+    {
+      "name": "residing_since_year",
+      "placeholder": "[YEAR FROM WHICH DEPONENT RESIDES AT THE ADDRESS]",
+      "given_policy": "withholdable",
+      "kind": "number",
+      "range": [
+        2008,
+        2023
+      ],
+      "when": {
+        "purpose": "address_proof"
+      }
+    },
+    {
+      "name": "gap_start_year",
+      "placeholder": "[ACADEMIC YEAR IN WHICH THE STUDY GAP BEGAN]",
+      "given_policy": "always",
+      "kind": "number",
+      "range": [
+        2016,
+        2024
+      ],
+      "when": {
+        "purpose": "education_gap_year"
+      }
+    },
+    {
+      "name": "gap_reason",
+      "placeholder": "[REASON FOR THE GAP IN STUDIES]",
+      "given_policy": "withholdable",
+      "kind": "choice",
+      "choices": [
+        "preparation for competitive entrance examinations",
+        "deponent's own prolonged illness and recovery",
+        "financial difficulties in the family",
+        "caring for an ailing family member"
+      ],
+      "when": {
+        "purpose": "education_gap_year"
+      }
+    },
+    {
+      "name": "lost_document_type",
+      "placeholder": "[DESCRIPTION OF THE LOST DOCUMENT]",
+      "given_policy": "always",
+      "kind": "choice",
+      "choices": [
+        "original share certificate",
+        "original registered sale deed",
+        "school leaving certificate",
+        "SSC marksheet",
+        "fixed deposit receipt",
+        "life insurance policy document"
+      ],
+      "when": {
+        "purpose": "lost_document"
+      }
+    },
+    {
+      "name": "annual_income",
+      "placeholder": "[GROSS ANNUAL INCOME IN ₹]",
+      "given_policy": "always",
+      "kind": "inr_amount",
+      "range": [
+        120000,
+        1500000
+      ],
+      "when": {
+        "purpose": "income_declaration"
+      }
+    },
+    {
+      "name": "date_of_birth",
+      "placeholder": "[CORRECT DATE OF BIRTH OF DEPONENT]",
+      "given_policy": "always",
+      "kind": "date",
+      "anchor_days_range": [
+        -21900,
+        -9125
+      ],
+      "when": {
+        "purpose": "dob_support"
+      },
+      "description": "Deponent's correct date of birth as affirmed; 25-60 years in the past"
+    }
+  ]
+}

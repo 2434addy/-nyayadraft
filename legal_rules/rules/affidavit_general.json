@@ -1,0 +1,101 @@
+{
+  "doc_type": "affidavit_general",
+  "min_chars": 950,
+  "max_chars": 6500,
+  "require_disclaimer": true,
+  "is_document": true,
+  "required_patterns": [
+    {
+      "id": "affidavit_title",
+      "description": "Title line AFFIDAVIT alone on its own line (plain or letter-spaced)",
+      "regex": "(?im)^\\s*a\\s*f\\s*f\\s*i\\s*d\\s*a\\s*v\\s*i\\s*t\\s*$",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "solemn_affirmation",
+      "description": "Solemn affirmation opening formula",
+      "regex": "(?i)do\\s+hereby\\s+solemnly\\s+affirm\\s+and\\s+(declare|state)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "deponent_intro_age",
+      "description": "Deponent introduction recites age ('aged about N years')",
+      "regex": "(?i)\\baged?\\s+(about\\s+)?\\d{1,2}\\s+years\\b",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "residence_recital",
+      "description": "Deponent introduction recites residence",
+      "regex": "(?i)(resident\\s+of|residing\\s+at|\\br/o\\b)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "numbered_that_declarations",
+      "description": "At least two numbered declarations each beginning 'That'",
+      "regex": "(?ims)^\\s*1\\s*[.)]\\s*that\\b.*?^\\s*2\\s*[.)]\\s*that\\b",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "verification_clause",
+      "description": "Verification clause: 'Verified at [place]...' affirming contents true/correct",
+      "regex": "(?is)verified\\s+at\\b.{0,200}?\\b(true|correct)\\b",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "deponent_signature_block",
+      "description": "Signature block line reading DEPONENT",
+      "regex": "(?im)^[\\s(]*deponent[\\s)]*$",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "notarial_attestation",
+      "description": "Attestation language: sworn/affirmed before me, or 'before me' followed by the attesting officer",
+      "regex": "(?i)((sworn|solemnly\\s+affirmed|affirmed)[\\s\\S]{0,120}?before\\s+me\\b|before\\s+me\\b[\\s\\S]{0,80}?(notary|oath\\s+commissioner))",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "notary_or_oath_commissioner",
+      "description": "Names the attesting officer: Notary Public or Oath Commissioner",
+      "regex": "(?i)(notary\\s+public|oath\\s+commissioner|commissioner\\s+of\\s+oaths?)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "stamp_paper_guidance",
+      "description": "Carries non-judicial stamp paper guidance line (value left as state-dependent placeholder)",
+      "regex": "(?i)(non[-\\s]?judicial\\s+)?stamp\\s+paper",
+      "legal_basis": "CONFIDENT"
+    }
+  ],
+  "forbidden_patterns": [
+    {
+      "id": "no_md_heading",
+      "description": "No markdown headings",
+      "regex": "(?m)^\\s{0,3}#{1,6}\\s"
+    },
+    {
+      "id": "no_md_bold",
+      "description": "No markdown bold",
+      "regex": "\\*\\*"
+    },
+    {
+      "id": "no_ai_voice",
+      "description": "No AI self-reference",
+      "regex": "(?i)as an ai\\b"
+    },
+    {
+      "id": "no_chat_preamble",
+      "description": "No chatty preamble",
+      "regex": "(?i)\\A\\s*(sure|certainly|here(\\s+is|'s))\\b"
+    },
+    {
+      "id": "no_ipc_citation",
+      "description": "No reference to the repealed Indian Penal Code (replaced by Bharatiya Nyaya Sanhita, 2023)",
+      "regex": "(?i)\\b(indian\\s+penal\\s+code|i\\.?p\\.?c\\.?)\\b"
+    },
+    {
+      "id": "no_statutory_section_citation",
+      "description": "Statutory section citations are not customary in a general affidavit body; blocks hallucinated citations",
+      "regex": "(?i)(\\bsection\\s+\\d+|\\bu/s\\.?\\s*\\d+)"
+    }
+  ]
+}

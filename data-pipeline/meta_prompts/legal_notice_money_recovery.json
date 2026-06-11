@@ -1,0 +1,116 @@
+{
+  "doc_type": "legal_notice_money_recovery",
+  "display_name": "Legal Notice for Recovery of Money / Outstanding Dues",
+  "structural_summary": "An advocate's demand notice on behalf of a claimant calling upon a debtor to pay outstanding dues. Layout: advocate/sender letterhead block; date; mode of dispatch (Registered Post A.D. / Speed Post / email); addressee block; subject line styled as a Legal Notice for recovery of the amount; opening recital that the notice issues under the client's instructions; numbered paragraphs reciting the transaction, the amount due, when it fell due, prior demands and the default; a demand for the principal together with interest (contractual or stated rate per annum); a compliance window of 15 or 30 days from receipt; consequences — civil suit for recovery with interest and costs, optionally a summary suit under Order XXXVII CPC; reservation of rights; signature block.",
+  "statutory_requirements": "- Identify the parties and recite the transaction precisely: the nature of the dues (loan, invoice, salary, advance, rent arrears, maintenance, deposit), the date the liability arose, and the principal amount outstanding.\n- State when payment fell due, the demands and reminders made, and the debtor's default or refusal.\n- DEMAND payment of the principal together with interest — at the contractual or a stated rate per annum; where none was agreed, interest may be claimed from the date of written demand [VERIFY: Interest Act, 1978].\n- Give a compliance window of 15 or 30 days from receipt; this window is customary drafting practice, NOT a statutory requirement.\n- On failure: civil suit for recovery of the amount with interest and costs, entirely at the debtor's risk as to costs.\n- Where the debt arises from a written contract for a liquidated amount, a summary suit under Order XXXVII, Code of Civil Procedure, 1908 may be referenced.\n- Issue within limitation: most money claims are barred three years from the date the debt fell due, Limitation Act, 1963 [VERIFY: applicable Article of the Schedule — varies by claim type].\n- For supplies by a registered MSME, statutory interest on delayed payment may be invoked [VERIFY: MSMED Act, 2006, Ss. 15–16].\n- Do not threaten criminal prosecution unless the facts genuinely disclose an offence; cite no penal provision by default.\n- Record the mode of dispatch.",
+  "fields": [
+    {
+      "name": "claimant_name",
+      "placeholder": "[FULL NAME OF CLAIMANT]",
+      "given_policy": "always",
+      "kind": "person_name"
+    },
+    {
+      "name": "debtor_name",
+      "placeholder": "[FULL NAME OF DEBTOR]",
+      "given_policy": "always",
+      "kind": "person_name"
+    },
+    {
+      "name": "due_amount",
+      "placeholder": "[AMOUNT DUE IN ₹]",
+      "given_policy": "always",
+      "kind": "inr_amount",
+      "range": [
+        10000,
+        2500000
+      ]
+    },
+    {
+      "name": "city",
+      "placeholder": "[CITY]",
+      "given_policy": "withholdable",
+      "kind": "city"
+    },
+    {
+      "name": "claimant_address",
+      "placeholder": "[FULL ADDRESS OF CLAIMANT]",
+      "given_policy": "withholdable",
+      "kind": "address",
+      "implies_given": [
+        "city"
+      ]
+    },
+    {
+      "name": "debtor_address",
+      "placeholder": "[FULL ADDRESS OF DEBTOR]",
+      "given_policy": "withholdable",
+      "kind": "address",
+      "implies_given": [
+        "city"
+      ]
+    },
+    {
+      "name": "debt_origin_date",
+      "placeholder": "[DATE THE DEBT AROSE]",
+      "given_policy": "withholdable",
+      "kind": "date",
+      "anchor_days_range": [
+        -1000,
+        -240
+      ],
+      "description": "Date of the loan/invoice/advance/last salary etc. Anchored so the claim stays well within the 3-year limitation at notice date."
+    },
+    {
+      "name": "payment_due_date",
+      "placeholder": "[DATE PAYMENT FELL DUE]",
+      "given_policy": "withholdable",
+      "kind": "date",
+      "offset_days_range": [
+        30,
+        180
+      ],
+      "description": "Always after the origin date and always in the past (origin max -240 + offset max 180 = at least 60 days ago), keeping the default already crystallised."
+    },
+    {
+      "name": "compliance_days",
+      "placeholder": "[NUMBER OF DAYS TO COMPLY]",
+      "given_policy": "withholdable",
+      "kind": "choice",
+      "choices": [
+        15,
+        30
+      ],
+      "description": "Customary compliance window stated in the demand paragraph; not statutory."
+    },
+    {
+      "name": "interest_rate",
+      "placeholder": "[RATE OF INTEREST PER ANNUM]",
+      "given_policy": "optional",
+      "kind": "percentage",
+      "range": [
+        9,
+        24
+      ],
+      "description": "Contractual or claimed rate % p.a.; when absent, the notice demands interest 'thereon' without a fixed rate."
+    },
+    {
+      "name": "advocate_name",
+      "placeholder": "[NAME OF ADVOCATE]",
+      "given_policy": "optional",
+      "kind": "person_name"
+    },
+    {
+      "name": "dispatch_mode",
+      "placeholder": "[MODE OF DISPATCH]",
+      "given_policy": "optional",
+      "kind": "choice",
+      "choices": [
+        "Registered Post A.D.",
+        "Speed Post",
+        "Courier",
+        "Registered Post A.D. and Email"
+      ]
+    }
+  ]
+}

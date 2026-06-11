@@ -1,0 +1,166 @@
+{
+  "doc_type": "leave_license_mh",
+  "display_name": "Leave and License Agreement (Maharashtra)",
+  "structural_summary": "Executed on stamp paper or e-stamped. Layout: title LEAVE AND LICENSE AGREEMENT; place and date of execution; parties block — Licensor and Licensee with full addresses (a company licensee acts through its authorised signatory); recitals of Licensor's ownership and Licensee's request; numbered operative clauses covering grant and term in months with commencement date, monthly license fee and payment day, interest-free refundable security deposit, permitted use, lock-in, revocation and notice, maintenance and outgoings, no-tenancy/license-only declaration, furniture annexure where furnished, registration and stamp duty, police intimation; Schedule of the Licensed Premises; signature blocks with two witnesses; space for photographs/thumb impressions and registration endorsement per Maharashtra e-registration practice.",
+  "statutory_requirements": "- Title the deed \"Leave and License Agreement\"; style parties as Licensor and Licensee throughout (never Lessor/Lessee).\n- Recite a bare licence under Section 52, Indian Easements Act, 1882: no tenancy or interest in the premises; juridical possession remains with the Licensor.\n- Describe the premises in a Schedule: full address, area, furnishing status.\n- State the monthly license fee, due date, and any escalation for longer terms (customary, not statutory).\n- Record the security deposit as interest-free and refundable on expiry or earlier termination, subject to lawful deductions.\n- State the term in months (commonly 11-60) with the commencement date; record lock-in (if any) and the written notice period for revocation.\n- Registration clause: the agreement must be in writing and registered under Section 55, Maharashtra Rent Control Act, 1999; responsibility rests on the landlord/Licensor; non-registration punishable [VERIFY: penalty quantum].\n- State stamp duty is payable under the Maharashtra Stamp Act, 1958 [VERIFY: Article 36A and the 0.25% computation] and allocate stamp/registration costs (commonly the Licensee).\n- E-registration through the Maharashtra Department of Registration and Stamps is accepted practice.\n- Provide for intimation of licensee particulars to the local police station [VERIFY: Police Commissioner orders / Maharashtra Police Act source].\n- Execution by both parties before two witnesses [VERIFY: Registration Act, 1908 interplay for licenses].",
+  "fields": [
+    {
+      "name": "licensor_name",
+      "placeholder": "[FULL NAME OF LICENSOR]",
+      "given_policy": "always",
+      "kind": "person_name",
+      "description": "Owner of the premises granting the license"
+    },
+    {
+      "name": "licensee_name",
+      "placeholder": "[FULL NAME OF LICENSEE]",
+      "given_policy": "always",
+      "kind": "person_name",
+      "description": "Individual licensee, or authorised signatory/occupant where the licensee is a company"
+    },
+    {
+      "name": "licensee_company",
+      "placeholder": "[NAME OF LICENSEE COMPANY]",
+      "given_policy": "always",
+      "kind": "company_name",
+      "when": {
+        "licensee_kind": "company"
+      },
+      "description": "Corporate licensee acting through its authorised signatory; only in company scenarios"
+    },
+    {
+      "name": "city",
+      "placeholder": "[CITY]",
+      "given_policy": "withholdable",
+      "kind": "city",
+      "description": "City/town in Maharashtra where the premises are situated and the deed is executed"
+    },
+    {
+      "name": "licensor_address",
+      "placeholder": "[FULL ADDRESS OF LICENSOR]",
+      "given_policy": "withholdable",
+      "kind": "address",
+      "implies_given": [
+        "city"
+      ],
+      "description": "Residential/registered address of the Licensor for the parties block"
+    },
+    {
+      "name": "licensee_address",
+      "placeholder": "[FULL ADDRESS OF LICENSEE]",
+      "given_policy": "withholdable",
+      "kind": "address",
+      "implies_given": [
+        "city"
+      ],
+      "description": "Permanent/registered address of the Licensee for the parties block"
+    },
+    {
+      "name": "premises_address",
+      "placeholder": "[FULL ADDRESS OF LICENSED PREMISES]",
+      "given_policy": "always",
+      "kind": "address",
+      "implies_given": [
+        "city"
+      ],
+      "description": "Licensed premises, reproduced in the Schedule"
+    },
+    {
+      "name": "monthly_fee",
+      "placeholder": "[MONTHLY LICENSE FEE IN ₹]",
+      "given_policy": "always",
+      "kind": "inr_amount",
+      "range": [
+        8000,
+        250000
+      ],
+      "description": "Monthly license fee/compensation; scenario amount_range_inr overrides"
+    },
+    {
+      "name": "security_deposit",
+      "placeholder": "[SECURITY DEPOSIT AMOUNT IN ₹]",
+      "given_policy": "withholdable",
+      "kind": "inr_amount",
+      "range": [
+        25000,
+        1500000
+      ],
+      "description": "Interest-free refundable deposit, typically 3-10 months of fee"
+    },
+    {
+      "name": "term_months",
+      "placeholder": "[TERM OF LICENSE IN MONTHS]",
+      "given_policy": "withholdable",
+      "kind": "duration_months",
+      "choices": [
+        11,
+        12,
+        22,
+        24,
+        33,
+        36,
+        60
+      ],
+      "description": "License term; 11/22/33-month conventions common in Maharashtra"
+    },
+    {
+      "name": "start_date",
+      "placeholder": "[LICENSE COMMENCEMENT DATE]",
+      "given_policy": "withholdable",
+      "kind": "date",
+      "anchor_days_range": [
+        10,
+        60
+      ],
+      "description": "Commencement of license, shortly after execution"
+    },
+    {
+      "name": "lock_in_months",
+      "placeholder": "[LOCK-IN PERIOD IN MONTHS]",
+      "given_policy": "optional",
+      "kind": "duration_months",
+      "choices": [
+        3,
+        6,
+        11,
+        12
+      ],
+      "description": "Period during which neither party may terminate without paying the balance fee"
+    },
+    {
+      "name": "notice_months",
+      "placeholder": "[NOTICE PERIOD IN MONTHS]",
+      "given_policy": "withholdable",
+      "kind": "duration_months",
+      "choices": [
+        1,
+        2,
+        3
+      ],
+      "description": "Written notice for early revocation/vacation after lock-in"
+    },
+    {
+      "name": "furnishing_status",
+      "placeholder": "[FURNISHING STATUS OF PREMISES]",
+      "given_policy": "optional",
+      "kind": "choice",
+      "choices": [
+        "unfurnished",
+        "semi-furnished with fixtures and fittings",
+        "fully furnished with furniture, fixtures and appliances as per annexure"
+      ],
+      "description": "Drives the furniture/fixtures clause and annexure reference"
+    },
+    {
+      "name": "police_verification_party",
+      "placeholder": "[PARTY RESPONSIBLE FOR POLICE VERIFICATION]",
+      "given_policy": "optional",
+      "kind": "choice",
+      "choices": [
+        "Licensor",
+        "Licensee"
+      ],
+      "description": "Who submits licensee particulars to the local police station"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "doc_type": "partnership_deed_1932",
+  "display_name": "Partnership Deed (Indian Partnership Act, 1932)",
+  "structural_summary": "A deed executed among two or three partners constituting a firm governed by the Indian Partnership Act, 1932. Layout: title \"DEED OF PARTNERSHIP\"; date and place of execution; parties block naming each partner with parentage and address; recitals of intent to carry on business in partnership; numbered operative clauses — firm name and style, principal place of business, nature of business, commencement date, capital contribution of each partner, profit and loss sharing ratio, interest on capital and partner remuneration, drawings, banking and books of account with financial year, duties and restrictions of partners, admission, retirement and death of partners, dissolution, arbitration, governing law; testimonium (\"IN WITNESS WHEREOF\"); signature blocks of all partners with two attesting witnesses.",
+  "statutory_requirements": "- State the firm name and style, nature of business, principal place of business, and date of commencement.\n- Record each partner's capital contribution and the profit and loss sharing ratio expressly; express terms displace the Act's default mutual rights and duties [VERIFY: Sections 11-13, Indian Partnership Act 1932].\n- If interest on capital or partner remuneration is payable, keep within income-tax deductibility limits [VERIFY: Section 40(b), Income-tax Act 1961 — 12% p.a. interest ceiling and book-profit remuneration slabs; slabs revised by Finance (No. 2) Act 2024].\n- Registration with the Registrar of Firms is optional but advisable [VERIFY: Sections 58 and 59, Indian Partnership Act 1932]; an unregistered firm and its partners face disabilities in enforcing contractual rights by suit [VERIFY: Section 69, Indian Partnership Act 1932].\n- Avoid firm names implying government sanction or patronage [VERIFY: Section 58(3), Indian Partnership Act 1932].\n- Execute on non-judicial stamp paper of the value prescribed by the stamp law of the State of execution [VERIFY: Maharashtra Stamp Act, Schedule I entry for instruments of partnership, where executed in Maharashtra].\n- Include an arbitration clause referring disputes among partners to a sole arbitrator under the Arbitration and Conciliation Act, 1996.\n- State governing law and courts of jurisdiction; all partners sign, attested by two witnesses.",
+  "fields": [
+    {
+      "name": "partner1_name",
+      "placeholder": "[FULL NAME OF FIRST PARTNER]",
+      "given_policy": "always",
+      "kind": "person_name",
+      "description": "First partner, party of the first part"
+    },
+    {
+      "name": "partner2_name",
+      "placeholder": "[FULL NAME OF SECOND PARTNER]",
+      "given_policy": "always",
+      "kind": "person_name",
+      "description": "Second partner, party of the second part"
+    },
+    {
+      "name": "partner3_name",
+      "placeholder": "[FULL NAME OF THIRD PARTNER]",
+      "given_policy": "always",
+      "kind": "person_name",
+      "when": {
+        "partners": 3
+      },
+      "description": "Third partner, only in three-partner scenarios"
+    },
+    {
+      "name": "firm_name",
+      "placeholder": "[NAME OF PARTNERSHIP FIRM]",
+      "given_policy": "always",
+      "kind": "company_name",
+      "description": "Name and style under which the firm carries on business, typically prefixed M/s"
+    },
+    {
+      "name": "business_nature",
+      "placeholder": "[NATURE OF BUSINESS]",
+      "given_policy": "always",
+      "kind": "choice",
+      "choices": [
+        "retail trading",
+        "restaurant",
+        "consultancy services",
+        "garment manufacturing",
+        "transport services",
+        "agency/distribution"
+      ],
+      "description": "Nature of the partnership business"
+    },
+    {
+      "name": "city",
+      "placeholder": "[CITY]",
+      "given_policy": "withholdable",
+      "kind": "city",
+      "description": "City of execution and principal place of business"
+    },
+    {
+      "name": "business_address",
+      "placeholder": "[PRINCIPAL PLACE OF BUSINESS ADDRESS]",
+      "given_policy": "withholdable",
+      "kind": "address",
+      "implies_given": [
+        "city"
+      ],
+      "description": "Full address of the principal place of business"
+    },
+    {
+      "name": "commencement_date",
+      "placeholder": "[DATE OF COMMENCEMENT OF PARTNERSHIP]",
+      "given_policy": "withholdable",
+      "kind": "date",
+      "anchor_days_range": [
+        -30,
+        30
+      ],
+      "description": "Date the partnership commences or is deemed to have commenced; may slightly predate or postdate execution"
+    },
+    {
+      "name": "capital_partner1",
+      "placeholder": "[CAPITAL CONTRIBUTION OF FIRST PARTNER IN ₹]",
+      "given_policy": "withholdable",
+      "kind": "inr_amount",
+      "range": [
+        100000,
+        5000000
+      ],
+      "description": "Initial capital brought in by the first partner"
+    },
+    {
+      "name": "capital_partner2",
+      "placeholder": "[CAPITAL CONTRIBUTION OF SECOND PARTNER IN ₹]",
+      "given_policy": "withholdable",
+      "kind": "inr_amount",
+      "range": [
+        100000,
+        5000000
+      ],
+      "description": "Initial capital brought in by the second partner"
+    },
+    {
+      "name": "capital_partner3",
+      "placeholder": "[CAPITAL CONTRIBUTION OF THIRD PARTNER IN ₹]",
+      "given_policy": "withholdable",
+      "kind": "inr_amount",
+      "range": [
+        100000,
+        5000000
+      ],
+      "when": {
+        "partners": 3
+      },
+      "description": "Initial capital brought in by the third partner, only in three-partner scenarios"
+    },
+    {
+      "name": "profit_ratio_two",
+      "placeholder": "[PROFIT SHARING RATIO BETWEEN THE TWO PARTNERS]",
+      "given_policy": "withholdable",
+      "kind": "choice",
+      "choices": [
+        "50:50",
+        "60:40",
+        "55:45",
+        "70:30"
+      ],
+      "when": {
+        "partners": 2
+      },
+      "description": "Profit and loss sharing ratio for two-partner firms"
+    },
+    {
+      "name": "profit_ratio_three",
+      "placeholder": "[PROFIT SHARING RATIO AMONG THE THREE PARTNERS]",
+      "given_policy": "withholdable",
+      "kind": "choice",
+      "choices": [
+        "40:30:30",
+        "34:33:33",
+        "50:30:20",
+        "40:40:20"
+      ],
+      "when": {
+        "partners": 3
+      },
+      "description": "Profit and loss sharing ratio for three-partner firms"
+    },
+    {
+      "name": "interest_on_capital_pct",
+      "placeholder": "[RATE OF INTEREST ON CAPITAL PER ANNUM]",
+      "given_policy": "optional",
+      "kind": "percentage",
+      "range": [
+        6,
+        12
+      ],
+      "description": "Simple interest on capital per annum; generation capped at 12 as a tax-deductibility heuristic, not cited in the document"
+    },
+    {
+      "name": "bank_name",
+      "placeholder": "[NAME OF BANK]",
+      "given_policy": "optional",
+      "kind": "bank_name",
+      "description": "Bank where the firm's account is opened, operated jointly or severally as agreed"
+    }
+  ]
+}

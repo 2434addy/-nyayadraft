@@ -1,0 +1,91 @@
+{
+  "doc_type": "mou_two_parties",
+  "min_chars": 2200,
+  "max_chars": 12000,
+  "require_disclaimer": true,
+  "is_document": true,
+  "required_patterns": [
+    {
+      "id": "mou_title",
+      "description": "Document is titled Memorandum of Understanding",
+      "regex": "(?i)memorandum\\s+of\\s+understanding",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "first_party_designation",
+      "description": "Designates a First Party",
+      "regex": "(?i)\\bfirst\\s+party\\b",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "second_party_designation",
+      "description": "Designates a Second Party",
+      "regex": "(?i)\\bsecond\\s+party\\b",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "whereas_recitals",
+      "description": "Contains WHEREAS recitals",
+      "regex": "(?i)\\bwhereas\\b",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "termination_clause",
+      "description": "Addresses termination of the MOU",
+      "regex": "(?i)\\bterminat(e|ion|ed|ing)\\b",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "confidentiality_clause",
+      "description": "Contains a confidentiality clause",
+      "regex": "(?i)\\bconfidential(ity)?\\b",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "binding_clarification",
+      "description": "Clarifies binding vs non-binding effect of the MOU",
+      "regex": "(?i)(legally\\s+binding|non[-\\s]?binding|binding\\s+(obligations?|effect|nature))",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "dispute_resolution",
+      "description": "Dispute clause naming a resolution mechanism (negotiation, arbitration, or courts)",
+      "regex": "(?i)disputes?\\b[\\s\\S]{0,160}?(arbitrat|courts?\\b|amicabl|negotiat)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "governing_law_jurisdiction",
+      "description": "Governing law and/or exclusive jurisdiction clause",
+      "regex": "(?i)(governing\\s+law|governed\\s+by[\\s\\S]{0,60}?laws?\\s+of\\s+india|exclusive\\s+jurisdiction)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "testimonium_witness",
+      "description": "IN WITNESS WHEREOF testimonium before signature blocks",
+      "regex": "(?i)in\\s+witness\\s+whereof",
+      "legal_basis": "CONFIDENT"
+    }
+  ],
+  "forbidden_patterns": [
+    {
+      "id": "no_md_heading",
+      "description": "No markdown headings",
+      "regex": "(?m)^\\s{0,3}#{1,6}\\s"
+    },
+    {
+      "id": "no_md_bold",
+      "description": "No markdown bold",
+      "regex": "\\*\\*"
+    },
+    {
+      "id": "no_ai_voice",
+      "description": "No AI self-reference",
+      "regex": "(?i)as an ai\\b"
+    },
+    {
+      "id": "no_chat_preamble",
+      "description": "No chatty preamble",
+      "regex": "(?i)\\A\\s*(sure|certainly|here(\\s+is|'s))\\b"
+    }
+  ]
+}

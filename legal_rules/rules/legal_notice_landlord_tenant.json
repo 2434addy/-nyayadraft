@@ -1,0 +1,95 @@
+{
+  "doc_type": "legal_notice_landlord_tenant",
+  "min_chars": 1400,
+  "max_chars": 9000,
+  "require_disclaimer": true,
+  "is_document": true,
+  "required_patterns": [
+    {
+      "id": "legal_notice_heading",
+      "description": "Document is titled/styled as a legal notice",
+      "regex": "(?i)legal\\s+notice",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "parties_relationship",
+      "description": "Names the landlord-tenant or licensor-licensee relationship",
+      "regex": "(?i)\\b(landlord|tenant|tenancy|licensor|licensee|lessor|lessee)s?\\b",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "rent_recital",
+      "description": "Recites the monthly rent or licence fee",
+      "regex": "(?i)(monthly\\s+(rent|licen[cs]e\\s+fee)|(rent|licen[cs]e\\s+fee)\\s+of\\s+(rs\\.?|₹|inr))",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "premises_identification",
+      "description": "Identifies the premises with conveyancing language",
+      "regex": "(?i)((said|tenanted|licensed|demised|suit|schedule)\\s+premises|premises\\s+(situated|located|lying)\\s+at|(flat|shop|gala|office)\\s+no\\.?\\s*\\w)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "demand_language",
+      "description": "Formal demand language",
+      "regex": "(?i)(call\\s+upon\\s+you|hereby\\s+(demand|require|call)|require\\s+you\\s+to|demand\\s+that\\s+you)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "compliance_window",
+      "description": "States a 15- or 30-day compliance window",
+      "regex": "(?i)\\b(fifteen|thirty|15|30)\\s*(\\(\\s*(15|30)\\s*\\))?\\s*days",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "operative_relief",
+      "description": "States the operative relief sought, in either direction (vacate/hand over possession vs refund/restore/desist/receipts)",
+      "regex": "(?i)(vacate|quit\\s+and\\s+deliver|hand\\s*over|deliver\\s+(up\\s+)?(vacant\\s+)?possession|refund|restore|reconnect|desist|issue\\s+(proper\\s+)?rent\\s+receipts?)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "consequences_clause",
+      "description": "States consequences of non-compliance (suit/proceedings/costs), valid for both directions",
+      "regex": "(?i)((suit|proceeding|action)s?\\s+for\\s+(eviction|possession|recovery|ejectment)|appropriate\\s+(legal\\s+)?(proceedings?|action)|civil\\s+and\\s*/?\\s*or\\s+criminal|costs?\\s+and\\s+consequences)",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "dispatch_mode",
+      "description": "Records the mode of dispatch",
+      "regex": "(?i)(registered\\s+post(\\s+a\\.?\\s*d\\.?)?|speed\\s+post|by\\s+courier|\\br\\.?\\s*p\\.?\\s*a\\.?\\s*d\\.?\\b)",
+      "legal_basis": "CONFIDENT"
+    }
+  ],
+  "forbidden_patterns": [
+    {
+      "id": "no_md_heading",
+      "description": "No markdown headings",
+      "regex": "(?m)^\\s{0,3}#{1,6}\\s"
+    },
+    {
+      "id": "no_md_bold",
+      "description": "No markdown bold",
+      "regex": "\\*\\*"
+    },
+    {
+      "id": "no_ai_voice",
+      "description": "No AI self-reference",
+      "regex": "(?i)as an ai\\b"
+    },
+    {
+      "id": "no_chat_preamble",
+      "description": "No chatty preamble",
+      "regex": "(?i)\\A\\s*(sure|certainly|here(\\s+is|'s))\\b"
+    },
+    {
+      "id": "no_model_tenancy_act",
+      "description": "Do not cite the Model Tenancy Act, 2021 as operative law; it is a model law, not directly in force",
+      "regex": "(?i)model\\s+tenancy\\s+act"
+    },
+    {
+      "id": "no_unverified_rent_act_sections",
+      "description": "Block specific section-number citations of state rent control acts in synthetic data, since these are unverified; naming the act without a section remains allowed",
+      "regex": "(?i)(section|u/s\\.?|s\\.)\\s*\\d+[^.\\n]{0,60}rent\\s+control\\s+act"
+    }
+  ]
+}
