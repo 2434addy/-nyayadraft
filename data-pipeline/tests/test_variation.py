@@ -435,3 +435,39 @@ class TestDateChaining:
         first = build(cheque_spec, scenarios, seeds, 11)
         second = build(cheque_spec, scenarios, seeds, 11)
         assert first == second
+
+
+class TestMoneyRecoveryComplianceWindow:
+    """The 15/30-day compliance window is a drafting convention, not a
+    user-specific fact, so it must always be stated concretely — never withheld
+    as a '[NUMBER OF DAYS TO COMPLY]' placeholder the gate then rejects."""
+
+    @pytest.fixture(scope="class")
+    def money_recovery_spec(self):
+        return load_json(META_DIR / "legal_notice_money_recovery.json")
+
+    def _scenarios(self, real_scenarios):
+        return real_scenarios.get("legal_notice_money_recovery") or [
+            {"id": "s", "summary": "An outstanding-dues scenario."}
+        ]
+
+    def test_compliance_days_always_given_concretely(
+        self, money_recovery_spec, real_scenarios, seeds
+    ):
+        scenarios = self._scenarios(real_scenarios)
+        for i in range(150):
+            facts = build(money_recovery_spec, scenarios, seeds, i)["given_facts"]
+            assert "compliance_days" in facts, (
+                f"index {i}: compliance_days was withheld (would render as a "
+                f"[NUMBER OF DAYS TO COMPLY] placeholder)"
+            )
+            assert facts["compliance_days"] in (15, 30)
+
+    def test_compliance_days_never_appears_as_withheld(
+        self, money_recovery_spec, real_scenarios, seeds
+    ):
+        scenarios = self._scenarios(real_scenarios)
+        for i in range(150):
+            var = build(money_recovery_spec, scenarios, seeds, i)
+            withheld = {wf["name"] for wf in var["withheld_fields"]}
+            assert "compliance_days" not in withheld
