@@ -345,6 +345,26 @@ def confirm_or_abort(
         raise SystemExit("Aborted: confirmation not given (expected exactly 'YES').")
 
 
+def _force_utf8_stdio() -> None:
+    """Make stdout/stderr encode UTF-8 so the CLI can print ₹ and other non-ASCII.
+
+    On Windows the console defaults to a legacy code page (cp1252) that cannot
+    encode characters like ₹ (U+20B9), so printing the cost guard or any drafted
+    document would raise UnicodeEncodeError. Reconfiguring to UTF-8 in-process is
+    the fix (no PYTHONIOENCODING env var required). Streams that cannot be
+    reconfigured (already detached, or replaced by a plain object in tests) are
+    left untouched.
+    """
+    for stream in (sys.stdout, sys.stderr):
+        reconfigure = getattr(stream, "reconfigure", None)
+        if reconfigure is None:
+            continue
+        try:
+            reconfigure(encoding="utf-8")
+        except (ValueError, OSError):
+            pass  # best-effort: nothing safe to do if reconfigure refuses
+
+
 def get_api_key(env: Mapping[str, str] | None = None) -> str:
     """Read ANTHROPIC_API_KEY from ``env`` (defaults to os.environ) or exit."""
     environment = os.environ if env is None else env
@@ -662,6 +682,7 @@ def _load_context(out_dir: Path) -> RunContext:
 
 def main(argv: Sequence[str] | None = None) -> int:
     """CLI entry point: plan, cost-guard, confirm, then run (sync or batch)."""
+    _force_utf8_stdio()
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     args = _build_arg_parser().parse_args(argv)
 

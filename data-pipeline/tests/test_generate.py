@@ -410,6 +410,41 @@ class TestRecordFormat:
         assert result.ok, result.failures
 
 
+class TestUtf8Stdio:
+    """The CLI must be able to print ₹ and other non-cp1252 chars on Windows."""
+
+    def test_reconfigures_stdout_and_stderr_to_utf8(self, monkeypatch):
+        calls = {}
+
+        class FakeStream:
+            def __init__(self, name):
+                self.name = name
+
+            def reconfigure(self, **kwargs):
+                calls[self.name] = kwargs
+
+        monkeypatch.setattr(generate.sys, "stdout", FakeStream("out"))
+        monkeypatch.setattr(generate.sys, "stderr", FakeStream("err"))
+        generate._force_utf8_stdio()
+        assert calls["out"]["encoding"] == "utf-8"
+        assert calls["err"]["encoding"] == "utf-8"
+
+    def test_tolerates_streams_without_reconfigure(self, monkeypatch):
+        # e.g. a stream replaced by a plain object; must not raise.
+        monkeypatch.setattr(generate.sys, "stdout", object())
+        monkeypatch.setattr(generate.sys, "stderr", object())
+        generate._force_utf8_stdio()  # no exception == pass
+
+    def test_tolerates_reconfigure_raising(self, monkeypatch):
+        class Stubborn:
+            def reconfigure(self, **kwargs):
+                raise ValueError("cannot reconfigure a detached buffer")
+
+        monkeypatch.setattr(generate.sys, "stdout", Stubborn())
+        monkeypatch.setattr(generate.sys, "stderr", Stubborn())
+        generate._force_utf8_stdio()  # swallowed == pass
+
+
 class TestReviewFlag:
     def test_deterministic(self):
         a = generate.review_flag(20260610, 0.05, "cheque_bounce_138-00001")
