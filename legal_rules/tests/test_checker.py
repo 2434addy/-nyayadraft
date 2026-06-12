@@ -858,6 +858,117 @@ class TestAffidavitVerificationOrdering:
 
 
 # ---------------------------------------------------------------------------
+# Section 4c – harness bugs surfaced by the doc-type audit (real reject text)
+# ---------------------------------------------------------------------------
+
+
+def _required_patterns(doc_type: str) -> dict:
+    return {pid: rx for pid, _desc, rx in load_rules(doc_type).required}
+
+
+# Real refusals from the out_of_scope audit, lightly cleaned. Each was a valid
+# refusal (declines + recommends an advocate + offers supported types) wrongly
+# rejected by an over-strict gate.
+OOS_OFFERS_SUPPORTED_TYPE = (  # tripped no_statutory_citation + no_advice_directive
+    "Hi Nikita, I completely understand the frustration. However, I can only "
+    "draft legal documents and I am not able to advise on whether you should "
+    "sue, predict outcomes, or assess your chances. For that kind of guidance, "
+    "please consult a qualified advocate who can evaluate your situation. That "
+    "said, if you would like to take action, I can draft a Consumer Complaint "
+    "under Section 35 of the Consumer Protection Act, 2019, before the District "
+    "Consumer Disputes Redressal Commission. I can also draft a Legal Notice "
+    "for Recovery of Money or a Reply to Legal Notice if any would help."
+)
+OOS_OUTSIDE_SCOPE_ASSIST = (  # tripped missing_required:scope_statement
+    "Hello Priya, I understand this must be a stressful situation. "
+    "Unfortunately, drafting bail applications falls outside the scope of what "
+    "I am able to assist with. NyayaDraft supports specific document types such "
+    "as General Affidavits, Legal Notices for Recovery of Money, and Cheque "
+    "Bounce Demand Notices, among others. For a bail application, I would "
+    "strongly recommend consulting a qualified criminal law advocate at the "
+    "earliest, as this matter requires urgent professional legal guidance."
+)
+OOS_WORK_ONLY_WITH = (  # tripped missing_required:scope_statement
+    "Thank you for reaching out. I want to be upfront with you: anticipatory "
+    "bail applications fall outside the scope of what I am able to draft. I "
+    "work only with specific document types, such as a General Affidavit, a "
+    "Legal Notice for Recovery of Money, and a Memorandum of Understanding, "
+    "among others. For an anticipatory bail application, I would strongly "
+    "recommend consulting a qualified criminal law advocate who can advise you."
+)
+
+
+class TestOutOfScopeRefusalAcceptance:
+    """Legitimate refusals must pass; the gate must not punish offering a
+    supported document type by name, or quoting a declined action."""
+
+    def test_refusal_offering_supported_type_with_citation_passes(self) -> None:
+        result = check_document("out_of_scope", OOS_OFFERS_SUPPORTED_TYPE)
+        assert result.ok, result.failures
+
+    def test_refusal_outside_scope_assist_phrasing_passes(self) -> None:
+        result = check_document("out_of_scope", OOS_OUTSIDE_SCOPE_ASSIST)
+        assert result.ok, result.failures
+
+    def test_refusal_work_only_with_phrasing_passes(self) -> None:
+        result = check_document("out_of_scope", OOS_WORK_ONLY_WITH)
+        assert result.ok, result.failures
+
+    def test_genuine_advice_directive_still_forbidden(self) -> None:
+        # The fix must not let through an actual directive to sue.
+        bad = (
+            "I cannot draft that, but honestly you should sue them right away. "
+            "Please consult a qualified advocate. I only draft documents." * 2
+        )
+        result = check_document("out_of_scope", bad)
+        assert any("no_advice_directive" in f for f in result.failures)
+
+
+class TestComplianceWindowPhrasing:
+    """'15 (fifteen) days' (number first, word in parens) is standard Indian
+    drafting and must satisfy the compliance-window gates."""
+
+    PHRASES_OK = [
+        "15 (fifteen) days",
+        "30 (thirty) days",
+        "fifteen (15) days",
+        "thirty (30) days",
+        "within 15 days",
+        "within thirty days",
+    ]
+
+    def test_landlord_tenant_window_accepts_all_orderings(self) -> None:
+        rx = _required_patterns("legal_notice_landlord_tenant")["compliance_window"]
+        for s in self.PHRASES_OK:
+            assert rx.search(s), f"compliance_window failed to match: {s!r}"
+
+    def test_money_recovery_window_accepts_all_orderings(self) -> None:
+        rx = _required_patterns("legal_notice_money_recovery")["compliance_window_days"]
+        for s in self.PHRASES_OK:
+            assert rx.search(s), f"compliance_window_days failed to match: {s!r}"
+
+    def test_cheque_bounce_windows_accept_number_first_paren_word(self) -> None:
+        req = _required_patterns("cheque_bounce_138")
+        assert req["demand_15_days"].search("15 (fifteen) days")
+        assert req["memo_30_days"].search("30 (thirty) days")
+
+
+class TestEmploymentLetterhead:
+    """An offer letter on a letterhead block (company name + address + CIN) is
+    valid even when the company name carries no corporate suffix."""
+
+    def test_letterhead_reference_accepts_cin_block(self) -> None:
+        rx = _required_patterns("employment_offer_termination")["letterhead_reference"]
+        assert rx.search("CIN: [COMPANY IDENTIFICATION NUMBER]")
+        assert rx.search("[COMPANY CIN / REGISTRATION NUMBER]")
+
+    def test_letterhead_reference_still_matches_suffix_and_word(self) -> None:
+        rx = _required_patterns("employment_offer_termination")["letterhead_reference"]
+        assert rx.search("(On the letterhead of Acme Pvt. Ltd.)")
+        assert rx.search("Acme Private Limited")
+
+
+# ---------------------------------------------------------------------------
 # Section 5 – load_rules / lint_all_rules with synthetic rule files
 # (covers the ValueError and lint_all_rules problem branches)
 # ---------------------------------------------------------------------------

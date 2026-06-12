@@ -7,8 +7,8 @@
   "required_patterns": [
     {
       "id": "letterhead_reference",
-      "description": "References issuance on company letterhead — either an explicit letterhead reference line, e.g. '(On the letterhead of ...)', or a company name block bearing a corporate suffix (Pvt. Ltd. / Private Limited / Ltd. / LLP / M/s)",
-      "regex": "(?i)(letterhead|\\bpvt\\.?\\s+ltd\\b|\\bprivate\\s+limited\\b|\\bltd\\b|\\bllp\\b|\\bm/s\\b)",
+      "description": "References issuance on company letterhead — an explicit letterhead line, e.g. '(On the letterhead of ...)', a corporate suffix (Pvt. Ltd. / Private Limited / Ltd. / LLP / M/s), or a corporate-identity marker (CIN) in the letterhead block (covers proprietorship/partnership names without a suffix)",
+      "regex": "(?i)(letterhead|\\bpvt\\.?\\s+ltd\\b|\\bprivate\\s+limited\\b|\\bltd\\b|\\bllp\\b|\\bm/s\\b|\\bcin\\b)",
       "legal_basis": "CONFIDENT"
     },
     {

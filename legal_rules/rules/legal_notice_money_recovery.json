@@ -25,8 +25,8 @@
     },
     {
       "id": "compliance_window_days",
-      "description": "States a 15- or 30-day compliance window (customary practice, not statutory)",
-      "regex": "(?i)((fifteen|thirty)\\s*(\\(\\s*(15|30)\\s*\\))?|\\b(15|30))\\s*days",
+      "description": "States a 15- or 30-day compliance window (customary practice, not statutory; either ordering, e.g. 'fifteen (15) days' or '15 (fifteen) days')",
+      "regex": "(?i)\\b(fifteen|thirty|15|30)\\s*(\\(\\s*(15|30|fifteen|thirty)\\s*\\))?\\s*days",
       "legal_basis": "CONFIDENT"
     },
     {

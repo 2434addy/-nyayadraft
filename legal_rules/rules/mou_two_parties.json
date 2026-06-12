@@ -1,7 +1,7 @@
 {
   "doc_type": "mou_two_parties",
   "min_chars": 2200,
-  "max_chars": 12000,
+  "max_chars": 13000,
   "require_disclaimer": true,
   "is_document": true,
   "required_patterns": [

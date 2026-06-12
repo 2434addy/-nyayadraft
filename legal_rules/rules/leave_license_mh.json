@@ -1,7 +1,7 @@
 {
   "doc_type": "leave_license_mh",
   "min_chars": 2800,
-  "max_chars": 14000,
+  "max_chars": 17500,
   "require_disclaimer": true,
   "is_document": true,
   "required_patterns": [
