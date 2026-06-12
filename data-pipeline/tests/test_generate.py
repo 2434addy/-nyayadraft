@@ -46,6 +46,10 @@ def good_payload(instruction="please draft the notice", document="THE DOCUMENT T
     return json.dumps({"instruction": instruction, "document": document})
 
 
+def delimited_payload(instruction="please draft the notice", document="THE DOCUMENT TEXT"):
+    return f"[[[INSTRUCTION]]]\n{instruction}\n[[[DOCUMENT]]]\n{document}\n[[[END]]]"
+
+
 def fake_sync_client(payloads):
     class FakeMessages:
         def __init__(self):
@@ -168,6 +172,56 @@ class TestParseResponse:
         assert "₹5,00,000" in doc
 
 
+class TestParseDelimited:
+    """The delimited block format needs no escaping — the fix for documents whose
+    quotes/braces broke the old JSON envelope (e.g. consumer_complaint)."""
+
+    def test_basic_round_trip(self):
+        instr, doc = generate.parse_response_text(delimited_payload("ask", "body"))
+        assert instr == "ask"
+        assert doc == "body"
+
+    def test_end_marker_optional(self):
+        text = "[[[INSTRUCTION]]]\nask\n[[[DOCUMENT]]]\nbody text here"
+        instr, doc = generate.parse_response_text(text)
+        assert instr == "ask"
+        assert doc == "body text here"
+
+    def test_unescaped_quotes_and_braces_survive(self):
+        # The exact shape that broke consumer_complaint under JSON: an inner
+        # quote (and a brace) inside the document. No escaping under delimiters.
+        doc = 'hereinafter referred to as the "Act"), having availed of {service}'
+        _instr, parsed = generate.parse_response_text(delimited_payload("draft", doc))
+        assert parsed == doc
+
+    def test_surrounding_prose_tolerated(self):
+        text = "Here you go:\n" + delimited_payload("ask", "body") + "\nHope that helps."
+        instr, doc = generate.parse_response_text(text)
+        assert instr == "ask"
+        assert doc == "body"
+
+    def test_marker_whitespace_and_case_tolerated(self):
+        text = "[[[ instruction ]]]\nask\n[[[ Document ]]]\nbody"
+        instr, doc = generate.parse_response_text(text)
+        assert instr == "ask"
+        assert doc == "body"
+
+    def test_multiline_document_preserved(self):
+        document = "LINE ONE\n\nLINE TWO\nLINE THREE"
+        _instr, doc = generate.parse_response_text(delimited_payload("ask", document))
+        assert doc == document
+
+    def test_falls_back_to_json_when_no_markers(self):
+        instr, doc = generate.parse_response_text(good_payload("j-ask", "j-doc"))
+        assert instr == "j-ask"
+        assert doc == "j-doc"
+
+    def test_empty_document_between_markers_raises(self):
+        text = "[[[INSTRUCTION]]]\nask\n[[[DOCUMENT]]]\n   \n[[[END]]]"
+        with pytest.raises(generate.ResponseParseError):
+            generate.parse_response_text(text)
+
+
 class TestCheckpointResume:
     def test_completed_ids_from_both_files(self, tmp_path):
         (tmp_path / "records.jsonl").write_text(
@@ -226,6 +280,22 @@ class TestSampleRun:
         assert call["model"] == ctx.config["generation"]["model"]
         assert call["temperature"] == ctx.config["generation"]["temperature"]
         assert call["max_tokens"] == ctx.config["generation"]["max_tokens"]
+
+    def test_sample_run_parses_delimited_output(self, ctx, monkeypatch):
+        monkeypatch.setattr(
+            generate, "check_document", lambda doc_type, text: CheckResult(ok=True)
+        )
+        tasks = generate.plan_tasks(
+            ctx.config, mode="sample", sample_n=1, types=["cheque_bounce_138"]
+        )
+        client = fake_sync_client([delimited_payload("delim ask", "delim doc body")])
+        summary = generate.run_sample(client, tasks, ctx)
+        assert summary["ok"] == 1
+        record = json.loads(
+            (ctx.out_dir / "samples.jsonl").read_text(encoding="utf-8").strip()
+        )
+        assert record["messages"][1]["content"] == "delim ask"
+        assert record["messages"][2]["content"] == "delim doc body"
 
     def test_sample_saves_check_failure_with_content(self, ctx, monkeypatch):
         monkeypatch.setattr(

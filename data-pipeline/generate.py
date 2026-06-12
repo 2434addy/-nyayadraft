@@ -35,6 +35,7 @@ import hashlib
 import json
 import logging
 import os
+import re
 import sys
 import time
 from dataclasses import dataclass
@@ -221,13 +222,62 @@ def _extract_json_object(text: str) -> str:
     raise ResponseParseError("unbalanced JSON object in response")
 
 
+# Block-format markers. Triple brackets never occur in Indian legal English
+# (placeholders use single brackets, e.g. [CHEQUE NUMBER]), so the document text
+# needs no escaping — unlike a JSON string, where an unescaped quote inside a
+# defined term (e.g. the "Act") corrupts the whole envelope.
+_DELIMITER_RE = re.compile(r"\[\[\[\s*(INSTRUCTION|DOCUMENT|END)\s*\]\]\]", re.IGNORECASE)
+
+
+def _parse_delimited(text: str) -> tuple[str, str] | None:
+    """Parse the ``[[[INSTRUCTION]]] / [[[DOCUMENT]]] / [[[END]]]`` block format.
+
+    Returns ``(instruction, document)``, or ``None`` when the markers are absent
+    or empty so the caller can fall back to the legacy JSON envelope. Surrounding
+    prose, marker whitespace, and case are tolerated; ``[[[END]]]`` is optional.
+    """
+    spans: dict[str, tuple[int, int]] = {}
+    for match in _DELIMITER_RE.finditer(text):
+        spans.setdefault(match.group(1).upper(), (match.start(), match.end()))
+    if "INSTRUCTION" not in spans or "DOCUMENT" not in spans:
+        return None
+    instr_end = spans["INSTRUCTION"][1]
+    doc_start, doc_end = spans["DOCUMENT"]
+    if doc_start < instr_end:
+        return None  # markers out of order; let the JSON fallback try
+    instruction = text[instr_end:doc_start].strip()
+    end_span = spans.get("END")
+    if end_span is not None and end_span[0] >= doc_end:
+        document = text[doc_end : end_span[0]].strip()
+    else:
+        document = text[doc_end:].strip()
+    if not instruction or not document:
+        return None
+    return instruction, document
+
+
 def parse_response_text(text: str) -> tuple[str, str]:
     """Parse a raw model response into ``(instruction, document)`` strings.
 
-    Tolerates surrounding prose and ```json fenced blocks. Raises
-    ``ResponseParseError`` on invalid JSON, missing keys, or non-string values.
+    Prefers the escaping-free ``[[[INSTRUCTION]]]/[[[DOCUMENT]]]`` block format;
+    falls back to the legacy ``{"instruction", "document"}`` JSON envelope for
+    older responses. Raises ``ResponseParseError`` when neither yields a usable
+    pair.
     """
-    candidate = _extract_json_object(text)
+    delimited = _parse_delimited(text)
+    if delimited is not None:
+        return delimited
+    return _parse_json_envelope(text)
+
+
+def _parse_json_envelope(text: str) -> tuple[str, str]:
+    """Parse the legacy JSON envelope. Tolerates surrounding prose and ```json fences."""
+    try:
+        candidate = _extract_json_object(text)
+    except ResponseParseError as exc:
+        raise ResponseParseError(
+            "response is neither the delimited block format nor a JSON object"
+        ) from exc
     try:
         data = json.loads(candidate)
     except json.JSONDecodeError as exc:

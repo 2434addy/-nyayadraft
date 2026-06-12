@@ -44,5 +44,13 @@ HARD CONSTRAINTS:
 4. The document ends with the exact disclaimer line required by the system rules.
 5. No markdown symbols (#, *, **) anywhere in the document.
 
-Return ONLY a JSON object, with no other text before or after:
-{"instruction": "<the user request>", "document": "<the complete document>"}
+Return the example in EXACTLY the format below and nothing else. Do NOT use JSON,
+do NOT wrap the fields in quotes, and do NOT escape anything — write the instruction
+and the document as plain text between the markers, each marker alone on its own line.
+The document may freely contain quotation marks, brackets, and punctuation:
+
+[[[INSTRUCTION]]]
+<the user request>
+[[[DOCUMENT]]]
+<the complete document, starting at its first line>
+[[[END]]]

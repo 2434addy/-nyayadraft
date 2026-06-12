@@ -30,5 +30,12 @@ THE IDEAL REFUSAL (the "document" field) MUST:
 - Recommend consulting a qualified advocate for advice on the matter itself.
 - NOT contain a drafted document, numbered clauses, or the document disclaimer footer.
 
-Return ONLY a JSON object, with no other text before or after:
-{"instruction": "<the off-scope user request>", "document": "<the refusal text>"}
+Return the example in EXACTLY the format below and nothing else. Do NOT use JSON,
+do NOT wrap the fields in quotes, and do NOT escape anything — write the request and
+the refusal as plain text between the markers, each marker alone on its own line:
+
+[[[INSTRUCTION]]]
+<the off-scope user request>
+[[[DOCUMENT]]]
+<the refusal text>
+[[[END]]]
