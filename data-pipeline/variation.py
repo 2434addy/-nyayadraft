@@ -25,7 +25,12 @@ from typing import Any, Mapping, Protocol, Sequence
 
 
 class _Synthesiser(Protocol):
-    """Callable contract for every ``_synth_*`` value synthesizer."""
+    """Callable contract for every ``_synth_*`` value synthesizer.
+
+    ``given`` is the partially-built map of facts already synthesised for this
+    variation (in field-declaration order). Most synthesizers ignore it; date
+    fields use it to chain off an earlier field's value (see ``_synth_date``).
+    """
 
     def __call__(
         self,
@@ -34,6 +39,7 @@ class _Synthesiser(Protocol):
         seeds: Mapping[str, Any],
         rng: random.Random,
         today: dt.date,
+        given: Mapping[str, Any],
     ) -> Any: ...
 
 # Field policies governing whether a field's value is shown to the user.
@@ -171,8 +177,11 @@ def _resolve_fields(
     for field in active:
         name = field["name"]
         if decisions[name] == "given":
+            # Pass the facts decided so far so a ``relative_to`` date field can
+            # chain off an earlier field (declaration order guarantees the base
+            # is already present when it was itself given).
             given_facts[name] = _synthesise_value(
-                field, params, seeds, rng, today
+                field, params, seeds, rng, today, given_facts
             )
         elif decisions[name] == "withheld":
             withheld_fields.append(
@@ -250,6 +259,7 @@ def _synthesise_value(
     seeds: Mapping[str, Any],
     rng: random.Random,
     today: dt.date,
+    given: Mapping[str, Any],
 ) -> Any:
     """Synthesise a deterministic value for a given field by its kind."""
     kind = field.get("kind")
@@ -258,7 +268,7 @@ def _synthesise_value(
             f"field {field.get('name')!r} has unknown kind {kind!r}"
         )
     synthesiser = _SYNTHESISERS[kind]
-    return synthesiser(field, params, seeds, rng, today)
+    return synthesiser(field, params, seeds, rng, today, given)
 
 
 def _names(seeds: Mapping[str, Any]) -> Mapping[str, Any]:
@@ -275,6 +285,7 @@ def _synth_person_name(
     seeds: Mapping[str, Any],
     rng: random.Random,
     today: dt.date,
+    given: Mapping[str, Any],
 ) -> str:
     names = _names(seeds)
     pool = list(names.get("male_first", [])) + list(names.get("female_first", []))
@@ -292,6 +303,7 @@ def _synth_company_name(
     seeds: Mapping[str, Any],
     rng: random.Random,
     today: dt.date,
+    given: Mapping[str, Any],
 ) -> str:
     names = _names(seeds)
     surnames = list(names.get("surnames_maharashtra", [])) + list(
@@ -309,6 +321,7 @@ def _synth_city(
     seeds: Mapping[str, Any],
     rng: random.Random,
     today: dt.date,
+    given: Mapping[str, Any],
 ) -> str:
     return _pick_city(seeds, rng)["name"]
 
@@ -327,6 +340,7 @@ def _synth_address(
     seeds: Mapping[str, Any],
     rng: random.Random,
     today: dt.date,
+    given: Mapping[str, Any],
 ) -> str:
     cities = _cities(seeds)
     buildings = list(cities.get("buildings", []))
@@ -359,6 +373,7 @@ def _synth_inr_amount(
     seeds: Mapping[str, Any],
     rng: random.Random,
     today: dt.date,
+    given: Mapping[str, Any],
 ) -> int:
     low, high = _amount_range(field, params)
     step = 500 if high - low >= 500 else 1
@@ -373,6 +388,7 @@ def _synth_duration_months(
     seeds: Mapping[str, Any],
     rng: random.Random,
     today: dt.date,
+    given: Mapping[str, Any],
 ) -> int:
     choices = field.get("choices")
     if choices:
@@ -387,11 +403,33 @@ def _synth_date(
     seeds: Mapping[str, Any],
     rng: random.Random,
     today: dt.date,
+    given: Mapping[str, Any],
 ) -> str:
-    anchor = field.get("anchor_days_range") or field.get("offset_days_range") or [10, 60]
-    low, high = int(anchor[0]), int(anchor[1])
+    """Synthesise an ISO date, anchored on ``today`` or chained off another field.
+
+    A field with ``anchor_days_range`` is offset from ``today``. A field with
+    ``relative_to`` + ``offset_days_range`` is offset from that base field's
+    already-synthesised date, keeping chained dates (cheque -> presentation ->
+    return memo) correctly ordered and inside their legal windows. If the base
+    field was withheld (so it is absent from ``given``), it falls back to a
+    ``today`` anchor. Exactly one RNG draw happens on every path, so the seeded
+    stream — and thus determinism for later fields — is unaffected.
+    """
+    relative_to = field.get("relative_to")
+    offset = field.get("offset_days_range")
+    base = today
+    span = field.get("anchor_days_range") or offset or [10, 60]
+    if relative_to and offset is not None:
+        base_value = given.get(relative_to)
+        if isinstance(base_value, str):
+            try:
+                base = dt.date.fromisoformat(base_value)
+                span = offset
+            except ValueError:
+                base = today  # base field wasn't a date; keep the today anchor
+    low, high = int(span[0]), int(span[1])
     delta = rng.randint(min(low, high), max(low, high))
-    return (today + dt.timedelta(days=delta)).isoformat()
+    return (base + dt.timedelta(days=delta)).isoformat()
 
 
 def _synth_choice(
@@ -400,6 +438,7 @@ def _synth_choice(
     seeds: Mapping[str, Any],
     rng: random.Random,
     today: dt.date,
+    given: Mapping[str, Any],
 ) -> str:
     choices = list(field.get("choices") or [])
     return rng.choice(choices) if choices else ""
@@ -411,6 +450,7 @@ def _synth_profession(
     seeds: Mapping[str, Any],
     rng: random.Random,
     today: dt.date,
+    given: Mapping[str, Any],
 ) -> str:
     professions = list(_names(seeds).get("professions", []))
     return rng.choice(professions) if professions else "shop owner"
@@ -422,6 +462,7 @@ def _synth_bank_name(
     seeds: Mapping[str, Any],
     rng: random.Random,
     today: dt.date,
+    given: Mapping[str, Any],
 ) -> str:
     banks = list(_names(seeds).get("banks", []))
     bank = rng.choice(banks) if banks else "State Bank of India"
@@ -435,6 +476,7 @@ def _synth_cheque_number(
     seeds: Mapping[str, Any],
     rng: random.Random,
     today: dt.date,
+    given: Mapping[str, Any],
 ) -> str:
     return f"{rng.randint(100000, 999999)}"
 
@@ -445,6 +487,7 @@ def _synth_id_number(
     seeds: Mapping[str, Any],
     rng: random.Random,
     today: dt.date,
+    given: Mapping[str, Any],
 ) -> str:
     # PAN-style identifier; synthetic, never a real document number.
     letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -460,6 +503,7 @@ def _synth_number(
     seeds: Mapping[str, Any],
     rng: random.Random,
     today: dt.date,
+    given: Mapping[str, Any],
 ) -> int:
     low, high = (field.get("range") or [1, 100])[:2]
     return rng.randint(int(low), int(high))
@@ -471,6 +515,7 @@ def _synth_percentage(
     seeds: Mapping[str, Any],
     rng: random.Random,
     today: dt.date,
+    given: Mapping[str, Any],
 ) -> int:
     low, high = (field.get("range") or [1, 100])[:2]
     return rng.randint(int(low), int(high))

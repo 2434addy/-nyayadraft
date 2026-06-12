@@ -227,6 +227,55 @@ class TestSampleRun:
         assert call["temperature"] == ctx.config["generation"]["temperature"]
         assert call["max_tokens"] == ctx.config["generation"]["max_tokens"]
 
+    def test_sample_saves_check_failure_with_content(self, ctx, monkeypatch):
+        monkeypatch.setattr(
+            generate,
+            "check_document",
+            lambda doc_type, text: CheckResult(ok=False, failures=("missing_x",)),
+        )
+        tasks = generate.plan_tasks(
+            ctx.config, mode="sample", sample_n=1, types=["cheque_bounce_138"]
+        )
+        client = fake_sync_client([good_payload("ask", "THE FULL DRAFT TEXT")])
+        summary = generate.run_sample(client, tasks, ctx)
+
+        assert summary["rejected"] == 1
+        assert not (ctx.out_dir / "samples.jsonl").exists()
+        rejects = [
+            json.loads(line)
+            for line in (ctx.out_dir / "rejects.jsonl")
+            .read_text(encoding="utf-8")
+            .strip()
+            .splitlines()
+        ]
+        assert len(rejects) == 1
+        rej = rejects[0]
+        assert rej["error_kind"] == "check_failed"
+        assert rej["failures"] == ["missing_x"]
+        assert rej["document"] == "THE FULL DRAFT TEXT"
+        assert "THE FULL DRAFT TEXT" in rej["raw"]
+
+    def test_sample_saves_parse_error_raw_text(self, ctx):
+        tasks = generate.plan_tasks(
+            ctx.config, mode="sample", sample_n=1, types=["cheque_bounce_138"]
+        )
+        client = fake_sync_client(["this is not valid json at all"])
+        summary = generate.run_sample(client, tasks, ctx)
+
+        assert summary["rejected"] == 1
+        rejects = [
+            json.loads(line)
+            for line in (ctx.out_dir / "rejects.jsonl")
+            .read_text(encoding="utf-8")
+            .strip()
+            .splitlines()
+        ]
+        assert len(rejects) == 1
+        rej = rejects[0]
+        assert rej["error_kind"] == "parse_error"
+        assert rej["raw"] == "this is not valid json at all"
+        assert rej["document"] is None
+
 
 class TestBatchRun:
     def test_batch_flow_routes_records_and_rejects(self, ctx, monkeypatch):
@@ -275,6 +324,36 @@ class TestBatchRun:
         assert all(
             r["params"]["model"] == ctx.config["generation"]["model"] for r in sent
         )
+
+    def test_batch_rejects_carry_content_for_triage(self, ctx, monkeypatch):
+        def fake_check(doc_type, text):
+            ok = "BAD" not in text
+            return CheckResult(ok=ok, failures=() if ok else ("forced_failure",))
+
+        monkeypatch.setattr(generate, "check_document", fake_check)
+        tasks = generate.plan_tasks(
+            ctx.config, mode="sample", sample_n=2, types=["cheque_bounce_138"]
+        )
+        entries = [
+            batch_entry(tasks[0].record_id, good_payload("b", "BAD DOC BODY")),
+            batch_entry(tasks[1].record_id, errored=True),
+        ]
+        client, _ = fake_batch_client(entries)
+        generate.run_batch(client, tasks, ctx, poll_interval=0)
+
+        rejects = {
+            json.loads(line)["error_kind"]: json.loads(line)
+            for line in (ctx.out_dir / "rejects.jsonl")
+            .read_text(encoding="utf-8")
+            .strip()
+            .splitlines()
+        }
+        # check_failed reject keeps both the raw output and the parsed document
+        assert rejects["check_failed"]["document"] == "BAD DOC BODY"
+        assert "BAD DOC BODY" in rejects["check_failed"]["raw"]
+        # api_error has no model output at all
+        assert rejects["api_error"]["raw"] is None
+        assert rejects["api_error"]["document"] is None
 
     def test_rerun_skips_completed(self, ctx, monkeypatch):
         monkeypatch.setattr(

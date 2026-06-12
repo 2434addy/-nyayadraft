@@ -353,3 +353,85 @@ class TestValueSynthesis:
         }
         with pytest.raises(ValueError, match="kind"):
             build(bad, SYNTH_SCENARIOS, seeds, 0)
+
+
+class TestDateChaining:
+    """A ``relative_to`` date field is offset from its base field's date, not today.
+
+    For cheque_bounce_138 this enforces the real-world timeline: the cheque is
+    presented within the 3-month (90-day) validity window, and the bank's return
+    memo follows the presentation. Drawn-from-today dates broke both invariants.
+    """
+
+    N = 300
+
+    @pytest.fixture(scope="class")
+    def cheque_spec(self):
+        return load_json(META_DIR / "cheque_bounce_138.json")
+
+    def _facts_with(self, cheque_spec, real_scenarios, seeds, *names):
+        """Given-facts dicts (across N indices) where every ``name`` was given."""
+        scenarios = real_scenarios["cheque_bounce_138"]
+        rows = []
+        for i in range(self.N):
+            facts = build(cheque_spec, scenarios, seeds, i)["given_facts"]
+            if all(name in facts for name in names):
+                rows.append(facts)
+        return rows
+
+    def test_presentation_within_validity_of_cheque(
+        self, cheque_spec, real_scenarios, seeds
+    ):
+        rows = self._facts_with(
+            cheque_spec, real_scenarios, seeds, "cheque_date", "presentation_date"
+        )
+        assert rows, "no variation gave both cheque_date and presentation_date"
+        for facts in rows:
+            cheque = dt.date.fromisoformat(facts["cheque_date"])
+            presentation = dt.date.fromisoformat(facts["presentation_date"])
+            gap = (presentation - cheque).days
+            assert 0 < gap <= 90, (
+                f"cheque {cheque} -> presentation {presentation}: gap {gap} days "
+                f"violates 0 < gap <= 90 (cheque validity)"
+            )
+
+    def test_memo_follows_presentation(self, cheque_spec, real_scenarios, seeds):
+        rows = self._facts_with(
+            cheque_spec, real_scenarios, seeds, "presentation_date", "memo_date"
+        )
+        assert rows, "no variation gave both presentation_date and memo_date"
+        for facts in rows:
+            presentation = dt.date.fromisoformat(facts["presentation_date"])
+            memo = dt.date.fromisoformat(facts["memo_date"])
+            gap = (memo - presentation).days
+            assert 0 <= gap <= 3, (
+                f"presentation {presentation} -> memo {memo}: gap {gap} days "
+                f"violates 0 <= gap <= 3 (memo follows presentation)"
+            )
+
+    def test_full_chain_ordering_when_all_given(
+        self, cheque_spec, real_scenarios, seeds
+    ):
+        rows = self._facts_with(
+            cheque_spec,
+            real_scenarios,
+            seeds,
+            "cheque_date",
+            "presentation_date",
+            "memo_date",
+        )
+        assert rows, "no variation gave all three date fields"
+        for facts in rows:
+            cheque = dt.date.fromisoformat(facts["cheque_date"])
+            presentation = dt.date.fromisoformat(facts["presentation_date"])
+            memo = dt.date.fromisoformat(facts["memo_date"])
+            assert cheque < presentation <= memo, (
+                f"timeline out of order: cheque {cheque}, "
+                f"presentation {presentation}, memo {memo}"
+            )
+
+    def test_chaining_is_deterministic(self, cheque_spec, real_scenarios, seeds):
+        scenarios = real_scenarios["cheque_bounce_138"]
+        first = build(cheque_spec, scenarios, seeds, 11)
+        second = build(cheque_spec, scenarios, seeds, 11)
+        assert first == second

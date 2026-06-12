@@ -4,7 +4,11 @@
 generation:
   model: claude-sonnet-4-6
   temperature: 0.9
-  max_tokens: 4096
+  max_tokens: 8192           # cap, not a target: long doc types (leave_license,
+                             # consumer_complaint, partnership_deed) need headroom to
+                             # emit the full JSON without truncation -> parse_error.
+                             # Cost-neutral for short docs (billed per generated token);
+                             # the cost guard estimates spend from est_output_tokens.
   use_batch_api: true        # Batches API = 50% cheaper; --sample and --retry always run sync
   est_input_tokens: 1900     # per-request estimates used by the cost guard
   est_output_tokens: 2300

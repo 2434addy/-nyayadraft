@@ -445,14 +445,29 @@ def _chat_record(
 
 
 def _reject_record(
-    task: Task, error_kind: str, detail: str, failures: Iterable[str] = ()
+    task: Task,
+    error_kind: str,
+    detail: str,
+    failures: Iterable[str] = (),
+    *,
+    raw: str | None = None,
+    document: str | None = None,
 ) -> dict[str, Any]:
+    """Build a reject record.
+
+    ``raw`` is the unparsed model output and ``document`` the parsed draft (when
+    parsing succeeded). Both are persisted so a human can triage *why* a draft
+    was rejected — was the document genuinely wrong, or the checker too strict?
+    For ``api_error`` rejects there is no model output, so both stay ``None``.
+    """
     return {
         "id": task.record_id,
         "doc_type": task.doc_type,
         "error_kind": error_kind,
         "detail": detail,
         "failures": list(failures),
+        "raw": raw,
+        "document": document,
     }
 
 
@@ -472,11 +487,16 @@ def _process_text(
     try:
         instruction, document = parse_response_text(text)
     except ResponseParseError as exc:
-        return "rejected", _reject_record(task, "parse_error", str(exc))
+        return "rejected", _reject_record(task, "parse_error", str(exc), raw=text)
     check = check_document(task.doc_type, document)
     if not check.ok:
         return "rejected", _reject_record(
-            task, "check_failed", "statutory/structural gate failed", check.failures
+            task,
+            "check_failed",
+            "statutory/structural gate failed",
+            check.failures,
+            raw=text,
+            document=document,
         )
     return "ok", _chat_record(task, var, instruction, document, check, ctx)
 
@@ -495,6 +515,7 @@ def run_sample(
     params = _model_params(ctx)
     summary = {"ok": 0, "rejected": 0}
     samples_path = ctx.out_dir / SAMPLES_FILE
+    rejects_path = ctx.out_dir / REJECTS_FILE
     for task in tasks:
         var = _build_variation(task, ctx)
         user_prompt = _render_user_prompt(var, ctx)
@@ -512,7 +533,13 @@ def run_sample(
             print(f"INSTRUCTION: {record['messages'][1]['content']}")
             print(f"DOCUMENT:\n{record['messages'][2]['content']}")
         else:
+            # Persist rejects (with the raw output + parsed draft) so a human can
+            # triage them; sample mode previously printed and then discarded them.
+            _append_jsonl(rejects_path, record)
             print(f"\n=== REJECTED {record['id']}: {record['error_kind']} ===")
+            if record.get("failures"):
+                print(f"FAILURES: {', '.join(record['failures'])}")
+            print(f"(raw output + parsed draft saved to {REJECTS_FILE} for triage)")
     return summary
 
 

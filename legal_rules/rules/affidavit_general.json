@@ -36,9 +36,15 @@
       "legal_basis": "CONFIDENT"
     },
     {
-      "id": "verification_clause",
-      "description": "Verification clause: 'Verified at [place]...' affirming contents true/correct",
-      "regex": "(?is)verified\\s+at\\b.{0,200}?\\b(true|correct)\\b",
+      "id": "verification_affirmation",
+      "description": "Verification affirms the contents are true/correct (either clause order)",
+      "regex": "(?is)\\bverif(y|ied|ication)\\b.{0,300}?\\b(true|correct)\\b",
+      "legal_basis": "CONFIDENT"
+    },
+    {
+      "id": "verification_venue",
+      "description": "Verification states the place: 'Verified at [place]'",
+      "regex": "(?i)\\bverified\\s+at\\b",
       "legal_basis": "CONFIDENT"
     },
     {

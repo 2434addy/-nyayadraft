@@ -803,6 +803,61 @@ class TestEdgeCases:
 
 
 # ---------------------------------------------------------------------------
+# Section 4b – affidavit verification clause ordering
+# ---------------------------------------------------------------------------
+
+# A complete, self-sufficient affidavit whose verification is written in the
+# common "affirmation-first" order: the "...are true and correct..." sentence
+# precedes the "Verified at [place] on [date]" venue line. Both orderings are
+# valid Indian practice; the gate must accept either.
+AFFIDAVIT_AFFIRMATION_FIRST = (
+    "AFFIDAVIT\n\n"
+    "I, Nikita Reddy, daughter of Devendra Mane, aged about 65 years, "
+    "resident of Flat No. 24, Silver Oak Towers, Kothrud, Thane 400084, "
+    "do hereby solemnly affirm and declare as under:\n\n"
+    "1. That I am the deponent herein and am fully conversant with the facts "
+    "and circumstances of this affidavit and am competent to swear the same.\n"
+    "2. That I am one and the same person referred to by the two differing name "
+    "spellings appearing across my official documents, and there is no intention "
+    "on my part to assume a false identity or to misrepresent any fact.\n"
+    "3. That the variation in the said names has arisen due to inadvertent "
+    "clerical inconsistency in the recording of my name across documents.\n\n"
+    "VERIFICATION\n\n"
+    "I, Nikita Reddy, the deponent above named, do hereby verify that the "
+    "contents of paragraphs 1 to 3 above are true and correct to the best of my "
+    "knowledge and belief, and that nothing material has been concealed "
+    "therefrom.\n\n"
+    "Verified at Nashik on this 11th day of June, 2026.\n\n"
+    "(DEPONENT)\n\n"
+    "Solemnly affirmed before me by the deponent, who is personally known to "
+    "me, on this 11th day of June, 2026, at Nashik.\n\n"
+    "Notary Public\n\n"
+    "This affidavit is to be executed on non-judicial stamp paper of the value "
+    "applicable in the State.\n\n"
+    + DISCLAIMER
+)
+
+
+class TestAffidavitVerificationOrdering:
+    """The verification gate must accept both clause orderings, not just one."""
+
+    def test_affirmation_first_affidavit_passes_gate(self) -> None:
+        result = check_document("affidavit_general", AFFIDAVIT_AFFIRMATION_FIRST)
+        assert result.ok, result.failures
+
+    def test_neither_ordering_reports_a_verification_miss(self) -> None:
+        # AFFIDAVIT_COMPLIANT is place-first; AFFIDAVIT_AFFIRMATION_FIRST is
+        # affirmation-first. Neither should produce a verification-related miss,
+        # independent of any length padding.
+        for text in (AFFIDAVIT_COMPLIANT, AFFIDAVIT_AFFIRMATION_FIRST):
+            result = check_document("affidavit_general", text)
+            verification_misses = [
+                f for f in result.failures if "verif" in f.lower()
+            ]
+            assert not verification_misses, (text[:40], verification_misses)
+
+
+# ---------------------------------------------------------------------------
 # Section 5 – load_rules / lint_all_rules with synthetic rule files
 # (covers the ValueError and lint_all_rules problem branches)
 # ---------------------------------------------------------------------------
