@@ -592,6 +592,22 @@ class TestRealScenarioConsistency:
         "jee_gap_year_admission": "preparation for competitive entrance examinations",
         "pg_admission_family_illness_gap": "caring for an ailing family member",
     }
+    EMPLOYMENT_DESIGNATIONS = {
+        "it_services_offer_pune": "Software Engineer",
+        "auto_components_offer_aurangabad": "Production Supervisor",
+        "fintech_offer_bengaluru": "Senior Product Manager",
+        "bpo_offer_mumbai": "Customer Support Executive",
+        "pharma_offer_hyderabad": "Quality Assurance Chemist",
+        "retail_offer_nagpur": "Store Manager",
+        "hospitality_offer_goa": "Front Office Manager",
+        "restructuring_termination_mumbai": "Marketing Executive",
+        "probation_nonconfirmation_pune": "Operations Trainee",
+        "misconduct_termination_thane": "Storekeeper",
+        "absence_termination_nashik": "Sales Representative",
+        "saas_layoff_gurugram": "Backend Engineer",
+        "probation_termination_chennai": "Junior Developer",
+        "misconduct_termination_kolkata": "Accounts Assistant",
+    }
 
     def _assert_scenario_pins(self, doc_type, field, mapping, seeds, n=12):
         spec = _load_spec(doc_type)
@@ -638,6 +654,12 @@ class TestRealScenarioConsistency:
         self._assert_scenario_pins(
             "affidavit_general", "gap_reason",
             self.AFFIDAVIT_GAP, seeds,
+        )
+
+    def test_employment_designation_matches_scenario(self, seeds):
+        self._assert_scenario_pins(
+            "employment_offer_termination", "designation",
+            self.EMPLOYMENT_DESIGNATIONS, seeds,
         )
 
     def test_every_scenario_pin_is_a_declared_choice(self, seeds):

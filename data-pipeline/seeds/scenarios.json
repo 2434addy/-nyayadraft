@@ -942,7 +942,8 @@
         "amount_range_inr": [
           600000,
           2400000
-        ]
+        ],
+        "designation": "Software Engineer"
       }
     },
     {
@@ -953,7 +954,8 @@
         "amount_range_inr": [
           350000,
           900000
-        ]
+        ],
+        "designation": "Production Supervisor"
       }
     },
     {
@@ -964,7 +966,8 @@
         "amount_range_inr": [
           1800000,
           6000000
-        ]
+        ],
+        "designation": "Senior Product Manager"
       }
     },
     {
@@ -975,7 +978,8 @@
         "amount_range_inr": [
           300000,
           550000
-        ]
+        ],
+        "designation": "Customer Support Executive"
       }
     },
     {
@@ -986,7 +990,8 @@
         "amount_range_inr": [
           400000,
           1000000
-        ]
+        ],
+        "designation": "Quality Assurance Chemist"
       }
     },
     {
@@ -997,7 +1002,8 @@
         "amount_range_inr": [
           400000,
           900000
-        ]
+        ],
+        "designation": "Store Manager"
       }
     },
     {
@@ -1008,7 +1014,8 @@
         "amount_range_inr": [
           350000,
           800000
-        ]
+        ],
+        "designation": "Front Office Manager"
       }
     },
     {
@@ -1016,7 +1023,8 @@
       "summary": "Mumbai media house terminates a marketing executive after a divisional shutdown, offering pay in lieu of notice.",
       "params": {
         "letter_kind": "termination",
-        "termination_reason": "redundancy arising from organisational restructuring"
+        "termination_reason": "redundancy arising from organisational restructuring",
+        "designation": "Marketing Executive"
       }
     },
     {
@@ -1024,7 +1032,8 @@
       "summary": "Pune logistics firm declines to confirm an operations trainee whose probation performance fell short of targets.",
       "params": {
         "letter_kind": "termination",
-        "termination_reason": "non-confirmation of services during the probation period"
+        "termination_reason": "non-confirmation of services during the probation period",
+        "designation": "Operations Trainee"
       }
     },
     {
@@ -1032,7 +1041,8 @@
       "summary": "Thane engineering unit dismisses a storekeeper for stock pilferage established in a domestic inquiry.",
       "params": {
         "letter_kind": "termination",
-        "termination_reason": "misconduct established in a domestic inquiry"
+        "termination_reason": "misconduct established in a domestic inquiry",
+        "designation": "Storekeeper"
       }
     },
     {
@@ -1040,7 +1050,8 @@
       "summary": "Nashik FMCG distributor terminates a sales representative for continued unauthorised absence despite written warnings.",
       "params": {
         "letter_kind": "termination",
-        "termination_reason": "continued unauthorised absence from duty"
+        "termination_reason": "continued unauthorised absence from duty",
+        "designation": "Sales Representative"
       }
     },
     {
@@ -1048,7 +1059,8 @@
       "summary": "Gurugram SaaS company retrenches a backend engineer amid funding-driven restructuring, with pay in lieu of notice.",
       "params": {
         "letter_kind": "termination",
-        "termination_reason": "redundancy arising from organisational restructuring"
+        "termination_reason": "redundancy arising from organisational restructuring",
+        "designation": "Backend Engineer"
       }
     },
     {
@@ -1056,7 +1068,8 @@
       "summary": "Chennai IT services firm ends a junior developer's service during probation for non-confirmation.",
       "params": {
         "letter_kind": "termination",
-        "termination_reason": "non-confirmation of services during the probation period"
+        "termination_reason": "non-confirmation of services during the probation period",
+        "designation": "Junior Developer"
       }
     },
     {
@@ -1064,7 +1077,8 @@
       "summary": "Kolkata trading company terminates an accounts assistant for misconduct established in an internal inquiry.",
       "params": {
         "letter_kind": "termination",
-        "termination_reason": "misconduct established in a domestic inquiry"
+        "termination_reason": "misconduct established in a domestic inquiry",
+        "designation": "Accounts Assistant"
       }
     }
   ],
