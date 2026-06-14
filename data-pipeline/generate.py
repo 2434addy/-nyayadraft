@@ -121,13 +121,24 @@ def _doc_types(config: Mapping[str, Any]) -> tuple[str, ...]:
 
 
 def _full_counts(config: Mapping[str, Any]) -> dict[str, int]:
+    """Per-type counts for a full run.
+
+    An explicit ``counts.per_type`` map (used for the weighted 1,000-doc
+    distribution) takes precedence per type; any type it omits falls back to
+    ``out_of_scope`` for the refusal category and ``default_per_type`` for the
+    rest. Leaving ``per_type`` unset preserves the original uniform behaviour.
+    """
     counts = config["counts"]
     default = int(counts["default_per_type"])
     oos = int(counts["out_of_scope"])
-    return {
-        doc_type: oos if doc_type == OUT_OF_SCOPE else default
-        for doc_type in _doc_types(config)
-    }
+    per_type = counts.get("per_type") or {}
+
+    def count_for(doc_type: str) -> int:
+        if doc_type in per_type:
+            return int(per_type[doc_type])
+        return oos if doc_type == OUT_OF_SCOPE else default
+
+    return {doc_type: count_for(doc_type) for doc_type in _doc_types(config)}
 
 
 def _pilot_counts(config: Mapping[str, Any]) -> dict[str, int]:

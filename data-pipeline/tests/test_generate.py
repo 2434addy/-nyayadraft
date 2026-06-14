@@ -98,9 +98,42 @@ def fake_batch_client(entries):
 class TestPlanTasks:
     def test_full_run_counts(self, config):
         tasks = generate.plan_tasks(config, mode="full")
-        assert len(tasks) == 10 * 500 + 250
-        oos = [t for t in tasks if t.doc_type == "out_of_scope"]
-        assert len(oos) == 250
+        assert len(tasks) == 1000  # complexity-weighted 1,000-doc distribution
+        counts = {
+            doc_type: sum(1 for t in tasks if t.doc_type == doc_type)
+            for doc_type in (
+                "partnership_deed_1932",
+                "consumer_complaint_cpa2019",
+                "affidavit_general",
+                "out_of_scope",
+            )
+        }
+        assert counts == {
+            "partnership_deed_1932": 120,
+            "consumer_complaint_cpa2019": 120,
+            "affidavit_general": 70,
+            "out_of_scope": 50,
+        }
+
+    def test_full_run_honors_per_type_override(self):
+        cfg = {
+            "doc_types": ["alpha", "beta", "out_of_scope"],
+            "counts": {
+                "default_per_type": 500,
+                "out_of_scope": 250,
+                "pilot_per_type": 30,
+                "per_type": {"alpha": 7, "out_of_scope": 3},
+            },
+            "sample_max": 10,
+        }
+        tasks = generate.plan_tasks(cfg, mode="full")
+        counts = {
+            doc_type: sum(1 for t in tasks if t.doc_type == doc_type)
+            for doc_type in ("alpha", "beta", "out_of_scope")
+        }
+        # listed types use per_type; unlisted fall back (beta -> default,
+        # out_of_scope override beats its dedicated fallback count).
+        assert counts == {"alpha": 7, "beta": 500, "out_of_scope": 3}
 
     def test_pilot_counts(self, config):
         tasks = generate.plan_tasks(config, mode="pilot")
