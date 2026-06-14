@@ -268,7 +268,39 @@ def _synthesise_value(
             f"field {field.get('name')!r} has unknown kind {kind!r}"
         )
     synthesiser = _SYNTHESISERS[kind]
-    return synthesiser(field, params, seeds, rng, today, given)
+    # Always run the synthesiser so its RNG draw happens on every path; the
+    # scenario pin (if any) then overrides the drawn value. Keeping the draw
+    # leaves the seeded stream — and every later field's value — unchanged.
+    value = synthesiser(field, params, seeds, rng, today, given)
+    return _apply_field_pin(field, params, value)
+
+
+def _apply_field_pin(
+    field: Mapping[str, Any], params: Mapping[str, Any], value: Any
+) -> Any:
+    """Override ``value`` when the scenario pins this field to a fixed value.
+
+    Some facts are determined by the scenario rather than drawn independently:
+    the consumer product complained of, a firm's line of business, the ground
+    for a termination. A scenario expresses this by carrying a param keyed by
+    the field's own name (e.g. ``"product_service": "washing machine"``). The
+    pin replaces the drawn value so the given fact agrees with the scenario
+    summary that is shown to the model alongside it. For a ``choice`` field the
+    pin must be one of the declared choices, so a typo in the scenario bank
+    fails fast at build time rather than silently producing an off-list value.
+    """
+    name = field.get("name")
+    if name not in params:
+        return value
+    pinned = params[name]
+    if field.get("kind") == "choice":
+        choices = field.get("choices") or []
+        if choices and pinned not in choices:
+            raise VariationError(
+                f"scenario pins field {name!r} to {pinned!r}, which is not among "
+                f"its declared choices {list(choices)}"
+            )
+    return pinned
 
 
 def _names(seeds: Mapping[str, Any]) -> Mapping[str, Any]:

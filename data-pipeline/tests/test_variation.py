@@ -471,3 +471,191 @@ class TestMoneyRecoveryComplianceWindow:
             var = build(money_recovery_spec, scenarios, seeds, i)
             withheld = {wf["name"] for wf in var["withheld_fields"]}
             assert "compliance_days" not in withheld
+
+
+class TestScenarioFieldPin:
+    """A scenario may pin a field's value via a param keyed by the field name.
+
+    This is the cross-field consistency mechanism: where the scenario itself
+    determines a 'choice' (the consumer product complained of, the partnership's
+    line of business, the ground for a termination), the value must agree with
+    the scenario summary instead of being drawn independently. The synthesiser
+    still runs (so the seeded RNG stream — and every later field — is unchanged);
+    the pin then overrides the drawn value.
+    """
+
+    PIN_SPEC = {
+        "doc_type": "pin_doc",
+        "display_name": "Pin",
+        "structural_summary": "s",
+        "statutory_requirements": "r",
+        "fields": [
+            {
+                "name": "kind_field",
+                "placeholder": "[K]",
+                "given_policy": "always",
+                "kind": "choice",
+                "choices": ["alpha", "beta", "gamma"],
+            },
+            {
+                "name": "sibling",
+                "placeholder": "[S]",
+                "given_policy": "always",
+                "kind": "person_name",
+            },
+        ],
+    }
+
+    def test_param_pins_choice_to_fixed_value(self, seeds):
+        scen = [{"id": "s", "summary": "x", "params": {"kind_field": "gamma"}}]
+        for i in range(25):
+            var = build(self.PIN_SPEC, scen, seeds, i)
+            assert var["given_facts"]["kind_field"] == "gamma"
+
+    def test_pin_outside_choices_raises(self, seeds):
+        scen = [{"id": "s", "summary": "x", "params": {"kind_field": "omega"}}]
+        with pytest.raises(variation.VariationError, match="kind_field"):
+            build(self.PIN_SPEC, scen, seeds, 0)
+
+    def test_pin_preserves_sibling_determinism(self, seeds):
+        """Pinning one field must not shift the RNG stream for other fields."""
+        unpinned = [{"id": "s", "summary": "x"}]
+        pinned = [{"id": "s", "summary": "x", "params": {"kind_field": "beta"}}]
+        for i in range(25):
+            a = build(self.PIN_SPEC, unpinned, seeds, i)["given_facts"]["sibling"]
+            b = build(self.PIN_SPEC, pinned, seeds, i)["given_facts"]["sibling"]
+            assert a == b
+
+
+def _load_spec(doc_type):
+    return load_json(META_DIR / f"{doc_type}.json")
+
+
+def _load_scenarios_for(doc_type):
+    return load_json(SEEDS_DIR / "scenarios.json")[doc_type]
+
+
+class TestRealScenarioConsistency:
+    """Every scenario that semantically fixes a choice must produce that value.
+
+    Pre-fix these fields were drawn at random and disagreed with the scenario
+    summary fed to the model alongside the given facts (the consumer
+    product/scenario mismatch class). The assertion is: for each pinned
+    scenario, the field — whenever it is given — equals the scenario's value,
+    and it is never some other choice.
+    """
+
+    CONSUMER_PRODUCTS = {
+        "defective_washing_machine": "washing machine",
+        "ecommerce_non_delivery": "laptop computer",
+        "insurance_claim_repudiated": "health insurance policy",
+        "builder_possession_delay": "residential flat booking",
+        "faulty_vehicle_servicing": "motor vehicle servicing",
+        "coaching_class_refund_refusal": "coaching classes enrolment",
+        "airline_refund_denied": "air ticket",
+        "hospital_overbilling": "hospital treatment package",
+        "bank_charges_dispute": "savings bank account services",
+        "defective_furniture": "sofa set",
+        "mobile_dead_on_arrival": "mobile handset",
+        "gym_membership_refund": "gym membership",
+    }
+    EMPLOYMENT_REASONS = {
+        "restructuring_termination_mumbai": "redundancy arising from organisational restructuring",
+        "probation_nonconfirmation_pune": "non-confirmation of services during the probation period",
+        "misconduct_termination_thane": "misconduct established in a domestic inquiry",
+        "absence_termination_nashik": "continued unauthorised absence from duty",
+        "saas_layoff_gurugram": "redundancy arising from organisational restructuring",
+        "probation_termination_chennai": "non-confirmation of services during the probation period",
+        "misconduct_termination_kolkata": "misconduct established in a domestic inquiry",
+    }
+    PARTNERSHIP_NATURE = {
+        "two_friends_retail_shop": "retail trading",
+        "family_restaurant": "restaurant",
+        "ca_consultancy": "consultancy services",
+        "three_partner_garment_unit": "garment manufacturing",
+        "transport_business": "transport services",
+        "agency_distribution": "agency/distribution",
+        "cloud_kitchen": "restaurant",
+        "hardware_store_formalisation": "retail trading",
+        "ecommerce_reselling": "retail trading",
+    }
+    AFFIDAVIT_LOST = {
+        "duplicate_share_certificate": "original share certificate",
+        "lost_ssc_marksheet": "SSC marksheet",
+        "lost_sale_deed_refinance": "original registered sale deed",
+    }
+    AFFIDAVIT_GAP = {
+        "jee_gap_year_admission": "preparation for competitive entrance examinations",
+        "pg_admission_family_illness_gap": "caring for an ailing family member",
+    }
+
+    def _assert_scenario_pins(self, doc_type, field, mapping, seeds, n=12):
+        spec = _load_spec(doc_type)
+        scen = _load_scenarios_for(doc_type)
+        span = len(scen)
+        idx_by_id = {s["id"]: i for i, s in enumerate(scen)}
+        for sid, expected in mapping.items():
+            base = idx_by_id[sid]
+            seen_present = False
+            for k in range(n):
+                facts = build(spec, scen, seeds, base + k * span)["given_facts"]
+                if field in facts:
+                    seen_present = True
+                    assert facts[field] == expected, (
+                        f"{doc_type}/{sid}: {field}={facts[field]!r} != {expected!r}"
+                    )
+            assert seen_present, f"{doc_type}/{sid}: {field} never given in {n} draws"
+
+    def test_consumer_product_matches_scenario(self, seeds):
+        self._assert_scenario_pins(
+            "consumer_complaint_cpa2019", "product_service",
+            self.CONSUMER_PRODUCTS, seeds,
+        )
+
+    def test_employment_reason_matches_scenario(self, seeds):
+        self._assert_scenario_pins(
+            "employment_offer_termination", "termination_reason",
+            self.EMPLOYMENT_REASONS, seeds,
+        )
+
+    def test_partnership_business_matches_scenario(self, seeds):
+        self._assert_scenario_pins(
+            "partnership_deed_1932", "business_nature",
+            self.PARTNERSHIP_NATURE, seeds,
+        )
+
+    def test_affidavit_lost_document_matches_scenario(self, seeds):
+        self._assert_scenario_pins(
+            "affidavit_general", "lost_document_type",
+            self.AFFIDAVIT_LOST, seeds,
+        )
+
+    def test_affidavit_gap_reason_matches_scenario(self, seeds):
+        self._assert_scenario_pins(
+            "affidavit_general", "gap_reason",
+            self.AFFIDAVIT_GAP, seeds,
+        )
+
+    def test_every_scenario_pin_is_a_declared_choice(self, seeds):
+        """Any param keyed by a choice-field name must be a valid choice.
+
+        Guards against typos in scenario pins for the whole bank at once.
+        """
+        scenarios = load_json(SEEDS_DIR / "scenarios.json")
+        for doc_type, scen_list in scenarios.items():
+            spec = _load_spec(doc_type)
+            choice_choices = {
+                f["name"]: set(f.get("choices") or [])
+                for f in spec.get("fields", [])
+                if f.get("kind") == "choice"
+            }
+            field_names = {f["name"] for f in spec.get("fields", [])}
+            for scen in scen_list:
+                for key, value in (scen.get("params") or {}).items():
+                    if key in choice_choices:
+                        assert value in choice_choices[key], (
+                            f"{doc_type}/{scen.get('id')}: pin {key}={value!r} "
+                            f"not in {sorted(choice_choices[key])}"
+                        )
+
+

@@ -683,7 +683,8 @@
         "amount_range_inr": [
           15000,
           90000
-        ]
+        ],
+        "product_service": "washing machine"
       }
     },
     {
@@ -693,7 +694,8 @@
         "amount_range_inr": [
           25000,
           120000
-        ]
+        ],
+        "product_service": "laptop computer"
       }
     },
     {
@@ -703,7 +705,8 @@
         "amount_range_inr": [
           60000,
           900000
-        ]
+        ],
+        "product_service": "health insurance policy"
       }
     },
     {
@@ -713,7 +716,8 @@
         "amount_range_inr": [
           1500000,
           4500000
-        ]
+        ],
+        "product_service": "residential flat booking"
       }
     },
     {
@@ -723,7 +727,8 @@
         "amount_range_inr": [
           10000,
           200000
-        ]
+        ],
+        "product_service": "motor vehicle servicing"
       }
     },
     {
@@ -733,7 +738,8 @@
         "amount_range_inr": [
           30000,
           250000
-        ]
+        ],
+        "product_service": "coaching classes enrolment"
       }
     },
     {
@@ -743,7 +749,8 @@
         "amount_range_inr": [
           4000,
           90000
-        ]
+        ],
+        "product_service": "air ticket"
       }
     },
     {
@@ -753,7 +760,8 @@
         "amount_range_inr": [
           80000,
           700000
-        ]
+        ],
+        "product_service": "hospital treatment package"
       }
     },
     {
@@ -763,7 +771,8 @@
         "amount_range_inr": [
           5000,
           60000
-        ]
+        ],
+        "product_service": "savings bank account services"
       }
     },
     {
@@ -773,7 +782,8 @@
         "amount_range_inr": [
           20000,
           150000
-        ]
+        ],
+        "product_service": "sofa set"
       }
     },
     {
@@ -783,7 +793,8 @@
         "amount_range_inr": [
           10000,
           120000
-        ]
+        ],
+        "product_service": "mobile handset"
       }
     },
     {
@@ -793,7 +804,8 @@
         "amount_range_inr": [
           8000,
           60000
-        ]
+        ],
+        "product_service": "gym membership"
       }
     },
     {
@@ -847,35 +859,40 @@
       "id": "jee_gap_year_admission",
       "summary": "Nashik student took a year after HSC to prepare for engineering entrance examinations; college demands a gap-year affidavit at admission.",
       "params": {
-        "purpose": "education_gap_year"
+        "purpose": "education_gap_year",
+        "gap_reason": "preparation for competitive entrance examinations"
       }
     },
     {
       "id": "pg_admission_family_illness_gap",
       "summary": "Delhi graduate explains a two-year break before post-graduation caused by a parent's prolonged illness; university requires a sworn explanation.",
       "params": {
-        "purpose": "education_gap_year"
+        "purpose": "education_gap_year",
+        "gap_reason": "caring for an ailing family member"
       }
     },
     {
       "id": "duplicate_share_certificate",
       "summary": "Mumbai investor misplaced original share certificates during house shifting; the company's registrar requires an affidavit before issuing duplicates.",
       "params": {
-        "purpose": "lost_document"
+        "purpose": "lost_document",
+        "lost_document_type": "original share certificate"
       }
     },
     {
       "id": "lost_ssc_marksheet",
       "summary": "Chhatrapati Sambhajinagar candidate lost his SSC marksheet in transit; the divisional board requires an affidavit before issuing a duplicate.",
       "params": {
-        "purpose": "lost_document"
+        "purpose": "lost_document",
+        "lost_document_type": "SSC marksheet"
       }
     },
     {
       "id": "lost_sale_deed_refinance",
       "summary": "Bengaluru flat owner cannot trace the original sale deed; affidavit needed to obtain a certified copy and complete bank loan refinance.",
       "params": {
-        "purpose": "lost_document"
+        "purpose": "lost_document",
+        "lost_document_type": "original registered sale deed"
       }
     },
     {
@@ -997,49 +1014,56 @@
       "id": "restructuring_termination_mumbai",
       "summary": "Mumbai media house terminates a marketing executive after a divisional shutdown, offering pay in lieu of notice.",
       "params": {
-        "letter_kind": "termination"
+        "letter_kind": "termination",
+        "termination_reason": "redundancy arising from organisational restructuring"
       }
     },
     {
       "id": "probation_nonconfirmation_pune",
       "summary": "Pune logistics firm declines to confirm an operations trainee whose probation performance fell short of targets.",
       "params": {
-        "letter_kind": "termination"
+        "letter_kind": "termination",
+        "termination_reason": "non-confirmation of services during the probation period"
       }
     },
     {
       "id": "misconduct_termination_thane",
       "summary": "Thane engineering unit dismisses a storekeeper for stock pilferage established in a domestic inquiry.",
       "params": {
-        "letter_kind": "termination"
+        "letter_kind": "termination",
+        "termination_reason": "misconduct established in a domestic inquiry"
       }
     },
     {
       "id": "absence_termination_nashik",
       "summary": "Nashik FMCG distributor terminates a sales representative for continued unauthorised absence despite written warnings.",
       "params": {
-        "letter_kind": "termination"
+        "letter_kind": "termination",
+        "termination_reason": "continued unauthorised absence from duty"
       }
     },
     {
       "id": "saas_layoff_gurugram",
       "summary": "Gurugram SaaS company retrenches a backend engineer amid funding-driven restructuring, with pay in lieu of notice.",
       "params": {
-        "letter_kind": "termination"
+        "letter_kind": "termination",
+        "termination_reason": "redundancy arising from organisational restructuring"
       }
     },
     {
       "id": "probation_termination_chennai",
       "summary": "Chennai IT services firm ends a junior developer's service during probation for non-confirmation.",
       "params": {
-        "letter_kind": "termination"
+        "letter_kind": "termination",
+        "termination_reason": "non-confirmation of services during the probation period"
       }
     },
     {
       "id": "misconduct_termination_kolkata",
       "summary": "Kolkata trading company terminates an accounts assistant for misconduct established in an internal inquiry.",
       "params": {
-        "letter_kind": "termination"
+        "letter_kind": "termination",
+        "termination_reason": "misconduct established in a domestic inquiry"
       }
     }
   ],
@@ -1189,7 +1213,8 @@
         "amount_range_inr": [
           200000,
           1500000
-        ]
+        ],
+        "business_nature": "retail trading"
       }
     },
     {
@@ -1200,7 +1225,8 @@
         "amount_range_inr": [
           500000,
           3000000
-        ]
+        ],
+        "business_nature": "restaurant"
       }
     },
     {
@@ -1211,7 +1237,8 @@
         "amount_range_inr": [
           100000,
           1000000
-        ]
+        ],
+        "business_nature": "consultancy services"
       }
     },
     {
@@ -1222,7 +1249,8 @@
         "amount_range_inr": [
           1000000,
           5000000
-        ]
+        ],
+        "business_nature": "garment manufacturing"
       }
     },
     {
@@ -1233,7 +1261,8 @@
         "amount_range_inr": [
           800000,
           4000000
-        ]
+        ],
+        "business_nature": "transport services"
       }
     },
     {
@@ -1244,7 +1273,8 @@
         "amount_range_inr": [
           500000,
           2500000
-        ]
+        ],
+        "business_nature": "agency/distribution"
       }
     },
     {
@@ -1255,7 +1285,8 @@
         "amount_range_inr": [
           300000,
           1500000
-        ]
+        ],
+        "business_nature": "restaurant"
       }
     },
     {
@@ -1277,7 +1308,8 @@
         "amount_range_inr": [
           500000,
           2000000
-        ]
+        ],
+        "business_nature": "retail trading"
       }
     },
     {
@@ -1288,7 +1320,8 @@
         "amount_range_inr": [
           100000,
           800000
-        ]
+        ],
+        "business_nature": "retail trading"
       }
     },
     {
