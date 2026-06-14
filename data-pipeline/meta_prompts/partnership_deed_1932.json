@@ -46,7 +46,10 @@
         "consultancy services",
         "garment manufacturing",
         "transport services",
-        "agency/distribution"
+        "agency/distribution",
+        "salon and beauty services",
+        "civil construction contracting",
+        "coaching and educational services"
       ],
       "description": "Nature of the partnership business"
     },

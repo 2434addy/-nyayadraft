@@ -815,7 +815,8 @@
         "amount_range_inr": [
           6000,
           50000
-        ]
+        ],
+        "product_service": "broadband internet connection"
       }
     }
   ],
@@ -1297,7 +1298,8 @@
         "amount_range_inr": [
           200000,
           1200000
-        ]
+        ],
+        "business_nature": "coaching and educational services"
       }
     },
     {
@@ -1332,7 +1334,8 @@
         "amount_range_inr": [
           400000,
           2000000
-        ]
+        ],
+        "business_nature": "salon and beauty services"
       }
     },
     {
@@ -1343,7 +1346,8 @@
         "amount_range_inr": [
           500000,
           3000000
-        ]
+        ],
+        "business_nature": "civil construction contracting"
       }
     }
   ],

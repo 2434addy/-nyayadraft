@@ -558,6 +558,7 @@ class TestRealScenarioConsistency:
         "defective_furniture": "sofa set",
         "mobile_dead_on_arrival": "mobile handset",
         "gym_membership_refund": "gym membership",
+        "broadband_advance_disconnection": "broadband internet connection",
     }
     EMPLOYMENT_REASONS = {
         "restructuring_termination_mumbai": "redundancy arising from organisational restructuring",
@@ -578,6 +579,9 @@ class TestRealScenarioConsistency:
         "cloud_kitchen": "restaurant",
         "hardware_store_formalisation": "retail trading",
         "ecommerce_reselling": "retail trading",
+        "salon_chain": "salon and beauty services",
+        "construction_subcontracting": "civil construction contracting",
+        "coaching_institute": "coaching and educational services",
     }
     AFFIDAVIT_LOST = {
         "duplicate_share_certificate": "original share certificate",
