@@ -19,8 +19,11 @@ argument then overrides the drawn value without disturbing later draws.
 """
 from __future__ import annotations
 
+import argparse
 import datetime as dt
+import json
 import random
+import sys
 from typing import Any, Mapping, Protocol, Sequence
 
 
@@ -569,3 +572,94 @@ _SYNTHESISERS: dict[str, _Synthesiser] = {
     "number": _synth_number,
     "percentage": _synth_percentage,
 }
+
+
+# --------------------------------------------------------------------------- #
+# Dump CLI — inspect deterministic variations without running generation.
+# --------------------------------------------------------------------------- #
+def _force_utf8_stdio() -> None:
+    """Make stdout/stderr encode UTF-8 so the dump can print ₹ and other non-ASCII.
+
+    On Windows the console defaults to a legacy code page (cp1252) that cannot
+    encode characters like ₹ (U+20B9). A dumped variation whose withheld fields
+    carry a ``[... ₹]`` placeholder would then raise UnicodeEncodeError on
+    ``print``. Reconfiguring the streams to UTF-8 in-process is the fix (no
+    PYTHONIOENCODING env var required); this mirrors generate.py's CLI. Streams
+    that cannot be reconfigured (already detached, or replaced by a plain object
+    in tests) are left untouched.
+    """
+    for stream in (sys.stdout, sys.stderr):
+        reconfigure = getattr(stream, "reconfigure", None)
+        if reconfigure is None:
+            continue
+        try:
+            reconfigure(encoding="utf-8")
+        except (ValueError, OSError):
+            pass  # best-effort: nothing safe to do if reconfigure refuses
+
+
+def _build_arg_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        description="Dump deterministic NyayaDraft variations as UTF-8 JSON."
+    )
+    parser.add_argument(
+        "--types",
+        nargs="*",
+        default=None,
+        help="doc types to dump (default: every configured type)",
+    )
+    parser.add_argument(
+        "-n",
+        "--count",
+        type=int,
+        default=3,
+        help="variations to emit per doc type (default: 3)",
+    )
+    return parser
+
+
+def main(argv: Sequence[str] | None = None) -> int:
+    """CLI: dump ``count`` deterministic variations per doc type as JSON.
+
+    Mirrors generate.py's UTF-8 stdio guard so ₹ placeholders print on Windows.
+    The output is keyed by doc type; each value is the list of variations.
+    """
+    _force_utf8_stdio()
+    # Lazy import keeps variation.py importable as a pure library (no config I/O
+    # at import time) and avoids a hard dependency for callers that only need
+    # build_variation.
+    import pipeline_config
+
+    args = _build_arg_parser().parse_args(argv)
+    config = pipeline_config.load_config()
+    specs = pipeline_config.load_specs()
+    scenarios = pipeline_config.load_scenarios()
+    seeds = pipeline_config.load_seeds()
+    today = dt.date.today()
+
+    doc_types = list(args.types) if args.types else list(config["doc_types"])
+    unknown = [doc_type for doc_type in doc_types if doc_type not in specs]
+    if unknown:
+        raise SystemExit(f"unknown doc_type(s): {', '.join(unknown)}")
+
+    count = max(0, int(args.count))
+    dump = {
+        doc_type: [
+            build_variation(
+                specs[doc_type],
+                scenarios.get(doc_type, []),
+                seeds,
+                config,
+                index,
+                today=today,
+            )
+            for index in range(count)
+        ]
+        for doc_type in doc_types
+    }
+    print(json.dumps(dump, ensure_ascii=False, indent=2, sort_keys=True))
+    return 0
+
+
+if __name__ == "__main__":  # pragma: no cover - CLI shim
+    raise SystemExit(main())

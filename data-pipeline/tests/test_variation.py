@@ -659,3 +659,57 @@ class TestRealScenarioConsistency:
                         )
 
 
+class TestForceUtf8Stdio:
+    """variation.py's dump CLI must encode ₹ (U+20B9) on a cp1252 console."""
+
+    def test_reconfigures_stdout_and_stderr_to_utf8(self, monkeypatch):
+        calls = {}
+
+        class FakeStream:
+            def __init__(self, name):
+                self.name = name
+
+            def reconfigure(self, **kwargs):
+                calls[self.name] = kwargs
+
+        monkeypatch.setattr(variation.sys, "stdout", FakeStream("out"))
+        monkeypatch.setattr(variation.sys, "stderr", FakeStream("err"))
+        variation._force_utf8_stdio()
+        assert calls["out"]["encoding"] == "utf-8"
+        assert calls["err"]["encoding"] == "utf-8"
+
+    def test_tolerates_streams_without_reconfigure(self, monkeypatch):
+        monkeypatch.setattr(variation.sys, "stdout", object())
+        monkeypatch.setattr(variation.sys, "stderr", object())
+        variation._force_utf8_stdio()  # no exception == pass
+
+    def test_tolerates_reconfigure_raising(self, monkeypatch):
+        class Stubborn:
+            def reconfigure(self, **kwargs):
+                raise ValueError("cannot reconfigure a detached buffer")
+
+        monkeypatch.setattr(variation.sys, "stdout", Stubborn())
+        monkeypatch.setattr(variation.sys, "stderr", Stubborn())
+        variation._force_utf8_stdio()  # swallowed == pass
+
+
+class TestDumpCli:
+    """`python variation.py --types <t> -n <k>` dumps variations as UTF-8 JSON."""
+
+    def test_dump_emits_valid_json_with_requested_counts(self, capsys):
+        rc = variation.main(["--types", "cheque_bounce_138", "-n", "2"])
+        assert rc == 0
+        out = capsys.readouterr().out
+        data = json.loads(out)
+        assert list(data.keys()) == ["cheque_bounce_138"]
+        assert len(data["cheque_bounce_138"]) == 2
+        assert data["cheque_bounce_138"][0]["doc_type"] == "cheque_bounce_138"
+
+    def test_dump_renders_rupee_without_crashing(self, capsys):
+        # Withheld inr fields surface '[... ₹]' placeholders; dumping the full
+        # bank (as variations_smoke.json does) must print them without raising.
+        rc = variation.main([])
+        assert rc == 0
+        assert "₹" in capsys.readouterr().out
+
+
