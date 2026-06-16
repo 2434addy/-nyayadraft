@@ -743,6 +743,141 @@ def _all_doc_types():
     return sorted(p.stem for p in META_DIR.glob("*.json"))
 
 
+class TestRelatedFieldPairs:
+    """Fields that name the same entity, or whose magnitudes are tied, must be
+    synthesised consistently instead of drawn independently."""
+
+    @pytest.fixture(scope="class")
+    def affidavit_spec(self):
+        return load_json(META_DIR / "affidavit_general.json")
+
+    @pytest.fixture(scope="class")
+    def leave_spec(self):
+        return load_json(META_DIR / "leave_license_mh.json")
+
+    @pytest.fixture(scope="class")
+    def landlord_spec(self):
+        return load_json(META_DIR / "legal_notice_landlord_tenant.json")
+
+    def _name_mismatch(self, real_scenarios):
+        return [
+            s
+            for s in real_scenarios["affidavit_general"]
+            if (s.get("params") or {}).get("purpose") == "name_mismatch"
+        ]
+
+    def test_name_variant_a_is_the_deponent(
+        self, affidavit_spec, real_scenarios, seeds
+    ):
+        scen = self._name_mismatch(real_scenarios)
+        seen = 0
+        for i in range(150):
+            facts = build(affidavit_spec, scen, seeds, i)["given_facts"]
+            if "name_variant_a" in facts:
+                seen += 1
+                assert facts["name_variant_a"] == facts["deponent_name"], (
+                    "variant A (name in first document) must be the deponent's "
+                    "own name"
+                )
+        assert seen, "name_variant_a never active under name_mismatch scenarios"
+
+    def test_name_variant_b_is_same_person_different_surname(
+        self, affidavit_spec, real_scenarios, seeds
+    ):
+        scen = self._name_mismatch(real_scenarios)
+        seen = 0
+        for i in range(150):
+            facts = build(affidavit_spec, scen, seeds, i)["given_facts"]
+            if "name_variant_b" not in facts:
+                continue
+            seen += 1
+            dep = facts["deponent_name"].split()
+            b = facts["name_variant_b"].split()
+            assert b[0] == dep[0], (
+                f"variant B given name {b[0]!r} differs from deponent {dep[0]!r}; "
+                f"the affidavit affirms one and the same person"
+            )
+            assert b[-1] != dep[-1], (
+                "variant B must differ from the deponent (maiden/married surname)"
+            )
+            assert facts["name_variant_b"] != facts["name_variant_a"]
+        assert seen, "name_variant_b never active"
+
+    def test_name_variants_keep_deponent_gender(
+        self, affidavit_spec, real_scenarios, seeds
+    ):
+        male = set(seeds["names"]["male_first"])
+        female = set(seeds["names"]["female_first"])
+        scen = self._name_mismatch(real_scenarios)
+        for i in range(150):
+            facts = build(affidavit_spec, scen, seeds, i)["given_facts"]
+            if "name_variant_a" not in facts:
+                continue
+            dep_first = facts["deponent_name"].split()[0]
+            for key in ("name_variant_a", "name_variant_b"):
+                vf = facts[key].split()[0]
+                if dep_first in male:
+                    assert vf not in female, f"{key} {vf!r} crossed to female pool"
+                elif dep_first in female:
+                    assert vf not in male, f"{key} {vf!r} crossed to male pool"
+
+    def test_parent_name_shares_surname_and_is_male(
+        self, affidavit_spec, real_scenarios, seeds
+    ):
+        male = set(seeds["names"]["male_first"])
+        scen = real_scenarios["affidavit_general"]
+        seen = 0
+        for i in range(250):
+            facts = build(affidavit_spec, scen, seeds, i)["given_facts"]
+            if "deponent_parent_name" not in facts:
+                continue
+            seen += 1
+            dep = facts["deponent_name"].split()
+            par = facts["deponent_parent_name"].split()
+            assert par[-1] == dep[-1], (
+                f"parentage surname {par[-1]!r} != deponent {dep[-1]!r}; the "
+                f"father/husband shares the family name"
+            )
+            assert par[0] in male, (
+                f"parentage given name {par[0]!r} is not male (father/husband)"
+            )
+        assert seen, "deponent_parent_name never given"
+
+    def test_leave_license_deposit_is_months_of_fee(
+        self, leave_spec, real_scenarios, seeds
+    ):
+        scen = real_scenarios["leave_license_mh"]
+        seen = 0
+        for i in range(300):
+            facts = build(leave_spec, scen, seeds, i)["given_facts"]
+            if "security_deposit" in facts and "monthly_fee" in facts:
+                seen += 1
+                ratio = facts["security_deposit"] / facts["monthly_fee"]
+                assert ratio == int(ratio), (
+                    f"deposit {facts['security_deposit']} is not an integer "
+                    f"multiple of fee {facts['monthly_fee']}"
+                )
+                assert 3 <= int(ratio) <= 10
+        assert seen, "deposit/fee never both given"
+
+    def test_landlord_deposit_is_months_of_rent(
+        self, landlord_spec, real_scenarios, seeds
+    ):
+        scen = real_scenarios["legal_notice_landlord_tenant"]
+        seen = 0
+        for i in range(400):
+            facts = build(landlord_spec, scen, seeds, i)["given_facts"]
+            if "security_deposit" in facts and "monthly_rent" in facts:
+                seen += 1
+                ratio = facts["security_deposit"] / facts["monthly_rent"]
+                assert ratio == int(ratio), (
+                    f"deposit {facts['security_deposit']} is not an integer "
+                    f"multiple of rent {facts['monthly_rent']}"
+                )
+                assert 2 <= int(ratio) <= 10
+        assert seen, "deposit/rent never both given"
+
+
 class TestNoFutureDates:
     """Systematic invariant: a synthesised date is never after the drafting
     date `today` unless its field explicitly declares ``future_ok``.

@@ -85,7 +85,12 @@
         25000,
         1500000
       ],
-      "description": "Interest-free refundable deposit, typically 3-10 months of fee"
+      "multiple_of": "monthly_fee",
+      "multiple_range": [
+        3,
+        10
+      ],
+      "description": "Interest-free refundable deposit, 3-10 months of the monthly fee (kept consistent with monthly_fee, not drawn independently)"
     },
     {
       "name": "term_months",

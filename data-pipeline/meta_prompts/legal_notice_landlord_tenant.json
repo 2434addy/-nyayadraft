@@ -49,7 +49,13 @@
       "range": [
         25000,
         1200000
-      ]
+      ],
+      "multiple_of": "monthly_rent",
+      "multiple_range": [
+        2,
+        10
+      ],
+      "description": "Security deposit, 2-10 months of the monthly rent (kept consistent with monthly_rent, not drawn independently)"
     },
     {
       "name": "tenancy_start_date",

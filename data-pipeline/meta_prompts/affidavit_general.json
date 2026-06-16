@@ -16,7 +16,9 @@
       "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]",
       "given_policy": "withholdable",
       "kind": "person_name",
-      "description": "Parentage recital (son of / daughter of / wife of)"
+      "relation_to": "deponent_name",
+      "relation": "parent",
+      "description": "Parentage recital (son of / daughter of / wife of); a male given name carrying the deponent's family surname"
     },
     {
       "name": "deponent_age",
@@ -63,20 +65,24 @@
       "placeholder": "[NAME AS APPEARING IN FIRST DOCUMENT]",
       "given_policy": "always",
       "kind": "person_name",
+      "variant_of": "deponent_name",
+      "variant_style": "identity",
       "when": {
         "purpose": "name_mismatch"
       },
-      "description": "First spelling/form of the name, with the document it appears in"
+      "description": "First spelling/form of the name (the deponent's own name as in document one)"
     },
     {
       "name": "name_variant_b",
       "placeholder": "[NAME AS APPEARING IN SECOND DOCUMENT]",
       "given_policy": "always",
       "kind": "person_name",
+      "variant_of": "deponent_name",
+      "variant_style": "surname_swap",
       "when": {
         "purpose": "name_mismatch"
       },
-      "description": "Second spelling/form; affidavit affirms both denote one and the same person"
+      "description": "Second form (same given name, maiden/married surname); affidavit affirms both denote one and the same person"
     },
     {
       "name": "residing_since_year",

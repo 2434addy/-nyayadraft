@@ -315,6 +315,14 @@ def _cities(seeds: Mapping[str, Any]) -> Mapping[str, Any]:
     return seeds.get("cities") or {}
 
 
+def _split_name(full: str) -> tuple[str, str]:
+    """Split a synthesised ``First Last`` name into (given name, surname)."""
+    parts = full.split()
+    if len(parts) < 2:
+        return full, ""
+    return parts[0], parts[-1]
+
+
 def _synth_person_name(
     field: Mapping[str, Any],
     params: Mapping[str, Any],
@@ -323,14 +331,61 @@ def _synth_person_name(
     today: dt.date,
     given: Mapping[str, Any],
 ) -> str:
+    """Synthesise a person name, or a name *related* to one already given.
+
+    Two standard RNG draws (a given name, a surname) happen on every path so the
+    seeded stream stays stable for later fields. A field may instead name the
+    same or a related person, derived from a base field already in ``given``:
+
+    * ``variant_of`` — the same person under another spelling/marriage surname.
+      ``variant_style: "identity"`` returns the base verbatim; otherwise the base
+      given name is kept (same person, same gender) and a different family surname
+      is swapped in (the maiden/married mismatch an affidavit affirms).
+    * ``relation_to`` with ``relation: "parent"`` — a father/husband: a *male*
+      given name carrying the base person's family surname.
+    """
     names = _names(seeds)
-    pool = list(names.get("male_first", [])) + list(names.get("female_first", []))
+    male = list(names.get("male_first", []))
+    pool = male + list(names.get("female_first", []))
     surnames = list(names.get("surnames_maharashtra", [])) + list(
         names.get("surnames_other", [])
     )
     first = rng.choice(pool) if pool else "Aarti"
     last = rng.choice(surnames) if surnames else "Deshmukh"
+
+    variant_of = field.get("variant_of")
+    if variant_of and isinstance(given.get(variant_of), str):
+        return _name_variant(
+            given[variant_of], field.get("variant_style"), last, surnames
+        )
+
+    relation_to = field.get("relation_to")
+    if relation_to and isinstance(given.get(relation_to), str):
+        # Parentage is a father/husband, hence male; one extra draw is taken on
+        # this always-related field, which stays deterministic by construction.
+        male_first = rng.choice(male) if male else "Ramesh"
+        return _relation_name(given[relation_to], male_first, last)
+
     return f"{first} {last}"
+
+
+def _name_variant(
+    base: str, style: str | None, drawn_surname: str, surnames: Sequence[str]
+) -> str:
+    """A spelling/maiden-married variant of ``base`` — same person, same gender."""
+    b_first, b_last = _split_name(base)
+    if not b_last or style == "identity":
+        return base
+    new_last = drawn_surname
+    if not new_last or new_last == b_last:
+        new_last = next((s for s in surnames if s != b_last), b_last)
+    return f"{b_first} {new_last}"
+
+
+def _relation_name(base: str, male_first: str, drawn_surname: str) -> str:
+    """A father/husband name: a male given name + the base person's surname."""
+    _b_first, b_last = _split_name(base)
+    return f"{male_first} {b_last or drawn_surname}"
 
 
 def _synth_company_name(
@@ -441,6 +496,18 @@ def _synth_inr_amount(
     today: dt.date,
     given: Mapping[str, Any],
 ) -> int:
+    """Synthesise an INR amount, or an integer multiple of a related amount.
+
+    A field with ``multiple_of`` (e.g. a security deposit pegged to the monthly
+    rent/fee) returns ``base * N`` where ``N`` is drawn from ``multiple_range``,
+    so the two amounts stay plausibly related instead of independent. Exactly one
+    RNG draw happens on either path, keeping the stream stable.
+    """
+    multiple_of = field.get("multiple_of")
+    base = given.get(multiple_of) if multiple_of else None
+    if isinstance(base, (int, float)) and not isinstance(base, bool):
+        lo, hi = (field.get("multiple_range") or [2, 10])[:2]
+        return int(base) * rng.randint(int(lo), int(hi))
     low, high = _amount_range(field, params)
     step = 500 if high - low >= 500 else 1
     raw = rng.randint(low, high)
