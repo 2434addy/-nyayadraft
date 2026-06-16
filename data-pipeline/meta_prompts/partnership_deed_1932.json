@@ -79,7 +79,8 @@
         -30,
         30
       ],
-      "description": "Date the partnership commences or is deemed to have commenced; may slightly predate or postdate execution"
+      "future_ok": true,
+      "description": "Date the partnership commences or is deemed to have commenced; may slightly predate or postdate execution, so it is a forward-looking effective date (future_ok)."
     },
     {
       "name": "capital_partner1",

@@ -739,6 +739,119 @@ class TestDumpCli:
         assert "₹" in capsys.readouterr().out
 
 
+def _all_doc_types():
+    return sorted(p.stem for p in META_DIR.glob("*.json"))
+
+
+class TestNoFutureDates:
+    """Systematic invariant: a synthesised date is never after the drafting
+    date `today` unless its field explicitly declares ``future_ok``.
+
+    The per-field bugs were all symptoms of this invariant's absence:
+    trigger_date / vacation_date / payment_due_date / reply_date were offset
+    *forward from today* (they declared an offset but no relative_to), and the
+    cheque chain (presentation_date / memo_date) fell back to a forward
+    today-anchor whenever its base field was withheld. Only genuine
+    forward-looking effective dates (offer joining, termination last day,
+    licence/partnership commencement) may legitimately exceed today.
+    """
+
+    N = 150
+
+    def test_no_given_date_is_future_unless_future_ok(self, real_scenarios, seeds):
+        for doc_type in _all_doc_types():
+            spec = load_json(META_DIR / f"{doc_type}.json")
+            date_fields = {
+                f["name"] for f in spec.get("fields", []) if f.get("kind") == "date"
+            }
+            if not date_fields:
+                continue
+            future_ok = {
+                f["name"]
+                for f in spec.get("fields", [])
+                if f.get("kind") == "date" and f.get("future_ok")
+            }
+            scenarios = real_scenarios.get(doc_type, [])
+            for i in range(self.N):
+                facts = build(spec, scenarios, seeds, i)["given_facts"]
+                for name in date_fields - future_ok:
+                    if name in facts:
+                        d = dt.date.fromisoformat(facts[name])
+                        assert d <= TODAY, (
+                            f"{doc_type}/{name}={d} is after drafting date {TODAY} "
+                            f"and is not declared future_ok"
+                        )
+
+    # (doc_type, dependent_field, base_field, offset_lo, offset_hi)
+    RETRO_CHAINS = [
+        ("cheque_bounce_138", "presentation_date", "cheque_date", 5, 85),
+        ("cheque_bounce_138", "memo_date", "presentation_date", 0, 3),
+        ("consumer_complaint_cpa2019", "trigger_date", "purchase_date", 7, 75),
+        ("legal_notice_landlord_tenant", "vacation_date", "tenancy_start_date", 180, 360),
+        ("legal_notice_money_recovery", "payment_due_date", "debt_origin_date", 30, 180),
+        ("reply_to_legal_notice", "reply_date", "notice_date", 3, 9),
+    ]
+
+    def test_retro_dates_chain_after_base_when_both_given(
+        self, real_scenarios, seeds
+    ):
+        for doc_type, dep, base, lo, hi in self.RETRO_CHAINS:
+            spec = load_json(META_DIR / f"{doc_type}.json")
+            scenarios = real_scenarios.get(doc_type, [])
+            seen = False
+            for i in range(500):
+                facts = build(spec, scenarios, seeds, i)["given_facts"]
+                if dep in facts and base in facts:
+                    seen = True
+                    base_d = dt.date.fromisoformat(facts[base])
+                    dep_d = dt.date.fromisoformat(facts[dep])
+                    gap = (dep_d - base_d).days
+                    assert lo <= gap <= hi, (
+                        f"{doc_type}: {dep} {dep_d} is {gap}d from {base} {base_d}, "
+                        f"outside chain offset [{lo},{hi}]"
+                    )
+            assert seen, f"{doc_type}: never gave both {dep} and {base} in 500 draws"
+
+    def test_retro_dates_stay_past_when_base_withheld(self, real_scenarios, seeds):
+        """The 'past-anchored fallback' requirement: when the base field is
+        withheld, the dependent date must still land in the past, never forward
+        from today."""
+        for doc_type, dep, base, _lo, _hi in self.RETRO_CHAINS:
+            spec = load_json(META_DIR / f"{doc_type}.json")
+            scenarios = real_scenarios.get(doc_type, [])
+            seen_orphan = False
+            for i in range(800):
+                facts = build(spec, scenarios, seeds, i)["given_facts"]
+                if dep in facts and base not in facts:
+                    seen_orphan = True
+                    d = dt.date.fromisoformat(facts[dep])
+                    assert d <= TODAY, (
+                        f"{doc_type}/{dep}={d} (base {base} withheld) is in the "
+                        f"future; fallback must be past-anchored"
+                    )
+            assert seen_orphan, (
+                f"{doc_type}: {dep} never given while {base} withheld in 800 draws"
+            )
+
+    def test_prospective_dates_remain_future(self, real_scenarios, seeds):
+        """The future_ok flag must not over-clamp: offer/termination/licence
+        effective dates are still allowed to fall after today."""
+        for doc_type, field in [
+            ("employment_offer_termination", "joining_date"),
+            ("employment_offer_termination", "last_working_day"),
+            ("leave_license_mh", "start_date"),
+        ]:
+            spec = load_json(META_DIR / f"{doc_type}.json")
+            scenarios = real_scenarios.get(doc_type, [])
+            saw_future = False
+            for i in range(300):
+                facts = build(spec, scenarios, seeds, i)["given_facts"]
+                if field in facts and dt.date.fromisoformat(facts[field]) > TODAY:
+                    saw_future = True
+                    break
+            assert saw_future, f"{doc_type}/{field} should still be able to be future"
+
+
 class TestPartnershipFirmName:
     """A partnership firm is M/s ... & Co./Enterprises/Traders — never an
     incorporated entity. The generic company_name generator drew entity

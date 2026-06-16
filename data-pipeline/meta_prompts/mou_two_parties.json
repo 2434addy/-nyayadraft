@@ -65,9 +65,9 @@
       "kind": "date",
       "anchor_days_range": [
         -10,
-        30
+        0
       ],
-      "description": "Date the MOU is executed; recent past or near future"
+      "description": "Date the MOU is executed; the execution timestamp is the drafting moment, so it is recent-past-to-today (never future)."
     },
     {
       "name": "term_months",

@@ -34,11 +34,16 @@
       "placeholder": "[DATE OF THIS REPLY]",
       "given_policy": "withholdable",
       "kind": "date",
+      "relative_to": "notice_date",
       "offset_days_range": [
         3,
         9
       ],
-      "description": "Date of dispatch of this reply; offset keeps it after the notice date and never in the future given the anchor range"
+      "fallback_anchor_days_range": [
+        -40,
+        -2
+      ],
+      "description": "Date of dispatch of this reply; chained off notice_date so it follows the received notice, past-anchored when the notice date is withheld."
     },
     {
       "name": "disputed_amount",

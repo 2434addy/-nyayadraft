@@ -58,10 +58,11 @@
         14,
         60
       ],
+      "future_ok": true,
       "when": {
         "letter_kind": "offer"
       },
-      "description": "Future joining date stated in the offer."
+      "description": "Future joining date stated in the offer; a genuine forward-looking effective date (future_ok)."
     },
     {
       "name": "probation_months",
@@ -127,10 +128,11 @@
         7,
         90
       ],
+      "future_ok": true,
       "when": {
         "letter_kind": "termination"
       },
-      "description": "Future last working day; first and only date field generated for termination letters."
+      "description": "Future last working day (notice served); a genuine forward-looking effective date (future_ok)."
     },
     {
       "name": "notice_disposition",

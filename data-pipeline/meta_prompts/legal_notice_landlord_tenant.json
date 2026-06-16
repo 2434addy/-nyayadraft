@@ -66,14 +66,19 @@
       "placeholder": "[DATE TENANT VACATED THE PREMISES]",
       "given_policy": "withholdable",
       "kind": "date",
+      "relative_to": "tenancy_start_date",
       "offset_days_range": [
         180,
         360
       ],
+      "fallback_anchor_days_range": [
+        -1200,
+        -40
+      ],
       "when": {
         "tenant_vacated": true
       },
-      "description": "Date the tenant vacated and handed over keys; only for deposit-refund/deduction scenarios. Offset keeps it after tenancy commencement and always in the past."
+      "description": "Date the tenant vacated and handed over keys; only for deposit-refund/deduction scenarios. Chained off tenancy_start_date so it follows commencement; past-anchored when the start date is withheld."
     },
     {
       "name": "arrears_months",

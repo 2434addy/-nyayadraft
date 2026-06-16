@@ -66,11 +66,16 @@
       "placeholder": "[DATE PAYMENT FELL DUE]",
       "given_policy": "withholdable",
       "kind": "date",
+      "relative_to": "debt_origin_date",
       "offset_days_range": [
         30,
         180
       ],
-      "description": "Always after the origin date and always in the past (origin max -240 + offset max 180 = at least 60 days ago), keeping the default already crystallised."
+      "fallback_anchor_days_range": [
+        -820,
+        -60
+      ],
+      "description": "Always after the origin date and always in the past; chained off debt_origin_date, past-anchored when the origin date is withheld so the default debt is already crystallised."
     },
     {
       "name": "compliance_days",

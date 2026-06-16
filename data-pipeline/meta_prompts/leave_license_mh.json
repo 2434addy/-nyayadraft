@@ -112,7 +112,8 @@
         10,
         60
       ],
-      "description": "Commencement of license, shortly after execution"
+      "future_ok": true,
+      "description": "Commencement of license, shortly after execution; a genuine forward-looking effective date (future_ok)."
     },
     {
       "name": "lock_in_months",

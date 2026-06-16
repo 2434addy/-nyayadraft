@@ -13,8 +13,8 @@
     { "name": "cheque_number", "placeholder": "[CHEQUE NUMBER]", "given_policy": "withholdable", "kind": "cheque_number" },
     { "name": "drawee_bank", "placeholder": "[DRAWEE BANK AND BRANCH]", "given_policy": "withholdable", "kind": "bank_name" },
     { "name": "cheque_date", "placeholder": "[DATE OF CHEQUE]", "given_policy": "withholdable", "kind": "date", "anchor_days_range": [-150, -95] },
-    { "name": "presentation_date", "placeholder": "[DATE OF PRESENTATION]", "given_policy": "withholdable", "kind": "date", "relative_to": "cheque_date", "offset_days_range": [5, 85] },
-    { "name": "memo_date", "placeholder": "[DATE OF CHEQUE RETURN MEMO]", "given_policy": "withholdable", "kind": "date", "relative_to": "presentation_date", "offset_days_range": [0, 3] },
+    { "name": "presentation_date", "placeholder": "[DATE OF PRESENTATION]", "given_policy": "withholdable", "kind": "date", "relative_to": "cheque_date", "offset_days_range": [5, 85], "fallback_anchor_days_range": [-140, -15] },
+    { "name": "memo_date", "placeholder": "[DATE OF CHEQUE RETURN MEMO]", "given_policy": "withholdable", "kind": "date", "relative_to": "presentation_date", "offset_days_range": [0, 3], "fallback_anchor_days_range": [-138, -12] },
     { "name": "dishonour_reason", "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]", "given_policy": "withholdable", "kind": "choice", "choices": ["Funds Insufficient", "Payment Stopped by Drawer", "Account Closed", "Exceeds Arrangement"] },
     { "name": "advocate_name", "placeholder": "[NAME OF ADVOCATE]", "given_policy": "optional", "kind": "person_name", "description": "If present, the notice goes out under the advocate's name" }
   ]

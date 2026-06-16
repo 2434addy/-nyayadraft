@@ -64,10 +64,16 @@
       "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]",
       "given_policy": "withholdable",
       "kind": "date",
+      "relative_to": "purchase_date",
       "offset_days_range": [
         7,
         75
-      ]
+      ],
+      "fallback_anchor_days_range": [
+        -560,
+        -20
+      ],
+      "description": "Defect/deficiency arises after purchase; chained off purchase_date, past-anchored when purchase_date is withheld."
     },
     {
       "name": "city",

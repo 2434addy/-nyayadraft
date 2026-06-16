@@ -473,29 +473,45 @@ def _synth_date(
 ) -> str:
     """Synthesise an ISO date, anchored on ``today`` or chained off another field.
 
-    A field with ``anchor_days_range`` is offset from ``today``. A field with
-    ``relative_to`` + ``offset_days_range`` is offset from that base field's
-    already-synthesised date, keeping chained dates (cheque -> presentation ->
-    return memo) correctly ordered and inside their legal windows. If the base
-    field was withheld (so it is absent from ``given``), it falls back to a
-    ``today`` anchor. Exactly one RNG draw happens on every path, so the seeded
-    stream — and thus determinism for later fields — is unaffected.
+    A field with ``anchor_days_range`` is offset from ``today`` (use a negative
+    range for a past fact). A field with ``relative_to`` + ``offset_days_range``
+    is offset from that base field's already-synthesised date, keeping chained
+    dates (cheque -> presentation -> return memo) correctly ordered and inside
+    their legal windows.
+
+    When a chained field's base was withheld (absent from ``given``) it falls
+    back to ``fallback_anchor_days_range`` — a *past*-anchored window — never to
+    its forward ``offset``, which would project a future date from today.
+
+    Non-future invariant: the result is clamped to ``today`` unless the field
+    declares ``future_ok`` (a genuine forward-looking effective date such as an
+    offer's joining date or a licence commencement). The default span is
+    past-anchored so an under-specified field can never silently leak a future
+    date. Exactly one RNG draw happens on every path, so the seeded stream — and
+    thus determinism for later fields — is unaffected.
     """
     relative_to = field.get("relative_to")
     offset = field.get("offset_days_range")
     base = today
-    span = field.get("anchor_days_range") or offset or [10, 60]
+    span = (
+        field.get("anchor_days_range")
+        or field.get("fallback_anchor_days_range")
+        or [-60, -10]
+    )
     if relative_to and offset is not None:
         base_value = given.get(relative_to)
         if isinstance(base_value, str):
             try:
                 base = dt.date.fromisoformat(base_value)
-                span = offset
+                span = offset  # base present: chain off it with the real offset
             except ValueError:
-                base = today  # base field wasn't a date; keep the today anchor
+                base = today  # base field wasn't a date; keep the past anchor
     low, high = int(span[0]), int(span[1])
     delta = rng.randint(min(low, high), max(low, high))
-    return (base + dt.timedelta(days=delta)).isoformat()
+    result = base + dt.timedelta(days=delta)
+    if not field.get("future_ok") and result > today:
+        result = today
+    return result.isoformat()
 
 
 def _synth_choice(
