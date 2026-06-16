@@ -739,3 +739,78 @@ class TestDumpCli:
         assert "₹" in capsys.readouterr().out
 
 
+class TestPartnershipFirmName:
+    """A partnership firm is M/s ... & Co./Enterprises/Traders — never an
+    incorporated entity. The generic company_name generator drew entity
+    suffixes (Private Limited, LLP) that cannot lawfully describe an
+    Indian Partnership Act, 1932 firm. firm_name must use the partnership
+    generator and exclude every entity suffix."""
+
+    # Substrings that mark an incorporated/limited-liability entity, which a
+    # Section-4 partnership firm can never be. Matched case-insensitively.
+    ENTITY_MARKERS = (
+        "private limited",
+        "pvt",
+        "ltd",
+        "limited",
+        "llp",
+    )
+
+    @pytest.fixture(scope="class")
+    def partnership_spec(self):
+        return load_json(META_DIR / "partnership_deed_1932.json")
+
+    def test_firm_name_is_partnership_style(
+        self, partnership_spec, real_scenarios, seeds
+    ):
+        scenarios = real_scenarios["partnership_deed_1932"]
+        seen = 0
+        for i in range(80):
+            facts = build(partnership_spec, scenarios, seeds, i)["given_facts"]
+            firm = facts.get("firm_name")
+            assert firm is not None, f"index {i}: firm_name always-given but absent"
+            seen += 1
+            assert firm.startswith("M/s "), f"firm {firm!r} is not M/s-prefixed"
+            low = firm.lower()
+            for marker in self.ENTITY_MARKERS:
+                assert marker not in low, (
+                    f"firm {firm!r} carries entity suffix {marker!r}; a 1932 "
+                    f"partnership firm must not be styled as an incorporated entity"
+                )
+        assert seen == 80
+
+    def test_firm_name_deterministic(self, partnership_spec, real_scenarios, seeds):
+        scenarios = real_scenarios["partnership_deed_1932"]
+        a = build(partnership_spec, scenarios, seeds, 5)["given_facts"]["firm_name"]
+        b = build(partnership_spec, scenarios, seeds, 5)["given_facts"]["firm_name"]
+        assert a == b
+
+    def test_company_name_kind_still_allows_entities(self, seeds):
+        """The fix is scoped to partnership firms; real company names elsewhere
+        (consumer opposite party, employer, MOU parties) keep entity suffixes."""
+        spec = {
+            "doc_type": "co_doc",
+            "display_name": "Co",
+            "structural_summary": "s",
+            "statutory_requirements": "r",
+            "fields": [
+                {
+                    "name": "company_name",
+                    "placeholder": "[CO]",
+                    "given_policy": "always",
+                    "kind": "company_name",
+                }
+            ],
+        }
+        scen = [{"id": "s", "summary": "x"}]
+        names = {
+            build(spec, scen, seeds, i)["given_facts"]["company_name"]
+            for i in range(120)
+        }
+        # company_suffixes seed includes 'Solutions Private Limited' / 'Services
+        # LLP'; at least one entity-styled name must still be reachable.
+        assert any(
+            "private limited" in n.lower() or "llp" in n.lower() for n in names
+        ), "company_name generator should still produce incorporated entities"
+
+

@@ -57,6 +57,7 @@ VALID_KINDS = frozenset(
     {
         "person_name",
         "company_name",
+        "partnership_firm_name",
         "city",
         "address",
         "inr_amount",
@@ -350,6 +351,36 @@ def _synth_company_name(
     return f"{stem} {suffix}"
 
 
+def _synth_partnership_firm_name(
+    field: Mapping[str, Any],
+    params: Mapping[str, Any],
+    seeds: Mapping[str, Any],
+    rng: random.Random,
+    today: dt.date,
+    given: Mapping[str, Any],
+) -> str:
+    """Synthesise an unincorporated partnership firm name (e.g. 'M/s Patil & Co.').
+
+    An Indian Partnership Act, 1932 firm has no separate legal personality, so it
+    is never styled 'Pvt Ltd', 'Limited' or 'LLP'. We draw a surname stem and a
+    partnership-appropriate suffix (``& Co.``, ``Enterprises``, ``Traders`` ...),
+    all of which deliberately exclude every entity marker. The ``M/s`` honorific
+    is the conventional prefix for a firm name in Indian deeds.
+    """
+    names = _names(seeds)
+    surnames = list(names.get("surnames_maharashtra", [])) + list(
+        names.get("surnames_other", [])
+    )
+    suffixes = list(names.get("partnership_suffixes", [])) or [
+        "& Co.",
+        "Enterprises",
+        "Traders",
+    ]
+    stem = rng.choice(surnames) if surnames else "Patil"
+    suffix = rng.choice(suffixes)
+    return f"M/s {stem} {suffix}"
+
+
 def _synth_city(
     field: Mapping[str, Any],
     params: Mapping[str, Any],
@@ -559,6 +590,7 @@ def _synth_percentage(
 _SYNTHESISERS: dict[str, _Synthesiser] = {
     "person_name": _synth_person_name,
     "company_name": _synth_company_name,
+    "partnership_firm_name": _synth_partnership_firm_name,
     "city": _synth_city,
     "address": _synth_address,
     "inr_amount": _synth_inr_amount,

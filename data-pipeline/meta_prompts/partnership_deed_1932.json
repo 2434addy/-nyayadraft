@@ -32,8 +32,8 @@
       "name": "firm_name",
       "placeholder": "[NAME OF PARTNERSHIP FIRM]",
       "given_policy": "always",
-      "kind": "company_name",
-      "description": "Name and style under which the firm carries on business, typically prefixed M/s"
+      "kind": "partnership_firm_name",
+      "description": "Name and style under which the firm carries on business; M/s-prefixed and never an incorporated entity (no Pvt Ltd / Ltd / LLP)"
     },
     {
       "name": "business_nature",

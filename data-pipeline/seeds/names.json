@@ -32,6 +32,11 @@
     "Infotech Private Limited", "Constructions", "Developers", "Textiles", "Foods",
     "Engineering Works", "Marketing"
   ],
+  "partnership_suffixes": [
+    "& Co.", "& Sons", "& Associates", "& Brothers", "& Company",
+    "Enterprises", "Traders", "Trading Company", "Agencies", "Industries",
+    "Distributors", "Brothers", "& Bros.", "Trading Co."
+  ],
   "professions": [
     "software engineer", "school teacher", "chartered accountant", "shop owner",
     "civil contractor", "doctor", "pharmacist", "marketing manager", "bank employee",
