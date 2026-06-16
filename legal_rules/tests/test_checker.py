@@ -1135,3 +1135,86 @@ class TestLintAllRulesBranches:
         problems = _checker_module.lint_all_rules()
         assert problems == [], f"Unexpected problems for valid rule: {problems}"
         self._restore()
+
+
+# ---------------------------------------------------------------------------
+# Section 5 – Over-strict required-pattern regressions
+# ---------------------------------------------------------------------------
+
+
+def _required_pattern(doc_type: str, pattern_id: str) -> re.Pattern:
+    for pid, _desc, pat in load_rules(doc_type).required:
+        if pid == pattern_id:
+            return pat
+    raise AssertionError(f"{doc_type} has no required pattern {pattern_id!r}")
+
+
+class TestDemandLanguageThirdPerson:
+    """demand_language must accept third-person advocate phrasing such as
+    'my client calls upon you' and 'demands that you ...', not only the
+    first-person 'call upon you' / 'hereby demand'. The singular-verb-only
+    pattern rejected the (very common) plural forms, wasting valid drafts."""
+
+    DEMAND_DOC_TYPES = (
+        "cheque_bounce_138",
+        "legal_notice_money_recovery",
+        "legal_notice_landlord_tenant",
+    )
+
+    THIRD_PERSON = [
+        "my client hereby calls upon you to pay the said amount",
+        "our client calls upon you to make good the default",
+        "my client demands that you refund the amount forthwith",
+        "the company demands that you pay the outstanding dues",
+    ]
+    FIRST_PERSON = [
+        "I hereby call upon you to pay the sum",
+        "we hereby demand payment of the said amount",
+    ]
+
+    @pytest.mark.parametrize("doc_type", DEMAND_DOC_TYPES)
+    def test_accepts_third_person(self, doc_type: str) -> None:
+        pat = _required_pattern(doc_type, "demand_language")
+        for phrase in self.THIRD_PERSON:
+            assert pat.search(phrase), (
+                f"{doc_type}: demand_language rejected third-person {phrase!r}"
+            )
+
+    @pytest.mark.parametrize("doc_type", DEMAND_DOC_TYPES)
+    def test_still_accepts_first_person(self, doc_type: str) -> None:
+        pat = _required_pattern(doc_type, "demand_language")
+        for phrase in self.FIRST_PERSON:
+            assert pat.search(phrase), (
+                f"{doc_type}: demand_language regressed on {phrase!r}"
+            )
+
+
+class TestRightsReservedIntervening:
+    """rights_reserved must allow intervening words between 'reserve' and
+    'rights' (and between 'rights' and 'reserved'), e.g. 'reserves all its
+    legal and equitable rights'. The fixed determiner list rejected valid
+    reservations."""
+
+    INTERVENING = [
+        "my client reserves all its legal and equitable rights",
+        "the noticee reserves unto itself all rights and remedies",
+        "all rights and remedies of the noticee are hereby expressly reserved",
+        "rights, civil and criminal, are reserved",
+        "reserves all such other rights as may be available in law",
+    ]
+    EXISTING = [
+        "All rights are hereby expressly reserved.",
+        "the noticee reserves all rights",
+        "reserving its rights",
+        "reserves its right to initiate appropriate proceedings",
+    ]
+
+    @pytest.mark.parametrize("phrase", INTERVENING)
+    def test_accepts_intervening_words(self, phrase: str) -> None:
+        pat = _required_pattern("reply_to_legal_notice", "rights_reserved")
+        assert pat.search(phrase), f"rights_reserved rejected {phrase!r}"
+
+    @pytest.mark.parametrize("phrase", EXISTING)
+    def test_still_accepts_existing(self, phrase: str) -> None:
+        pat = _required_pattern("reply_to_legal_notice", "rights_reserved")
+        assert pat.search(phrase), f"rights_reserved regressed on {phrase!r}"

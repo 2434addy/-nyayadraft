@@ -19,8 +19,8 @@
     },
     {
       "id": "demand_language",
-      "description": "Formal demand language",
-      "regex": "(?i)(call\\s+upon\\s+you|hereby\\s+demand|demand\\s+that\\s+you|require\\s+you\\s+to\\s+(pay|refund|make))",
+      "description": "Formal demand language (first- or third-person)",
+      "regex": "(?i)(calls?\\s+upon\\s+you|hereby\\s+demands?|demands?\\s+that\\s+you|requires?\\s+you\\s+to\\s+(pay|refund|make))",
       "legal_basis": "CONFIDENT"
     },
     {

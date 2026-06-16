@@ -25,8 +25,8 @@
     },
     {
       "id": "rights_reserved",
-      "description": "Express reservation of rights",
-      "regex": "(?i)(reserv(e|es|ing)\\s+((all|the|its|his|her|their|my|our|every)\\s+)*rights?|rights?\\s+((stand|are|is)\\s+)?(hereby\\s+)?(expressly\\s+|fully\\s+)?reserved)",
+      "description": "Express reservation of rights (intervening words allowed)",
+      "regex": "(?i)(reserv(e|es|ing)\\b[\\w\\s,&'-]{0,80}?\\brights?\\b|rights?\\b[\\w\\s,&'-]{0,80}?\\breserved\\b)",
       "legal_basis": "CONFIDENT"
     },
     {

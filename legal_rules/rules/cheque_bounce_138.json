@@ -10,7 +10,7 @@
     { "id": "demand_15_days", "description": "15-day payment demand window stated (either ordering, e.g. 'fifteen (15) days' or '15 (fifteen) days')", "regex": "(?i)(fifteen|15)\\s*(\\(\\s*(15|fifteen)\\s*\\))?\\s*days", "legal_basis": "CONFIDENT" },
     { "id": "memo_30_days", "description": "Notice within 30 days of return memo stated (either ordering, e.g. 'thirty (30) days' or '30 (thirty) days')", "regex": "(?i)(thirty|30)\\s*(\\(\\s*(30|thirty)\\s*\\))?\\s*days", "legal_basis": "CONFIDENT" },
     { "id": "dishonour_memo", "description": "References dishonour / cheque return memo", "regex": "(?i)(dishonou?r|return(ed)?\\s+(unpaid|memo)|cheque\\s+return)", "legal_basis": "CONFIDENT" },
-    { "id": "demand_language", "description": "Formal demand language present", "regex": "(?i)(call\\s+upon\\s+you|hereby\\s+demand|demand\\s+that\\s+you|require\\s+you\\s+to\\s+pay)", "legal_basis": "CONFIDENT" },
+    { "id": "demand_language", "description": "Formal demand language present (first- or third-person)", "regex": "(?i)(calls?\\s+upon\\s+you|hereby\\s+demands?|demands?\\s+that\\s+you|requires?\\s+you\\s+to\\s+pay)", "legal_basis": "CONFIDENT" },
     { "id": "prosecution_warning", "description": "Warns of prosecution u/s 138 r/w 142", "regex": "(?i)(section\\s*142|prosecut|criminal\\s+(proceedings|complaint))", "legal_basis": "CONFIDENT" },
     { "id": "dispatch_mode", "description": "Mode of dispatch recorded", "regex": "(?i)(registered\\s+post|r\\.?p\\.?a\\.?d|speed\\s+post|courier|by\\s+hand)", "legal_basis": "CONFIDENT" }
   ],
