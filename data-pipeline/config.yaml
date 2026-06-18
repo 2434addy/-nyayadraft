@@ -23,19 +23,19 @@ counts:
   default_per_type: 500      # fallback for any type not listed in per_type below
   out_of_scope: 250          # fallback for the refusal category when not in per_type
   pilot_per_type: 30         # --pilot generates this many for EVERY type incl. out_of_scope
-  per_type:                  # complexity-weighted 1,000-doc distribution (full mode)
+  per_type:                  # complexity-weighted 920-doc distribution (full mode)
     partnership_deed_1932: 120          # most complex: multi-clause deed, 2-3 partners
     consumer_complaint_cpa2019: 120     # most complex: pleading + jurisdiction + prayer
     cheque_bounce_138: 100              # legal notice
     legal_notice_money_recovery: 100    # legal notice
     legal_notice_landlord_tenant: 100   # legal notice
     reply_to_legal_notice: 95           # legal notice (reply)
-    leave_license_mh: 90                # long agreement
+    leave_license_mh: 45                # long agreement (trimmed from 90: dropped most-redundant near-duplicates)
     employment_offer_termination: 80    # offer/termination letter
-    mou_two_parties: 75                 # agreement
+    mou_two_parties: 40                 # agreement (trimmed from 75: dropped most-redundant near-duplicates)
     affidavit_general: 70               # simpler, formulaic
     out_of_scope: 50                    # refusal (~5%); fewer, but keeps refusal coverage
-                                        # total = 1000
+                                        # total = 920
 
 sample_max: 10               # any API run larger than this requires typing YES (cost guard)
 
