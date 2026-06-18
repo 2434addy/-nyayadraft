@@ -11,6 +11,7 @@ data-pipeline/output/
 *.jsonl
 !data-pipeline/tests/fixtures/**/*.jsonl
 lawyer_review*.csv
+out/**/raw/
 
 # Model artifacts
 *.safetensors
