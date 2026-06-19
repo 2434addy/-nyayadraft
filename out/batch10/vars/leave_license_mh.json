@@ -1,0 +1,332 @@
+[
+  {
+    "doc_type": "leave_license_mh",
+    "given_facts": {
+      "city": "Vadodara",
+      "licensee_address": "Flat No. 15, Vrindavan Complex, Fergusson College Road, Model Colony, Hyderabad 50090",
+      "licensee_name": "Pallavi Naik",
+      "licensor_address": "Flat No. 19, Tulsi Vihar, Ring Road, Camp Area, Vasai-Virar 40167",
+      "licensor_name": "Sachin Kadam",
+      "monthly_fee": 71500,
+      "police_verification_party": "Licensor",
+      "premises_address": "Flat No. 3, Sai Krupa CHS, M.G. Road, Civil Lines, Delhi 11092",
+      "security_deposit": 286000,
+      "start_date": "2026-07-10",
+      "term_months": 24
+    },
+    "index": 0,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "residential_flat_mumbai",
+    "scenario_summary": "Owner licenses a 2BHK flat in Andheri West, Mumbai to a salaried couple for 11 months; society intimation and maintenance terms included.",
+    "withheld_fields": [
+      {
+        "name": "notice_months",
+        "placeholder": "[NOTICE PERIOD IN MONTHS]"
+      }
+    ]
+  },
+  {
+    "doc_type": "leave_license_mh",
+    "given_facts": {
+      "city": "Kochi",
+      "furnishing_status": "unfurnished",
+      "licensee_name": "Mahesh Pawar",
+      "licensor_address": "Flat No. 3, Gokul Residency, S.V. Road, Borivali East, Nashik 42219",
+      "licensor_name": "Sanjay Rao",
+      "monthly_fee": 29500,
+      "notice_months": 1,
+      "premises_address": "Flat No. 30, Gokul Residency, S.V. Road, Sadashiv Peth, Hyderabad 50026",
+      "security_deposit": 236000,
+      "term_months": 11
+    },
+    "index": 1,
+    "nearest_supported": null,
+    "register": "casual",
+    "scenario_id": "residential_flat_pune",
+    "scenario_summary": "Retired teacher licenses a semi-furnished 1BHK in Kothrud, Pune to an IT professional; 11-month term with a three-month lock-in.",
+    "withheld_fields": [
+      {
+        "name": "licensee_address",
+        "placeholder": "[FULL ADDRESS OF LICENSEE]"
+      },
+      {
+        "name": "start_date",
+        "placeholder": "[LICENSE COMMENCEMENT DATE]"
+      }
+    ]
+  },
+  {
+    "doc_type": "leave_license_mh",
+    "given_facts": {
+      "city": "Thane",
+      "furnishing_status": "unfurnished",
+      "licensee_name": "Gurpreet Mehta",
+      "licensor_name": "Amol Agarwal",
+      "monthly_fee": 13000,
+      "notice_months": 3,
+      "police_verification_party": "Licensee",
+      "premises_address": "Flat No. 22, Tulsi Vihar, M.G. Road, Dadar, Amravati 44499",
+      "term_months": 33
+    },
+    "index": 2,
+    "nearest_supported": null,
+    "register": "casual",
+    "scenario_id": "single_room_pg_thane",
+    "scenario_summary": "Homeowner licenses one furnished room with shared kitchen in a Thane flat to a postgraduate student as paying-guest style accommodation.",
+    "withheld_fields": [
+      {
+        "name": "licensor_address",
+        "placeholder": "[FULL ADDRESS OF LICENSOR]"
+      },
+      {
+        "name": "licensee_address",
+        "placeholder": "[FULL ADDRESS OF LICENSEE]"
+      },
+      {
+        "name": "security_deposit",
+        "placeholder": "[SECURITY DEPOSIT AMOUNT IN ₹]"
+      },
+      {
+        "name": "start_date",
+        "placeholder": "[LICENSE COMMENCEMENT DATE]"
+      }
+    ]
+  },
+  {
+    "doc_type": "leave_license_mh",
+    "given_facts": {
+      "city": "Pune",
+      "furnishing_status": "unfurnished",
+      "licensee_name": "Vihaan Deshmukh",
+      "licensor_name": "Ishita Phadke",
+      "monthly_fee": 62500,
+      "notice_months": 2,
+      "premises_address": "Flat No. 10, Shree Ganesh Apartments, S.V. Road, Dadar, Delhi 11045",
+      "security_deposit": 250000
+    },
+    "index": 3,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "shop_premises_thane",
+    "scenario_summary": "Shop owner licenses a ground-floor 250 sq ft shop on Gokhale Road, Thane to a kirana store proprietor; commercial use only.",
+    "withheld_fields": [
+      {
+        "name": "licensor_address",
+        "placeholder": "[FULL ADDRESS OF LICENSOR]"
+      },
+      {
+        "name": "licensee_address",
+        "placeholder": "[FULL ADDRESS OF LICENSEE]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF LICENSE IN MONTHS]"
+      },
+      {
+        "name": "start_date",
+        "placeholder": "[LICENSE COMMENCEMENT DATE]"
+      }
+    ]
+  },
+  {
+    "doc_type": "leave_license_mh",
+    "given_facts": {
+      "city": "Pune",
+      "licensee_address": "Flat No. 27, Prestige Court, Link Road, Kothrud, Visakhapatnam 53071",
+      "licensee_company": "Iyer Enterprises",
+      "licensee_name": "Vijay Das",
+      "licensor_name": "Radhika Raut",
+      "lock_in_months": 3,
+      "monthly_fee": 56500,
+      "police_verification_party": "Licensor",
+      "premises_address": "Flat No. 32, Shree Ganesh Apartments, Karve Road, Camp Area, Mumbai 40057",
+      "term_months": 33
+    },
+    "index": 4,
+    "nearest_supported": null,
+    "register": "semi_formal",
+    "scenario_id": "small_office_pune",
+    "scenario_summary": "Private limited startup licenses a 600 sq ft office in Baner, Pune for its registered office; 36-month term with annual escalation.",
+    "withheld_fields": [
+      {
+        "name": "licensor_address",
+        "placeholder": "[FULL ADDRESS OF LICENSOR]"
+      },
+      {
+        "name": "security_deposit",
+        "placeholder": "[SECURITY DEPOSIT AMOUNT IN ₹]"
+      },
+      {
+        "name": "start_date",
+        "placeholder": "[LICENSE COMMENCEMENT DATE]"
+      },
+      {
+        "name": "notice_months",
+        "placeholder": "[NOTICE PERIOD IN MONTHS]"
+      }
+    ]
+  },
+  {
+    "doc_type": "leave_license_mh",
+    "given_facts": {
+      "city": "Visakhapatnam",
+      "furnishing_status": "semi-furnished with fixtures and fittings",
+      "licensee_name": "Nitin Deshmukh",
+      "licensor_name": "Sachin Mane",
+      "lock_in_months": 3,
+      "monthly_fee": 33000,
+      "notice_months": 3,
+      "police_verification_party": "Licensee",
+      "premises_address": "Flat No. 25, Sai Krupa CHS, College Road, Andheri West, Kochi 68283",
+      "security_deposit": 132000,
+      "term_months": 24
+    },
+    "index": 5,
+    "nearest_supported": null,
+    "register": "semi_formal",
+    "scenario_id": "bungalow_floor_nashik",
+    "scenario_summary": "Owner licenses the ground floor of a Nashik bungalow with garden access to a retired bank officer couple for 22 months.",
+    "withheld_fields": [
+      {
+        "name": "licensor_address",
+        "placeholder": "[FULL ADDRESS OF LICENSOR]"
+      },
+      {
+        "name": "licensee_address",
+        "placeholder": "[FULL ADDRESS OF LICENSEE]"
+      },
+      {
+        "name": "start_date",
+        "placeholder": "[LICENSE COMMENCEMENT DATE]"
+      }
+    ]
+  },
+  {
+    "doc_type": "leave_license_mh",
+    "given_facts": {
+      "city": "Bengaluru",
+      "licensee_address": "Flat No. 15, Prestige Court, S.V. Road, Sadashiv Peth, Mumbai 40038",
+      "licensee_name": "Swapnil Chopra",
+      "licensor_address": "Flat No. 23, Shanti Niketan, Karve Road, Civil Lines, Mumbai 40004",
+      "licensor_name": "Aarav Naik",
+      "lock_in_months": 11,
+      "monthly_fee": 57500,
+      "notice_months": 2,
+      "premises_address": "Flat No. 14, Gokul Residency, Karve Road, Camp Area, Navi Mumbai 40086",
+      "security_deposit": 345000
+    },
+    "index": 6,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "flat_parking_navi_mumbai",
+    "scenario_summary": "Flat in Vashi, Navi Mumbai licensed with one covered stilt parking slot included; licensee a shipping executive on an 11-month term.",
+    "withheld_fields": [
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF LICENSE IN MONTHS]"
+      },
+      {
+        "name": "start_date",
+        "placeholder": "[LICENSE COMMENCEMENT DATE]"
+      }
+    ]
+  },
+  {
+    "doc_type": "leave_license_mh",
+    "given_facts": {
+      "city": "Chennai",
+      "furnishing_status": "semi-furnished with fixtures and fittings",
+      "licensee_company": "Iyer Trading Company",
+      "licensee_name": "Milind Malhotra",
+      "licensor_address": "Flat No. 20, Om Sai Plaza, College Road, New Friends Colony, Mumbai 40037",
+      "licensor_name": "Sachin Sheikh",
+      "monthly_fee": 120000,
+      "notice_months": 1,
+      "premises_address": "Flat No. 4, Prestige Court, S.V. Road, Sector 9, Pune 41134",
+      "security_deposit": 600000,
+      "start_date": "2026-08-03",
+      "term_months": 24
+    },
+    "index": 7,
+    "nearest_supported": null,
+    "register": "semi_formal",
+    "scenario_id": "company_employee_housing_mumbai",
+    "scenario_summary": "IT company licenses a furnished 3BHK in Powai, Mumbai as residence for its vice-president; company pays fee and deposit, employee occupies.",
+    "withheld_fields": [
+      {
+        "name": "licensee_address",
+        "placeholder": "[FULL ADDRESS OF LICENSEE]"
+      }
+    ]
+  },
+  {
+    "doc_type": "leave_license_mh",
+    "given_facts": {
+      "city": "Mumbai",
+      "furnishing_status": "semi-furnished with fixtures and fittings",
+      "licensee_company": "Mukherjee Services LLP",
+      "licensee_name": "Dattatray Wagh",
+      "licensor_name": "Kiran Bhagat",
+      "monthly_fee": 102500,
+      "premises_address": "Flat No. 36, Shree Ganesh Apartments, Ring Road, Aundh, Mumbai 40058",
+      "security_deposit": 307500
+    },
+    "index": 8,
+    "nearest_supported": null,
+    "register": "casual",
+    "scenario_id": "corporate_guest_house_pune",
+    "scenario_summary": "Manufacturing company licenses a furnished 2BHK in Hinjawadi, Pune as a guest house for visiting engineers; housekeeping by licensee.",
+    "withheld_fields": [
+      {
+        "name": "licensor_address",
+        "placeholder": "[FULL ADDRESS OF LICENSOR]"
+      },
+      {
+        "name": "licensee_address",
+        "placeholder": "[FULL ADDRESS OF LICENSEE]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF LICENSE IN MONTHS]"
+      },
+      {
+        "name": "start_date",
+        "placeholder": "[LICENSE COMMENCEMENT DATE]"
+      },
+      {
+        "name": "notice_months",
+        "placeholder": "[NOTICE PERIOD IN MONTHS]"
+      }
+    ]
+  },
+  {
+    "doc_type": "leave_license_mh",
+    "given_facts": {
+      "city": "Ahmedabad",
+      "licensee_address": "Flat No. 39, Vrindavan Complex, College Road, Aundh, Pune 41133",
+      "licensee_company": "Kaur Infotech Private Limited",
+      "licensee_name": "Ashwini Sharma",
+      "licensor_address": "Flat No. 24, Yashwant Smruti, Link Road, Civil Lines, Thane 40037",
+      "licensor_name": "Arjun Gaikwad",
+      "lock_in_months": 3,
+      "monthly_fee": 134500,
+      "notice_months": 3,
+      "police_verification_party": "Licensee",
+      "premises_address": "Flat No. 24, Shree Ganesh Apartments, Karve Road, New Friends Colony, Chennai 60059",
+      "security_deposit": 807000,
+      "start_date": "2026-07-31"
+    },
+    "index": 9,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "retail_showroom_nagpur",
+    "scenario_summary": "Apparel retail chain licenses a main-road showroom in Sitabuldi, Nagpur with signage rights; 60-month term and six-month lock-in.",
+    "withheld_fields": [
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF LICENSE IN MONTHS]"
+      }
+    ]
+  }
+]

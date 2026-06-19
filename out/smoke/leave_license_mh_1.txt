@@ -1,0 +1,109 @@
+[[[INSTRUCTION]]]
+Draft a Leave and Licence Agreement for a residential flat. The Licensor is Sanjay Rao, residing at Flat No. 3, Gokul Residency, S.V. Road, Borivali East, Nashik 42219. The Licensee is Mahesh Pawar, whose address is [FULL ADDRESS OF LICENSEE]. The licensed premises is Flat No. 30, Gokul Residency, S.V. Road, Sadashiv Peth, Hyderabad 50026. The monthly licence fee is ₹29,500 and the refundable security deposit is ₹43,500. The term is 22 months. The commencement date is [LICENSE COMMENCEMENT DATE]. Notice period for termination is 1 month. The premises is unfurnished. Include all standard clauses under the Maharashtra Rent Control Act 1999, including that this licence does not create any tenancy rights and that the security deposit is interest-free and refundable.
+[[[DOCUMENT]]]
+LEAVE AND LICENCE AGREEMENT
+
+THIS LEAVE AND LICENCE AGREEMENT is entered into at Kochi on the [LICENSE COMMENCEMENT DATE].
+
+BETWEEN
+
+Sanjay Rao, an adult Indian national, residing at Flat No. 3, Gokul Residency, S.V. Road, Borivali East, Nashik 42219 (hereinafter referred to as the "Licensor", which expression shall, unless repugnant to the context or meaning thereof, be deemed to include his/her heirs, legal representatives, successors, executors, administrators and assigns);
+
+AND
+
+Mahesh Pawar, an adult Indian national, residing at [FULL ADDRESS OF LICENSEE] (hereinafter referred to as the "Licensee", which expression shall, unless repugnant to the context or meaning thereof, be deemed to include his/her heirs, legal representatives, successors, executors, administrators and assigns).
+
+The Licensor and the Licensee are hereinafter individually referred to as a "Party" and collectively as the "Parties".
+
+RECITALS
+
+A. The Licensor is the owner and is in lawful possession of the unfurnished residential premises described as Flat No. 30, Gokul Residency, S.V. Road, Sadashiv Peth, Hyderabad 50026 (hereinafter referred to as the "Licensed Premises").
+
+B. The Licensee has approached the Licensor with a request to be permitted to use and occupy the Licensed Premises for residential purposes on a leave and licence basis, and the Licensor has agreed to grant such permission on the terms and conditions set out herein.
+
+NOW THEREFORE, in consideration of the mutual covenants and undertakings contained herein, the Parties agree as follows:
+
+1. GRANT OF LICENCE
+
+1.1 The Licensor hereby grants to the Licensee a bare licence (and not a lease or tenancy) to use, occupy and enjoy the Licensed Premises for the purpose of residential accommodation only, for a period of 22 (twenty-two) months commencing on [LICENSE COMMENCEMENT DATE] (hereinafter referred to as the "Licence Period"), subject to the terms and conditions set out in this Agreement.
+
+1.2 This Agreement creates only a licence in favour of the Licensee and does not create any tenancy, sub-tenancy, or any other interest or right in the Licensed Premises. The Licensor retains full ownership and all proprietary rights in the Licensed Premises at all times.
+
+2. LICENCE FEE
+
+2.1 The Licensee shall pay to the Licensor a monthly licence fee of ₹29,500 (Rupees Twenty-Nine Thousand Five Hundred only) per month, payable in advance on or before the 5th day of each calendar month during the Licence Period.
+
+2.2 The licence fee shall be paid by electronic transfer or such other mode as the Licensor may designate. This Agreement expressly does not constitute a tenancy and the consideration paid is not "monthly rent" within the meaning of any rent control legislation.
+
+3. SECURITY DEPOSIT
+
+3.1 The Licensee has paid to the Licensor, prior to or simultaneously with the execution of this Agreement, a sum of ₹43,500 (Rupees Forty-Three Thousand Five Hundred only) as a refundable security deposit (hereinafter referred to as the "Security Deposit"), the receipt of which is hereby acknowledged by the Licensor.
+
+3.2 The Security Deposit is interest-free and shall be held by the Licensor as security for due performance by the Licensee of all obligations under this Agreement.
+
+3.3 The Licensor shall refund the Security Deposit to the Licensee within 30 (thirty) days of the Licensee handing over vacant possession of the Licensed Premises, subject to deduction of any outstanding dues, unpaid licence fee, or costs of repair for damages caused by the Licensee.
+
+4. TERM AND TERMINATION
+
+4.1 This licence is granted for a fixed term of 22 months from [LICENSE COMMENCEMENT DATE]. The Licence Period may be extended by mutual written agreement of the Parties prior to its expiry.
+
+4.2 Either Party may terminate this Agreement before the expiry of the Licence Period by giving the other Party prior written notice of 1 (one) month. The notice period clause shall apply equally to the Licensor and the Licensee.
+
+5. USE OF LICENSED PREMISES
+
+5.1 The Licensed Premises shall be used by the Licensee solely for bona fide residential purposes. The Licensee shall not use the Licensed Premises for any commercial, industrial, or unlawful purpose.
+
+5.2 The Licensee shall not sublet, sub-licence, assign, or part with possession of the Licensed Premises or any part thereof without the prior written consent of the Licensor.
+
+5.3 The Licensed Premises is licensed on an "as is, unfurnished" basis. The Licensor shall not be responsible for providing any furniture or fixtures beyond those existing on the Licensed Premises at the time of execution.
+
+6. MAINTENANCE AND UTILITIES
+
+6.1 The Licensee shall maintain the Licensed Premises in good and tenantable condition and shall not cause any damage to the Licensed Premises or its fittings.
+
+6.2 The Licensee shall pay all utility charges, including electricity, water, and applicable society maintenance charges, promptly as they fall due.
+
+7. NO TENANCY RIGHTS
+
+7.1 It is expressly agreed that this Agreement creates only a bare licence in favour of the Licensee and does not and shall not be construed to create any tenancy or sub-tenancy in favour of the Licensee under the Maharashtra Rent Control Act 1999 or under any other applicable law. The Licensee has no right, title, or interest of any nature whatsoever in the Licensed Premises except the bare licence granted herein.
+
+8. REGISTRATION
+
+8.1 The Parties agree that this Agreement shall be registered with the Sub-Registrar of Assurances having jurisdiction, as required under the Maharashtra Rent Control Act 1999 and the Registration Act 1908. The stamp duty and registration charges shall be borne as mutually agreed between the Parties.
+
+9. GOVERNING LAW
+
+9.1 This Agreement shall be governed by the laws of India, including the Maharashtra Rent Control Act 1999. Any dispute shall be resolved by arbitration at Kochi under the Arbitration and Conciliation Act 1996.
+
+10. GENERAL PROVISIONS
+
+10.1 This Agreement constitutes the entire agreement between the Parties and supersedes all prior negotiations and representations. Amendments shall be effective only if in writing and signed by both Parties.
+
+IN WITNESS WHEREOF, the Parties have signed this Leave and Licence Agreement on the date first above written.
+
+LICENSOR:
+
+Signature: ____________________________
+Name: Sanjay Rao
+Address: Flat No. 3, Gokul Residency, S.V. Road, Borivali East, Nashik 42219
+Date: ________________________________
+
+LICENSEE:
+
+Signature: ____________________________
+Name: Mahesh Pawar
+Address: [FULL ADDRESS OF LICENSEE]
+Date: ________________________________
+
+WITNESSES:
+
+1. Signature: ____________________________
+   Name: ________________________________
+   Address: ______________________________
+
+2. Signature: ____________________________
+   Name: ________________________________
+   Address: ______________________________
+
+This is an AI-generated draft for review by the parties and is not legal advice.
+[[[END]]]

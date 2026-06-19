@@ -1,0 +1,3832 @@
+[
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 0,
+    "scenario_id": "friendly_loan_repayment",
+    "scenario_summary": "A cheque issued to repay a personal/friendly hand loan was dishonoured.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Sachin Kadam",
+      "drawer_name": "Pallavi Naik",
+      "cheque_amount": 367000,
+      "city": "Vasai-Virar",
+      "sender_address": "Flat No. 35, Shanti Niketan, Ring Road, New Friends Colony, Delhi 11009",
+      "drawer_address": "Flat No. 26, Matoshree Heights, Gandhi Chowk Road, New Friends Colony, Indore 45283",
+      "cheque_number": "136321",
+      "drawee_bank": "HDFC Bank, Mumbai Branch",
+      "cheque_date": "2026-03-03",
+      "presentation_date": "2026-03-23",
+      "dishonour_reason": "Exceeds Arrangement",
+      "advocate_name": "Abhijit Shinde"
+    },
+    "withheld_fields": [
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 1,
+    "scenario_id": "business_invoice_payment",
+    "scenario_summary": "A buyer's cheque against a supplier's invoice for goods was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Sanjay Rao",
+      "drawer_name": "Mahesh Pawar",
+      "cheque_amount": 273000,
+      "city": "Nashik",
+      "sender_address": "Flat No. 20, Gokul Residency, Fergusson College Road, New Friends Colony, Mumbai 40095",
+      "cheque_number": "884371",
+      "drawee_bank": "Canara Bank, Pune Branch",
+      "presentation_date": "2026-02-28",
+      "memo_date": "2026-03-01"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 2,
+    "scenario_id": "rent_arrears_cheque",
+    "scenario_summary": "A tenant's cheque covering accumulated rent arrears bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Amol Agarwal",
+      "drawer_name": "Gurpreet Mehta",
+      "cheque_amount": 207000,
+      "drawee_bank": "ICICI Bank, Amravati Branch",
+      "presentation_date": "2026-05-04",
+      "memo_date": "2026-05-06",
+      "advocate_name": "Suresh Ranade"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 3,
+    "scenario_id": "security_deposit_refund",
+    "scenario_summary": "A landlord's cheque refunding the security deposit after vacating bounced.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Ishita Phadke",
+      "drawer_name": "Vihaan Deshmukh",
+      "cheque_amount": 169500,
+      "city": "Nashik",
+      "cheque_number": "193046",
+      "presentation_date": "2026-02-15",
+      "memo_date": "2026-02-15"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 4,
+    "scenario_id": "salary_dues_cheque",
+    "scenario_summary": "An employer's cheque for unpaid salary / full-and-final settlement was dishonoured.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Radhika Raut",
+      "drawer_name": "Vijay Das",
+      "cheque_amount": 104500,
+      "city": "Pune",
+      "drawer_address": "Flat No. 27, Prestige Court, Link Road, Kothrud, Visakhapatnam 53071",
+      "drawee_bank": "State Bank of India, Navi Mumbai Branch",
+      "dishonour_reason": "Funds Insufficient",
+      "advocate_name": "Priya Phadke"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 5,
+    "scenario_id": "property_advance_refund",
+    "scenario_summary": "A seller's cheque refunding token/advance money for a cancelled property deal bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Sachin Mane",
+      "drawer_name": "Nitin Deshmukh",
+      "cheque_amount": 685500,
+      "city": "Jaipur",
+      "cheque_number": "185614",
+      "drawee_bank": "Saraswat Co-operative Bank, Nagpur Branch",
+      "memo_date": "2026-04-21",
+      "advocate_name": "Amol Lokhande"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 6,
+    "scenario_id": "freelance_fee_cheque",
+    "scenario_summary": "A client's cheque for completed freelance/professional services was dishonoured.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Aarav Naik",
+      "drawer_name": "Swapnil Chopra",
+      "cheque_amount": 387500,
+      "city": "Navi Mumbai",
+      "sender_address": "Flat No. 23, Shanti Niketan, Karve Road, Civil Lines, Bengaluru 56004",
+      "drawer_address": "Flat No. 15, Prestige Court, S.V. Road, Sadashiv Peth, Mumbai 40038",
+      "cheque_number": "474877",
+      "presentation_date": "2026-02-22",
+      "memo_date": "2026-02-23",
+      "dishonour_reason": "Payment Stopped by Drawer"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 7,
+    "scenario_id": "vehicle_sale_balance",
+    "scenario_summary": "The buyer's cheque for the balance price of a used vehicle bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Sachin Sheikh",
+      "drawer_name": "Milind Malhotra",
+      "cheque_amount": 665500,
+      "city": "Mumbai",
+      "sender_address": "Flat No. 35, Silver Oak Towers, College Road, New Friends Colony, Navi Mumbai 40037",
+      "cheque_number": "388813",
+      "drawee_bank": "State Bank of India, Nashik Branch",
+      "cheque_date": "2026-03-01",
+      "presentation_date": "2026-04-08",
+      "memo_date": "2026-04-09"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 8,
+    "scenario_id": "contractor_work_payment",
+    "scenario_summary": "A cheque paying a contractor for completed civil/renovation work was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Kiran Bhagat",
+      "drawer_name": "Dattatray Wagh",
+      "cheque_amount": 799500,
+      "city": "Mumbai",
+      "cheque_number": "104046",
+      "presentation_date": "2026-03-10"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 9,
+    "scenario_id": "education_fee_refund",
+    "scenario_summary": "An institute's refund cheque after a withdrawn admission bounced.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Arjun Gaikwad",
+      "drawer_name": "Ashwini Sharma",
+      "cheque_amount": 299500,
+      "city": "Ahmedabad",
+      "sender_address": "Flat No. 24, Yashwant Smruti, Link Road, Civil Lines, Thane 40037",
+      "drawer_address": "Flat No. 39, Vrindavan Complex, College Road, Aundh, Pune 41133",
+      "cheque_number": "940495",
+      "cheque_date": "2026-01-22",
+      "memo_date": "2026-03-16",
+      "dishonour_reason": "Funds Insufficient",
+      "advocate_name": "Harpreet Ahmed"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 10,
+    "scenario_id": "loan_emi_consolidated",
+    "scenario_summary": "A consolidated cheque towards instalments owed to a private lender was dishonoured.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Aarti Gokhale",
+      "drawer_name": "Ananya Shah",
+      "cheque_amount": 627000,
+      "city": "Nashik",
+      "drawer_address": "Flat No. 10, Matoshree Heights, S.V. Road, Kothrud, Pune 41109",
+      "cheque_number": "292650",
+      "drawee_bank": "Union Bank of India, Pune Branch",
+      "advocate_name": "Vaishali Jadhav"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 11,
+    "scenario_id": "business_partnership_settlement",
+    "scenario_summary": "A settlement cheque on exit from a small business arrangement bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Mary Deshmukh",
+      "drawer_name": "Kavita Mehta",
+      "cheque_amount": 401500,
+      "city": "Patna",
+      "sender_address": "Flat No. 24, Silver Oak Towers, Market Yard Road, Kothrud, Pune 41141",
+      "drawee_bank": "Union Bank of India, Hyderabad Branch",
+      "memo_date": "2026-05-18",
+      "dishonour_reason": "Exceeds Arrangement",
+      "advocate_name": "Shrikant Deshmukh"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 12,
+    "scenario_id": "goods_supplied_credit",
+    "scenario_summary": "A cheque against goods supplied on credit to a retail shop was dishonoured.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Vikram Joshi",
+      "drawer_name": "Omkar Kadam",
+      "cheque_amount": 406000,
+      "city": "Mumbai",
+      "drawer_address": "Flat No. 4, Silver Oak Towers, M.G. Road, Civil Lines, Solapur 41321",
+      "cheque_number": "243242",
+      "drawee_bank": "IDBI Bank, Chennai Branch",
+      "presentation_date": "2026-02-28",
+      "dishonour_reason": "Payment Stopped by Drawer"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 13,
+    "scenario_id": "machinery_purchase_balance",
+    "scenario_summary": "A cheque for the balance payment of purchased machinery/equipment bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Yogesh Gupta",
+      "drawer_name": "Vijay Ranade",
+      "cheque_amount": 1151000,
+      "city": "Thane",
+      "sender_address": "Flat No. 1, Shree Ganesh Apartments, Karve Road, Kothrud, Surat 39505",
+      "drawer_address": "Flat No. 38, Yashwant Smruti, Market Yard Road, Model Colony, Pune 41175",
+      "drawee_bank": "Bank of Baroda, Delhi Branch",
+      "cheque_date": "2026-02-27"
+    },
+    "withheld_fields": [
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 14,
+    "scenario_id": "friendly_loan_repayment",
+    "scenario_summary": "A cheque issued to repay a personal/friendly hand loan was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Farhan Shah",
+      "drawer_name": "Kavita Deshmukh",
+      "cheque_amount": 101000,
+      "city": "Thane",
+      "sender_address": "Flat No. 5, Silver Oak Towers, Karve Road, Andheri West, Nagpur 44005",
+      "cheque_number": "131075",
+      "dishonour_reason": "Exceeds Arrangement"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 15,
+    "scenario_id": "business_invoice_payment",
+    "scenario_summary": "A buyer's cheque against a supplier's invoice for goods was dishonoured.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Mahesh Das",
+      "drawer_name": "Mahesh Menon",
+      "cheque_amount": 128000,
+      "city": "Thane",
+      "sender_address": "Flat No. 6, Sai Krupa CHS, Station Road, Sector 9, Mumbai 40087",
+      "drawer_address": "Flat No. 10, Sai Krupa CHS, Market Yard Road, Civil Lines, Mumbai 40059",
+      "drawee_bank": "Axis Bank, Bengaluru Branch",
+      "cheque_date": "2026-02-12",
+      "memo_date": "2026-03-02"
+    },
+    "withheld_fields": [
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 16,
+    "scenario_id": "rent_arrears_cheque",
+    "scenario_summary": "A tenant's cheque covering accumulated rent arrears bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Niranjan Mukherjee",
+      "drawer_name": "Sameer More",
+      "cheque_amount": 150500,
+      "city": "Kolkata",
+      "sender_address": "Flat No. 2, Matoshree Heights, Gandhi Chowk Road, Sector 9, Nashik 42212",
+      "drawer_address": "Flat No. 35, Shanti Niketan, Fergusson College Road, Model Colony, Bengaluru 56046",
+      "presentation_date": "2026-04-23",
+      "memo_date": "2026-04-24",
+      "dishonour_reason": "Payment Stopped by Drawer",
+      "advocate_name": "Ashwini Thorat"
+    },
+    "withheld_fields": [
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 17,
+    "scenario_id": "security_deposit_refund",
+    "scenario_summary": "A landlord's cheque refunding the security deposit after vacating bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Tushar Ghadge",
+      "drawer_name": "Prashant Raut",
+      "cheque_amount": 444000,
+      "cheque_number": "968639"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 18,
+    "scenario_id": "salary_dues_cheque",
+    "scenario_summary": "An employer's cheque for unpaid salary / full-and-final settlement was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Harpreet Naidu",
+      "drawer_name": "Ashwini Gupta",
+      "cheque_amount": 563500,
+      "city": "Pune",
+      "drawer_address": "Flat No. 10, Sai Krupa CHS, M.G. Road, Shivaji Nagar, Mumbai 40016",
+      "cheque_number": "843634",
+      "drawee_bank": "Kotak Mahindra Bank, Mumbai Branch",
+      "memo_date": "2026-05-08",
+      "dishonour_reason": "Exceeds Arrangement",
+      "advocate_name": "Pallavi Mane"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 19,
+    "scenario_id": "property_advance_refund",
+    "scenario_summary": "A seller's cheque refunding token/advance money for a cancelled property deal bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Dattatray Iyer",
+      "drawer_name": "Manisha Apte",
+      "cheque_amount": 673500,
+      "memo_date": "2026-03-10",
+      "advocate_name": "Mahesh Patil"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 20,
+    "scenario_id": "freelance_fee_cheque",
+    "scenario_summary": "A client's cheque for completed freelance/professional services was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Gurpreet Patil",
+      "drawer_name": "Joseph Nair",
+      "cheque_amount": 330500,
+      "city": "Mumbai",
+      "drawer_address": "Flat No. 1, Gokul Residency, Station Road, Model Colony, Chennai 60058",
+      "cheque_number": "214936",
+      "cheque_date": "2026-01-31",
+      "advocate_name": "Swati Das"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 21,
+    "scenario_id": "vehicle_sale_balance",
+    "scenario_summary": "The buyer's cheque for the balance price of a used vehicle bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Pooja Mehta",
+      "drawer_name": "Shrikant Jain",
+      "cheque_amount": 600500,
+      "presentation_date": "2026-03-31",
+      "advocate_name": "Sayali Menon"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 22,
+    "scenario_id": "contractor_work_payment",
+    "scenario_summary": "A cheque paying a contractor for completed civil/renovation work was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Anil Kapoor",
+      "drawer_name": "Aishwarya Chopra",
+      "cheque_amount": 255000
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 23,
+    "scenario_id": "education_fee_refund",
+    "scenario_summary": "An institute's refund cheque after a withdrawn admission bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Imran Kulkarni",
+      "drawer_name": "Harpreet Banerjee",
+      "cheque_amount": 47500,
+      "cheque_number": "491766",
+      "advocate_name": "Priya Pereira"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 24,
+    "scenario_id": "loan_emi_consolidated",
+    "scenario_summary": "A consolidated cheque towards instalments owed to a private lender was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Deepak Apte",
+      "drawer_name": "Aishwarya D'Souza",
+      "cheque_amount": 168000,
+      "city": "Nagpur",
+      "drawer_address": "Flat No. 22, Silver Oak Towers, Link Road, Civil Lines, Solapur 41312",
+      "drawee_bank": "Bank of Baroda, Mumbai Branch",
+      "advocate_name": "Tejal Singh"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 25,
+    "scenario_id": "business_partnership_settlement",
+    "scenario_summary": "A settlement cheque on exit from a small business arrangement bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Sunil Jain",
+      "drawer_name": "Gurpreet Mane",
+      "cheque_amount": 752500,
+      "cheque_number": "777407",
+      "drawee_bank": "Kotak Mahindra Bank, Mumbai Branch",
+      "cheque_date": "2026-02-21",
+      "presentation_date": "2026-05-12",
+      "advocate_name": "Anil Gaikwad"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 26,
+    "scenario_id": "goods_supplied_credit",
+    "scenario_summary": "A cheque against goods supplied on credit to a retail shop was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Madhuri Kaur",
+      "drawer_name": "Rajesh Surve",
+      "cheque_amount": 116500,
+      "city": "Hyderabad",
+      "sender_address": "Flat No. 27, Tulsi Vihar, Link Road, Kothrud, Navi Mumbai 40099",
+      "cheque_number": "866653",
+      "presentation_date": "2026-04-19"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 27,
+    "scenario_id": "machinery_purchase_balance",
+    "scenario_summary": "A cheque for the balance payment of purchased machinery/equipment bounced.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Kiran Naidu",
+      "drawer_name": "Tushar Sharma",
+      "cheque_amount": 1485500,
+      "city": "Nagpur",
+      "sender_address": "Flat No. 4, Yashwant Smruti, Gandhi Chowk Road, Model Colony, Visakhapatnam 53043",
+      "drawee_bank": "Axis Bank, Delhi Branch",
+      "cheque_date": "2026-02-27",
+      "presentation_date": "2026-04-20",
+      "memo_date": "2026-04-20",
+      "dishonour_reason": "Funds Insufficient"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 28,
+    "scenario_id": "friendly_loan_repayment",
+    "scenario_summary": "A cheque issued to repay a personal/friendly hand loan was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Pallavi Naidu",
+      "drawer_name": "Nitin Mhatre",
+      "cheque_amount": 647000,
+      "city": "Kalyan-Dombivli",
+      "sender_address": "Flat No. 8, Green Valley Society, Fergusson College Road, Borivali East, Amravati 44435",
+      "drawer_address": "Flat No. 20, Vrindavan Complex, Station Road, Sadashiv Peth, Solapur 41379",
+      "cheque_date": "2026-02-09",
+      "memo_date": "2026-01-29"
+    },
+    "withheld_fields": [
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 29,
+    "scenario_id": "business_invoice_payment",
+    "scenario_summary": "A buyer's cheque against a supplier's invoice for goods was dishonoured.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Swati Gill",
+      "drawer_name": "Anita Naidu",
+      "cheque_amount": 482000,
+      "city": "Navi Mumbai",
+      "drawer_address": "Flat No. 12, Sai Krupa CHS, Station Road, Model Colony, Lucknow 22638",
+      "cheque_number": "925019",
+      "drawee_bank": "Axis Bank, Kalyan-Dombivli Branch",
+      "cheque_date": "2026-01-26",
+      "memo_date": "2026-03-24",
+      "dishonour_reason": "Funds Insufficient"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 30,
+    "scenario_id": "rent_arrears_cheque",
+    "scenario_summary": "A tenant's cheque covering accumulated rent arrears bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Harshad Salunkhe",
+      "drawer_name": "Imran Ranade",
+      "cheque_amount": 219000,
+      "city": "Kolkata",
+      "sender_address": "Flat No. 17, Om Sai Plaza, Karve Road, Camp Area, Visakhapatnam 53045",
+      "drawer_address": "Flat No. 23, Tulsi Vihar, Market Yard Road, Borivali East, Chhatrapati Sambhajinagar 43129",
+      "presentation_date": "2026-06-01"
+    },
+    "withheld_fields": [
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 31,
+    "scenario_id": "security_deposit_refund",
+    "scenario_summary": "A landlord's cheque refunding the security deposit after vacating bounced.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Sunil Kaur",
+      "drawer_name": "Prakash Mukherjee",
+      "cheque_amount": 52000,
+      "city": "Mumbai",
+      "sender_address": "Flat No. 38, Silver Oak Towers, S.V. Road, Shivaji Nagar, Pune 41124",
+      "cheque_number": "631344",
+      "cheque_date": "2026-01-26",
+      "memo_date": "2026-02-28",
+      "dishonour_reason": "Account Closed",
+      "advocate_name": "Ganesh Banerjee"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 32,
+    "scenario_id": "salary_dues_cheque",
+    "scenario_summary": "An employer's cheque for unpaid salary / full-and-final settlement was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Meera Mehta",
+      "drawer_name": "Sanjay Lokhande",
+      "cheque_amount": 162500,
+      "city": "Nagpur",
+      "sender_address": "Flat No. 3, Shanti Niketan, Market Yard Road, Camp Area, Chhatrapati Sambhajinagar 43104",
+      "presentation_date": "2026-02-14",
+      "advocate_name": "Sayali Mane"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 33,
+    "scenario_id": "property_advance_refund",
+    "scenario_summary": "A seller's cheque refunding token/advance money for a cancelled property deal bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Suresh Nair",
+      "drawer_name": "Joseph Salunkhe",
+      "cheque_amount": 429000,
+      "city": "Lucknow",
+      "sender_address": "Flat No. 14, Yashwant Smruti, Karve Road, Andheri West, Mumbai 40080",
+      "drawer_address": "Flat No. 19, Vrindavan Complex, M.G. Road, Dadar, Surat 39516",
+      "drawee_bank": "Punjab National Bank, Hyderabad Branch",
+      "cheque_date": "2026-02-14",
+      "presentation_date": "2026-03-18",
+      "advocate_name": "Mary Chopra"
+    },
+    "withheld_fields": [
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 34,
+    "scenario_id": "freelance_fee_cheque",
+    "scenario_summary": "A client's cheque for completed freelance/professional services was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Mary Naik",
+      "drawer_name": "Radhika Mehta",
+      "cheque_amount": 122500,
+      "city": "Indore",
+      "drawee_bank": "Axis Bank, Kalyan-Dombivli Branch",
+      "presentation_date": "2026-03-30",
+      "memo_date": "2026-04-02"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 35,
+    "scenario_id": "vehicle_sale_balance",
+    "scenario_summary": "The buyer's cheque for the balance price of a used vehicle bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Aishwarya Fernandes",
+      "drawer_name": "Archana Malhotra",
+      "cheque_amount": 631000,
+      "city": "Kalyan-Dombivli",
+      "drawer_address": "Flat No. 39, Silver Oak Towers, Station Road, Model Colony, Chennai 60036",
+      "cheque_number": "871543",
+      "cheque_date": "2026-02-11",
+      "memo_date": "2026-02-23"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 36,
+    "scenario_id": "contractor_work_payment",
+    "scenario_summary": "A cheque paying a contractor for completed civil/renovation work was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Archana Salunkhe",
+      "drawer_name": "Meera Trivedi",
+      "cheque_amount": 836500
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 37,
+    "scenario_id": "education_fee_refund",
+    "scenario_summary": "An institute's refund cheque after a withdrawn admission bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Yogesh More",
+      "drawer_name": "Dattatray Lokhande",
+      "cheque_amount": 197000,
+      "cheque_number": "530267",
+      "presentation_date": "2026-04-19",
+      "advocate_name": "Sandeep Jain"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 38,
+    "scenario_id": "loan_emi_consolidated",
+    "scenario_summary": "A consolidated cheque towards instalments owed to a private lender was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Pooja Sharma",
+      "drawer_name": "Prashant Shah",
+      "cheque_amount": 476500,
+      "city": "Nagpur",
+      "sender_address": "Flat No. 29, Silver Oak Towers, S.V. Road, Borivali East, Delhi 11073",
+      "drawer_address": "Flat No. 40, Prestige Court, Gandhi Chowk Road, Andheri West, Amravati 44483",
+      "dishonour_reason": "Payment Stopped by Drawer",
+      "advocate_name": "Savita Reddy"
+    },
+    "withheld_fields": [
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 39,
+    "scenario_id": "business_partnership_settlement",
+    "scenario_summary": "A settlement cheque on exit from a small business arrangement bounced.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Manoj Thorat",
+      "drawer_name": "Vikram Mane",
+      "cheque_amount": 1160000,
+      "city": "Mumbai",
+      "sender_address": "Flat No. 3, Prestige Court, M.G. Road, Andheri West, Mumbai 40052",
+      "drawer_address": "Flat No. 33, Shree Ganesh Apartments, Gandhi Chowk Road, Shivaji Nagar, Pune 41139",
+      "cheque_number": "115825",
+      "drawee_bank": "State Bank of India, Bengaluru Branch",
+      "memo_date": "2026-02-20",
+      "dishonour_reason": "Exceeds Arrangement"
+    },
+    "withheld_fields": [
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 40,
+    "scenario_id": "goods_supplied_credit",
+    "scenario_summary": "A cheque against goods supplied on credit to a retail shop was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Anil Gaikwad",
+      "drawer_name": "Omkar Sawant",
+      "cheque_amount": 164000,
+      "city": "Chennai",
+      "sender_address": "Flat No. 8, Om Sai Plaza, M.G. Road, Andheri West, Indore 45275",
+      "cheque_number": "517186"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 41,
+    "scenario_id": "machinery_purchase_balance",
+    "scenario_summary": "A cheque for the balance payment of purchased machinery/equipment bounced.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Bhushan Lokhande",
+      "drawer_name": "Vihaan Ghadge",
+      "cheque_amount": 1291500,
+      "city": "Lucknow",
+      "drawer_address": "Flat No. 21, Matoshree Heights, Gandhi Chowk Road, Sector 9, Navi Mumbai 40002",
+      "cheque_number": "733248",
+      "presentation_date": "2026-02-09",
+      "dishonour_reason": "Payment Stopped by Drawer"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 42,
+    "scenario_id": "friendly_loan_repayment",
+    "scenario_summary": "A cheque issued to repay a personal/friendly hand loan was dishonoured.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Sunita Malhotra",
+      "drawer_name": "Komal Raut",
+      "cheque_amount": 167000,
+      "city": "Lucknow",
+      "sender_address": "Flat No. 3, Gokul Residency, Ring Road, Borivali East, Chennai 60034",
+      "drawer_address": "Flat No. 6, Gokul Residency, Gandhi Chowk Road, New Friends Colony, Kolhapur 41620",
+      "cheque_number": "369014"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 43,
+    "scenario_id": "business_invoice_payment",
+    "scenario_summary": "A buyer's cheque against a supplier's invoice for goods was dishonoured.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Ramesh Trivedi",
+      "drawer_name": "Vaishali Ghadge",
+      "cheque_amount": 1271000,
+      "city": "Chennai",
+      "cheque_number": "938420",
+      "drawee_bank": "Axis Bank, Nashik Branch",
+      "presentation_date": "2026-02-02"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 44,
+    "scenario_id": "rent_arrears_cheque",
+    "scenario_summary": "A tenant's cheque covering accumulated rent arrears bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Ashwini D'Souza",
+      "drawer_name": "Komal Sharma",
+      "cheque_amount": 98500,
+      "city": "Jaipur",
+      "drawer_address": "Flat No. 32, Matoshree Heights, Fergusson College Road, Dadar, Indore 45202",
+      "cheque_number": "560197",
+      "drawee_bank": "State Bank of India, Mumbai Branch",
+      "advocate_name": "Fatima Shah"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 45,
+    "scenario_id": "security_deposit_refund",
+    "scenario_summary": "A landlord's cheque refunding the security deposit after vacating bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Dattatray Chavan",
+      "drawer_name": "Aarti Ranade",
+      "cheque_amount": 124000,
+      "cheque_number": "136969",
+      "cheque_date": "2026-02-19",
+      "presentation_date": "2026-04-24",
+      "dishonour_reason": "Funds Insufficient",
+      "advocate_name": "Prakash Malhotra"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 46,
+    "scenario_id": "salary_dues_cheque",
+    "scenario_summary": "An employer's cheque for unpaid salary / full-and-final settlement was dishonoured.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Aarav Mhatre",
+      "drawer_name": "Smita Ghadge",
+      "cheque_amount": 576000,
+      "city": "Chhatrapati Sambhajinagar",
+      "sender_address": "Flat No. 3, Shanti Niketan, Ring Road, New Friends Colony, Solapur 41371",
+      "drawer_address": "Flat No. 9, Gokul Residency, Market Yard Road, New Friends Colony, Pune 41117",
+      "cheque_number": "446032",
+      "drawee_bank": "Kotak Mahindra Bank, Pune Branch",
+      "memo_date": "2026-06-02",
+      "dishonour_reason": "Exceeds Arrangement"
+    },
+    "withheld_fields": [
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 47,
+    "scenario_id": "property_advance_refund",
+    "scenario_summary": "A seller's cheque refunding token/advance money for a cancelled property deal bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Smita Shah",
+      "drawer_name": "Imran Raut",
+      "cheque_amount": 870500,
+      "cheque_number": "834633",
+      "dishonour_reason": "Exceeds Arrangement",
+      "advocate_name": "Rajesh Ghadge"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 48,
+    "scenario_id": "freelance_fee_cheque",
+    "scenario_summary": "A client's cheque for completed freelance/professional services was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Ganesh Kaur",
+      "drawer_name": "Deepak Jain",
+      "cheque_amount": 53000,
+      "city": "Mumbai",
+      "cheque_date": "2026-03-11",
+      "dishonour_reason": "Payment Stopped by Drawer",
+      "advocate_name": "Aarav Naik"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 49,
+    "scenario_id": "vehicle_sale_balance",
+    "scenario_summary": "The buyer's cheque for the balance price of a used vehicle bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Pallavi D'Souza",
+      "drawer_name": "Rohan Gupta",
+      "cheque_amount": 129500,
+      "city": "Pune",
+      "drawer_address": "Flat No. 16, Om Sai Plaza, College Road, Model Colony, Bengaluru 56097",
+      "cheque_number": "579707",
+      "cheque_date": "2026-01-21",
+      "presentation_date": "2026-04-11",
+      "memo_date": "2026-04-13",
+      "dishonour_reason": "Funds Insufficient"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 50,
+    "scenario_id": "contractor_work_payment",
+    "scenario_summary": "A cheque paying a contractor for completed civil/renovation work was dishonoured.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Anil Salunkhe",
+      "drawer_name": "Mrunal Agarwal",
+      "cheque_amount": 147500,
+      "city": "Nagpur",
+      "drawer_address": "Flat No. 7, Prestige Court, Link Road, Kothrud, Mumbai 40086",
+      "cheque_number": "319231",
+      "drawee_bank": "ICICI Bank, Ahmedabad Branch",
+      "cheque_date": "2026-01-19",
+      "dishonour_reason": "Exceeds Arrangement",
+      "advocate_name": "Pallavi Bhosale"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 51,
+    "scenario_id": "education_fee_refund",
+    "scenario_summary": "An institute's refund cheque after a withdrawn admission bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Ramesh Reddy",
+      "drawer_name": "Rutuja Apte",
+      "cheque_amount": 46000,
+      "city": "Pune",
+      "drawee_bank": "Punjab National Bank, Ahmedabad Branch",
+      "cheque_date": "2026-02-27",
+      "dishonour_reason": "Funds Insufficient"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 52,
+    "scenario_id": "loan_emi_consolidated",
+    "scenario_summary": "A consolidated cheque towards instalments owed to a private lender was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Joseph Bhagat",
+      "drawer_name": "Mrunal Naidu",
+      "cheque_amount": 500500,
+      "presentation_date": "2026-03-13",
+      "dishonour_reason": "Payment Stopped by Drawer",
+      "advocate_name": "Pallavi Ranade"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 53,
+    "scenario_id": "business_partnership_settlement",
+    "scenario_summary": "A settlement cheque on exit from a small business arrangement bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Vijay Das",
+      "drawer_name": "Pravin Menon",
+      "cheque_amount": 1356000,
+      "city": "Nashik",
+      "sender_address": "Flat No. 27, Tulsi Vihar, Karve Road, Shivaji Nagar, Kalyan-Dombivli 42104",
+      "cheque_number": "388451",
+      "cheque_date": "2026-03-04",
+      "memo_date": "2026-04-03"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 54,
+    "scenario_id": "goods_supplied_credit",
+    "scenario_summary": "A cheque against goods supplied on credit to a retail shop was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Niranjan Reddy",
+      "drawer_name": "Sunita Iyer",
+      "cheque_amount": 446500,
+      "city": "Mumbai",
+      "cheque_number": "617483",
+      "presentation_date": "2026-03-02",
+      "memo_date": "2026-03-03"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 55,
+    "scenario_id": "machinery_purchase_balance",
+    "scenario_summary": "A cheque for the balance payment of purchased machinery/equipment bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Arjun Menon",
+      "drawer_name": "Ajay Phadke",
+      "cheque_amount": 321500,
+      "city": "Nagpur",
+      "drawer_address": "Flat No. 28, Tulsi Vihar, Market Yard Road, Dadar, Vasai-Virar 40152",
+      "cheque_number": "112055",
+      "memo_date": "2026-02-10",
+      "dishonour_reason": "Funds Insufficient",
+      "advocate_name": "Vijay Mhatre"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 56,
+    "scenario_id": "friendly_loan_repayment",
+    "scenario_summary": "A cheque issued to repay a personal/friendly hand loan was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Abhijit Kapoor",
+      "drawer_name": "Mahesh Salunkhe",
+      "cheque_amount": 321000,
+      "city": "Pune",
+      "presentation_date": "2026-02-10",
+      "dishonour_reason": "Funds Insufficient"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 57,
+    "scenario_id": "business_invoice_payment",
+    "scenario_summary": "A buyer's cheque against a supplier's invoice for goods was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Vihaan Reddy",
+      "drawer_name": "Mrunal Sharma",
+      "cheque_amount": 599500,
+      "city": "Ahmedabad",
+      "sender_address": "Flat No. 4, Shree Ganesh Apartments, Link Road, Aundh, Delhi 11058",
+      "drawer_address": "Flat No. 16, Vrindavan Complex, Market Yard Road, New Friends Colony, Pune 41112"
+    },
+    "withheld_fields": [
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 58,
+    "scenario_id": "rent_arrears_cheque",
+    "scenario_summary": "A tenant's cheque covering accumulated rent arrears bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Manoj Kale",
+      "drawer_name": "Deepa Apte",
+      "cheque_amount": 74500,
+      "presentation_date": "2026-03-17",
+      "dishonour_reason": "Payment Stopped by Drawer"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 59,
+    "scenario_id": "security_deposit_refund",
+    "scenario_summary": "A landlord's cheque refunding the security deposit after vacating bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Pooja Thorat",
+      "drawer_name": "Aishwarya Das",
+      "cheque_amount": 280000,
+      "city": "Bengaluru",
+      "sender_address": "Flat No. 6, Shanti Niketan, Market Yard Road, Dadar, Mumbai 40086",
+      "dishonour_reason": "Account Closed"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 60,
+    "scenario_id": "salary_dues_cheque",
+    "scenario_summary": "An employer's cheque for unpaid salary / full-and-final settlement was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Anita Bhatt",
+      "drawer_name": "Deepa Sheikh",
+      "cheque_amount": 583000,
+      "city": "Pune",
+      "drawer_address": "Flat No. 12, Shanti Niketan, S.V. Road, Aundh, Thane 40086",
+      "drawee_bank": "Axis Bank, Lucknow Branch",
+      "cheque_date": "2026-02-15",
+      "memo_date": "2026-02-11",
+      "advocate_name": "Anil Sharma"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 61,
+    "scenario_id": "property_advance_refund",
+    "scenario_summary": "A seller's cheque refunding token/advance money for a cancelled property deal bounced.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Sanjay Gaikwad",
+      "drawer_name": "Lakshmi Bhosale",
+      "cheque_amount": 939000,
+      "city": "Thane",
+      "drawer_address": "Flat No. 32, Sai Krupa CHS, S.V. Road, Sadashiv Peth, Navi Mumbai 40020",
+      "cheque_number": "344064",
+      "memo_date": "2026-04-11",
+      "dishonour_reason": "Account Closed",
+      "advocate_name": "Fatima Khan"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 62,
+    "scenario_id": "freelance_fee_cheque",
+    "scenario_summary": "A client's cheque for completed freelance/professional services was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Sanjay More",
+      "drawer_name": "Rohan Reddy",
+      "cheque_amount": 206000,
+      "city": "Pune",
+      "sender_address": "Flat No. 30, Green Valley Society, Gandhi Chowk Road, Andheri West, Kolhapur 41618",
+      "drawer_address": "Flat No. 13, Gokul Residency, Karve Road, Dadar, Chhatrapati Sambhajinagar 43196",
+      "drawee_bank": "State Bank of India, Surat Branch",
+      "presentation_date": "2026-05-29",
+      "memo_date": "2026-05-29",
+      "advocate_name": "Ishita More"
+    },
+    "withheld_fields": [
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 63,
+    "scenario_id": "vehicle_sale_balance",
+    "scenario_summary": "The buyer's cheque for the balance price of a used vehicle bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Ananya Chavan",
+      "drawer_name": "Sandeep Deshpande",
+      "cheque_amount": 806000,
+      "city": "Bengaluru",
+      "drawer_address": "Flat No. 40, Sai Krupa CHS, Station Road, Andheri West, Pune 41106"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 64,
+    "scenario_id": "contractor_work_payment",
+    "scenario_summary": "A cheque paying a contractor for completed civil/renovation work was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Ananya Menon",
+      "drawer_name": "Kiran Trivedi",
+      "cheque_amount": 412500,
+      "city": "Nagpur",
+      "drawer_address": "Flat No. 16, Tulsi Vihar, College Road, Kothrud, Amravati 44472",
+      "presentation_date": "2026-02-14",
+      "memo_date": "2026-02-14",
+      "dishonour_reason": "Account Closed"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 65,
+    "scenario_id": "education_fee_refund",
+    "scenario_summary": "An institute's refund cheque after a withdrawn admission bounced.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Joseph Malhotra",
+      "drawer_name": "Ishita Menon",
+      "cheque_amount": 52500,
+      "city": "Visakhapatnam",
+      "drawer_address": "Flat No. 10, Tulsi Vihar, M.G. Road, Camp Area, Pune 41109",
+      "drawee_bank": "Saraswat Co-operative Bank, Lucknow Branch",
+      "cheque_date": "2026-02-15",
+      "memo_date": "2026-04-01",
+      "dishonour_reason": "Account Closed"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 66,
+    "scenario_id": "loan_emi_consolidated",
+    "scenario_summary": "A consolidated cheque towards instalments owed to a private lender was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Pooja Singh",
+      "drawer_name": "Sneha Bhatt",
+      "cheque_amount": 488500,
+      "city": "Nagpur",
+      "sender_address": "Flat No. 11, Green Valley Society, Gandhi Chowk Road, Andheri West, Surat 39515",
+      "presentation_date": "2026-04-26"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 67,
+    "scenario_id": "business_partnership_settlement",
+    "scenario_summary": "A settlement cheque on exit from a small business arrangement bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Lakshmi Rao",
+      "drawer_name": "Radhika Gill",
+      "cheque_amount": 818000,
+      "city": "Solapur",
+      "drawer_address": "Flat No. 32, Om Sai Plaza, Fergusson College Road, Dadar, Ahmedabad 38027",
+      "cheque_number": "230039",
+      "cheque_date": "2026-01-31",
+      "memo_date": "2026-05-07",
+      "advocate_name": "Sneha Bhatt"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 68,
+    "scenario_id": "goods_supplied_credit",
+    "scenario_summary": "A cheque against goods supplied on credit to a retail shop was dishonoured.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Vihaan Naik",
+      "drawer_name": "Shraddha Salunkhe",
+      "cheque_amount": 385500,
+      "city": "Pune",
+      "drawer_address": "Flat No. 14, Vrindavan Complex, Ring Road, Kothrud, Kolhapur 41632",
+      "cheque_number": "225833",
+      "drawee_bank": "ICICI Bank, Nagpur Branch",
+      "cheque_date": "2026-02-17",
+      "memo_date": "2026-06-04",
+      "dishonour_reason": "Funds Insufficient",
+      "advocate_name": "Rohan Agarwal"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 69,
+    "scenario_id": "machinery_purchase_balance",
+    "scenario_summary": "A cheque for the balance payment of purchased machinery/equipment bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Aarti D'Souza",
+      "drawer_name": "Deepa Bhagat",
+      "cheque_amount": 850000,
+      "city": "Kolkata",
+      "drawee_bank": "Axis Bank, Nashik Branch",
+      "memo_date": "2026-02-15",
+      "dishonour_reason": "Funds Insufficient",
+      "advocate_name": "Sunil Jain"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 70,
+    "scenario_id": "friendly_loan_repayment",
+    "scenario_summary": "A cheque issued to repay a personal/friendly hand loan was dishonoured.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Ashwini Deshpande",
+      "drawer_name": "Vijay Kulkarni",
+      "cheque_amount": 354500,
+      "city": "Thane",
+      "cheque_date": "2026-02-15",
+      "presentation_date": "2026-03-15",
+      "memo_date": "2026-03-16",
+      "dishonour_reason": "Exceeds Arrangement",
+      "advocate_name": "Mangesh Jadhav"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 71,
+    "scenario_id": "business_invoice_payment",
+    "scenario_summary": "A buyer's cheque against a supplier's invoice for goods was dishonoured.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Sunil Reddy",
+      "drawer_name": "Rajesh Gokhale",
+      "cheque_amount": 410500,
+      "city": "Mumbai",
+      "drawee_bank": "Saraswat Co-operative Bank, Surat Branch",
+      "cheque_date": "2026-02-24",
+      "memo_date": "2026-03-30"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 72,
+    "scenario_id": "rent_arrears_cheque",
+    "scenario_summary": "A tenant's cheque covering accumulated rent arrears bounced.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Pravin Sharma",
+      "drawer_name": "Prashant Reddy",
+      "cheque_amount": 215500,
+      "city": "Mumbai",
+      "sender_address": "Flat No. 12, Shanti Niketan, College Road, Shivaji Nagar, Pune 41112",
+      "cheque_number": "579446",
+      "cheque_date": "2026-01-25",
+      "dishonour_reason": "Account Closed",
+      "advocate_name": "Bhushan Surve"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 73,
+    "scenario_id": "security_deposit_refund",
+    "scenario_summary": "A landlord's cheque refunding the security deposit after vacating bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Aarav Mhatre",
+      "drawer_name": "Ashwini Pereira",
+      "cheque_amount": 207500,
+      "city": "Solapur",
+      "sender_address": "Flat No. 1, Vrindavan Complex, Gandhi Chowk Road, Sector 9, Indore 45202"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 74,
+    "scenario_id": "salary_dues_cheque",
+    "scenario_summary": "An employer's cheque for unpaid salary / full-and-final settlement was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Aditya Ahmed",
+      "drawer_name": "Omkar Naidu",
+      "cheque_amount": 78500,
+      "city": "Thane",
+      "sender_address": "Flat No. 8, Silver Oak Towers, M.G. Road, Borivali East, Chandigarh 16055",
+      "drawee_bank": "HDFC Bank, Visakhapatnam Branch",
+      "memo_date": "2026-03-12"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 75,
+    "scenario_id": "property_advance_refund",
+    "scenario_summary": "A seller's cheque refunding token/advance money for a cancelled property deal bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Aarav Deshpande",
+      "drawer_name": "Savita Raut",
+      "cheque_amount": 1082000,
+      "city": "Navi Mumbai",
+      "sender_address": "Flat No. 17, Yashwant Smruti, M.G. Road, Shivaji Nagar, Delhi 11091",
+      "memo_date": "2026-03-23",
+      "dishonour_reason": "Funds Insufficient",
+      "advocate_name": "Niranjan Jadhav"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 76,
+    "scenario_id": "freelance_fee_cheque",
+    "scenario_summary": "A client's cheque for completed freelance/professional services was dishonoured.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Harpreet More",
+      "drawer_name": "Vaishali Deshmukh",
+      "cheque_amount": 220500,
+      "city": "Lucknow",
+      "drawee_bank": "Bank of Maharashtra, Nagpur Branch",
+      "cheque_date": "2026-02-17",
+      "presentation_date": "2026-04-17"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 77,
+    "scenario_id": "vehicle_sale_balance",
+    "scenario_summary": "The buyer's cheque for the balance price of a used vehicle bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Gurpreet Chopra",
+      "drawer_name": "Sneha Kapoor",
+      "cheque_amount": 870500,
+      "city": "Pune",
+      "sender_address": "Flat No. 21, Silver Oak Towers, M.G. Road, Andheri West, Thane 40012",
+      "drawer_address": "Flat No. 33, Yashwant Smruti, Station Road, Aundh, Delhi 11066",
+      "cheque_number": "947085",
+      "cheque_date": "2026-03-11",
+      "advocate_name": "Swapnil Kulkarni"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 78,
+    "scenario_id": "contractor_work_payment",
+    "scenario_summary": "A cheque paying a contractor for completed civil/renovation work was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Yogesh Shah",
+      "drawer_name": "Arjun Nair",
+      "cheque_amount": 141000,
+      "city": "Kolkata",
+      "sender_address": "Flat No. 21, Green Valley Society, College Road, Borivali East, Mumbai 40088",
+      "memo_date": "2026-05-05",
+      "dishonour_reason": "Funds Insufficient",
+      "advocate_name": "Manisha Naidu"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 79,
+    "scenario_id": "education_fee_refund",
+    "scenario_summary": "An institute's refund cheque after a withdrawn admission bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Aditya Das",
+      "drawer_name": "Sandeep Ahmed",
+      "cheque_amount": 235500,
+      "city": "Kolhapur",
+      "sender_address": "Flat No. 20, Matoshree Heights, Gandhi Chowk Road, Andheri West, Nashik 42298",
+      "drawer_address": "Flat No. 21, Prestige Court, College Road, Camp Area, Nashik 42205",
+      "presentation_date": "2026-05-22",
+      "advocate_name": "Deepak Pereira"
+    },
+    "withheld_fields": [
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 80,
+    "scenario_id": "loan_emi_consolidated",
+    "scenario_summary": "A consolidated cheque towards instalments owed to a private lender was dishonoured.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Shraddha Kapoor",
+      "drawer_name": "Harshad Mhatre",
+      "cheque_amount": 63000,
+      "city": "Pune",
+      "sender_address": "Flat No. 7, Om Sai Plaza, Gandhi Chowk Road, Aundh, Pune 41188",
+      "cheque_number": "619123",
+      "drawee_bank": "Bank of Maharashtra, Chhatrapati Sambhajinagar Branch",
+      "cheque_date": "2026-02-22",
+      "presentation_date": "2026-03-16",
+      "memo_date": "2026-03-17",
+      "dishonour_reason": "Exceeds Arrangement",
+      "advocate_name": "Anil Gupta"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 81,
+    "scenario_id": "business_partnership_settlement",
+    "scenario_summary": "A settlement cheque on exit from a small business arrangement bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Lakshmi Apte",
+      "drawer_name": "Harpreet Apte",
+      "cheque_amount": 1109500,
+      "city": "Ahmedabad",
+      "drawer_address": "Flat No. 32, Prestige Court, Station Road, Sector 9, Chandigarh 16042",
+      "cheque_number": "550977",
+      "presentation_date": "2026-04-04",
+      "memo_date": "2026-04-07",
+      "dishonour_reason": "Payment Stopped by Drawer",
+      "advocate_name": "Mangesh Wagh"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 82,
+    "scenario_id": "goods_supplied_credit",
+    "scenario_summary": "A cheque against goods supplied on credit to a retail shop was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Swati Malhotra",
+      "drawer_name": "Tejal Bhagat",
+      "cheque_amount": 357000,
+      "city": "Bhopal",
+      "sender_address": "Flat No. 34, Gokul Residency, Station Road, Sadashiv Peth, Mumbai 40028",
+      "drawer_address": "Flat No. 14, Shree Ganesh Apartments, Market Yard Road, Kothrud, Lucknow 22674",
+      "memo_date": "2026-02-27",
+      "advocate_name": "Pallavi Chavan"
+    },
+    "withheld_fields": [
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 83,
+    "scenario_id": "machinery_purchase_balance",
+    "scenario_summary": "A cheque for the balance payment of purchased machinery/equipment bounced.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Yogesh Raut",
+      "drawer_name": "Joseph Sheikh",
+      "cheque_amount": 402500,
+      "city": "Solapur",
+      "sender_address": "Flat No. 30, Shree Ganesh Apartments, Ring Road, Kothrud, Ahmedabad 38005",
+      "drawee_bank": "Kotak Mahindra Bank, Jaipur Branch",
+      "cheque_date": "2026-02-02",
+      "memo_date": "2026-03-24"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 84,
+    "scenario_id": "friendly_loan_repayment",
+    "scenario_summary": "A cheque issued to repay a personal/friendly hand loan was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Savita Sawant",
+      "drawer_name": "Ishita Thorat",
+      "cheque_amount": 456000,
+      "city": "Thane",
+      "sender_address": "Flat No. 36, Shanti Niketan, Link Road, Shivaji Nagar, Mumbai 40032",
+      "cheque_date": "2026-03-07"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 85,
+    "scenario_id": "business_invoice_payment",
+    "scenario_summary": "A buyer's cheque against a supplier's invoice for goods was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Vijay Gaikwad",
+      "drawer_name": "Kavita Deshmukh",
+      "cheque_amount": 517000,
+      "city": "Mumbai",
+      "sender_address": "Flat No. 17, Prestige Court, Karve Road, Camp Area, Mumbai 40025",
+      "cheque_number": "425631",
+      "cheque_date": "2026-02-07",
+      "memo_date": "2026-03-31",
+      "advocate_name": "Sunita Jain"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 86,
+    "scenario_id": "rent_arrears_cheque",
+    "scenario_summary": "A tenant's cheque covering accumulated rent arrears bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Shobha Kale",
+      "drawer_name": "Vaishali Pawar",
+      "cheque_amount": 185000,
+      "city": "Mumbai",
+      "drawer_address": "Flat No. 11, Shree Ganesh Apartments, Karve Road, Dadar, Pune 41132",
+      "dishonour_reason": "Account Closed",
+      "advocate_name": "Smita Nair"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 87,
+    "scenario_id": "security_deposit_refund",
+    "scenario_summary": "A landlord's cheque refunding the security deposit after vacating bounced.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Ramesh Ahmed",
+      "drawer_name": "Manoj Sawant",
+      "cheque_amount": 58000,
+      "city": "Nagpur",
+      "drawer_address": "Flat No. 5, Gokul Residency, S.V. Road, Borivali East, Hyderabad 50084",
+      "cheque_number": "838196",
+      "cheque_date": "2026-02-22",
+      "presentation_date": "2026-04-18",
+      "memo_date": "2026-04-21"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 88,
+    "scenario_id": "salary_dues_cheque",
+    "scenario_summary": "An employer's cheque for unpaid salary / full-and-final settlement was dishonoured.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Tushar Menon",
+      "drawer_name": "Aditya Salunkhe",
+      "cheque_amount": 487500,
+      "city": "Mumbai",
+      "sender_address": "Flat No. 14, Shree Ganesh Apartments, Market Yard Road, Civil Lines, Delhi 11089",
+      "drawer_address": "Flat No. 37, Matoshree Heights, Karve Road, Andheri West, Mumbai 40018",
+      "cheque_number": "289171",
+      "drawee_bank": "IDBI Bank, Mumbai Branch",
+      "cheque_date": "2026-03-12",
+      "presentation_date": "2026-04-07",
+      "memo_date": "2026-04-09",
+      "dishonour_reason": "Payment Stopped by Drawer"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 89,
+    "scenario_id": "property_advance_refund",
+    "scenario_summary": "A seller's cheque refunding token/advance money for a cancelled property deal bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Sachin Naik",
+      "drawer_name": "Milind Mhatre",
+      "cheque_amount": 532000,
+      "city": "Kolhapur",
+      "memo_date": "2026-05-27",
+      "dishonour_reason": "Funds Insufficient"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 90,
+    "scenario_id": "freelance_fee_cheque",
+    "scenario_summary": "A client's cheque for completed freelance/professional services was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Anil Verma",
+      "drawer_name": "Shobha Phadke",
+      "cheque_amount": 260000,
+      "city": "Kolkata",
+      "drawer_address": "Flat No. 22, Vrindavan Complex, College Road, Andheri West, Nashik 42202",
+      "cheque_number": "579170",
+      "presentation_date": "2026-03-25"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 91,
+    "scenario_id": "vehicle_sale_balance",
+    "scenario_summary": "The buyer's cheque for the balance price of a used vehicle bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Niranjan Jain",
+      "drawer_name": "Sunita Verma",
+      "cheque_amount": 880000,
+      "cheque_number": "433266",
+      "dishonour_reason": "Funds Insufficient"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 92,
+    "scenario_id": "contractor_work_payment",
+    "scenario_summary": "A cheque paying a contractor for completed civil/renovation work was dishonoured.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Sanjay Naidu",
+      "drawer_name": "Ganesh Gill",
+      "cheque_amount": 797000,
+      "city": "Bengaluru",
+      "sender_address": "Flat No. 31, Gokul Residency, M.G. Road, Andheri West, Kolkata 70040",
+      "drawer_address": "Flat No. 5, Green Valley Society, Link Road, Dadar, Pune 41119",
+      "drawee_bank": "IDBI Bank, Pune Branch",
+      "presentation_date": "2026-01-30",
+      "memo_date": "2026-02-02"
+    },
+    "withheld_fields": [
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 93,
+    "scenario_id": "education_fee_refund",
+    "scenario_summary": "An institute's refund cheque after a withdrawn admission bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Nikita Singh",
+      "drawer_name": "Priya Malhotra",
+      "cheque_amount": 172000,
+      "cheque_number": "120179",
+      "cheque_date": "2026-02-15"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 94,
+    "scenario_id": "loan_emi_consolidated",
+    "scenario_summary": "A consolidated cheque towards instalments owed to a private lender was dishonoured.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Manisha Malhotra",
+      "drawer_name": "Milind Menon",
+      "cheque_amount": 211500,
+      "cheque_number": "245665",
+      "drawee_bank": "ICICI Bank, Patna Branch",
+      "memo_date": "2026-05-28",
+      "advocate_name": "Mary Phadke"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 95,
+    "scenario_id": "business_partnership_settlement",
+    "scenario_summary": "A settlement cheque on exit from a small business arrangement bounced.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Kiran Gokhale",
+      "drawer_name": "Kavita Kaur",
+      "cheque_amount": 1028000,
+      "city": "Hyderabad",
+      "sender_address": "Flat No. 8, Green Valley Society, Link Road, Sector 9, Surat 39598",
+      "cheque_number": "692845",
+      "drawee_bank": "IDBI Bank, Kolkata Branch",
+      "cheque_date": "2026-01-19",
+      "memo_date": "2026-02-23",
+      "dishonour_reason": "Funds Insufficient"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 96,
+    "scenario_id": "goods_supplied_credit",
+    "scenario_summary": "A cheque against goods supplied on credit to a retail shop was dishonoured.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Pooja Mehta",
+      "drawer_name": "Rohan Naidu",
+      "cheque_amount": 78000,
+      "city": "Chhatrapati Sambhajinagar",
+      "drawer_address": "Flat No. 3, Shanti Niketan, S.V. Road, New Friends Colony, Mumbai 40086",
+      "drawee_bank": "Punjab National Bank, Chennai Branch",
+      "cheque_date": "2026-03-03",
+      "memo_date": "2026-04-01",
+      "dishonour_reason": "Account Closed",
+      "advocate_name": "Sachin Chopra"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 97,
+    "scenario_id": "machinery_purchase_balance",
+    "scenario_summary": "A cheque for the balance payment of purchased machinery/equipment bounced.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Milind Khan",
+      "drawer_name": "Nikita Mehta",
+      "cheque_amount": 558000,
+      "city": "Bengaluru",
+      "sender_address": "Flat No. 6, Silver Oak Towers, Market Yard Road, Civil Lines, Mumbai 40082",
+      "cheque_date": "2026-02-15",
+      "advocate_name": "Abhijit Lokhande"
+    },
+    "withheld_fields": [
+      {
+        "name": "drawer_address",
+        "placeholder": "[FULL ADDRESS OF DRAWER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "presentation_date",
+        "placeholder": "[DATE OF PRESENTATION]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 98,
+    "scenario_id": "friendly_loan_repayment",
+    "scenario_summary": "A cheque issued to repay a personal/friendly hand loan was dishonoured.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Vihaan Patil",
+      "drawer_name": "Vaishali Sheikh",
+      "cheque_amount": 516500,
+      "city": "Hyderabad",
+      "drawer_address": "Flat No. 3, Gokul Residency, Link Road, Aundh, Nashik 42209",
+      "cheque_number": "413667",
+      "drawee_bank": "Canara Bank, Solapur Branch",
+      "cheque_date": "2026-02-01",
+      "presentation_date": "2026-02-10",
+      "memo_date": "2026-02-10",
+      "dishonour_reason": "Payment Stopped by Drawer",
+      "advocate_name": "Mary Jain"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "cheque_bounce_138",
+    "index": 99,
+    "scenario_id": "business_invoice_payment",
+    "scenario_summary": "A buyer's cheque against a supplier's invoice for goods was dishonoured.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Vijay Iyer",
+      "drawer_name": "Tushar Naidu",
+      "cheque_amount": 331000,
+      "city": "Bengaluru",
+      "drawer_address": "Flat No. 13, Shanti Niketan, Market Yard Road, New Friends Colony, Visakhapatnam 53026",
+      "presentation_date": "2026-05-22"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER]"
+      },
+      {
+        "name": "cheque_number",
+        "placeholder": "[CHEQUE NUMBER]"
+      },
+      {
+        "name": "drawee_bank",
+        "placeholder": "[DRAWEE BANK AND BRANCH]"
+      },
+      {
+        "name": "cheque_date",
+        "placeholder": "[DATE OF CHEQUE]"
+      },
+      {
+        "name": "memo_date",
+        "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+      },
+      {
+        "name": "dishonour_reason",
+        "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+      }
+    ],
+    "nearest_supported": null
+  }
+]

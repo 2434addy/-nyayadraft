@@ -1,0 +1,512 @@
+{
+  "doc_type": "partnership_deed_1932",
+  "index": 25,
+  "scenario_id": "family_restaurant",
+  "scenario_summary": "Three siblings open a Maharashtrian thali restaurant in Nashik pooling family savings; the eldest manages day-to-day operations.",
+  "register": "semi_formal",
+  "given_facts": {
+    "partner1_name": "Aditya Thorat",
+    "partner2_name": "Sunil Jain",
+    "partner3_name": "Gurpreet Mane",
+    "firm_name": "M/s Mukherjee Brothers",
+    "business_nature": "restaurant",
+    "capital_partner1": 1916000,
+    "capital_partner2": 1027500,
+    "capital_partner3": 2437000,
+    "profit_ratio_three": "40:30:30",
+    "interest_on_capital_pct": 6,
+    "bank_name": "Kotak Mahindra Bank, Patna Branch"
+  },
+  "withheld_fields": [
+    {
+      "name": "city",
+      "placeholder": "[CITY]"
+    },
+    {
+      "name": "business_address",
+      "placeholder": "[PRINCIPAL PLACE OF BUSINESS ADDRESS]"
+    },
+    {
+      "name": "commencement_date",
+      "placeholder": "[DATE OF COMMENCEMENT OF PARTNERSHIP]"
+    }
+  ],
+  "nearest_supported": null
+}
+=====
+{
+  "doc_type": "partnership_deed_1932",
+  "index": 26,
+  "scenario_id": "ca_consultancy",
+  "scenario_summary": "Two Chartered Accountants in Mumbai's Fort area form a consultancy partnership offering taxation, audit support and compliance services.",
+  "register": "casual",
+  "given_facts": {
+    "partner1_name": "Gurpreet Malhotra",
+    "partner2_name": "Mangesh Raut",
+    "firm_name": "M/s Kaur Distributors",
+    "business_nature": "consultancy services",
+    "city": "Nagpur",
+    "business_address": "Flat No. 23, Om Sai Plaza, College Road, New Friends Colony, Hyderabad 50026",
+    "capital_partner1": 185500
+  },
+  "withheld_fields": [
+    {
+      "name": "commencement_date",
+      "placeholder": "[DATE OF COMMENCEMENT OF PARTNERSHIP]"
+    },
+    {
+      "name": "capital_partner2",
+      "placeholder": "[CAPITAL CONTRIBUTION OF SECOND PARTNER IN ₹]"
+    },
+    {
+      "name": "profit_ratio_two",
+      "placeholder": "[PROFIT SHARING RATIO BETWEEN THE TWO PARTNERS]"
+    }
+  ],
+  "nearest_supported": null
+}
+=====
+{
+  "doc_type": "partnership_deed_1932",
+  "index": 27,
+  "scenario_id": "three_partner_garment_unit",
+  "scenario_summary": "Three partners set up a garment manufacturing unit in Bhiwandi doing power-loom job work and export stitching orders.",
+  "register": "detailed",
+  "given_facts": {
+    "partner1_name": "Tejal Pawar",
+    "partner2_name": "Kiran Naidu",
+    "partner3_name": "Tushar Sharma",
+    "firm_name": "M/s Reddy Trading Company",
+    "business_nature": "garment manufacturing",
+    "city": "Mumbai",
+    "business_address": "Flat No. 22, Gokul Residency, Karve Road, Sadashiv Peth, Vasai-Virar 40172",
+    "capital_partner2": 1198000,
+    "capital_partner3": 4970000,
+    "profit_ratio_three": "40:30:30",
+    "bank_name": "State Bank of India, Pune Branch"
+  },
+  "withheld_fields": [
+    {
+      "name": "commencement_date",
+      "placeholder": "[DATE OF COMMENCEMENT OF PARTNERSHIP]"
+    },
+    {
+      "name": "capital_partner1",
+      "placeholder": "[CAPITAL CONTRIBUTION OF FIRST PARTNER IN ₹]"
+    }
+  ],
+  "nearest_supported": null
+}
+=====
+{
+  "doc_type": "partnership_deed_1932",
+  "index": 28,
+  "scenario_id": "transport_business",
+  "scenario_summary": "Two partners in Nagpur run a goods transport service with three trucks plying the Nagpur-Raipur route.",
+  "register": "casual",
+  "given_facts": {
+    "partner1_name": "Ramesh Ghadge",
+    "partner2_name": "Fatima Verma",
+    "firm_name": "M/s Naidu & Associates",
+    "business_nature": "transport services",
+    "city": "Kolhapur",
+    "business_address": "Flat No. 8, Green Valley Society, Fergusson College Road, Borivali East, Surat 39535",
+    "commencement_date": "2026-06-21",
+    "profit_ratio_two": "55:45",
+    "interest_on_capital_pct": 9
+  },
+  "withheld_fields": [
+    {
+      "name": "capital_partner1",
+      "placeholder": "[CAPITAL CONTRIBUTION OF FIRST PARTNER IN ₹]"
+    },
+    {
+      "name": "capital_partner2",
+      "placeholder": "[CAPITAL CONTRIBUTION OF SECOND PARTNER IN ₹]"
+    }
+  ],
+  "nearest_supported": null
+}
+=====
+{
+  "doc_type": "partnership_deed_1932",
+  "index": 29,
+  "scenario_id": "agency_distribution",
+  "scenario_summary": "Three partners take an FMCG distribution agency for Kolhapur district covering retail outlets across five talukas.",
+  "register": "semi_formal",
+  "given_facts": {
+    "partner1_name": "Yogesh Mhatre",
+    "partner2_name": "Anita Naidu",
+    "partner3_name": "Shrikant Naik",
+    "firm_name": "M/s Rao Trading Company",
+    "business_nature": "agency/distribution",
+    "commencement_date": "2026-05-24",
+    "capital_partner1": 754000,
+    "capital_partner2": 2392500,
+    "capital_partner3": 1730000
+  },
+  "withheld_fields": [
+    {
+      "name": "city",
+      "placeholder": "[CITY]"
+    },
+    {
+      "name": "business_address",
+      "placeholder": "[PRINCIPAL PLACE OF BUSINESS ADDRESS]"
+    },
+    {
+      "name": "profit_ratio_three",
+      "placeholder": "[PROFIT SHARING RATIO AMONG THE THREE PARTNERS]"
+    }
+  ],
+  "nearest_supported": null
+}
+=====
+{
+  "doc_type": "partnership_deed_1932",
+  "index": 30,
+  "scenario_id": "cloud_kitchen",
+  "scenario_summary": "Two home chefs in Thane start a cloud-kitchen restaurant business on delivery apps; one contributes kitchen equipment as capital.",
+  "register": "semi_formal",
+  "given_facts": {
+    "partner1_name": "Madhuri Naik",
+    "partner2_name": "Rekha Bhagat",
+    "firm_name": "M/s Malhotra & Bros.",
+    "business_nature": "restaurant",
+    "city": "Kochi",
+    "business_address": "Flat No. 17, Yashwant Smruti, M.G. Road, New Friends Colony, Thane 40033",
+    "commencement_date": "2026-06-27",
+    "bank_name": "Kotak Mahindra Bank, Nashik Branch"
+  },
+  "withheld_fields": [
+    {
+      "name": "capital_partner1",
+      "placeholder": "[CAPITAL CONTRIBUTION OF FIRST PARTNER IN ₹]"
+    },
+    {
+      "name": "capital_partner2",
+      "placeholder": "[CAPITAL CONTRIBUTION OF SECOND PARTNER IN ₹]"
+    },
+    {
+      "name": "profit_ratio_two",
+      "placeholder": "[PROFIT SHARING RATIO BETWEEN THE TWO PARTNERS]"
+    }
+  ],
+  "nearest_supported": null
+}
+=====
+{
+  "doc_type": "partnership_deed_1932",
+  "index": 31,
+  "scenario_id": "coaching_institute",
+  "scenario_summary": "Two teachers in Chhatrapati Sambhajinagar partner to run a JEE/NEET coaching and educational consultancy near the railway station.",
+  "register": "detailed",
+  "given_facts": {
+    "partner1_name": "Milind Deshmukh",
+    "partner2_name": "Sunil Kaur",
+    "firm_name": "M/s Sheikh Brothers",
+    "business_nature": "coaching and educational services",
+    "city": "Bengaluru",
+    "business_address": "Flat No. 12, Green Valley Society, S.V. Road, New Friends Colony, Mumbai 40036",
+    "capital_partner1": 1052500,
+    "profit_ratio_two": "55:45",
+    "interest_on_capital_pct": 7
+  },
+  "withheld_fields": [
+    {
+      "name": "commencement_date",
+      "placeholder": "[DATE OF COMMENCEMENT OF PARTNERSHIP]"
+    },
+    {
+      "name": "capital_partner2",
+      "placeholder": "[CAPITAL CONTRIBUTION OF SECOND PARTNER IN ₹]"
+    }
+  ],
+  "nearest_supported": null
+}
+=====
+{
+  "doc_type": "partnership_deed_1932",
+  "index": 32,
+  "scenario_id": "hardware_store_formalisation",
+  "scenario_summary": "A long-running family hardware retail store in Indore is formalised as a partnership when the founder's son-in-law joins with fresh capital.",
+  "register": "casual",
+  "given_facts": {
+    "partner1_name": "Prakash Chopra",
+    "partner2_name": "Yogesh Sharma",
+    "firm_name": "M/s Phadke Agencies",
+    "business_nature": "retail trading",
+    "city": "Vadodara",
+    "business_address": "Flat No. 28, Prestige Court, M.G. Road, Andheri West, Mumbai 40063",
+    "bank_name": "Canara Bank, Jaipur Branch"
+  },
+  "withheld_fields": [
+    {
+      "name": "commencement_date",
+      "placeholder": "[DATE OF COMMENCEMENT OF PARTNERSHIP]"
+    },
+    {
+      "name": "capital_partner1",
+      "placeholder": "[CAPITAL CONTRIBUTION OF FIRST PARTNER IN ₹]"
+    },
+    {
+      "name": "capital_partner2",
+      "placeholder": "[CAPITAL CONTRIBUTION OF SECOND PARTNER IN ₹]"
+    },
+    {
+      "name": "profit_ratio_two",
+      "placeholder": "[PROFIT SHARING RATIO BETWEEN THE TWO PARTNERS]"
+    }
+  ],
+  "nearest_supported": null
+}
+=====
+{
+  "doc_type": "partnership_deed_1932",
+  "index": 33,
+  "scenario_id": "ecommerce_reselling",
+  "scenario_summary": "Two friends in Jaipur formalise an e-commerce retail trading business reselling handicrafts on national marketplaces.",
+  "register": "semi_formal",
+  "given_facts": {
+    "partner1_name": "Nitin Shah",
+    "partner2_name": "Rajesh Ghadge",
+    "firm_name": "M/s Jain & Co.",
+    "business_nature": "retail trading",
+    "city": "Pune",
+    "business_address": "Flat No. 9, Om Sai Plaza, Link Road, Shivaji Nagar, Lucknow 22648",
+    "commencement_date": "2026-05-18",
+    "capital_partner2": 747500,
+    "profit_ratio_two": "60:40",
+    "bank_name": "Bank of Maharashtra, Navi Mumbai Branch"
+  },
+  "withheld_fields": [
+    {
+      "name": "capital_partner1",
+      "placeholder": "[CAPITAL CONTRIBUTION OF FIRST PARTNER IN ₹]"
+    }
+  ],
+  "nearest_supported": null
+}
+=====
+{
+  "doc_type": "partnership_deed_1932",
+  "index": 34,
+  "scenario_id": "salon_chain",
+  "scenario_summary": "Three partners in Bengaluru launch a unisex salon services chain, starting with two outlets in Koramangala and HSR Layout.",
+  "register": "casual",
+  "given_facts": {
+    "partner1_name": "Rekha Pawar",
+    "partner2_name": "Mary Naik",
+    "partner3_name": "Radhika Mehta",
+    "firm_name": "M/s Chavan & Brothers",
+    "business_nature": "salon and beauty services",
+    "city": "Kalyan-Dombivli",
+    "capital_partner2": 1431000,
+    "profit_ratio_three": "40:40:20",
+    "bank_name": "Punjab National Bank, Chennai Branch"
+  },
+  "withheld_fields": [
+    {
+      "name": "business_address",
+      "placeholder": "[PRINCIPAL PLACE OF BUSINESS ADDRESS]"
+    },
+    {
+      "name": "commencement_date",
+      "placeholder": "[DATE OF COMMENCEMENT OF PARTNERSHIP]"
+    },
+    {
+      "name": "capital_partner1",
+      "placeholder": "[CAPITAL CONTRIBUTION OF FIRST PARTNER IN ₹]"
+    },
+    {
+      "name": "capital_partner3",
+      "placeholder": "[CAPITAL CONTRIBUTION OF THIRD PARTNER IN ₹]"
+    }
+  ],
+  "nearest_supported": null
+}
+=====
+{
+  "doc_type": "partnership_deed_1932",
+  "index": 35,
+  "scenario_id": "construction_subcontracting",
+  "scenario_summary": "Three partners in Surat form a firm to take civil construction subcontracts for plastering and tiling works.",
+  "register": "casual",
+  "given_facts": {
+    "partner1_name": "Aishwarya Fernandes",
+    "partner2_name": "Archana Malhotra",
+    "partner3_name": "Aishwarya Menon",
+    "firm_name": "M/s Malhotra & Bros.",
+    "business_nature": "civil construction contracting",
+    "city": "Mumbai",
+    "commencement_date": "2026-06-03",
+    "capital_partner1": 2195000,
+    "capital_partner3": 1349000,
+    "bank_name": "Union Bank of India, Nagpur Branch"
+  },
+  "withheld_fields": [
+    {
+      "name": "business_address",
+      "placeholder": "[PRINCIPAL PLACE OF BUSINESS ADDRESS]"
+    },
+    {
+      "name": "capital_partner2",
+      "placeholder": "[CAPITAL CONTRIBUTION OF SECOND PARTNER IN ₹]"
+    },
+    {
+      "name": "profit_ratio_three",
+      "placeholder": "[PROFIT SHARING RATIO AMONG THE THREE PARTNERS]"
+    }
+  ],
+  "nearest_supported": null
+}
+=====
+{
+  "doc_type": "partnership_deed_1932",
+  "index": 36,
+  "scenario_id": "two_friends_retail_shop",
+  "scenario_summary": "Two college friends in Pune formalise a kirana-and-general-stores retail trading partnership in Kothrud, contributing unequal capital.",
+  "register": "casual",
+  "given_facts": {
+    "partner1_name": "Aditya Agarwal",
+    "partner2_name": "Mahesh Gill",
+    "firm_name": "M/s Banerjee & Bros.",
+    "business_nature": "retail trading",
+    "interest_on_capital_pct": 8
+  },
+  "withheld_fields": [
+    {
+      "name": "city",
+      "placeholder": "[CITY]"
+    },
+    {
+      "name": "business_address",
+      "placeholder": "[PRINCIPAL PLACE OF BUSINESS ADDRESS]"
+    },
+    {
+      "name": "commencement_date",
+      "placeholder": "[DATE OF COMMENCEMENT OF PARTNERSHIP]"
+    },
+    {
+      "name": "capital_partner1",
+      "placeholder": "[CAPITAL CONTRIBUTION OF FIRST PARTNER IN ₹]"
+    },
+    {
+      "name": "capital_partner2",
+      "placeholder": "[CAPITAL CONTRIBUTION OF SECOND PARTNER IN ₹]"
+    },
+    {
+      "name": "profit_ratio_two",
+      "placeholder": "[PROFIT SHARING RATIO BETWEEN THE TWO PARTNERS]"
+    }
+  ],
+  "nearest_supported": null
+}
+=====
+{
+  "doc_type": "partnership_deed_1932",
+  "index": 37,
+  "scenario_id": "family_restaurant",
+  "scenario_summary": "Three siblings open a Maharashtrian thali restaurant in Nashik pooling family savings; the eldest manages day-to-day operations.",
+  "register": "semi_formal",
+  "given_facts": {
+    "partner1_name": "Swapnil Bhagat",
+    "partner2_name": "Yogesh More",
+    "partner3_name": "Dattatray Lokhande",
+    "firm_name": "M/s Thorat Traders",
+    "business_nature": "restaurant",
+    "capital_partner1": 2586500,
+    "profit_ratio_three": "40:30:30",
+    "interest_on_capital_pct": 7,
+    "bank_name": "Kotak Mahindra Bank, Ahmedabad Branch"
+  },
+  "withheld_fields": [
+    {
+      "name": "city",
+      "placeholder": "[CITY]"
+    },
+    {
+      "name": "business_address",
+      "placeholder": "[PRINCIPAL PLACE OF BUSINESS ADDRESS]"
+    },
+    {
+      "name": "commencement_date",
+      "placeholder": "[DATE OF COMMENCEMENT OF PARTNERSHIP]"
+    },
+    {
+      "name": "capital_partner2",
+      "placeholder": "[CAPITAL CONTRIBUTION OF SECOND PARTNER IN ₹]"
+    },
+    {
+      "name": "capital_partner3",
+      "placeholder": "[CAPITAL CONTRIBUTION OF THIRD PARTNER IN ₹]"
+    }
+  ],
+  "nearest_supported": null
+}
+=====
+{
+  "doc_type": "partnership_deed_1932",
+  "index": 38,
+  "scenario_id": "ca_consultancy",
+  "scenario_summary": "Two Chartered Accountants in Mumbai's Fort area form a consultancy partnership offering taxation, audit support and compliance services.",
+  "register": "casual",
+  "given_facts": {
+    "partner1_name": "Kiran Kulkarni",
+    "partner2_name": "Pooja Sharma",
+    "firm_name": "M/s Kapoor & Associates",
+    "business_nature": "consultancy services",
+    "city": "Nagpur",
+    "business_address": "Flat No. 17, Shanti Niketan, S.V. Road, New Friends Colony, Pune 41140",
+    "commencement_date": "2026-07-12",
+    "interest_on_capital_pct": 7,
+    "bank_name": "Bank of Baroda, Amravati Branch"
+  },
+  "withheld_fields": [
+    {
+      "name": "capital_partner1",
+      "placeholder": "[CAPITAL CONTRIBUTION OF FIRST PARTNER IN ₹]"
+    },
+    {
+      "name": "capital_partner2",
+      "placeholder": "[CAPITAL CONTRIBUTION OF SECOND PARTNER IN ₹]"
+    },
+    {
+      "name": "profit_ratio_two",
+      "placeholder": "[PROFIT SHARING RATIO BETWEEN THE TWO PARTNERS]"
+    }
+  ],
+  "nearest_supported": null
+}
+=====
+{
+  "doc_type": "partnership_deed_1932",
+  "index": 39,
+  "scenario_id": "three_partner_garment_unit",
+  "scenario_summary": "Three partners set up a garment manufacturing unit in Bhiwandi doing power-loom job work and export stitching orders.",
+  "register": "detailed",
+  "given_facts": {
+    "partner1_name": "Ananya Rao",
+    "partner2_name": "Manoj Thorat",
+    "partner3_name": "Vikram Mane",
+    "firm_name": "M/s Das Trading Company",
+    "business_nature": "garment manufacturing",
+    "city": "Patna",
+    "business_address": "Flat No. 3, Prestige Court, M.G. Road, Andheri West, Pune 41152",
+    "commencement_date": "2026-05-28",
+    "capital_partner1": 3417500,
+    "capital_partner2": 3154000
+  },
+  "withheld_fields": [
+    {
+      "name": "capital_partner3",
+      "placeholder": "[CAPITAL CONTRIBUTION OF THIRD PARTNER IN ₹]"
+    },
+    {
+      "name": "profit_ratio_three",
+      "placeholder": "[PROFIT SHARING RATIO AMONG THE THREE PARTNERS]"
+    }
+  ],
+  "nearest_supported": null
+}
+=====

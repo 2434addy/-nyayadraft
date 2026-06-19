@@ -1,0 +1,2192 @@
+[
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 0,
+    "scenario_id": "it_services_offer_pune",
+    "scenario_summary": "Pune IT services company offers a software engineer role on six-month probation with a sixty-day notice period.",
+    "register": "detailed",
+    "given_facts": {
+      "company_name": "Mane Textiles",
+      "employee_name": "Bhushan Sharma",
+      "designation": "Software Engineer",
+      "employee_address": "Flat No. 24, Silver Oak Towers, Gandhi Chowk Road, Kothrud, Thane 40084",
+      "annual_ctc": 1207000,
+      "joining_date": "2026-08-13",
+      "probation_months": 6,
+      "notice_period_days": 90,
+      "work_location": "Hyderabad"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 1,
+    "scenario_id": "auto_components_offer_aurangabad",
+    "scenario_summary": "Auto-components manufacturer at Chhatrapati Sambhajinagar (Aurangabad) appoints a production supervisor at its MIDC Waluj plant.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Pawar Agencies",
+      "employee_name": "Devendra Bhosale",
+      "designation": "Production Supervisor",
+      "annual_ctc": 463000,
+      "joining_date": "2026-07-05",
+      "notice_period_days": 60,
+      "work_location": "Pune",
+      "signatory_name": "Manoj Kadam"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 2,
+    "scenario_id": "fintech_offer_bengaluru",
+    "scenario_summary": "Bengaluru fintech startup offers a senior product manager role at a senior CTC band with ninety-day notice.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Kapoor Foods",
+      "employee_name": "Anil Das",
+      "designation": "Senior Product Manager",
+      "annual_ctc": 2845000,
+      "work_location": "Kolhapur",
+      "signatory_name": "Sayali Wagh"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 3,
+    "scenario_id": "bpo_offer_mumbai",
+    "scenario_summary": "Mumbai BPO hires a customer support executive for a night-shift voice process at entry-level pay.",
+    "register": "detailed",
+    "given_facts": {
+      "company_name": "Agarwal Enterprises",
+      "employee_name": "Mary Menon",
+      "designation": "Customer Support Executive",
+      "employee_address": "Flat No. 15, Shanti Niketan, Station Road, Aundh, Mumbai 40001",
+      "annual_ctc": 370000,
+      "notice_period_days": 60,
+      "work_location": "Navi Mumbai",
+      "signatory_name": "Mahesh Wagh"
+    },
+    "withheld_fields": [
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 4,
+    "scenario_id": "pharma_offer_hyderabad",
+    "scenario_summary": "Hyderabad pharmaceutical company offers a quality-assurance chemist position at its Genome Valley facility.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Raut Enterprises",
+      "employee_name": "Omkar Naidu",
+      "designation": "Quality Assurance Chemist",
+      "annual_ctc": 820500,
+      "probation_months": 3,
+      "work_location": "Bengaluru",
+      "signatory_name": "Suresh Chavan",
+      "signatory_designation": "HR Manager"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 5,
+    "scenario_id": "retail_offer_nagpur",
+    "scenario_summary": "Nagpur retail chain appoints a store manager for its new Sitabuldi outlet on three-month probation.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Bhatt Distributors",
+      "employee_name": "Yogesh Singh",
+      "designation": "Store Manager",
+      "employee_address": "Flat No. 19, Om Sai Plaza, Fergusson College Road, Andheri West, Navi Mumbai 40030",
+      "annual_ctc": 846000,
+      "notice_period_days": 60,
+      "work_location": "Vadodara",
+      "signatory_name": "Madhuri Patil",
+      "signatory_designation": "Head - Human Resources"
+    },
+    "withheld_fields": [
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 6,
+    "scenario_id": "hospitality_offer_goa",
+    "scenario_summary": "Goa beach resort offers a front-office manager role ahead of the tourist season.",
+    "register": "detailed",
+    "given_facts": {
+      "company_name": "Thorat Marketing",
+      "employee_name": "Pravin D'Souza",
+      "designation": "Front Office Manager",
+      "employee_address": "Flat No. 23, Shree Ganesh Apartments, Karve Road, Camp Area, Navi Mumbai 40048",
+      "annual_ctc": 548500,
+      "joining_date": "2026-07-01",
+      "probation_months": 3,
+      "notice_period_days": 30,
+      "work_location": "Kochi",
+      "signatory_name": "Ashwini Kadam",
+      "signatory_designation": "General Manager - HR"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 7,
+    "scenario_id": "restructuring_termination_mumbai",
+    "scenario_summary": "Mumbai media house terminates a marketing executive after a divisional shutdown, offering pay in lieu of notice.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Iyer Marketing",
+      "employee_name": "Manoj Kaur",
+      "designation": "Marketing Executive",
+      "termination_reason": "redundancy arising from organisational restructuring",
+      "last_working_day": "2026-09-06"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 8,
+    "scenario_id": "probation_nonconfirmation_pune",
+    "scenario_summary": "Pune logistics firm declines to confirm an operations trainee whose probation performance fell short of targets.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "D'Souza Industries",
+      "employee_name": "Swapnil Menon",
+      "designation": "Operations Trainee",
+      "employee_address": "Flat No. 9, Gokul Residency, Karve Road, Borivali East, Mumbai 40043",
+      "termination_reason": "non-confirmation of services during the probation period",
+      "signatory_designation": "HR Manager"
+    },
+    "withheld_fields": [
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      },
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 9,
+    "scenario_id": "misconduct_termination_thane",
+    "scenario_summary": "Thane engineering unit dismisses a storekeeper for stock pilferage established in a domestic inquiry.",
+    "register": "detailed",
+    "given_facts": {
+      "company_name": "Salunkhe Infotech Private Limited",
+      "employee_name": "Kavita Khan",
+      "designation": "Storekeeper",
+      "employee_address": "Flat No. 8, Prestige Court, Market Yard Road, Sadashiv Peth, Kolkata 70099",
+      "termination_reason": "misconduct established in a domestic inquiry",
+      "last_working_day": "2026-07-31",
+      "notice_disposition": "payment in lieu of the notice period will be made with the full and final settlement",
+      "signatory_name": "Priya Sheikh",
+      "signatory_designation": "HR Manager"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 10,
+    "scenario_id": "absence_termination_nashik",
+    "scenario_summary": "Nashik FMCG distributor terminates a sales representative for continued unauthorised absence despite written warnings.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Mhatre Enterprises",
+      "employee_name": "Meera Mane",
+      "designation": "Sales Representative",
+      "employee_address": "Flat No. 23, Gokul Residency, Gandhi Chowk Road, Sadashiv Peth, Jaipur 30270",
+      "termination_reason": "continued unauthorised absence from duty",
+      "notice_disposition": "the notice period will be served until the last working day",
+      "employee_id": "XEFIC1118F"
+    },
+    "withheld_fields": [
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 11,
+    "scenario_id": "saas_layoff_gurugram",
+    "scenario_summary": "Gurugram SaaS company retrenches a backend engineer amid funding-driven restructuring, with pay in lieu of notice.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Surve Distributors",
+      "employee_name": "Savita Kale",
+      "designation": "Backend Engineer",
+      "termination_reason": "redundancy arising from organisational restructuring",
+      "last_working_day": "2026-08-17",
+      "signatory_name": "Nikita Pawar",
+      "employee_id": "LIELI7269D"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 12,
+    "scenario_id": "probation_termination_chennai",
+    "scenario_summary": "Chennai IT services firm ends a junior developer's service during probation for non-confirmation.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Kapoor Foods",
+      "employee_name": "Priya Kaur",
+      "designation": "Junior Developer",
+      "termination_reason": "non-confirmation of services during the probation period",
+      "notice_disposition": "the notice period will be served until the last working day",
+      "employee_id": "LJXDK9206N"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 13,
+    "scenario_id": "misconduct_termination_kolkata",
+    "scenario_summary": "Kolkata trading company terminates an accounts assistant for misconduct established in an internal inquiry.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Ghadge Agencies",
+      "employee_name": "Kiran Kulkarni",
+      "designation": "Accounts Assistant",
+      "termination_reason": "misconduct established in a domestic inquiry",
+      "last_working_day": "2026-08-24",
+      "notice_disposition": "the notice period will be served until the last working day"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 14,
+    "scenario_id": "it_services_offer_pune",
+    "scenario_summary": "Pune IT services company offers a software engineer role on six-month probation with a sixty-day notice period.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Deshpande Enterprises",
+      "employee_name": "Aditya Nair",
+      "designation": "Software Engineer",
+      "employee_address": "Flat No. 28, Shree Ganesh Apartments, M.G. Road, Dadar, Thane 40053",
+      "annual_ctc": 869500,
+      "joining_date": "2026-07-04",
+      "notice_period_days": 60,
+      "work_location": "Kolkata",
+      "signatory_name": "Sandeep Patil",
+      "signatory_designation": "Head - Human Resources"
+    },
+    "withheld_fields": [
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 15,
+    "scenario_id": "auto_components_offer_aurangabad",
+    "scenario_summary": "Auto-components manufacturer at Chhatrapati Sambhajinagar (Aurangabad) appoints a production supervisor at its MIDC Waluj plant.",
+    "register": "detailed",
+    "given_facts": {
+      "company_name": "Lokhande Infotech Private Limited",
+      "employee_name": "Milind Deshpande",
+      "designation": "Production Supervisor",
+      "annual_ctc": 701000,
+      "joining_date": "2026-07-04",
+      "probation_months": 3,
+      "work_location": "Kalyan-Dombivli",
+      "signatory_name": "Farhan Menon",
+      "signatory_designation": "Head - Human Resources"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 16,
+    "scenario_id": "fintech_offer_bengaluru",
+    "scenario_summary": "Bengaluru fintech startup offers a senior product manager role at a senior CTC band with ninety-day notice.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Sheikh Enterprises",
+      "employee_name": "Shraddha Pawar",
+      "designation": "Senior Product Manager",
+      "annual_ctc": 3976000,
+      "joining_date": "2026-08-13",
+      "probation_months": 6,
+      "signatory_name": "Nitin Naidu"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      },
+      {
+        "name": "work_location",
+        "placeholder": "[WORK LOCATION CITY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 17,
+    "scenario_id": "bpo_offer_mumbai",
+    "scenario_summary": "Mumbai BPO hires a customer support executive for a night-shift voice process at entry-level pay.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Phadke Solutions Private Limited",
+      "employee_name": "Meera Bhatt",
+      "designation": "Customer Support Executive",
+      "annual_ctc": 539000,
+      "notice_period_days": 30,
+      "signatory_designation": "Chief People Officer"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "work_location",
+        "placeholder": "[WORK LOCATION CITY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 18,
+    "scenario_id": "pharma_offer_hyderabad",
+    "scenario_summary": "Hyderabad pharmaceutical company offers a quality-assurance chemist position at its Genome Valley facility.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Fernandes Solutions Private Limited",
+      "employee_name": "Deepa Patil",
+      "designation": "Quality Assurance Chemist",
+      "employee_address": "Flat No. 33, Shanti Niketan, Market Yard Road, Aundh, Thane 40010",
+      "annual_ctc": 432000,
+      "probation_months": 3,
+      "notice_period_days": 30,
+      "work_location": "Mumbai",
+      "signatory_name": "Aarti Gaikwad",
+      "signatory_designation": "Director"
+    },
+    "withheld_fields": [
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 19,
+    "scenario_id": "retail_offer_nagpur",
+    "scenario_summary": "Nagpur retail chain appoints a store manager for its new Sitabuldi outlet on three-month probation.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Pereira Traders",
+      "employee_name": "Rutuja Kadam",
+      "designation": "Store Manager",
+      "annual_ctc": 821000,
+      "signatory_name": "Dattatray Iyer",
+      "signatory_designation": "Chief People Officer"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      },
+      {
+        "name": "work_location",
+        "placeholder": "[WORK LOCATION CITY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 20,
+    "scenario_id": "hospitality_offer_goa",
+    "scenario_summary": "Goa beach resort offers a front-office manager role ahead of the tourist season.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Sawant Marketing",
+      "employee_name": "Anil Sawant",
+      "designation": "Front Office Manager",
+      "employee_address": "Flat No. 38, Shree Ganesh Apartments, Karve Road, Model Colony, Kolkata 70075",
+      "annual_ctc": 378000,
+      "probation_months": 3,
+      "notice_period_days": 90,
+      "work_location": "Mumbai",
+      "signatory_designation": "Head - Human Resources"
+    },
+    "withheld_fields": [
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 21,
+    "scenario_id": "restructuring_termination_mumbai",
+    "scenario_summary": "Mumbai media house terminates a marketing executive after a divisional shutdown, offering pay in lieu of notice.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Trivedi Traders",
+      "employee_name": "Anita Mhatre",
+      "designation": "Marketing Executive",
+      "termination_reason": "redundancy arising from organisational restructuring",
+      "signatory_name": "Rajesh Mhatre",
+      "signatory_designation": "General Manager - HR",
+      "employee_id": "UFQPR9914Y"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      },
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 22,
+    "scenario_id": "probation_nonconfirmation_pune",
+    "scenario_summary": "Pune logistics firm declines to confirm an operations trainee whose probation performance fell short of targets.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Shinde Infotech Private Limited",
+      "employee_name": "Kiran Nair",
+      "designation": "Operations Trainee",
+      "termination_reason": "non-confirmation of services during the probation period",
+      "signatory_name": "Aishwarya Chopra",
+      "signatory_designation": "Head - Human Resources",
+      "employee_id": "KBFLD4544U"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      },
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 23,
+    "scenario_id": "misconduct_termination_thane",
+    "scenario_summary": "Thane engineering unit dismisses a storekeeper for stock pilferage established in a domestic inquiry.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Verma Services LLP",
+      "employee_name": "Harshad More",
+      "designation": "Storekeeper",
+      "termination_reason": "misconduct established in a domestic inquiry",
+      "signatory_designation": "General Manager - HR",
+      "employee_id": "VUJAK0556L"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      },
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 24,
+    "scenario_id": "absence_termination_nashik",
+    "scenario_summary": "Nashik FMCG distributor terminates a sales representative for continued unauthorised absence despite written warnings.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Naidu Textiles",
+      "employee_name": "Omkar Reddy",
+      "designation": "Sales Representative",
+      "termination_reason": "continued unauthorised absence from duty",
+      "notice_disposition": "payment in lieu of the notice period will be made with the full and final settlement",
+      "signatory_name": "Deepak Apte",
+      "employee_id": "RZUDN2373R"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 25,
+    "scenario_id": "saas_layoff_gurugram",
+    "scenario_summary": "Gurugram SaaS company retrenches a backend engineer amid funding-driven restructuring, with pay in lieu of notice.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Phadke Industries",
+      "employee_name": "Omkar Raut",
+      "designation": "Backend Engineer",
+      "termination_reason": "redundancy arising from organisational restructuring"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      },
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 26,
+    "scenario_id": "probation_termination_chennai",
+    "scenario_summary": "Chennai IT services firm ends a junior developer's service during probation for non-confirmation.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Jain Agencies",
+      "employee_name": "Gurpreet Malhotra",
+      "designation": "Junior Developer",
+      "termination_reason": "non-confirmation of services during the probation period",
+      "last_working_day": "2026-07-04",
+      "employee_id": "NFXOL6856W"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 27,
+    "scenario_id": "misconduct_termination_kolkata",
+    "scenario_summary": "Kolkata trading company terminates an accounts assistant for misconduct established in an internal inquiry.",
+    "register": "detailed",
+    "given_facts": {
+      "company_name": "Pereira Trading Company",
+      "employee_name": "Farhan Bhagat",
+      "designation": "Accounts Assistant",
+      "employee_address": "Flat No. 14, Om Sai Plaza, Link Road, Camp Area, Chhatrapati Sambhajinagar 43182",
+      "termination_reason": "misconduct established in a domestic inquiry",
+      "last_working_day": "2026-07-12",
+      "signatory_name": "Suresh Naik"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 28,
+    "scenario_id": "it_services_offer_pune",
+    "scenario_summary": "Pune IT services company offers a software engineer role on six-month probation with a sixty-day notice period.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Bhatt Infotech Private Limited",
+      "employee_name": "Ramesh Ghadge",
+      "designation": "Software Engineer",
+      "employee_address": "Flat No. 9, Vrindavan Complex, Gandhi Chowk Road, Model Colony, Nashik 42277",
+      "annual_ctc": 2115000,
+      "joining_date": "2026-07-07",
+      "probation_months": 3,
+      "work_location": "Pune",
+      "signatory_designation": "General Manager - HR"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 29,
+    "scenario_id": "auto_components_offer_aurangabad",
+    "scenario_summary": "Auto-components manufacturer at Chhatrapati Sambhajinagar (Aurangabad) appoints a production supervisor at its MIDC Waluj plant.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Chopra Trading Company",
+      "employee_name": "Pooja Rao",
+      "designation": "Production Supervisor",
+      "annual_ctc": 757500,
+      "probation_months": 6,
+      "notice_period_days": 90,
+      "work_location": "Ahmedabad",
+      "signatory_designation": "Director"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 30,
+    "scenario_id": "fintech_offer_bengaluru",
+    "scenario_summary": "Bengaluru fintech startup offers a senior product manager role at a senior CTC band with ninety-day notice.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Joshi Textiles",
+      "employee_name": "Madhuri Naik",
+      "designation": "Senior Product Manager",
+      "annual_ctc": 4710500,
+      "joining_date": "2026-07-16",
+      "probation_months": 6,
+      "signatory_name": "Imran Ranade"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      },
+      {
+        "name": "work_location",
+        "placeholder": "[WORK LOCATION CITY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 31,
+    "scenario_id": "bpo_offer_mumbai",
+    "scenario_summary": "Mumbai BPO hires a customer support executive for a night-shift voice process at entry-level pay.",
+    "register": "detailed",
+    "given_facts": {
+      "company_name": "Banerjee Marketing",
+      "employee_name": "Milind Deshmukh",
+      "designation": "Customer Support Executive",
+      "employee_address": "Flat No. 3, Tulsi Vihar, M.G. Road, Aundh, Vadodara 39085",
+      "annual_ctc": 348000,
+      "joining_date": "2026-08-06",
+      "notice_period_days": 60,
+      "work_location": "Hyderabad",
+      "signatory_name": "Devendra Chavan",
+      "signatory_designation": "General Manager - HR"
+    },
+    "withheld_fields": [
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 32,
+    "scenario_id": "pharma_offer_hyderabad",
+    "scenario_summary": "Hyderabad pharmaceutical company offers a quality-assurance chemist position at its Genome Valley facility.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Gaikwad Infotech Private Limited",
+      "employee_name": "Prakash Chopra",
+      "designation": "Quality Assurance Chemist",
+      "employee_address": "Flat No. 35, Matoshree Heights, Market Yard Road, Kothrud, Nashik 42256",
+      "annual_ctc": 844500,
+      "joining_date": "2026-08-02",
+      "work_location": "Mumbai",
+      "signatory_name": "Rutuja Sharma"
+    },
+    "withheld_fields": [
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 33,
+    "scenario_id": "retail_offer_nagpur",
+    "scenario_summary": "Nagpur retail chain appoints a store manager for its new Sitabuldi outlet on three-month probation.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Jadhav Traders",
+      "employee_name": "Nitin Shah",
+      "designation": "Store Manager",
+      "employee_address": "Flat No. 4, Green Valley Society, Karve Road, Dadar, Nagpur 44014",
+      "annual_ctc": 860000,
+      "joining_date": "2026-08-01",
+      "probation_months": 3,
+      "work_location": "Delhi"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 34,
+    "scenario_id": "hospitality_offer_goa",
+    "scenario_summary": "Goa beach resort offers a front-office manager role ahead of the tourist season.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Fernandes Foods",
+      "employee_name": "Omkar Kapoor",
+      "designation": "Front Office Manager",
+      "employee_address": "Flat No. 24, Shanti Niketan, Ring Road, Aundh, Mumbai 40029",
+      "annual_ctc": 457500,
+      "work_location": "Kalyan-Dombivli"
+    },
+    "withheld_fields": [
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 35,
+    "scenario_id": "restructuring_termination_mumbai",
+    "scenario_summary": "Mumbai media house terminates a marketing executive after a divisional shutdown, offering pay in lieu of notice.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Banerjee Infotech Private Limited",
+      "employee_name": "Deepa Kulkarni",
+      "designation": "Marketing Executive",
+      "employee_address": "Flat No. 36, Green Valley Society, Gandhi Chowk Road, Dadar, Ahmedabad 38014",
+      "termination_reason": "redundancy arising from organisational restructuring",
+      "notice_disposition": "payment in lieu of the notice period will be made with the full and final settlement",
+      "signatory_designation": "HR Manager"
+    },
+    "withheld_fields": [
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 36,
+    "scenario_id": "probation_nonconfirmation_pune",
+    "scenario_summary": "Pune logistics firm declines to confirm an operations trainee whose probation performance fell short of targets.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Ghadge Enterprises",
+      "employee_name": "Rekha Thorat",
+      "designation": "Operations Trainee",
+      "termination_reason": "non-confirmation of services during the probation period",
+      "signatory_designation": "Chief People Officer",
+      "employee_id": "IOLVB7240F"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      },
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 37,
+    "scenario_id": "misconduct_termination_thane",
+    "scenario_summary": "Thane engineering unit dismisses a storekeeper for stock pilferage established in a domestic inquiry.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Nair Industries",
+      "employee_name": "Prakash Thorat",
+      "designation": "Storekeeper",
+      "termination_reason": "misconduct established in a domestic inquiry",
+      "signatory_designation": "Director",
+      "employee_id": "VYGEG7215K"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      },
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 38,
+    "scenario_id": "absence_termination_nashik",
+    "scenario_summary": "Nashik FMCG distributor terminates a sales representative for continued unauthorised absence despite written warnings.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Bhosale Solutions Private Limited",
+      "employee_name": "Joseph Agarwal",
+      "designation": "Sales Representative",
+      "termination_reason": "continued unauthorised absence from duty",
+      "last_working_day": "2026-08-10",
+      "notice_disposition": "payment in lieu of the notice period will be made with the full and final settlement",
+      "signatory_name": "Prashant Shah",
+      "signatory_designation": "Chief People Officer"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 39,
+    "scenario_id": "saas_layoff_gurugram",
+    "scenario_summary": "Gurugram SaaS company retrenches a backend engineer amid funding-driven restructuring, with pay in lieu of notice.",
+    "register": "detailed",
+    "given_facts": {
+      "company_name": "Pawar Industries",
+      "employee_name": "Pooja Chopra",
+      "designation": "Backend Engineer",
+      "employee_address": "Flat No. 21, Sai Krupa CHS, S.V. Road, New Friends Colony, Delhi 11059",
+      "termination_reason": "redundancy arising from organisational restructuring",
+      "last_working_day": "2026-07-07",
+      "notice_disposition": "the notice period will be served until the last working day",
+      "employee_id": "XUBQB0492M"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 40,
+    "scenario_id": "probation_termination_chennai",
+    "scenario_summary": "Chennai IT services firm ends a junior developer's service during probation for non-confirmation.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Bhagat Engineering Works",
+      "employee_name": "Sachin Khan",
+      "designation": "Junior Developer",
+      "termination_reason": "non-confirmation of services during the probation period",
+      "last_working_day": "2026-07-07",
+      "employee_id": "LCIZI1800V"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 41,
+    "scenario_id": "misconduct_termination_kolkata",
+    "scenario_summary": "Kolkata trading company terminates an accounts assistant for misconduct established in an internal inquiry.",
+    "register": "detailed",
+    "given_facts": {
+      "company_name": "Ghadge Solutions Private Limited",
+      "employee_name": "Pooja Mehta",
+      "designation": "Accounts Assistant",
+      "employee_address": "Flat No. 13, Shanti Niketan, M.G. Road, Civil Lines, Delhi 11070",
+      "termination_reason": "misconduct established in a domestic inquiry",
+      "notice_disposition": "payment in lieu of the notice period will be made with the full and final settlement",
+      "signatory_name": "Deepak Thorat",
+      "signatory_designation": "HR Manager",
+      "employee_id": "TUATD3049L"
+    },
+    "withheld_fields": [
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 42,
+    "scenario_id": "it_services_offer_pune",
+    "scenario_summary": "Pune IT services company offers a software engineer role on six-month probation with a sixty-day notice period.",
+    "register": "detailed",
+    "given_facts": {
+      "company_name": "More Trading Company",
+      "employee_name": "Amol Reddy",
+      "designation": "Software Engineer",
+      "employee_address": "Flat No. 34, Vrindavan Complex, Station Road, Borivali East, Nashik 42206",
+      "annual_ctc": 1095000,
+      "joining_date": "2026-08-02",
+      "probation_months": 3,
+      "notice_period_days": 60,
+      "work_location": "Kolhapur",
+      "signatory_name": "Vikram Kapoor",
+      "signatory_designation": "HR Manager"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 43,
+    "scenario_id": "auto_components_offer_aurangabad",
+    "scenario_summary": "Auto-components manufacturer at Chhatrapati Sambhajinagar (Aurangabad) appoints a production supervisor at its MIDC Waluj plant.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Surve Textiles",
+      "employee_name": "Rutuja Verma",
+      "designation": "Production Supervisor",
+      "employee_address": "Flat No. 26, Vrindavan Complex, Ring Road, Borivali East, Mumbai 40065",
+      "annual_ctc": 510500,
+      "notice_period_days": 30,
+      "work_location": "Pune",
+      "signatory_name": "Madhuri Patil"
+    },
+    "withheld_fields": [
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 44,
+    "scenario_id": "fintech_offer_bengaluru",
+    "scenario_summary": "Bengaluru fintech startup offers a senior product manager role at a senior CTC band with ninety-day notice.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Shah Solutions Private Limited",
+      "employee_name": "Deepak Kulkarni",
+      "designation": "Senior Product Manager",
+      "annual_ctc": 5805000,
+      "probation_months": 3,
+      "notice_period_days": 90,
+      "work_location": "Indore"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 45,
+    "scenario_id": "bpo_offer_mumbai",
+    "scenario_summary": "Mumbai BPO hires a customer support executive for a night-shift voice process at entry-level pay.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Ghadge Textiles",
+      "employee_name": "Rekha Mehta",
+      "designation": "Customer Support Executive",
+      "annual_ctc": 369000,
+      "notice_period_days": 30
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "work_location",
+        "placeholder": "[WORK LOCATION CITY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 46,
+    "scenario_id": "pharma_offer_hyderabad",
+    "scenario_summary": "Hyderabad pharmaceutical company offers a quality-assurance chemist position at its Genome Valley facility.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Bhatt Textiles",
+      "employee_name": "Pallavi Ahmed",
+      "designation": "Quality Assurance Chemist",
+      "employee_address": "Flat No. 27, Vrindavan Complex, Ring Road, Sadashiv Peth, Mumbai 40061",
+      "annual_ctc": 989500,
+      "joining_date": "2026-07-02",
+      "probation_months": 6,
+      "notice_period_days": 90,
+      "work_location": "Ahmedabad",
+      "signatory_name": "Aishwarya Chavan",
+      "signatory_designation": "HR Manager"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 47,
+    "scenario_id": "retail_offer_nagpur",
+    "scenario_summary": "Nagpur retail chain appoints a store manager for its new Sitabuldi outlet on three-month probation.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Deshmukh Developers",
+      "employee_name": "Priya Kaur",
+      "designation": "Store Manager",
+      "annual_ctc": 691000,
+      "notice_period_days": 90,
+      "signatory_name": "Imran Raut",
+      "signatory_designation": "Director"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "work_location",
+        "placeholder": "[WORK LOCATION CITY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 48,
+    "scenario_id": "hospitality_offer_goa",
+    "scenario_summary": "Goa beach resort offers a front-office manager role ahead of the tourist season.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Sharma Enterprises",
+      "employee_name": "Devendra Salunkhe",
+      "designation": "Front Office Manager",
+      "employee_address": "Flat No. 8, Shree Ganesh Apartments, Fergusson College Road, Sector 9, Mumbai 40030",
+      "annual_ctc": 353500,
+      "work_location": "Navi Mumbai",
+      "signatory_designation": "Head - Human Resources"
+    },
+    "withheld_fields": [
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 49,
+    "scenario_id": "restructuring_termination_mumbai",
+    "scenario_summary": "Mumbai media house terminates a marketing executive after a divisional shutdown, offering pay in lieu of notice.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Agarwal Agencies",
+      "employee_name": "Rajesh Mehta",
+      "designation": "Marketing Executive",
+      "employee_address": "Flat No. 32, Sai Krupa CHS, Link Road, Andheri West, Chennai 60090",
+      "termination_reason": "redundancy arising from organisational restructuring",
+      "notice_disposition": "payment in lieu of the notice period will be made with the full and final settlement",
+      "signatory_designation": "General Manager - HR"
+    },
+    "withheld_fields": [
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 50,
+    "scenario_id": "probation_nonconfirmation_pune",
+    "scenario_summary": "Pune logistics firm declines to confirm an operations trainee whose probation performance fell short of targets.",
+    "register": "detailed",
+    "given_facts": {
+      "company_name": "Salunkhe Textiles",
+      "employee_name": "Dattatray Ghadge",
+      "designation": "Operations Trainee",
+      "employee_address": "Flat No. 18, Shanti Niketan, Gandhi Chowk Road, Andheri West, Kochi 68255",
+      "termination_reason": "non-confirmation of services during the probation period",
+      "notice_disposition": "the notice period will be served until the last working day"
+    },
+    "withheld_fields": [
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 51,
+    "scenario_id": "misconduct_termination_thane",
+    "scenario_summary": "Thane engineering unit dismisses a storekeeper for stock pilferage established in a domestic inquiry.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Jadhav Services LLP",
+      "employee_name": "Aditya Khan",
+      "designation": "Storekeeper",
+      "employee_address": "Flat No. 32, Gokul Residency, M.G. Road, Aundh, Hyderabad 50064",
+      "termination_reason": "misconduct established in a domestic inquiry"
+    },
+    "withheld_fields": [
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      },
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 52,
+    "scenario_id": "absence_termination_nashik",
+    "scenario_summary": "Nashik FMCG distributor terminates a sales representative for continued unauthorised absence despite written warnings.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Singh Distributors",
+      "employee_name": "Smita Phadke",
+      "designation": "Sales Representative",
+      "termination_reason": "continued unauthorised absence from duty",
+      "signatory_name": "Aarti Gill",
+      "signatory_designation": "Chief People Officer",
+      "employee_id": "VWTNL2382Q"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      },
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 53,
+    "scenario_id": "saas_layoff_gurugram",
+    "scenario_summary": "Gurugram SaaS company retrenches a backend engineer amid funding-driven restructuring, with pay in lieu of notice.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Pawar Marketing",
+      "employee_name": "Manisha Joshi",
+      "designation": "Backend Engineer",
+      "employee_address": "Flat No. 11, Tulsi Vihar, S.V. Road, Model Colony, Patna 80087",
+      "termination_reason": "redundancy arising from organisational restructuring",
+      "last_working_day": "2026-09-10",
+      "signatory_designation": "General Manager - HR"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 54,
+    "scenario_id": "probation_termination_chennai",
+    "scenario_summary": "Chennai IT services firm ends a junior developer's service during probation for non-confirmation.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Sheikh Marketing",
+      "employee_name": "Yogesh Rao",
+      "designation": "Junior Developer",
+      "employee_address": "Flat No. 17, Om Sai Plaza, Market Yard Road, Model Colony, Bengaluru 56016",
+      "termination_reason": "non-confirmation of services during the probation period",
+      "signatory_designation": "Director"
+    },
+    "withheld_fields": [
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      },
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 55,
+    "scenario_id": "misconduct_termination_kolkata",
+    "scenario_summary": "Kolkata trading company terminates an accounts assistant for misconduct established in an internal inquiry.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Gaikwad Engineering Works",
+      "employee_name": "Manisha Gill",
+      "designation": "Accounts Assistant",
+      "employee_address": "Flat No. 20, Green Valley Society, Fergusson College Road, Camp Area, Pune 41111",
+      "termination_reason": "misconduct established in a domestic inquiry",
+      "notice_disposition": "payment in lieu of the notice period will be made with the full and final settlement",
+      "signatory_designation": "Chief People Officer"
+    },
+    "withheld_fields": [
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 56,
+    "scenario_id": "it_services_offer_pune",
+    "scenario_summary": "Pune IT services company offers a software engineer role on six-month probation with a sixty-day notice period.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Bhagat Agencies",
+      "employee_name": "Abhijit Kapoor",
+      "designation": "Software Engineer",
+      "employee_address": "Flat No. 17, Sai Krupa CHS, M.G. Road, Sadashiv Peth, Pune 41182",
+      "annual_ctc": 1582000,
+      "work_location": "Nashik"
+    },
+    "withheld_fields": [
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 57,
+    "scenario_id": "auto_components_offer_aurangabad",
+    "scenario_summary": "Auto-components manufacturer at Chhatrapati Sambhajinagar (Aurangabad) appoints a production supervisor at its MIDC Waluj plant.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Gokhale Infotech Private Limited",
+      "employee_name": "Sandeep Singh",
+      "designation": "Production Supervisor",
+      "employee_address": "Flat No. 32, Shanti Niketan, Link Road, Civil Lines, Delhi 11082",
+      "annual_ctc": 401500,
+      "joining_date": "2026-07-01",
+      "probation_months": 3,
+      "work_location": "Mumbai",
+      "signatory_name": "Dattatray Chopra",
+      "signatory_designation": "HR Manager"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 58,
+    "scenario_id": "fintech_offer_bengaluru",
+    "scenario_summary": "Bengaluru fintech startup offers a senior product manager role at a senior CTC band with ninety-day notice.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Sharma Foods",
+      "employee_name": "Farhan Khan",
+      "designation": "Senior Product Manager",
+      "annual_ctc": 3374500,
+      "signatory_name": "Deepa Apte"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      },
+      {
+        "name": "work_location",
+        "placeholder": "[WORK LOCATION CITY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 59,
+    "scenario_id": "bpo_offer_mumbai",
+    "scenario_summary": "Mumbai BPO hires a customer support executive for a night-shift voice process at entry-level pay.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Mhatre Developers",
+      "employee_name": "Tushar Bhatt",
+      "designation": "Customer Support Executive",
+      "annual_ctc": 540500,
+      "joining_date": "2026-07-24",
+      "signatory_name": "Joseph Shah",
+      "signatory_designation": "Chief People Officer"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      },
+      {
+        "name": "work_location",
+        "placeholder": "[WORK LOCATION CITY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 60,
+    "scenario_id": "pharma_offer_hyderabad",
+    "scenario_summary": "Hyderabad pharmaceutical company offers a quality-assurance chemist position at its Genome Valley facility.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Jadhav Distributors",
+      "employee_name": "Anil Chavan",
+      "designation": "Quality Assurance Chemist",
+      "annual_ctc": 868500,
+      "probation_months": 6,
+      "work_location": "Pune"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 61,
+    "scenario_id": "retail_offer_nagpur",
+    "scenario_summary": "Nagpur retail chain appoints a store manager for its new Sitabuldi outlet on three-month probation.",
+    "register": "detailed",
+    "given_facts": {
+      "company_name": "Deshmukh Foods",
+      "employee_name": "Rajesh Kale",
+      "designation": "Store Manager",
+      "annual_ctc": 459000,
+      "probation_months": 3,
+      "notice_period_days": 60,
+      "signatory_name": "Imran Singh",
+      "signatory_designation": "Director"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "work_location",
+        "placeholder": "[WORK LOCATION CITY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 62,
+    "scenario_id": "hospitality_offer_goa",
+    "scenario_summary": "Goa beach resort offers a front-office manager role ahead of the tourist season.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Kapoor Services LLP",
+      "employee_name": "Kiran Sheikh",
+      "designation": "Front Office Manager",
+      "annual_ctc": 515500,
+      "joining_date": "2026-07-09",
+      "probation_months": 3,
+      "work_location": "Mumbai",
+      "signatory_name": "Omkar Jadhav"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 63,
+    "scenario_id": "restructuring_termination_mumbai",
+    "scenario_summary": "Mumbai media house terminates a marketing executive after a divisional shutdown, offering pay in lieu of notice.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Surve Solutions Private Limited",
+      "employee_name": "Manisha Menon",
+      "designation": "Marketing Executive",
+      "termination_reason": "redundancy arising from organisational restructuring",
+      "notice_disposition": "the notice period will be served until the last working day",
+      "signatory_name": "Ananya Chavan",
+      "signatory_designation": "Head - Human Resources",
+      "employee_id": "GXWRH2995U"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 64,
+    "scenario_id": "probation_nonconfirmation_pune",
+    "scenario_summary": "Pune logistics firm declines to confirm an operations trainee whose probation performance fell short of targets.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "D'Souza Marketing",
+      "employee_name": "Mary Mane",
+      "designation": "Operations Trainee",
+      "termination_reason": "non-confirmation of services during the probation period",
+      "notice_disposition": "the notice period will be served until the last working day",
+      "signatory_name": "Madhuri Gill",
+      "signatory_designation": "General Manager - HR"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 65,
+    "scenario_id": "misconduct_termination_thane",
+    "scenario_summary": "Thane engineering unit dismisses a storekeeper for stock pilferage established in a domestic inquiry.",
+    "register": "detailed",
+    "given_facts": {
+      "company_name": "Kale Enterprises",
+      "employee_name": "Savita Kaur",
+      "designation": "Storekeeper",
+      "employee_address": "Flat No. 21, Green Valley Society, Gandhi Chowk Road, Andheri West, Kolkata 70043",
+      "termination_reason": "misconduct established in a domestic inquiry",
+      "notice_disposition": "the notice period will be served until the last working day",
+      "signatory_name": "Suresh Lokhande",
+      "employee_id": "CXOPK0756G"
+    },
+    "withheld_fields": [
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 66,
+    "scenario_id": "absence_termination_nashik",
+    "scenario_summary": "Nashik FMCG distributor terminates a sales representative for continued unauthorised absence despite written warnings.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Das Distributors",
+      "employee_name": "Arjun Reddy",
+      "designation": "Sales Representative",
+      "termination_reason": "continued unauthorised absence from duty",
+      "last_working_day": "2026-08-10",
+      "signatory_name": "Tejal Mukherjee"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 67,
+    "scenario_id": "saas_layoff_gurugram",
+    "scenario_summary": "Gurugram SaaS company retrenches a backend engineer amid funding-driven restructuring, with pay in lieu of notice.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Shinde Services LLP",
+      "employee_name": "Gurpreet Ghadge",
+      "designation": "Backend Engineer",
+      "termination_reason": "redundancy arising from organisational restructuring",
+      "notice_disposition": "the notice period will be served until the last working day",
+      "signatory_designation": "General Manager - HR"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 68,
+    "scenario_id": "probation_termination_chennai",
+    "scenario_summary": "Chennai IT services firm ends a junior developer's service during probation for non-confirmation.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Raut Solutions Private Limited",
+      "employee_name": "Pallavi Jain",
+      "designation": "Junior Developer",
+      "employee_address": "Flat No. 24, Shanti Niketan, S.V. Road, New Friends Colony, Mumbai 40028",
+      "termination_reason": "non-confirmation of services during the probation period",
+      "notice_disposition": "the notice period will be served until the last working day"
+    },
+    "withheld_fields": [
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 69,
+    "scenario_id": "misconduct_termination_kolkata",
+    "scenario_summary": "Kolkata trading company terminates an accounts assistant for misconduct established in an internal inquiry.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Patil Industries",
+      "employee_name": "Tejal Mehta",
+      "designation": "Accounts Assistant",
+      "employee_address": "Flat No. 23, Prestige Court, Karve Road, Shivaji Nagar, Pune 41175",
+      "termination_reason": "misconduct established in a domestic inquiry",
+      "signatory_name": "Rutuja Trivedi",
+      "employee_id": "ECDRS0554B"
+    },
+    "withheld_fields": [
+      {
+        "name": "last_working_day",
+        "placeholder": "[LAST WORKING DAY]"
+      },
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 70,
+    "scenario_id": "it_services_offer_pune",
+    "scenario_summary": "Pune IT services company offers a software engineer role on six-month probation with a sixty-day notice period.",
+    "register": "detailed",
+    "given_facts": {
+      "company_name": "Fernandes Agencies",
+      "employee_name": "Omkar Thorat",
+      "designation": "Software Engineer",
+      "employee_address": "Flat No. 11, Shree Ganesh Apartments, S.V. Road, Shivaji Nagar, Nashik 42237",
+      "annual_ctc": 1566000,
+      "work_location": "Indore",
+      "signatory_designation": "HR Manager"
+    },
+    "withheld_fields": [
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 71,
+    "scenario_id": "auto_components_offer_aurangabad",
+    "scenario_summary": "Auto-components manufacturer at Chhatrapati Sambhajinagar (Aurangabad) appoints a production supervisor at its MIDC Waluj plant.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Shah Constructions",
+      "employee_name": "Shrikant Sawant",
+      "designation": "Production Supervisor",
+      "employee_address": "Flat No. 6, Gokul Residency, Fergusson College Road, Andheri West, Mumbai 40045",
+      "annual_ctc": 843500,
+      "work_location": "Vasai-Virar",
+      "signatory_designation": "Chief People Officer"
+    },
+    "withheld_fields": [
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 72,
+    "scenario_id": "fintech_offer_bengaluru",
+    "scenario_summary": "Bengaluru fintech startup offers a senior product manager role at a senior CTC band with ninety-day notice.",
+    "register": "detailed",
+    "given_facts": {
+      "company_name": "Jadhav Enterprises",
+      "employee_name": "Shobha Gaikwad",
+      "designation": "Senior Product Manager",
+      "annual_ctc": 4039500,
+      "joining_date": "2026-07-30",
+      "notice_period_days": 30,
+      "signatory_name": "Tejal Naidu",
+      "signatory_designation": "Director"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "work_location",
+        "placeholder": "[WORK LOCATION CITY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 73,
+    "scenario_id": "bpo_offer_mumbai",
+    "scenario_summary": "Mumbai BPO hires a customer support executive for a night-shift voice process at entry-level pay.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Kadam Enterprises",
+      "employee_name": "Deepa Das",
+      "designation": "Customer Support Executive",
+      "annual_ctc": 300000,
+      "joining_date": "2026-07-24",
+      "signatory_name": "Ashwini Pereira"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      },
+      {
+        "name": "work_location",
+        "placeholder": "[WORK LOCATION CITY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 74,
+    "scenario_id": "pharma_offer_hyderabad",
+    "scenario_summary": "Hyderabad pharmaceutical company offers a quality-assurance chemist position at its Genome Valley facility.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Kaur Enterprises",
+      "employee_name": "Tejal Mukherjee",
+      "designation": "Quality Assurance Chemist",
+      "annual_ctc": 423000,
+      "joining_date": "2026-07-22",
+      "work_location": "Delhi",
+      "signatory_name": "Harpreet Sawant",
+      "signatory_designation": "General Manager - HR"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 75,
+    "scenario_id": "retail_offer_nagpur",
+    "scenario_summary": "Nagpur retail chain appoints a store manager for its new Sitabuldi outlet on three-month probation.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Jain Distributors",
+      "employee_name": "Tejal Mane",
+      "designation": "Store Manager",
+      "employee_address": "Flat No. 14, Shanti Niketan, College Road, Civil Lines, Hyderabad 50046",
+      "annual_ctc": 546500,
+      "joining_date": "2026-08-11",
+      "work_location": "Jaipur",
+      "signatory_name": "Niranjan Wagh",
+      "signatory_designation": "Head - Human Resources"
+    },
+    "withheld_fields": [
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 76,
+    "scenario_id": "hospitality_offer_goa",
+    "scenario_summary": "Goa beach resort offers a front-office manager role ahead of the tourist season.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Sharma Foods",
+      "employee_name": "Yogesh D'Souza",
+      "designation": "Front Office Manager",
+      "employee_address": "Flat No. 1, Yashwant Smruti, S.V. Road, Civil Lines, Mumbai 40064",
+      "annual_ctc": 571500,
+      "work_location": "Nashik"
+    },
+    "withheld_fields": [
+      {
+        "name": "joining_date",
+        "placeholder": "[DATE OF JOINING]"
+      },
+      {
+        "name": "probation_months",
+        "placeholder": "[PROBATION PERIOD IN MONTHS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 77,
+    "scenario_id": "restructuring_termination_mumbai",
+    "scenario_summary": "Mumbai media house terminates a marketing executive after a divisional shutdown, offering pay in lieu of notice.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Sawant Textiles",
+      "employee_name": "Sunita Gupta",
+      "designation": "Marketing Executive",
+      "employee_address": "Flat No. 38, Yashwant Smruti, Fergusson College Road, Shivaji Nagar, Lucknow 22614",
+      "termination_reason": "redundancy arising from organisational restructuring",
+      "last_working_day": "2026-07-26",
+      "notice_disposition": "the notice period will be served until the last working day",
+      "signatory_designation": "Head - Human Resources"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 78,
+    "scenario_id": "probation_nonconfirmation_pune",
+    "scenario_summary": "Pune logistics firm declines to confirm an operations trainee whose probation performance fell short of targets.",
+    "register": "casual",
+    "given_facts": {
+      "company_name": "Bhosale Trading Company",
+      "employee_name": "Mrunal Raut",
+      "designation": "Operations Trainee",
+      "termination_reason": "non-confirmation of services during the probation period",
+      "last_working_day": "2026-09-09",
+      "signatory_name": "Aditya Kaur"
+    },
+    "withheld_fields": [
+      {
+        "name": "employee_address",
+        "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+      },
+      {
+        "name": "notice_disposition",
+        "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "employment_offer_termination",
+    "index": 79,
+    "scenario_id": "misconduct_termination_thane",
+    "scenario_summary": "Thane engineering unit dismisses a storekeeper for stock pilferage established in a domestic inquiry.",
+    "register": "semi_formal",
+    "given_facts": {
+      "company_name": "Menon Trading Company",
+      "employee_name": "Sandeep Thorat",
+      "designation": "Storekeeper",
+      "employee_address": "Flat No. 2, Tulsi Vihar, M.G. Road, New Friends Colony, Ahmedabad 38051",
+      "termination_reason": "misconduct established in a domestic inquiry",
+      "last_working_day": "2026-08-24",
+      "notice_disposition": "payment in lieu of the notice period will be made with the full and final settlement",
+      "signatory_name": "Sachin Menon",
+      "signatory_designation": "Head - Human Resources",
+      "employee_id": "YOSKR6610O"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  }
+]

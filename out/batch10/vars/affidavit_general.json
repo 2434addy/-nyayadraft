@@ -1,0 +1,247 @@
+[
+  {
+    "doc_type": "affidavit_general",
+    "given_facts": {
+      "city": "Nashik",
+      "deponent_address": "Flat No. 24, Silver Oak Towers, Gandhi Chowk Road, Kothrud, Thane 40084",
+      "deponent_age": 69,
+      "deponent_name": "Nikita Reddy",
+      "deponent_occupation": "pharmacist",
+      "deponent_parent_name": "Omkar Reddy",
+      "name_variant_a": "Nikita Reddy",
+      "name_variant_b": "Nikita Sharma"
+    },
+    "index": 0,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "passport_aadhaar_name_mismatch",
+    "scenario_summary": "Pune software engineer's name is spelt differently in passport and Aadhaar; affidavit affirms both names denote one and the same person for passport reissue.",
+    "withheld_fields": []
+  },
+  {
+    "doc_type": "affidavit_general",
+    "given_facts": {
+      "city": "Pune",
+      "deponent_address": "Flat No. 10, Om Sai Plaza, Station Road, Kothrud, Jaipur 30211",
+      "deponent_age": 32,
+      "deponent_name": "Tushar Singh",
+      "deponent_occupation": "shop owner",
+      "name_variant_a": "Tushar Singh",
+      "name_variant_b": "Tushar Gokhale"
+    },
+    "index": 1,
+    "nearest_supported": null,
+    "register": "casual",
+    "scenario_id": "bank_kyc_initials_expansion",
+    "scenario_summary": "Nagpur account holder's PAN carries initials while bank records show the expanded name; bank seeks a one-and-the-same-person affidavit for KYC updation.",
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      }
+    ]
+  },
+  {
+    "doc_type": "affidavit_general",
+    "given_facts": {
+      "deponent_age": 69,
+      "deponent_name": "Nitin Bhatt",
+      "name_variant_a": "Nitin Bhatt",
+      "name_variant_b": "Nitin Kapoor"
+    },
+    "index": 2,
+    "nearest_supported": null,
+    "register": "casual",
+    "scenario_id": "married_name_property_records",
+    "scenario_summary": "Chennai homemaker appears under maiden and married names across property papers; affidavit confirms one and the same person for mutation entry.",
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ]
+  },
+  {
+    "doc_type": "affidavit_general",
+    "given_facts": {
+      "city": "Nashik",
+      "deponent_address": "Flat No. 31, Om Sai Plaza, Station Road, Aundh, Mumbai 40001",
+      "deponent_age": 59,
+      "deponent_id_number": "IJLUC5383C",
+      "deponent_name": "Rekha Agarwal",
+      "deponent_parent_name": "Imran Agarwal"
+    },
+    "index": 3,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "lpg_connection_address_proof",
+    "scenario_summary": "Mumbai tenant lacks a utility bill in his own name; affidavit of current residence required for a new LPG gas connection.",
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "residing_since_year",
+        "placeholder": "[YEAR FROM WHICH DEPONENT RESIDES AT THE ADDRESS]"
+      }
+    ]
+  },
+  {
+    "doc_type": "affidavit_general",
+    "given_facts": {
+      "city": "Mumbai",
+      "deponent_age": 46,
+      "deponent_name": "Rajesh D'Souza"
+    },
+    "index": 4,
+    "nearest_supported": null,
+    "register": "semi_formal",
+    "scenario_id": "voter_enrolment_address_proof",
+    "scenario_summary": "Family recently shifted to Thane; deponent swears an address affidavit to support voter ID enrolment at the new residence.",
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      },
+      {
+        "name": "residing_since_year",
+        "placeholder": "[YEAR FROM WHICH DEPONENT RESIDES AT THE ADDRESS]"
+      }
+    ]
+  },
+  {
+    "doc_type": "affidavit_general",
+    "given_facts": {
+      "city": "Navi Mumbai",
+      "deponent_address": "Flat No. 9, Shree Ganesh Apartments, Link Road, Civil Lines, Thane 40011",
+      "deponent_age": 43,
+      "deponent_name": "Prashant Menon",
+      "deponent_parent_name": "Niranjan Menon",
+      "gap_start_year": 2022
+    },
+    "index": 5,
+    "nearest_supported": null,
+    "register": "semi_formal",
+    "scenario_id": "jee_gap_year_admission",
+    "scenario_summary": "Nashik student took a year after HSC to prepare for engineering entrance examinations; college demands a gap-year affidavit at admission.",
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "gap_reason",
+        "placeholder": "[REASON FOR THE GAP IN STUDIES]"
+      }
+    ]
+  },
+  {
+    "doc_type": "affidavit_general",
+    "given_facts": {
+      "city": "Pune",
+      "deponent_address": "Flat No. 4, Om Sai Plaza, Karve Road, Camp Area, Bengaluru 56048",
+      "deponent_age": 21,
+      "deponent_id_number": "MADHH8258J",
+      "deponent_name": "Swati Mehta",
+      "deponent_occupation": "real estate agent",
+      "deponent_parent_name": "Nitin Mehta",
+      "gap_start_year": 2024
+    },
+    "index": 6,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "pg_admission_family_illness_gap",
+    "scenario_summary": "Delhi graduate explains a two-year break before post-graduation caused by a parent's prolonged illness; university requires a sworn explanation.",
+    "withheld_fields": [
+      {
+        "name": "gap_reason",
+        "placeholder": "[REASON FOR THE GAP IN STUDIES]"
+      }
+    ]
+  },
+  {
+    "doc_type": "affidavit_general",
+    "given_facts": {
+      "city": "Kolkata",
+      "deponent_address": "Flat No. 9, Matoshree Heights, Gandhi Chowk Road, Kothrud, Patna 80045",
+      "deponent_age": 58,
+      "deponent_name": "Tejal Apte",
+      "deponent_occupation": "marketing manager",
+      "lost_document_type": "original share certificate"
+    },
+    "index": 7,
+    "nearest_supported": null,
+    "register": "semi_formal",
+    "scenario_id": "duplicate_share_certificate",
+    "scenario_summary": "Mumbai investor misplaced original share certificates during house shifting; the company's registrar requires an affidavit before issuing duplicates.",
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      }
+    ]
+  },
+  {
+    "doc_type": "affidavit_general",
+    "given_facts": {
+      "city": "Mumbai",
+      "deponent_address": "Flat No. 23, Gokul Residency, Karve Road, New Friends Colony, Mumbai 40043",
+      "deponent_age": 26,
+      "deponent_id_number": "ELAKR0869Q",
+      "deponent_name": "Aishwarya Agarwal",
+      "deponent_parent_name": "Arjun Agarwal",
+      "lost_document_type": "SSC marksheet"
+    },
+    "index": 8,
+    "nearest_supported": null,
+    "register": "casual",
+    "scenario_id": "lost_ssc_marksheet",
+    "scenario_summary": "Chhatrapati Sambhajinagar candidate lost his SSC marksheet in transit; the divisional board requires an affidavit before issuing a duplicate.",
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ]
+  },
+  {
+    "doc_type": "affidavit_general",
+    "given_facts": {
+      "city": "Kolkata",
+      "deponent_address": "Flat No. 31, Prestige Court, Link Road, Dadar, Mumbai 40047",
+      "deponent_age": 48,
+      "deponent_id_number": "LYGNJ3724O",
+      "deponent_name": "Fatima Reddy",
+      "deponent_occupation": "marketing manager",
+      "deponent_parent_name": "Farhan Reddy",
+      "lost_document_type": "original registered sale deed"
+    },
+    "index": 9,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "lost_sale_deed_refinance",
+    "scenario_summary": "Bengaluru flat owner cannot trace the original sale deed; affidavit needed to obtain a certified copy and complete bank loan refinance.",
+    "withheld_fields": []
+  }
+]

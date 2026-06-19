@@ -1,0 +1,66 @@
+[[[INSTRUCTION]]]
+Draft a legal notice from a landlord to a tenant demanding arrears and vacant possession. The landlord is Anil Das and the tenant is Karthik Kapoor. The premises is Flat No. 35, Yashwant Smruti, Fergusson College Road, Model Colony, Kolhapur 41610. The monthly rent is ₹33,500. Security deposit is ₹58,000. The tenancy commencement date is [DATE OF COMMENCEMENT OF TENANCY]. Rent arrears: [NUMBER OF MONTHS OF RENT IN ARREARS] months. Compliance window is 15 days. Dispatch mode: Courier. City: Ahmedabad.
+[[[DOCUMENT]]]
+LEGAL NOTICE
+
+To,
+Karthik Kapoor,
+Flat No. 35, Yashwant Smruti, Fergusson College Road, Model Colony, Kolhapur 41610.
+
+Date: 12 June 2026
+
+SUBJECT: LEGAL NOTICE TO TENANT FOR RECOVERY OF RENT ARREARS AND DEMAND FOR VACANT POSSESSION OF PREMISES
+
+Sir/Madam,
+
+Under instructions from and on behalf of my client, Anil Das (hereinafter referred to as "Landlord"), I issue this Legal Notice upon you, Karthik Kapoor, the tenant/licensee and occupant of the premises described below, as under:
+
+1. RELATIONSHIP OF LANDLORD AND TENANT
+
+1.1 My client, Anil Das, is the lawful owner and landlord of the residential premises described as Flat No. 35, Yashwant Smruti, Fergusson College Road, Model Colony, Kolhapur 41610 (hereinafter referred to as the "Premises"). You, Karthik Kapoor, are the tenant/licensee in occupation of the said Premises under a leave and licence arrangement with my client, which arrangement has since expired.
+
+1.2 The tenancy/licence of the Premises commenced on [DATE OF COMMENCEMENT OF TENANCY] at a monthly rent of ₹33,500 (Rupees Thirty-Three Thousand Five Hundred only) per month. A security deposit of ₹58,000 (Rupees Fifty-Eight Thousand only) was paid by you to my client at the time of commencement of occupation.
+
+2. EXPIRY OF LICENCE AND HOLDOVER
+
+2.1 The leave and licence agreement for the Premises has expired. Despite the expiry of the licence period, you continue to remain in unauthorised occupation of the Premises without any valid agreement or authority.
+
+3. RENT IN ARREARS
+
+3.1 That you, the Tenant, have failed and neglected to pay the monthly rent of ₹33,500 per month for a period of [NUMBER OF MONTHS OF RENT IN ARREARS] months. The total rent arrears outstanding and payable by you to my client amount to the sum computed at [NUMBER OF MONTHS OF RENT IN ARREARS] × ₹33,500 per month.
+
+3.2 Despite repeated reminders and requests by my client to you to clear the said outstanding dues, you have persistently failed to pay the same.
+
+4. DEMAND FOR PAYMENT OF ARREARS
+
+4.1 You are hereby called upon and demand is hereby made upon you to pay to my client all outstanding rent arrears computed at [NUMBER OF MONTHS OF RENT IN ARREARS] × ₹33,500 per month, together with interest and costs, within 15 (fifteen) days from the date of receipt of this notice.
+
+5. DEMAND FOR VACANT POSSESSION
+
+5.1 In view of the expiry of the licence agreement and your continued unauthorised holdover occupation, you are hereby called upon to forthwith vacate and hand over vacant and peaceful possession of the Premises — Flat No. 35, Yashwant Smruti, Fergusson College Road, Model Colony, Kolhapur 41610 — to my client within 15 (fifteen) days from the date of receipt of this notice.
+
+5.2 You are required to vacate the Premises along with all your belongings and hand over all keys and access cards to my client within the said period. Please note that upon your vacating and handing over possession, my client shall account for the security deposit of ₹58,000, adjusting the same against outstanding dues and returning the balance, if any, to you.
+
+6. CONSEQUENCES OF NON-COMPLIANCE
+
+6.1 Please take notice that if you fail to comply with the demands of this notice within 15 (fifteen) days from the date of receipt, my client shall be constrained to initiate appropriate legal proceedings against you before the court of competent jurisdiction, including an eviction suit for possession and a suit for recovery of arrears, damages, and mesne profits. All costs, charges, and consequences of such proceedings shall be entirely at your risk and account.
+
+7. RESERVATION OF RIGHTS
+
+7.1 This notice is issued without prejudice to all other rights and remedies available to my client, all of which are expressly reserved.
+
+Please govern yourself accordingly.
+
+Mode of dispatch: Courier
+
+Yours faithfully,
+
+_____________________________
+Advocate for Anil Das
+Address: [VERIFY: Advocate's enrolled address to be inserted]
+Enrolment No.: [VERIFY: Advocate's bar council enrolment number]
+Date: 12 June 2026
+Place: Ahmedabad
+
+This is an AI-generated draft for review by the parties and is not legal advice.
+[[[END]]]

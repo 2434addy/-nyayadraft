@@ -1,0 +1,46 @@
+[[[INSTRUCTION]]]
+Draft a legal notice for recovery of money. The claimant is Anil Das, whose address is [FULL ADDRESS OF CLAIMANT], from [CITY]. The debtor is Karthik Kapoor, whose address is [FULL ADDRESS OF DEBTOR]. The amount due is ₹1,05,000. The date the debt arose is [DATE THE DEBT AROSE]. The payment due date is 4 December 2026. The compliance window is 30 days. Interest is claimed at 13% per annum.
+[[[DOCUMENT]]]
+LEGAL NOTICE
+
+To,
+Karthik Kapoor,
+[FULL ADDRESS OF DEBTOR].
+
+Date: 12 June 2026
+
+SUBJECT: LEGAL NOTICE FOR RECOVERY OF OUTSTANDING DUES AMOUNTING TO ₹1,05,000 (RUPEES ONE LAKH FIVE THOUSAND ONLY) WITH INTEREST AT 13% PER ANNUM
+
+Sir/Madam,
+
+Under instructions from and on behalf of my client, Anil Das, residing at [FULL ADDRESS OF CLAIMANT], [CITY], I issue this Legal Notice to you as under:
+
+1. That my client was employed with your organisation/firm in a managerial capacity and rendered his services faithfully and diligently during the tenure of his employment. My client duly resigned from his position and upon resignation, certain dues comprising unpaid salary and expense reimbursements became due and payable by you to my client.
+
+2. That as on the date of this notice, a total amount of ₹1,05,000 (Rupees One Lakh Five Thousand only) is due and payable by you to my client on account of unpaid salary dues and reimbursements, which liability arose on [DATE THE DEBT AROSE].
+
+3. That the said outstanding amount of ₹1,05,000 is due and payable by you to my client by 4 December 2026 at the latest. Despite the said liability being undeniably due, you have failed to make any payment whatsoever and have stopped responding to communications from my client.
+
+4. That my client has made several attempts to resolve this matter amicably, including telephonic conversations and written communications directed to your human resources department, all of which have been ignored by you.
+
+5. That my client is entitled to recover the aforesaid principal amount of ₹1,05,000 (Rupees One Lakh Five Thousand only) together with interest at the rate of 13% (thirteen per cent) per annum from [DATE THE DEBT AROSE] until actual realisation, as compensation for the wrongful withholding of the said amount.
+
+6. That you are hereby CALLED UPON and DEMAND IS MADE upon you to pay to my client the said outstanding amount of ₹1,05,000 together with interest at the rate of 13% per annum and costs, within 30 (thirty) days from the date of receipt of this notice, failing which my client shall, without any further notice or intimation, be constrained to initiate civil suit proceedings against you before the court of competent jurisdiction for recovery of the said dues together with interest, damages, and all costs of proceedings.
+
+7. That all the costs, charges, expenses, and consequences of such civil suit or any other legal proceedings shall be entirely at your risk and for your account.
+
+8. That my client expressly reserves all rights and remedies available in law, and this notice is issued without prejudice thereto.
+
+Please treat this as a final and strict notice and respond accordingly within the prescribed period of thirty days.
+
+Yours faithfully,
+
+_____________________________
+Advocate for Anil Das
+Address: [VERIFY: Advocate's enrolled address to be inserted]
+Enrolment No.: [VERIFY: Advocate's bar council enrolment number]
+Date: 12 June 2026
+Place: [CITY]
+
+This is an AI-generated draft for review by the parties and is not legal advice.
+[[[END]]]

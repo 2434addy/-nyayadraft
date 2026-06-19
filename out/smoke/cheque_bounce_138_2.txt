@@ -1,0 +1,42 @@
+[[[INSTRUCTION]]]
+Draft a statutory demand notice under Section 138 of the Negotiable Instruments Act 1881. The payee/sender is Amol Agarwal, whose address is [FULL ADDRESS OF SENDER], through his advocate Niranjan Fernandes. The drawer is Gurpreet Mehta, whose address is [FULL ADDRESS OF DRAWER]. City: [CITY]. Cheque No. [CHEQUE NUMBER] drawn on ICICI Bank, Amravati Branch, for ₹2,07,000. The cheque date is [DATE OF CHEQUE]. The cheque was presented on 29 July 2026 and the cheque return memo is dated 29 July 2026. The reason for dishonour is [REASON FOR DISHONOUR AS PER RETURN MEMO].
+[[[DOCUMENT]]]
+NOTICE UNDER SECTION 138 OF THE NEGOTIABLE INSTRUMENTS ACT, 1881
+
+To,
+Gurpreet Mehta,
+[FULL ADDRESS OF DRAWER].
+
+Date: 12 June 2026
+
+SUBJECT: STATUTORY DEMAND NOTICE UNDER SECTION 138 OF THE NEGOTIABLE INSTRUMENTS ACT, 1881 — DISHONOUR OF CHEQUE NO. [CHEQUE NUMBER] FOR ₹2,07,000
+
+Sir/Madam,
+
+Under instructions from and on behalf of my client, Amol Agarwal, residing at [FULL ADDRESS OF SENDER], [CITY], I, Niranjan Fernandes, Advocate, issue this statutory demand notice upon you under Section 138 read with Section 142 of the Negotiable Instruments Act, 1881, as under:
+
+1. That my client, Amol Agarwal, is the payee/holder in due course of Cheque No. [CHEQUE NUMBER] drawn on ICICI Bank, Amravati Branch, for a sum of ₹2,07,000 (Rupees Two Lakhs Seven Thousand only), issued by you, Gurpreet Mehta, as drawer and dated [DATE OF CHEQUE], in discharge of a legally enforceable liability and debt owed by you to my client, being accumulated rent arrears.
+
+2. That my client duly presented the aforesaid cheque for encashment/collection on 29 July 2026. The said cheque was returned unpaid and dishonoured by ICICI Bank, Amravati Branch, for the reason stated as [REASON FOR DISHONOUR AS PER RETURN MEMO], as per the cheque return memo dated 29 July 2026 (the dishonour memo). My client received the dishonour memo on or about 29 July 2026.
+
+3. That the dishonour of the said cheque constitutes an offence punishable under Section 138 of the Negotiable Instruments Act, 1881. This notice is being issued to you within 30 (thirty) days of the receipt of the cheque return memo and the dishonour intimation, in compliance with the statutory requirement under the proviso to Section 138 of the Negotiable Instruments Act, 1881.
+
+4. That you are hereby called upon and demanded to pay to my client the said amount of ₹2,07,000 (Rupees Two Lakhs Seven Thousand only) together with interest and costs, within 15 (fifteen) days from the date of receipt of this notice, failing which you shall render yourself liable to prosecution.
+
+5. TAKE NOTICE that in the event you fail to pay the aforesaid sum of ₹2,07,000 within 15 (fifteen) days from the date of receipt of this notice, my client shall be constrained to file a criminal complaint against you under Section 138 read with Section 142 of the Negotiable Instruments Act, 1881 before the court of competent jurisdiction, without any further notice or intimation. All costs, charges, and consequences of such prosecution and proceedings shall be entirely at your risk and account.
+
+6. My client reserves all rights including the right to pursue civil proceedings for recovery and any other remedies available in law.
+
+Yours faithfully,
+
+_____________________________
+Niranjan Fernandes, Advocate
+Address: [VERIFY: Advocate's enrolled address to be inserted]
+Enrolment No.: [VERIFY: Advocate's bar council enrolment number]
+Date: 12 June 2026
+Place: [CITY]
+
+Mode of dispatch: Registered Post A.D.
+
+This is an AI-generated draft for review by the parties and is not legal advice.
+[[[END]]]

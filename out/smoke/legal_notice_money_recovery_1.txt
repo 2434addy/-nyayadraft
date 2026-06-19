@@ -1,0 +1,46 @@
+[[[INSTRUCTION]]]
+Draft a legal notice for recovery of money. The claimant is Swapnil Banerjee, residing at Flat No. 31, Matoshree Heights, M.G. Road, Borivali East, Kochi 68239. The debtor is Devendra Bhosale, whose address is [FULL ADDRESS OF DEBTOR]. The amount due is ₹7,37,000. The debt arose on 26 April 2024 and is due for payment by 18 August 2026. The compliance window is 30 days. Interest is claimed at 16% per annum. No specific dispatch mode is stated in the given facts.
+[[[DOCUMENT]]]
+LEGAL NOTICE
+
+To,
+Devendra Bhosale,
+[FULL ADDRESS OF DEBTOR].
+
+Date: 12 June 2026
+
+SUBJECT: LEGAL NOTICE FOR RECOVERY OF OUTSTANDING DUES AMOUNTING TO ₹7,37,000 (RUPEES SEVEN LAKHS THIRTY-SEVEN THOUSAND ONLY) WITH INTEREST
+
+Sir/Madam,
+
+Under instructions from and on behalf of my client, Swapnil Banerjee, residing at Flat No. 31, Matoshree Heights, M.G. Road, Borivali East, Kochi 68239, I issue this Legal Notice to you as under:
+
+1. That on or about 26 April 2024, my client, out of goodwill and in good faith, advanced a friendly hand loan of ₹7,37,000 (Rupees Seven Lakhs Thirty-Seven Thousand only) to you, the Addressee, for a medical emergency. The said amount was advanced with the clear understanding and your express agreement that the same would be repaid by you to my client within a reasonable period.
+
+2. That the said amount of ₹7,37,000 advanced by my client to you on 26 April 2024 remains entirely unpaid. Despite the passage of considerable time and repeated oral and written requests and reminders by my client, you have wilfully failed, neglected, and refused to repay the said amount.
+
+3. That the said outstanding amount of ₹7,37,000 is due and payable by you to my client by 18 August 2026 at the latest. Despite the impending due date, you have failed to make any payment or give any commitment towards repayment.
+
+4. That my client is entitled to recover the principal amount of ₹7,37,000 (Rupees Seven Lakhs Thirty-Seven Thousand only) together with interest at the rate of 16% (sixteen per cent) per annum from 26 April 2024 until actual realisation, as compensation for the wrongful withholding of the said amount.
+
+5. That you are hereby CALLED UPON and DEMANDED to pay to my client the said outstanding principal amount of ₹7,37,000 together with interest at 16% per annum from 26 April 2024 and all costs including the cost of this legal notice, within 30 (thirty) days from the date of receipt of this notice.
+
+6. That in the event you fail to make the payment demanded within the aforesaid period of thirty days, my client shall, without any further notice or intimation, be constrained and forced to initiate civil suit proceedings against you before the court of competent jurisdiction for recovery of the said dues together with interest, costs, and all incidental charges, entirely at your risk, cost, and consequences.
+
+7. That all the costs, charges, and expenses of such civil suit, including legal fees, court fees, and any damages, shall be entirely at your risk and for your account.
+
+8. That my client reserves all rights including the right to file a civil suit and to take all such legal steps as may be necessary to recover the outstanding dues, and this notice is issued without prejudice to all other rights and remedies available to my client.
+
+Please govern yourself accordingly and treat this as a strict and final notice.
+
+Yours faithfully,
+
+_____________________________
+Advocate for Swapnil Banerjee
+Address: [VERIFY: Advocate's enrolled address to be inserted]
+Enrolment No.: [VERIFY: Advocate's bar council enrolment number]
+Date: 12 June 2026
+Place: Mumbai
+
+This is an AI-generated draft for review by the parties and is not legal advice.
+[[[END]]]

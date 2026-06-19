@@ -1,0 +1,123 @@
+[[[INSTRUCTION]]]
+Draft a Leave and Licence Agreement for a residential flat in Delhi. The Licensor is Sachin Kadam, residing at Flat No. 19, Tulsi Vihar, Ring Road, Camp Area, Vasai-Virar 40167. The Licensee is Pallavi Naik, residing at Flat No. 15, Vrindavan Complex, Fergusson College Road, Model Colony, Hyderabad 50090. The licensed premises is Flat No. 3, Sai Krupa CHS, M.G. Road, Civil Lines, Delhi 11092. The monthly licence fee is ₹71,500 and the refundable security deposit is ₹32,500. The term of the licence is 24 months commencing on 6 July 2026. Police verification is to be arranged by the Licensor. The notice period for termination is [NOTICE PERIOD IN MONTHS] months. The document should be governed by the Maharashtra Rent Control Act 1999 and should include all standard clauses, including that this licence does not create any tenancy rights, and that the security deposit is interest-free and refundable.
+[[[DOCUMENT]]]
+LEAVE AND LICENCE AGREEMENT
+
+THIS LEAVE AND LICENCE AGREEMENT is entered into at Vadodara on this 6th day of July 2026.
+
+BETWEEN
+
+Sachin Kadam, an adult Indian national, residing at Flat No. 19, Tulsi Vihar, Ring Road, Camp Area, Vasai-Virar 40167 (hereinafter referred to as the "Licensor", which expression shall, unless repugnant to the context or meaning thereof, be deemed to include his/her heirs, legal representatives, successors, executors, administrators and assigns);
+
+AND
+
+Pallavi Naik, an adult Indian national, residing at Flat No. 15, Vrindavan Complex, Fergusson College Road, Model Colony, Hyderabad 50090 (hereinafter referred to as the "Licensee", which expression shall, unless repugnant to the context or meaning thereof, be deemed to include his/her heirs, legal representatives, successors, executors, administrators and assigns).
+
+The Licensor and the Licensee are hereinafter individually referred to as a "Party" and collectively as the "Parties".
+
+RECITALS
+
+A. The Licensor is the owner and is in lawful possession of the residential premises described as Flat No. 3, Sai Krupa CHS, M.G. Road, Civil Lines, Delhi 11092 (hereinafter referred to as the "Licensed Premises").
+
+B. The Licensee has approached the Licensor with a request to be permitted to use and occupy the Licensed Premises for residential purposes on a leave and licence basis, and the Licensor has agreed to grant such permission on the terms and conditions set out herein.
+
+NOW THEREFORE, in consideration of the mutual covenants and undertakings contained herein, and other good and valuable consideration, the Parties agree as follows:
+
+1. GRANT OF LICENCE
+
+1.1 The Licensor hereby grants to the Licensee a bare licence (and not a lease or tenancy) to use, occupy and enjoy the Licensed Premises for the purpose of residential accommodation only, for a period of 24 (twenty-four) months commencing from 6 July 2026 and ending on 5 July 2028 (hereinafter referred to as the "Licence Period"), subject to the terms and conditions set out in this Agreement.
+
+1.2 This Agreement creates only a licence in favour of the Licensee and does not create any tenancy, sub-tenancy, or any other interest or right in the Licensed Premises in favour of the Licensee. The Licensor retains full ownership, possession, and all proprietary rights in the Licensed Premises at all times.
+
+2. LICENCE FEE
+
+2.1 The Licensee shall pay to the Licensor a monthly licence fee of ₹71,500 (Rupees Seventy-One Thousand Five Hundred only) per month, payable in advance on or before the 5th day of each calendar month during the Licence Period.
+
+2.2 The licence fee shall be paid by electronic transfer, cheque, or demand draft to the bank account designated by the Licensor from time to time. The use of the term "licence fee" throughout this Agreement is deliberate; this Agreement does not create any tenancy and the consideration paid hereunder is not "monthly rent" within the meaning of any rent control legislation.
+
+3. SECURITY DEPOSIT
+
+3.1 The Licensee has paid to the Licensor, prior to or simultaneously with the execution of this Agreement, a sum of ₹32,500 (Rupees Thirty-Two Thousand Five Hundred only) as a refundable security deposit (hereinafter referred to as the "Security Deposit"), the receipt of which is hereby acknowledged by the Licensor.
+
+3.2 The Security Deposit shall be held by the Licensor as security for due performance by the Licensee of all obligations under this Agreement. The Security Deposit shall carry no interest whatsoever and shall not be utilised by the Licensor for any purpose other than adjustment against unpaid dues of the Licensee upon vacation of the Licensed Premises.
+
+3.3 Subject to any deductions for outstanding dues, damages or unpaid charges, the Licensor shall refund the Security Deposit to the Licensee within 30 (thirty) days of the Licensee handing over vacant possession of the Licensed Premises.
+
+4. TERM AND RENEWAL
+
+4.1 This licence is granted for a fixed term of 24 months from 6 July 2026. The Licence Period may be renewed by mutual written agreement of the Parties prior to its expiry.
+
+4.2 Either Party may terminate this Agreement before the expiry of the Licence Period by giving the other Party prior written notice of [NOTICE PERIOD IN MONTHS] months. In the event of such early termination, the Licensor shall refund the proportionate Security Deposit after adjusting outstanding dues.
+
+5. USE OF LICENSED PREMISES
+
+5.1 The Licensed Premises shall be used by the Licensee solely for bona fide residential purposes. The Licensee shall not use or permit the use of the Licensed Premises for any commercial, industrial, or unlawful purpose.
+
+5.2 The Licensee shall not sublet, sub-licence, assign, or part with possession of the Licensed Premises or any part thereof to any third party without the prior written consent of the Licensor.
+
+5.3 The Licensee shall not carry out any structural alterations, additions, or modifications to the Licensed Premises without the prior written consent of the Licensor.
+
+6. MAINTENANCE AND REPAIR
+
+6.1 The Licensee shall maintain the Licensed Premises in good and tenantable condition and shall not cause any wilful damage or waste to the Licensed Premises, fixtures, or fittings.
+
+6.2 The Licensee shall be responsible for minor day-to-day repairs and maintenance. Any structural repairs or major repairs shall be the responsibility of the Licensor.
+
+6.3 The Licensee shall promptly pay all utility charges including electricity, water, gas, and society maintenance charges applicable to the Licensed Premises during the Licence Period.
+
+7. POLICE VERIFICATION
+
+7.1 The Licensor shall be responsible for completing the police verification formalities as required under applicable rules and regulations in relation to the Licensee's occupation of the Licensed Premises.
+
+8. NO TENANCY RIGHTS
+
+8.1 It is expressly agreed and declared by the Parties that this Agreement creates only a bare licence in favour of the Licensee and does not and shall not be construed to create any tenancy or sub-tenancy in favour of the Licensee under the Maharashtra Rent Control Act 1999 or under any other applicable law. The Licensee acknowledges that he/she has no right, title, or interest of any nature whatsoever in the Licensed Premises except the bare licence granted herein.
+
+8.2 The Licensee expressly acknowledges that the Licensor retains the right to revoke this licence subject to the notice requirements set out in Clause 4.2 above.
+
+9. REGISTRATION
+
+9.1 The Parties agree that this Agreement shall be duly registered with the Sub-Registrar of Assurances having jurisdiction, as required under the provisions of the Maharashtra Rent Control Act 1999 and the Registration Act 1908. The stamp duty and registration charges shall be borne by the Licensee unless otherwise mutually agreed.
+
+10. GOVERNING LAW AND DISPUTE RESOLUTION
+
+10.1 This Agreement shall be governed by and construed in accordance with the laws of India, including the Maharashtra Rent Control Act 1999 and the Registration Act 1908.
+
+10.2 Any dispute arising out of or in connection with this Agreement shall be referred to arbitration in accordance with the Arbitration and Conciliation Act 1996, with a sole arbitrator appointed by mutual agreement. The seat of arbitration shall be Vadodara.
+
+11. GENERAL PROVISIONS
+
+11.1 This Agreement constitutes the entire agreement between the Parties with respect to the subject matter hereof and supersedes all prior agreements, understandings, negotiations, and representations.
+
+11.2 Any amendment to this Agreement shall be effective only if made in writing and signed by both Parties.
+
+11.3 If any provision of this Agreement is found to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect.
+
+IN WITNESS WHEREOF, the Parties have signed this Leave and Licence Agreement on the day and year first above written.
+
+LICENSOR:
+
+Signature: ____________________________
+Name: Sachin Kadam
+Address: Flat No. 19, Tulsi Vihar, Ring Road, Camp Area, Vasai-Virar 40167
+Date: ________________________________
+
+LICENSEE:
+
+Signature: ____________________________
+Name: Pallavi Naik
+Address: Flat No. 15, Vrindavan Complex, Fergusson College Road, Model Colony, Hyderabad 50090
+Date: ________________________________
+
+WITNESSES:
+
+1. Signature: ____________________________
+   Name: ________________________________
+   Address: ______________________________
+
+2. Signature: ____________________________
+   Name: ________________________________
+   Address: ______________________________
+
+This is an AI-generated draft for review by the parties and is not legal advice.
+[[[END]]]

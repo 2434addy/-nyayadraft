@@ -1,0 +1,2984 @@
+[
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 0,
+    "scenario_id": "money_demand_already_repaid",
+    "scenario_summary": "Pune businessman replies that the friendly loan demanded was repaid in full by bank transfer months ago; bank statement annexed; demands withdrawal of the notice.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Sachin Kadam",
+      "original_sender_name": "Pallavi Naik",
+      "notice_date": "2026-05-21",
+      "reply_date": "2026-05-28",
+      "city": "Mumbai",
+      "sender_address": "Flat No. 35, Shanti Niketan, Ring Road, New Friends Colony, Thane 40009",
+      "addressee_address": "Flat No. 26, Matoshree Heights, Gandhi Chowk Road, New Friends Colony, Indore 45283",
+      "dispatch_mode": "Registered Post A.D.",
+      "advocate_name": "Sunil Kulkarni",
+      "notice_reference_number": "NWWDO3814C"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 1,
+    "scenario_id": "money_demand_defective_goods",
+    "scenario_summary": "Nashik trader withheld invoice payment because supplied machine components were defective and rejected on inspection; counter-claims testing and storage costs.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Sanjay Rao",
+      "original_sender_name": "Mahesh Pawar",
+      "reply_date": "2026-05-12",
+      "disputed_amount": 1050500,
+      "city": "Pune",
+      "sender_address": "Flat No. 14, Matoshree Heights, Market Yard Road, Borivali East, Pune 41133",
+      "dispatch_mode": "Speed Post",
+      "original_advocate_name": "Sunita Kapoor"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 2,
+    "scenario_id": "money_demand_time_barred",
+    "scenario_summary": "Mumbai resident denies a stale 2019 hand-loan demand as time-barred and never acknowledged; no liability admitted.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Amol Agarwal",
+      "original_sender_name": "Gurpreet Mehta",
+      "city": "Thane",
+      "sender_address": "Flat No. 22, Tulsi Vihar, M.G. Road, Dadar, Amravati 44499",
+      "dispatch_mode": "Email and Registered Post A.D.",
+      "original_advocate_name": "Aishwarya Iyer",
+      "notice_reference_number": "DJQAU9011L"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 3,
+    "scenario_id": "eviction_invalid_notice_period",
+    "scenario_summary": "Thane tenant contests a quit notice that gives less than the notice period stipulated in the registered leave and licence agreement.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Ishita Phadke",
+      "original_sender_name": "Vihaan Deshmukh",
+      "notice_date": "2026-05-16",
+      "disputed_amount": 1018500,
+      "city": "Delhi",
+      "dispatch_mode": "Speed Post",
+      "original_advocate_name": "Aarav Salunkhe"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 4,
+    "scenario_id": "eviction_rent_paid_receipts",
+    "scenario_summary": "Nagpur tenant denies alleged rent default, relying on rent receipts and UPI records; says the notice is a pretext to extract higher rent.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Radhika Raut",
+      "original_sender_name": "Vijay Das",
+      "city": "Kolhapur",
+      "sender_address": "Flat No. 19, Vrindavan Complex, Ring Road, Borivali East, Pune 41111",
+      "advocate_name": "Aishwarya Deshmukh",
+      "notice_reference_number": "MPALO7266W"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 5,
+    "scenario_id": "eviction_bona_fide_need_disputed",
+    "scenario_summary": "Delhi tenant disputes the landlord's claimed bona fide requirement, pointing to two vacant flats the landlord owns in the same building.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Sachin Mane",
+      "original_sender_name": "Nitin Deshmukh",
+      "notice_date": "2026-05-16",
+      "disputed_amount": 1809500,
+      "city": "Navi Mumbai",
+      "sender_address": "Flat No. 26, Shree Ganesh Apartments, Station Road, Camp Area, Mumbai 40068",
+      "original_advocate_name": "Rajesh Shah",
+      "notice_reference_number": "LKPUF4613L"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 6,
+    "scenario_id": "cheque_security_cheque_misused",
+    "scenario_summary": "Aurangabad distributor says a blank security cheque was filled in and presented despite the account being fully settled; denies any legally enforceable debt.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Aarav Naik",
+      "original_sender_name": "Swapnil Chopra",
+      "notice_date": "2026-05-24",
+      "reply_date": "2026-05-27",
+      "city": "Bengaluru",
+      "dispatch_mode": "Courier",
+      "advocate_name": "Meera Naik"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 7,
+    "scenario_id": "cheque_goods_never_delivered",
+    "scenario_summary": "Mumbai buyer stopped payment because the consignment was never delivered; denies liability for the dishonoured cheque and demands withdrawal of the notice.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Sachin Sheikh",
+      "original_sender_name": "Milind Malhotra",
+      "reply_date": "2026-06-13",
+      "disputed_amount": 196000,
+      "city": "Chennai",
+      "sender_address": "Flat No. 20, Om Sai Plaza, College Road, New Friends Colony, Mumbai 40037",
+      "addressee_address": "Flat No. 4, Prestige Court, S.V. Road, Sector 9, Pune 41134",
+      "dispatch_mode": "Speed Post",
+      "original_advocate_name": "Nitin Phadke"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 8,
+    "scenario_id": "cheque_debt_discharged_in_cash",
+    "scenario_summary": "Kolhapur borrower replies that the loan behind the dishonoured cheque was discharged in cash against a signed receipt before presentation.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Kiran Bhagat",
+      "original_sender_name": "Dattatray Wagh",
+      "notice_date": "2026-05-23",
+      "disputed_amount": 182000,
+      "city": "Navi Mumbai",
+      "dispatch_mode": "Courier",
+      "advocate_name": "Deepa Joshi",
+      "original_advocate_name": "Ashwini Kapoor"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 9,
+    "scenario_id": "consumer_service_records_furnished",
+    "scenario_summary": "Pune appliance dealer answers a consumer notice with service-visit records showing two free warranty repairs and an offered replacement the complainant refused.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Arjun Gaikwad",
+      "original_sender_name": "Ashwini Sharma",
+      "notice_date": "2026-06-03",
+      "reply_date": "2026-06-12",
+      "disputed_amount": 62500,
+      "city": "Thane",
+      "addressee_address": "Flat No. 24, Gokul Residency, College Road, Dadar, Navi Mumbai 40030",
+      "notice_reference_number": "OXUXT7024N"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 10,
+    "scenario_id": "consumer_damage_not_defect",
+    "scenario_summary": "Bengaluru electronics retailer denies deficiency in service, asserting physical damage from mishandling voided the warranty; technician's inspection report relied upon.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Aarti Gokhale",
+      "original_sender_name": "Ananya Shah",
+      "notice_date": "2026-06-05",
+      "city": "Nashik",
+      "sender_address": "Flat No. 10, Matoshree Heights, S.V. Road, Kothrud, Pune 41109",
+      "advocate_name": "Shrikant Shah",
+      "original_advocate_name": "Niranjan Malhotra",
+      "notice_reference_number": "MFSJR7499P"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 11,
+    "scenario_id": "consumer_builder_delay_grace_period",
+    "scenario_summary": "Mumbai developer replies that possession delay flowed from pandemic stop-work orders and falls within the agreement's grace period; denies refund liability.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Mary Deshmukh",
+      "original_sender_name": "Kavita Mehta",
+      "reply_date": "2026-05-13",
+      "disputed_amount": 1256000,
+      "city": "Pune",
+      "sender_address": "Flat No. 29, Sai Krupa CHS, Karve Road, Sadashiv Peth, Navi Mumbai 40095",
+      "notice_reference_number": "BMFAD8426L"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 12,
+    "scenario_id": "employment_fnf_settled",
+    "scenario_summary": "Mumbai IT employer denies an ex-employee's claim for unpaid dues, annexing the signed full-and-final settlement and bank payment proof.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Vikram Joshi",
+      "original_sender_name": "Omkar Kadam",
+      "city": "Bhopal",
+      "sender_address": "Flat No. 36, Vrindavan Complex, M.G. Road, Dadar, Mumbai 40006",
+      "dispatch_mode": "Email and Registered Post A.D.",
+      "advocate_name": "Ajay More"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 13,
+    "scenario_id": "employment_notice_pay_adjustment",
+    "scenario_summary": "Pune manufacturer replies that the resigning engineer left without serving notice; dues stand lawfully adjusted against notice-pay recovery under the appointment letter.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Yogesh Gupta",
+      "original_sender_name": "Vijay Ranade",
+      "reply_date": "2026-06-06",
+      "city": "Thane",
+      "sender_address": "Flat No. 1, Shree Ganesh Apartments, Karve Road, Kothrud, Surat 39505",
+      "addressee_address": "Flat No. 38, Yashwant Smruti, Market Yard Road, Model Colony, Pune 41175",
+      "advocate_name": "Mary Naidu",
+      "original_advocate_name": "Pallavi Rao"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 14,
+    "scenario_id": "money_demand_already_repaid",
+    "scenario_summary": "Pune businessman replies that the friendly loan demanded was repaid in full by bank transfer months ago; bank statement annexed; demands withdrawal of the notice.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Farhan Shah",
+      "original_sender_name": "Kavita Deshmukh",
+      "notice_date": "2026-05-05",
+      "reply_date": "2026-05-10",
+      "disputed_amount": 965000,
+      "city": "Mumbai",
+      "advocate_name": "Arjun Gill"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 15,
+    "scenario_id": "money_demand_defective_goods",
+    "scenario_summary": "Nashik trader withheld invoice payment because supplied machine components were defective and rejected on inspection; counter-claims testing and storage costs.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Mahesh Das",
+      "original_sender_name": "Mahesh Menon",
+      "reply_date": "2026-05-07",
+      "city": "Thane",
+      "sender_address": "Flat No. 6, Sai Krupa CHS, Station Road, Sector 9, Mumbai 40087",
+      "addressee_address": "Flat No. 10, Sai Krupa CHS, Market Yard Road, Civil Lines, Mumbai 40059",
+      "advocate_name": "Abhijit Das",
+      "original_advocate_name": "Smita Ranade"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 16,
+    "scenario_id": "money_demand_time_barred",
+    "scenario_summary": "Mumbai resident denies a stale 2019 hand-loan demand as time-barred and never acknowledged; no liability admitted.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Niranjan Mukherjee",
+      "original_sender_name": "Sameer More",
+      "reply_date": "2026-06-10",
+      "dispatch_mode": "Speed Post",
+      "notice_reference_number": "QRWUA2669Z"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 17,
+    "scenario_id": "eviction_invalid_notice_period",
+    "scenario_summary": "Thane tenant contests a quit notice that gives less than the notice period stipulated in the registered leave and licence agreement.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Tushar Ghadge",
+      "original_sender_name": "Prashant Raut",
+      "disputed_amount": 1602000,
+      "city": "Kolkata",
+      "advocate_name": "Lakshmi Pereira",
+      "original_advocate_name": "Harshad Ahmed"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 18,
+    "scenario_id": "eviction_rent_paid_receipts",
+    "scenario_summary": "Nagpur tenant denies alleged rent default, relying on rent receipts and UPI records; says the notice is a pretext to extract higher rent.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Harpreet Naidu",
+      "original_sender_name": "Ashwini Gupta",
+      "notice_date": "2026-06-02",
+      "city": "Pune",
+      "sender_address": "Flat No. 10, Sai Krupa CHS, M.G. Road, Shivaji Nagar, Mumbai 40016",
+      "notice_reference_number": "WLEZY8863N"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 19,
+    "scenario_id": "eviction_bona_fide_need_disputed",
+    "scenario_summary": "Delhi tenant disputes the landlord's claimed bona fide requirement, pointing to two vacant flats the landlord owns in the same building.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Dattatray Iyer",
+      "original_sender_name": "Manisha Apte",
+      "disputed_amount": 498500,
+      "original_advocate_name": "Farhan Sawant",
+      "notice_reference_number": "BYJET3407K"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 20,
+    "scenario_id": "cheque_security_cheque_misused",
+    "scenario_summary": "Aurangabad distributor says a blank security cheque was filled in and presented despite the account being fully settled; denies any legally enforceable debt.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Gurpreet Patil",
+      "original_sender_name": "Joseph Nair",
+      "notice_date": "2026-05-05",
+      "city": "Chhatrapati Sambhajinagar",
+      "addressee_address": "Flat No. 1, Gokul Residency, Station Road, Model Colony, Mumbai 40058",
+      "advocate_name": "Deepak Jain",
+      "original_advocate_name": "Abhijit Mhatre",
+      "notice_reference_number": "WOIPJ9429A"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 21,
+    "scenario_id": "cheque_goods_never_delivered",
+    "scenario_summary": "Mumbai buyer stopped payment because the consignment was never delivered; denies liability for the dishonoured cheque and demands withdrawal of the notice.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Pooja Mehta",
+      "original_sender_name": "Shrikant Jain",
+      "disputed_amount": 625500,
+      "dispatch_mode": "Email and Registered Post A.D.",
+      "advocate_name": "Sayali Menon",
+      "original_advocate_name": "Ananya Thorat",
+      "notice_reference_number": "BFBGK4526K"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 22,
+    "scenario_id": "cheque_debt_discharged_in_cash",
+    "scenario_summary": "Kolhapur borrower replies that the loan behind the dishonoured cheque was discharged in cash against a signed receipt before presentation.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Anil Kapoor",
+      "original_sender_name": "Aishwarya Chopra",
+      "disputed_amount": 127500,
+      "original_advocate_name": "Joseph Kaur"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 23,
+    "scenario_id": "consumer_service_records_furnished",
+    "scenario_summary": "Pune appliance dealer answers a consumer notice with service-visit records showing two free warranty repairs and an offered replacement the complainant refused.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Imran Kulkarni",
+      "original_sender_name": "Harpreet Banerjee",
+      "disputed_amount": 18500,
+      "city": "Navi Mumbai",
+      "advocate_name": "Sachin More",
+      "original_advocate_name": "Mrunal Chopra",
+      "notice_reference_number": "BMXRK6624M"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 24,
+    "scenario_id": "consumer_damage_not_defect",
+    "scenario_summary": "Bengaluru electronics retailer denies deficiency in service, asserting physical damage from mishandling voided the warranty; technician's inspection report relied upon.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Deepak Apte",
+      "original_sender_name": "Aishwarya D'Souza",
+      "city": "Chandigarh",
+      "sender_address": "Flat No. 10, Prestige Court, Fergusson College Road, Shivaji Nagar, Mumbai 40038",
+      "advocate_name": "Kiran D'Souza",
+      "notice_reference_number": "NCTAZ8562Q"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 25,
+    "scenario_id": "consumer_builder_delay_grace_period",
+    "scenario_summary": "Mumbai developer replies that possession delay flowed from pandemic stop-work orders and falls within the agreement's grace period; denies refund liability.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Sunil Jain",
+      "original_sender_name": "Gurpreet Mane",
+      "disputed_amount": 1949000,
+      "city": "Hyderabad",
+      "sender_address": "Flat No. 9, Shanti Niketan, Ring Road, Model Colony, Delhi 11013",
+      "addressee_address": "Flat No. 15, Yashwant Smruti, Karve Road, Kothrud, Mumbai 40068",
+      "dispatch_mode": "Courier",
+      "advocate_name": "Prashant Verma",
+      "original_advocate_name": "Devendra Mane",
+      "notice_reference_number": "ZDKSM5803M"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 26,
+    "scenario_id": "employment_fnf_settled",
+    "scenario_summary": "Mumbai IT employer denies an ex-employee's claim for unpaid dues, annexing the signed full-and-final settlement and bank payment proof.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Madhuri Kaur",
+      "original_sender_name": "Rajesh Surve",
+      "reply_date": "2026-05-18",
+      "city": "Hyderabad",
+      "dispatch_mode": "Courier"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 27,
+    "scenario_id": "employment_notice_pay_adjustment",
+    "scenario_summary": "Pune manufacturer replies that the resigning engineer left without serving notice; dues stand lawfully adjusted against notice-pay recovery under the appointment letter.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Kiran Naidu",
+      "original_sender_name": "Tushar Sharma",
+      "notice_date": "2026-05-30",
+      "reply_date": "2026-06-07",
+      "disputed_amount": 118000,
+      "city": "Mumbai",
+      "sender_address": "Flat No. 22, Gokul Residency, Karve Road, Sadashiv Peth, Vasai-Virar 40172",
+      "addressee_address": "Flat No. 2, Shree Ganesh Apartments, Link Road, Shivaji Nagar, Mumbai 40060",
+      "dispatch_mode": "Speed Post",
+      "original_advocate_name": "Amol Trivedi"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 28,
+    "scenario_id": "money_demand_already_repaid",
+    "scenario_summary": "Pune businessman replies that the friendly loan demanded was repaid in full by bank transfer months ago; bank statement annexed; demands withdrawal of the notice.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Pallavi Naidu",
+      "original_sender_name": "Nitin Mhatre",
+      "notice_date": "2026-05-09",
+      "reply_date": "2026-05-16",
+      "city": "Pune",
+      "addressee_address": "Flat No. 20, Vrindavan Complex, Station Road, Sadashiv Peth, Pune 41179",
+      "original_advocate_name": "Sneha Deshmukh"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 29,
+    "scenario_id": "money_demand_defective_goods",
+    "scenario_summary": "Nashik trader withheld invoice payment because supplied machine components were defective and rejected on inspection; counter-claims testing and storage costs.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Swati Gill",
+      "original_sender_name": "Anita Naidu",
+      "city": "Ahmedabad",
+      "sender_address": "Flat No. 30, Matoshree Heights, Station Road, Kothrud, Navi Mumbai 40076",
+      "addressee_address": "Flat No. 15, Green Valley Society, Ring Road, Aundh, Thane 40055"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 30,
+    "scenario_id": "money_demand_time_barred",
+    "scenario_summary": "Mumbai resident denies a stale 2019 hand-loan demand as time-barred and never acknowledged; no liability admitted.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Harshad Salunkhe",
+      "original_sender_name": "Imran Ranade",
+      "reply_date": "2026-05-30",
+      "dispatch_mode": "Registered Post A.D.",
+      "advocate_name": "Harshad Rao",
+      "original_advocate_name": "Sneha Gupta"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 31,
+    "scenario_id": "eviction_invalid_notice_period",
+    "scenario_summary": "Thane tenant contests a quit notice that gives less than the notice period stipulated in the registered leave and licence agreement.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Sunil Kaur",
+      "original_sender_name": "Prakash Mukherjee",
+      "notice_date": "2026-05-02",
+      "reply_date": "2026-05-06",
+      "disputed_amount": 1402000,
+      "city": "Pune",
+      "addressee_address": "Flat No. 20, Tulsi Vihar, S.V. Road, Shivaji Nagar, Amravati 44424",
+      "notice_reference_number": "QEHIC2218M"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 32,
+    "scenario_id": "eviction_rent_paid_receipts",
+    "scenario_summary": "Nagpur tenant denies alleged rent default, relying on rent receipts and UPI records; says the notice is a pretext to extract higher rent.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Meera Mehta",
+      "original_sender_name": "Sanjay Lokhande",
+      "notice_date": "2026-05-09",
+      "reply_date": "2026-05-15",
+      "disputed_amount": 252000,
+      "dispatch_mode": "Registered Post A.D.",
+      "advocate_name": "Prakash Gupta",
+      "original_advocate_name": "Radhika Chopra",
+      "notice_reference_number": "PAERJ7888R"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 33,
+    "scenario_id": "eviction_bona_fide_need_disputed",
+    "scenario_summary": "Delhi tenant disputes the landlord's claimed bona fide requirement, pointing to two vacant flats the landlord owns in the same building.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Suresh Nair",
+      "original_sender_name": "Joseph Salunkhe",
+      "notice_date": "2026-05-08",
+      "reply_date": "2026-05-15",
+      "city": "Mumbai",
+      "sender_address": "Flat No. 24, Shree Ganesh Apartments, Gandhi Chowk Road, Aundh, Pune 41137",
+      "addressee_address": "Flat No. 17, Sai Krupa CHS, College Road, New Friends Colony, Navi Mumbai 40016",
+      "dispatch_mode": "Email and Registered Post A.D.",
+      "advocate_name": "Yogesh Kaur",
+      "original_advocate_name": "Mary Chopra",
+      "notice_reference_number": "MBPKO9303K"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 34,
+    "scenario_id": "cheque_security_cheque_misused",
+    "scenario_summary": "Aurangabad distributor says a blank security cheque was filled in and presented despite the account being fully settled; denies any legally enforceable debt.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Mary Naik",
+      "original_sender_name": "Radhika Mehta",
+      "notice_date": "2026-05-13",
+      "disputed_amount": 560500,
+      "city": "Pune",
+      "sender_address": "Flat No. 30, Vrindavan Complex, Fergusson College Road, Model Colony, Chandigarh 16095",
+      "dispatch_mode": "Speed Post",
+      "original_advocate_name": "Mary Sheikh"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 35,
+    "scenario_id": "cheque_goods_never_delivered",
+    "scenario_summary": "Mumbai buyer stopped payment because the consignment was never delivered; denies liability for the dishonoured cheque and demands withdrawal of the notice.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Aishwarya Fernandes",
+      "original_sender_name": "Archana Malhotra",
+      "notice_date": "2026-06-06",
+      "city": "Kalyan-Dombivli",
+      "addressee_address": "Flat No. 39, Silver Oak Towers, Station Road, Model Colony, Chennai 60036",
+      "original_advocate_name": "Madhuri Kale"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 36,
+    "scenario_id": "cheque_debt_discharged_in_cash",
+    "scenario_summary": "Kolhapur borrower replies that the loan behind the dishonoured cheque was discharged in cash against a signed receipt before presentation.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Archana Salunkhe",
+      "original_sender_name": "Meera Trivedi",
+      "disputed_amount": 418000,
+      "original_advocate_name": "Ramesh Kaur"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 37,
+    "scenario_id": "consumer_service_records_furnished",
+    "scenario_summary": "Pune appliance dealer answers a consumer notice with service-visit records showing two free warranty repairs and an offered replacement the complainant refused.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Yogesh More",
+      "original_sender_name": "Dattatray Lokhande",
+      "disputed_amount": 93500,
+      "city": "Nagpur",
+      "dispatch_mode": "Registered Post A.D.",
+      "advocate_name": "Mrunal Iyer",
+      "original_advocate_name": "Deepak Jadhav",
+      "notice_reference_number": "LYBKX6298J"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 38,
+    "scenario_id": "consumer_damage_not_defect",
+    "scenario_summary": "Bengaluru electronics retailer denies deficiency in service, asserting physical damage from mishandling voided the warranty; technician's inspection report relied upon.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Pooja Sharma",
+      "original_sender_name": "Prashant Shah",
+      "reply_date": "2026-06-01",
+      "advocate_name": "Vaishali Kale",
+      "notice_reference_number": "VIOJX4996G"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 39,
+    "scenario_id": "consumer_builder_delay_grace_period",
+    "scenario_summary": "Mumbai developer replies that possession delay flowed from pandemic stop-work orders and falls within the agreement's grace period; denies refund liability.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Manoj Thorat",
+      "original_sender_name": "Vikram Mane",
+      "notice_date": "2026-05-31",
+      "reply_date": "2026-06-03",
+      "disputed_amount": 731500,
+      "city": "Pune",
+      "sender_address": "Flat No. 3, Prestige Court, M.G. Road, Andheri West, Hyderabad 50052"
+    },
+    "withheld_fields": [
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 40,
+    "scenario_id": "employment_fnf_settled",
+    "scenario_summary": "Mumbai IT employer denies an ex-employee's claim for unpaid dues, annexing the signed full-and-final settlement and bank payment proof.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Anil Gaikwad",
+      "original_sender_name": "Omkar Sawant",
+      "reply_date": "2026-05-23",
+      "disputed_amount": 338500,
+      "city": "Mumbai",
+      "advocate_name": "Rohan Kulkarni"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 41,
+    "scenario_id": "employment_notice_pay_adjustment",
+    "scenario_summary": "Pune manufacturer replies that the resigning engineer left without serving notice; dues stand lawfully adjusted against notice-pay recovery under the appointment letter.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Bhushan Lokhande",
+      "original_sender_name": "Vihaan Ghadge",
+      "notice_date": "2026-06-05",
+      "city": "Lucknow",
+      "dispatch_mode": "Courier",
+      "advocate_name": "Deepak Thorat"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 42,
+    "scenario_id": "money_demand_already_repaid",
+    "scenario_summary": "Pune businessman replies that the friendly loan demanded was repaid in full by bank transfer months ago; bank statement annexed; demands withdrawal of the notice.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Sunita Malhotra",
+      "original_sender_name": "Komal Raut",
+      "notice_date": "2026-05-09",
+      "reply_date": "2026-05-18",
+      "city": "Ahmedabad",
+      "advocate_name": "Manoj Gill",
+      "original_advocate_name": "Prakash Apte"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 43,
+    "scenario_id": "money_demand_defective_goods",
+    "scenario_summary": "Nashik trader withheld invoice payment because supplied machine components were defective and rejected on inspection; counter-claims testing and storage costs.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Ramesh Trivedi",
+      "original_sender_name": "Vaishali Ghadge",
+      "notice_date": "2026-06-06",
+      "disputed_amount": 510500,
+      "city": "Nashik",
+      "sender_address": "Flat No. 15, Vrindavan Complex, M.G. Road, Aundh, Mumbai 40058",
+      "dispatch_mode": "Speed Post",
+      "advocate_name": "Sayali Reddy",
+      "original_advocate_name": "Kiran Bhatt"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 44,
+    "scenario_id": "money_demand_time_barred",
+    "scenario_summary": "Mumbai resident denies a stale 2019 hand-loan demand as time-barred and never acknowledged; no liability admitted.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Ashwini D'Souza",
+      "original_sender_name": "Komal Sharma",
+      "city": "Visakhapatnam",
+      "sender_address": "Flat No. 9, Prestige Court, Market Yard Road, Aundh, Kolkata 70024",
+      "original_advocate_name": "Sameer Deshmukh",
+      "notice_reference_number": "OBESR2096I"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 45,
+    "scenario_id": "eviction_invalid_notice_period",
+    "scenario_summary": "Thane tenant contests a quit notice that gives less than the notice period stipulated in the registered leave and licence agreement.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Dattatray Chavan",
+      "original_sender_name": "Aarti Ranade",
+      "disputed_amount": 322500,
+      "city": "Mumbai",
+      "addressee_address": "Flat No. 3, Prestige Court, Link Road, Camp Area, Nashik 42213",
+      "dispatch_mode": "Email and Registered Post A.D.",
+      "advocate_name": "Rekha Mhatre",
+      "notice_reference_number": "VUWLM2665Q"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 46,
+    "scenario_id": "eviction_rent_paid_receipts",
+    "scenario_summary": "Nagpur tenant denies alleged rent default, relying on rent receipts and UPI records; says the notice is a pretext to extract higher rent.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Aarav Mhatre",
+      "original_sender_name": "Smita Ghadge",
+      "notice_date": "2026-06-03",
+      "reply_date": "2026-06-10",
+      "city": "Nashik",
+      "sender_address": "Flat No. 30, Prestige Court, Ring Road, Aundh, Chennai 60092"
+    },
+    "withheld_fields": [
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 47,
+    "scenario_id": "eviction_bona_fide_need_disputed",
+    "scenario_summary": "Delhi tenant disputes the landlord's claimed bona fide requirement, pointing to two vacant flats the landlord owns in the same building.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Smita Shah",
+      "original_sender_name": "Imran Raut",
+      "disputed_amount": 695500,
+      "city": "Bengaluru",
+      "advocate_name": "Manisha Shinde",
+      "notice_reference_number": "NYRAQ5124Y"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 48,
+    "scenario_id": "cheque_security_cheque_misused",
+    "scenario_summary": "Aurangabad distributor says a blank security cheque was filled in and presented despite the account being fully settled; denies any legally enforceable debt.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Ganesh Kaur",
+      "original_sender_name": "Deepak Jain",
+      "notice_date": "2026-05-05",
+      "city": "Mumbai",
+      "addressee_address": "Flat No. 1, Yashwant Smruti, M.G. Road, Kothrud, Kolkata 70052",
+      "advocate_name": "Niranjan Kale",
+      "notice_reference_number": "UPVUZ5840O"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 49,
+    "scenario_id": "cheque_goods_never_delivered",
+    "scenario_summary": "Mumbai buyer stopped payment because the consignment was never delivered; denies liability for the dishonoured cheque and demands withdrawal of the notice.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Pallavi D'Souza",
+      "original_sender_name": "Rohan Gupta",
+      "notice_date": "2026-05-06",
+      "city": "Pune",
+      "addressee_address": "Flat No. 16, Om Sai Plaza, College Road, Model Colony, Bengaluru 56097",
+      "dispatch_mode": "Email and Registered Post A.D."
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 50,
+    "scenario_id": "cheque_debt_discharged_in_cash",
+    "scenario_summary": "Kolhapur borrower replies that the loan behind the dishonoured cheque was discharged in cash against a signed receipt before presentation.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Anil Salunkhe",
+      "original_sender_name": "Mrunal Agarwal",
+      "notice_date": "2026-05-03",
+      "city": "Nagpur",
+      "sender_address": "Flat No. 7, Prestige Court, Link Road, Kothrud, Mumbai 40086",
+      "addressee_address": "Flat No. 6, Shree Ganesh Apartments, Ring Road, Model Colony, Pune 41172",
+      "advocate_name": "Meera Jain",
+      "notice_reference_number": "QEXQS7494G"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 51,
+    "scenario_id": "consumer_service_records_furnished",
+    "scenario_summary": "Pune appliance dealer answers a consumer notice with service-visit records showing two free warranty repairs and an offered replacement the complainant refused.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Ramesh Reddy",
+      "original_sender_name": "Rutuja Apte",
+      "notice_date": "2026-05-03",
+      "disputed_amount": 51500,
+      "city": "Nashik",
+      "sender_address": "Flat No. 6, Gokul Residency, Market Yard Road, Aundh, Ahmedabad 38018",
+      "addressee_address": "Flat No. 30, Sai Krupa CHS, Gandhi Chowk Road, Aundh, Nashik 42236",
+      "advocate_name": "Prashant Patil"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 52,
+    "scenario_id": "consumer_damage_not_defect",
+    "scenario_summary": "Bengaluru electronics retailer denies deficiency in service, asserting physical damage from mishandling voided the warranty; technician's inspection report relied upon.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Joseph Bhagat",
+      "original_sender_name": "Mrunal Naidu",
+      "dispatch_mode": "Email and Registered Post A.D.",
+      "advocate_name": "Aarti Bhosale",
+      "notice_reference_number": "QIDQE7428V"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 53,
+    "scenario_id": "consumer_builder_delay_grace_period",
+    "scenario_summary": "Mumbai developer replies that possession delay flowed from pandemic stop-work orders and falls within the agreement's grace period; denies refund liability.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Vijay Das",
+      "original_sender_name": "Pravin Menon",
+      "notice_date": "2026-06-06",
+      "reply_date": "2026-06-12",
+      "disputed_amount": 1806500,
+      "city": "Kalyan-Dombivli",
+      "addressee_address": "Flat No. 22, Yashwant Smruti, M.G. Road, Dadar, Bengaluru 56094",
+      "original_advocate_name": "Ashwini Bhagat"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 54,
+    "scenario_id": "employment_fnf_settled",
+    "scenario_summary": "Mumbai IT employer denies an ex-employee's claim for unpaid dues, annexing the signed full-and-final settlement and bank payment proof.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Niranjan Reddy",
+      "original_sender_name": "Sunita Iyer",
+      "notice_date": "2026-05-09",
+      "disputed_amount": 567000,
+      "city": "Pune",
+      "dispatch_mode": "Registered Post A.D."
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 55,
+    "scenario_id": "employment_notice_pay_adjustment",
+    "scenario_summary": "Pune manufacturer replies that the resigning engineer left without serving notice; dues stand lawfully adjusted against notice-pay recovery under the appointment letter.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Arjun Menon",
+      "original_sender_name": "Ajay Phadke",
+      "notice_date": "2026-05-07",
+      "city": "Nagpur",
+      "notice_reference_number": "UXNXO4157M"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 56,
+    "scenario_id": "money_demand_already_repaid",
+    "scenario_summary": "Pune businessman replies that the friendly loan demanded was repaid in full by bank transfer months ago; bank statement annexed; demands withdrawal of the notice.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Abhijit Kapoor",
+      "original_sender_name": "Mahesh Salunkhe",
+      "notice_date": "2026-05-18",
+      "disputed_amount": 652000,
+      "dispatch_mode": "Registered Post A.D.",
+      "advocate_name": "Ramesh Jain"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 57,
+    "scenario_id": "money_demand_defective_goods",
+    "scenario_summary": "Nashik trader withheld invoice payment because supplied machine components were defective and rejected on inspection; counter-claims testing and storage costs.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Vihaan Reddy",
+      "original_sender_name": "Mrunal Sharma",
+      "notice_date": "2026-05-17",
+      "reply_date": "2026-05-26",
+      "advocate_name": "Manisha Reddy",
+      "original_advocate_name": "Ramesh Kulkarni"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 58,
+    "scenario_id": "money_demand_time_barred",
+    "scenario_summary": "Mumbai resident denies a stale 2019 hand-loan demand as time-barred and never acknowledged; no liability admitted.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Manoj Kale",
+      "original_sender_name": "Deepa Apte",
+      "disputed_amount": 1635500,
+      "dispatch_mode": "Registered Post A.D.",
+      "advocate_name": "Swati Bhosale"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 59,
+    "scenario_id": "eviction_invalid_notice_period",
+    "scenario_summary": "Thane tenant contests a quit notice that gives less than the notice period stipulated in the registered leave and licence agreement.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Pooja Thorat",
+      "original_sender_name": "Aishwarya Das",
+      "reply_date": "2026-06-04",
+      "disputed_amount": 1454000,
+      "advocate_name": "Kiran Deshmukh"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 60,
+    "scenario_id": "eviction_rent_paid_receipts",
+    "scenario_summary": "Nagpur tenant denies alleged rent default, relying on rent receipts and UPI records; says the notice is a pretext to extract higher rent.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Anita Bhatt",
+      "original_sender_name": "Deepa Sheikh",
+      "city": "Chhatrapati Sambhajinagar",
+      "sender_address": "Flat No. 33, Matoshree Heights, Market Yard Road, Dadar, Pune 41120",
+      "addressee_address": "Flat No. 5, Shanti Niketan, Station Road, Kothrud, Delhi 11062",
+      "original_advocate_name": "Mary Gokhale",
+      "notice_reference_number": "WDINH2871W"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 61,
+    "scenario_id": "eviction_bona_fide_need_disputed",
+    "scenario_summary": "Delhi tenant disputes the landlord's claimed bona fide requirement, pointing to two vacant flats the landlord owns in the same building.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Sanjay Gaikwad",
+      "original_sender_name": "Lakshmi Bhosale",
+      "city": "Navi Mumbai",
+      "notice_reference_number": "QLPDX4963R"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 62,
+    "scenario_id": "cheque_security_cheque_misused",
+    "scenario_summary": "Aurangabad distributor says a blank security cheque was filled in and presented despite the account being fully settled; denies any legally enforceable debt.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Sanjay More",
+      "original_sender_name": "Rohan Reddy",
+      "reply_date": "2026-05-29",
+      "city": "Pune",
+      "sender_address": "Flat No. 30, Green Valley Society, Gandhi Chowk Road, Andheri West, Kolhapur 41618",
+      "dispatch_mode": "Courier",
+      "original_advocate_name": "Bhushan Gokhale",
+      "notice_reference_number": "LJXYA0779T"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 63,
+    "scenario_id": "cheque_goods_never_delivered",
+    "scenario_summary": "Mumbai buyer stopped payment because the consignment was never delivered; denies liability for the dishonoured cheque and demands withdrawal of the notice.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Ananya Chavan",
+      "original_sender_name": "Sandeep Deshpande",
+      "advocate_name": "Nikita Gokhale",
+      "original_advocate_name": "Shrikant Malhotra"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 64,
+    "scenario_id": "cheque_debt_discharged_in_cash",
+    "scenario_summary": "Kolhapur borrower replies that the loan behind the dishonoured cheque was discharged in cash against a signed receipt before presentation.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Ananya Menon",
+      "original_sender_name": "Kiran Trivedi",
+      "dispatch_mode": "Speed Post"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 65,
+    "scenario_id": "consumer_service_records_furnished",
+    "scenario_summary": "Pune appliance dealer answers a consumer notice with service-visit records showing two free warranty repairs and an offered replacement the complainant refused.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Joseph Malhotra",
+      "original_sender_name": "Ishita Menon",
+      "notice_date": "2026-05-04",
+      "city": "Visakhapatnam",
+      "sender_address": "Flat No. 10, Tulsi Vihar, M.G. Road, Camp Area, Pune 41109",
+      "addressee_address": "Flat No. 30, Shanti Niketan, Karve Road, Andheri West, Hyderabad 50027"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 66,
+    "scenario_id": "consumer_damage_not_defect",
+    "scenario_summary": "Bengaluru electronics retailer denies deficiency in service, asserting physical damage from mishandling voided the warranty; technician's inspection report relied upon.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Pooja Singh",
+      "original_sender_name": "Sneha Bhatt",
+      "reply_date": "2026-06-02",
+      "disputed_amount": 126000,
+      "dispatch_mode": "Email and Registered Post A.D.",
+      "advocate_name": "Milind Gill",
+      "original_advocate_name": "Vijay Iyer"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 67,
+    "scenario_id": "consumer_builder_delay_grace_period",
+    "scenario_summary": "Mumbai developer replies that possession delay flowed from pandemic stop-work orders and falls within the agreement's grace period; denies refund liability.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Lakshmi Rao",
+      "original_sender_name": "Radhika Gill",
+      "city": "Bengaluru",
+      "addressee_address": "Flat No. 18, Tulsi Vihar, Market Yard Road, Sector 9, Solapur 41317",
+      "original_advocate_name": "Pravin Deshpande",
+      "notice_reference_number": "DHYXX6049X"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 68,
+    "scenario_id": "employment_fnf_settled",
+    "scenario_summary": "Mumbai IT employer denies an ex-employee's claim for unpaid dues, annexing the signed full-and-final settlement and bank payment proof.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Vihaan Naik",
+      "original_sender_name": "Shraddha Salunkhe",
+      "notice_date": "2026-05-15",
+      "city": "Pune",
+      "sender_address": "Flat No. 25, Prestige Court, Station Road, Borivali East, Chhatrapati Sambhajinagar 43116",
+      "addressee_address": "Flat No. 37, Shanti Niketan, Ring Road, Kothrud, Mumbai 40088",
+      "notice_reference_number": "ASTQY7702P"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 69,
+    "scenario_id": "employment_notice_pay_adjustment",
+    "scenario_summary": "Pune manufacturer replies that the resigning engineer left without serving notice; dues stand lawfully adjusted against notice-pay recovery under the appointment letter.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Aarti D'Souza",
+      "original_sender_name": "Deepa Bhagat",
+      "notice_date": "2026-05-23",
+      "disputed_amount": 474500,
+      "city": "Kolhapur",
+      "sender_address": "Flat No. 9, Sai Krupa CHS, Station Road, Sadashiv Peth, Pune 41173",
+      "notice_reference_number": "BBAOB5386E"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 70,
+    "scenario_id": "money_demand_already_repaid",
+    "scenario_summary": "Pune businessman replies that the friendly loan demanded was repaid in full by bank transfer months ago; bank statement annexed; demands withdrawal of the notice.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Ashwini Deshpande",
+      "original_sender_name": "Vijay Kulkarni",
+      "notice_date": "2026-05-20",
+      "disputed_amount": 817500,
+      "city": "Thane",
+      "addressee_address": "Flat No. 16, Shanti Niketan, S.V. Road, Aundh, Indore 45230",
+      "dispatch_mode": "Speed Post",
+      "notice_reference_number": "LLWDX9721Y"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 71,
+    "scenario_id": "money_demand_defective_goods",
+    "scenario_summary": "Nashik trader withheld invoice payment because supplied machine components were defective and rejected on inspection; counter-claims testing and storage costs.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Sunil Reddy",
+      "original_sender_name": "Rajesh Gokhale",
+      "notice_date": "2026-05-11",
+      "disputed_amount": 131500,
+      "city": "Navi Mumbai",
+      "sender_address": "Flat No. 39, Shanti Niketan, Market Yard Road, Civil Lines, Surat 39501",
+      "addressee_address": "Flat No. 15, Shanti Niketan, M.G. Road, Borivali East, Nagpur 44019",
+      "original_advocate_name": "Vaishali Mukherjee"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 72,
+    "scenario_id": "money_demand_time_barred",
+    "scenario_summary": "Mumbai resident denies a stale 2019 hand-loan demand as time-barred and never acknowledged; no liability admitted.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Pravin Sharma",
+      "original_sender_name": "Prashant Reddy",
+      "reply_date": "2026-06-09",
+      "disputed_amount": 1587000,
+      "city": "Chandigarh",
+      "addressee_address": "Flat No. 17, Matoshree Heights, Market Yard Road, Civil Lines, Mumbai 40047",
+      "advocate_name": "Rajesh Phadke",
+      "notice_reference_number": "ELGNG4838M"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 73,
+    "scenario_id": "eviction_invalid_notice_period",
+    "scenario_summary": "Thane tenant contests a quit notice that gives less than the notice period stipulated in the registered leave and licence agreement.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Aarav Mhatre",
+      "original_sender_name": "Ashwini Pereira",
+      "reply_date": "2026-05-26",
+      "disputed_amount": 1209500,
+      "advocate_name": "Priya Bhatt"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 74,
+    "scenario_id": "eviction_rent_paid_receipts",
+    "scenario_summary": "Nagpur tenant denies alleged rent default, relying on rent receipts and UPI records; says the notice is a pretext to extract higher rent.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Aditya Ahmed",
+      "original_sender_name": "Omkar Naidu",
+      "reply_date": "2026-05-09",
+      "disputed_amount": 205000,
+      "city": "Mumbai",
+      "sender_address": "Flat No. 18, Shree Ganesh Apartments, Link Road, Civil Lines, Solapur 41314"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 75,
+    "scenario_id": "eviction_bona_fide_need_disputed",
+    "scenario_summary": "Delhi tenant disputes the landlord's claimed bona fide requirement, pointing to two vacant flats the landlord owns in the same building.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Aarav Deshpande",
+      "original_sender_name": "Savita Raut",
+      "notice_date": "2026-05-28",
+      "reply_date": "2026-06-02",
+      "disputed_amount": 611500,
+      "notice_reference_number": "VUYIK0303Z"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 76,
+    "scenario_id": "cheque_security_cheque_misused",
+    "scenario_summary": "Aurangabad distributor says a blank security cheque was filled in and presented despite the account being fully settled; denies any legally enforceable debt.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Harpreet More",
+      "original_sender_name": "Vaishali Deshmukh",
+      "notice_date": "2026-05-25",
+      "disputed_amount": 677000,
+      "city": "Nagpur",
+      "sender_address": "Flat No. 31, Shree Ganesh Apartments, M.G. Road, Aundh, Nashik 42257",
+      "addressee_address": "Flat No. 1, Vrindavan Complex, Ring Road, Shivaji Nagar, Nashik 42228",
+      "dispatch_mode": "Email and Registered Post A.D.",
+      "advocate_name": "Mahesh Wagh",
+      "original_advocate_name": "Aditya Kapoor"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 77,
+    "scenario_id": "cheque_goods_never_delivered",
+    "scenario_summary": "Mumbai buyer stopped payment because the consignment was never delivered; denies liability for the dishonoured cheque and demands withdrawal of the notice.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Gurpreet Chopra",
+      "original_sender_name": "Sneha Kapoor",
+      "notice_date": "2026-05-13",
+      "reply_date": "2026-05-18",
+      "city": "Mumbai",
+      "addressee_address": "Flat No. 3, Sai Krupa CHS, Ring Road, Shivaji Nagar, Pune 41190",
+      "advocate_name": "Rajesh Chavan",
+      "original_advocate_name": "Pallavi Pereira",
+      "notice_reference_number": "XHAMT6500G"
+    },
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 78,
+    "scenario_id": "cheque_debt_discharged_in_cash",
+    "scenario_summary": "Kolhapur borrower replies that the loan behind the dishonoured cheque was discharged in cash against a signed receipt before presentation.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Yogesh Shah",
+      "original_sender_name": "Arjun Nair",
+      "reply_date": "2026-05-08",
+      "notice_reference_number": "DKYZW5280Z"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 79,
+    "scenario_id": "consumer_service_records_furnished",
+    "scenario_summary": "Pune appliance dealer answers a consumer notice with service-visit records showing two free warranty repairs and an offered replacement the complainant refused.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Aditya Das",
+      "original_sender_name": "Sandeep Ahmed",
+      "notice_date": "2026-05-27",
+      "reply_date": "2026-06-03",
+      "dispatch_mode": "Email and Registered Post A.D.",
+      "advocate_name": "Rutuja Kapoor",
+      "original_advocate_name": "Karthik More",
+      "notice_reference_number": "TAYOS5289R"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 80,
+    "scenario_id": "consumer_damage_not_defect",
+    "scenario_summary": "Bengaluru electronics retailer denies deficiency in service, asserting physical damage from mishandling voided the warranty; technician's inspection report relied upon.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Shraddha Kapoor",
+      "original_sender_name": "Harshad Mhatre",
+      "notice_date": "2026-05-02",
+      "reply_date": "2026-05-06",
+      "disputed_amount": 72000,
+      "city": "Mumbai",
+      "sender_address": "Flat No. 40, Matoshree Heights, Market Yard Road, Dadar, Ahmedabad 38066",
+      "addressee_address": "Flat No. 9, Gokul Residency, College Road, Kothrud, Kolhapur 41663",
+      "dispatch_mode": "Email and Registered Post A.D.",
+      "notice_reference_number": "PRZYV5771Y"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 81,
+    "scenario_id": "consumer_builder_delay_grace_period",
+    "scenario_summary": "Mumbai developer replies that possession delay flowed from pandemic stop-work orders and falls within the agreement's grace period; denies refund liability.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Lakshmi Apte",
+      "original_sender_name": "Harpreet Apte",
+      "notice_date": "2026-05-29",
+      "city": "Ahmedabad",
+      "dispatch_mode": "Email and Registered Post A.D.",
+      "notice_reference_number": "PQCVK7046Q"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 82,
+    "scenario_id": "employment_fnf_settled",
+    "scenario_summary": "Mumbai IT employer denies an ex-employee's claim for unpaid dues, annexing the signed full-and-final settlement and bank payment proof.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Swati Malhotra",
+      "original_sender_name": "Tejal Bhagat",
+      "reply_date": "2026-06-03",
+      "notice_reference_number": "EHQHZ1763Q"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 83,
+    "scenario_id": "employment_notice_pay_adjustment",
+    "scenario_summary": "Pune manufacturer replies that the resigning engineer left without serving notice; dues stand lawfully adjusted against notice-pay recovery under the appointment letter.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Yogesh Raut",
+      "original_sender_name": "Joseph Sheikh",
+      "notice_date": "2026-05-09",
+      "reply_date": "2026-05-16",
+      "disputed_amount": 214500,
+      "city": "Ahmedabad",
+      "sender_address": "Flat No. 1, Prestige Court, Station Road, Andheri West, Nashik 42245",
+      "addressee_address": "Flat No. 17, Vrindavan Complex, Karve Road, New Friends Colony, Jaipur 30219",
+      "original_advocate_name": "Suresh More"
+    },
+    "withheld_fields": [
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 84,
+    "scenario_id": "money_demand_already_repaid",
+    "scenario_summary": "Pune businessman replies that the friendly loan demanded was repaid in full by bank transfer months ago; bank statement annexed; demands withdrawal of the notice.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Savita Sawant",
+      "original_sender_name": "Ishita Thorat",
+      "reply_date": "2026-05-31",
+      "disputed_amount": 802000,
+      "city": "Thane",
+      "addressee_address": "Flat No. 36, Shanti Niketan, Link Road, Shivaji Nagar, Nagpur 44032",
+      "advocate_name": "Vihaan Sawant",
+      "original_advocate_name": "Mary Kaur"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 85,
+    "scenario_id": "money_demand_defective_goods",
+    "scenario_summary": "Nashik trader withheld invoice payment because supplied machine components were defective and rejected on inspection; counter-claims testing and storage costs.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Vijay Gaikwad",
+      "original_sender_name": "Kavita Deshmukh",
+      "reply_date": "2026-05-19",
+      "disputed_amount": 167000,
+      "city": "Pune",
+      "addressee_address": "Flat No. 36, Yashwant Smruti, Market Yard Road, Borivali East, Navi Mumbai 40040",
+      "original_advocate_name": "Harpreet Sharma",
+      "notice_reference_number": "OJMEG2931T"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 86,
+    "scenario_id": "money_demand_time_barred",
+    "scenario_summary": "Mumbai resident denies a stale 2019 hand-loan demand as time-barred and never acknowledged; no liability admitted.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Shobha Kale",
+      "original_sender_name": "Vaishali Pawar",
+      "advocate_name": "Imran Gaikwad",
+      "notice_reference_number": "PIIFA5975J"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 87,
+    "scenario_id": "eviction_invalid_notice_period",
+    "scenario_summary": "Thane tenant contests a quit notice that gives less than the notice period stipulated in the registered leave and licence agreement.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Ramesh Ahmed",
+      "original_sender_name": "Manoj Sawant",
+      "notice_date": "2026-05-03",
+      "city": "Nagpur",
+      "addressee_address": "Flat No. 5, Gokul Residency, S.V. Road, Borivali East, Hyderabad 50084",
+      "dispatch_mode": "Email and Registered Post A.D.",
+      "original_advocate_name": "Madhuri Khan"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 88,
+    "scenario_id": "eviction_rent_paid_receipts",
+    "scenario_summary": "Nagpur tenant denies alleged rent default, relying on rent receipts and UPI records; says the notice is a pretext to extract higher rent.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Tushar Menon",
+      "original_sender_name": "Aditya Salunkhe",
+      "reply_date": "2026-06-03",
+      "city": "Mumbai",
+      "sender_address": "Flat No. 14, Shree Ganesh Apartments, Market Yard Road, Civil Lines, Delhi 11089",
+      "addressee_address": "Flat No. 37, Matoshree Heights, Karve Road, Andheri West, Mumbai 40018",
+      "dispatch_mode": "Speed Post",
+      "advocate_name": "Ramesh Kadam"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 89,
+    "scenario_id": "eviction_bona_fide_need_disputed",
+    "scenario_summary": "Delhi tenant disputes the landlord's claimed bona fide requirement, pointing to two vacant flats the landlord owns in the same building.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Sachin Naik",
+      "original_sender_name": "Milind Mhatre",
+      "notice_date": "2026-05-12"
+    },
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 90,
+    "scenario_id": "cheque_security_cheque_misused",
+    "scenario_summary": "Aurangabad distributor says a blank security cheque was filled in and presented despite the account being fully settled; denies any legally enforceable debt.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Anil Verma",
+      "original_sender_name": "Shobha Phadke",
+      "city": "Nagpur",
+      "dispatch_mode": "Email and Registered Post A.D."
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 91,
+    "scenario_id": "cheque_goods_never_delivered",
+    "scenario_summary": "Mumbai buyer stopped payment because the consignment was never delivered; denies liability for the dishonoured cheque and demands withdrawal of the notice.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Niranjan Jain",
+      "original_sender_name": "Sunita Verma",
+      "disputed_amount": 905000,
+      "city": "Thane"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 92,
+    "scenario_id": "cheque_debt_discharged_in_cash",
+    "scenario_summary": "Kolhapur borrower replies that the loan behind the dishonoured cheque was discharged in cash against a signed receipt before presentation.",
+    "register": "detailed",
+    "given_facts": {
+      "sender_name": "Sanjay Naidu",
+      "original_sender_name": "Ganesh Gill",
+      "notice_date": "2026-05-23",
+      "reply_date": "2026-05-31",
+      "city": "Navi Mumbai",
+      "sender_address": "Flat No. 31, Gokul Residency, M.G. Road, Andheri West, Mumbai 40040",
+      "dispatch_mode": "Speed Post",
+      "original_advocate_name": "Amol Sawant"
+    },
+    "withheld_fields": [
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 93,
+    "scenario_id": "consumer_service_records_furnished",
+    "scenario_summary": "Pune appliance dealer answers a consumer notice with service-visit records showing two free warranty repairs and an offered replacement the complainant refused.",
+    "register": "semi_formal",
+    "given_facts": {
+      "sender_name": "Nikita Singh",
+      "original_sender_name": "Priya Malhotra",
+      "disputed_amount": 81000,
+      "city": "Mumbai",
+      "addressee_address": "Flat No. 1, Matoshree Heights, Link Road, Aundh, Mumbai 40098",
+      "advocate_name": "Swapnil Salunkhe",
+      "original_advocate_name": "Sandeep Pereira"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "index": 94,
+    "scenario_id": "consumer_damage_not_defect",
+    "scenario_summary": "Bengaluru electronics retailer denies deficiency in service, asserting physical damage from mishandling voided the warranty; technician's inspection report relied upon.",
+    "register": "casual",
+    "given_facts": {
+      "sender_name": "Manisha Malhotra",
+      "original_sender_name": "Milind Menon",
+      "disputed_amount": 52500,
+      "city": "Mumbai",
+      "sender_address": "Flat No. 38, Shanti Niketan, Gandhi Chowk Road, New Friends Colony, Patna 80048",
+      "original_advocate_name": "Mary Lokhande",
+      "notice_reference_number": "YDEXX9285W"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ],
+    "nearest_supported": null
+  }
+]

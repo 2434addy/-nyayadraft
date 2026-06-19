@@ -1,0 +1,1812 @@
+[
+  {
+    "doc_type": "affidavit_general",
+    "index": 0,
+    "scenario_id": "passport_aadhaar_name_mismatch",
+    "scenario_summary": "Pune software engineer's name is spelt differently in passport and Aadhaar; affidavit affirms both names denote one and the same person for passport reissue.",
+    "register": "detailed",
+    "given_facts": {
+      "deponent_name": "Nikita Reddy",
+      "deponent_parent_name": "Omkar Reddy",
+      "deponent_age": 69,
+      "deponent_occupation": "pharmacist",
+      "city": "Nashik",
+      "deponent_address": "Flat No. 24, Silver Oak Towers, Gandhi Chowk Road, Kothrud, Thane 40084",
+      "name_variant_a": "Nikita Reddy",
+      "name_variant_b": "Nikita Sharma"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 1,
+    "scenario_id": "bank_kyc_initials_expansion",
+    "scenario_summary": "Nagpur account holder's PAN carries initials while bank records show the expanded name; bank seeks a one-and-the-same-person affidavit for KYC updation.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Tushar Singh",
+      "deponent_age": 32,
+      "deponent_occupation": "shop owner",
+      "city": "Pune",
+      "deponent_address": "Flat No. 10, Om Sai Plaza, Station Road, Kothrud, Jaipur 30211",
+      "name_variant_a": "Tushar Singh",
+      "name_variant_b": "Tushar Gokhale"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 2,
+    "scenario_id": "married_name_property_records",
+    "scenario_summary": "Chennai homemaker appears under maiden and married names across property papers; affidavit confirms one and the same person for mutation entry.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Nitin Bhatt",
+      "deponent_age": 69,
+      "name_variant_a": "Nitin Bhatt",
+      "name_variant_b": "Nitin Kapoor"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 3,
+    "scenario_id": "lpg_connection_address_proof",
+    "scenario_summary": "Mumbai tenant lacks a utility bill in his own name; affidavit of current residence required for a new LPG gas connection.",
+    "register": "detailed",
+    "given_facts": {
+      "deponent_name": "Rekha Agarwal",
+      "deponent_parent_name": "Imran Agarwal",
+      "deponent_age": 59,
+      "city": "Nashik",
+      "deponent_address": "Flat No. 31, Om Sai Plaza, Station Road, Aundh, Mumbai 40001",
+      "deponent_id_number": "IJLUC5383C"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "residing_since_year",
+        "placeholder": "[YEAR FROM WHICH DEPONENT RESIDES AT THE ADDRESS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 4,
+    "scenario_id": "voter_enrolment_address_proof",
+    "scenario_summary": "Family recently shifted to Thane; deponent swears an address affidavit to support voter ID enrolment at the new residence.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Rajesh D'Souza",
+      "deponent_age": 46,
+      "city": "Mumbai"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      },
+      {
+        "name": "residing_since_year",
+        "placeholder": "[YEAR FROM WHICH DEPONENT RESIDES AT THE ADDRESS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 5,
+    "scenario_id": "jee_gap_year_admission",
+    "scenario_summary": "Nashik student took a year after HSC to prepare for engineering entrance examinations; college demands a gap-year affidavit at admission.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Prashant Menon",
+      "deponent_parent_name": "Niranjan Menon",
+      "deponent_age": 43,
+      "city": "Navi Mumbai",
+      "deponent_address": "Flat No. 9, Shree Ganesh Apartments, Link Road, Civil Lines, Thane 40011",
+      "gap_start_year": 2022
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "gap_reason",
+        "placeholder": "[REASON FOR THE GAP IN STUDIES]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 6,
+    "scenario_id": "pg_admission_family_illness_gap",
+    "scenario_summary": "Delhi graduate explains a two-year break before post-graduation caused by a parent's prolonged illness; university requires a sworn explanation.",
+    "register": "detailed",
+    "given_facts": {
+      "deponent_name": "Swati Mehta",
+      "deponent_parent_name": "Nitin Mehta",
+      "deponent_age": 21,
+      "deponent_occupation": "real estate agent",
+      "city": "Pune",
+      "deponent_address": "Flat No. 4, Om Sai Plaza, Karve Road, Camp Area, Bengaluru 56048",
+      "deponent_id_number": "MADHH8258J",
+      "gap_start_year": 2024
+    },
+    "withheld_fields": [
+      {
+        "name": "gap_reason",
+        "placeholder": "[REASON FOR THE GAP IN STUDIES]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 7,
+    "scenario_id": "duplicate_share_certificate",
+    "scenario_summary": "Mumbai investor misplaced original share certificates during house shifting; the company's registrar requires an affidavit before issuing duplicates.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Tejal Apte",
+      "deponent_age": 58,
+      "deponent_occupation": "marketing manager",
+      "city": "Kolkata",
+      "deponent_address": "Flat No. 9, Matoshree Heights, Gandhi Chowk Road, Kothrud, Patna 80045",
+      "lost_document_type": "original share certificate"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 8,
+    "scenario_id": "lost_ssc_marksheet",
+    "scenario_summary": "Chhatrapati Sambhajinagar candidate lost his SSC marksheet in transit; the divisional board requires an affidavit before issuing a duplicate.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Aishwarya Agarwal",
+      "deponent_parent_name": "Arjun Agarwal",
+      "deponent_age": 26,
+      "city": "Mumbai",
+      "deponent_address": "Flat No. 23, Gokul Residency, Karve Road, New Friends Colony, Mumbai 40043",
+      "deponent_id_number": "ELAKR0869Q",
+      "lost_document_type": "SSC marksheet"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 9,
+    "scenario_id": "lost_sale_deed_refinance",
+    "scenario_summary": "Bengaluru flat owner cannot trace the original sale deed; affidavit needed to obtain a certified copy and complete bank loan refinance.",
+    "register": "detailed",
+    "given_facts": {
+      "deponent_name": "Fatima Reddy",
+      "deponent_parent_name": "Farhan Reddy",
+      "deponent_age": 48,
+      "deponent_occupation": "marketing manager",
+      "city": "Kolkata",
+      "deponent_address": "Flat No. 31, Prestige Court, Link Road, Dadar, Mumbai 40047",
+      "deponent_id_number": "LYGNJ3724O",
+      "lost_document_type": "original registered sale deed"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 10,
+    "scenario_id": "scholarship_income_affidavit",
+    "scenario_summary": "Solapur farmer declares modest annual family income to support his daughter's state post-matric scholarship application.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Dattatray Nair",
+      "deponent_parent_name": "Abhijit Nair",
+      "deponent_age": 39,
+      "city": "Mumbai",
+      "deponent_address": "Flat No. 23, Gokul Residency, Gandhi Chowk Road, Sadashiv Peth, Mumbai 40070",
+      "annual_income": 187000
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 11,
+    "scenario_id": "ews_income_affidavit",
+    "scenario_summary": "Lucknow applicant declares gross annual family income for an EWS certificate; the tehsil office requires a sworn income affidavit.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Bhushan Bhatt",
+      "deponent_age": 47,
+      "deponent_occupation": "interior designer",
+      "annual_income": 610000
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 12,
+    "scenario_id": "passport_dob_affidavit",
+    "scenario_summary": "Kolhapur applicant's school records carry no date of birth entry; affidavit affirms his correct date of birth for passport issuance.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Mrunal Shah",
+      "deponent_age": 44,
+      "city": "Kolkata",
+      "deponent_address": "Flat No. 6, Shree Ganesh Apartments, Karve Road, Dadar, Chhatrapati Sambhajinagar 43194",
+      "date_of_birth": "1971-12-01"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 13,
+    "scenario_id": "pension_dob_correction",
+    "scenario_summary": "Retired Jalgaon teacher's service book records a clerical error in date of birth; affidavit states the correct date for pension processing.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Manisha Deshpande",
+      "deponent_age": 34,
+      "deponent_occupation": "software engineer",
+      "city": "Pune",
+      "date_of_birth": "1994-07-21"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 14,
+    "scenario_id": "passport_aadhaar_name_mismatch",
+    "scenario_summary": "Pune software engineer's name is spelt differently in passport and Aadhaar; affidavit affirms both names denote one and the same person for passport reissue.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Amol Das",
+      "deponent_parent_name": "Aditya Das",
+      "deponent_age": 22,
+      "deponent_occupation": "wholesale merchant",
+      "city": "Mumbai",
+      "deponent_address": "Flat No. 28, Shree Ganesh Apartments, M.G. Road, Dadar, Solapur 41353",
+      "deponent_id_number": "ECJKB0545A",
+      "name_variant_a": "Amol Das",
+      "name_variant_b": "Amol Fernandes"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 15,
+    "scenario_id": "bank_kyc_initials_expansion",
+    "scenario_summary": "Nagpur account holder's PAN carries initials while bank records show the expanded name; bank seeks a one-and-the-same-person affidavit for KYC updation.",
+    "register": "detailed",
+    "given_facts": {
+      "deponent_name": "Radhika Shinde",
+      "deponent_age": 23,
+      "deponent_occupation": "civil contractor",
+      "city": "Nagpur",
+      "deponent_id_number": "EGSKC1097T",
+      "name_variant_a": "Radhika Shinde",
+      "name_variant_b": "Radhika Sawant"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 16,
+    "scenario_id": "married_name_property_records",
+    "scenario_summary": "Chennai homemaker appears under maiden and married names across property papers; affidavit confirms one and the same person for mutation entry.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Sunita Gokhale",
+      "deponent_age": 69,
+      "deponent_occupation": "school teacher",
+      "city": "Lucknow",
+      "deponent_id_number": "DMIWJ2231V",
+      "name_variant_a": "Sunita Gokhale",
+      "name_variant_b": "Sunita Agarwal"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 17,
+    "scenario_id": "lpg_connection_address_proof",
+    "scenario_summary": "Mumbai tenant lacks a utility bill in his own name; affidavit of current residence required for a new LPG gas connection.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Mahesh Phadke",
+      "deponent_age": 50,
+      "city": "Thane",
+      "deponent_address": "Flat No. 19, Gokul Residency, College Road, Aundh, Indore 45251"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "residing_since_year",
+        "placeholder": "[YEAR FROM WHICH DEPONENT RESIDES AT THE ADDRESS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 18,
+    "scenario_id": "voter_enrolment_address_proof",
+    "scenario_summary": "Family recently shifted to Thane; deponent swears an address affidavit to support voter ID enrolment at the new residence.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Vihaan Singh",
+      "deponent_parent_name": "Aditya Singh",
+      "deponent_age": 51,
+      "city": "Thane",
+      "deponent_address": "Flat No. 32, Matoshree Heights, Station Road, Andheri West, Nashik 42299"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "residing_since_year",
+        "placeholder": "[YEAR FROM WHICH DEPONENT RESIDES AT THE ADDRESS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 19,
+    "scenario_id": "jee_gap_year_admission",
+    "scenario_summary": "Nashik student took a year after HSC to prepare for engineering entrance examinations; college demands a gap-year affidavit at admission.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Arjun Pereira",
+      "deponent_age": 48,
+      "deponent_id_number": "PJGZZ3122S",
+      "gap_start_year": 2022
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      },
+      {
+        "name": "gap_reason",
+        "placeholder": "[REASON FOR THE GAP IN STUDIES]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 20,
+    "scenario_id": "pg_admission_family_illness_gap",
+    "scenario_summary": "Delhi graduate explains a two-year break before post-graduation caused by a parent's prolonged illness; university requires a sworn explanation.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Vihaan Salunkhe",
+      "deponent_parent_name": "Ramesh Salunkhe",
+      "deponent_age": 25,
+      "city": "Navi Mumbai",
+      "deponent_address": "Flat No. 3, Yashwant Smruti, Gandhi Chowk Road, Model Colony, Lucknow 22607",
+      "deponent_id_number": "RZCUA3447C",
+      "gap_start_year": 2023,
+      "gap_reason": "caring for an ailing family member"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 21,
+    "scenario_id": "duplicate_share_certificate",
+    "scenario_summary": "Mumbai investor misplaced original share certificates during house shifting; the company's registrar requires an affidavit before issuing duplicates.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Rohan Reddy",
+      "deponent_age": 47,
+      "deponent_id_number": "OMJZL1422M",
+      "lost_document_type": "original share certificate"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 22,
+    "scenario_id": "lost_ssc_marksheet",
+    "scenario_summary": "Chhatrapati Sambhajinagar candidate lost his SSC marksheet in transit; the divisional board requires an affidavit before issuing a duplicate.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Niranjan Chavan",
+      "deponent_age": 26,
+      "deponent_id_number": "QXGTI1597R",
+      "lost_document_type": "SSC marksheet"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 23,
+    "scenario_id": "lost_sale_deed_refinance",
+    "scenario_summary": "Bengaluru flat owner cannot trace the original sale deed; affidavit needed to obtain a certified copy and complete bank loan refinance.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Vaishali Ahmed",
+      "deponent_age": 53,
+      "city": "Navi Mumbai",
+      "deponent_address": "Flat No. 4, Prestige Court, S.V. Road, Andheri West, Mumbai 40043",
+      "deponent_id_number": "VBLLZ2077E",
+      "lost_document_type": "original registered sale deed"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 24,
+    "scenario_id": "scholarship_income_affidavit",
+    "scenario_summary": "Solapur farmer declares modest annual family income to support his daughter's state post-matric scholarship application.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Shraddha Bhosale",
+      "deponent_age": 63,
+      "city": "Hyderabad",
+      "annual_income": 226500
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 25,
+    "scenario_id": "ews_income_affidavit",
+    "scenario_summary": "Lucknow applicant declares gross annual family income for an EWS certificate; the tehsil office requires a sworn income affidavit.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Kiran Phadke",
+      "deponent_age": 30,
+      "city": "Navi Mumbai",
+      "deponent_address": "Flat No. 21, Sai Krupa CHS, Gandhi Chowk Road, Dadar, Mumbai 40089",
+      "annual_income": 426000
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 26,
+    "scenario_id": "passport_dob_affidavit",
+    "scenario_summary": "Kolhapur applicant's school records carry no date of birth entry; affidavit affirms his correct date of birth for passport issuance.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Ramesh Malhotra",
+      "deponent_age": 36,
+      "deponent_occupation": "graphic designer",
+      "city": "Jaipur",
+      "deponent_address": "Flat No. 6, Vrindavan Complex, Fergusson College Road, New Friends Colony, Pune 41157",
+      "date_of_birth": "1982-05-06"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 27,
+    "scenario_id": "pension_dob_correction",
+    "scenario_summary": "Retired Jalgaon teacher's service book records a clerical error in date of birth; affidavit states the correct date for pension processing.",
+    "register": "detailed",
+    "given_facts": {
+      "deponent_name": "Harshad Pereira",
+      "deponent_parent_name": "Ajay Pereira",
+      "deponent_age": 43,
+      "deponent_occupation": "chartered accountant",
+      "date_of_birth": "1989-10-29"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 28,
+    "scenario_id": "passport_aadhaar_name_mismatch",
+    "scenario_summary": "Pune software engineer's name is spelt differently in passport and Aadhaar; affidavit affirms both names denote one and the same person for passport reissue.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Vaishali Joshi",
+      "deponent_parent_name": "Harshad Joshi",
+      "deponent_age": 24,
+      "deponent_occupation": "garment trader",
+      "city": "Chennai",
+      "deponent_id_number": "QVEMS9787X",
+      "name_variant_a": "Vaishali Joshi",
+      "name_variant_b": "Vaishali Deshpande"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 29,
+    "scenario_id": "bank_kyc_initials_expansion",
+    "scenario_summary": "Nagpur account holder's PAN carries initials while bank records show the expanded name; bank seeks a one-and-the-same-person affidavit for KYC updation.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Rohan Mukherjee",
+      "deponent_age": 28,
+      "city": "Patna",
+      "deponent_address": "Flat No. 25, Shanti Niketan, Fergusson College Road, Shivaji Nagar, Delhi 11083",
+      "name_variant_a": "Rohan Mukherjee",
+      "name_variant_b": "Rohan Gaikwad"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 30,
+    "scenario_id": "married_name_property_records",
+    "scenario_summary": "Chennai homemaker appears under maiden and married names across property papers; affidavit confirms one and the same person for mutation entry.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Prashant Jain",
+      "deponent_age": 30,
+      "deponent_occupation": "school teacher",
+      "city": "Hyderabad",
+      "deponent_id_number": "LTLZI4410J",
+      "name_variant_a": "Prashant Jain",
+      "name_variant_b": "Prashant Malhotra"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 31,
+    "scenario_id": "lpg_connection_address_proof",
+    "scenario_summary": "Mumbai tenant lacks a utility bill in his own name; affidavit of current residence required for a new LPG gas connection.",
+    "register": "detailed",
+    "given_facts": {
+      "deponent_name": "Rohan Trivedi",
+      "deponent_parent_name": "Ramesh Trivedi",
+      "deponent_age": 69,
+      "deponent_occupation": "school teacher",
+      "city": "Bengaluru",
+      "deponent_address": "Flat No. 12, Green Valley Society, S.V. Road, New Friends Colony, Mumbai 40036",
+      "deponent_id_number": "KFQEH4491C",
+      "residing_since_year": 2012
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 32,
+    "scenario_id": "voter_enrolment_address_proof",
+    "scenario_summary": "Family recently shifted to Thane; deponent swears an address affidavit to support voter ID enrolment at the new residence.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Sunita Gaikwad",
+      "deponent_parent_name": "Sunil Gaikwad",
+      "deponent_age": 51,
+      "deponent_occupation": "electrician",
+      "deponent_id_number": "RZEOD7120N"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      },
+      {
+        "name": "residing_since_year",
+        "placeholder": "[YEAR FROM WHICH DEPONENT RESIDES AT THE ADDRESS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 33,
+    "scenario_id": "jee_gap_year_admission",
+    "scenario_summary": "Nashik student took a year after HSC to prepare for engineering entrance examinations; college demands a gap-year affidavit at admission.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Shrikant Jadhav",
+      "deponent_parent_name": "Mangesh Jadhav",
+      "deponent_age": 26,
+      "deponent_occupation": "garment trader",
+      "city": "Indore",
+      "gap_start_year": 2021,
+      "gap_reason": "preparation for competitive entrance examinations"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 34,
+    "scenario_id": "pg_admission_family_illness_gap",
+    "scenario_summary": "Delhi graduate explains a two-year break before post-graduation caused by a parent's prolonged illness; university requires a sworn explanation.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Omkar Kapoor",
+      "deponent_parent_name": "Imran Kapoor",
+      "deponent_age": 44,
+      "gap_start_year": 2023
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      },
+      {
+        "name": "gap_reason",
+        "placeholder": "[REASON FOR THE GAP IN STUDIES]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 35,
+    "scenario_id": "duplicate_share_certificate",
+    "scenario_summary": "Mumbai investor misplaced original share certificates during house shifting; the company's registrar requires an affidavit before issuing duplicates.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Aishwarya Gill",
+      "deponent_parent_name": "Mangesh Gill",
+      "deponent_age": 70,
+      "city": "Nagpur",
+      "deponent_address": "Flat No. 39, Silver Oak Towers, Station Road, Model Colony, Solapur 41336",
+      "deponent_id_number": "XMGQM7105H",
+      "lost_document_type": "original share certificate"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 36,
+    "scenario_id": "lost_ssc_marksheet",
+    "scenario_summary": "Chhatrapati Sambhajinagar candidate lost his SSC marksheet in transit; the divisional board requires an affidavit before issuing a duplicate.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Rohan Wagh",
+      "deponent_age": 48,
+      "deponent_id_number": "ATKAS1071V",
+      "lost_document_type": "SSC marksheet"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 37,
+    "scenario_id": "lost_sale_deed_refinance",
+    "scenario_summary": "Bengaluru flat owner cannot trace the original sale deed; affidavit needed to obtain a certified copy and complete bank loan refinance.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Nitin Shah",
+      "deponent_age": 60,
+      "city": "Mumbai",
+      "deponent_address": "Flat No. 16, Yashwant Smruti, Link Road, Aundh, Thane 40025",
+      "deponent_id_number": "OKNUV0629P",
+      "lost_document_type": "original registered sale deed"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 38,
+    "scenario_id": "scholarship_income_affidavit",
+    "scenario_summary": "Solapur farmer declares modest annual family income to support his daughter's state post-matric scholarship application.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Aishwarya Mukherjee",
+      "deponent_age": 30,
+      "deponent_occupation": "bank employee",
+      "city": "Thane",
+      "deponent_id_number": "WGAMP2905R",
+      "annual_income": 164000
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 39,
+    "scenario_id": "ews_income_affidavit",
+    "scenario_summary": "Lucknow applicant declares gross annual family income for an EWS certificate; the tehsil office requires a sworn income affidavit.",
+    "register": "detailed",
+    "given_facts": {
+      "deponent_name": "Anil Fernandes",
+      "deponent_parent_name": "Joseph Fernandes",
+      "deponent_age": 63,
+      "deponent_occupation": "transport operator",
+      "city": "Jaipur",
+      "deponent_address": "Flat No. 21, Sai Krupa CHS, S.V. Road, New Friends Colony, Delhi 11059",
+      "annual_income": 227500
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 40,
+    "scenario_id": "passport_dob_affidavit",
+    "scenario_summary": "Kolhapur applicant's school records carry no date of birth entry; affidavit affirms his correct date of birth for passport issuance.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Bhushan Deshmukh",
+      "deponent_age": 43,
+      "deponent_occupation": "civil contractor",
+      "city": "Hyderabad",
+      "deponent_address": "Flat No. 7, Sai Krupa CHS, Karve Road, Kothrud, Mumbai 40034",
+      "date_of_birth": "1978-11-07"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 41,
+    "scenario_id": "pension_dob_correction",
+    "scenario_summary": "Retired Jalgaon teacher's service book records a clerical error in date of birth; affidavit states the correct date for pension processing.",
+    "register": "detailed",
+    "given_facts": {
+      "deponent_name": "Anil Apte",
+      "deponent_parent_name": "Dattatray Apte",
+      "deponent_age": 55,
+      "city": "Nagpur",
+      "deponent_address": "Flat No. 29, Shree Ganesh Apartments, College Road, Sadashiv Peth, Chennai 60031",
+      "deponent_id_number": "LDKET0225T",
+      "date_of_birth": "1971-05-23"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 42,
+    "scenario_id": "passport_aadhaar_name_mismatch",
+    "scenario_summary": "Pune software engineer's name is spelt differently in passport and Aadhaar; affidavit affirms both names denote one and the same person for passport reissue.",
+    "register": "detailed",
+    "given_facts": {
+      "deponent_name": "Vikram Bhatt",
+      "deponent_parent_name": "Mahesh Bhatt",
+      "deponent_age": 25,
+      "deponent_occupation": "shop owner",
+      "city": "Vasai-Virar",
+      "deponent_address": "Flat No. 34, Vrindavan Complex, Station Road, Borivali East, Nagpur 44006",
+      "deponent_id_number": "HYQHI9595I",
+      "name_variant_a": "Vikram Bhatt",
+      "name_variant_b": "Vikram Iyer"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 43,
+    "scenario_id": "bank_kyc_initials_expansion",
+    "scenario_summary": "Nagpur account holder's PAN carries initials while bank records show the expanded name; bank seeks a one-and-the-same-person affidavit for KYC updation.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Sameer Gokhale",
+      "deponent_parent_name": "Kiran Gokhale",
+      "deponent_age": 66,
+      "city": "Nashik",
+      "deponent_address": "Flat No. 4, Vrindavan Complex, College Road, Sadashiv Peth, Jaipur 30229",
+      "name_variant_a": "Sameer Gokhale",
+      "name_variant_b": "Sameer Bhosale"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 44,
+    "scenario_id": "married_name_property_records",
+    "scenario_summary": "Chennai homemaker appears under maiden and married names across property papers; affidavit confirms one and the same person for mutation entry.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Ashwini Iyer",
+      "deponent_age": 58,
+      "city": "Solapur",
+      "deponent_address": "Flat No. 4, Prestige Court, Ring Road, Camp Area, Mumbai 40075",
+      "name_variant_a": "Ashwini Iyer",
+      "name_variant_b": "Ashwini Jain"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 45,
+    "scenario_id": "lpg_connection_address_proof",
+    "scenario_summary": "Mumbai tenant lacks a utility bill in his own name; affidavit of current residence required for a new LPG gas connection.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Rajesh Ghadge",
+      "deponent_age": 67,
+      "city": "Kalyan-Dombivli",
+      "deponent_address": "Flat No. 13, Matoshree Heights, Karve Road, Dadar, Nagpur 44019",
+      "deponent_id_number": "BQODB9079H",
+      "residing_since_year": 2023
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 46,
+    "scenario_id": "voter_enrolment_address_proof",
+    "scenario_summary": "Family recently shifted to Thane; deponent swears an address affidavit to support voter ID enrolment at the new residence.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Niranjan Salunkhe",
+      "deponent_parent_name": "Vikram Salunkhe",
+      "deponent_age": 21,
+      "deponent_occupation": "transport operator",
+      "city": "Ahmedabad",
+      "deponent_address": "Flat No. 34, Shanti Niketan, Ring Road, Andheri West, Nagpur 44059"
+    },
+    "withheld_fields": [
+      {
+        "name": "residing_since_year",
+        "placeholder": "[YEAR FROM WHICH DEPONENT RESIDES AT THE ADDRESS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 47,
+    "scenario_id": "jee_gap_year_admission",
+    "scenario_summary": "Nashik student took a year after HSC to prepare for engineering entrance examinations; college demands a gap-year affidavit at admission.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Smita Rao",
+      "deponent_age": 21,
+      "city": "Delhi",
+      "deponent_address": "Flat No. 27, Prestige Court, S.V. Road, Civil Lines, Bhopal 46241",
+      "gap_start_year": 2024
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "gap_reason",
+        "placeholder": "[REASON FOR THE GAP IN STUDIES]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 48,
+    "scenario_id": "pg_admission_family_illness_gap",
+    "scenario_summary": "Delhi graduate explains a two-year break before post-graduation caused by a parent's prolonged illness; university requires a sworn explanation.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Harshad Raut",
+      "deponent_parent_name": "Vijay Raut",
+      "deponent_age": 38,
+      "deponent_id_number": "KCDBE3740A",
+      "gap_start_year": 2021,
+      "gap_reason": "caring for an ailing family member"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 49,
+    "scenario_id": "duplicate_share_certificate",
+    "scenario_summary": "Mumbai investor misplaced original share certificates during house shifting; the company's registrar requires an affidavit before issuing duplicates.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Fatima Kale",
+      "deponent_parent_name": "Harshad Kale",
+      "deponent_age": 22,
+      "city": "Nashik",
+      "deponent_address": "Flat No. 16, Om Sai Plaza, College Road, Model Colony, Pune 41197",
+      "deponent_id_number": "OCWSV5701Y",
+      "lost_document_type": "original share certificate"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 50,
+    "scenario_id": "lost_ssc_marksheet",
+    "scenario_summary": "Chhatrapati Sambhajinagar candidate lost his SSC marksheet in transit; the divisional board requires an affidavit before issuing a duplicate.",
+    "register": "detailed",
+    "given_facts": {
+      "deponent_name": "Komal Apte",
+      "deponent_parent_name": "Anil Apte",
+      "deponent_age": 48,
+      "city": "Bhopal",
+      "deponent_address": "Flat No. 7, Silver Oak Towers, Market Yard Road, Model Colony, Pune 41103",
+      "lost_document_type": "SSC marksheet"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 51,
+    "scenario_id": "lost_sale_deed_refinance",
+    "scenario_summary": "Bengaluru flat owner cannot trace the original sale deed; affidavit needed to obtain a certified copy and complete bank loan refinance.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Vikram Jadhav",
+      "deponent_parent_name": "Suresh Jadhav",
+      "deponent_age": 68,
+      "lost_document_type": "original registered sale deed"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 52,
+    "scenario_id": "scholarship_income_affidavit",
+    "scenario_summary": "Solapur farmer declares modest annual family income to support his daughter's state post-matric scholarship application.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Vihaan Rao",
+      "deponent_age": 54,
+      "deponent_id_number": "ONOOV5267L",
+      "annual_income": 245000
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 53,
+    "scenario_id": "ews_income_affidavit",
+    "scenario_summary": "Lucknow applicant declares gross annual family income for an EWS certificate; the tehsil office requires a sworn income affidavit.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Ganesh Pawar",
+      "deponent_parent_name": "Tushar Pawar",
+      "deponent_age": 67,
+      "deponent_occupation": "doctor",
+      "city": "Bengaluru",
+      "deponent_address": "Flat No. 36, Shanti Niketan, Gandhi Chowk Road, Model Colony, Pune 41184",
+      "deponent_id_number": "WNXKK0395I",
+      "annual_income": 681000
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 54,
+    "scenario_id": "passport_dob_affidavit",
+    "scenario_summary": "Kolhapur applicant's school records carry no date of birth entry; affidavit affirms his correct date of birth for passport issuance.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Rekha Sheikh",
+      "deponent_parent_name": "Rajesh Sheikh",
+      "deponent_age": 66,
+      "city": "Mumbai",
+      "deponent_address": "Flat No. 38, Sai Krupa CHS, Market Yard Road, Dadar, Delhi 11029",
+      "deponent_id_number": "XDFWF7069N",
+      "date_of_birth": "1989-01-04"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 55,
+    "scenario_id": "pension_dob_correction",
+    "scenario_summary": "Retired Jalgaon teacher's service book records a clerical error in date of birth; affidavit states the correct date for pension processing.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Deepak Chopra",
+      "deponent_parent_name": "Mangesh Chopra",
+      "deponent_age": 31,
+      "city": "Navi Mumbai",
+      "deponent_address": "Flat No. 30, Sai Krupa CHS, Market Yard Road, Shivaji Nagar, Amravati 44481",
+      "deponent_id_number": "XNXOI6625A",
+      "date_of_birth": "1970-10-14"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 56,
+    "scenario_id": "passport_aadhaar_name_mismatch",
+    "scenario_summary": "Pune software engineer's name is spelt differently in passport and Aadhaar; affidavit affirms both names denote one and the same person for passport reissue.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Shraddha Jain",
+      "deponent_parent_name": "Deepak Jain",
+      "deponent_age": 25,
+      "deponent_id_number": "IIIDB8677U",
+      "name_variant_a": "Shraddha Jain",
+      "name_variant_b": "Shraddha Trivedi"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 57,
+    "scenario_id": "bank_kyc_initials_expansion",
+    "scenario_summary": "Nagpur account holder's PAN carries initials while bank records show the expanded name; bank seeks a one-and-the-same-person affidavit for KYC updation.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Shrikant Mhatre",
+      "deponent_parent_name": "Deepak Mhatre",
+      "deponent_age": 56,
+      "deponent_occupation": "school teacher",
+      "city": "Chhatrapati Sambhajinagar",
+      "deponent_id_number": "VAUPP3903Y",
+      "name_variant_a": "Shrikant Mhatre",
+      "name_variant_b": "Shrikant Kulkarni"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 58,
+    "scenario_id": "married_name_property_records",
+    "scenario_summary": "Chennai homemaker appears under maiden and married names across property papers; affidavit confirms one and the same person for mutation entry.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Radhika D'Souza",
+      "deponent_age": 66,
+      "deponent_id_number": "LPZKX3678G",
+      "name_variant_a": "Radhika D'Souza",
+      "name_variant_b": "Radhika Shinde"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 59,
+    "scenario_id": "lpg_connection_address_proof",
+    "scenario_summary": "Mumbai tenant lacks a utility bill in his own name; affidavit of current residence required for a new LPG gas connection.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Mangesh Mhatre",
+      "deponent_age": 62,
+      "deponent_occupation": "marketing manager"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      },
+      {
+        "name": "residing_since_year",
+        "placeholder": "[YEAR FROM WHICH DEPONENT RESIDES AT THE ADDRESS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 60,
+    "scenario_id": "voter_enrolment_address_proof",
+    "scenario_summary": "Family recently shifted to Thane; deponent swears an address affidavit to support voter ID enrolment at the new residence.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Gurpreet Joshi",
+      "deponent_age": 31,
+      "city": "Nashik",
+      "residing_since_year": 2013
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 61,
+    "scenario_id": "jee_gap_year_admission",
+    "scenario_summary": "Nashik student took a year after HSC to prepare for engineering entrance examinations; college demands a gap-year affidavit at admission.",
+    "register": "detailed",
+    "given_facts": {
+      "deponent_name": "Deepak Ghadge",
+      "deponent_age": 21,
+      "city": "Chennai",
+      "deponent_address": "Flat No. 10, Sai Krupa CHS, Gandhi Chowk Road, Aundh, Mumbai 40046",
+      "deponent_id_number": "JQLPD4963R",
+      "gap_start_year": 2018
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "gap_reason",
+        "placeholder": "[REASON FOR THE GAP IN STUDIES]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 62,
+    "scenario_id": "pg_admission_family_illness_gap",
+    "scenario_summary": "Delhi graduate explains a two-year break before post-graduation caused by a parent's prolonged illness; university requires a sworn explanation.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Gurpreet Kapoor",
+      "deponent_age": 43,
+      "deponent_occupation": "pharmacist",
+      "city": "Ahmedabad",
+      "gap_start_year": 2021
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      },
+      {
+        "name": "gap_reason",
+        "placeholder": "[REASON FOR THE GAP IN STUDIES]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 63,
+    "scenario_id": "duplicate_share_certificate",
+    "scenario_summary": "Mumbai investor misplaced original share certificates during house shifting; the company's registrar requires an affidavit before issuing duplicates.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Sandeep Shinde",
+      "deponent_age": 47,
+      "city": "Pune",
+      "deponent_id_number": "TGOYF9781F",
+      "lost_document_type": "original share certificate"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 64,
+    "scenario_id": "lost_ssc_marksheet",
+    "scenario_summary": "Chhatrapati Sambhajinagar candidate lost his SSC marksheet in transit; the divisional board requires an affidavit before issuing a duplicate.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Lakshmi Naik",
+      "deponent_age": 70,
+      "city": "Patna",
+      "deponent_id_number": "SJXTT3445E",
+      "lost_document_type": "SSC marksheet"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 65,
+    "scenario_id": "lost_sale_deed_refinance",
+    "scenario_summary": "Bengaluru flat owner cannot trace the original sale deed; affidavit needed to obtain a certified copy and complete bank loan refinance.",
+    "register": "detailed",
+    "given_facts": {
+      "deponent_name": "Archana Lokhande",
+      "deponent_parent_name": "Manoj Lokhande",
+      "deponent_age": 23,
+      "city": "Kolkata",
+      "lost_document_type": "original registered sale deed"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 66,
+    "scenario_id": "scholarship_income_affidavit",
+    "scenario_summary": "Solapur farmer declares modest annual family income to support his daughter's state post-matric scholarship application.",
+    "register": "casual",
+    "given_facts": {
+      "deponent_name": "Anita Das",
+      "deponent_age": 51,
+      "deponent_occupation": "tailor",
+      "annual_income": 224500
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 67,
+    "scenario_id": "ews_income_affidavit",
+    "scenario_summary": "Lucknow applicant declares gross annual family income for an EWS certificate; the tehsil office requires a sworn income affidavit.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Vikram Wagh",
+      "deponent_age": 58,
+      "city": "Nagpur",
+      "deponent_address": "Flat No. 14, Tulsi Vihar, Gandhi Chowk Road, Sector 9, Bhopal 46261",
+      "deponent_id_number": "WJRAY4441W",
+      "annual_income": 663500
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_parent_name",
+        "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+      },
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 68,
+    "scenario_id": "passport_dob_affidavit",
+    "scenario_summary": "Kolhapur applicant's school records carry no date of birth entry; affidavit affirms his correct date of birth for passport issuance.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Komal More",
+      "deponent_parent_name": "Harshad More",
+      "deponent_age": 32,
+      "city": "Mumbai",
+      "deponent_address": "Flat No. 18, Tulsi Vihar, Link Road, Aundh, Navi Mumbai 40075",
+      "date_of_birth": "1990-08-10"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "affidavit_general",
+    "index": 69,
+    "scenario_id": "pension_dob_correction",
+    "scenario_summary": "Retired Jalgaon teacher's service book records a clerical error in date of birth; affidavit states the correct date for pension processing.",
+    "register": "semi_formal",
+    "given_facts": {
+      "deponent_name": "Pooja Rao",
+      "deponent_parent_name": "Niranjan Rao",
+      "deponent_age": 55,
+      "date_of_birth": "1997-01-14"
+    },
+    "withheld_fields": [
+      {
+        "name": "deponent_occupation",
+        "placeholder": "[OCCUPATION OF DEPONENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "deponent_address",
+        "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+      }
+    ],
+    "nearest_supported": null
+  }
+]

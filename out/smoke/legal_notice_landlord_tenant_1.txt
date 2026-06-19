@@ -1,0 +1,62 @@
+[[[INSTRUCTION]]]
+Draft a legal notice from a landlord to a tenant demanding arrears and vacant possession. The landlord is Anil Apte and the tenant is Devendra Bhosale. The premises is Flat No. 6, Shanti Niketan, Fergusson College Road, Andheri West, Mumbai 40029. The monthly rent is ₹87,500. The tenancy commencement date is [DATE OF COMMENCEMENT OF TENANCY]. Rent arrears are for 5 months. Compliance window is 15 days. Dispatch mode: Email and Registered Post A.D. City: Chandigarh.
+[[[DOCUMENT]]]
+LEGAL NOTICE
+
+To,
+Devendra Bhosale,
+Flat No. 6, Shanti Niketan, Fergusson College Road, Andheri West, Mumbai 40029.
+
+Date: 12 June 2026
+
+SUBJECT: LEGAL NOTICE TO TENANT FOR RECOVERY OF RENT ARREARS AND DEMAND FOR VACANT POSSESSION OF PREMISES
+
+Sir/Madam,
+
+Under instructions from and on behalf of my client, Anil Apte (hereinafter referred to as "Landlord"), I issue this Legal Notice upon you, Devendra Bhosale, the tenant and occupant of the premises described below, as under:
+
+1. RELATIONSHIP OF LANDLORD AND TENANT
+
+1.1 My client, Anil Apte, is the lawful owner and landlord of the residential premises described as Flat No. 6, Shanti Niketan, Fergusson College Road, Andheri West, Mumbai 40029 (hereinafter referred to as the "Premises"). You, Devendra Bhosale, are the tenant in occupation of the said Premises under a tenancy arrangement with my client.
+
+1.2 The tenancy of the Premises commenced on [DATE OF COMMENCEMENT OF TENANCY] at a monthly rent of ₹87,500 (Rupees Eighty-Seven Thousand Five Hundred only) per month, payable on or before the 5th day of each calendar month.
+
+2. RENT IN ARREARS
+
+2.1 That you, the Tenant, have failed and neglected to pay the monthly rent of ₹87,500 per month for a period of 5 (five) consecutive months. The total rent arrears outstanding and payable by you to my client as of the date of this notice amount to ₹4,37,500 (Rupees Four Lakhs Thirty-Seven Thousand Five Hundred only), computed at 5 months × ₹87,500 per month.
+
+2.2 Despite repeated reminders and requests by my client to you to clear the said outstanding dues, you have persistently failed to pay the same.
+
+3. DEMAND FOR PAYMENT OF ARREARS
+
+3.1 You are hereby called upon and demand is hereby made upon you to pay to my client the total outstanding rent arrears of ₹4,37,500 (Rupees Four Lakhs Thirty-Seven Thousand Five Hundred only) together with interest and costs, within 15 (fifteen) days from the date of receipt of this notice.
+
+4. DEMAND FOR VACANT POSSESSION
+
+4.1 My client requires the said Premises for the occupation and use of his son's family. You are accordingly called upon to vacate and hand over vacant and peaceful possession of the Premises — Flat No. 6, Shanti Niketan, Fergusson College Road, Andheri West, Mumbai 40029 — to my client within 15 (fifteen) days from the date of receipt of this notice.
+
+4.2 You are required to vacate along with all your belongings and sub-occupants (if any) and hand over all keys and access to my client in the aforesaid period.
+
+5. CONSEQUENCES OF NON-COMPLIANCE
+
+5.1 Please take notice that if you fail to comply with the demands of this notice within 15 (fifteen) days from the date of receipt, my client shall be constrained to initiate appropriate legal proceedings against you before the court of competent jurisdiction, including an eviction suit and a suit for recovery of arrears and damages. All costs, charges, and consequences of such proceedings shall be entirely at your risk and account.
+
+6. RESERVATION OF RIGHTS
+
+6.1 This notice is issued without prejudice to all other rights and remedies available to my client, all of which are expressly reserved.
+
+Please govern yourself accordingly.
+
+Mode of dispatch: Email and Registered Post A.D.
+
+Yours faithfully,
+
+_____________________________
+Advocate for Anil Apte
+Address: [VERIFY: Advocate's enrolled address to be inserted]
+Enrolment No.: [VERIFY: Advocate's bar council enrolment number]
+Date: 12 June 2026
+Place: Chandigarh
+
+This is an AI-generated draft for review by the parties and is not legal advice.
+[[[END]]]

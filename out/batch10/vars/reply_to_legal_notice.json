@@ -1,0 +1,291 @@
+[
+  {
+    "doc_type": "reply_to_legal_notice",
+    "given_facts": {
+      "addressee_address": "Flat No. 26, Matoshree Heights, Gandhi Chowk Road, New Friends Colony, Indore 45283",
+      "advocate_name": "Sunil Kulkarni",
+      "city": "Mumbai",
+      "dispatch_mode": "Registered Post A.D.",
+      "notice_date": "2026-05-21",
+      "notice_reference_number": "NWWDO3814C",
+      "original_sender_name": "Pallavi Naik",
+      "reply_date": "2026-05-28",
+      "sender_address": "Flat No. 35, Shanti Niketan, Ring Road, New Friends Colony, Thane 40009",
+      "sender_name": "Sachin Kadam"
+    },
+    "index": 0,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "money_demand_already_repaid",
+    "scenario_summary": "Pune businessman replies that the friendly loan demanded was repaid in full by bank transfer months ago; bank statement annexed; demands withdrawal of the notice.",
+    "withheld_fields": []
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "given_facts": {
+      "city": "Pune",
+      "dispatch_mode": "Speed Post",
+      "disputed_amount": 1050500,
+      "original_advocate_name": "Sunita Kapoor",
+      "original_sender_name": "Mahesh Pawar",
+      "reply_date": "2026-05-12",
+      "sender_address": "Flat No. 14, Matoshree Heights, Market Yard Road, Borivali East, Pune 41133",
+      "sender_name": "Sanjay Rao"
+    },
+    "index": 1,
+    "nearest_supported": null,
+    "register": "casual",
+    "scenario_id": "money_demand_defective_goods",
+    "scenario_summary": "Nashik trader withheld invoice payment because supplied machine components were defective and rejected on inspection; counter-claims testing and storage costs.",
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ]
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "given_facts": {
+      "city": "Thane",
+      "dispatch_mode": "Email and Registered Post A.D.",
+      "notice_reference_number": "DJQAU9011L",
+      "original_advocate_name": "Aishwarya Iyer",
+      "original_sender_name": "Gurpreet Mehta",
+      "sender_address": "Flat No. 22, Tulsi Vihar, M.G. Road, Dadar, Amravati 44499",
+      "sender_name": "Amol Agarwal"
+    },
+    "index": 2,
+    "nearest_supported": null,
+    "register": "casual",
+    "scenario_id": "money_demand_time_barred",
+    "scenario_summary": "Mumbai resident denies a stale 2019 hand-loan demand as time-barred and never acknowledged; no liability admitted.",
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ]
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "given_facts": {
+      "city": "Delhi",
+      "dispatch_mode": "Speed Post",
+      "disputed_amount": 1018500,
+      "notice_date": "2026-05-16",
+      "original_advocate_name": "Aarav Salunkhe",
+      "original_sender_name": "Vihaan Deshmukh",
+      "sender_name": "Ishita Phadke"
+    },
+    "index": 3,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "eviction_invalid_notice_period",
+    "scenario_summary": "Thane tenant contests a quit notice that gives less than the notice period stipulated in the registered leave and licence agreement.",
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ]
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "given_facts": {
+      "advocate_name": "Aishwarya Deshmukh",
+      "city": "Kolhapur",
+      "notice_reference_number": "MPALO7266W",
+      "original_sender_name": "Vijay Das",
+      "sender_address": "Flat No. 19, Vrindavan Complex, Ring Road, Borivali East, Pune 41111",
+      "sender_name": "Radhika Raut"
+    },
+    "index": 4,
+    "nearest_supported": null,
+    "register": "semi_formal",
+    "scenario_id": "eviction_rent_paid_receipts",
+    "scenario_summary": "Nagpur tenant denies alleged rent default, relying on rent receipts and UPI records; says the notice is a pretext to extract higher rent.",
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      },
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ]
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "given_facts": {
+      "city": "Navi Mumbai",
+      "disputed_amount": 1809500,
+      "notice_date": "2026-05-16",
+      "notice_reference_number": "LKPUF4613L",
+      "original_advocate_name": "Rajesh Shah",
+      "original_sender_name": "Nitin Deshmukh",
+      "sender_address": "Flat No. 26, Shree Ganesh Apartments, Station Road, Camp Area, Mumbai 40068",
+      "sender_name": "Sachin Mane"
+    },
+    "index": 5,
+    "nearest_supported": null,
+    "register": "semi_formal",
+    "scenario_id": "eviction_bona_fide_need_disputed",
+    "scenario_summary": "Delhi tenant disputes the landlord's claimed bona fide requirement, pointing to two vacant flats the landlord owns in the same building.",
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ]
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "given_facts": {
+      "advocate_name": "Meera Naik",
+      "city": "Bengaluru",
+      "dispatch_mode": "Courier",
+      "notice_date": "2026-05-24",
+      "original_sender_name": "Swapnil Chopra",
+      "reply_date": "2026-05-27",
+      "sender_name": "Aarav Naik"
+    },
+    "index": 6,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "cheque_security_cheque_misused",
+    "scenario_summary": "Aurangabad distributor says a blank security cheque was filled in and presented despite the account being fully settled; denies any legally enforceable debt.",
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ]
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "given_facts": {
+      "addressee_address": "Flat No. 4, Prestige Court, S.V. Road, Sector 9, Pune 41134",
+      "city": "Chennai",
+      "dispatch_mode": "Speed Post",
+      "disputed_amount": 196000,
+      "original_advocate_name": "Nitin Phadke",
+      "original_sender_name": "Milind Malhotra",
+      "reply_date": "2026-06-13",
+      "sender_address": "Flat No. 20, Om Sai Plaza, College Road, New Friends Colony, Mumbai 40037",
+      "sender_name": "Sachin Sheikh"
+    },
+    "index": 7,
+    "nearest_supported": null,
+    "register": "semi_formal",
+    "scenario_id": "cheque_goods_never_delivered",
+    "scenario_summary": "Mumbai buyer stopped payment because the consignment was never delivered; denies liability for the dishonoured cheque and demands withdrawal of the notice.",
+    "withheld_fields": [
+      {
+        "name": "notice_date",
+        "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+      }
+    ]
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "given_facts": {
+      "advocate_name": "Deepa Joshi",
+      "city": "Navi Mumbai",
+      "dispatch_mode": "Courier",
+      "disputed_amount": 182000,
+      "notice_date": "2026-05-23",
+      "original_advocate_name": "Ashwini Kapoor",
+      "original_sender_name": "Dattatray Wagh",
+      "sender_name": "Kiran Bhagat"
+    },
+    "index": 8,
+    "nearest_supported": null,
+    "register": "casual",
+    "scenario_id": "cheque_debt_discharged_in_cash",
+    "scenario_summary": "Kolhapur borrower replies that the loan behind the dishonoured cheque was discharged in cash against a signed receipt before presentation.",
+    "withheld_fields": [
+      {
+        "name": "reply_date",
+        "placeholder": "[DATE OF THIS REPLY]"
+      },
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "addressee_address",
+        "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+      }
+    ]
+  },
+  {
+    "doc_type": "reply_to_legal_notice",
+    "given_facts": {
+      "addressee_address": "Flat No. 24, Gokul Residency, College Road, Dadar, Navi Mumbai 40030",
+      "city": "Thane",
+      "disputed_amount": 62500,
+      "notice_date": "2026-06-03",
+      "notice_reference_number": "OXUXT7024N",
+      "original_sender_name": "Ashwini Sharma",
+      "reply_date": "2026-06-12",
+      "sender_name": "Arjun Gaikwad"
+    },
+    "index": 9,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "consumer_service_records_furnished",
+    "scenario_summary": "Pune appliance dealer answers a consumer notice with service-visit records showing two free warranty repairs and an offered replacement the complainant refused.",
+    "withheld_fields": [
+      {
+        "name": "sender_address",
+        "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+      },
+      {
+        "name": "dispatch_mode",
+        "placeholder": "[MODE OF DISPATCH]"
+      }
+    ]
+  }
+]

@@ -1,0 +1,2529 @@
+[
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 0,
+    "scenario_id": "arrears_eviction_mumbai_flat",
+    "scenario_summary": "Tenant of a 1BHK flat in Andheri, Mumbai has not paid rent for months; landlord demands arrears and vacant possession.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Imran Mukherjee",
+      "tenant_name": "Bhushan Sharma",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 20, Green Valley Society, Station Road, Sector 9, Nashik 42238",
+      "monthly_rent": 60000,
+      "tenancy_start_date": "2024-07-04",
+      "arrears_months": 9,
+      "notice_period_days": 15
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 1,
+    "scenario_id": "personal_use_pune_flat",
+    "scenario_summary": "Pune landlord requires the flat for his son's family after marriage; notice to quit month-to-month tenancy.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Anil Apte",
+      "tenant_name": "Devendra Bhosale",
+      "city": "Chandigarh",
+      "premises_address": "Flat No. 6, Shanti Niketan, Fergusson College Road, Andheri West, Mumbai 40029",
+      "monthly_rent": 87500,
+      "arrears_months": 5,
+      "notice_period_days": 15,
+      "mode_of_dispatch": "Email and Registered Post A.D."
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 2,
+    "scenario_id": "holdover_after_licence_expiry_thane",
+    "scenario_summary": "Leave-and-licence for a Thane flat expired; licensee continues in occupation without renewal; landlord demands handover of possession.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Anil Das",
+      "tenant_name": "Karthik Kapoor",
+      "city": "Ahmedabad",
+      "premises_address": "Flat No. 35, Yashwant Smruti, Fergusson College Road, Model Colony, Kolhapur 41610",
+      "monthly_rent": 33500,
+      "security_deposit": 67000,
+      "notice_period_days": 30,
+      "mode_of_dispatch": "Email and Registered Post A.D."
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 3,
+    "scenario_id": "illegal_subletting_nagpur_shop",
+    "scenario_summary": "Nagpur shop tenant sublet part of the premises to a third party without the landlord's written consent; termination notice.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Fatima Patil",
+      "tenant_name": "Mary Menon",
+      "city": "Nashik",
+      "premises_address": "Flat No. 31, Om Sai Plaza, Station Road, Aundh, Mumbai 40001",
+      "monthly_rent": 27500,
+      "security_deposit": 165000,
+      "arrears_months": 7,
+      "mode_of_dispatch": "Registered Post A.D."
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 4,
+    "scenario_id": "damage_alterations_nashik",
+    "scenario_summary": "Nashik tenant carried out unauthorised structural alterations damaging the premises; landlord demands restoration and possession.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Vaishali Patil",
+      "tenant_name": "Omkar Naidu",
+      "city": "Chennai",
+      "premises_address": "Flat No. 11, Tulsi Vihar, Gandhi Chowk Road, Andheri West, Nashik 42224",
+      "monthly_rent": 57500,
+      "security_deposit": 345000,
+      "tenancy_start_date": "2023-10-24",
+      "notice_period_days": 15,
+      "mode_of_dispatch": "Registered Post A.D.",
+      "advocate_name": "Aishwarya Deshmukh"
+    },
+    "withheld_fields": [
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 5,
+    "scenario_id": "persistent_late_payment_bengaluru",
+    "scenario_summary": "Bengaluru apartment tenant habitually pays rent weeks late despite repeated reminders; landlord terminates the tenancy.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Rutuja Deshpande",
+      "tenant_name": "Tejal Bhagat",
+      "city": "Navi Mumbai",
+      "premises_address": "Flat No. 9, Shree Ganesh Apartments, Link Road, Civil Lines, Thane 40011",
+      "monthly_rent": 71000,
+      "security_deposit": 142000,
+      "arrears_months": 12,
+      "notice_period_days": 15,
+      "mode_of_dispatch": "Email and Registered Post A.D.",
+      "advocate_name": "Komal Shinde"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 6,
+    "scenario_id": "commercial_arrears_delhi_shop",
+    "scenario_summary": "Delhi market shop tenant is in arrears of rent and maintenance charges; landlord demands payment and possession.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Farhan Jain",
+      "tenant_name": "Pravin D'Souza",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 23, Shree Ganesh Apartments, Karve Road, Camp Area, Pune 41148",
+      "monthly_rent": 89500,
+      "tenancy_start_date": "2021-08-15",
+      "arrears_months": 3,
+      "mode_of_dispatch": "Speed Post",
+      "advocate_name": "Manoj Verma"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 7,
+    "scenario_id": "deposit_not_refunded_mumbai",
+    "scenario_summary": "Tenant vacated a Mumbai flat and handed over keys; landlord has not refunded the security deposit despite reminders.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Manoj Kaur",
+      "tenant_name": "Sachin Sheikh",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 23, Shree Ganesh Apartments, Ring Road, Dadar, Amravati 44484",
+      "monthly_rent": 252500,
+      "vacation_date": "2024-10-08",
+      "notice_period_days": 30
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 8,
+    "scenario_id": "unjustified_deposit_deductions_thane",
+    "scenario_summary": "Thane landlord returned only part of the deposit, deducting arbitrary painting and repair charges; tenant demands the balance.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Swapnil Menon",
+      "tenant_name": "Rajesh Joshi",
+      "city": "Visakhapatnam",
+      "premises_address": "Flat No. 13, Yashwant Smruti, Karve Road, Aundh, Pune 41146",
+      "monthly_rent": 42000,
+      "security_deposit": 294000,
+      "vacation_date": "2026-04-27"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 9,
+    "scenario_id": "water_electricity_cut_pune",
+    "scenario_summary": "Pune landlord disconnected water and electricity to pressure the tenant to vacate; tenant demands immediate restoration.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Pravin Singh",
+      "tenant_name": "Kavita Khan",
+      "city": "Jaipur",
+      "premises_address": "Flat No. 8, Prestige Court, Market Yard Road, Sadashiv Peth, Kolkata 70099",
+      "monthly_rent": 60500,
+      "tenancy_start_date": "2023-03-01",
+      "notice_period_days": 30,
+      "mode_of_dispatch": "Courier"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 10,
+    "scenario_id": "rent_receipts_refused_kolhapur",
+    "scenario_summary": "Kolhapur landlord accepts cash rent but refuses to issue rent receipts; tenant demands receipts for all payments made.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Swati Joshi",
+      "tenant_name": "Meera Mane",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 23, Gokul Residency, Gandhi Chowk Road, Sadashiv Peth, Mumbai 40070",
+      "monthly_rent": 21500,
+      "security_deposit": 107500,
+      "tenancy_start_date": "2022-04-30",
+      "notice_period_days": 15,
+      "advocate_name": "Niranjan Shinde"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 11,
+    "scenario_id": "illegal_lockout_hyderabad",
+    "scenario_summary": "Hyderabad landlord changed the locks while the tenant was travelling; tenant demands restoration of possession and belongings.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Smita Gupta",
+      "tenant_name": "Savita Kale",
+      "city": "Delhi",
+      "premises_address": "Flat No. 35, Sai Krupa CHS, Karve Road, Dadar, Mumbai 40017",
+      "monthly_rent": 104000,
+      "advocate_name": "Mangesh Fernandes"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 12,
+    "scenario_id": "harassment_for_vacation_delhi",
+    "scenario_summary": "Delhi landlord and brokers repeatedly visit and threaten the tenant's family to force vacation; tenant demands they desist.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Priya Kaur",
+      "tenant_name": "Nikita Singh",
+      "city": "Kolkata",
+      "premises_address": "Flat No. 23, Silver Oak Towers, Station Road, Shivaji Nagar, Mumbai 40072",
+      "monthly_rent": 117500,
+      "security_deposit": 235000,
+      "tenancy_start_date": "2023-01-31",
+      "notice_period_days": 15,
+      "advocate_name": "Kavita Jadhav"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 13,
+    "scenario_id": "unauthorised_entry_bengaluru",
+    "scenario_summary": "Bengaluru landlord enters the flat without notice and shows it to prospective buyers; tenant demands cessation of interference.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Manisha Deshpande",
+      "tenant_name": "Kiran Kulkarni",
+      "city": "Pune",
+      "premises_address": "Flat No. 14, Shanti Niketan, Fergusson College Road, Dadar, Vasai-Virar 40162",
+      "monthly_rent": 90500,
+      "tenancy_start_date": "2023-08-27"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 14,
+    "scenario_id": "arrears_eviction_mumbai_flat",
+    "scenario_summary": "Tenant of a 1BHK flat in Andheri, Mumbai has not paid rent for months; landlord demands arrears and vacant possession.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Yogesh Patil",
+      "tenant_name": "Aditya Nair",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 28, Shree Ganesh Apartments, M.G. Road, Dadar, Solapur 41353",
+      "monthly_rent": 23000,
+      "arrears_months": 3,
+      "mode_of_dispatch": "Courier",
+      "advocate_name": "Joseph Patil"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 15,
+    "scenario_id": "personal_use_pune_flat",
+    "scenario_summary": "Pune landlord requires the flat for his son's family after marriage; notice to quit month-to-month tenancy.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Anita Shah",
+      "tenant_name": "Milind Deshpande",
+      "city": "Kolhapur",
+      "premises_address": "Flat No. 5, Green Valley Society, M.G. Road, Shivaji Nagar, Patna 80077",
+      "monthly_rent": 25000,
+      "security_deposit": 100000,
+      "tenancy_start_date": "2025-04-15",
+      "notice_period_days": 15,
+      "mode_of_dispatch": "Registered Post A.D.",
+      "advocate_name": "Vikram Naidu"
+    },
+    "withheld_fields": [
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 16,
+    "scenario_id": "holdover_after_licence_expiry_thane",
+    "scenario_summary": "Leave-and-licence for a Thane flat expired; licensee continues in occupation without renewal; landlord demands handover of possession.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Suresh Kapoor",
+      "tenant_name": "Shraddha Pawar",
+      "city": "Nagpur",
+      "premises_address": "Flat No. 9, Om Sai Plaza, Ring Road, Sadashiv Peth, Bengaluru 56073",
+      "monthly_rent": 27000,
+      "tenancy_start_date": "2024-04-23",
+      "mode_of_dispatch": "Registered Post A.D."
+    },
+    "withheld_fields": [
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 17,
+    "scenario_id": "illegal_subletting_nagpur_shop",
+    "scenario_summary": "Nagpur shop tenant sublet part of the premises to a third party without the landlord's written consent; termination notice.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Meera Kadam",
+      "tenant_name": "Meera Bhatt",
+      "city": "Surat",
+      "premises_address": "Flat No. 28, Matoshree Heights, College Road, Civil Lines, Surat 39583",
+      "monthly_rent": 46500,
+      "security_deposit": 279000,
+      "arrears_months": 7,
+      "advocate_name": "Gurpreet Menon"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 18,
+    "scenario_id": "damage_alterations_nashik",
+    "scenario_summary": "Nashik tenant carried out unauthorised structural alterations damaging the premises; landlord demands restoration and possession.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Harshad Shah",
+      "tenant_name": "Prakash Sharma",
+      "city": "Thane",
+      "premises_address": "Flat No. 32, Matoshree Heights, Station Road, Andheri West, Nashik 42299",
+      "monthly_rent": 45500,
+      "tenancy_start_date": "2022-01-09",
+      "arrears_months": 2,
+      "notice_period_days": 30,
+      "mode_of_dispatch": "Registered Post A.D.",
+      "advocate_name": "Omkar More"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 19,
+    "scenario_id": "persistent_late_payment_bengaluru",
+    "scenario_summary": "Bengaluru apartment tenant habitually pays rent weeks late despite repeated reminders; landlord terminates the tenancy.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Manisha Gupta",
+      "tenant_name": "Arjun Deshpande",
+      "city": "Chennai",
+      "premises_address": "Flat No. 38, Vrindavan Complex, Link Road, Borivali East, Chennai 60041",
+      "monthly_rent": 26500,
+      "security_deposit": 53000,
+      "mode_of_dispatch": "Courier",
+      "advocate_name": "Sanjay Menon"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 20,
+    "scenario_id": "commercial_arrears_delhi_shop",
+    "scenario_summary": "Delhi market shop tenant is in arrears of rent and maintenance charges; landlord demands payment and possession.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Ganesh Trivedi",
+      "tenant_name": "Anil Sawant",
+      "city": "Navi Mumbai",
+      "premises_address": "Flat No. 3, Yashwant Smruti, Gandhi Chowk Road, Model Colony, Lucknow 22607",
+      "monthly_rent": 109500,
+      "security_deposit": 328500,
+      "tenancy_start_date": "2025-01-23",
+      "arrears_months": 2,
+      "advocate_name": "Kiran Sawant"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 21,
+    "scenario_id": "deposit_not_refunded_mumbai",
+    "scenario_summary": "Tenant vacated a Mumbai flat and handed over keys; landlord has not refunded the security deposit despite reminders.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Anita Mhatre",
+      "tenant_name": "Sameer D'Souza",
+      "city": "Navi Mumbai",
+      "premises_address": "Flat No. 12, Prestige Court, Market Yard Road, Sadashiv Peth, Navi Mumbai 40078",
+      "monthly_rent": 490000,
+      "mode_of_dispatch": "Courier"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "vacation_date",
+        "placeholder": "[DATE TENANT VACATED THE PREMISES]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 22,
+    "scenario_id": "unjustified_deposit_deductions_thane",
+    "scenario_summary": "Thane landlord returned only part of the deposit, deducting arbitrary painting and repair charges; tenant demands the balance.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Pallavi Khan",
+      "tenant_name": "Kiran Nair",
+      "city": "Jaipur",
+      "premises_address": "Flat No. 36, Sai Krupa CHS, Karve Road, Andheri West, Mumbai 40024",
+      "monthly_rent": 228000,
+      "security_deposit": 684000,
+      "mode_of_dispatch": "Courier",
+      "advocate_name": "Deepa Thorat"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "vacation_date",
+        "placeholder": "[DATE TENANT VACATED THE PREMISES]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 23,
+    "scenario_id": "water_electricity_cut_pune",
+    "scenario_summary": "Pune landlord disconnected water and electricity to pressure the tenant to vacate; tenant demands immediate restoration.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Pallavi Naik",
+      "tenant_name": "Harshad More",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 19, Shree Ganesh Apartments, Karve Road, Sector 9, Mumbai 40005",
+      "monthly_rent": 105500,
+      "notice_period_days": 30,
+      "mode_of_dispatch": "Speed Post",
+      "advocate_name": "Sachin Gupta"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 24,
+    "scenario_id": "rent_receipts_refused_kolhapur",
+    "scenario_summary": "Kolhapur landlord accepts cash rent but refuses to issue rent receipts; tenant demands receipts for all payments made.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Omkar Reddy",
+      "tenant_name": "Ishita Sharma",
+      "city": "Navi Mumbai",
+      "premises_address": "Flat No. 8, Gokul Residency, Ring Road, Sector 9, Indore 45214",
+      "monthly_rent": 20000,
+      "security_deposit": 80000,
+      "tenancy_start_date": "2024-08-08",
+      "advocate_name": "Nitin Wagh"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 25,
+    "scenario_id": "illegal_lockout_hyderabad",
+    "scenario_summary": "Hyderabad landlord changed the locks while the tenant was travelling; tenant demands restoration of possession and belongings.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Sunita Bhosale",
+      "tenant_name": "Omkar Raut",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 38, Silver Oak Towers, S.V. Road, Sector 9, Thane 40044",
+      "monthly_rent": 40500,
+      "security_deposit": 364500,
+      "notice_period_days": 15
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 26,
+    "scenario_id": "harassment_for_vacation_delhi",
+    "scenario_summary": "Delhi landlord and brokers repeatedly visit and threaten the tenant's family to force vacation; tenant demands they desist.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Swapnil Naidu",
+      "tenant_name": "Gurpreet Malhotra",
+      "city": "Visakhapatnam",
+      "premises_address": "Flat No. 6, Vrindavan Complex, Fergusson College Road, New Friends Colony, Nagpur 44057",
+      "monthly_rent": 100500,
+      "notice_period_days": 30,
+      "advocate_name": "Bhushan Shinde"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 27,
+    "scenario_id": "unauthorised_entry_bengaluru",
+    "scenario_summary": "Bengaluru landlord enters the flat without notice and shows it to prospective buyers; tenant demands cessation of interference.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Anil Malhotra",
+      "tenant_name": "Farhan Bhagat",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 16, Shanti Niketan, Market Yard Road, New Friends Colony, Mumbai 40020",
+      "monthly_rent": 23500
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 28,
+    "scenario_id": "arrears_eviction_mumbai_flat",
+    "scenario_summary": "Tenant of a 1BHK flat in Andheri, Mumbai has not paid rent for months; landlord demands arrears and vacant possession.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Ashwini Joshi",
+      "tenant_name": "Kavita D'Souza",
+      "city": "Kolhapur",
+      "premises_address": "Flat No. 25, Green Valley Society, Gandhi Chowk Road, Model Colony, Delhi 11093",
+      "monthly_rent": 67500,
+      "tenancy_start_date": "2022-02-05",
+      "advocate_name": "Lakshmi Chavan"
+    },
+    "withheld_fields": [
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 29,
+    "scenario_id": "personal_use_pune_flat",
+    "scenario_summary": "Pune landlord requires the flat for his son's family after marriage; notice to quit month-to-month tenancy.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Deepak Mhatre",
+      "tenant_name": "Yogesh Mhatre",
+      "city": "Kolkata",
+      "premises_address": "Flat No. 12, Yashwant Smruti, Market Yard Road, Aundh, Nagpur 44015",
+      "monthly_rent": 39500,
+      "security_deposit": 237000,
+      "tenancy_start_date": "2022-09-26",
+      "arrears_months": 11,
+      "notice_period_days": 15,
+      "advocate_name": "Manisha Kulkarni"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 30,
+    "scenario_id": "holdover_after_licence_expiry_thane",
+    "scenario_summary": "Leave-and-licence for a Thane flat expired; licensee continues in occupation without renewal; landlord demands handover of possession.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Ramesh Ahmed",
+      "tenant_name": "Madhuri Naik",
+      "city": "Kalyan-Dombivli",
+      "premises_address": "Flat No. 17, Silver Oak Towers, S.V. Road, Dadar, Jaipur 30247",
+      "monthly_rent": 14500,
+      "tenancy_start_date": "2022-11-24",
+      "mode_of_dispatch": "Courier"
+    },
+    "withheld_fields": [
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 31,
+    "scenario_id": "illegal_subletting_nagpur_shop",
+    "scenario_summary": "Nagpur shop tenant sublet part of the premises to a third party without the landlord's written consent; termination notice.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Milind Deshmukh",
+      "tenant_name": "Sunil Kaur",
+      "city": "Vadodara",
+      "premises_address": "Flat No. 3, Tulsi Vihar, M.G. Road, Aundh, Hyderabad 50085",
+      "monthly_rent": 22000,
+      "arrears_months": 11,
+      "mode_of_dispatch": "Courier",
+      "advocate_name": "Mangesh Kaur"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 32,
+    "scenario_id": "damage_alterations_nashik",
+    "scenario_summary": "Nashik tenant carried out unauthorised structural alterations damaging the premises; landlord demands restoration and possession.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Amol Mehta",
+      "tenant_name": "Prakash Chopra",
+      "city": "Pune",
+      "premises_address": "Flat No. 10, Shanti Niketan, Station Road, Civil Lines, Nashik 42255",
+      "monthly_rent": 146500,
+      "mode_of_dispatch": "Registered Post A.D."
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 33,
+    "scenario_id": "persistent_late_payment_bengaluru",
+    "scenario_summary": "Bengaluru apartment tenant habitually pays rent weeks late despite repeated reminders; landlord terminates the tenancy.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Vijay Surve",
+      "tenant_name": "Nitin Shah",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 40, Yashwant Smruti, S.V. Road, Kothrud, Indore 45265",
+      "monthly_rent": 35500,
+      "tenancy_start_date": "2025-03-06",
+      "notice_period_days": 15
+    },
+    "withheld_fields": [
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 34,
+    "scenario_id": "commercial_arrears_delhi_shop",
+    "scenario_summary": "Delhi market shop tenant is in arrears of rent and maintenance charges; landlord demands payment and possession.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Omkar Kapoor",
+      "tenant_name": "Rekha Pawar",
+      "city": "Kolhapur",
+      "premises_address": "Flat No. 12, Gokul Residency, Link Road, Model Colony, Nashik 42263",
+      "monthly_rent": 128500,
+      "security_deposit": 1156500,
+      "notice_period_days": 30
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 35,
+    "scenario_id": "deposit_not_refunded_mumbai",
+    "scenario_summary": "Tenant vacated a Mumbai flat and handed over keys; landlord has not refunded the security deposit despite reminders.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Deepa Kulkarni",
+      "tenant_name": "Aishwarya Fernandes",
+      "city": "Nagpur",
+      "premises_address": "Flat No. 39, Silver Oak Towers, Station Road, Model Colony, Solapur 41336",
+      "monthly_rent": 435500,
+      "security_deposit": 3484000,
+      "tenancy_start_date": "2022-08-05",
+      "vacation_date": "2023-06-12"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 36,
+    "scenario_id": "unjustified_deposit_deductions_thane",
+    "scenario_summary": "Thane landlord returned only part of the deposit, deducting arbitrary painting and repair charges; tenant demands the balance.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Rekha Thorat",
+      "tenant_name": "Aditya Agarwal",
+      "city": "Chandigarh",
+      "premises_address": "Flat No. 27, Silver Oak Towers, Market Yard Road, Shivaji Nagar, Kolkata 70087",
+      "monthly_rent": 66000,
+      "mode_of_dispatch": "Email and Registered Post A.D.",
+      "advocate_name": "Vijay Rao"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "vacation_date",
+        "placeholder": "[DATE TENANT VACATED THE PREMISES]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 37,
+    "scenario_id": "water_electricity_cut_pune",
+    "scenario_summary": "Pune landlord disconnected water and electricity to pressure the tenant to vacate; tenant demands immediate restoration.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Rekha Bhosale",
+      "tenant_name": "Prakash Thorat",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 14, Matoshree Heights, Link Road, Camp Area, Navi Mumbai 40041",
+      "monthly_rent": 115500,
+      "security_deposit": 231000,
+      "notice_period_days": 30,
+      "mode_of_dispatch": "Registered Post A.D.",
+      "advocate_name": "Vijay Naik"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 38,
+    "scenario_id": "rent_receipts_refused_kolhapur",
+    "scenario_summary": "Kolhapur landlord accepts cash rent but refuses to issue rent receipts; tenant demands receipts for all payments made.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Milind Ranade",
+      "tenant_name": "Joseph Agarwal",
+      "city": "Bengaluru",
+      "premises_address": "Flat No. 25, Shanti Niketan, Fergusson College Road, Sadashiv Peth, Mumbai 40051",
+      "monthly_rent": 18500,
+      "tenancy_start_date": "2022-07-17",
+      "mode_of_dispatch": "Courier"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 39,
+    "scenario_id": "illegal_lockout_hyderabad",
+    "scenario_summary": "Hyderabad landlord changed the locks while the tenant was travelling; tenant demands restoration of possession and belongings.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Anil Chavan",
+      "tenant_name": "Pooja Chopra",
+      "city": "Amravati",
+      "premises_address": "Flat No. 6, Silver Oak Towers, Market Yard Road, Kothrud, Pune 41115",
+      "monthly_rent": 51500,
+      "tenancy_start_date": "2025-01-30",
+      "notice_period_days": 15,
+      "advocate_name": "Tejal Joshi"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 40,
+    "scenario_id": "harassment_for_vacation_delhi",
+    "scenario_summary": "Delhi landlord and brokers repeatedly visit and threaten the tenant's family to force vacation; tenant demands they desist.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Aarti Chopra",
+      "tenant_name": "Sachin Khan",
+      "city": "Delhi",
+      "premises_address": "Flat No. 7, Sai Krupa CHS, Karve Road, Kothrud, Indore 45234",
+      "monthly_rent": 80000,
+      "notice_period_days": 15,
+      "advocate_name": "Rohan Kulkarni"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 41,
+    "scenario_id": "unauthorised_entry_bengaluru",
+    "scenario_summary": "Bengaluru landlord enters the flat without notice and shows it to prospective buyers; tenant demands cessation of interference.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Kavita Salunkhe",
+      "tenant_name": "Pooja Mehta",
+      "city": "Nagpur",
+      "premises_address": "Flat No. 29, Shree Ganesh Apartments, College Road, Sadashiv Peth, Chennai 60031",
+      "monthly_rent": 100000,
+      "security_deposit": 300000,
+      "tenancy_start_date": "2023-04-09",
+      "notice_period_days": 15,
+      "mode_of_dispatch": "Registered Post A.D.",
+      "advocate_name": "Ishita Pawar"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 42,
+    "scenario_id": "arrears_eviction_mumbai_flat",
+    "scenario_summary": "Tenant of a 1BHK flat in Andheri, Mumbai has not paid rent for months; landlord demands arrears and vacant possession.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Sachin Sawant",
+      "tenant_name": "Amol Reddy",
+      "city": "Visakhapatnam",
+      "premises_address": "Flat No. 34, Vrindavan Complex, Station Road, Borivali East, Nashik 42206",
+      "monthly_rent": 30000,
+      "tenancy_start_date": "2024-05-18",
+      "arrears_months": 5,
+      "mode_of_dispatch": "Courier",
+      "advocate_name": "Mary Ranade"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 43,
+    "scenario_id": "personal_use_pune_flat",
+    "scenario_summary": "Pune landlord requires the flat for his son's family after marriage; notice to quit month-to-month tenancy.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Archana Das",
+      "tenant_name": "Rutuja Verma",
+      "city": "Jaipur",
+      "premises_address": "Flat No. 26, Vrindavan Complex, Ring Road, Borivali East, Mumbai 40065",
+      "monthly_rent": 48000,
+      "security_deposit": 96000,
+      "arrears_months": 4,
+      "notice_period_days": 15,
+      "mode_of_dispatch": "Email and Registered Post A.D."
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 44,
+    "scenario_id": "holdover_after_licence_expiry_thane",
+    "scenario_summary": "Leave-and-licence for a Thane flat expired; licensee continues in occupation without renewal; landlord demands handover of possession.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Aishwarya Ranade",
+      "tenant_name": "Deepak Kulkarni",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 34, Shanti Niketan, Gandhi Chowk Road, Aundh, Nashik 42271",
+      "monthly_rent": 44500,
+      "security_deposit": 178000,
+      "tenancy_start_date": "2022-07-04",
+      "arrears_months": 6,
+      "notice_period_days": 15
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 45,
+    "scenario_id": "illegal_subletting_nagpur_shop",
+    "scenario_summary": "Nagpur shop tenant sublet part of the premises to a third party without the landlord's written consent; termination notice.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Manisha Khan",
+      "tenant_name": "Rekha Mehta",
+      "city": "Nagpur",
+      "premises_address": "Flat No. 12, Yashwant Smruti, S.V. Road, Aundh, Ahmedabad 38005",
+      "monthly_rent": 44000,
+      "security_deposit": 396000,
+      "arrears_months": 3
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 46,
+    "scenario_id": "damage_alterations_nashik",
+    "scenario_summary": "Nashik tenant carried out unauthorised structural alterations damaging the premises; landlord demands restoration and possession.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Pallavi Ahmed",
+      "tenant_name": "Vijay Deshmukh",
+      "city": "Navi Mumbai",
+      "premises_address": "Flat No. 33, Prestige Court, Market Yard Road, Sadashiv Peth, Nagpur 44005",
+      "monthly_rent": 127000,
+      "tenancy_start_date": "2024-04-25",
+      "arrears_months": 10,
+      "notice_period_days": 15,
+      "mode_of_dispatch": "Speed Post",
+      "advocate_name": "Abhijit Phadke"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 47,
+    "scenario_id": "persistent_late_payment_bengaluru",
+    "scenario_summary": "Bengaluru apartment tenant habitually pays rent weeks late despite repeated reminders; landlord terminates the tenancy.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Aarav Rao",
+      "tenant_name": "Priya Kaur",
+      "city": "Nagpur",
+      "premises_address": "Flat No. 26, Yashwant Smruti, Ring Road, Civil Lines, Delhi 11012",
+      "monthly_rent": 75000,
+      "arrears_months": 10,
+      "mode_of_dispatch": "Registered Post A.D.",
+      "advocate_name": "Pallavi Thorat"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 48,
+    "scenario_id": "commercial_arrears_delhi_shop",
+    "scenario_summary": "Delhi market shop tenant is in arrears of rent and maintenance charges; landlord demands payment and possession.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Shraddha Kulkarni",
+      "tenant_name": "Devendra Salunkhe",
+      "city": "Thane",
+      "premises_address": "Flat No. 8, Shree Ganesh Apartments, Fergusson College Road, Sector 9, Kolkata 70030",
+      "monthly_rent": 40500,
+      "security_deposit": 283500,
+      "advocate_name": "Sandeep Pawar"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 49,
+    "scenario_id": "deposit_not_refunded_mumbai",
+    "scenario_summary": "Tenant vacated a Mumbai flat and handed over keys; landlord has not refunded the security deposit despite reminders.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Rajesh Mehta",
+      "tenant_name": "Pallavi D'Souza",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 3, Tulsi Vihar, Link Road, Sector 9, Mumbai 40053",
+      "monthly_rent": 360500,
+      "security_deposit": 3244500,
+      "tenancy_start_date": "2021-10-26",
+      "vacation_date": "2022-09-22"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 50,
+    "scenario_id": "unjustified_deposit_deductions_thane",
+    "scenario_summary": "Thane landlord returned only part of the deposit, deducting arbitrary painting and repair charges; tenant demands the balance.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Dattatray Ghadge",
+      "tenant_name": "Yogesh Pawar",
+      "city": "Pune",
+      "premises_address": "Flat No. 2, Vrindavan Complex, Station Road, Kothrud, Nashik 42269",
+      "monthly_rent": 165500,
+      "security_deposit": 496500,
+      "tenancy_start_date": "2025-03-15",
+      "vacation_date": "2025-11-03",
+      "notice_period_days": 15,
+      "advocate_name": "Vikram Patil"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 51,
+    "scenario_id": "water_electricity_cut_pune",
+    "scenario_summary": "Pune landlord disconnected water and electricity to pressure the tenant to vacate; tenant demands immediate restoration.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Vijay Bhagat",
+      "tenant_name": "Aditya Khan",
+      "city": "Jaipur",
+      "premises_address": "Flat No. 4, Om Sai Plaza, Market Yard Road, Borivali East, Ahmedabad 38004",
+      "monthly_rent": 49500
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 52,
+    "scenario_id": "rent_receipts_refused_kolhapur",
+    "scenario_summary": "Kolhapur landlord accepts cash rent but refuses to issue rent receipts; tenant demands receipts for all payments made.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Tejal Lokhande",
+      "tenant_name": "Smita Phadke",
+      "city": "Nagpur",
+      "premises_address": "Flat No. 23, Tulsi Vihar, Market Yard Road, Sector 9, Bengaluru 56091",
+      "monthly_rent": 19500,
+      "mode_of_dispatch": "Courier",
+      "advocate_name": "Milind Verma"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 53,
+    "scenario_id": "illegal_lockout_hyderabad",
+    "scenario_summary": "Hyderabad landlord changed the locks while the tenant was travelling; tenant demands restoration of possession and belongings.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Anil Jain",
+      "tenant_name": "Manisha Joshi",
+      "city": "Nashik",
+      "premises_address": "Flat No. 11, Tulsi Vihar, S.V. Road, Model Colony, Bhopal 46287",
+      "monthly_rent": 152500,
+      "notice_period_days": 30,
+      "mode_of_dispatch": "Email and Registered Post A.D."
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 54,
+    "scenario_id": "harassment_for_vacation_delhi",
+    "scenario_summary": "Delhi landlord and brokers repeatedly visit and threaten the tenant's family to force vacation; tenant demands they desist.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Yogesh Rao",
+      "tenant_name": "Shrikant Das",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 38, Sai Krupa CHS, Market Yard Road, Dadar, Delhi 11029",
+      "monthly_rent": 199500,
+      "security_deposit": 598500,
+      "notice_period_days": 15,
+      "mode_of_dispatch": "Speed Post"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 55,
+    "scenario_id": "unauthorised_entry_bengaluru",
+    "scenario_summary": "Bengaluru landlord enters the flat without notice and shows it to prospective buyers; tenant demands cessation of interference.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Deepak Chopra",
+      "tenant_name": "Manisha Gill",
+      "city": "Solapur",
+      "premises_address": "Flat No. 39, Matoshree Heights, Market Yard Road, Kothrud, Navi Mumbai 40059",
+      "monthly_rent": 97500,
+      "security_deposit": 780000,
+      "tenancy_start_date": "2023-12-09",
+      "notice_period_days": 30,
+      "mode_of_dispatch": "Email and Registered Post A.D."
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 56,
+    "scenario_id": "arrears_eviction_mumbai_flat",
+    "scenario_summary": "Tenant of a 1BHK flat in Andheri, Mumbai has not paid rent for months; landlord demands arrears and vacant possession.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Aarti Apte",
+      "tenant_name": "Abhijit Kapoor",
+      "city": "Chennai",
+      "premises_address": "Flat No. 17, Sai Krupa CHS, M.G. Road, Sadashiv Peth, Pune 41182",
+      "monthly_rent": 45500,
+      "security_deposit": 409500
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 57,
+    "scenario_id": "personal_use_pune_flat",
+    "scenario_summary": "Pune landlord requires the flat for his son's family after marriage; notice to quit month-to-month tenancy.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Abhijit Shah",
+      "tenant_name": "Sandeep Singh",
+      "city": "Bhopal",
+      "premises_address": "Flat No. 32, Shanti Niketan, Link Road, Civil Lines, Mumbai 40082",
+      "monthly_rent": 172500,
+      "tenancy_start_date": "2021-09-25",
+      "mode_of_dispatch": "Registered Post A.D.",
+      "advocate_name": "Abhijit More"
+    },
+    "withheld_fields": [
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 58,
+    "scenario_id": "holdover_after_licence_expiry_thane",
+    "scenario_summary": "Leave-and-licence for a Thane flat expired; licensee continues in occupation without renewal; landlord demands handover of possession.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Shraddha Pereira",
+      "tenant_name": "Farhan Khan",
+      "city": "Ahmedabad",
+      "premises_address": "Flat No. 16, Om Sai Plaza, Ring Road, Kothrud, Pune 41150",
+      "monthly_rent": 21500,
+      "security_deposit": 43000,
+      "mode_of_dispatch": "Speed Post"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 59,
+    "scenario_id": "illegal_subletting_nagpur_shop",
+    "scenario_summary": "Nagpur shop tenant sublet part of the premises to a third party without the landlord's written consent; termination notice.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Pooja Rao",
+      "tenant_name": "Tushar Bhatt",
+      "city": "Pune",
+      "premises_address": "Flat No. 21, Prestige Court, Market Yard Road, Sector 9, Bhopal 46227",
+      "monthly_rent": 10500,
+      "mode_of_dispatch": "Registered Post A.D.",
+      "advocate_name": "Rajesh Sharma"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 60,
+    "scenario_id": "damage_alterations_nashik",
+    "scenario_summary": "Nashik tenant carried out unauthorised structural alterations damaging the premises; landlord demands restoration and possession.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Vijay Sharma",
+      "tenant_name": "Anil Chavan",
+      "city": "Kalyan-Dombivli",
+      "premises_address": "Flat No. 36, Prestige Court, S.V. Road, Dadar, Indore 45243",
+      "monthly_rent": 141500,
+      "security_deposit": 566000,
+      "tenancy_start_date": "2024-03-03",
+      "notice_period_days": 30
+    },
+    "withheld_fields": [
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 61,
+    "scenario_id": "persistent_late_payment_bengaluru",
+    "scenario_summary": "Bengaluru apartment tenant habitually pays rent weeks late despite repeated reminders; landlord terminates the tenancy.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Vihaan Pereira",
+      "tenant_name": "Rajesh Kale",
+      "city": "Jaipur",
+      "premises_address": "Flat No. 10, Sai Krupa CHS, Gandhi Chowk Road, Aundh, Ahmedabad 38046",
+      "monthly_rent": 56000,
+      "security_deposit": 560000,
+      "tenancy_start_date": "2023-06-11",
+      "arrears_months": 9,
+      "mode_of_dispatch": "Registered Post A.D.",
+      "advocate_name": "Arjun Mehta"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 62,
+    "scenario_id": "commercial_arrears_delhi_shop",
+    "scenario_summary": "Delhi market shop tenant is in arrears of rent and maintenance charges; landlord demands payment and possession.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Omkar Deshpande",
+      "tenant_name": "Pooja Thorat",
+      "city": "Pune",
+      "premises_address": "Flat No. 23, Matoshree Heights, Market Yard Road, Model Colony, Mumbai 40060",
+      "monthly_rent": 118500,
+      "tenancy_start_date": "2024-08-12",
+      "notice_period_days": 15,
+      "mode_of_dispatch": "Speed Post"
+    },
+    "withheld_fields": [
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 63,
+    "scenario_id": "deposit_not_refunded_mumbai",
+    "scenario_summary": "Tenant vacated a Mumbai flat and handed over keys; landlord has not refunded the security deposit despite reminders.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Manisha Menon",
+      "tenant_name": "Yogesh Phadke",
+      "city": "Ahmedabad",
+      "premises_address": "Flat No. 12, Shree Ganesh Apartments, Link Road, New Friends Colony, Hyderabad 50091",
+      "monthly_rent": 330500,
+      "security_deposit": 1652500,
+      "tenancy_start_date": "2022-06-26",
+      "mode_of_dispatch": "Registered Post A.D.",
+      "advocate_name": "Vikram Patil"
+    },
+    "withheld_fields": [
+      {
+        "name": "vacation_date",
+        "placeholder": "[DATE TENANT VACATED THE PREMISES]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 64,
+    "scenario_id": "unjustified_deposit_deductions_thane",
+    "scenario_summary": "Thane landlord returned only part of the deposit, deducting arbitrary painting and repair charges; tenant demands the balance.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Mary Mane",
+      "tenant_name": "Ananya Menon",
+      "city": "Delhi",
+      "premises_address": "Flat No. 10, Vrindavan Complex, Gandhi Chowk Road, Dadar, Vadodara 39090",
+      "monthly_rent": 170500,
+      "security_deposit": 1364000,
+      "tenancy_start_date": "2021-12-05"
+    },
+    "withheld_fields": [
+      {
+        "name": "vacation_date",
+        "placeholder": "[DATE TENANT VACATED THE PREMISES]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 65,
+    "scenario_id": "water_electricity_cut_pune",
+    "scenario_summary": "Pune landlord disconnected water and electricity to pressure the tenant to vacate; tenant demands immediate restoration.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Dattatray Deshmukh",
+      "tenant_name": "Savita Kaur",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 21, Green Valley Society, Gandhi Chowk Road, Andheri West, Nashik 42243",
+      "monthly_rent": 58000,
+      "security_deposit": 232000,
+      "tenancy_start_date": "2021-10-18",
+      "advocate_name": "Savita Kapoor"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 66,
+    "scenario_id": "rent_receipts_refused_kolhapur",
+    "scenario_summary": "Kolhapur landlord accepts cash rent but refuses to issue rent receipts; tenant demands receipts for all payments made.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Shraddha Kadam",
+      "tenant_name": "Vihaan Nair",
+      "city": "Solapur",
+      "premises_address": "Flat No. 34, Tulsi Vihar, Karve Road, Civil Lines, Lucknow 22655",
+      "monthly_rent": 21500
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 67,
+    "scenario_id": "illegal_lockout_hyderabad",
+    "scenario_summary": "Hyderabad landlord changed the locks while the tenant was travelling; tenant demands restoration of possession and belongings.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Vikram Wagh",
+      "tenant_name": "Gurpreet Ghadge",
+      "city": "Pune",
+      "premises_address": "Flat No. 37, Om Sai Plaza, Market Yard Road, New Friends Colony, Mumbai 40038",
+      "monthly_rent": 152000,
+      "security_deposit": 304000,
+      "tenancy_start_date": "2022-12-24",
+      "notice_period_days": 30,
+      "mode_of_dispatch": "Speed Post"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 68,
+    "scenario_id": "harassment_for_vacation_delhi",
+    "scenario_summary": "Delhi landlord and brokers repeatedly visit and threaten the tenant's family to force vacation; tenant demands they desist.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Vaishali Mane",
+      "tenant_name": "Pallavi Jain",
+      "city": "Pune",
+      "premises_address": "Flat No. 31, Silver Oak Towers, Link Road, Aundh, Mumbai 40075",
+      "monthly_rent": 148500,
+      "security_deposit": 742500,
+      "tenancy_start_date": "2023-08-16",
+      "notice_period_days": 15
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 69,
+    "scenario_id": "unauthorised_entry_bengaluru",
+    "scenario_summary": "Bengaluru landlord enters the flat without notice and shows it to prospective buyers; tenant demands cessation of interference.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Sandeep Bhosale",
+      "tenant_name": "Tejal Mehta",
+      "city": "Bengaluru",
+      "premises_address": "Flat No. 23, Prestige Court, Karve Road, Shivaji Nagar, Mumbai 40075",
+      "monthly_rent": 63500,
+      "security_deposit": 571500,
+      "advocate_name": "Nitin Shinde"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 70,
+    "scenario_id": "arrears_eviction_mumbai_flat",
+    "scenario_summary": "Tenant of a 1BHK flat in Andheri, Mumbai has not paid rent for months; landlord demands arrears and vacant possession.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Manoj Naidu",
+      "tenant_name": "Omkar Thorat",
+      "city": "Thane",
+      "premises_address": "Flat No. 2, Silver Oak Towers, Karve Road, Dadar, Pune 41159",
+      "monthly_rent": 73500,
+      "security_deposit": 294000,
+      "advocate_name": "Tushar Gupta"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 71,
+    "scenario_id": "personal_use_pune_flat",
+    "scenario_summary": "Pune landlord requires the flat for his son's family after marriage; notice to quit month-to-month tenancy.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Deepa Nair",
+      "tenant_name": "Shrikant Sawant",
+      "city": "Kochi",
+      "premises_address": "Flat No. 6, Gokul Residency, Fergusson College Road, Andheri West, Mumbai 40045",
+      "monthly_rent": 193500,
+      "security_deposit": 1741500,
+      "notice_period_days": 30,
+      "advocate_name": "Pooja Deshmukh"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 72,
+    "scenario_id": "holdover_after_licence_expiry_thane",
+    "scenario_summary": "Leave-and-licence for a Thane flat expired; licensee continues in occupation without renewal; landlord demands handover of possession.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Ajay Joshi",
+      "tenant_name": "Shobha Gaikwad",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 12, Om Sai Plaza, Ring Road, Sector 9, Pune 41146",
+      "monthly_rent": 18500,
+      "arrears_months": 2,
+      "mode_of_dispatch": "Courier",
+      "advocate_name": "Shrikant Fernandes"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 73,
+    "scenario_id": "illegal_subletting_nagpur_shop",
+    "scenario_summary": "Nagpur shop tenant sublet part of the premises to a third party without the landlord's written consent; termination notice.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Karthik Patil",
+      "tenant_name": "Deepa Das",
+      "city": "Bengaluru",
+      "premises_address": "Flat No. 25, Om Sai Plaza, Ring Road, Dadar, Mumbai 40073",
+      "monthly_rent": 33500,
+      "mode_of_dispatch": "Email and Registered Post A.D."
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 74,
+    "scenario_id": "damage_alterations_nashik",
+    "scenario_summary": "Nashik tenant carried out unauthorised structural alterations damaging the premises; landlord demands restoration and possession.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Sandeep Singh",
+      "tenant_name": "Priya Jain",
+      "city": "Patna",
+      "premises_address": "Flat No. 3, Yashwant Smruti, Station Road, Sadashiv Peth, Hyderabad 50016",
+      "monthly_rent": 78500,
+      "notice_period_days": 15,
+      "mode_of_dispatch": "Speed Post",
+      "advocate_name": "Manisha Pawar"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 75,
+    "scenario_id": "persistent_late_payment_bengaluru",
+    "scenario_summary": "Bengaluru apartment tenant habitually pays rent weeks late despite repeated reminders; landlord terminates the tenancy.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Radhika Khan",
+      "tenant_name": "Tejal Mane",
+      "city": "Pune",
+      "premises_address": "Flat No. 29, Vrindavan Complex, College Road, Shivaji Nagar, Mumbai 40036",
+      "monthly_rent": 51500,
+      "mode_of_dispatch": "Courier",
+      "advocate_name": "Aditya Malhotra"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 76,
+    "scenario_id": "commercial_arrears_delhi_shop",
+    "scenario_summary": "Delhi market shop tenant is in arrears of rent and maintenance charges; landlord demands payment and possession.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Radhika Sheikh",
+      "tenant_name": "Yogesh D'Souza",
+      "city": "Chennai",
+      "premises_address": "Flat No. 26, Shree Ganesh Apartments, Karve Road, Dadar, Thane 40051",
+      "monthly_rent": 142000,
+      "security_deposit": 1278000,
+      "notice_period_days": 30
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 77,
+    "scenario_id": "deposit_not_refunded_mumbai",
+    "scenario_summary": "Tenant vacated a Mumbai flat and handed over keys; landlord has not refunded the security deposit despite reminders.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Sunita Gupta",
+      "tenant_name": "Kiran Malhotra",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 24, Matoshree Heights, Karve Road, Kothrud, Amravati 44441",
+      "monthly_rent": 188500,
+      "tenancy_start_date": "2021-09-10",
+      "vacation_date": "2022-03-17",
+      "advocate_name": "Rajesh Reddy"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 78,
+    "scenario_id": "unjustified_deposit_deductions_thane",
+    "scenario_summary": "Thane landlord returned only part of the deposit, deducting arbitrary painting and repair charges; tenant demands the balance.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Mrunal Raut",
+      "tenant_name": "Yogesh Shah",
+      "city": "Delhi",
+      "premises_address": "Flat No. 2, Sai Krupa CHS, Karve Road, New Friends Colony, Kochi 68242",
+      "monthly_rent": 335500,
+      "advocate_name": "Pooja Deshpande"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "vacation_date",
+        "placeholder": "[DATE TENANT VACATED THE PREMISES]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 79,
+    "scenario_id": "water_electricity_cut_pune",
+    "scenario_summary": "Pune landlord disconnected water and electricity to pressure the tenant to vacate; tenant demands immediate restoration.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Ishita Gaikwad",
+      "tenant_name": "Sandeep Thorat",
+      "city": "Delhi",
+      "premises_address": "Flat No. 2, Tulsi Vihar, M.G. Road, New Friends Colony, Ahmedabad 38051",
+      "monthly_rent": 161000,
+      "tenancy_start_date": "2024-04-29",
+      "mode_of_dispatch": "Email and Registered Post A.D.",
+      "advocate_name": "Rutuja Kapoor"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 80,
+    "scenario_id": "rent_receipts_refused_kolhapur",
+    "scenario_summary": "Kolhapur landlord accepts cash rent but refuses to issue rent receipts; tenant demands receipts for all payments made.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Anil Bhatt",
+      "tenant_name": "Suresh Das",
+      "city": "Thane",
+      "premises_address": "Flat No. 17, Vrindavan Complex, M.G. Road, Borivali East, Thane 40028",
+      "monthly_rent": 7000,
+      "notice_period_days": 15
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 81,
+    "scenario_id": "illegal_lockout_hyderabad",
+    "scenario_summary": "Hyderabad landlord changed the locks while the tenant was travelling; tenant demands restoration of possession and belongings.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Meera Apte",
+      "tenant_name": "Lakshmi Apte",
+      "city": "Thane",
+      "premises_address": "Flat No. 18, Vrindavan Complex, Market Yard Road, Sadashiv Peth, Nagpur 44010",
+      "monthly_rent": 181500,
+      "security_deposit": 1270500,
+      "tenancy_start_date": "2023-11-14",
+      "notice_period_days": 30,
+      "mode_of_dispatch": "Speed Post",
+      "advocate_name": "Mangesh Wagh"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 82,
+    "scenario_id": "harassment_for_vacation_delhi",
+    "scenario_summary": "Delhi landlord and brokers repeatedly visit and threaten the tenant's family to force vacation; tenant demands they desist.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Ashwini Phadke",
+      "tenant_name": "Rekha Shinde",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 34, Yashwant Smruti, College Road, Aundh, Navi Mumbai 40031",
+      "monthly_rent": 144500,
+      "tenancy_start_date": "2022-10-15",
+      "advocate_name": "Sunil Verma"
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 83,
+    "scenario_id": "unauthorised_entry_bengaluru",
+    "scenario_summary": "Bengaluru landlord enters the flat without notice and shows it to prospective buyers; tenant demands cessation of interference.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Mangesh Bhagat",
+      "tenant_name": "Tushar Bhatt",
+      "city": "Ahmedabad",
+      "premises_address": "Flat No. 14, Vrindavan Complex, Karve Road, Kothrud, Ahmedabad 38072",
+      "monthly_rent": 95000
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 84,
+    "scenario_id": "arrears_eviction_mumbai_flat",
+    "scenario_summary": "Tenant of a 1BHK flat in Andheri, Mumbai has not paid rent for months; landlord demands arrears and vacant possession.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Joseph Salunkhe",
+      "tenant_name": "Mrunal Singh",
+      "city": "Indore",
+      "premises_address": "Flat No. 5, Green Valley Society, Karve Road, Civil Lines, Bengaluru 56043",
+      "monthly_rent": 36500
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 85,
+    "scenario_id": "personal_use_pune_flat",
+    "scenario_summary": "Pune landlord requires the flat for his son's family after marriage; notice to quit month-to-month tenancy.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Dattatray Shah",
+      "tenant_name": "Smita More",
+      "city": "Ahmedabad",
+      "premises_address": "Flat No. 28, Shree Ganesh Apartments, Link Road, Andheri West, Kochi 68229",
+      "monthly_rent": 33500,
+      "arrears_months": 7
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 86,
+    "scenario_id": "holdover_after_licence_expiry_thane",
+    "scenario_summary": "Leave-and-licence for a Thane flat expired; licensee continues in occupation without renewal; landlord demands handover of possession.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Sanjay Jain",
+      "tenant_name": "Vikram D'Souza",
+      "city": "Kochi",
+      "premises_address": "Flat No. 7, Silver Oak Towers, Station Road, Camp Area, Pune 41133",
+      "monthly_rent": 28500,
+      "tenancy_start_date": "2022-05-30"
+    },
+    "withheld_fields": [
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 87,
+    "scenario_id": "illegal_subletting_nagpur_shop",
+    "scenario_summary": "Nagpur shop tenant sublet part of the premises to a third party without the landlord's written consent; termination notice.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Anil Pawar",
+      "tenant_name": "Shraddha Joshi",
+      "city": "Hyderabad",
+      "premises_address": "Flat No. 2, Vrindavan Complex, Gandhi Chowk Road, New Friends Colony, Pune 41136",
+      "monthly_rent": 65000,
+      "security_deposit": 195000,
+      "tenancy_start_date": "2022-09-28",
+      "arrears_months": 6
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 88,
+    "scenario_id": "damage_alterations_nashik",
+    "scenario_summary": "Nashik tenant carried out unauthorised structural alterations damaging the premises; landlord demands restoration and possession.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Shraddha Wagh",
+      "tenant_name": "Ishita Khan",
+      "city": "Kochi",
+      "premises_address": "Flat No. 2, Silver Oak Towers, College Road, Kothrud, Pune 41109",
+      "monthly_rent": 176500,
+      "security_deposit": 706000,
+      "tenancy_start_date": "2022-08-26",
+      "arrears_months": 2,
+      "notice_period_days": 30
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 89,
+    "scenario_id": "persistent_late_payment_bengaluru",
+    "scenario_summary": "Bengaluru apartment tenant habitually pays rent weeks late despite repeated reminders; landlord terminates the tenancy.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Prashant Apte",
+      "tenant_name": "Gurpreet Sharma",
+      "city": "Ahmedabad",
+      "premises_address": "Flat No. 25, Matoshree Heights, Gandhi Chowk Road, Borivali East, Navi Mumbai 40002",
+      "monthly_rent": 73500,
+      "security_deposit": 588000
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 90,
+    "scenario_id": "commercial_arrears_delhi_shop",
+    "scenario_summary": "Delhi market shop tenant is in arrears of rent and maintenance charges; landlord demands payment and possession.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Sayali Ranade",
+      "tenant_name": "Pallavi Ahmed",
+      "city": "Chhatrapati Sambhajinagar",
+      "premises_address": "Flat No. 30, Shanti Niketan, Gandhi Chowk Road, Camp Area, Nashik 42231",
+      "monthly_rent": 84500,
+      "tenancy_start_date": "2023-10-29",
+      "arrears_months": 8,
+      "mode_of_dispatch": "Registered Post A.D."
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 91,
+    "scenario_id": "deposit_not_refunded_mumbai",
+    "scenario_summary": "Tenant vacated a Mumbai flat and handed over keys; landlord has not refunded the security deposit despite reminders.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Rajesh Kaur",
+      "tenant_name": "Komal Kulkarni",
+      "city": "Pune",
+      "premises_address": "Flat No. 30, Prestige Court, Karve Road, Kothrud, Kolkata 70090",
+      "monthly_rent": 455000,
+      "security_deposit": 3640000,
+      "vacation_date": "2025-06-13",
+      "mode_of_dispatch": "Registered Post A.D."
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 92,
+    "scenario_id": "unjustified_deposit_deductions_thane",
+    "scenario_summary": "Thane landlord returned only part of the deposit, deducting arbitrary painting and repair charges; tenant demands the balance.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Tejal Salunkhe",
+      "tenant_name": "Rohan Shah",
+      "city": "Hyderabad",
+      "premises_address": "Flat No. 22, Tulsi Vihar, College Road, Andheri West, Delhi 11098",
+      "monthly_rent": 289000,
+      "tenancy_start_date": "2022-08-26",
+      "notice_period_days": 15,
+      "mode_of_dispatch": "Registered Post A.D."
+    },
+    "withheld_fields": [
+      {
+        "name": "vacation_date",
+        "placeholder": "[DATE TENANT VACATED THE PREMISES]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 93,
+    "scenario_id": "water_electricity_cut_pune",
+    "scenario_summary": "Pune landlord disconnected water and electricity to pressure the tenant to vacate; tenant demands immediate restoration.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Ajay Ranade",
+      "tenant_name": "Radhika Naik",
+      "city": "Nagpur",
+      "premises_address": "Flat No. 35, Prestige Court, Karve Road, Dadar, Kalyan-Dombivli 42103",
+      "monthly_rent": 127000,
+      "security_deposit": 381000,
+      "notice_period_days": 15,
+      "mode_of_dispatch": "Speed Post"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 94,
+    "scenario_id": "rent_receipts_refused_kolhapur",
+    "scenario_summary": "Kolhapur landlord accepts cash rent but refuses to issue rent receipts; tenant demands receipts for all payments made.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Tejal Ranade",
+      "tenant_name": "Ganesh Kulkarni",
+      "city": "Mumbai",
+      "premises_address": "Flat No. 28, Matoshree Heights, Gandhi Chowk Road, Aundh, Kolkata 70018",
+      "monthly_rent": 11500,
+      "security_deposit": 103500,
+      "notice_period_days": 30,
+      "advocate_name": "Mary Lokhande"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 95,
+    "scenario_id": "illegal_lockout_hyderabad",
+    "scenario_summary": "Hyderabad landlord changed the locks while the tenant was travelling; tenant demands restoration of possession and belongings.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Anita Iyer",
+      "tenant_name": "Sameer Banerjee",
+      "city": "Thane",
+      "premises_address": "Flat No. 15, Vrindavan Complex, College Road, New Friends Colony, Nagpur 44022",
+      "monthly_rent": 71500,
+      "notice_period_days": 15
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 96,
+    "scenario_id": "harassment_for_vacation_delhi",
+    "scenario_summary": "Delhi landlord and brokers repeatedly visit and threaten the tenant's family to force vacation; tenant demands they desist.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Ajay Verma",
+      "tenant_name": "Priya Reddy",
+      "city": "Nagpur",
+      "premises_address": "Flat No. 25, Prestige Court, M.G. Road, Sector 9, Nashik 42213",
+      "monthly_rent": 143000,
+      "security_deposit": 429000,
+      "tenancy_start_date": "2024-10-24",
+      "mode_of_dispatch": "Registered Post A.D."
+    },
+    "withheld_fields": [
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 97,
+    "scenario_id": "unauthorised_entry_bengaluru",
+    "scenario_summary": "Bengaluru landlord enters the flat without notice and shows it to prospective buyers; tenant demands cessation of interference.",
+    "register": "casual",
+    "given_facts": {
+      "landlord_name": "Karthik Surve",
+      "tenant_name": "Sneha Reddy",
+      "city": "Pune",
+      "premises_address": "Flat No. 10, Tulsi Vihar, Ring Road, Sadashiv Peth, Mumbai 40025",
+      "monthly_rent": 189000,
+      "mode_of_dispatch": "Speed Post"
+    },
+    "withheld_fields": [
+      {
+        "name": "tenancy_start_date",
+        "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 98,
+    "scenario_id": "arrears_eviction_mumbai_flat",
+    "scenario_summary": "Tenant of a 1BHK flat in Andheri, Mumbai has not paid rent for months; landlord demands arrears and vacant possession.",
+    "register": "detailed",
+    "given_facts": {
+      "landlord_name": "Harpreet Trivedi",
+      "tenant_name": "Tejal Lokhande",
+      "city": "Bengaluru",
+      "premises_address": "Flat No. 3, Vrindavan Complex, Market Yard Road, New Friends Colony, Delhi 11025",
+      "monthly_rent": 45500,
+      "security_deposit": 364000,
+      "tenancy_start_date": "2021-09-14",
+      "arrears_months": 5,
+      "notice_period_days": 15
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "legal_notice_landlord_tenant",
+    "index": 99,
+    "scenario_id": "personal_use_pune_flat",
+    "scenario_summary": "Pune landlord requires the flat for his son's family after marriage; notice to quit month-to-month tenancy.",
+    "register": "semi_formal",
+    "given_facts": {
+      "landlord_name": "Mahesh Banerjee",
+      "tenant_name": "Dattatray Shah",
+      "city": "Chennai",
+      "premises_address": "Flat No. 16, Om Sai Plaza, Station Road, New Friends Colony, Pune 41165",
+      "monthly_rent": 94000,
+      "security_deposit": 470000,
+      "tenancy_start_date": "2024-03-01",
+      "mode_of_dispatch": "Email and Registered Post A.D."
+    },
+    "withheld_fields": [
+      {
+        "name": "arrears_months",
+        "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+      },
+      {
+        "name": "notice_period_days",
+        "placeholder": "[NOTICE PERIOD IN DAYS]"
+      }
+    ],
+    "nearest_supported": null
+  }
+]

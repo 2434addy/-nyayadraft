@@ -1,0 +1,4138 @@
+[
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 0,
+    "scenario_id": "defective_washing_machine",
+    "scenario_summary": "A Mumbai homemaker's front-load washing machine failed within warranty; the manufacturer's service centre made three failed repair visits and refuses replacement.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Bhushan Sharma",
+      "opposite_party_name": "More Solutions Private Limited",
+      "product_service": "washing machine",
+      "purchase_amount": 63000,
+      "purchase_date": "2026-03-15",
+      "trigger_date": "2026-04-29",
+      "city": "Vasai-Virar",
+      "complainant_address": "Flat No. 35, Shanti Niketan, Ring Road, New Friends Colony, Delhi 11009",
+      "opposite_party_address": "Flat No. 26, Matoshree Heights, Gandhi Chowk Road, New Friends Colony, Indore 45283",
+      "compensation_sought": 19500,
+      "invoice_or_order_number": "ZDANW1995O",
+      "complainant_occupation": "marketing manager"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 1,
+    "scenario_id": "ecommerce_non_delivery",
+    "scenario_summary": "A Pune student paid online for a laptop on an e-commerce marketplace; the order was never delivered and refund requests were ignored.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Devendra Bhosale",
+      "opposite_party_name": "Rao Trading Company",
+      "product_service": "laptop computer",
+      "purchase_amount": 35500,
+      "trigger_date": "2026-04-05",
+      "city": "Pune",
+      "complainant_address": "Flat No. 14, Matoshree Heights, Market Yard Road, Borivali East, Pune 41133",
+      "opposite_party_address": "Flat No. 34, Gokul Residency, Market Yard Road, Shivaji Nagar, Chennai 60001",
+      "invoice_or_order_number": "ZFZGO1039U",
+      "advocate_name": "Deepa Singh"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 2,
+    "scenario_id": "insurance_claim_repudiated",
+    "scenario_summary": "A Nagpur schoolteacher's health insurance claim for hospitalisation was repudiated citing pre-existing disease despite full disclosure at proposal stage.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Karthik Kapoor",
+      "opposite_party_name": "Sheikh Trading Company",
+      "product_service": "health insurance policy",
+      "purchase_amount": 680000,
+      "city": "Solapur",
+      "opposite_party_address": "Flat No. 5, Yashwant Smruti, M.G. Road, Dadar, Mumbai 40099",
+      "invoice_or_order_number": "ZORSD4658Q",
+      "advocate_name": "Vihaan Rao"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 3,
+    "scenario_id": "builder_possession_delay",
+    "scenario_summary": "A Thane buyer paid most of the consideration for a 1BHK flat; the builder has delayed possession well beyond the agreed date despite repeated demands.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Mary Menon",
+      "opposite_party_name": "Phadke Enterprises",
+      "product_service": "residential flat booking",
+      "purchase_amount": 2457500,
+      "purchase_date": "2025-06-23",
+      "city": "Delhi",
+      "complainant_address": "Flat No. 18, Silver Oak Towers, Karve Road, Sector 9, Mumbai 40009",
+      "invoice_or_order_number": "KCITO2543Z",
+      "advocate_name": "Sanjay Gaikwad"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 4,
+    "scenario_id": "faulty_vehicle_servicing",
+    "scenario_summary": "A Nashik businessman's car came back from authorised servicing with engine damage; the workshop denies responsibility and demands further charges.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Omkar Naidu",
+      "opposite_party_name": "D'Souza Developers",
+      "product_service": "motor vehicle servicing",
+      "purchase_amount": 115000,
+      "city": "Kochi",
+      "opposite_party_address": "Flat No. 4, Matoshree Heights, Link Road, Dadar, Bengaluru 56054",
+      "complainant_occupation": "insurance agent"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 5,
+    "scenario_id": "coaching_class_refund_refusal",
+    "scenario_summary": "A Latur student paid full fees for a JEE coaching batch the institute later cancelled; the institute refuses any refund citing a no-refund clause.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Omkar Bhagat",
+      "opposite_party_name": "More Solutions Private Limited",
+      "product_service": "coaching classes enrolment",
+      "purchase_amount": 66500,
+      "purchase_date": "2024-10-25",
+      "city": "Visakhapatnam",
+      "complainant_address": "Flat No. 25, Sai Krupa CHS, College Road, Andheri West, Kochi 68283",
+      "opposite_party_address": "Flat No. 8, Shanti Niketan, Ring Road, Kothrud, Delhi 11072",
+      "advocate_name": "Omkar Wagh"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 6,
+    "scenario_id": "airline_refund_denied",
+    "scenario_summary": "A Delhi consultant's flight was cancelled by the airline, which has not refunded the fare months later despite repeated written complaints.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Pravin D'Souza",
+      "opposite_party_name": "Deshmukh Services LLP",
+      "product_service": "air ticket",
+      "purchase_amount": 51000,
+      "purchase_date": "2024-11-24",
+      "trigger_date": "2025-01-14",
+      "city": "Nashik",
+      "complainant_address": "Flat No. 2, Sai Krupa CHS, Link Road, Borivali East, Navi Mumbai 40065",
+      "invoice_or_order_number": "JQJLG3336G",
+      "complainant_occupation": "real estate agent"
+    },
+    "withheld_fields": [
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 7,
+    "scenario_id": "hospital_overbilling",
+    "scenario_summary": "An Aurangabad patient was billed far above the agreed package rate for surgery; the hospital withheld discharge papers until excess payment, a deficiency in service.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Sachin Sheikh",
+      "opposite_party_name": "Bhosale Engineering Works",
+      "product_service": "hospital treatment package",
+      "purchase_amount": 201000,
+      "trigger_date": "2025-11-27",
+      "city": "Mumbai",
+      "complainant_address": "Flat No. 25, Tulsi Vihar, S.V. Road, Dadar, Thane 40007",
+      "opposite_party_address": "Flat No. 17, Gokul Residency, Fergusson College Road, Camp Area, Nashik 42278",
+      "compensation_sought": 148500,
+      "invoice_or_order_number": "OKJFK6352U",
+      "advocate_name": "Komal Sheikh"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 8,
+    "scenario_id": "bank_charges_dispute",
+    "scenario_summary": "A Mumbai senior citizen's savings account was debited with unexplained service charges; the bank failed to reverse them despite written complaints.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Sachin Deshpande",
+      "opposite_party_name": "Bhagat Agencies",
+      "product_service": "savings bank account services",
+      "purchase_amount": 50500,
+      "purchase_date": "2025-04-12",
+      "city": "Mumbai",
+      "complainant_address": "Flat No. 36, Shree Ganesh Apartments, Ring Road, Aundh, Mumbai 40058",
+      "invoice_or_order_number": "RUAMY4410Z",
+      "complainant_occupation": "school teacher",
+      "advocate_name": "Anil Joshi"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 9,
+    "scenario_id": "defective_furniture",
+    "scenario_summary": "A Kolhapur couple's sofa set arrived with cracked frames and torn upholstery; the dealer ignored replacement requests throughout the warranty period.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Tushar Chopra",
+      "opposite_party_name": "Kadam Trading Company",
+      "product_service": "sofa set",
+      "purchase_amount": 83000,
+      "purchase_date": "2025-12-16",
+      "trigger_date": "2026-02-26",
+      "city": "Ahmedabad",
+      "complainant_address": "Flat No. 24, Yashwant Smruti, Link Road, Civil Lines, Thane 40037",
+      "compensation_sought": 49500
+    },
+    "withheld_fields": [
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 10,
+    "scenario_id": "mobile_dead_on_arrival",
+    "scenario_summary": "A Solapur shopkeeper's new smartphone was dead on arrival; both the retailer and the brand refuse the promised DOA replacement.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Mahesh Kaur",
+      "opposite_party_name": "Bhagat Agencies",
+      "product_service": "mobile handset",
+      "purchase_amount": 83000,
+      "purchase_date": "2025-07-27",
+      "city": "Nashik",
+      "complainant_address": "Flat No. 10, Matoshree Heights, S.V. Road, Kothrud, Pune 41109",
+      "opposite_party_address": "Flat No. 17, Vrindavan Complex, Fergusson College Road, Model Colony, Pune 41139",
+      "complainant_occupation": "college professor",
+      "advocate_name": "Sunita Sharma"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 11,
+    "scenario_id": "gym_membership_refund",
+    "scenario_summary": "A Navi Mumbai IT employee paid for an annual gym membership; the branch shut within a month and the operator refuses any refund.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Dattatray Rao",
+      "opposite_party_name": "Iyer Enterprises",
+      "product_service": "gym membership",
+      "purchase_amount": 42500,
+      "trigger_date": "2025-03-11",
+      "city": "Patna",
+      "opposite_party_address": "Flat No. 24, Silver Oak Towers, Market Yard Road, Kothrud, Pune 41141"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 12,
+    "scenario_id": "broadband_advance_disconnection",
+    "scenario_summary": "A Bengaluru freelancer paid annual broadband charges in advance; the provider disconnected service within weeks and refuses refund or restoration.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Komal Kaur",
+      "opposite_party_name": "Shinde Enterprises",
+      "product_service": "broadband internet connection",
+      "purchase_amount": 25500,
+      "city": "Bhopal",
+      "complainant_address": "Flat No. 36, Vrindavan Complex, M.G. Road, Dadar, Mumbai 40006",
+      "opposite_party_address": "Flat No. 11, Matoshree Heights, S.V. Road, Borivali East, Kochi 68276",
+      "invoice_or_order_number": "MDTZP0706I",
+      "complainant_occupation": "tailor"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 13,
+    "scenario_id": "defective_washing_machine",
+    "scenario_summary": "A Mumbai homemaker's front-load washing machine failed within warranty; the manufacturer's service centre made three failed repair visits and refuses replacement.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Fatima Naidu",
+      "opposite_party_name": "Deshpande Distributors",
+      "product_service": "washing machine",
+      "purchase_amount": 48000,
+      "trigger_date": "2026-04-05",
+      "city": "Thane",
+      "opposite_party_address": "Flat No. 1, Shree Ganesh Apartments, Karve Road, Kothrud, Surat 39505",
+      "compensation_sought": 46000,
+      "complainant_occupation": "graphic designer",
+      "advocate_name": "Omkar Lokhande"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 14,
+    "scenario_id": "ecommerce_non_delivery",
+    "scenario_summary": "A Pune student paid online for a laptop on an e-commerce marketplace; the order was never delivered and refund requests were ignored.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Shobha More",
+      "opposite_party_name": "Thorat Infotech Private Limited",
+      "product_service": "laptop computer",
+      "purchase_amount": 26500,
+      "purchase_date": "2024-11-18",
+      "trigger_date": "2025-01-03",
+      "city": "Surat",
+      "complainant_address": "Flat No. 20, Yashwant Smruti, M.G. Road, Andheri West, Mumbai 40004",
+      "complainant_occupation": "garment trader"
+    },
+    "withheld_fields": [
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 15,
+    "scenario_id": "insurance_claim_repudiated",
+    "scenario_summary": "A Nagpur schoolteacher's health insurance claim for hospitalisation was repudiated citing pre-existing disease despite full disclosure at proposal stage.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Fatima Wagh",
+      "opposite_party_name": "Sawant Textiles",
+      "product_service": "health insurance policy",
+      "purchase_amount": 130000,
+      "trigger_date": "2024-12-16",
+      "city": "Thane",
+      "opposite_party_address": "Flat No. 6, Sai Krupa CHS, Station Road, Sector 9, Mumbai 40087",
+      "compensation_sought": 147000,
+      "complainant_occupation": "civil contractor",
+      "advocate_name": "Vikram Malhotra"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 16,
+    "scenario_id": "builder_possession_delay",
+    "scenario_summary": "A Thane buyer paid most of the consideration for a 1BHK flat; the builder has delayed possession well beyond the agreed date despite repeated demands.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Sunil Raut",
+      "opposite_party_name": "Ranade Textiles",
+      "product_service": "residential flat booking",
+      "purchase_amount": 2071000,
+      "trigger_date": "2026-05-24",
+      "city": "Kolhapur",
+      "invoice_or_order_number": "QRWUA2669Z"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 17,
+    "scenario_id": "faulty_vehicle_servicing",
+    "scenario_summary": "A Nashik businessman's car came back from authorised servicing with engine damage; the workshop denies responsibility and demands further charges.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Sameer Bhatt",
+      "opposite_party_name": "Apte Traders",
+      "product_service": "motor vehicle servicing",
+      "purchase_amount": 113500,
+      "city": "Ahmedabad",
+      "complainant_address": "Flat No. 37, Silver Oak Towers, Karve Road, Model Colony, Nagpur 44077",
+      "complainant_occupation": "doctor",
+      "advocate_name": "Dattatray Gokhale"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 18,
+    "scenario_id": "coaching_class_refund_refusal",
+    "scenario_summary": "A Latur student paid full fees for a JEE coaching batch the institute later cancelled; the institute refuses any refund citing a no-refund clause.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Prakash Sharma",
+      "opposite_party_name": "Wagh Developers",
+      "product_service": "coaching classes enrolment",
+      "purchase_amount": 158000,
+      "purchase_date": "2025-07-06",
+      "city": "Pune",
+      "complainant_address": "Flat No. 10, Sai Krupa CHS, M.G. Road, Shivaji Nagar, Mumbai 40016",
+      "opposite_party_address": "Flat No. 9, Prestige Court, College Road, Sadashiv Peth, Bengaluru 56038"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 19,
+    "scenario_id": "airline_refund_denied",
+    "scenario_summary": "A Delhi consultant's flight was cancelled by the airline, which has not refunded the fare months later despite repeated written complaints.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Yogesh Pereira",
+      "opposite_party_name": "D'Souza Foods",
+      "product_service": "air ticket",
+      "purchase_amount": 81000,
+      "advocate_name": "Manisha Apte"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 20,
+    "scenario_id": "hospital_overbilling",
+    "scenario_summary": "An Aurangabad patient was billed far above the agreed package rate for surgery; the hospital withheld discharge papers until excess payment, a deficiency in service.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Aarti Kaur",
+      "opposite_party_name": "Kapoor Constructions",
+      "product_service": "hospital treatment package",
+      "purchase_amount": 422500,
+      "purchase_date": "2025-09-03",
+      "city": "Kolhapur",
+      "complainant_address": "Flat No. 5, Om Sai Plaza, M.G. Road, Borivali East, Chhatrapati Sambhajinagar 43109",
+      "compensation_sought": 548500,
+      "complainant_occupation": "shop owner",
+      "advocate_name": "Abhijit Mhatre"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 21,
+    "scenario_id": "bank_charges_dispute",
+    "scenario_summary": "A Mumbai senior citizen's savings account was debited with unexplained service charges; the bank failed to reverse them despite written complaints.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Priya Shinde",
+      "opposite_party_name": "Mhatre Infotech Private Limited",
+      "product_service": "savings bank account services",
+      "purchase_amount": 17000,
+      "invoice_or_order_number": "QPRTY9824K",
+      "complainant_occupation": "school teacher",
+      "advocate_name": "Prashant Joshi"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 22,
+    "scenario_id": "defective_furniture",
+    "scenario_summary": "A Kolhapur couple's sofa set arrived with cracked frames and torn upholstery; the dealer ignored replacement requests throughout the warranty period.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Niranjan Pawar",
+      "opposite_party_name": "Kapoor Infotech Private Limited",
+      "product_service": "sofa set",
+      "purchase_amount": 29500,
+      "advocate_name": "Joseph Kaur"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 23,
+    "scenario_id": "mobile_dead_on_arrival",
+    "scenario_summary": "A Solapur shopkeeper's new smartphone was dead on arrival; both the retailer and the brand refuse the promised DOA replacement.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Ramesh Mehta",
+      "opposite_party_name": "Trivedi Developers",
+      "product_service": "mobile handset",
+      "purchase_amount": 48500,
+      "city": "Mumbai",
+      "complainant_address": "Flat No. 3, Yashwant Smruti, Karve Road, New Friends Colony, Bengaluru 56017",
+      "complainant_occupation": "civil contractor",
+      "advocate_name": "Mrunal Chopra"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 24,
+    "scenario_id": "gym_membership_refund",
+    "scenario_summary": "A Navi Mumbai IT employee paid for an annual gym membership; the branch shut within a month and the operator refuses any refund.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Priya Kapoor",
+      "opposite_party_name": "Bhatt Textiles",
+      "product_service": "gym membership",
+      "purchase_amount": 15000,
+      "city": "Pune",
+      "opposite_party_address": "Flat No. 7, Vrindavan Complex, Fergusson College Road, Sadashiv Peth, Solapur 41318",
+      "complainant_occupation": "caterer"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 25,
+    "scenario_id": "broadband_advance_disconnection",
+    "scenario_summary": "A Bengaluru freelancer paid annual broadband charges in advance; the provider disconnected service within weeks and refuses refund or restoration.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Aditya Thorat",
+      "opposite_party_name": "Pawar Marketing",
+      "product_service": "broadband internet connection",
+      "purchase_amount": 24500,
+      "city": "Bengaluru",
+      "complainant_address": "Flat No. 22, Matoshree Heights, Market Yard Road, Sadashiv Peth, Pune 41197",
+      "opposite_party_address": "Flat No. 7, Sai Krupa CHS, Karve Road, New Friends Colony, Kolhapur 41629",
+      "compensation_sought": 29500,
+      "invoice_or_order_number": "KDQKF8406K",
+      "complainant_occupation": "tailor",
+      "advocate_name": "Sunil Wagh"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 26,
+    "scenario_id": "defective_washing_machine",
+    "scenario_summary": "A Mumbai homemaker's front-load washing machine failed within warranty; the manufacturer's service centre made three failed repair visits and refuses replacement.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Mangesh Raut",
+      "opposite_party_name": "Kaur Developers",
+      "product_service": "washing machine",
+      "purchase_amount": 26500,
+      "trigger_date": "2026-01-26",
+      "city": "Pune",
+      "complainant_address": "Flat No. 27, Tulsi Vihar, Link Road, Kothrud, Nagpur 44099",
+      "invoice_or_order_number": "XUUHQ6038U"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 27,
+    "scenario_id": "ecommerce_non_delivery",
+    "scenario_summary": "A Pune student paid online for a laptop on an e-commerce marketplace; the order was never delivered and refund requests were ignored.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Tejal Pawar",
+      "opposite_party_name": "Deshpande Developers",
+      "product_service": "laptop computer",
+      "purchase_amount": 56000,
+      "purchase_date": "2025-06-25",
+      "trigger_date": "2025-08-28",
+      "city": "Hyderabad",
+      "opposite_party_address": "Flat No. 24, Green Valley Society, Gandhi Chowk Road, Shivaji Nagar, Mumbai 40027",
+      "compensation_sought": 110000,
+      "invoice_or_order_number": "UULQR0774Z",
+      "advocate_name": "Rohan Kulkarni"
+    },
+    "withheld_fields": [
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 28,
+    "scenario_id": "insurance_claim_repudiated",
+    "scenario_summary": "A Nagpur schoolteacher's health insurance claim for hospitalisation was repudiated citing pre-existing disease despite full disclosure at proposal stage.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Fatima Verma",
+      "opposite_party_name": "Naidu Industries",
+      "product_service": "health insurance policy",
+      "purchase_amount": 657000,
+      "purchase_date": "2025-09-01",
+      "trigger_date": "2025-09-22",
+      "city": "Solapur",
+      "compensation_sought": 273000,
+      "advocate_name": "Pravin Shah"
+    },
+    "withheld_fields": [
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 29,
+    "scenario_id": "builder_possession_delay",
+    "scenario_summary": "A Thane buyer paid most of the consideration for a 1BHK flat; the builder has delayed possession well beyond the agreed date despite repeated demands.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Yogesh Mhatre",
+      "opposite_party_name": "Gill Distributors",
+      "product_service": "residential flat booking",
+      "purchase_amount": 2264500,
+      "city": "Navi Mumbai",
+      "complainant_address": "Flat No. 12, Sai Krupa CHS, Station Road, Model Colony, Lucknow 22638",
+      "opposite_party_address": "Flat No. 40, Prestige Court, Fergusson College Road, Civil Lines, Chennai 60004",
+      "compensation_sought": 3498500
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 30,
+    "scenario_id": "faulty_vehicle_servicing",
+    "scenario_summary": "A Nashik businessman's car came back from authorised servicing with engine damage; the workshop denies responsibility and demands further charges.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Rekha Bhagat",
+      "opposite_party_name": "Malhotra Foods",
+      "product_service": "motor vehicle servicing",
+      "purchase_amount": 76500,
+      "trigger_date": "2025-09-04",
+      "city": "Thane",
+      "invoice_or_order_number": "ILBXY4206U",
+      "complainant_occupation": "real estate agent",
+      "advocate_name": "Mrunal Bhagat"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 31,
+    "scenario_id": "coaching_class_refund_refusal",
+    "scenario_summary": "A Latur student paid full fees for a JEE coaching batch the institute later cancelled; the institute refuses any refund citing a no-refund clause.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Milind Deshmukh",
+      "opposite_party_name": "Pawar Engineering Works",
+      "product_service": "coaching classes enrolment",
+      "purchase_amount": 221000,
+      "purchase_date": "2025-11-17",
+      "trigger_date": "2025-11-29",
+      "city": "Bengaluru",
+      "complainant_address": "Flat No. 12, Green Valley Society, S.V. Road, New Friends Colony, Mumbai 40036",
+      "compensation_sought": 243000
+    },
+    "withheld_fields": [
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 32,
+    "scenario_id": "airline_refund_denied",
+    "scenario_summary": "A Delhi consultant's flight was cancelled by the airline, which has not refunded the fare months later despite repeated written complaints.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Yogesh Sharma",
+      "opposite_party_name": "Phadke Infotech Private Limited",
+      "product_service": "air ticket",
+      "purchase_amount": 24000,
+      "purchase_date": "2026-03-15",
+      "trigger_date": "2026-05-18",
+      "invoice_or_order_number": "DNNQB0702P",
+      "complainant_occupation": "interior designer",
+      "advocate_name": "Shraddha Kulkarni"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 33,
+    "scenario_id": "hospital_overbilling",
+    "scenario_summary": "An Aurangabad patient was billed far above the agreed package rate for surgery; the hospital withheld discharge papers until excess payment, a deficiency in service.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Rajesh Ghadge",
+      "opposite_party_name": "Jain Enterprises",
+      "product_service": "hospital treatment package",
+      "purchase_amount": 420000,
+      "purchase_date": "2025-03-12",
+      "trigger_date": "2025-04-01",
+      "city": "Lucknow",
+      "opposite_party_address": "Flat No. 14, Yashwant Smruti, Karve Road, Andheri West, Mumbai 40080",
+      "compensation_sought": 263500,
+      "invoice_or_order_number": "JMBID6374X",
+      "complainant_occupation": "shop owner",
+      "advocate_name": "Anita Khan"
+    },
+    "withheld_fields": [
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 34,
+    "scenario_id": "bank_charges_dispute",
+    "scenario_summary": "A Mumbai senior citizen's savings account was debited with unexplained service charges; the bank failed to reverse them despite written complaints.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Rekha Pawar",
+      "opposite_party_name": "Iyer Services LLP",
+      "product_service": "savings bank account services",
+      "purchase_amount": 40000,
+      "purchase_date": "2025-01-27",
+      "city": "Indore",
+      "opposite_party_address": "Flat No. 32, Om Sai Plaza, Market Yard Road, Civil Lines, Pune 41123",
+      "invoice_or_order_number": "SXESY0764Q",
+      "advocate_name": "Aishwarya Deshmukh"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 35,
+    "scenario_id": "defective_furniture",
+    "scenario_summary": "A Kolhapur couple's sofa set arrived with cracked frames and torn upholstery; the dealer ignored replacement requests throughout the warranty period.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Aishwarya Fernandes",
+      "opposite_party_name": "Surve Engineering Works",
+      "product_service": "sofa set",
+      "purchase_amount": 99000,
+      "purchase_date": "2026-01-11",
+      "city": "Chennai",
+      "complainant_address": "Flat No. 17, Sai Krupa CHS, Gandhi Chowk Road, Dadar, Kalyan-Dombivli 42195",
+      "compensation_sought": 72500,
+      "advocate_name": "Bhushan Verma"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 36,
+    "scenario_id": "mobile_dead_on_arrival",
+    "scenario_summary": "A Solapur shopkeeper's new smartphone was dead on arrival; both the retailer and the brand refuse the promised DOA replacement.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Mahesh Gill",
+      "opposite_party_name": "Banerjee Foods",
+      "product_service": "mobile handset",
+      "purchase_amount": 46500,
+      "advocate_name": "Meera Trivedi"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 37,
+    "scenario_id": "gym_membership_refund",
+    "scenario_summary": "A Navi Mumbai IT employee paid for an annual gym membership; the branch shut within a month and the operator refuses any refund.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Swapnil Bhagat",
+      "opposite_party_name": "Naidu Foods",
+      "product_service": "gym membership",
+      "purchase_amount": 16500,
+      "city": "Pune",
+      "complainant_address": "Flat No. 3, Shanti Niketan, Gandhi Chowk Road, Kothrud, Thane 40022",
+      "invoice_or_order_number": "LYBKX6298J",
+      "complainant_occupation": "insurance agent",
+      "advocate_name": "Rutuja Phadke"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 38,
+    "scenario_id": "broadband_advance_disconnection",
+    "scenario_summary": "A Bengaluru freelancer paid annual broadband charges in advance; the provider disconnected service within weeks and refuses refund or restoration.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Aditya Trivedi",
+      "opposite_party_name": "Mhatre Distributors",
+      "product_service": "broadband internet connection",
+      "purchase_amount": 17500,
+      "trigger_date": "2026-01-14",
+      "city": "Nagpur",
+      "complainant_occupation": "bank employee"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 39,
+    "scenario_id": "defective_washing_machine",
+    "scenario_summary": "A Mumbai homemaker's front-load washing machine failed within warranty; the manufacturer's service centre made three failed repair visits and refuses replacement.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Ananya Rao",
+      "opposite_party_name": "Gokhale Services LLP",
+      "product_service": "washing machine",
+      "purchase_amount": 53000,
+      "purchase_date": "2025-10-21",
+      "trigger_date": "2025-12-25",
+      "city": "Mumbai",
+      "complainant_address": "Flat No. 3, Prestige Court, M.G. Road, Andheri West, Mumbai 40052",
+      "opposite_party_address": "Flat No. 33, Shree Ganesh Apartments, Gandhi Chowk Road, Shivaji Nagar, Pune 41139"
+    },
+    "withheld_fields": [
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 40,
+    "scenario_id": "ecommerce_non_delivery",
+    "scenario_summary": "A Pune student paid online for a laptop on an e-commerce marketplace; the order was never delivered and refund requests were ignored.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Anil Gaikwad",
+      "opposite_party_name": "Bhagat Trading Company",
+      "product_service": "laptop computer",
+      "purchase_amount": 61000,
+      "trigger_date": "2025-03-25",
+      "city": "Delhi",
+      "complainant_address": "Flat No. 26, Vrindavan Complex, Karve Road, Kothrud, Mumbai 40045",
+      "complainant_occupation": "interior designer"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 41,
+    "scenario_id": "insurance_claim_repudiated",
+    "scenario_summary": "A Nagpur schoolteacher's health insurance claim for hospitalisation was repudiated citing pre-existing disease despite full disclosure at proposal stage.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Bhushan Lokhande",
+      "opposite_party_name": "Deshmukh Traders",
+      "product_service": "health insurance policy",
+      "purchase_amount": 311500,
+      "purchase_date": "2025-04-22",
+      "city": "Mumbai",
+      "complainant_address": "Flat No. 1, Green Valley Society, Station Road, Aundh, Mumbai 40045",
+      "invoice_or_order_number": "FGOSZ3265P",
+      "complainant_occupation": "pharmacist"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 42,
+    "scenario_id": "builder_possession_delay",
+    "scenario_summary": "A Thane buyer paid most of the consideration for a 1BHK flat; the builder has delayed possession well beyond the agreed date despite repeated demands.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Smita Phadke",
+      "opposite_party_name": "Malhotra Infotech Private Limited",
+      "product_service": "residential flat booking",
+      "purchase_amount": 1969000,
+      "purchase_date": "2026-01-14",
+      "trigger_date": "2026-02-18",
+      "city": "Kolkata",
+      "complainant_address": "Flat No. 34, Gokul Residency, S.V. Road, Model Colony, Pune 41133",
+      "complainant_occupation": "chartered accountant",
+      "advocate_name": "Yogesh Iyer"
+    },
+    "withheld_fields": [
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 43,
+    "scenario_id": "faulty_vehicle_servicing",
+    "scenario_summary": "A Nashik businessman's car came back from authorised servicing with engine damage; the workshop denies responsibility and demands further charges.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Deepak Joshi",
+      "opposite_party_name": "Trivedi Traders",
+      "product_service": "motor vehicle servicing",
+      "purchase_amount": 156000,
+      "purchase_date": "2025-11-29",
+      "city": "Bhopal",
+      "complainant_address": "Flat No. 33, Matoshree Heights, M.G. Road, Aundh, Chennai 60030",
+      "opposite_party_address": "Flat No. 12, Shanti Niketan, Gandhi Chowk Road, Borivali East, Nagpur 44070",
+      "invoice_or_order_number": "UZVGD6343Z",
+      "complainant_occupation": "caterer",
+      "advocate_name": "Deepa Patil"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 44,
+    "scenario_id": "coaching_class_refund_refusal",
+    "scenario_summary": "A Latur student paid full fees for a JEE coaching batch the institute later cancelled; the institute refuses any refund citing a no-refund clause.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Ramesh Chopra",
+      "opposite_party_name": "Verma Foods",
+      "product_service": "coaching classes enrolment",
+      "purchase_amount": 155000,
+      "city": "Visakhapatnam",
+      "complainant_address": "Flat No. 9, Prestige Court, Market Yard Road, Aundh, Kolkata 70024",
+      "opposite_party_address": "Flat No. 19, Shree Ganesh Apartments, Market Yard Road, Andheri West, Kolkata 70018",
+      "advocate_name": "Fatima Shah"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 45,
+    "scenario_id": "airline_refund_denied",
+    "scenario_summary": "A Delhi consultant's flight was cancelled by the airline, which has not refunded the fare months later despite repeated written complaints.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Savita Ranade",
+      "opposite_party_name": "Sheikh Agencies",
+      "product_service": "air ticket",
+      "purchase_amount": 50500,
+      "city": "Pune",
+      "complainant_address": "Flat No. 30, Sai Krupa CHS, M.G. Road, Sadashiv Peth, Mumbai 40029",
+      "compensation_sought": 66500,
+      "invoice_or_order_number": "DRPWT6372V",
+      "complainant_occupation": "real estate agent"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 46,
+    "scenario_id": "hospital_overbilling",
+    "scenario_summary": "An Aurangabad patient was billed far above the agreed package rate for surgery; the hospital withheld discharge papers until excess payment, a deficiency in service.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Vijay Deshmukh",
+      "opposite_party_name": "Mhatre Foods",
+      "product_service": "hospital treatment package",
+      "purchase_amount": 538000,
+      "purchase_date": "2025-07-12",
+      "trigger_date": "2025-09-24",
+      "city": "Nashik",
+      "complainant_address": "Flat No. 30, Prestige Court, Ring Road, Aundh, Chennai 60092",
+      "opposite_party_address": "Flat No. 30, Tulsi Vihar, Fergusson College Road, Shivaji Nagar, Mumbai 40048"
+    },
+    "withheld_fields": [
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 47,
+    "scenario_id": "bank_charges_dispute",
+    "scenario_summary": "A Mumbai senior citizen's savings account was debited with unexplained service charges; the bank failed to reverse them despite written complaints.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Priya Kaur",
+      "opposite_party_name": "Surve Infotech Private Limited",
+      "product_service": "savings bank account services",
+      "purchase_amount": 23500,
+      "city": "Nagpur",
+      "complainant_address": "Flat No. 28, Sai Krupa CHS, College Road, Sadashiv Peth, Bengaluru 56001",
+      "complainant_occupation": "insurance agent"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 48,
+    "scenario_id": "defective_furniture",
+    "scenario_summary": "A Kolhapur couple's sofa set arrived with cracked frames and torn upholstery; the dealer ignored replacement requests throughout the warranty period.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Pravin Wagh",
+      "opposite_party_name": "Sawant Engineering Works",
+      "product_service": "sofa set",
+      "purchase_amount": 34500,
+      "purchase_date": "2026-01-25",
+      "compensation_sought": 27000,
+      "complainant_occupation": "civil contractor"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 49,
+    "scenario_id": "mobile_dead_on_arrival",
+    "scenario_summary": "A Solapur shopkeeper's new smartphone was dead on arrival; both the retailer and the brand refuse the promised DOA replacement.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Pallavi D'Souza",
+      "opposite_party_name": "Kulkarni Distributors",
+      "product_service": "mobile handset",
+      "purchase_amount": 37000,
+      "purchase_date": "2024-11-13",
+      "city": "Bengaluru",
+      "complainant_address": "Flat No. 27, Green Valley Society, Market Yard Road, Kothrud, Pune 41192",
+      "compensation_sought": 87000,
+      "invoice_or_order_number": "VLYAV4316L"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 50,
+    "scenario_id": "gym_membership_refund",
+    "scenario_summary": "A Navi Mumbai IT employee paid for an annual gym membership; the branch shut within a month and the operator refuses any refund.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Yogesh Pawar",
+      "opposite_party_name": "Salunkhe Marketing",
+      "product_service": "gym membership",
+      "purchase_amount": 45000,
+      "purchase_date": "2025-12-04",
+      "city": "Mumbai",
+      "complainant_address": "Flat No. 7, Prestige Court, Link Road, Kothrud, Indore 45286",
+      "opposite_party_address": "Flat No. 6, Shree Ganesh Apartments, Ring Road, Model Colony, Pune 41172",
+      "compensation_sought": 38000,
+      "complainant_occupation": "insurance agent"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 51,
+    "scenario_id": "broadband_advance_disconnection",
+    "scenario_summary": "A Bengaluru freelancer paid annual broadband charges in advance; the provider disconnected service within weeks and refuses refund or restoration.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Amol Ahmed",
+      "opposite_party_name": "Joshi Developers",
+      "product_service": "broadband internet connection",
+      "purchase_amount": 21500,
+      "purchase_date": "2024-11-08",
+      "city": "Pune",
+      "opposite_party_address": "Flat No. 6, Gokul Residency, Market Yard Road, Aundh, Nagpur 44018",
+      "compensation_sought": 39000,
+      "complainant_occupation": "electrician"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 52,
+    "scenario_id": "defective_washing_machine",
+    "scenario_summary": "A Mumbai homemaker's front-load washing machine failed within warranty; the manufacturer's service centre made three failed repair visits and refuses replacement.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Savita Gill",
+      "opposite_party_name": "Banerjee Services LLP",
+      "product_service": "washing machine",
+      "purchase_amount": 80000,
+      "invoice_or_order_number": "VWTNL2382Q",
+      "complainant_occupation": "bank employee"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 53,
+    "scenario_id": "ecommerce_non_delivery",
+    "scenario_summary": "A Pune student paid online for a laptop on an e-commerce marketplace; the order was never delivered and refund requests were ignored.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Vijay Das",
+      "opposite_party_name": "Salunkhe Constructions",
+      "product_service": "laptop computer",
+      "purchase_amount": 97000,
+      "purchase_date": "2025-06-15",
+      "trigger_date": "2025-08-13",
+      "city": "Jaipur",
+      "complainant_address": "Flat No. 21, Shree Ganesh Apartments, S.V. Road, New Friends Colony, Kochi 68265",
+      "compensation_sought": 71000,
+      "advocate_name": "Tushar Patil"
+    },
+    "withheld_fields": [
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 54,
+    "scenario_id": "insurance_claim_repudiated",
+    "scenario_summary": "A Nagpur schoolteacher's health insurance claim for hospitalisation was repudiated citing pre-existing disease despite full disclosure at proposal stage.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Sandeep Ranade",
+      "opposite_party_name": "Reddy Distributors",
+      "product_service": "health insurance policy",
+      "purchase_amount": 189500,
+      "purchase_date": "2026-01-05",
+      "city": "Nashik",
+      "complainant_address": "Flat No. 8, Matoshree Heights, Fergusson College Road, Civil Lines, Pune 41156",
+      "invoice_or_order_number": "QLHMW8894O"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 55,
+    "scenario_id": "builder_possession_delay",
+    "scenario_summary": "A Thane buyer paid most of the consideration for a 1BHK flat; the builder has delayed possession well beyond the agreed date despite repeated demands.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Ajay Naik",
+      "opposite_party_name": "Kadam Constructions",
+      "product_service": "residential flat booking",
+      "purchase_amount": 3436500,
+      "purchase_date": "2024-12-04",
+      "city": "Nagpur",
+      "complainant_address": "Flat No. 28, Tulsi Vihar, Market Yard Road, Dadar, Vasai-Virar 40152"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 56,
+    "scenario_id": "faulty_vehicle_servicing",
+    "scenario_summary": "A Nashik businessman's car came back from authorised servicing with engine damage; the workshop denies responsibility and demands further charges.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Abhijit Kapoor",
+      "opposite_party_name": "D'Souza Trading Company",
+      "product_service": "motor vehicle servicing",
+      "purchase_amount": 77500,
+      "purchase_date": "2025-03-07",
+      "invoice_or_order_number": "DBQUO7939X",
+      "complainant_occupation": "transport operator"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 57,
+    "scenario_id": "coaching_class_refund_refusal",
+    "scenario_summary": "A Latur student paid full fees for a JEE coaching batch the institute later cancelled; the institute refuses any refund citing a no-refund clause.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Vihaan Reddy",
+      "opposite_party_name": "Gill Distributors",
+      "product_service": "coaching classes enrolment",
+      "purchase_amount": 92000,
+      "purchase_date": "2025-11-21",
+      "trigger_date": "2026-01-21",
+      "city": "Delhi",
+      "complainant_occupation": "school teacher",
+      "advocate_name": "Rohan Gokhale"
+    },
+    "withheld_fields": [
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 58,
+    "scenario_id": "airline_refund_denied",
+    "scenario_summary": "A Delhi consultant's flight was cancelled by the airline, which has not refunded the fare months later despite repeated written complaints.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Manoj Kale",
+      "opposite_party_name": "Shah Agencies",
+      "product_service": "air ticket",
+      "purchase_amount": 71500,
+      "invoice_or_order_number": "CMEZX0864F",
+      "complainant_occupation": "tailor"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 59,
+    "scenario_id": "hospital_overbilling",
+    "scenario_summary": "An Aurangabad patient was billed far above the agreed package rate for surgery; the hospital withheld discharge papers until excess payment, a deficiency in service.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Shrikant Bhatt",
+      "opposite_party_name": "Mhatre Services LLP",
+      "product_service": "hospital treatment package",
+      "purchase_amount": 540500,
+      "trigger_date": "2025-07-05",
+      "complainant_occupation": "software engineer"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 60,
+    "scenario_id": "bank_charges_dispute",
+    "scenario_summary": "A Mumbai senior citizen's savings account was debited with unexplained service charges; the bank failed to reverse them despite written complaints.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Shrikant Menon",
+      "opposite_party_name": "Lokhande Marketing",
+      "product_service": "savings bank account services",
+      "purchase_amount": 41500,
+      "city": "Ahmedabad",
+      "opposite_party_address": "Flat No. 22, Prestige Court, Fergusson College Road, Camp Area, Pune 41137",
+      "compensation_sought": 14500,
+      "advocate_name": "Tushar Kapoor"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 61,
+    "scenario_id": "defective_furniture",
+    "scenario_summary": "A Kolhapur couple's sofa set arrived with cracked frames and torn upholstery; the dealer ignored replacement requests throughout the warranty period.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Rajesh Kale",
+      "opposite_party_name": "Chopra Engineering Works",
+      "product_service": "sofa set",
+      "purchase_amount": 40000,
+      "city": "Mumbai",
+      "complainant_address": "Flat No. 10, Yashwant Smruti, S.V. Road, Sadashiv Peth, Solapur 41346"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 62,
+    "scenario_id": "mobile_dead_on_arrival",
+    "scenario_summary": "A Solapur shopkeeper's new smartphone was dead on arrival; both the retailer and the brand refuse the promised DOA replacement.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Pooja Thorat",
+      "opposite_party_name": "Bhosale Industries",
+      "product_service": "mobile handset",
+      "purchase_amount": 92500,
+      "trigger_date": "2025-11-21",
+      "city": "Pune",
+      "opposite_party_address": "Flat No. 30, Green Valley Society, Gandhi Chowk Road, Andheri West, Kolhapur 41618",
+      "invoice_or_order_number": "QIGHL4861X",
+      "advocate_name": "Aditya Bhatt"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 63,
+    "scenario_id": "gym_membership_refund",
+    "scenario_summary": "A Navi Mumbai IT employee paid for an annual gym membership; the branch shut within a month and the operator refuses any refund.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Ajay Khan",
+      "opposite_party_name": "Menon Industries",
+      "product_service": "gym membership",
+      "purchase_amount": 21500,
+      "city": "Hyderabad",
+      "complainant_occupation": "college professor",
+      "advocate_name": "Manoj Chavan"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 64,
+    "scenario_id": "broadband_advance_disconnection",
+    "scenario_summary": "A Bengaluru freelancer paid annual broadband charges in advance; the provider disconnected service within weeks and refuses refund or restoration.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Mary Mane",
+      "opposite_party_name": "Khan Constructions",
+      "product_service": "broadband internet connection",
+      "purchase_amount": 49500,
+      "city": "Pune",
+      "invoice_or_order_number": "EMTJW4080X"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 65,
+    "scenario_id": "defective_washing_machine",
+    "scenario_summary": "A Mumbai homemaker's front-load washing machine failed within warranty; the manufacturer's service centre made three failed repair visits and refuses replacement.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Rutuja Sheikh",
+      "opposite_party_name": "Thorat Engineering Works",
+      "product_service": "washing machine",
+      "purchase_amount": 20500,
+      "purchase_date": "2026-03-12",
+      "city": "Thane",
+      "opposite_party_address": "Flat No. 4, Shanti Niketan, Station Road, New Friends Colony, Jaipur 30259",
+      "compensation_sought": 78500
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 66,
+    "scenario_id": "ecommerce_non_delivery",
+    "scenario_summary": "A Pune student paid online for a laptop on an e-commerce marketplace; the order was never delivered and refund requests were ignored.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Deepa Mane",
+      "opposite_party_name": "Kapoor Traders",
+      "product_service": "laptop computer",
+      "purchase_amount": 115000,
+      "trigger_date": "2025-12-16",
+      "invoice_or_order_number": "NNPEF9617T",
+      "complainant_occupation": "school teacher",
+      "advocate_name": "Deepak Mukherjee"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 67,
+    "scenario_id": "insurance_claim_repudiated",
+    "scenario_summary": "A Nagpur schoolteacher's health insurance claim for hospitalisation was repudiated citing pre-existing disease despite full disclosure at proposal stage.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Vikram Deshpande",
+      "opposite_party_name": "Das Constructions",
+      "product_service": "health insurance policy",
+      "purchase_amount": 553500,
+      "city": "Kolkata",
+      "complainant_address": "Flat No. 1, Silver Oak Towers, Market Yard Road, Sector 9, Thane 40017",
+      "compensation_sought": 339500,
+      "advocate_name": "Kiran Gaikwad"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 68,
+    "scenario_id": "builder_possession_delay",
+    "scenario_summary": "A Thane buyer paid most of the consideration for a 1BHK flat; the builder has delayed possession well beyond the agreed date despite repeated demands.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Prashant Joshi",
+      "opposite_party_name": "Deshmukh Services LLP",
+      "product_service": "residential flat booking",
+      "purchase_amount": 2652500,
+      "purchase_date": "2026-03-03",
+      "city": "Bengaluru",
+      "complainant_address": "Flat No. 35, Gokul Residency, College Road, Sadashiv Peth, Pune 41114",
+      "opposite_party_address": "Flat No. 8, Matoshree Heights, Market Yard Road, Model Colony, Kochi 68264",
+      "compensation_sought": 3855500
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 69,
+    "scenario_id": "faulty_vehicle_servicing",
+    "scenario_summary": "A Nashik businessman's car came back from authorised servicing with engine damage; the workshop denies responsibility and demands further charges.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Nitin Deshpande",
+      "opposite_party_name": "Kaur Services LLP",
+      "product_service": "motor vehicle servicing",
+      "purchase_amount": 156500,
+      "purchase_date": "2025-04-23",
+      "city": "Thane",
+      "opposite_party_address": "Flat No. 14, Shanti Niketan, Fergusson College Road, Kothrud, Kolhapur 41614"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 70,
+    "scenario_id": "coaching_class_refund_refusal",
+    "scenario_summary": "A Latur student paid full fees for a JEE coaching batch the institute later cancelled; the institute refuses any refund citing a no-refund clause.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Farhan Wagh",
+      "opposite_party_name": "Verma Agencies",
+      "product_service": "coaching classes enrolment",
+      "purchase_amount": 36000,
+      "purchase_date": "2025-03-21",
+      "compensation_sought": 119500,
+      "invoice_or_order_number": "JOFHP4568F"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 71,
+    "scenario_id": "airline_refund_denied",
+    "scenario_summary": "A Delhi consultant's flight was cancelled by the airline, which has not refunded the fare months later despite repeated written complaints.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Niranjan Pawar",
+      "opposite_party_name": "Reddy Trading Company",
+      "product_service": "air ticket",
+      "purchase_amount": 23000,
+      "purchase_date": "2024-11-12",
+      "city": "Navi Mumbai",
+      "opposite_party_address": "Flat No. 39, Shanti Niketan, Market Yard Road, Civil Lines, Surat 39501",
+      "compensation_sought": 57500,
+      "advocate_name": "Manoj Fernandes"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 72,
+    "scenario_id": "hospital_overbilling",
+    "scenario_summary": "An Aurangabad patient was billed far above the agreed package rate for surgery; the hospital withheld discharge papers until excess payment, a deficiency in service.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Vihaan Pereira",
+      "opposite_party_name": "Salunkhe Distributors",
+      "product_service": "hospital treatment package",
+      "purchase_amount": 627000,
+      "trigger_date": "2025-12-01",
+      "city": "Mumbai",
+      "complainant_address": "Flat No. 12, Shanti Niketan, College Road, Shivaji Nagar, Pune 41112",
+      "compensation_sought": 559000,
+      "complainant_occupation": "civil contractor"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 73,
+    "scenario_id": "bank_charges_dispute",
+    "scenario_summary": "A Mumbai senior citizen's savings account was debited with unexplained service charges; the bank failed to reverse them despite written complaints.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Rutuja Deshmukh",
+      "opposite_party_name": "Mhatre Developers",
+      "product_service": "savings bank account services",
+      "purchase_amount": 57500,
+      "trigger_date": "2025-10-07",
+      "complainant_occupation": "graphic designer"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 74,
+    "scenario_id": "defective_furniture",
+    "scenario_summary": "A Kolhapur couple's sofa set arrived with cracked frames and torn upholstery; the dealer ignored replacement requests throughout the warranty period.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Priya Jain",
+      "opposite_party_name": "Kulkarni Textiles",
+      "product_service": "sofa set",
+      "purchase_amount": 106000,
+      "trigger_date": "2025-01-09",
+      "city": "Thane",
+      "opposite_party_address": "Flat No. 8, Silver Oak Towers, M.G. Road, Borivali East, Chandigarh 16055"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 75,
+    "scenario_id": "mobile_dead_on_arrival",
+    "scenario_summary": "A Solapur shopkeeper's new smartphone was dead on arrival; both the retailer and the brand refuse the promised DOA replacement.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Sameer Kale",
+      "opposite_party_name": "Khan Enterprises",
+      "product_service": "mobile handset",
+      "purchase_amount": 68000,
+      "purchase_date": "2025-05-17",
+      "trigger_date": "2025-07-16"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 76,
+    "scenario_id": "gym_membership_refund",
+    "scenario_summary": "A Navi Mumbai IT employee paid for an annual gym membership; the branch shut within a month and the operator refuses any refund.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Harpreet More",
+      "opposite_party_name": "Raut Enterprises",
+      "product_service": "gym membership",
+      "purchase_amount": 58000,
+      "purchase_date": "2025-03-13",
+      "city": "Nagpur",
+      "opposite_party_address": "Flat No. 31, Shree Ganesh Apartments, M.G. Road, Aundh, Nashik 42257",
+      "compensation_sought": 38500,
+      "invoice_or_order_number": "PAMQL3582P",
+      "complainant_occupation": "chartered accountant",
+      "advocate_name": "Harpreet Kulkarni"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 77,
+    "scenario_id": "broadband_advance_disconnection",
+    "scenario_summary": "A Bengaluru freelancer paid annual broadband charges in advance; the provider disconnected service within weeks and refuses refund or restoration.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Deepak Gill",
+      "opposite_party_name": "Iyer Engineering Works",
+      "product_service": "broadband internet connection",
+      "purchase_amount": 17000,
+      "purchase_date": "2026-01-29",
+      "trigger_date": "2026-03-17",
+      "city": "Mumbai",
+      "complainant_address": "Flat No. 3, Sai Krupa CHS, Ring Road, Shivaji Nagar, Pune 41190",
+      "compensation_sought": 11500,
+      "complainant_occupation": "doctor",
+      "advocate_name": "Pallavi Pereira"
+    },
+    "withheld_fields": [
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 78,
+    "scenario_id": "defective_washing_machine",
+    "scenario_summary": "A Mumbai homemaker's front-load washing machine failed within warranty; the manufacturer's service centre made three failed repair visits and refuses replacement.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Vaishali Kaur",
+      "opposite_party_name": "Deshpande Infotech Private Limited",
+      "product_service": "washing machine",
+      "purchase_amount": 54000,
+      "trigger_date": "2024-12-23"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 79,
+    "scenario_id": "ecommerce_non_delivery",
+    "scenario_summary": "A Pune student paid online for a laptop on an e-commerce marketplace; the order was never delivered and refund requests were ignored.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Anita Sheikh",
+      "opposite_party_name": "Naidu Foods",
+      "product_service": "laptop computer",
+      "purchase_amount": 27500,
+      "purchase_date": "2025-10-19",
+      "trigger_date": "2025-10-30",
+      "city": "Hyderabad",
+      "invoice_or_order_number": "SQOPJ2133T",
+      "complainant_occupation": "software engineer",
+      "advocate_name": "Meera Iyer"
+    },
+    "withheld_fields": [
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 80,
+    "scenario_id": "insurance_claim_repudiated",
+    "scenario_summary": "A Nagpur schoolteacher's health insurance claim for hospitalisation was repudiated citing pre-existing disease despite full disclosure at proposal stage.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Joseph Mane",
+      "opposite_party_name": "Sharma Marketing",
+      "product_service": "health insurance policy",
+      "purchase_amount": 455500,
+      "purchase_date": "2024-10-25",
+      "trigger_date": "2024-12-01",
+      "city": "Chennai",
+      "complainant_address": "Flat No. 40, Matoshree Heights, Market Yard Road, Dadar, Mumbai 40066",
+      "opposite_party_address": "Flat No. 9, Gokul Residency, College Road, Kothrud, Kolhapur 41663",
+      "compensation_sought": 877000,
+      "invoice_or_order_number": "NPRZY5771Y"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 81,
+    "scenario_id": "builder_possession_delay",
+    "scenario_summary": "A Thane buyer paid most of the consideration for a 1BHK flat; the builder has delayed possession well beyond the agreed date despite repeated demands.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Tushar Gill",
+      "opposite_party_name": "Bhatt Constructions",
+      "product_service": "residential flat booking",
+      "purchase_amount": 2903000,
+      "purchase_date": "2025-02-24",
+      "city": "Nagpur",
+      "complainant_address": "Flat No. 27, Shanti Niketan, Ring Road, Kothrud, Pune 41185",
+      "invoice_or_order_number": "KNQTN3398I"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 82,
+    "scenario_id": "faulty_vehicle_servicing",
+    "scenario_summary": "A Nashik businessman's car came back from authorised servicing with engine damage; the workshop denies responsibility and demands further charges.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Aarav More",
+      "opposite_party_name": "Mhatre Engineering Works",
+      "product_service": "motor vehicle servicing",
+      "purchase_amount": 101500,
+      "trigger_date": "2026-02-23",
+      "city": "Mumbai"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 83,
+    "scenario_id": "coaching_class_refund_refusal",
+    "scenario_summary": "A Latur student paid full fees for a JEE coaching batch the institute later cancelled; the institute refuses any refund citing a no-refund clause.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Radhika Sheikh",
+      "opposite_party_name": "Chopra Agencies",
+      "product_service": "coaching classes enrolment",
+      "purchase_amount": 115000,
+      "purchase_date": "2025-11-14",
+      "trigger_date": "2025-12-06",
+      "city": "Solapur",
+      "opposite_party_address": "Flat No. 30, Shree Ganesh Apartments, Ring Road, Kothrud, Ahmedabad 38005",
+      "compensation_sought": 121500,
+      "advocate_name": "Swapnil Ranade"
+    },
+    "withheld_fields": [
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 84,
+    "scenario_id": "airline_refund_denied",
+    "scenario_summary": "A Delhi consultant's flight was cancelled by the airline, which has not refunded the fare months later despite repeated written complaints.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Savita Sawant",
+      "opposite_party_name": "Menon Services LLP",
+      "product_service": "air ticket",
+      "purchase_amount": 47500,
+      "trigger_date": "2025-11-10",
+      "compensation_sought": 10500,
+      "complainant_occupation": "transport operator",
+      "advocate_name": "Aishwarya Malhotra"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 85,
+    "scenario_id": "hospital_overbilling",
+    "scenario_summary": "An Aurangabad patient was billed far above the agreed package rate for surgery; the hospital withheld discharge papers until excess payment, a deficiency in service.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Smita More",
+      "opposite_party_name": "Sheikh Industries",
+      "product_service": "hospital treatment package",
+      "purchase_amount": 536500,
+      "trigger_date": "2024-12-08",
+      "city": "Pune",
+      "complainant_address": "Flat No. 24, Silver Oak Towers, Ring Road, Shivaji Nagar, Pune 41162",
+      "compensation_sought": 280000,
+      "advocate_name": "Karthik Wagh"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 86,
+    "scenario_id": "bank_charges_dispute",
+    "scenario_summary": "A Mumbai senior citizen's savings account was debited with unexplained service charges; the bank failed to reverse them despite written complaints.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Vikram D'Souza",
+      "opposite_party_name": "Nair Agencies",
+      "product_service": "savings bank account services",
+      "purchase_amount": 11500,
+      "city": "Thane",
+      "complainant_occupation": "interior designer"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 87,
+    "scenario_id": "defective_furniture",
+    "scenario_summary": "A Kolhapur couple's sofa set arrived with cracked frames and torn upholstery; the dealer ignored replacement requests throughout the warranty period.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Shraddha Joshi",
+      "opposite_party_name": "Ahmed Developers",
+      "product_service": "sofa set",
+      "purchase_amount": 29000,
+      "purchase_date": "2024-11-01",
+      "city": "Nagpur",
+      "complainant_address": "Flat No. 5, Gokul Residency, S.V. Road, Borivali East, Hyderabad 50084",
+      "compensation_sought": 112000,
+      "invoice_or_order_number": "SWZXY6514M",
+      "advocate_name": "Pooja Pereira"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 88,
+    "scenario_id": "mobile_dead_on_arrival",
+    "scenario_summary": "A Solapur shopkeeper's new smartphone was dead on arrival; both the retailer and the brand refuse the promised DOA replacement.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Tushar Apte",
+      "opposite_party_name": "Menon Enterprises",
+      "product_service": "mobile handset",
+      "purchase_amount": 65500,
+      "trigger_date": "2025-03-10",
+      "city": "Mumbai",
+      "complainant_address": "Flat No. 4, Shanti Niketan, College Road, New Friends Colony, Pune 41103",
+      "opposite_party_address": "Flat No. 11, Yashwant Smruti, M.G. Road, Aundh, Nashik 42224",
+      "compensation_sought": 97000,
+      "invoice_or_order_number": "BJYUF8878Z",
+      "complainant_occupation": "insurance agent"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 89,
+    "scenario_id": "gym_membership_refund",
+    "scenario_summary": "A Navi Mumbai IT employee paid for an annual gym membership; the branch shut within a month and the operator refuses any refund.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Gurpreet Sharma",
+      "opposite_party_name": "Fernandes Industries",
+      "product_service": "gym membership",
+      "purchase_amount": 17000,
+      "purchase_date": "2025-05-09"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 90,
+    "scenario_id": "broadband_advance_disconnection",
+    "scenario_summary": "A Bengaluru freelancer paid annual broadband charges in advance; the provider disconnected service within weeks and refuses refund or restoration.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Tejal Pawar",
+      "opposite_party_name": "Verma Constructions",
+      "product_service": "broadband internet connection",
+      "purchase_amount": 35000,
+      "city": "Kolkata",
+      "complainant_address": "Flat No. 22, Vrindavan Complex, College Road, Andheri West, Nashik 42202",
+      "invoice_or_order_number": "OOAVY4111M"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 91,
+    "scenario_id": "defective_washing_machine",
+    "scenario_summary": "A Mumbai homemaker's front-load washing machine failed within warranty; the manufacturer's service centre made three failed repair visits and refuses replacement.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Komal Kulkarni",
+      "opposite_party_name": "Ranade Marketing",
+      "product_service": "washing machine",
+      "purchase_amount": 74500,
+      "city": "Nashik",
+      "complainant_address": "Flat No. 5, Tulsi Vihar, College Road, New Friends Colony, Thane 40053"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 92,
+    "scenario_id": "ecommerce_non_delivery",
+    "scenario_summary": "A Pune student paid online for a laptop on an e-commerce marketplace; the order was never delivered and refund requests were ignored.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Aishwarya Khan",
+      "opposite_party_name": "Bhosale Developers",
+      "product_service": "laptop computer",
+      "purchase_amount": 68500,
+      "purchase_date": "2025-10-19",
+      "trigger_date": "2025-12-13",
+      "city": "Kolkata",
+      "opposite_party_address": "Flat No. 31, Gokul Residency, M.G. Road, Andheri West, Ahmedabad 38040",
+      "invoice_or_order_number": "FDCTH4610E",
+      "advocate_name": "Yogesh Malhotra"
+    },
+    "withheld_fields": [
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 93,
+    "scenario_id": "insurance_claim_repudiated",
+    "scenario_summary": "A Nagpur schoolteacher's health insurance claim for hospitalisation was repudiated citing pre-existing disease despite full disclosure at proposal stage.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Rekha Ranade",
+      "opposite_party_name": "Mehta Infotech Private Limited",
+      "product_service": "health insurance policy",
+      "purchase_amount": 344000,
+      "city": "Mumbai",
+      "complainant_address": "Flat No. 1, Matoshree Heights, Link Road, Aundh, Mumbai 40098",
+      "compensation_sought": 801000,
+      "complainant_occupation": "marketing manager",
+      "advocate_name": "Mangesh Jain"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 94,
+    "scenario_id": "builder_possession_delay",
+    "scenario_summary": "A Thane buyer paid most of the consideration for a 1BHK flat; the builder has delayed possession well beyond the agreed date despite repeated demands.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Rohan Gill",
+      "opposite_party_name": "Bhatt Traders",
+      "product_service": "residential flat booking",
+      "purchase_amount": 2096000,
+      "city": "Chandigarh",
+      "complainant_address": "Flat No. 12, Green Valley Society, Gandhi Chowk Road, Camp Area, Mumbai 40078",
+      "opposite_party_address": "Flat No. 24, Om Sai Plaza, Gandhi Chowk Road, Camp Area, Chennai 60097",
+      "advocate_name": "Deepak Gill"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 95,
+    "scenario_id": "faulty_vehicle_servicing",
+    "scenario_summary": "A Nashik businessman's car came back from authorised servicing with engine damage; the workshop denies responsibility and demands further charges.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Savita Deshpande",
+      "opposite_party_name": "Gokhale Traders",
+      "product_service": "motor vehicle servicing",
+      "purchase_amount": 113500,
+      "trigger_date": "2025-05-27",
+      "city": "Surat",
+      "complainant_address": "Flat No. 14, Om Sai Plaza, Gandhi Chowk Road, Sector 9, Mumbai 40074",
+      "opposite_party_address": "Flat No. 38, Tulsi Vihar, M.G. Road, Shivaji Nagar, Mumbai 40091",
+      "compensation_sought": 99000
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 96,
+    "scenario_id": "coaching_class_refund_refusal",
+    "scenario_summary": "A Latur student paid full fees for a JEE coaching batch the institute later cancelled; the institute refuses any refund citing a no-refund clause.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Meera Trivedi",
+      "opposite_party_name": "Banerjee Textiles",
+      "product_service": "coaching classes enrolment",
+      "purchase_amount": 128000,
+      "city": "Chhatrapati Sambhajinagar",
+      "opposite_party_address": "Flat No. 34, Green Valley Society, Station Road, Model Colony, Delhi 11005",
+      "compensation_sought": 159000,
+      "complainant_occupation": "bank employee",
+      "advocate_name": "Smita D'Souza"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 97,
+    "scenario_id": "airline_refund_denied",
+    "scenario_summary": "A Delhi consultant's flight was cancelled by the airline, which has not refunded the fare months later despite repeated written complaints.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Sanjay Agarwal",
+      "opposite_party_name": "Bhosale Textiles",
+      "product_service": "air ticket",
+      "purchase_amount": 73500,
+      "trigger_date": "2025-06-20",
+      "compensation_sought": 31500,
+      "complainant_occupation": "chartered accountant",
+      "advocate_name": "Bhushan Shinde"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 98,
+    "scenario_id": "hospital_overbilling",
+    "scenario_summary": "An Aurangabad patient was billed far above the agreed package rate for surgery; the hospital withheld discharge papers until excess payment, a deficiency in service.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Anita Mukherjee",
+      "opposite_party_name": "Ahmed Developers",
+      "product_service": "hospital treatment package",
+      "purchase_amount": 113500,
+      "purchase_date": "2025-05-14",
+      "city": "Ahmedabad",
+      "complainant_address": "Flat No. 31, Vrindavan Complex, M.G. Road, Borivali East, Hyderabad 50090",
+      "opposite_party_address": "Flat No. 12, Sai Krupa CHS, S.V. Road, Camp Area, Vadodara 39070",
+      "compensation_sought": 332500,
+      "invoice_or_order_number": "VBAES9513T",
+      "complainant_occupation": "civil contractor"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 99,
+    "scenario_id": "bank_charges_dispute",
+    "scenario_summary": "A Mumbai senior citizen's savings account was debited with unexplained service charges; the bank failed to reverse them despite written complaints.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Sayali Jadhav",
+      "opposite_party_name": "Iyer Agencies",
+      "product_service": "savings bank account services",
+      "purchase_amount": 12000,
+      "city": "Bengaluru",
+      "invoice_or_order_number": "KGPOZ3297D",
+      "complainant_occupation": "doctor",
+      "advocate_name": "Ananya Gaikwad"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 100,
+    "scenario_id": "defective_furniture",
+    "scenario_summary": "A Kolhapur couple's sofa set arrived with cracked frames and torn upholstery; the dealer ignored replacement requests throughout the warranty period.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Mrunal Trivedi",
+      "opposite_party_name": "Gupta Agencies",
+      "product_service": "sofa set",
+      "purchase_amount": 107000,
+      "city": "Pune",
+      "complainant_address": "Flat No. 29, Green Valley Society, Market Yard Road, Sector 9, Kolhapur 41656",
+      "compensation_sought": 81500,
+      "advocate_name": "Gurpreet Sawant"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 101,
+    "scenario_id": "mobile_dead_on_arrival",
+    "scenario_summary": "A Solapur shopkeeper's new smartphone was dead on arrival; both the retailer and the brand refuse the promised DOA replacement.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Shrikant Gill",
+      "opposite_party_name": "Mehta Trading Company",
+      "product_service": "mobile handset",
+      "purchase_amount": 18500,
+      "purchase_date": "2025-05-09",
+      "city": "Mumbai",
+      "complainant_address": "Flat No. 8, Tulsi Vihar, Market Yard Road, Sadashiv Peth, Kolkata 70048",
+      "opposite_party_address": "Flat No. 34, Prestige Court, M.G. Road, Model Colony, Pune 41136",
+      "compensation_sought": 30500,
+      "invoice_or_order_number": "WEDAY3859E",
+      "advocate_name": "Radhika Bhosale"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 102,
+    "scenario_id": "gym_membership_refund",
+    "scenario_summary": "A Navi Mumbai IT employee paid for an annual gym membership; the branch shut within a month and the operator refuses any refund.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Gurpreet Malhotra",
+      "opposite_party_name": "Patil Agencies",
+      "product_service": "gym membership",
+      "purchase_amount": 21500,
+      "trigger_date": "2025-04-19",
+      "city": "Nashik",
+      "complainant_address": "Flat No. 14, Om Sai Plaza, M.G. Road, Shivaji Nagar, Pune 41163",
+      "complainant_occupation": "bank employee",
+      "advocate_name": "Prashant Kulkarni"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 103,
+    "scenario_id": "broadband_advance_disconnection",
+    "scenario_summary": "A Bengaluru freelancer paid annual broadband charges in advance; the provider disconnected service within weeks and refuses refund or restoration.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Ajay Apte",
+      "opposite_party_name": "Jain Infotech Private Limited",
+      "product_service": "broadband internet connection",
+      "purchase_amount": 38000,
+      "purchase_date": "2025-03-09",
+      "trigger_date": "2025-04-30",
+      "city": "Mumbai",
+      "complainant_address": "Flat No. 9, Prestige Court, Gandhi Chowk Road, Sadashiv Peth, Mumbai 40072",
+      "opposite_party_address": "Flat No. 12, Green Valley Society, Market Yard Road, Camp Area, Nashik 42205",
+      "compensation_sought": 8500,
+      "invoice_or_order_number": "VZOWY4414Z",
+      "advocate_name": "Pallavi Chopra"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 104,
+    "scenario_id": "defective_washing_machine",
+    "scenario_summary": "A Mumbai homemaker's front-load washing machine failed within warranty; the manufacturer's service centre made three failed repair visits and refuses replacement.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Imran Sharma",
+      "opposite_party_name": "Khan Infotech Private Limited",
+      "product_service": "washing machine",
+      "purchase_amount": 54500,
+      "purchase_date": "2025-09-28",
+      "city": "Bengaluru",
+      "complainant_address": "Flat No. 31, Tulsi Vihar, Ring Road, Dadar, Nagpur 44095",
+      "advocate_name": "Devendra Bhosale"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 105,
+    "scenario_id": "ecommerce_non_delivery",
+    "scenario_summary": "A Pune student paid online for a laptop on an e-commerce marketplace; the order was never delivered and refund requests were ignored.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Ganesh Pawar",
+      "opposite_party_name": "Deshpande Solutions Private Limited",
+      "product_service": "laptop computer",
+      "purchase_amount": 51500,
+      "purchase_date": "2026-01-13",
+      "trigger_date": "2026-03-10",
+      "city": "Surat",
+      "complainant_address": "Flat No. 37, Shanti Niketan, S.V. Road, Aundh, Surat 39530",
+      "compensation_sought": 63000,
+      "invoice_or_order_number": "DXABT7481G",
+      "complainant_occupation": "garment trader",
+      "advocate_name": "Omkar Verma"
+    },
+    "withheld_fields": [
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 106,
+    "scenario_id": "insurance_claim_repudiated",
+    "scenario_summary": "A Nagpur schoolteacher's health insurance claim for hospitalisation was repudiated citing pre-existing disease despite full disclosure at proposal stage.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Ramesh Shinde",
+      "opposite_party_name": "Apte Infotech Private Limited",
+      "product_service": "health insurance policy",
+      "purchase_amount": 718000,
+      "purchase_date": "2025-03-18",
+      "city": "Nashik",
+      "complainant_address": "Flat No. 21, Silver Oak Towers, Ring Road, Shivaji Nagar, Pune 41110",
+      "compensation_sought": 613000,
+      "complainant_occupation": "tailor",
+      "advocate_name": "Shraddha Agarwal"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 107,
+    "scenario_id": "builder_possession_delay",
+    "scenario_summary": "A Thane buyer paid most of the consideration for a 1BHK flat; the builder has delayed possession well beyond the agreed date despite repeated demands.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Pallavi Gill",
+      "opposite_party_name": "Gaikwad Developers",
+      "product_service": "residential flat booking",
+      "purchase_amount": 2056000,
+      "compensation_sought": 2142500,
+      "invoice_or_order_number": "JPZRN7378F",
+      "advocate_name": "Aditya Iyer"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 108,
+    "scenario_id": "faulty_vehicle_servicing",
+    "scenario_summary": "A Nashik businessman's car came back from authorised servicing with engine damage; the workshop denies responsibility and demands further charges.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Aarav Iyer",
+      "opposite_party_name": "Jain Agencies",
+      "product_service": "motor vehicle servicing",
+      "purchase_amount": 176000,
+      "trigger_date": "2026-05-26",
+      "compensation_sought": 160000,
+      "complainant_occupation": "software engineer"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 109,
+    "scenario_id": "coaching_class_refund_refusal",
+    "scenario_summary": "A Latur student paid full fees for a JEE coaching batch the institute later cancelled; the institute refuses any refund citing a no-refund clause.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Aditya Naidu",
+      "opposite_party_name": "Gaikwad Services LLP",
+      "product_service": "coaching classes enrolment",
+      "purchase_amount": 194000,
+      "purchase_date": "2025-05-01",
+      "trigger_date": "2025-06-22",
+      "city": "Thane",
+      "complainant_address": "Flat No. 11, Sai Krupa CHS, S.V. Road, Sector 9, Nagpur 44083",
+      "invoice_or_order_number": "LBOCN9392D",
+      "complainant_occupation": "marketing manager",
+      "advocate_name": "Prakash Gaikwad"
+    },
+    "withheld_fields": [
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 110,
+    "scenario_id": "airline_refund_denied",
+    "scenario_summary": "A Delhi consultant's flight was cancelled by the airline, which has not refunded the fare months later despite repeated written complaints.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Deepak Reddy",
+      "opposite_party_name": "Ahmed Engineering Works",
+      "product_service": "air ticket",
+      "purchase_amount": 67000,
+      "city": "Kochi",
+      "opposite_party_address": "Flat No. 3, Shanti Niketan, Market Yard Road, Aundh, Solapur 41339",
+      "invoice_or_order_number": "OKTLM1426T"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 111,
+    "scenario_id": "hospital_overbilling",
+    "scenario_summary": "An Aurangabad patient was billed far above the agreed package rate for surgery; the hospital withheld discharge papers until excess payment, a deficiency in service.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Mangesh Chavan",
+      "opposite_party_name": "Gill Foods",
+      "product_service": "hospital treatment package",
+      "purchase_amount": 135000,
+      "trigger_date": "2025-08-25",
+      "city": "Thane",
+      "complainant_address": "Flat No. 39, Matoshree Heights, Fergusson College Road, Shivaji Nagar, Thane 40095",
+      "compensation_sought": 396500,
+      "invoice_or_order_number": "EEHNA9485D",
+      "advocate_name": "Sanjay Sharma"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 112,
+    "scenario_id": "bank_charges_dispute",
+    "scenario_summary": "A Mumbai senior citizen's savings account was debited with unexplained service charges; the bank failed to reverse them despite written complaints.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Anita Sharma",
+      "opposite_party_name": "Ranade Traders",
+      "product_service": "savings bank account services",
+      "purchase_amount": 54000,
+      "purchase_date": "2025-01-10",
+      "city": "Thane",
+      "complainant_address": "Flat No. 25, Matoshree Heights, S.V. Road, Borivali East, Kolkata 70040",
+      "invoice_or_order_number": "HLZOP8107S"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 113,
+    "scenario_id": "defective_furniture",
+    "scenario_summary": "A Kolhapur couple's sofa set arrived with cracked frames and torn upholstery; the dealer ignored replacement requests throughout the warranty period.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Yogesh Verma",
+      "opposite_party_name": "Fernandes Engineering Works",
+      "product_service": "sofa set",
+      "purchase_amount": 117000,
+      "purchase_date": "2025-03-20",
+      "trigger_date": "2025-04-06",
+      "city": "Mumbai",
+      "complainant_address": "Flat No. 32, Matoshree Heights, Market Yard Road, Andheri West, Navi Mumbai 40025",
+      "invoice_or_order_number": "KGNPA1048P"
+    },
+    "withheld_fields": [
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 114,
+    "scenario_id": "mobile_dead_on_arrival",
+    "scenario_summary": "A Solapur shopkeeper's new smartphone was dead on arrival; both the retailer and the brand refuse the promised DOA replacement.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Manoj Jadhav",
+      "opposite_party_name": "Phadke Developers",
+      "product_service": "mobile handset",
+      "purchase_amount": 110000,
+      "advocate_name": "Farhan Joshi"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 115,
+    "scenario_id": "gym_membership_refund",
+    "scenario_summary": "A Navi Mumbai IT employee paid for an annual gym membership; the branch shut within a month and the operator refuses any refund.",
+    "register": "casual",
+    "given_facts": {
+      "complainant_name": "Suresh Sawant",
+      "opposite_party_name": "More Foods",
+      "product_service": "gym membership",
+      "purchase_amount": 17000,
+      "trigger_date": "2025-07-16",
+      "city": "Thane",
+      "opposite_party_address": "Flat No. 30, Tulsi Vihar, S.V. Road, Andheri West, Vadodara 39032",
+      "complainant_occupation": "school teacher",
+      "advocate_name": "Madhuri Surve"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      },
+      {
+        "name": "invoice_or_order_number",
+        "placeholder": "[INVOICE OR ORDER NUMBER]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 116,
+    "scenario_id": "broadband_advance_disconnection",
+    "scenario_summary": "A Bengaluru freelancer paid annual broadband charges in advance; the provider disconnected service within weeks and refuses refund or restoration.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Joseph Verma",
+      "opposite_party_name": "Kaur Services LLP",
+      "product_service": "broadband internet connection",
+      "purchase_amount": 18500,
+      "purchase_date": "2025-12-08",
+      "trigger_date": "2026-01-22",
+      "city": "Mumbai",
+      "invoice_or_order_number": "ZYFRX2121D",
+      "advocate_name": "Joseph Deshpande"
+    },
+    "withheld_fields": [
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 117,
+    "scenario_id": "defective_washing_machine",
+    "scenario_summary": "A Mumbai homemaker's front-load washing machine failed within warranty; the manufacturer's service centre made three failed repair visits and refuses replacement.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Anil Ghadge",
+      "opposite_party_name": "Salunkhe Engineering Works",
+      "product_service": "washing machine",
+      "purchase_amount": 73500,
+      "purchase_date": "2025-09-26",
+      "city": "Kochi",
+      "opposite_party_address": "Flat No. 9, Yashwant Smruti, M.G. Road, Camp Area, Pune 41165",
+      "compensation_sought": 17500,
+      "invoice_or_order_number": "GBTGI5263N"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "complainant_address",
+        "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 118,
+    "scenario_id": "ecommerce_non_delivery",
+    "scenario_summary": "A Pune student paid online for a laptop on an e-commerce marketplace; the order was never delivered and refund requests were ignored.",
+    "register": "semi_formal",
+    "given_facts": {
+      "complainant_name": "Sneha Kapoor",
+      "opposite_party_name": "Khan Marketing",
+      "product_service": "laptop computer",
+      "purchase_amount": 51500,
+      "city": "Nagpur",
+      "complainant_address": "Flat No. 9, Green Valley Society, S.V. Road, Civil Lines, Navi Mumbai 40018",
+      "invoice_or_order_number": "PSIUA3214T",
+      "complainant_occupation": "college professor"
+    },
+    "withheld_fields": [
+      {
+        "name": "purchase_date",
+        "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+      },
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "opposite_party_address",
+        "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "consumer_complaint_cpa2019",
+    "index": 119,
+    "scenario_id": "insurance_claim_repudiated",
+    "scenario_summary": "A Nagpur schoolteacher's health insurance claim for hospitalisation was repudiated citing pre-existing disease despite full disclosure at proposal stage.",
+    "register": "detailed",
+    "given_facts": {
+      "complainant_name": "Mangesh Jain",
+      "opposite_party_name": "Jain Trading Company",
+      "product_service": "health insurance policy",
+      "purchase_amount": 486000,
+      "purchase_date": "2025-08-08",
+      "city": "Nagpur",
+      "complainant_address": "Flat No. 24, Vrindavan Complex, Gandhi Chowk Road, Sadashiv Peth, Mumbai 40026",
+      "opposite_party_address": "Flat No. 4, Prestige Court, Market Yard Road, Model Colony, Chhatrapati Sambhajinagar 43121",
+      "invoice_or_order_number": "BGFZC4616R",
+      "advocate_name": "Harshad Das"
+    },
+    "withheld_fields": [
+      {
+        "name": "trigger_date",
+        "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+      },
+      {
+        "name": "compensation_sought",
+        "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+      }
+    ],
+    "nearest_supported": null
+  }
+]

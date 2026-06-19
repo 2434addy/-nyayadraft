@@ -1,0 +1,2354 @@
+[
+  {
+    "doc_type": "mou_two_parties",
+    "index": 0,
+    "scenario_id": "business_collaboration",
+    "scenario_summary": "A Pune industrial-automation firm and a Mumbai design studio record intent to jointly bid for factory retrofit projects across Maharashtra.",
+    "register": "detailed",
+    "given_facts": {
+      "party_a_company_name": "Verma Services LLP",
+      "party_b_company_name": "Kadam Constructions",
+      "city": "Mumbai",
+      "party_a_address": "Flat No. 35, Shanti Niketan, Ring Road, New Friends Colony, Thane 40009",
+      "party_b_address": "Flat No. 26, Matoshree Heights, Gandhi Chowk Road, New Friends Colony, Indore 45283",
+      "signing_date": "2026-06-06",
+      "term_months": 6,
+      "jurisdiction_city": "Mumbai",
+      "notice_period_days": 75,
+      "party_b_signatory_name": "Amol Lokhande",
+      "witness_one_name": "Abhijit Shinde"
+    },
+    "withheld_fields": [],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 1,
+    "scenario_id": "joint_venture_exploration",
+    "scenario_summary": "A Nagpur infrastructure contractor and a Mumbai construction company explore a joint venture for PWD road tenders in Vidarbha.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_company_name": "Rao Trading Company",
+      "party_b_company_name": "Pawar Trading Company",
+      "city": "Nashik",
+      "party_a_address": "Flat No. 20, Gokul Residency, Fergusson College Road, New Friends Colony, Mumbai 40095",
+      "signing_date": "2026-06-13",
+      "term_months": 12,
+      "party_a_signatory_name": "Harshad Kaur",
+      "witness_one_name": "Tejal Kaur"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 2,
+    "scenario_id": "vendor_distributor_arrangement",
+    "scenario_summary": "An Aurangabad FMCG manufacturer and a Nashik distributor record intent for snacks distribution across North Maharashtra districts.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_company_name": "Agarwal Constructions",
+      "party_b_company_name": "Mehta Services LLP",
+      "term_months": 12,
+      "party_a_signatory_name": "Gurpreet Sawant",
+      "party_b_signatory_name": "Harpreet Das"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY OF EXECUTION]"
+      },
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 3,
+    "scenario_id": "ngo_csr_partnership",
+    "scenario_summary": "A listed Mumbai company's CSR foundation and a Pune NGO agree on a youth skilling programme in Pimpri-Chinchwad.",
+    "register": "detailed",
+    "given_facts": {
+      "party_a_company_name": "Deshmukh Enterprises",
+      "party_b_company_name": "Gokhale Distributors",
+      "city": "Delhi",
+      "signing_date": "2026-06-08",
+      "party_a_signatory_name": "Aarav Salunkhe"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 4,
+    "scenario_id": "tech_licensing_intent",
+    "scenario_summary": "A Hyderabad software company and a Kolhapur auto-parts manufacturer record intent to license a production-planning software suite.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_company_name": "Sharma Traders",
+      "party_b_company_name": "Jadhav Textiles",
+      "city": "Kolhapur",
+      "party_b_address": "Flat No. 19, Vrindavan Complex, Ring Road, Borivali East, Pune 41111",
+      "term_months": 36,
+      "contribution_amount": 419500,
+      "notice_period_days": 54,
+      "party_b_signatory_name": "Rutuja Deshmukh"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 5,
+    "scenario_id": "college_industry_internship",
+    "scenario_summary": "A Pune engineering college and a Chakan auto components company set up internships, plant visits, and joint student projects.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_company_name": "Reddy Industries",
+      "party_b_company_name": "Deshmukh Foods",
+      "city": "Kochi",
+      "signing_date": "2026-06-12",
+      "term_months": 6,
+      "contribution_amount": 3505000,
+      "party_a_signatory_name": "Prakash Rao",
+      "party_b_signatory_name": "Amol Lokhande",
+      "witness_one_name": "Komal Shinde"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 6,
+    "scenario_id": "supplier_exclusivity_intent",
+    "scenario_summary": "A Kolhapur foundry and a Chennai pump manufacturer record intent for exclusive supply of graded castings pending a definitive agreement.",
+    "register": "detailed",
+    "given_facts": {
+      "party_a_company_name": "Naik Agencies",
+      "party_b_company_name": "Chopra Textiles",
+      "city": "Navi Mumbai",
+      "party_a_address": "Flat No. 23, Shanti Niketan, Karve Road, Civil Lines, Bengaluru 56004",
+      "party_b_address": "Flat No. 15, Prestige Court, S.V. Road, Sadashiv Peth, Mumbai 40038",
+      "signing_date": "2026-06-11",
+      "contribution_amount": 4442500,
+      "notice_period_days": 82
+    },
+    "withheld_fields": [
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 7,
+    "scenario_id": "franchise_exploration",
+    "scenario_summary": "A Nashik entrepreneur and a Bengaluru cafe chain explore a franchise outlet, with due diligence and a pilot before any franchise agreement.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_person_name": "Sachin Sheikh",
+      "party_b_company_name": "Bhosale Engineering Works",
+      "city": "Amravati",
+      "party_a_address": "Flat No. 2, Prestige Court, S.V. Road, Sector 9, Chennai 60050",
+      "signing_date": "2026-06-10",
+      "term_months": 18,
+      "jurisdiction_city": "Kolkata",
+      "party_b_signatory_name": "Ashwini Salunkhe"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 8,
+    "scenario_id": "doctor_clinic_rotation",
+    "scenario_summary": "A Mumbai-based MD physician and a Thane multi-speciality clinic agree on weekly OPD rotations and referral protocols.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Kiran Bhagat",
+      "party_b_company_name": "Kale Services LLP",
+      "city": "Bengaluru",
+      "signing_date": "2026-06-08",
+      "notice_period_days": 52,
+      "party_b_signatory_name": "Aarav Wagh"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 9,
+    "scenario_id": "event_co_organisation",
+    "scenario_summary": "A freelance event producer and a Pune cultural trust co-organise a three-day Diwali trade fair at a city exhibition ground.",
+    "register": "detailed",
+    "given_facts": {
+      "party_a_person_name": "Arjun Gaikwad",
+      "party_b_company_name": "Verma Distributors",
+      "city": "Kolkata",
+      "party_a_address": "Flat No. 20, Yashwant Smruti, Karve Road, Borivali East, Ahmedabad 38053",
+      "party_b_address": "Flat No. 29, Tulsi Vihar, Gandhi Chowk Road, Civil Lines, Pune 41155",
+      "signing_date": "2026-06-08",
+      "jurisdiction_city": "Kolkata",
+      "contribution_amount": 1980500,
+      "witness_one_name": "Rajesh Naik"
+    },
+    "withheld_fields": [
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 10,
+    "scenario_id": "co_working_space_arrangement",
+    "scenario_summary": "A freelance architect and a Navi Mumbai co-working operator record an understanding for dedicated studio desks and shared meeting credits.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_person_name": "Aarti Gokhale",
+      "party_b_company_name": "Menon Infotech Private Limited",
+      "city": "Chhatrapati Sambhajinagar",
+      "party_b_address": "Flat No. 10, Matoshree Heights, S.V. Road, Kothrud, Vasai-Virar 40109",
+      "signing_date": "2026-06-08",
+      "term_months": 36,
+      "contribution_amount": 372500,
+      "notice_period_days": 85,
+      "party_b_signatory_name": "Vaishali Jadhav",
+      "witness_one_name": "Mary Kadam"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 11,
+    "scenario_id": "family_business_transition",
+    "scenario_summary": "A daughter returning from Ahmedabad and the family's Solapur textile company record a phased management transition understanding.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_person_name": "Mary Deshmukh",
+      "party_b_company_name": "Ghadge Infotech Private Limited",
+      "city": "Mumbai",
+      "party_a_address": "Flat No. 9, Yashwant Smruti, S.V. Road, Camp Area, Navi Mumbai 40013",
+      "term_months": 18,
+      "contribution_amount": 4552000,
+      "witness_one_name": "Suresh Chopra"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 12,
+    "scenario_id": "startup_incubation",
+    "scenario_summary": "A first-time founder and a Mumbai university incubator record an understanding on mentoring, seed support, and workspace access.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_person_name": "Vikram Joshi",
+      "party_b_company_name": "Bhagat Solutions Private Limited",
+      "city": "Bhopal",
+      "party_b_address": "Flat No. 36, Vrindavan Complex, M.G. Road, Dadar, Mumbai 40006",
+      "signing_date": "2026-06-12",
+      "term_months": 12,
+      "notice_period_days": 38
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 13,
+    "scenario_id": "business_collaboration",
+    "scenario_summary": "A Pune industrial-automation firm and a Mumbai design studio record intent to jointly bid for factory retrofit projects across Maharashtra.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_company_name": "Gupta Industries",
+      "party_b_company_name": "Ranade Distributors",
+      "city": "Thane",
+      "party_a_address": "Flat No. 1, Shree Ganesh Apartments, Karve Road, Kothrud, Surat 39505",
+      "party_b_address": "Flat No. 38, Yashwant Smruti, Market Yard Road, Model Colony, Pune 41175",
+      "term_months": 36,
+      "jurisdiction_city": "Delhi",
+      "contribution_amount": 4602000,
+      "notice_period_days": 45,
+      "party_a_signatory_name": "Komal Chopra"
+    },
+    "withheld_fields": [
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 14,
+    "scenario_id": "joint_venture_exploration",
+    "scenario_summary": "A Nagpur infrastructure contractor and a Mumbai construction company explore a joint venture for PWD road tenders in Vidarbha.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_company_name": "Ghadge Enterprises",
+      "party_b_company_name": "Joshi Solutions Private Limited",
+      "city": "Surat",
+      "party_a_address": "Flat No. 20, Yashwant Smruti, M.G. Road, Andheri West, Mumbai 40004",
+      "signing_date": "2026-06-12",
+      "contribution_amount": 2859000,
+      "notice_period_days": 79,
+      "witness_one_name": "Rekha Mehta"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 15,
+    "scenario_id": "vendor_distributor_arrangement",
+    "scenario_summary": "An Aurangabad FMCG manufacturer and a Nashik distributor record intent for snacks distribution across North Maharashtra districts.",
+    "register": "detailed",
+    "given_facts": {
+      "party_a_company_name": "Das Foods",
+      "party_b_company_name": "Sawant Constructions",
+      "city": "Mumbai",
+      "party_a_address": "Flat No. 11, Tulsi Vihar, Station Road, Kothrud, Amravati 44411",
+      "party_b_address": "Flat No. 6, Om Sai Plaza, Fergusson College Road, Kothrud, Delhi 11059",
+      "term_months": 24,
+      "jurisdiction_city": "Nashik",
+      "contribution_amount": 2017500,
+      "notice_period_days": 46,
+      "party_a_signatory_name": "Ashwini Agarwal"
+    },
+    "withheld_fields": [
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 16,
+    "scenario_id": "ngo_csr_partnership",
+    "scenario_summary": "A listed Mumbai company's CSR foundation and a Pune NGO agree on a youth skilling programme in Pimpri-Chinchwad.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_company_name": "Mane Industries",
+      "party_b_company_name": "Naidu Infotech Private Limited",
+      "city": "Jaipur",
+      "party_a_address": "Flat No. 33, Prestige Court, M.G. Road, Aundh, Kolhapur 41678",
+      "party_b_address": "Flat No. 8, Om Sai Plaza, Ring Road, Camp Area, Delhi 11020",
+      "party_b_signatory_name": "Ishita Bhagat",
+      "witness_one_name": "Swapnil Bhosale"
+    },
+    "withheld_fields": [
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 17,
+    "scenario_id": "tech_licensing_intent",
+    "scenario_summary": "A Hyderabad software company and a Kolhapur auto-parts manufacturer record intent to license a production-planning software suite.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_company_name": "Ghadge Industries",
+      "party_b_company_name": "Raut Foods",
+      "signing_date": "2026-06-12",
+      "contribution_amount": 1453500,
+      "notice_period_days": 77,
+      "party_a_signatory_name": "Harpreet Kaur"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY OF EXECUTION]"
+      },
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 18,
+    "scenario_id": "college_industry_internship",
+    "scenario_summary": "A Pune engineering college and a Chakan auto components company set up internships, plant visits, and joint student projects.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_company_name": "Verma Distributors",
+      "party_b_company_name": "Gupta Industries",
+      "city": "Mumbai",
+      "party_b_address": "Flat No. 10, Sai Krupa CHS, M.G. Road, Shivaji Nagar, Ahmedabad 38016",
+      "signing_date": "2026-06-11",
+      "term_months": 12,
+      "contribution_amount": 4637500,
+      "party_b_signatory_name": "Kavita Verma",
+      "witness_one_name": "Imran Lokhande"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 19,
+    "scenario_id": "supplier_exclusivity_intent",
+    "scenario_summary": "A Kolhapur foundry and a Chennai pump manufacturer record intent for exclusive supply of graded castings pending a definitive agreement.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_company_name": "Kale Constructions",
+      "party_b_company_name": "Ghadge Agencies",
+      "contribution_amount": 4791000,
+      "party_a_signatory_name": "Farhan Sawant",
+      "party_b_signatory_name": "Sandeep Sheikh"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY OF EXECUTION]"
+      },
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 20,
+    "scenario_id": "franchise_exploration",
+    "scenario_summary": "A Nashik entrepreneur and a Bengaluru cafe chain explore a franchise outlet, with due diligence and a pilot before any franchise agreement.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Gurpreet Patil",
+      "party_b_company_name": "Thorat Constructions",
+      "city": "Kolhapur",
+      "party_b_address": "Flat No. 5, Om Sai Plaza, M.G. Road, Borivali East, Chhatrapati Sambhajinagar 43109",
+      "signing_date": "2026-06-15",
+      "jurisdiction_city": "Chennai",
+      "contribution_amount": 2675000,
+      "notice_period_days": 37,
+      "party_b_signatory_name": "Abhijit Mhatre",
+      "witness_one_name": "Anita Ranade"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 21,
+    "scenario_id": "doctor_clinic_rotation",
+    "scenario_summary": "A Mumbai-based MD physician and a Thane multi-speciality clinic agree on weekly OPD rotations and referral protocols.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Pooja Mehta",
+      "party_b_company_name": "Reddy Industries",
+      "notice_period_days": 87,
+      "party_b_signatory_name": "Komal Gupta",
+      "witness_one_name": "Sayali Menon"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY OF EXECUTION]"
+      },
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 22,
+    "scenario_id": "event_co_organisation",
+    "scenario_summary": "A freelance event producer and a Pune cultural trust co-organise a three-day Diwali trade fair at a city exhibition ground.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Anil Kapoor",
+      "party_b_company_name": "Shah Engineering Works",
+      "contribution_amount": 455000,
+      "party_b_signatory_name": "Joseph Kaur"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY OF EXECUTION]"
+      },
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 23,
+    "scenario_id": "co_working_space_arrangement",
+    "scenario_summary": "A freelance architect and a Navi Mumbai co-working operator record an understanding for dedicated studio desks and shared meeting credits.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Imran Kulkarni",
+      "party_b_company_name": "Wagh Developers",
+      "signing_date": "2026-06-06",
+      "notice_period_days": 53,
+      "party_b_signatory_name": "Priya Pereira",
+      "witness_one_name": "Sachin More"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY OF EXECUTION]"
+      },
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 24,
+    "scenario_id": "family_business_transition",
+    "scenario_summary": "A daughter returning from Ahmedabad and the family's Solapur textile company record a phased management transition understanding.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Deepak Apte",
+      "party_b_company_name": "Shah Foods",
+      "city": "Chandigarh",
+      "party_b_address": "Flat No. 10, Prestige Court, Fergusson College Road, Shivaji Nagar, Mumbai 40038",
+      "term_months": 12,
+      "notice_period_days": 80,
+      "witness_one_name": "Smita Shinde"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 25,
+    "scenario_id": "startup_incubation",
+    "scenario_summary": "A first-time founder and a Mumbai university incubator record an understanding on mentoring, seed support, and workspace access.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_person_name": "Sunil Jain",
+      "party_b_company_name": "Iyer Solutions Private Limited",
+      "signing_date": "2026-06-10",
+      "term_months": 18,
+      "jurisdiction_city": "Mumbai",
+      "notice_period_days": 65,
+      "party_b_signatory_name": "Gurpreet Kaur",
+      "witness_one_name": "Anil Gaikwad"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY OF EXECUTION]"
+      },
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 26,
+    "scenario_id": "business_collaboration",
+    "scenario_summary": "A Pune industrial-automation firm and a Mumbai design studio record intent to jointly bid for factory retrofit projects across Maharashtra.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_company_name": "Banerjee Marketing",
+      "party_b_company_name": "Shinde Traders",
+      "city": "Pune",
+      "party_a_address": "Flat No. 27, Tulsi Vihar, Link Road, Kothrud, Nagpur 44099",
+      "signing_date": "2026-06-16",
+      "witness_one_name": "Swapnil Singh"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 27,
+    "scenario_id": "joint_venture_exploration",
+    "scenario_summary": "A Nagpur infrastructure contractor and a Mumbai construction company explore a joint venture for PWD road tenders in Vidarbha.",
+    "register": "detailed",
+    "given_facts": {
+      "party_a_company_name": "Pereira Agencies",
+      "party_b_company_name": "Sharma Developers",
+      "city": "Nagpur",
+      "party_a_address": "Flat No. 4, Yashwant Smruti, Gandhi Chowk Road, Model Colony, Visakhapatnam 53043",
+      "term_months": 12,
+      "jurisdiction_city": "Delhi",
+      "party_a_signatory_name": "Sneha Verma",
+      "witness_one_name": "Deepa Joshi"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 28,
+    "scenario_id": "vendor_distributor_arrangement",
+    "scenario_summary": "An Aurangabad FMCG manufacturer and a Nashik distributor record intent for snacks distribution across North Maharashtra districts.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_company_name": "More Traders",
+      "party_b_company_name": "Agarwal Constructions",
+      "city": "Surat",
+      "party_a_address": "Flat No. 8, Green Valley Society, Fergusson College Road, Borivali East, Hyderabad 50035",
+      "party_b_address": "Flat No. 20, Vrindavan Complex, Station Road, Sadashiv Peth, Solapur 41379",
+      "jurisdiction_city": "Navi Mumbai",
+      "contribution_amount": 354500,
+      "party_a_signatory_name": "Aarti Gokhale"
+    },
+    "withheld_fields": [
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 29,
+    "scenario_id": "ngo_csr_partnership",
+    "scenario_summary": "A listed Mumbai company's CSR foundation and a Pune NGO agree on a youth skilling programme in Pimpri-Chinchwad.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_company_name": "Lokhande Developers",
+      "party_b_company_name": "Fernandes Industries",
+      "city": "Navi Mumbai",
+      "party_b_address": "Flat No. 12, Sai Krupa CHS, Station Road, Model Colony, Lucknow 22638",
+      "signing_date": "2026-06-09",
+      "term_months": 36,
+      "jurisdiction_city": "Chhatrapati Sambhajinagar",
+      "contribution_amount": 4077000,
+      "witness_one_name": "Rohan Sharma"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 30,
+    "scenario_id": "tech_licensing_intent",
+    "scenario_summary": "A Hyderabad software company and a Kolhapur auto-parts manufacturer record intent to license a production-planning software suite.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_company_name": "Malhotra Solutions Private Limited",
+      "party_b_company_name": "Salunkhe Solutions Private Limited",
+      "city": "Patna",
+      "party_a_address": "Flat No. 3, Tulsi Vihar, S.V. Road, Sector 9, Navi Mumbai 40048",
+      "party_b_address": "Flat No. 35, Sai Krupa CHS, Karve Road, New Friends Colony, Nashik 42281",
+      "notice_period_days": 59,
+      "party_a_signatory_name": "Manoj Gokhale"
+    },
+    "withheld_fields": [
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 31,
+    "scenario_id": "college_industry_internship",
+    "scenario_summary": "A Pune engineering college and a Chakan auto components company set up internships, plant visits, and joint student projects.",
+    "register": "detailed",
+    "given_facts": {
+      "party_a_company_name": "Kaur Foods",
+      "party_b_company_name": "Khan Foods",
+      "city": "Chennai",
+      "party_a_address": "Flat No. 1, Matoshree Heights, Fergusson College Road, Model Colony, Mumbai 40039",
+      "signing_date": "2026-06-10",
+      "jurisdiction_city": "Chennai",
+      "contribution_amount": 2923000,
+      "party_b_signatory_name": "Shrikant Verma",
+      "witness_one_name": "Sanjay Apte"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 32,
+    "scenario_id": "supplier_exclusivity_intent",
+    "scenario_summary": "A Kolhapur foundry and a Chennai pump manufacturer record intent for exclusive supply of graded castings pending a definitive agreement.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_company_name": "Pereira Industries",
+      "party_b_company_name": "Lokhande Trading Company",
+      "city": "Nagpur",
+      "party_a_address": "Flat No. 3, Shanti Niketan, Market Yard Road, Camp Area, Chhatrapati Sambhajinagar 43104",
+      "notice_period_days": 39,
+      "party_a_signatory_name": "Sayali Mane",
+      "party_b_signatory_name": "Shraddha Shah",
+      "witness_one_name": "Abhijit Phadke"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 33,
+    "scenario_id": "franchise_exploration",
+    "scenario_summary": "A Nashik entrepreneur and a Bengaluru cafe chain explore a franchise outlet, with due diligence and a pilot before any franchise agreement.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_person_name": "Suresh Nair",
+      "party_b_company_name": "Thorat Solutions Private Limited",
+      "city": "Mumbai",
+      "party_a_address": "Flat No. 14, Yashwant Smruti, Karve Road, Andheri West, Nashik 42280",
+      "party_b_address": "Flat No. 19, Vrindavan Complex, M.G. Road, Dadar, Surat 39516",
+      "term_months": 24,
+      "jurisdiction_city": "Hyderabad",
+      "notice_period_days": 87,
+      "party_b_signatory_name": "Anita Khan",
+      "witness_one_name": "Yogesh Kaur"
+    },
+    "withheld_fields": [
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 34,
+    "scenario_id": "doctor_clinic_rotation",
+    "scenario_summary": "A Mumbai-based MD physician and a Thane multi-speciality clinic agree on weekly OPD rotations and referral protocols.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Mary Naik",
+      "party_b_company_name": "Sharma Infotech Private Limited",
+      "city": "Pune",
+      "term_months": 12,
+      "party_b_signatory_name": "Kiran Menon"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 35,
+    "scenario_id": "event_co_organisation",
+    "scenario_summary": "A freelance event producer and a Pune cultural trust co-organise a three-day Diwali trade fair at a city exhibition ground.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Aishwarya Fernandes",
+      "party_b_company_name": "Surve Engineering Works",
+      "city": "Solapur",
+      "party_b_address": "Flat No. 39, Silver Oak Towers, Station Road, Model Colony, Jaipur 30236",
+      "signing_date": "2026-06-12",
+      "jurisdiction_city": "Pune",
+      "party_b_signatory_name": "Vaishali Ghadge"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 36,
+    "scenario_id": "co_working_space_arrangement",
+    "scenario_summary": "A freelance architect and a Navi Mumbai co-working operator record an understanding for dedicated studio desks and shared meeting credits.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Archana Salunkhe",
+      "party_b_company_name": "Phadke Marketing",
+      "contribution_amount": 468000,
+      "party_b_signatory_name": "Ramesh Kaur"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY OF EXECUTION]"
+      },
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 37,
+    "scenario_id": "family_business_transition",
+    "scenario_summary": "A daughter returning from Ahmedabad and the family's Solapur textile company record a phased management transition understanding.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_person_name": "Yogesh More",
+      "party_b_company_name": "Kale Distributors",
+      "signing_date": "2026-06-11",
+      "notice_period_days": 56,
+      "party_b_signatory_name": "Sandeep Jain",
+      "witness_one_name": "Mrunal Iyer"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY OF EXECUTION]"
+      },
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 38,
+    "scenario_id": "startup_incubation",
+    "scenario_summary": "A first-time founder and a Mumbai university incubator record an understanding on mentoring, seed support, and workspace access.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Pooja Sharma",
+      "party_b_company_name": "Kapoor Industries",
+      "city": "Solapur",
+      "party_a_address": "Flat No. 17, Shanti Niketan, S.V. Road, New Friends Colony, Nagpur 44040",
+      "party_b_address": "Flat No. 37, Green Valley Society, Gandhi Chowk Road, Model Colony, Lucknow 22667",
+      "contribution_amount": 789500,
+      "notice_period_days": 32,
+      "witness_one_name": "Nikita Verma"
+    },
+    "withheld_fields": [
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 39,
+    "scenario_id": "business_collaboration",
+    "scenario_summary": "A Pune industrial-automation firm and a Mumbai design studio record intent to jointly bid for factory retrofit projects across Maharashtra.",
+    "register": "detailed",
+    "given_facts": {
+      "party_a_company_name": "Thorat Trading Company",
+      "party_b_company_name": "Mane Textiles",
+      "city": "Nashik",
+      "party_a_address": "Flat No. 11, Tulsi Vihar, M.G. Road, Sadashiv Peth, Patna 80008",
+      "party_b_address": "Flat No. 26, Matoshree Heights, Gandhi Chowk Road, Sadashiv Peth, Indore 45202",
+      "signing_date": "2026-06-15",
+      "term_months": 18,
+      "contribution_amount": 3029500
+    },
+    "withheld_fields": [
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 40,
+    "scenario_id": "joint_venture_exploration",
+    "scenario_summary": "A Nagpur infrastructure contractor and a Mumbai construction company explore a joint venture for PWD road tenders in Vidarbha.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_company_name": "Bhagat Trading Company",
+      "party_b_company_name": "Ranade Foods",
+      "city": "Visakhapatnam",
+      "party_a_address": "Flat No. 2, Shree Ganesh Apartments, Gandhi Chowk Road, Civil Lines, Pune 41156",
+      "signing_date": "2026-06-16",
+      "contribution_amount": 12895000,
+      "notice_period_days": 35,
+      "witness_one_name": "Omkar Sharma"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 41,
+    "scenario_id": "vendor_distributor_arrangement",
+    "scenario_summary": "An Aurangabad FMCG manufacturer and a Nashik distributor record intent for snacks distribution across North Maharashtra districts.",
+    "register": "detailed",
+    "given_facts": {
+      "party_a_company_name": "Deshmukh Traders",
+      "party_b_company_name": "Mehta Marketing",
+      "city": "Pune",
+      "party_b_address": "Flat No. 9, Green Valley Society, M.G. Road, Model Colony, Mumbai 40014",
+      "signing_date": "2026-06-08",
+      "contribution_amount": 1743500,
+      "notice_period_days": 90,
+      "witness_one_name": "Shrikant Deshpande"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 42,
+    "scenario_id": "ngo_csr_partnership",
+    "scenario_summary": "A listed Mumbai company's CSR foundation and a Pune NGO agree on a youth skilling programme in Pimpri-Chinchwad.",
+    "register": "detailed",
+    "given_facts": {
+      "party_a_company_name": "Singh Traders",
+      "party_b_company_name": "Ahmed Trading Company",
+      "city": "Lucknow",
+      "party_a_address": "Flat No. 3, Gokul Residency, Ring Road, Borivali East, Chennai 60034",
+      "party_b_address": "Flat No. 6, Gokul Residency, Gandhi Chowk Road, New Friends Colony, Kolhapur 41620",
+      "signing_date": "2026-06-10",
+      "contribution_amount": 1255000,
+      "notice_period_days": 49,
+      "party_a_signatory_name": "Dattatray Pawar",
+      "witness_one_name": "Manisha Naidu"
+    },
+    "withheld_fields": [
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 43,
+    "scenario_id": "tech_licensing_intent",
+    "scenario_summary": "A Hyderabad software company and a Kolhapur auto-parts manufacturer record intent to license a production-planning software suite.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_company_name": "Raut Traders",
+      "party_b_company_name": "Gill Infotech Private Limited",
+      "city": "Chennai",
+      "signing_date": "2026-06-09",
+      "term_months": 36,
+      "notice_period_days": 39,
+      "party_a_signatory_name": "Ramesh Bhosale",
+      "witness_one_name": "Abhijit Raut"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 44,
+    "scenario_id": "college_industry_internship",
+    "scenario_summary": "A Pune engineering college and a Chakan auto components company set up internships, plant visits, and joint student projects.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_company_name": "Singh Distributors",
+      "party_b_company_name": "Iyer Engineering Works",
+      "city": "Surat",
+      "party_b_address": "Flat No. 32, Matoshree Heights, Fergusson College Road, Dadar, Jaipur 30202",
+      "signing_date": "2026-06-13",
+      "term_months": 6,
+      "party_a_signatory_name": "Nitin Agarwal",
+      "party_b_signatory_name": "Aishwarya Mukherjee"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 45,
+    "scenario_id": "supplier_exclusivity_intent",
+    "scenario_summary": "A Kolhapur foundry and a Chennai pump manufacturer record intent for exclusive supply of graded castings pending a definitive agreement.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_company_name": "Chavan Engineering Works",
+      "party_b_company_name": "Bhagat Solutions Private Limited",
+      "signing_date": "2026-06-08",
+      "jurisdiction_city": "Mumbai",
+      "notice_period_days": 59,
+      "party_b_signatory_name": "Amol Patil"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY OF EXECUTION]"
+      },
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 46,
+    "scenario_id": "franchise_exploration",
+    "scenario_summary": "A Nashik entrepreneur and a Bengaluru cafe chain explore a franchise outlet, with due diligence and a pilot before any franchise agreement.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_person_name": "Aarav Mhatre",
+      "party_b_company_name": "Sheikh Traders",
+      "city": "Nagpur",
+      "party_a_address": "Flat No. 36, Shree Ganesh Apartments, Market Yard Road, Sadashiv Peth, Chhatrapati Sambhajinagar 43194",
+      "party_b_address": "Flat No. 12, Tulsi Vihar, Fergusson College Road, Borivali East, Surat 39560",
+      "signing_date": "2026-06-08",
+      "term_months": 18,
+      "contribution_amount": 2358500
+    },
+    "withheld_fields": [
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 47,
+    "scenario_id": "doctor_clinic_rotation",
+    "scenario_summary": "A Mumbai-based MD physician and a Thane multi-speciality clinic agree on weekly OPD rotations and referral protocols.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Smita Shah",
+      "party_b_company_name": "Reddy Solutions Private Limited",
+      "signing_date": "2026-06-12",
+      "contribution_amount": 535000,
+      "notice_period_days": 74,
+      "witness_one_name": "Nikita Ghadge"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY OF EXECUTION]"
+      },
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 48,
+    "scenario_id": "event_co_organisation",
+    "scenario_summary": "A freelance event producer and a Pune cultural trust co-organise a three-day Diwali trade fair at a city exhibition ground.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Ganesh Kaur",
+      "party_b_company_name": "Kaur Trading Company",
+      "city": "Indore",
+      "jurisdiction_city": "Mumbai",
+      "contribution_amount": 778500,
+      "notice_period_days": 30,
+      "witness_one_name": "Sneha Patil"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 49,
+    "scenario_id": "co_working_space_arrangement",
+    "scenario_summary": "A freelance architect and a Navi Mumbai co-working operator record an understanding for dedicated studio desks and shared meeting credits.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_person_name": "Pallavi D'Souza",
+      "party_b_company_name": "Kulkarni Distributors",
+      "city": "Mumbai",
+      "party_b_address": "Flat No. 16, Om Sai Plaza, College Road, Model Colony, Mumbai 40097",
+      "signing_date": "2026-06-13",
+      "jurisdiction_city": "Mumbai"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 50,
+    "scenario_id": "family_business_transition",
+    "scenario_summary": "A daughter returning from Ahmedabad and the family's Solapur textile company record a phased management transition understanding.",
+    "register": "detailed",
+    "given_facts": {
+      "party_a_person_name": "Anil Salunkhe",
+      "party_b_company_name": "Kapoor Distributors",
+      "city": "Kolhapur",
+      "party_b_address": "Flat No. 7, Sai Krupa CHS, Ring Road, Borivali East, Mumbai 40011",
+      "signing_date": "2026-06-16",
+      "term_months": 12,
+      "jurisdiction_city": "Pune",
+      "contribution_amount": 798500,
+      "notice_period_days": 32,
+      "witness_one_name": "Pallavi Agarwal"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 51,
+    "scenario_id": "startup_incubation",
+    "scenario_summary": "A first-time founder and a Mumbai university incubator record an understanding on mentoring, seed support, and workspace access.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Ramesh Reddy",
+      "party_b_company_name": "Gupta Agencies",
+      "city": "Mumbai",
+      "term_months": 24,
+      "jurisdiction_city": "Nagpur",
+      "contribution_amount": 872500,
+      "notice_period_days": 35
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 52,
+    "scenario_id": "business_collaboration",
+    "scenario_summary": "A Pune industrial-automation firm and a Mumbai design studio record intent to jointly bid for factory retrofit projects across Maharashtra.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_company_name": "Bhagat Engineering Works",
+      "party_b_company_name": "Das Distributors",
+      "notice_period_days": 72,
+      "party_b_signatory_name": "Rekha Surve"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY OF EXECUTION]"
+      },
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 53,
+    "scenario_id": "joint_venture_exploration",
+    "scenario_summary": "A Nagpur infrastructure contractor and a Mumbai construction company explore a joint venture for PWD road tenders in Vidarbha.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_company_name": "Jadhav Textiles",
+      "party_b_company_name": "Salunkhe Constructions",
+      "city": "Delhi",
+      "party_a_address": "Flat No. 40, Om Sai Plaza, College Road, New Friends Colony, Nashik 42244",
+      "signing_date": "2026-06-11",
+      "jurisdiction_city": "Mumbai",
+      "contribution_amount": 18997500,
+      "party_a_signatory_name": "Aarti Apte"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 54,
+    "scenario_id": "vendor_distributor_arrangement",
+    "scenario_summary": "An Aurangabad FMCG manufacturer and a Nashik distributor record intent for snacks distribution across North Maharashtra districts.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_company_name": "Phadke Constructions",
+      "party_b_company_name": "Pereira Trading Company",
+      "city": "Jaipur",
+      "signing_date": "2026-06-10",
+      "witness_one_name": "Manoj Khan"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 55,
+    "scenario_id": "ngo_csr_partnership",
+    "scenario_summary": "A listed Mumbai company's CSR foundation and a Pune NGO agree on a youth skilling programme in Pimpri-Chinchwad.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_company_name": "Jadhav Distributors",
+      "party_b_company_name": "Shinde Distributors",
+      "city": "Thane",
+      "party_b_address": "Flat No. 29, Silver Oak Towers, College Road, Andheri West, Hyderabad 50013",
+      "signing_date": "2026-06-15",
+      "contribution_amount": 1304500,
+      "party_b_signatory_name": "Vijay Mhatre",
+      "witness_one_name": "Ishita Pereira"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 56,
+    "scenario_id": "tech_licensing_intent",
+    "scenario_summary": "A Hyderabad software company and a Kolhapur auto-parts manufacturer record intent to license a production-planning software suite.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_company_name": "Kapoor Foods",
+      "party_b_company_name": "Sawant Solutions Private Limited",
+      "city": "Pune",
+      "notice_period_days": 88
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 57,
+    "scenario_id": "college_industry_internship",
+    "scenario_summary": "A Pune engineering college and a Chakan auto components company set up internships, plant visits, and joint student projects.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_company_name": "Gill Distributors",
+      "party_b_company_name": "Sharma Engineering Works",
+      "city": "Bhopal",
+      "party_a_address": "Flat No. 4, Shree Ganesh Apartments, Link Road, Aundh, Ahmedabad 38058",
+      "party_b_address": "Flat No. 16, Vrindavan Complex, Market Yard Road, New Friends Colony, Pune 41112",
+      "contribution_amount": 830500,
+      "notice_period_days": 49,
+      "party_a_signatory_name": "Sayali Pereira",
+      "witness_one_name": "Sandeep Mane"
+    },
+    "withheld_fields": [
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 58,
+    "scenario_id": "supplier_exclusivity_intent",
+    "scenario_summary": "A Kolhapur foundry and a Chennai pump manufacturer record intent for exclusive supply of graded castings pending a definitive agreement.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_company_name": "Shah Agencies",
+      "party_b_company_name": "Banerjee Infotech Private Limited",
+      "notice_period_days": 35,
+      "witness_one_name": "Swati Bhosale"
+    },
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY OF EXECUTION]"
+      },
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 59,
+    "scenario_id": "franchise_exploration",
+    "scenario_summary": "A Nashik entrepreneur and a Bengaluru cafe chain explore a franchise outlet, with due diligence and a pilot before any franchise agreement.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Pooja Thorat",
+      "party_b_company_name": "Shah Textiles",
+      "city": "Nagpur",
+      "party_a_address": "Flat No. 2, Sai Krupa CHS, Market Yard Road, Camp Area, Pune 41134",
+      "contribution_amount": 3599000,
+      "notice_period_days": 84
+    },
+    "withheld_fields": [
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 60,
+    "scenario_id": "doctor_clinic_rotation",
+    "scenario_summary": "A Mumbai-based MD physician and a Thane multi-speciality clinic agree on weekly OPD rotations and referral protocols.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Anita Bhatt",
+      "party_b_company_name": "Bhatt Infotech Private Limited",
+      "city": "Ahmedabad",
+      "party_b_address": "Flat No. 22, Prestige Court, Fergusson College Road, Camp Area, Pune 41137",
+      "term_months": 12,
+      "jurisdiction_city": "Delhi",
+      "party_b_signatory_name": "Mahesh Phadke",
+      "witness_one_name": "Sunil Kaur"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 61,
+    "scenario_id": "event_co_organisation",
+    "scenario_summary": "A freelance event producer and a Pune cultural trust co-organise a three-day Diwali trade fair at a city exhibition ground.",
+    "register": "detailed",
+    "given_facts": {
+      "party_a_person_name": "Sanjay Gaikwad",
+      "party_b_company_name": "Das Constructions",
+      "city": "Bhopal",
+      "party_b_address": "Flat No. 34, Yashwant Smruti, Market Yard Road, Kothrud, Navi Mumbai 40093",
+      "signing_date": "2026-06-10",
+      "contribution_amount": 1445000,
+      "witness_one_name": "Sanjay Gokhale"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 62,
+    "scenario_id": "co_working_space_arrangement",
+    "scenario_summary": "A freelance architect and a Navi Mumbai co-working operator record an understanding for dedicated studio desks and shared meeting credits.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Sanjay More",
+      "party_b_company_name": "Kulkarni Developers",
+      "city": "Kolkata",
+      "party_a_address": "Flat No. 30, Green Valley Society, Market Yard Road, Model Colony, Thane 40073",
+      "party_b_address": "Flat No. 34, Silver Oak Towers, Link Road, Borivali East, Mumbai 40046",
+      "term_months": 18,
+      "party_b_signatory_name": "Aditya Bhatt",
+      "witness_one_name": "Ramesh Menon"
+    },
+    "withheld_fields": [
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 63,
+    "scenario_id": "family_business_transition",
+    "scenario_summary": "A daughter returning from Ahmedabad and the family's Solapur textile company record a phased management transition understanding.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Ananya Chavan",
+      "party_b_company_name": "Patil Agencies",
+      "city": "Hyderabad",
+      "party_b_address": "Flat No. 12, Om Sai Plaza, Gandhi Chowk Road, Kothrud, Chhatrapati Sambhajinagar 43187",
+      "contribution_amount": 780000,
+      "notice_period_days": 32,
+      "party_b_signatory_name": "Prakash Mukherjee"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 64,
+    "scenario_id": "startup_incubation",
+    "scenario_summary": "A first-time founder and a Mumbai university incubator record an understanding on mentoring, seed support, and workspace access.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Ananya Menon",
+      "party_b_company_name": "Naidu Agencies",
+      "city": "Vadodara",
+      "party_b_address": "Flat No. 39, Silver Oak Towers, Link Road, New Friends Colony, Mumbai 40056"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 65,
+    "scenario_id": "business_collaboration",
+    "scenario_summary": "A Pune industrial-automation firm and a Mumbai design studio record intent to jointly bid for factory retrofit projects across Maharashtra.",
+    "register": "detailed",
+    "given_facts": {
+      "party_a_company_name": "Malhotra Constructions",
+      "party_b_company_name": "Menon Enterprises",
+      "city": "Visakhapatnam",
+      "party_b_address": "Flat No. 10, Tulsi Vihar, M.G. Road, Camp Area, Pune 41109",
+      "term_months": 24,
+      "jurisdiction_city": "Nashik",
+      "contribution_amount": 887000
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 66,
+    "scenario_id": "joint_venture_exploration",
+    "scenario_summary": "A Nagpur infrastructure contractor and a Mumbai construction company explore a joint venture for PWD road tenders in Vidarbha.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_company_name": "Singh Textiles",
+      "party_b_company_name": "Naik Marketing",
+      "city": "Nagpur",
+      "party_a_address": "Flat No. 10, Matoshree Heights, Gandhi Chowk Road, Model Colony, Nashik 42207",
+      "notice_period_days": 37,
+      "party_a_signatory_name": "Karthik Ahmed"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 67,
+    "scenario_id": "vendor_distributor_arrangement",
+    "scenario_summary": "An Aurangabad FMCG manufacturer and a Nashik distributor record intent for snacks distribution across North Maharashtra districts.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_company_name": "Rao Marketing",
+      "party_b_company_name": "Sharma Engineering Works",
+      "city": "Bengaluru",
+      "party_b_address": "Flat No. 18, Tulsi Vihar, Market Yard Road, Sector 9, Solapur 41317",
+      "signing_date": "2026-06-10",
+      "jurisdiction_city": "Pune",
+      "contribution_amount": 1229500,
+      "party_a_signatory_name": "Sneha Bhatt",
+      "party_b_signatory_name": "Mrunal Agarwal"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 68,
+    "scenario_id": "ngo_csr_partnership",
+    "scenario_summary": "A listed Mumbai company's CSR foundation and a Pune NGO agree on a youth skilling programme in Pimpri-Chinchwad.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_company_name": "Sharma Solutions Private Limited",
+      "party_b_company_name": "Mukherjee Agencies",
+      "city": "Pune",
+      "party_b_address": "Flat No. 25, Prestige Court, Station Road, Borivali East, Chhatrapati Sambhajinagar 43116",
+      "signing_date": "2026-06-08",
+      "term_months": 24,
+      "jurisdiction_city": "Kolhapur",
+      "contribution_amount": 1172000,
+      "party_b_signatory_name": "Rohan Agarwal",
+      "witness_one_name": "Rekha Verma"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 69,
+    "scenario_id": "tech_licensing_intent",
+    "scenario_summary": "A Hyderabad software company and a Kolhapur auto-parts manufacturer record intent to license a production-planning software suite.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_company_name": "D'Souza Infotech Private Limited",
+      "party_b_company_name": "Bhagat Services LLP",
+      "city": "Kolkata",
+      "term_months": 12,
+      "contribution_amount": 2455000,
+      "party_b_signatory_name": "Nitin Shinde"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 70,
+    "scenario_id": "college_industry_internship",
+    "scenario_summary": "A Pune engineering college and a Chakan auto components company set up internships, plant visits, and joint student projects.",
+    "register": "detailed",
+    "given_facts": {
+      "party_a_company_name": "Jadhav Enterprises",
+      "party_b_company_name": "Mane Services LLP",
+      "city": "Thane",
+      "jurisdiction_city": "Indore",
+      "contribution_amount": 2078500,
+      "party_b_signatory_name": "Mrunal Salunkhe"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 71,
+    "scenario_id": "supplier_exclusivity_intent",
+    "scenario_summary": "A Kolhapur foundry and a Chennai pump manufacturer record intent for exclusive supply of graded castings pending a definitive agreement.",
+    "register": "semi_formal",
+    "given_facts": {
+      "party_a_company_name": "Shinde Agencies",
+      "party_b_company_name": "Bhosale Enterprises",
+      "city": "Navi Mumbai",
+      "term_months": 36,
+      "jurisdiction_city": "Nashik",
+      "contribution_amount": 8626000,
+      "party_a_signatory_name": "Pooja Deshmukh",
+      "witness_one_name": "Smita Fernandes"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_a_address",
+        "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+      },
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 72,
+    "scenario_id": "franchise_exploration",
+    "scenario_summary": "A Nashik entrepreneur and a Bengaluru cafe chain explore a franchise outlet, with due diligence and a pilot before any franchise agreement.",
+    "register": "detailed",
+    "given_facts": {
+      "party_a_person_name": "Pravin Sharma",
+      "party_b_company_name": "Chavan Developers",
+      "city": "Chhatrapati Sambhajinagar",
+      "party_a_address": "Flat No. 7, Shree Ganesh Apartments, S.V. Road, Aundh, Chandigarh 16063",
+      "signing_date": "2026-06-12",
+      "jurisdiction_city": "Navi Mumbai",
+      "contribution_amount": 2717500,
+      "notice_period_days": 38,
+      "witness_one_name": "Aarti Kale"
+    },
+    "withheld_fields": [
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 73,
+    "scenario_id": "doctor_clinic_rotation",
+    "scenario_summary": "A Mumbai-based MD physician and a Thane multi-speciality clinic agree on weekly OPD rotations and referral protocols.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Aarav Mhatre",
+      "party_b_company_name": "Banerjee Infotech Private Limited",
+      "city": "Chennai",
+      "party_a_address": "Flat No. 30, Shree Ganesh Apartments, College Road, Model Colony, Solapur 41387",
+      "notice_period_days": 86
+    },
+    "withheld_fields": [
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "term_months",
+        "placeholder": "[TERM OF MOU IN MONTHS]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  },
+  {
+    "doc_type": "mou_two_parties",
+    "index": 74,
+    "scenario_id": "event_co_organisation",
+    "scenario_summary": "A freelance event producer and a Pune cultural trust co-organise a three-day Diwali trade fair at a city exhibition ground.",
+    "register": "casual",
+    "given_facts": {
+      "party_a_person_name": "Aditya Ahmed",
+      "party_b_company_name": "Bhagat Developers",
+      "city": "Mumbai",
+      "party_a_address": "Flat No. 36, Sai Krupa CHS, S.V. Road, Andheri West, Mumbai 40025",
+      "term_months": 24,
+      "contribution_amount": 520500
+    },
+    "withheld_fields": [
+      {
+        "name": "party_b_address",
+        "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+      },
+      {
+        "name": "signing_date",
+        "placeholder": "[DATE OF EXECUTION]"
+      },
+      {
+        "name": "jurisdiction_city",
+        "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+      }
+    ],
+    "nearest_supported": null
+  }
+]

@@ -1,0 +1,279 @@
+[
+  {
+    "doc_type": "legal_notice_money_recovery",
+    "given_facts": {
+      "city": "Navi Mumbai",
+      "claimant_address": "Flat No. 7, Om Sai Plaza, S.V. Road, New Friends Colony, Thane 40070",
+      "claimant_name": "Bhushan Sharma",
+      "compliance_days": 15,
+      "debt_origin_date": "2025-09-07",
+      "debtor_address": "Flat No. 5, Gokul Residency, College Road, Aundh, Nashik 42279",
+      "debtor_name": "Sachin Kadam",
+      "dispatch_mode": "Registered Post A.D.",
+      "due_amount": 1166500,
+      "payment_due_date": "2025-10-15"
+    },
+    "index": 0,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "unpaid_invoice_supplier",
+    "scenario_summary": "A Pune auto-components supplier's invoices to a Mumbai distributor remain unpaid ninety days beyond agreed credit terms despite repeated reminders.",
+    "withheld_fields": []
+  },
+  {
+    "doc_type": "legal_notice_money_recovery",
+    "given_facts": {
+      "city": "Mumbai",
+      "claimant_address": "Flat No. 31, Matoshree Heights, M.G. Road, Borivali East, Kochi 68239",
+      "claimant_name": "Swapnil Banerjee",
+      "compliance_days": 30,
+      "debt_origin_date": "2024-04-30",
+      "debtor_name": "Devendra Bhosale",
+      "due_amount": 737000,
+      "interest_rate": 16,
+      "payment_due_date": "2024-07-06"
+    },
+    "index": 1,
+    "nearest_supported": null,
+    "register": "casual",
+    "scenario_id": "friendly_hand_loan",
+    "scenario_summary": "A hand loan given to a college friend in Mumbai for a medical emergency has not been repaid despite repeated promises.",
+    "withheld_fields": [
+      {
+        "name": "debtor_address",
+        "placeholder": "[FULL ADDRESS OF DEBTOR]"
+      }
+    ]
+  },
+  {
+    "doc_type": "legal_notice_money_recovery",
+    "given_facts": {
+      "claimant_name": "Anil Das",
+      "compliance_days": 30,
+      "debtor_name": "Karthik Kapoor",
+      "due_amount": 105000,
+      "interest_rate": 13,
+      "payment_due_date": "2025-10-19"
+    },
+    "index": 2,
+    "nearest_supported": null,
+    "register": "casual",
+    "scenario_id": "unpaid_salary_dues",
+    "scenario_summary": "A marketing executive who resigned from a Thane company is owed two months' salary and reimbursements; HR has stopped responding.",
+    "withheld_fields": [
+      {
+        "name": "city",
+        "placeholder": "[CITY]"
+      },
+      {
+        "name": "claimant_address",
+        "placeholder": "[FULL ADDRESS OF CLAIMANT]"
+      },
+      {
+        "name": "debtor_address",
+        "placeholder": "[FULL ADDRESS OF DEBTOR]"
+      },
+      {
+        "name": "debt_origin_date",
+        "placeholder": "[DATE THE DEBT AROSE]"
+      }
+    ]
+  },
+  {
+    "doc_type": "legal_notice_money_recovery",
+    "given_facts": {
+      "city": "Mumbai",
+      "claimant_name": "Sandeep Jain",
+      "compliance_days": 30,
+      "debt_origin_date": "2024-05-10",
+      "debtor_name": "Mary Menon",
+      "due_amount": 272000,
+      "interest_rate": 11
+    },
+    "index": 3,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "advance_undelivered_goods",
+    "scenario_summary": "A homeowner paid a Nashik furniture workshop a large advance for modular furniture that was never delivered or refunded.",
+    "withheld_fields": [
+      {
+        "name": "claimant_address",
+        "placeholder": "[FULL ADDRESS OF CLAIMANT]"
+      },
+      {
+        "name": "debtor_address",
+        "placeholder": "[FULL ADDRESS OF DEBTOR]"
+      },
+      {
+        "name": "payment_due_date",
+        "placeholder": "[DATE PAYMENT FELL DUE]"
+      }
+    ]
+  },
+  {
+    "doc_type": "legal_notice_money_recovery",
+    "given_facts": {
+      "advocate_name": "Rutuja Deshmukh",
+      "city": "Bengaluru",
+      "claimant_name": "Omkar Naidu",
+      "compliance_days": 15,
+      "debtor_address": "Flat No. 13, Silver Oak Towers, College Road, Sadashiv Peth, Mumbai 40025",
+      "debtor_name": "Radhika Raut",
+      "dispatch_mode": "Courier",
+      "due_amount": 111000,
+      "interest_rate": 21,
+      "payment_due_date": "2024-06-13"
+    },
+    "index": 4,
+    "nearest_supported": null,
+    "register": "semi_formal",
+    "scenario_id": "freelancer_fee_unpaid",
+    "scenario_summary": "A freelance graphic designer in Mumbai completed a branding project for a startup; her invoices have been ignored for months.",
+    "withheld_fields": [
+      {
+        "name": "claimant_address",
+        "placeholder": "[FULL ADDRESS OF CLAIMANT]"
+      },
+      {
+        "name": "debt_origin_date",
+        "placeholder": "[DATE THE DEBT AROSE]"
+      }
+    ]
+  },
+  {
+    "doc_type": "legal_notice_money_recovery",
+    "given_facts": {
+      "advocate_name": "Vikram Jain",
+      "city": "Thane",
+      "claimant_name": "Yogesh Singh",
+      "compliance_days": 15,
+      "debt_origin_date": "2024-02-09",
+      "debtor_name": "Omkar Bhagat",
+      "due_amount": 194000,
+      "interest_rate": 21,
+      "payment_due_date": "2024-03-10"
+    },
+    "index": 5,
+    "nearest_supported": null,
+    "register": "semi_formal",
+    "scenario_id": "rent_arrears_recovery",
+    "scenario_summary": "A Nagpur landlord seeks four months of unpaid rent (money claim only) from a tenant who vacated without settling dues.",
+    "withheld_fields": [
+      {
+        "name": "claimant_address",
+        "placeholder": "[FULL ADDRESS OF CLAIMANT]"
+      },
+      {
+        "name": "debtor_address",
+        "placeholder": "[FULL ADDRESS OF DEBTOR]"
+      }
+    ]
+  },
+  {
+    "doc_type": "legal_notice_money_recovery",
+    "given_facts": {
+      "advocate_name": "Dattatray Naik",
+      "city": "Kolkata",
+      "claimant_address": "Flat No. 23, Shanti Niketan, Karve Road, Civil Lines, Navi Mumbai 40004",
+      "claimant_name": "Pravin D'Souza",
+      "compliance_days": 15,
+      "debt_origin_date": "2024-09-20",
+      "debtor_address": "Flat No. 15, Prestige Court, S.V. Road, Sadashiv Peth, Mumbai 40038",
+      "debtor_name": "Aarav Naik",
+      "dispatch_mode": "Registered Post A.D. and Email",
+      "due_amount": 158000,
+      "interest_rate": 15
+    },
+    "index": 6,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "society_maintenance_dues",
+    "scenario_summary": "A Navi Mumbai co-operative housing society demands long-pending maintenance arrears from a flat owner who ignores bills and reminders.",
+    "withheld_fields": [
+      {
+        "name": "payment_due_date",
+        "placeholder": "[DATE PAYMENT FELL DUE]"
+      }
+    ]
+  },
+  {
+    "doc_type": "legal_notice_money_recovery",
+    "given_facts": {
+      "city": "Lucknow",
+      "claimant_address": "Flat No. 23, Shree Ganesh Apartments, Ring Road, Dadar, Mumbai 40084",
+      "claimant_name": "Manoj Kaur",
+      "compliance_days": 30,
+      "debt_origin_date": "2024-10-19",
+      "debtor_name": "Sachin Sheikh",
+      "due_amount": 124500,
+      "payment_due_date": "2025-01-30"
+    },
+    "index": 7,
+    "nearest_supported": null,
+    "register": "semi_formal",
+    "scenario_id": "refundable_deposit_not_returned",
+    "scenario_summary": "A tenant who vacated a Pune flat after due notice has not received the refundable security deposit despite handing over possession.",
+    "withheld_fields": [
+      {
+        "name": "debtor_address",
+        "placeholder": "[FULL ADDRESS OF DEBTOR]"
+      }
+    ]
+  },
+  {
+    "doc_type": "legal_notice_money_recovery",
+    "given_facts": {
+      "city": "Pune",
+      "claimant_name": "Rajesh Joshi",
+      "compliance_days": 30,
+      "debt_origin_date": "2025-09-05",
+      "debtor_name": "Sachin Deshpande",
+      "dispatch_mode": "Speed Post",
+      "due_amount": 1650000
+    },
+    "index": 8,
+    "nearest_supported": null,
+    "register": "casual",
+    "scenario_id": "contractor_final_bill",
+    "scenario_summary": "An Aurangabad civil contractor's final bill for completed interior work is withheld by the developer without raising any defect.",
+    "withheld_fields": [
+      {
+        "name": "claimant_address",
+        "placeholder": "[FULL ADDRESS OF CLAIMANT]"
+      },
+      {
+        "name": "debtor_address",
+        "placeholder": "[FULL ADDRESS OF DEBTOR]"
+      },
+      {
+        "name": "payment_due_date",
+        "placeholder": "[DATE PAYMENT FELL DUE]"
+      }
+    ]
+  },
+  {
+    "doc_type": "legal_notice_money_recovery",
+    "given_facts": {
+      "advocate_name": "Manisha More",
+      "city": "Nashik",
+      "claimant_address": "Flat No. 13, Silver Oak Towers, Karve Road, Shivaji Nagar, Chhatrapati Sambhajinagar 43197",
+      "claimant_name": "Tushar Chopra",
+      "compliance_days": 30,
+      "debt_origin_date": "2025-06-01",
+      "debtor_address": "Flat No. 19, Gokul Residency, Market Yard Road, New Friends Colony, Pune 41181",
+      "debtor_name": "Arjun Gaikwad",
+      "due_amount": 85500
+    },
+    "index": 9,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "coaching_fee_refund",
+    "scenario_summary": "A Delhi coaching institute cancelled a batch but refuses to refund the admission and tuition fees paid in advance.",
+    "withheld_fields": [
+      {
+        "name": "payment_due_date",
+        "placeholder": "[DATE PAYMENT FELL DUE]"
+      }
+    ]
+  }
+]

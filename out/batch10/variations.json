@@ -1,0 +1,3080 @@
+{
+  "affidavit_general": [
+    {
+      "doc_type": "affidavit_general",
+      "given_facts": {
+        "city": "Nashik",
+        "deponent_address": "Flat No. 24, Silver Oak Towers, Gandhi Chowk Road, Kothrud, Thane 40084",
+        "deponent_age": 69,
+        "deponent_name": "Nikita Reddy",
+        "deponent_occupation": "pharmacist",
+        "deponent_parent_name": "Omkar Reddy",
+        "name_variant_a": "Nikita Reddy",
+        "name_variant_b": "Nikita Sharma"
+      },
+      "index": 0,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "passport_aadhaar_name_mismatch",
+      "scenario_summary": "Pune software engineer's name is spelt differently in passport and Aadhaar; affidavit affirms both names denote one and the same person for passport reissue.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "affidavit_general",
+      "given_facts": {
+        "city": "Pune",
+        "deponent_address": "Flat No. 10, Om Sai Plaza, Station Road, Kothrud, Jaipur 30211",
+        "deponent_age": 32,
+        "deponent_name": "Tushar Singh",
+        "deponent_occupation": "shop owner",
+        "name_variant_a": "Tushar Singh",
+        "name_variant_b": "Tushar Gokhale"
+      },
+      "index": 1,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "bank_kyc_initials_expansion",
+      "scenario_summary": "Nagpur account holder's PAN carries initials while bank records show the expanded name; bank seeks a one-and-the-same-person affidavit for KYC updation.",
+      "withheld_fields": [
+        {
+          "name": "deponent_parent_name",
+          "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+        }
+      ]
+    },
+    {
+      "doc_type": "affidavit_general",
+      "given_facts": {
+        "deponent_age": 69,
+        "deponent_name": "Nitin Bhatt",
+        "name_variant_a": "Nitin Bhatt",
+        "name_variant_b": "Nitin Kapoor"
+      },
+      "index": 2,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "married_name_property_records",
+      "scenario_summary": "Chennai homemaker appears under maiden and married names across property papers; affidavit confirms one and the same person for mutation entry.",
+      "withheld_fields": [
+        {
+          "name": "deponent_parent_name",
+          "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+        },
+        {
+          "name": "deponent_occupation",
+          "placeholder": "[OCCUPATION OF DEPONENT]"
+        },
+        {
+          "name": "city",
+          "placeholder": "[CITY]"
+        },
+        {
+          "name": "deponent_address",
+          "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+        }
+      ]
+    },
+    {
+      "doc_type": "affidavit_general",
+      "given_facts": {
+        "city": "Nashik",
+        "deponent_address": "Flat No. 31, Om Sai Plaza, Station Road, Aundh, Mumbai 40001",
+        "deponent_age": 59,
+        "deponent_id_number": "IJLUC5383C",
+        "deponent_name": "Rekha Agarwal",
+        "deponent_parent_name": "Imran Agarwal"
+      },
+      "index": 3,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "lpg_connection_address_proof",
+      "scenario_summary": "Mumbai tenant lacks a utility bill in his own name; affidavit of current residence required for a new LPG gas connection.",
+      "withheld_fields": [
+        {
+          "name": "deponent_occupation",
+          "placeholder": "[OCCUPATION OF DEPONENT]"
+        },
+        {
+          "name": "residing_since_year",
+          "placeholder": "[YEAR FROM WHICH DEPONENT RESIDES AT THE ADDRESS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "affidavit_general",
+      "given_facts": {
+        "city": "Mumbai",
+        "deponent_age": 46,
+        "deponent_name": "Rajesh D'Souza"
+      },
+      "index": 4,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "voter_enrolment_address_proof",
+      "scenario_summary": "Family recently shifted to Thane; deponent swears an address affidavit to support voter ID enrolment at the new residence.",
+      "withheld_fields": [
+        {
+          "name": "deponent_parent_name",
+          "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+        },
+        {
+          "name": "deponent_occupation",
+          "placeholder": "[OCCUPATION OF DEPONENT]"
+        },
+        {
+          "name": "deponent_address",
+          "placeholder": "[FULL RESIDENTIAL ADDRESS OF DEPONENT]"
+        },
+        {
+          "name": "residing_since_year",
+          "placeholder": "[YEAR FROM WHICH DEPONENT RESIDES AT THE ADDRESS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "affidavit_general",
+      "given_facts": {
+        "city": "Navi Mumbai",
+        "deponent_address": "Flat No. 9, Shree Ganesh Apartments, Link Road, Civil Lines, Thane 40011",
+        "deponent_age": 43,
+        "deponent_name": "Prashant Menon",
+        "deponent_parent_name": "Niranjan Menon",
+        "gap_start_year": 2022
+      },
+      "index": 5,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "jee_gap_year_admission",
+      "scenario_summary": "Nashik student took a year after HSC to prepare for engineering entrance examinations; college demands a gap-year affidavit at admission.",
+      "withheld_fields": [
+        {
+          "name": "deponent_occupation",
+          "placeholder": "[OCCUPATION OF DEPONENT]"
+        },
+        {
+          "name": "gap_reason",
+          "placeholder": "[REASON FOR THE GAP IN STUDIES]"
+        }
+      ]
+    },
+    {
+      "doc_type": "affidavit_general",
+      "given_facts": {
+        "city": "Pune",
+        "deponent_address": "Flat No. 4, Om Sai Plaza, Karve Road, Camp Area, Bengaluru 56048",
+        "deponent_age": 21,
+        "deponent_id_number": "MADHH8258J",
+        "deponent_name": "Swati Mehta",
+        "deponent_occupation": "real estate agent",
+        "deponent_parent_name": "Nitin Mehta",
+        "gap_start_year": 2024
+      },
+      "index": 6,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "pg_admission_family_illness_gap",
+      "scenario_summary": "Delhi graduate explains a two-year break before post-graduation caused by a parent's prolonged illness; university requires a sworn explanation.",
+      "withheld_fields": [
+        {
+          "name": "gap_reason",
+          "placeholder": "[REASON FOR THE GAP IN STUDIES]"
+        }
+      ]
+    },
+    {
+      "doc_type": "affidavit_general",
+      "given_facts": {
+        "city": "Kolkata",
+        "deponent_address": "Flat No. 9, Matoshree Heights, Gandhi Chowk Road, Kothrud, Patna 80045",
+        "deponent_age": 58,
+        "deponent_name": "Tejal Apte",
+        "deponent_occupation": "marketing manager",
+        "lost_document_type": "original share certificate"
+      },
+      "index": 7,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "duplicate_share_certificate",
+      "scenario_summary": "Mumbai investor misplaced original share certificates during house shifting; the company's registrar requires an affidavit before issuing duplicates.",
+      "withheld_fields": [
+        {
+          "name": "deponent_parent_name",
+          "placeholder": "[NAME OF DEPONENT'S FATHER OR HUSBAND]"
+        }
+      ]
+    },
+    {
+      "doc_type": "affidavit_general",
+      "given_facts": {
+        "city": "Mumbai",
+        "deponent_address": "Flat No. 23, Gokul Residency, Karve Road, New Friends Colony, Mumbai 40043",
+        "deponent_age": 26,
+        "deponent_id_number": "ELAKR0869Q",
+        "deponent_name": "Aishwarya Agarwal",
+        "deponent_parent_name": "Arjun Agarwal",
+        "lost_document_type": "SSC marksheet"
+      },
+      "index": 8,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "lost_ssc_marksheet",
+      "scenario_summary": "Chhatrapati Sambhajinagar candidate lost his SSC marksheet in transit; the divisional board requires an affidavit before issuing a duplicate.",
+      "withheld_fields": [
+        {
+          "name": "deponent_occupation",
+          "placeholder": "[OCCUPATION OF DEPONENT]"
+        }
+      ]
+    },
+    {
+      "doc_type": "affidavit_general",
+      "given_facts": {
+        "city": "Kolkata",
+        "deponent_address": "Flat No. 31, Prestige Court, Link Road, Dadar, Mumbai 40047",
+        "deponent_age": 48,
+        "deponent_id_number": "LYGNJ3724O",
+        "deponent_name": "Fatima Reddy",
+        "deponent_occupation": "marketing manager",
+        "deponent_parent_name": "Farhan Reddy",
+        "lost_document_type": "original registered sale deed"
+      },
+      "index": 9,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "lost_sale_deed_refinance",
+      "scenario_summary": "Bengaluru flat owner cannot trace the original sale deed; affidavit needed to obtain a certified copy and complete bank loan refinance.",
+      "withheld_fields": []
+    }
+  ],
+  "cheque_bounce_138": [
+    {
+      "doc_type": "cheque_bounce_138",
+      "given_facts": {
+        "advocate_name": "Abhijit Shinde",
+        "cheque_amount": 367000,
+        "cheque_date": "2026-03-03",
+        "cheque_number": "136321",
+        "city": "Vasai-Virar",
+        "dishonour_reason": "Exceeds Arrangement",
+        "drawee_bank": "HDFC Bank, Mumbai Branch",
+        "drawer_address": "Flat No. 26, Matoshree Heights, Gandhi Chowk Road, New Friends Colony, Indore 45283",
+        "drawer_name": "Pallavi Naik",
+        "presentation_date": "2026-03-23",
+        "sender_address": "Flat No. 35, Shanti Niketan, Ring Road, New Friends Colony, Delhi 11009",
+        "sender_name": "Sachin Kadam"
+      },
+      "index": 0,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "friendly_loan_repayment",
+      "scenario_summary": "A cheque issued to repay a personal/friendly hand loan was dishonoured.",
+      "withheld_fields": [
+        {
+          "name": "memo_date",
+          "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+        }
+      ]
+    },
+    {
+      "doc_type": "cheque_bounce_138",
+      "given_facts": {
+        "cheque_amount": 273000,
+        "cheque_number": "884371",
+        "city": "Nashik",
+        "drawee_bank": "Canara Bank, Pune Branch",
+        "drawer_name": "Mahesh Pawar",
+        "memo_date": "2026-03-01",
+        "presentation_date": "2026-02-28",
+        "sender_address": "Flat No. 20, Gokul Residency, Fergusson College Road, New Friends Colony, Mumbai 40095",
+        "sender_name": "Sanjay Rao"
+      },
+      "index": 1,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "business_invoice_payment",
+      "scenario_summary": "A buyer's cheque against a supplier's invoice for goods was dishonoured.",
+      "withheld_fields": [
+        {
+          "name": "drawer_address",
+          "placeholder": "[FULL ADDRESS OF DRAWER]"
+        },
+        {
+          "name": "cheque_date",
+          "placeholder": "[DATE OF CHEQUE]"
+        },
+        {
+          "name": "dishonour_reason",
+          "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+        }
+      ]
+    },
+    {
+      "doc_type": "cheque_bounce_138",
+      "given_facts": {
+        "advocate_name": "Suresh Ranade",
+        "cheque_amount": 207000,
+        "drawee_bank": "ICICI Bank, Amravati Branch",
+        "drawer_name": "Gurpreet Mehta",
+        "memo_date": "2026-05-06",
+        "presentation_date": "2026-05-04",
+        "sender_name": "Amol Agarwal"
+      },
+      "index": 2,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "rent_arrears_cheque",
+      "scenario_summary": "A tenant's cheque covering accumulated rent arrears bounced.",
+      "withheld_fields": [
+        {
+          "name": "city",
+          "placeholder": "[CITY]"
+        },
+        {
+          "name": "sender_address",
+          "placeholder": "[FULL ADDRESS OF SENDER]"
+        },
+        {
+          "name": "drawer_address",
+          "placeholder": "[FULL ADDRESS OF DRAWER]"
+        },
+        {
+          "name": "cheque_number",
+          "placeholder": "[CHEQUE NUMBER]"
+        },
+        {
+          "name": "cheque_date",
+          "placeholder": "[DATE OF CHEQUE]"
+        },
+        {
+          "name": "dishonour_reason",
+          "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+        }
+      ]
+    },
+    {
+      "doc_type": "cheque_bounce_138",
+      "given_facts": {
+        "cheque_amount": 169500,
+        "cheque_number": "193046",
+        "city": "Nashik",
+        "drawer_name": "Vihaan Deshmukh",
+        "memo_date": "2026-02-15",
+        "presentation_date": "2026-02-15",
+        "sender_name": "Ishita Phadke"
+      },
+      "index": 3,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "security_deposit_refund",
+      "scenario_summary": "A landlord's cheque refunding the security deposit after vacating bounced.",
+      "withheld_fields": [
+        {
+          "name": "sender_address",
+          "placeholder": "[FULL ADDRESS OF SENDER]"
+        },
+        {
+          "name": "drawer_address",
+          "placeholder": "[FULL ADDRESS OF DRAWER]"
+        },
+        {
+          "name": "drawee_bank",
+          "placeholder": "[DRAWEE BANK AND BRANCH]"
+        },
+        {
+          "name": "cheque_date",
+          "placeholder": "[DATE OF CHEQUE]"
+        },
+        {
+          "name": "dishonour_reason",
+          "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+        }
+      ]
+    },
+    {
+      "doc_type": "cheque_bounce_138",
+      "given_facts": {
+        "advocate_name": "Priya Phadke",
+        "cheque_amount": 104500,
+        "city": "Pune",
+        "dishonour_reason": "Funds Insufficient",
+        "drawee_bank": "State Bank of India, Navi Mumbai Branch",
+        "drawer_address": "Flat No. 27, Prestige Court, Link Road, Kothrud, Visakhapatnam 53071",
+        "drawer_name": "Vijay Das",
+        "sender_name": "Radhika Raut"
+      },
+      "index": 4,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "salary_dues_cheque",
+      "scenario_summary": "An employer's cheque for unpaid salary / full-and-final settlement was dishonoured.",
+      "withheld_fields": [
+        {
+          "name": "sender_address",
+          "placeholder": "[FULL ADDRESS OF SENDER]"
+        },
+        {
+          "name": "cheque_number",
+          "placeholder": "[CHEQUE NUMBER]"
+        },
+        {
+          "name": "cheque_date",
+          "placeholder": "[DATE OF CHEQUE]"
+        },
+        {
+          "name": "presentation_date",
+          "placeholder": "[DATE OF PRESENTATION]"
+        },
+        {
+          "name": "memo_date",
+          "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+        }
+      ]
+    },
+    {
+      "doc_type": "cheque_bounce_138",
+      "given_facts": {
+        "advocate_name": "Amol Lokhande",
+        "cheque_amount": 685500,
+        "cheque_number": "185614",
+        "city": "Jaipur",
+        "drawee_bank": "Saraswat Co-operative Bank, Nagpur Branch",
+        "drawer_name": "Nitin Deshmukh",
+        "memo_date": "2026-04-21",
+        "sender_name": "Sachin Mane"
+      },
+      "index": 5,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "property_advance_refund",
+      "scenario_summary": "A seller's cheque refunding token/advance money for a cancelled property deal bounced.",
+      "withheld_fields": [
+        {
+          "name": "sender_address",
+          "placeholder": "[FULL ADDRESS OF SENDER]"
+        },
+        {
+          "name": "drawer_address",
+          "placeholder": "[FULL ADDRESS OF DRAWER]"
+        },
+        {
+          "name": "cheque_date",
+          "placeholder": "[DATE OF CHEQUE]"
+        },
+        {
+          "name": "presentation_date",
+          "placeholder": "[DATE OF PRESENTATION]"
+        },
+        {
+          "name": "dishonour_reason",
+          "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+        }
+      ]
+    },
+    {
+      "doc_type": "cheque_bounce_138",
+      "given_facts": {
+        "cheque_amount": 387500,
+        "cheque_number": "474877",
+        "city": "Navi Mumbai",
+        "dishonour_reason": "Payment Stopped by Drawer",
+        "drawer_address": "Flat No. 15, Prestige Court, S.V. Road, Sadashiv Peth, Mumbai 40038",
+        "drawer_name": "Swapnil Chopra",
+        "memo_date": "2026-02-23",
+        "presentation_date": "2026-02-22",
+        "sender_address": "Flat No. 23, Shanti Niketan, Karve Road, Civil Lines, Bengaluru 56004",
+        "sender_name": "Aarav Naik"
+      },
+      "index": 6,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "freelance_fee_cheque",
+      "scenario_summary": "A client's cheque for completed freelance/professional services was dishonoured.",
+      "withheld_fields": [
+        {
+          "name": "drawee_bank",
+          "placeholder": "[DRAWEE BANK AND BRANCH]"
+        },
+        {
+          "name": "cheque_date",
+          "placeholder": "[DATE OF CHEQUE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "cheque_bounce_138",
+      "given_facts": {
+        "cheque_amount": 665500,
+        "cheque_date": "2026-03-01",
+        "cheque_number": "388813",
+        "city": "Mumbai",
+        "drawee_bank": "State Bank of India, Nashik Branch",
+        "drawer_name": "Milind Malhotra",
+        "memo_date": "2026-04-09",
+        "presentation_date": "2026-04-08",
+        "sender_address": "Flat No. 35, Silver Oak Towers, College Road, New Friends Colony, Navi Mumbai 40037",
+        "sender_name": "Sachin Sheikh"
+      },
+      "index": 7,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "vehicle_sale_balance",
+      "scenario_summary": "The buyer's cheque for the balance price of a used vehicle bounced.",
+      "withheld_fields": [
+        {
+          "name": "drawer_address",
+          "placeholder": "[FULL ADDRESS OF DRAWER]"
+        },
+        {
+          "name": "dishonour_reason",
+          "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+        }
+      ]
+    },
+    {
+      "doc_type": "cheque_bounce_138",
+      "given_facts": {
+        "cheque_amount": 799500,
+        "cheque_number": "104046",
+        "city": "Mumbai",
+        "drawer_name": "Dattatray Wagh",
+        "presentation_date": "2026-03-10",
+        "sender_name": "Kiran Bhagat"
+      },
+      "index": 8,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "contractor_work_payment",
+      "scenario_summary": "A cheque paying a contractor for completed civil/renovation work was dishonoured.",
+      "withheld_fields": [
+        {
+          "name": "sender_address",
+          "placeholder": "[FULL ADDRESS OF SENDER]"
+        },
+        {
+          "name": "drawer_address",
+          "placeholder": "[FULL ADDRESS OF DRAWER]"
+        },
+        {
+          "name": "drawee_bank",
+          "placeholder": "[DRAWEE BANK AND BRANCH]"
+        },
+        {
+          "name": "cheque_date",
+          "placeholder": "[DATE OF CHEQUE]"
+        },
+        {
+          "name": "memo_date",
+          "placeholder": "[DATE OF CHEQUE RETURN MEMO]"
+        },
+        {
+          "name": "dishonour_reason",
+          "placeholder": "[REASON FOR DISHONOUR AS PER RETURN MEMO]"
+        }
+      ]
+    },
+    {
+      "doc_type": "cheque_bounce_138",
+      "given_facts": {
+        "advocate_name": "Harpreet Ahmed",
+        "cheque_amount": 299500,
+        "cheque_date": "2026-01-22",
+        "cheque_number": "940495",
+        "city": "Ahmedabad",
+        "dishonour_reason": "Funds Insufficient",
+        "drawer_address": "Flat No. 39, Vrindavan Complex, College Road, Aundh, Pune 41133",
+        "drawer_name": "Ashwini Sharma",
+        "memo_date": "2026-03-16",
+        "sender_address": "Flat No. 24, Yashwant Smruti, Link Road, Civil Lines, Thane 40037",
+        "sender_name": "Arjun Gaikwad"
+      },
+      "index": 9,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "education_fee_refund",
+      "scenario_summary": "An institute's refund cheque after a withdrawn admission bounced.",
+      "withheld_fields": [
+        {
+          "name": "drawee_bank",
+          "placeholder": "[DRAWEE BANK AND BRANCH]"
+        },
+        {
+          "name": "presentation_date",
+          "placeholder": "[DATE OF PRESENTATION]"
+        }
+      ]
+    }
+  ],
+  "consumer_complaint_cpa2019": [
+    {
+      "doc_type": "consumer_complaint_cpa2019",
+      "given_facts": {
+        "city": "Vasai-Virar",
+        "compensation_sought": 19500,
+        "complainant_address": "Flat No. 35, Shanti Niketan, Ring Road, New Friends Colony, Delhi 11009",
+        "complainant_name": "Bhushan Sharma",
+        "complainant_occupation": "marketing manager",
+        "invoice_or_order_number": "ZDANW1995O",
+        "opposite_party_address": "Flat No. 26, Matoshree Heights, Gandhi Chowk Road, New Friends Colony, Indore 45283",
+        "opposite_party_name": "More Solutions Private Limited",
+        "product_service": "washing machine",
+        "purchase_amount": 63000,
+        "purchase_date": "2026-03-15",
+        "trigger_date": "2026-04-29"
+      },
+      "index": 0,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "defective_washing_machine",
+      "scenario_summary": "A Mumbai homemaker's front-load washing machine failed within warranty; the manufacturer's service centre made three failed repair visits and refuses replacement.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "consumer_complaint_cpa2019",
+      "given_facts": {
+        "advocate_name": "Deepa Singh",
+        "city": "Pune",
+        "complainant_address": "Flat No. 14, Matoshree Heights, Market Yard Road, Borivali East, Pune 41133",
+        "complainant_name": "Devendra Bhosale",
+        "invoice_or_order_number": "ZFZGO1039U",
+        "opposite_party_address": "Flat No. 34, Gokul Residency, Market Yard Road, Shivaji Nagar, Chennai 60001",
+        "opposite_party_name": "Rao Trading Company",
+        "product_service": "laptop computer",
+        "purchase_amount": 35500,
+        "trigger_date": "2026-04-05"
+      },
+      "index": 1,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "ecommerce_non_delivery",
+      "scenario_summary": "A Pune student paid online for a laptop on an e-commerce marketplace; the order was never delivered and refund requests were ignored.",
+      "withheld_fields": [
+        {
+          "name": "purchase_date",
+          "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+        },
+        {
+          "name": "compensation_sought",
+          "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+        }
+      ]
+    },
+    {
+      "doc_type": "consumer_complaint_cpa2019",
+      "given_facts": {
+        "advocate_name": "Vihaan Rao",
+        "city": "Solapur",
+        "complainant_name": "Karthik Kapoor",
+        "invoice_or_order_number": "ZORSD4658Q",
+        "opposite_party_address": "Flat No. 5, Yashwant Smruti, M.G. Road, Dadar, Mumbai 40099",
+        "opposite_party_name": "Sheikh Trading Company",
+        "product_service": "health insurance policy",
+        "purchase_amount": 680000
+      },
+      "index": 2,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "insurance_claim_repudiated",
+      "scenario_summary": "A Nagpur schoolteacher's health insurance claim for hospitalisation was repudiated citing pre-existing disease despite full disclosure at proposal stage.",
+      "withheld_fields": [
+        {
+          "name": "purchase_date",
+          "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+        },
+        {
+          "name": "trigger_date",
+          "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+        },
+        {
+          "name": "complainant_address",
+          "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+        },
+        {
+          "name": "compensation_sought",
+          "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+        }
+      ]
+    },
+    {
+      "doc_type": "consumer_complaint_cpa2019",
+      "given_facts": {
+        "advocate_name": "Sanjay Gaikwad",
+        "city": "Delhi",
+        "complainant_address": "Flat No. 18, Silver Oak Towers, Karve Road, Sector 9, Mumbai 40009",
+        "complainant_name": "Mary Menon",
+        "invoice_or_order_number": "KCITO2543Z",
+        "opposite_party_name": "Phadke Enterprises",
+        "product_service": "residential flat booking",
+        "purchase_amount": 2457500,
+        "purchase_date": "2025-06-23"
+      },
+      "index": 3,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "builder_possession_delay",
+      "scenario_summary": "A Thane buyer paid most of the consideration for a 1BHK flat; the builder has delayed possession well beyond the agreed date despite repeated demands.",
+      "withheld_fields": [
+        {
+          "name": "trigger_date",
+          "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+        },
+        {
+          "name": "opposite_party_address",
+          "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+        },
+        {
+          "name": "compensation_sought",
+          "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+        }
+      ]
+    },
+    {
+      "doc_type": "consumer_complaint_cpa2019",
+      "given_facts": {
+        "city": "Kochi",
+        "complainant_name": "Omkar Naidu",
+        "complainant_occupation": "insurance agent",
+        "opposite_party_address": "Flat No. 4, Matoshree Heights, Link Road, Dadar, Bengaluru 56054",
+        "opposite_party_name": "D'Souza Developers",
+        "product_service": "motor vehicle servicing",
+        "purchase_amount": 115000
+      },
+      "index": 4,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "faulty_vehicle_servicing",
+      "scenario_summary": "A Nashik businessman's car came back from authorised servicing with engine damage; the workshop denies responsibility and demands further charges.",
+      "withheld_fields": [
+        {
+          "name": "purchase_date",
+          "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+        },
+        {
+          "name": "trigger_date",
+          "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+        },
+        {
+          "name": "complainant_address",
+          "placeholder": "[FULL ADDRESS OF COMPLAINANT]"
+        },
+        {
+          "name": "compensation_sought",
+          "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+        },
+        {
+          "name": "invoice_or_order_number",
+          "placeholder": "[INVOICE OR ORDER NUMBER]"
+        }
+      ]
+    },
+    {
+      "doc_type": "consumer_complaint_cpa2019",
+      "given_facts": {
+        "advocate_name": "Omkar Wagh",
+        "city": "Visakhapatnam",
+        "complainant_address": "Flat No. 25, Sai Krupa CHS, College Road, Andheri West, Kochi 68283",
+        "complainant_name": "Omkar Bhagat",
+        "opposite_party_address": "Flat No. 8, Shanti Niketan, Ring Road, Kothrud, Delhi 11072",
+        "opposite_party_name": "More Solutions Private Limited",
+        "product_service": "coaching classes enrolment",
+        "purchase_amount": 66500,
+        "purchase_date": "2024-10-25"
+      },
+      "index": 5,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "coaching_class_refund_refusal",
+      "scenario_summary": "A Latur student paid full fees for a JEE coaching batch the institute later cancelled; the institute refuses any refund citing a no-refund clause.",
+      "withheld_fields": [
+        {
+          "name": "trigger_date",
+          "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+        },
+        {
+          "name": "compensation_sought",
+          "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+        },
+        {
+          "name": "invoice_or_order_number",
+          "placeholder": "[INVOICE OR ORDER NUMBER]"
+        }
+      ]
+    },
+    {
+      "doc_type": "consumer_complaint_cpa2019",
+      "given_facts": {
+        "city": "Nashik",
+        "complainant_address": "Flat No. 2, Sai Krupa CHS, Link Road, Borivali East, Navi Mumbai 40065",
+        "complainant_name": "Pravin D'Souza",
+        "complainant_occupation": "real estate agent",
+        "invoice_or_order_number": "JQJLG3336G",
+        "opposite_party_name": "Deshmukh Services LLP",
+        "product_service": "air ticket",
+        "purchase_amount": 51000,
+        "purchase_date": "2024-11-24",
+        "trigger_date": "2025-01-14"
+      },
+      "index": 6,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "airline_refund_denied",
+      "scenario_summary": "A Delhi consultant's flight was cancelled by the airline, which has not refunded the fare months later despite repeated written complaints.",
+      "withheld_fields": [
+        {
+          "name": "opposite_party_address",
+          "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+        },
+        {
+          "name": "compensation_sought",
+          "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+        }
+      ]
+    },
+    {
+      "doc_type": "consumer_complaint_cpa2019",
+      "given_facts": {
+        "advocate_name": "Komal Sheikh",
+        "city": "Mumbai",
+        "compensation_sought": 148500,
+        "complainant_address": "Flat No. 25, Tulsi Vihar, S.V. Road, Dadar, Thane 40007",
+        "complainant_name": "Sachin Sheikh",
+        "invoice_or_order_number": "OKJFK6352U",
+        "opposite_party_address": "Flat No. 17, Gokul Residency, Fergusson College Road, Camp Area, Nashik 42278",
+        "opposite_party_name": "Bhosale Engineering Works",
+        "product_service": "hospital treatment package",
+        "purchase_amount": 201000,
+        "trigger_date": "2025-11-27"
+      },
+      "index": 7,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "hospital_overbilling",
+      "scenario_summary": "An Aurangabad patient was billed far above the agreed package rate for surgery; the hospital withheld discharge papers until excess payment, a deficiency in service.",
+      "withheld_fields": [
+        {
+          "name": "purchase_date",
+          "placeholder": "[DATE OF PURCHASE OR PAYMENT]"
+        }
+      ]
+    },
+    {
+      "doc_type": "consumer_complaint_cpa2019",
+      "given_facts": {
+        "advocate_name": "Anil Joshi",
+        "city": "Mumbai",
+        "complainant_address": "Flat No. 36, Shree Ganesh Apartments, Ring Road, Aundh, Mumbai 40058",
+        "complainant_name": "Sachin Deshpande",
+        "complainant_occupation": "school teacher",
+        "invoice_or_order_number": "RUAMY4410Z",
+        "opposite_party_name": "Bhagat Agencies",
+        "product_service": "savings bank account services",
+        "purchase_amount": 50500,
+        "purchase_date": "2025-04-12"
+      },
+      "index": 8,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "bank_charges_dispute",
+      "scenario_summary": "A Mumbai senior citizen's savings account was debited with unexplained service charges; the bank failed to reverse them despite written complaints.",
+      "withheld_fields": [
+        {
+          "name": "trigger_date",
+          "placeholder": "[DATE DEFECT OR DEFICIENCY AROSE]"
+        },
+        {
+          "name": "opposite_party_address",
+          "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+        },
+        {
+          "name": "compensation_sought",
+          "placeholder": "[COMPENSATION AMOUNT CLAIMED IN ₹]"
+        }
+      ]
+    },
+    {
+      "doc_type": "consumer_complaint_cpa2019",
+      "given_facts": {
+        "city": "Ahmedabad",
+        "compensation_sought": 49500,
+        "complainant_address": "Flat No. 24, Yashwant Smruti, Link Road, Civil Lines, Thane 40037",
+        "complainant_name": "Tushar Chopra",
+        "opposite_party_name": "Kadam Trading Company",
+        "product_service": "sofa set",
+        "purchase_amount": 83000,
+        "purchase_date": "2025-12-16",
+        "trigger_date": "2026-02-26"
+      },
+      "index": 9,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "defective_furniture",
+      "scenario_summary": "A Kolhapur couple's sofa set arrived with cracked frames and torn upholstery; the dealer ignored replacement requests throughout the warranty period.",
+      "withheld_fields": [
+        {
+          "name": "opposite_party_address",
+          "placeholder": "[FULL ADDRESS OF OPPOSITE PARTY]"
+        },
+        {
+          "name": "invoice_or_order_number",
+          "placeholder": "[INVOICE OR ORDER NUMBER]"
+        }
+      ]
+    }
+  ],
+  "employment_offer_termination": [
+    {
+      "doc_type": "employment_offer_termination",
+      "given_facts": {
+        "annual_ctc": 1207000,
+        "company_name": "Mane Textiles",
+        "designation": "Software Engineer",
+        "employee_address": "Flat No. 24, Silver Oak Towers, Gandhi Chowk Road, Kothrud, Thane 40084",
+        "employee_name": "Bhushan Sharma",
+        "joining_date": "2026-08-13",
+        "notice_period_days": 90,
+        "probation_months": 6,
+        "work_location": "Hyderabad"
+      },
+      "index": 0,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "it_services_offer_pune",
+      "scenario_summary": "Pune IT services company offers a software engineer role on six-month probation with a sixty-day notice period.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "employment_offer_termination",
+      "given_facts": {
+        "annual_ctc": 463000,
+        "company_name": "Pawar Agencies",
+        "designation": "Production Supervisor",
+        "employee_name": "Devendra Bhosale",
+        "joining_date": "2026-07-05",
+        "notice_period_days": 60,
+        "signatory_name": "Manoj Kadam",
+        "work_location": "Pune"
+      },
+      "index": 1,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "auto_components_offer_aurangabad",
+      "scenario_summary": "Auto-components manufacturer at Chhatrapati Sambhajinagar (Aurangabad) appoints a production supervisor at its MIDC Waluj plant.",
+      "withheld_fields": [
+        {
+          "name": "employee_address",
+          "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+        },
+        {
+          "name": "probation_months",
+          "placeholder": "[PROBATION PERIOD IN MONTHS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "employment_offer_termination",
+      "given_facts": {
+        "annual_ctc": 2845000,
+        "company_name": "Kapoor Foods",
+        "designation": "Senior Product Manager",
+        "employee_name": "Anil Das",
+        "signatory_name": "Sayali Wagh",
+        "work_location": "Kolhapur"
+      },
+      "index": 2,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "fintech_offer_bengaluru",
+      "scenario_summary": "Bengaluru fintech startup offers a senior product manager role at a senior CTC band with ninety-day notice.",
+      "withheld_fields": [
+        {
+          "name": "employee_address",
+          "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+        },
+        {
+          "name": "joining_date",
+          "placeholder": "[DATE OF JOINING]"
+        },
+        {
+          "name": "probation_months",
+          "placeholder": "[PROBATION PERIOD IN MONTHS]"
+        },
+        {
+          "name": "notice_period_days",
+          "placeholder": "[NOTICE PERIOD IN DAYS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "employment_offer_termination",
+      "given_facts": {
+        "annual_ctc": 370000,
+        "company_name": "Agarwal Enterprises",
+        "designation": "Customer Support Executive",
+        "employee_address": "Flat No. 15, Shanti Niketan, Station Road, Aundh, Mumbai 40001",
+        "employee_name": "Mary Menon",
+        "notice_period_days": 60,
+        "signatory_name": "Mahesh Wagh",
+        "work_location": "Navi Mumbai"
+      },
+      "index": 3,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "bpo_offer_mumbai",
+      "scenario_summary": "Mumbai BPO hires a customer support executive for a night-shift voice process at entry-level pay.",
+      "withheld_fields": [
+        {
+          "name": "joining_date",
+          "placeholder": "[DATE OF JOINING]"
+        },
+        {
+          "name": "probation_months",
+          "placeholder": "[PROBATION PERIOD IN MONTHS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "employment_offer_termination",
+      "given_facts": {
+        "annual_ctc": 820500,
+        "company_name": "Raut Enterprises",
+        "designation": "Quality Assurance Chemist",
+        "employee_name": "Omkar Naidu",
+        "probation_months": 3,
+        "signatory_designation": "HR Manager",
+        "signatory_name": "Suresh Chavan",
+        "work_location": "Bengaluru"
+      },
+      "index": 4,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "pharma_offer_hyderabad",
+      "scenario_summary": "Hyderabad pharmaceutical company offers a quality-assurance chemist position at its Genome Valley facility.",
+      "withheld_fields": [
+        {
+          "name": "employee_address",
+          "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+        },
+        {
+          "name": "joining_date",
+          "placeholder": "[DATE OF JOINING]"
+        },
+        {
+          "name": "notice_period_days",
+          "placeholder": "[NOTICE PERIOD IN DAYS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "employment_offer_termination",
+      "given_facts": {
+        "annual_ctc": 846000,
+        "company_name": "Bhatt Distributors",
+        "designation": "Store Manager",
+        "employee_address": "Flat No. 19, Om Sai Plaza, Fergusson College Road, Andheri West, Navi Mumbai 40030",
+        "employee_name": "Yogesh Singh",
+        "notice_period_days": 60,
+        "signatory_designation": "Head - Human Resources",
+        "signatory_name": "Madhuri Patil",
+        "work_location": "Vadodara"
+      },
+      "index": 5,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "retail_offer_nagpur",
+      "scenario_summary": "Nagpur retail chain appoints a store manager for its new Sitabuldi outlet on three-month probation.",
+      "withheld_fields": [
+        {
+          "name": "joining_date",
+          "placeholder": "[DATE OF JOINING]"
+        },
+        {
+          "name": "probation_months",
+          "placeholder": "[PROBATION PERIOD IN MONTHS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "employment_offer_termination",
+      "given_facts": {
+        "annual_ctc": 548500,
+        "company_name": "Thorat Marketing",
+        "designation": "Front Office Manager",
+        "employee_address": "Flat No. 23, Shree Ganesh Apartments, Karve Road, Camp Area, Navi Mumbai 40048",
+        "employee_name": "Pravin D'Souza",
+        "joining_date": "2026-07-01",
+        "notice_period_days": 30,
+        "probation_months": 3,
+        "signatory_designation": "General Manager - HR",
+        "signatory_name": "Ashwini Kadam",
+        "work_location": "Kochi"
+      },
+      "index": 6,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "hospitality_offer_goa",
+      "scenario_summary": "Goa beach resort offers a front-office manager role ahead of the tourist season.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "employment_offer_termination",
+      "given_facts": {
+        "company_name": "Iyer Marketing",
+        "designation": "Marketing Executive",
+        "employee_name": "Manoj Kaur",
+        "last_working_day": "2026-09-06",
+        "termination_reason": "redundancy arising from organisational restructuring"
+      },
+      "index": 7,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "restructuring_termination_mumbai",
+      "scenario_summary": "Mumbai media house terminates a marketing executive after a divisional shutdown, offering pay in lieu of notice.",
+      "withheld_fields": [
+        {
+          "name": "employee_address",
+          "placeholder": "[FULL ADDRESS OF EMPLOYEE]"
+        },
+        {
+          "name": "notice_disposition",
+          "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "employment_offer_termination",
+      "given_facts": {
+        "company_name": "D'Souza Industries",
+        "designation": "Operations Trainee",
+        "employee_address": "Flat No. 9, Gokul Residency, Karve Road, Borivali East, Mumbai 40043",
+        "employee_name": "Swapnil Menon",
+        "signatory_designation": "HR Manager",
+        "termination_reason": "non-confirmation of services during the probation period"
+      },
+      "index": 8,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "probation_nonconfirmation_pune",
+      "scenario_summary": "Pune logistics firm declines to confirm an operations trainee whose probation performance fell short of targets.",
+      "withheld_fields": [
+        {
+          "name": "last_working_day",
+          "placeholder": "[LAST WORKING DAY]"
+        },
+        {
+          "name": "notice_disposition",
+          "placeholder": "[NOTICE SERVED OR PAY IN LIEU OF NOTICE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "employment_offer_termination",
+      "given_facts": {
+        "company_name": "Salunkhe Infotech Private Limited",
+        "designation": "Storekeeper",
+        "employee_address": "Flat No. 8, Prestige Court, Market Yard Road, Sadashiv Peth, Kolkata 70099",
+        "employee_name": "Kavita Khan",
+        "last_working_day": "2026-07-31",
+        "notice_disposition": "payment in lieu of the notice period will be made with the full and final settlement",
+        "signatory_designation": "HR Manager",
+        "signatory_name": "Priya Sheikh",
+        "termination_reason": "misconduct established in a domestic inquiry"
+      },
+      "index": 9,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "misconduct_termination_thane",
+      "scenario_summary": "Thane engineering unit dismisses a storekeeper for stock pilferage established in a domestic inquiry.",
+      "withheld_fields": []
+    }
+  ],
+  "leave_license_mh": [
+    {
+      "doc_type": "leave_license_mh",
+      "given_facts": {
+        "city": "Vadodara",
+        "licensee_address": "Flat No. 15, Vrindavan Complex, Fergusson College Road, Model Colony, Hyderabad 50090",
+        "licensee_name": "Pallavi Naik",
+        "licensor_address": "Flat No. 19, Tulsi Vihar, Ring Road, Camp Area, Vasai-Virar 40167",
+        "licensor_name": "Sachin Kadam",
+        "monthly_fee": 71500,
+        "police_verification_party": "Licensor",
+        "premises_address": "Flat No. 3, Sai Krupa CHS, M.G. Road, Civil Lines, Delhi 11092",
+        "security_deposit": 286000,
+        "start_date": "2026-07-10",
+        "term_months": 24
+      },
+      "index": 0,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "residential_flat_mumbai",
+      "scenario_summary": "Owner licenses a 2BHK flat in Andheri West, Mumbai to a salaried couple for 11 months; society intimation and maintenance terms included.",
+      "withheld_fields": [
+        {
+          "name": "notice_months",
+          "placeholder": "[NOTICE PERIOD IN MONTHS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "leave_license_mh",
+      "given_facts": {
+        "city": "Kochi",
+        "furnishing_status": "unfurnished",
+        "licensee_name": "Mahesh Pawar",
+        "licensor_address": "Flat No. 3, Gokul Residency, S.V. Road, Borivali East, Nashik 42219",
+        "licensor_name": "Sanjay Rao",
+        "monthly_fee": 29500,
+        "notice_months": 1,
+        "premises_address": "Flat No. 30, Gokul Residency, S.V. Road, Sadashiv Peth, Hyderabad 50026",
+        "security_deposit": 236000,
+        "term_months": 11
+      },
+      "index": 1,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "residential_flat_pune",
+      "scenario_summary": "Retired teacher licenses a semi-furnished 1BHK in Kothrud, Pune to an IT professional; 11-month term with a three-month lock-in.",
+      "withheld_fields": [
+        {
+          "name": "licensee_address",
+          "placeholder": "[FULL ADDRESS OF LICENSEE]"
+        },
+        {
+          "name": "start_date",
+          "placeholder": "[LICENSE COMMENCEMENT DATE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "leave_license_mh",
+      "given_facts": {
+        "city": "Thane",
+        "furnishing_status": "unfurnished",
+        "licensee_name": "Gurpreet Mehta",
+        "licensor_name": "Amol Agarwal",
+        "monthly_fee": 13000,
+        "notice_months": 3,
+        "police_verification_party": "Licensee",
+        "premises_address": "Flat No. 22, Tulsi Vihar, M.G. Road, Dadar, Amravati 44499",
+        "term_months": 33
+      },
+      "index": 2,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "single_room_pg_thane",
+      "scenario_summary": "Homeowner licenses one furnished room with shared kitchen in a Thane flat to a postgraduate student as paying-guest style accommodation.",
+      "withheld_fields": [
+        {
+          "name": "licensor_address",
+          "placeholder": "[FULL ADDRESS OF LICENSOR]"
+        },
+        {
+          "name": "licensee_address",
+          "placeholder": "[FULL ADDRESS OF LICENSEE]"
+        },
+        {
+          "name": "security_deposit",
+          "placeholder": "[SECURITY DEPOSIT AMOUNT IN ₹]"
+        },
+        {
+          "name": "start_date",
+          "placeholder": "[LICENSE COMMENCEMENT DATE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "leave_license_mh",
+      "given_facts": {
+        "city": "Pune",
+        "furnishing_status": "unfurnished",
+        "licensee_name": "Vihaan Deshmukh",
+        "licensor_name": "Ishita Phadke",
+        "monthly_fee": 62500,
+        "notice_months": 2,
+        "premises_address": "Flat No. 10, Shree Ganesh Apartments, S.V. Road, Dadar, Delhi 11045",
+        "security_deposit": 250000
+      },
+      "index": 3,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "shop_premises_thane",
+      "scenario_summary": "Shop owner licenses a ground-floor 250 sq ft shop on Gokhale Road, Thane to a kirana store proprietor; commercial use only.",
+      "withheld_fields": [
+        {
+          "name": "licensor_address",
+          "placeholder": "[FULL ADDRESS OF LICENSOR]"
+        },
+        {
+          "name": "licensee_address",
+          "placeholder": "[FULL ADDRESS OF LICENSEE]"
+        },
+        {
+          "name": "term_months",
+          "placeholder": "[TERM OF LICENSE IN MONTHS]"
+        },
+        {
+          "name": "start_date",
+          "placeholder": "[LICENSE COMMENCEMENT DATE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "leave_license_mh",
+      "given_facts": {
+        "city": "Pune",
+        "licensee_address": "Flat No. 27, Prestige Court, Link Road, Kothrud, Visakhapatnam 53071",
+        "licensee_company": "Iyer Enterprises",
+        "licensee_name": "Vijay Das",
+        "licensor_name": "Radhika Raut",
+        "lock_in_months": 3,
+        "monthly_fee": 56500,
+        "police_verification_party": "Licensor",
+        "premises_address": "Flat No. 32, Shree Ganesh Apartments, Karve Road, Camp Area, Mumbai 40057",
+        "term_months": 33
+      },
+      "index": 4,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "small_office_pune",
+      "scenario_summary": "Private limited startup licenses a 600 sq ft office in Baner, Pune for its registered office; 36-month term with annual escalation.",
+      "withheld_fields": [
+        {
+          "name": "licensor_address",
+          "placeholder": "[FULL ADDRESS OF LICENSOR]"
+        },
+        {
+          "name": "security_deposit",
+          "placeholder": "[SECURITY DEPOSIT AMOUNT IN ₹]"
+        },
+        {
+          "name": "start_date",
+          "placeholder": "[LICENSE COMMENCEMENT DATE]"
+        },
+        {
+          "name": "notice_months",
+          "placeholder": "[NOTICE PERIOD IN MONTHS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "leave_license_mh",
+      "given_facts": {
+        "city": "Visakhapatnam",
+        "furnishing_status": "semi-furnished with fixtures and fittings",
+        "licensee_name": "Nitin Deshmukh",
+        "licensor_name": "Sachin Mane",
+        "lock_in_months": 3,
+        "monthly_fee": 33000,
+        "notice_months": 3,
+        "police_verification_party": "Licensee",
+        "premises_address": "Flat No. 25, Sai Krupa CHS, College Road, Andheri West, Kochi 68283",
+        "security_deposit": 132000,
+        "term_months": 24
+      },
+      "index": 5,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "bungalow_floor_nashik",
+      "scenario_summary": "Owner licenses the ground floor of a Nashik bungalow with garden access to a retired bank officer couple for 22 months.",
+      "withheld_fields": [
+        {
+          "name": "licensor_address",
+          "placeholder": "[FULL ADDRESS OF LICENSOR]"
+        },
+        {
+          "name": "licensee_address",
+          "placeholder": "[FULL ADDRESS OF LICENSEE]"
+        },
+        {
+          "name": "start_date",
+          "placeholder": "[LICENSE COMMENCEMENT DATE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "leave_license_mh",
+      "given_facts": {
+        "city": "Bengaluru",
+        "licensee_address": "Flat No. 15, Prestige Court, S.V. Road, Sadashiv Peth, Mumbai 40038",
+        "licensee_name": "Swapnil Chopra",
+        "licensor_address": "Flat No. 23, Shanti Niketan, Karve Road, Civil Lines, Mumbai 40004",
+        "licensor_name": "Aarav Naik",
+        "lock_in_months": 11,
+        "monthly_fee": 57500,
+        "notice_months": 2,
+        "premises_address": "Flat No. 14, Gokul Residency, Karve Road, Camp Area, Navi Mumbai 40086",
+        "security_deposit": 345000
+      },
+      "index": 6,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "flat_parking_navi_mumbai",
+      "scenario_summary": "Flat in Vashi, Navi Mumbai licensed with one covered stilt parking slot included; licensee a shipping executive on an 11-month term.",
+      "withheld_fields": [
+        {
+          "name": "term_months",
+          "placeholder": "[TERM OF LICENSE IN MONTHS]"
+        },
+        {
+          "name": "start_date",
+          "placeholder": "[LICENSE COMMENCEMENT DATE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "leave_license_mh",
+      "given_facts": {
+        "city": "Chennai",
+        "furnishing_status": "semi-furnished with fixtures and fittings",
+        "licensee_company": "Iyer Trading Company",
+        "licensee_name": "Milind Malhotra",
+        "licensor_address": "Flat No. 20, Om Sai Plaza, College Road, New Friends Colony, Mumbai 40037",
+        "licensor_name": "Sachin Sheikh",
+        "monthly_fee": 120000,
+        "notice_months": 1,
+        "premises_address": "Flat No. 4, Prestige Court, S.V. Road, Sector 9, Pune 41134",
+        "security_deposit": 600000,
+        "start_date": "2026-08-03",
+        "term_months": 24
+      },
+      "index": 7,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "company_employee_housing_mumbai",
+      "scenario_summary": "IT company licenses a furnished 3BHK in Powai, Mumbai as residence for its vice-president; company pays fee and deposit, employee occupies.",
+      "withheld_fields": [
+        {
+          "name": "licensee_address",
+          "placeholder": "[FULL ADDRESS OF LICENSEE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "leave_license_mh",
+      "given_facts": {
+        "city": "Mumbai",
+        "furnishing_status": "semi-furnished with fixtures and fittings",
+        "licensee_company": "Mukherjee Services LLP",
+        "licensee_name": "Dattatray Wagh",
+        "licensor_name": "Kiran Bhagat",
+        "monthly_fee": 102500,
+        "premises_address": "Flat No. 36, Shree Ganesh Apartments, Ring Road, Aundh, Mumbai 40058",
+        "security_deposit": 307500
+      },
+      "index": 8,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "corporate_guest_house_pune",
+      "scenario_summary": "Manufacturing company licenses a furnished 2BHK in Hinjawadi, Pune as a guest house for visiting engineers; housekeeping by licensee.",
+      "withheld_fields": [
+        {
+          "name": "licensor_address",
+          "placeholder": "[FULL ADDRESS OF LICENSOR]"
+        },
+        {
+          "name": "licensee_address",
+          "placeholder": "[FULL ADDRESS OF LICENSEE]"
+        },
+        {
+          "name": "term_months",
+          "placeholder": "[TERM OF LICENSE IN MONTHS]"
+        },
+        {
+          "name": "start_date",
+          "placeholder": "[LICENSE COMMENCEMENT DATE]"
+        },
+        {
+          "name": "notice_months",
+          "placeholder": "[NOTICE PERIOD IN MONTHS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "leave_license_mh",
+      "given_facts": {
+        "city": "Ahmedabad",
+        "licensee_address": "Flat No. 39, Vrindavan Complex, College Road, Aundh, Pune 41133",
+        "licensee_company": "Kaur Infotech Private Limited",
+        "licensee_name": "Ashwini Sharma",
+        "licensor_address": "Flat No. 24, Yashwant Smruti, Link Road, Civil Lines, Thane 40037",
+        "licensor_name": "Arjun Gaikwad",
+        "lock_in_months": 3,
+        "monthly_fee": 134500,
+        "notice_months": 3,
+        "police_verification_party": "Licensee",
+        "premises_address": "Flat No. 24, Shree Ganesh Apartments, Karve Road, New Friends Colony, Chennai 60059",
+        "security_deposit": 807000,
+        "start_date": "2026-07-31"
+      },
+      "index": 9,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "retail_showroom_nagpur",
+      "scenario_summary": "Apparel retail chain licenses a main-road showroom in Sitabuldi, Nagpur with signage rights; 60-month term and six-month lock-in.",
+      "withheld_fields": [
+        {
+          "name": "term_months",
+          "placeholder": "[TERM OF LICENSE IN MONTHS]"
+        }
+      ]
+    }
+  ],
+  "legal_notice_landlord_tenant": [
+    {
+      "doc_type": "legal_notice_landlord_tenant",
+      "given_facts": {
+        "arrears_months": 9,
+        "city": "Mumbai",
+        "landlord_name": "Imran Mukherjee",
+        "monthly_rent": 60000,
+        "notice_period_days": 15,
+        "premises_address": "Flat No. 20, Green Valley Society, Station Road, Sector 9, Nashik 42238",
+        "tenancy_start_date": "2024-07-04",
+        "tenant_name": "Bhushan Sharma"
+      },
+      "index": 0,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "arrears_eviction_mumbai_flat",
+      "scenario_summary": "Tenant of a 1BHK flat in Andheri, Mumbai has not paid rent for months; landlord demands arrears and vacant possession.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "legal_notice_landlord_tenant",
+      "given_facts": {
+        "arrears_months": 5,
+        "city": "Chandigarh",
+        "landlord_name": "Anil Apte",
+        "mode_of_dispatch": "Email and Registered Post A.D.",
+        "monthly_rent": 87500,
+        "notice_period_days": 15,
+        "premises_address": "Flat No. 6, Shanti Niketan, Fergusson College Road, Andheri West, Mumbai 40029",
+        "tenant_name": "Devendra Bhosale"
+      },
+      "index": 1,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "personal_use_pune_flat",
+      "scenario_summary": "Pune landlord requires the flat for his son's family after marriage; notice to quit month-to-month tenancy.",
+      "withheld_fields": [
+        {
+          "name": "tenancy_start_date",
+          "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+        }
+      ]
+    },
+    {
+      "doc_type": "legal_notice_landlord_tenant",
+      "given_facts": {
+        "city": "Ahmedabad",
+        "landlord_name": "Anil Das",
+        "mode_of_dispatch": "Email and Registered Post A.D.",
+        "monthly_rent": 33500,
+        "notice_period_days": 30,
+        "premises_address": "Flat No. 35, Yashwant Smruti, Fergusson College Road, Model Colony, Kolhapur 41610",
+        "security_deposit": 67000,
+        "tenant_name": "Karthik Kapoor"
+      },
+      "index": 2,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "holdover_after_licence_expiry_thane",
+      "scenario_summary": "Leave-and-licence for a Thane flat expired; licensee continues in occupation without renewal; landlord demands handover of possession.",
+      "withheld_fields": [
+        {
+          "name": "tenancy_start_date",
+          "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+        },
+        {
+          "name": "arrears_months",
+          "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "legal_notice_landlord_tenant",
+      "given_facts": {
+        "arrears_months": 7,
+        "city": "Nashik",
+        "landlord_name": "Fatima Patil",
+        "mode_of_dispatch": "Registered Post A.D.",
+        "monthly_rent": 27500,
+        "premises_address": "Flat No. 31, Om Sai Plaza, Station Road, Aundh, Mumbai 40001",
+        "security_deposit": 165000,
+        "tenant_name": "Mary Menon"
+      },
+      "index": 3,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "illegal_subletting_nagpur_shop",
+      "scenario_summary": "Nagpur shop tenant sublet part of the premises to a third party without the landlord's written consent; termination notice.",
+      "withheld_fields": [
+        {
+          "name": "tenancy_start_date",
+          "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+        },
+        {
+          "name": "notice_period_days",
+          "placeholder": "[NOTICE PERIOD IN DAYS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "legal_notice_landlord_tenant",
+      "given_facts": {
+        "advocate_name": "Aishwarya Deshmukh",
+        "city": "Chennai",
+        "landlord_name": "Vaishali Patil",
+        "mode_of_dispatch": "Registered Post A.D.",
+        "monthly_rent": 57500,
+        "notice_period_days": 15,
+        "premises_address": "Flat No. 11, Tulsi Vihar, Gandhi Chowk Road, Andheri West, Nashik 42224",
+        "security_deposit": 345000,
+        "tenancy_start_date": "2023-10-24",
+        "tenant_name": "Omkar Naidu"
+      },
+      "index": 4,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "damage_alterations_nashik",
+      "scenario_summary": "Nashik tenant carried out unauthorised structural alterations damaging the premises; landlord demands restoration and possession.",
+      "withheld_fields": [
+        {
+          "name": "arrears_months",
+          "placeholder": "[NUMBER OF MONTHS OF RENT IN ARREARS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "legal_notice_landlord_tenant",
+      "given_facts": {
+        "advocate_name": "Komal Shinde",
+        "arrears_months": 12,
+        "city": "Navi Mumbai",
+        "landlord_name": "Rutuja Deshpande",
+        "mode_of_dispatch": "Email and Registered Post A.D.",
+        "monthly_rent": 71000,
+        "notice_period_days": 15,
+        "premises_address": "Flat No. 9, Shree Ganesh Apartments, Link Road, Civil Lines, Thane 40011",
+        "security_deposit": 142000,
+        "tenant_name": "Tejal Bhagat"
+      },
+      "index": 5,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "persistent_late_payment_bengaluru",
+      "scenario_summary": "Bengaluru apartment tenant habitually pays rent weeks late despite repeated reminders; landlord terminates the tenancy.",
+      "withheld_fields": [
+        {
+          "name": "tenancy_start_date",
+          "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+        }
+      ]
+    },
+    {
+      "doc_type": "legal_notice_landlord_tenant",
+      "given_facts": {
+        "advocate_name": "Manoj Verma",
+        "arrears_months": 3,
+        "city": "Mumbai",
+        "landlord_name": "Farhan Jain",
+        "mode_of_dispatch": "Speed Post",
+        "monthly_rent": 89500,
+        "premises_address": "Flat No. 23, Shree Ganesh Apartments, Karve Road, Camp Area, Pune 41148",
+        "tenancy_start_date": "2021-08-15",
+        "tenant_name": "Pravin D'Souza"
+      },
+      "index": 6,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "commercial_arrears_delhi_shop",
+      "scenario_summary": "Delhi market shop tenant is in arrears of rent and maintenance charges; landlord demands payment and possession.",
+      "withheld_fields": [
+        {
+          "name": "notice_period_days",
+          "placeholder": "[NOTICE PERIOD IN DAYS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "legal_notice_landlord_tenant",
+      "given_facts": {
+        "city": "Mumbai",
+        "landlord_name": "Manoj Kaur",
+        "monthly_rent": 252500,
+        "notice_period_days": 30,
+        "premises_address": "Flat No. 23, Shree Ganesh Apartments, Ring Road, Dadar, Amravati 44484",
+        "tenant_name": "Sachin Sheikh",
+        "vacation_date": "2024-10-08"
+      },
+      "index": 7,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "deposit_not_refunded_mumbai",
+      "scenario_summary": "Tenant vacated a Mumbai flat and handed over keys; landlord has not refunded the security deposit despite reminders.",
+      "withheld_fields": [
+        {
+          "name": "tenancy_start_date",
+          "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+        }
+      ]
+    },
+    {
+      "doc_type": "legal_notice_landlord_tenant",
+      "given_facts": {
+        "city": "Visakhapatnam",
+        "landlord_name": "Swapnil Menon",
+        "monthly_rent": 42000,
+        "premises_address": "Flat No. 13, Yashwant Smruti, Karve Road, Aundh, Pune 41146",
+        "security_deposit": 294000,
+        "tenant_name": "Rajesh Joshi",
+        "vacation_date": "2026-04-27"
+      },
+      "index": 8,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "unjustified_deposit_deductions_thane",
+      "scenario_summary": "Thane landlord returned only part of the deposit, deducting arbitrary painting and repair charges; tenant demands the balance.",
+      "withheld_fields": [
+        {
+          "name": "tenancy_start_date",
+          "placeholder": "[DATE OF COMMENCEMENT OF TENANCY]"
+        },
+        {
+          "name": "notice_period_days",
+          "placeholder": "[NOTICE PERIOD IN DAYS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "legal_notice_landlord_tenant",
+      "given_facts": {
+        "city": "Jaipur",
+        "landlord_name": "Pravin Singh",
+        "mode_of_dispatch": "Courier",
+        "monthly_rent": 60500,
+        "notice_period_days": 30,
+        "premises_address": "Flat No. 8, Prestige Court, Market Yard Road, Sadashiv Peth, Kolkata 70099",
+        "tenancy_start_date": "2023-03-01",
+        "tenant_name": "Kavita Khan"
+      },
+      "index": 9,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "water_electricity_cut_pune",
+      "scenario_summary": "Pune landlord disconnected water and electricity to pressure the tenant to vacate; tenant demands immediate restoration.",
+      "withheld_fields": []
+    }
+  ],
+  "legal_notice_money_recovery": [
+    {
+      "doc_type": "legal_notice_money_recovery",
+      "given_facts": {
+        "city": "Navi Mumbai",
+        "claimant_address": "Flat No. 7, Om Sai Plaza, S.V. Road, New Friends Colony, Thane 40070",
+        "claimant_name": "Bhushan Sharma",
+        "compliance_days": 15,
+        "debt_origin_date": "2025-09-07",
+        "debtor_address": "Flat No. 5, Gokul Residency, College Road, Aundh, Nashik 42279",
+        "debtor_name": "Sachin Kadam",
+        "dispatch_mode": "Registered Post A.D.",
+        "due_amount": 1166500,
+        "payment_due_date": "2025-10-15"
+      },
+      "index": 0,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "unpaid_invoice_supplier",
+      "scenario_summary": "A Pune auto-components supplier's invoices to a Mumbai distributor remain unpaid ninety days beyond agreed credit terms despite repeated reminders.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "legal_notice_money_recovery",
+      "given_facts": {
+        "city": "Mumbai",
+        "claimant_address": "Flat No. 31, Matoshree Heights, M.G. Road, Borivali East, Kochi 68239",
+        "claimant_name": "Swapnil Banerjee",
+        "compliance_days": 30,
+        "debt_origin_date": "2024-04-30",
+        "debtor_name": "Devendra Bhosale",
+        "due_amount": 737000,
+        "interest_rate": 16,
+        "payment_due_date": "2024-07-06"
+      },
+      "index": 1,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "friendly_hand_loan",
+      "scenario_summary": "A hand loan given to a college friend in Mumbai for a medical emergency has not been repaid despite repeated promises.",
+      "withheld_fields": [
+        {
+          "name": "debtor_address",
+          "placeholder": "[FULL ADDRESS OF DEBTOR]"
+        }
+      ]
+    },
+    {
+      "doc_type": "legal_notice_money_recovery",
+      "given_facts": {
+        "claimant_name": "Anil Das",
+        "compliance_days": 30,
+        "debtor_name": "Karthik Kapoor",
+        "due_amount": 105000,
+        "interest_rate": 13,
+        "payment_due_date": "2025-10-19"
+      },
+      "index": 2,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "unpaid_salary_dues",
+      "scenario_summary": "A marketing executive who resigned from a Thane company is owed two months' salary and reimbursements; HR has stopped responding.",
+      "withheld_fields": [
+        {
+          "name": "city",
+          "placeholder": "[CITY]"
+        },
+        {
+          "name": "claimant_address",
+          "placeholder": "[FULL ADDRESS OF CLAIMANT]"
+        },
+        {
+          "name": "debtor_address",
+          "placeholder": "[FULL ADDRESS OF DEBTOR]"
+        },
+        {
+          "name": "debt_origin_date",
+          "placeholder": "[DATE THE DEBT AROSE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "legal_notice_money_recovery",
+      "given_facts": {
+        "city": "Mumbai",
+        "claimant_name": "Sandeep Jain",
+        "compliance_days": 30,
+        "debt_origin_date": "2024-05-10",
+        "debtor_name": "Mary Menon",
+        "due_amount": 272000,
+        "interest_rate": 11
+      },
+      "index": 3,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "advance_undelivered_goods",
+      "scenario_summary": "A homeowner paid a Nashik furniture workshop a large advance for modular furniture that was never delivered or refunded.",
+      "withheld_fields": [
+        {
+          "name": "claimant_address",
+          "placeholder": "[FULL ADDRESS OF CLAIMANT]"
+        },
+        {
+          "name": "debtor_address",
+          "placeholder": "[FULL ADDRESS OF DEBTOR]"
+        },
+        {
+          "name": "payment_due_date",
+          "placeholder": "[DATE PAYMENT FELL DUE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "legal_notice_money_recovery",
+      "given_facts": {
+        "advocate_name": "Rutuja Deshmukh",
+        "city": "Bengaluru",
+        "claimant_name": "Omkar Naidu",
+        "compliance_days": 15,
+        "debtor_address": "Flat No. 13, Silver Oak Towers, College Road, Sadashiv Peth, Mumbai 40025",
+        "debtor_name": "Radhika Raut",
+        "dispatch_mode": "Courier",
+        "due_amount": 111000,
+        "interest_rate": 21,
+        "payment_due_date": "2024-06-13"
+      },
+      "index": 4,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "freelancer_fee_unpaid",
+      "scenario_summary": "A freelance graphic designer in Mumbai completed a branding project for a startup; her invoices have been ignored for months.",
+      "withheld_fields": [
+        {
+          "name": "claimant_address",
+          "placeholder": "[FULL ADDRESS OF CLAIMANT]"
+        },
+        {
+          "name": "debt_origin_date",
+          "placeholder": "[DATE THE DEBT AROSE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "legal_notice_money_recovery",
+      "given_facts": {
+        "advocate_name": "Vikram Jain",
+        "city": "Thane",
+        "claimant_name": "Yogesh Singh",
+        "compliance_days": 15,
+        "debt_origin_date": "2024-02-09",
+        "debtor_name": "Omkar Bhagat",
+        "due_amount": 194000,
+        "interest_rate": 21,
+        "payment_due_date": "2024-03-10"
+      },
+      "index": 5,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "rent_arrears_recovery",
+      "scenario_summary": "A Nagpur landlord seeks four months of unpaid rent (money claim only) from a tenant who vacated without settling dues.",
+      "withheld_fields": [
+        {
+          "name": "claimant_address",
+          "placeholder": "[FULL ADDRESS OF CLAIMANT]"
+        },
+        {
+          "name": "debtor_address",
+          "placeholder": "[FULL ADDRESS OF DEBTOR]"
+        }
+      ]
+    },
+    {
+      "doc_type": "legal_notice_money_recovery",
+      "given_facts": {
+        "advocate_name": "Dattatray Naik",
+        "city": "Kolkata",
+        "claimant_address": "Flat No. 23, Shanti Niketan, Karve Road, Civil Lines, Navi Mumbai 40004",
+        "claimant_name": "Pravin D'Souza",
+        "compliance_days": 15,
+        "debt_origin_date": "2024-09-20",
+        "debtor_address": "Flat No. 15, Prestige Court, S.V. Road, Sadashiv Peth, Mumbai 40038",
+        "debtor_name": "Aarav Naik",
+        "dispatch_mode": "Registered Post A.D. and Email",
+        "due_amount": 158000,
+        "interest_rate": 15
+      },
+      "index": 6,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "society_maintenance_dues",
+      "scenario_summary": "A Navi Mumbai co-operative housing society demands long-pending maintenance arrears from a flat owner who ignores bills and reminders.",
+      "withheld_fields": [
+        {
+          "name": "payment_due_date",
+          "placeholder": "[DATE PAYMENT FELL DUE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "legal_notice_money_recovery",
+      "given_facts": {
+        "city": "Lucknow",
+        "claimant_address": "Flat No. 23, Shree Ganesh Apartments, Ring Road, Dadar, Mumbai 40084",
+        "claimant_name": "Manoj Kaur",
+        "compliance_days": 30,
+        "debt_origin_date": "2024-10-19",
+        "debtor_name": "Sachin Sheikh",
+        "due_amount": 124500,
+        "payment_due_date": "2025-01-30"
+      },
+      "index": 7,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "refundable_deposit_not_returned",
+      "scenario_summary": "A tenant who vacated a Pune flat after due notice has not received the refundable security deposit despite handing over possession.",
+      "withheld_fields": [
+        {
+          "name": "debtor_address",
+          "placeholder": "[FULL ADDRESS OF DEBTOR]"
+        }
+      ]
+    },
+    {
+      "doc_type": "legal_notice_money_recovery",
+      "given_facts": {
+        "city": "Pune",
+        "claimant_name": "Rajesh Joshi",
+        "compliance_days": 30,
+        "debt_origin_date": "2025-09-05",
+        "debtor_name": "Sachin Deshpande",
+        "dispatch_mode": "Speed Post",
+        "due_amount": 1650000
+      },
+      "index": 8,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "contractor_final_bill",
+      "scenario_summary": "An Aurangabad civil contractor's final bill for completed interior work is withheld by the developer without raising any defect.",
+      "withheld_fields": [
+        {
+          "name": "claimant_address",
+          "placeholder": "[FULL ADDRESS OF CLAIMANT]"
+        },
+        {
+          "name": "debtor_address",
+          "placeholder": "[FULL ADDRESS OF DEBTOR]"
+        },
+        {
+          "name": "payment_due_date",
+          "placeholder": "[DATE PAYMENT FELL DUE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "legal_notice_money_recovery",
+      "given_facts": {
+        "advocate_name": "Manisha More",
+        "city": "Nashik",
+        "claimant_address": "Flat No. 13, Silver Oak Towers, Karve Road, Shivaji Nagar, Chhatrapati Sambhajinagar 43197",
+        "claimant_name": "Tushar Chopra",
+        "compliance_days": 30,
+        "debt_origin_date": "2025-06-01",
+        "debtor_address": "Flat No. 19, Gokul Residency, Market Yard Road, New Friends Colony, Pune 41181",
+        "debtor_name": "Arjun Gaikwad",
+        "due_amount": 85500
+      },
+      "index": 9,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "coaching_fee_refund",
+      "scenario_summary": "A Delhi coaching institute cancelled a batch but refuses to refund the admission and tuition fees paid in advance.",
+      "withheld_fields": [
+        {
+          "name": "payment_due_date",
+          "placeholder": "[DATE PAYMENT FELL DUE]"
+        }
+      ]
+    }
+  ],
+  "mou_two_parties": [
+    {
+      "doc_type": "mou_two_parties",
+      "given_facts": {
+        "city": "Mumbai",
+        "jurisdiction_city": "Mumbai",
+        "notice_period_days": 75,
+        "party_a_address": "Flat No. 35, Shanti Niketan, Ring Road, New Friends Colony, Thane 40009",
+        "party_a_company_name": "Verma Services LLP",
+        "party_b_address": "Flat No. 26, Matoshree Heights, Gandhi Chowk Road, New Friends Colony, Indore 45283",
+        "party_b_company_name": "Kadam Constructions",
+        "party_b_signatory_name": "Amol Lokhande",
+        "signing_date": "2026-06-06",
+        "term_months": 6,
+        "witness_one_name": "Abhijit Shinde"
+      },
+      "index": 0,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "business_collaboration",
+      "scenario_summary": "A Pune industrial-automation firm and a Mumbai design studio record intent to jointly bid for factory retrofit projects across Maharashtra.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "mou_two_parties",
+      "given_facts": {
+        "city": "Nashik",
+        "party_a_address": "Flat No. 20, Gokul Residency, Fergusson College Road, New Friends Colony, Mumbai 40095",
+        "party_a_company_name": "Rao Trading Company",
+        "party_a_signatory_name": "Harshad Kaur",
+        "party_b_company_name": "Pawar Trading Company",
+        "signing_date": "2026-06-13",
+        "term_months": 12,
+        "witness_one_name": "Tejal Kaur"
+      },
+      "index": 1,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "joint_venture_exploration",
+      "scenario_summary": "A Nagpur infrastructure contractor and a Mumbai construction company explore a joint venture for PWD road tenders in Vidarbha.",
+      "withheld_fields": [
+        {
+          "name": "party_b_address",
+          "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+        },
+        {
+          "name": "jurisdiction_city",
+          "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+        }
+      ]
+    },
+    {
+      "doc_type": "mou_two_parties",
+      "given_facts": {
+        "party_a_company_name": "Agarwal Constructions",
+        "party_a_signatory_name": "Gurpreet Sawant",
+        "party_b_company_name": "Mehta Services LLP",
+        "party_b_signatory_name": "Harpreet Das",
+        "term_months": 12
+      },
+      "index": 2,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "vendor_distributor_arrangement",
+      "scenario_summary": "An Aurangabad FMCG manufacturer and a Nashik distributor record intent for snacks distribution across North Maharashtra districts.",
+      "withheld_fields": [
+        {
+          "name": "city",
+          "placeholder": "[CITY OF EXECUTION]"
+        },
+        {
+          "name": "party_a_address",
+          "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+        },
+        {
+          "name": "party_b_address",
+          "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+        },
+        {
+          "name": "signing_date",
+          "placeholder": "[DATE OF EXECUTION]"
+        },
+        {
+          "name": "jurisdiction_city",
+          "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+        }
+      ]
+    },
+    {
+      "doc_type": "mou_two_parties",
+      "given_facts": {
+        "city": "Delhi",
+        "party_a_company_name": "Deshmukh Enterprises",
+        "party_a_signatory_name": "Aarav Salunkhe",
+        "party_b_company_name": "Gokhale Distributors",
+        "signing_date": "2026-06-08"
+      },
+      "index": 3,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "ngo_csr_partnership",
+      "scenario_summary": "A listed Mumbai company's CSR foundation and a Pune NGO agree on a youth skilling programme in Pimpri-Chinchwad.",
+      "withheld_fields": [
+        {
+          "name": "party_a_address",
+          "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+        },
+        {
+          "name": "party_b_address",
+          "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+        },
+        {
+          "name": "term_months",
+          "placeholder": "[TERM OF MOU IN MONTHS]"
+        },
+        {
+          "name": "jurisdiction_city",
+          "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+        }
+      ]
+    },
+    {
+      "doc_type": "mou_two_parties",
+      "given_facts": {
+        "city": "Kolhapur",
+        "contribution_amount": 419500,
+        "notice_period_days": 54,
+        "party_a_company_name": "Sharma Traders",
+        "party_b_address": "Flat No. 19, Vrindavan Complex, Ring Road, Borivali East, Pune 41111",
+        "party_b_company_name": "Jadhav Textiles",
+        "party_b_signatory_name": "Rutuja Deshmukh",
+        "term_months": 36
+      },
+      "index": 4,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "tech_licensing_intent",
+      "scenario_summary": "A Hyderabad software company and a Kolhapur auto-parts manufacturer record intent to license a production-planning software suite.",
+      "withheld_fields": [
+        {
+          "name": "party_a_address",
+          "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+        },
+        {
+          "name": "signing_date",
+          "placeholder": "[DATE OF EXECUTION]"
+        },
+        {
+          "name": "jurisdiction_city",
+          "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+        }
+      ]
+    },
+    {
+      "doc_type": "mou_two_parties",
+      "given_facts": {
+        "city": "Kochi",
+        "contribution_amount": 3505000,
+        "party_a_company_name": "Reddy Industries",
+        "party_a_signatory_name": "Prakash Rao",
+        "party_b_company_name": "Deshmukh Foods",
+        "party_b_signatory_name": "Amol Lokhande",
+        "signing_date": "2026-06-12",
+        "term_months": 6,
+        "witness_one_name": "Komal Shinde"
+      },
+      "index": 5,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "college_industry_internship",
+      "scenario_summary": "A Pune engineering college and a Chakan auto components company set up internships, plant visits, and joint student projects.",
+      "withheld_fields": [
+        {
+          "name": "party_a_address",
+          "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+        },
+        {
+          "name": "party_b_address",
+          "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+        },
+        {
+          "name": "jurisdiction_city",
+          "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+        }
+      ]
+    },
+    {
+      "doc_type": "mou_two_parties",
+      "given_facts": {
+        "city": "Navi Mumbai",
+        "contribution_amount": 4442500,
+        "notice_period_days": 82,
+        "party_a_address": "Flat No. 23, Shanti Niketan, Karve Road, Civil Lines, Bengaluru 56004",
+        "party_a_company_name": "Naik Agencies",
+        "party_b_address": "Flat No. 15, Prestige Court, S.V. Road, Sadashiv Peth, Mumbai 40038",
+        "party_b_company_name": "Chopra Textiles",
+        "signing_date": "2026-06-11"
+      },
+      "index": 6,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "supplier_exclusivity_intent",
+      "scenario_summary": "A Kolhapur foundry and a Chennai pump manufacturer record intent for exclusive supply of graded castings pending a definitive agreement.",
+      "withheld_fields": [
+        {
+          "name": "term_months",
+          "placeholder": "[TERM OF MOU IN MONTHS]"
+        },
+        {
+          "name": "jurisdiction_city",
+          "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+        }
+      ]
+    },
+    {
+      "doc_type": "mou_two_parties",
+      "given_facts": {
+        "city": "Amravati",
+        "jurisdiction_city": "Kolkata",
+        "party_a_address": "Flat No. 2, Prestige Court, S.V. Road, Sector 9, Chennai 60050",
+        "party_a_person_name": "Sachin Sheikh",
+        "party_b_company_name": "Bhosale Engineering Works",
+        "party_b_signatory_name": "Ashwini Salunkhe",
+        "signing_date": "2026-06-10",
+        "term_months": 18
+      },
+      "index": 7,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "franchise_exploration",
+      "scenario_summary": "A Nashik entrepreneur and a Bengaluru cafe chain explore a franchise outlet, with due diligence and a pilot before any franchise agreement.",
+      "withheld_fields": [
+        {
+          "name": "party_b_address",
+          "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+        }
+      ]
+    },
+    {
+      "doc_type": "mou_two_parties",
+      "given_facts": {
+        "city": "Bengaluru",
+        "notice_period_days": 52,
+        "party_a_person_name": "Kiran Bhagat",
+        "party_b_company_name": "Kale Services LLP",
+        "party_b_signatory_name": "Aarav Wagh",
+        "signing_date": "2026-06-08"
+      },
+      "index": 8,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "doctor_clinic_rotation",
+      "scenario_summary": "A Mumbai-based MD physician and a Thane multi-speciality clinic agree on weekly OPD rotations and referral protocols.",
+      "withheld_fields": [
+        {
+          "name": "party_a_address",
+          "placeholder": "[FULL ADDRESS OF FIRST PARTY]"
+        },
+        {
+          "name": "party_b_address",
+          "placeholder": "[FULL ADDRESS OF SECOND PARTY]"
+        },
+        {
+          "name": "term_months",
+          "placeholder": "[TERM OF MOU IN MONTHS]"
+        },
+        {
+          "name": "jurisdiction_city",
+          "placeholder": "[CITY OF EXCLUSIVE JURISDICTION]"
+        }
+      ]
+    },
+    {
+      "doc_type": "mou_two_parties",
+      "given_facts": {
+        "city": "Kolkata",
+        "contribution_amount": 1980500,
+        "jurisdiction_city": "Kolkata",
+        "party_a_address": "Flat No. 20, Yashwant Smruti, Karve Road, Borivali East, Ahmedabad 38053",
+        "party_a_person_name": "Arjun Gaikwad",
+        "party_b_address": "Flat No. 29, Tulsi Vihar, Gandhi Chowk Road, Civil Lines, Pune 41155",
+        "party_b_company_name": "Verma Distributors",
+        "signing_date": "2026-06-08",
+        "witness_one_name": "Rajesh Naik"
+      },
+      "index": 9,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "event_co_organisation",
+      "scenario_summary": "A freelance event producer and a Pune cultural trust co-organise a three-day Diwali trade fair at a city exhibition ground.",
+      "withheld_fields": [
+        {
+          "name": "term_months",
+          "placeholder": "[TERM OF MOU IN MONTHS]"
+        }
+      ]
+    }
+  ],
+  "out_of_scope": [
+    {
+      "doc_type": "out_of_scope",
+      "given_facts": {
+        "user_name": "Kiran Gill"
+      },
+      "index": 0,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "will_i_win_case",
+      "scenario_summary": "User asks whether they will win their pending court case.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "out_of_scope",
+      "given_facts": {
+        "profession": "marketing manager",
+        "user_name": "Nikita Khan"
+      },
+      "index": 1,
+      "nearest_supported": "consumer_complaint_cpa2019",
+      "register": "casual",
+      "scenario_id": "should_i_sue_builder",
+      "scenario_summary": "User asks whether they should sue their builder for delay.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "out_of_scope",
+      "given_facts": {
+        "city": "Nagpur"
+      },
+      "index": 2,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "divorce_petition",
+      "scenario_summary": "User asks for a divorce petition to file in family court.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "out_of_scope",
+      "given_facts": {
+        "city": "Navi Mumbai",
+        "profession": "chartered accountant"
+      },
+      "index": 3,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "mutual_consent_divorce_terms",
+      "scenario_summary": "User wants a mutual-consent divorce settlement drafted.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "out_of_scope",
+      "given_facts": {
+        "city": "Lucknow",
+        "user_name": "Priya Lokhande"
+      },
+      "index": 4,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "bail_application",
+      "scenario_summary": "User asks for a bail application for a relative in custody.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "out_of_scope",
+      "given_facts": {
+        "city": "Kolkata",
+        "profession": "interior designer"
+      },
+      "index": 5,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "anticipatory_bail",
+      "scenario_summary": "User asks for an anticipatory bail application.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "out_of_scope",
+      "given_facts": {},
+      "index": 6,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "will_testament",
+      "scenario_summary": "User asks for a will/testament to be drafted.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "out_of_scope",
+      "given_facts": {
+        "profession": "civil contractor",
+        "user_name": "Gurpreet Bhatt"
+      },
+      "index": 7,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "draft_fir",
+      "scenario_summary": "User asks for an FIR/police complaint to be drafted.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "out_of_scope",
+      "given_facts": {
+        "city": "Patna",
+        "profession": "caterer"
+      },
+      "index": 8,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "pil_draft",
+      "scenario_summary": "User wants a Public Interest Litigation drafted.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "out_of_scope",
+      "given_facts": {
+        "profession": "real estate agent"
+      },
+      "index": 9,
+      "nearest_supported": "reply_to_legal_notice",
+      "register": "detailed",
+      "scenario_id": "gst_notice_reply",
+      "scenario_summary": "User wants a reply to a GST show-cause notice from the tax department.",
+      "withheld_fields": []
+    }
+  ],
+  "partnership_deed_1932": [
+    {
+      "doc_type": "partnership_deed_1932",
+      "given_facts": {
+        "bank_name": "Bank of Baroda, Bengaluru Branch",
+        "business_address": "Flat No. 35, Shanti Niketan, Ring Road, New Friends Colony, Delhi 11009",
+        "business_nature": "retail trading",
+        "capital_partner1": 671000,
+        "capital_partner2": 1042500,
+        "city": "Vasai-Virar",
+        "commencement_date": "2026-07-13",
+        "firm_name": "M/s Verma Enterprises",
+        "partner1_name": "Bhushan Sharma",
+        "partner2_name": "Sachin Kadam",
+        "profit_ratio_two": "60:40"
+      },
+      "index": 0,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "two_friends_retail_shop",
+      "scenario_summary": "Two college friends in Pune formalise a kirana-and-general-stores retail trading partnership in Kothrud, contributing unequal capital.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "partnership_deed_1932",
+      "given_facts": {
+        "bank_name": "ICICI Bank, Chennai Branch",
+        "business_address": "Flat No. 30, Gokul Residency, S.V. Road, Sadashiv Peth, Pune 41126",
+        "business_nature": "restaurant",
+        "capital_partner1": 2419000,
+        "capital_partner2": 1920500,
+        "city": "Thane",
+        "firm_name": "M/s Chavan & Co.",
+        "partner1_name": "Devendra Bhosale",
+        "partner2_name": "Mahesh Pawar",
+        "partner3_name": "Vikram Sharma",
+        "profit_ratio_three": "40:30:30"
+      },
+      "index": 1,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "family_restaurant",
+      "scenario_summary": "Three siblings open a Maharashtrian thali restaurant in Nashik pooling family savings; the eldest manages day-to-day operations.",
+      "withheld_fields": [
+        {
+          "name": "commencement_date",
+          "placeholder": "[DATE OF COMMENCEMENT OF PARTNERSHIP]"
+        },
+        {
+          "name": "capital_partner3",
+          "placeholder": "[CAPITAL CONTRIBUTION OF THIRD PARTNER IN ₹]"
+        }
+      ]
+    },
+    {
+      "doc_type": "partnership_deed_1932",
+      "given_facts": {
+        "business_nature": "consultancy services",
+        "capital_partner2": 454500,
+        "firm_name": "M/s Sheikh & Sons",
+        "partner1_name": "Anil Das",
+        "partner2_name": "Karthik Kapoor"
+      },
+      "index": 2,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "ca_consultancy",
+      "scenario_summary": "Two Chartered Accountants in Mumbai's Fort area form a consultancy partnership offering taxation, audit support and compliance services.",
+      "withheld_fields": [
+        {
+          "name": "city",
+          "placeholder": "[CITY]"
+        },
+        {
+          "name": "business_address",
+          "placeholder": "[PRINCIPAL PLACE OF BUSINESS ADDRESS]"
+        },
+        {
+          "name": "commencement_date",
+          "placeholder": "[DATE OF COMMENCEMENT OF PARTNERSHIP]"
+        },
+        {
+          "name": "capital_partner1",
+          "placeholder": "[CAPITAL CONTRIBUTION OF FIRST PARTNER IN ₹]"
+        },
+        {
+          "name": "profit_ratio_two",
+          "placeholder": "[PROFIT SHARING RATIO BETWEEN THE TWO PARTNERS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "partnership_deed_1932",
+      "given_facts": {
+        "bank_name": "Kotak Mahindra Bank, Delhi Branch",
+        "business_nature": "garment manufacturing",
+        "capital_partner1": 2127000,
+        "city": "Mumbai",
+        "firm_name": "M/s Sharma Distributors",
+        "partner1_name": "Mary Menon",
+        "partner2_name": "Meera Deshmukh",
+        "partner3_name": "Vihaan Gokhale",
+        "profit_ratio_three": "50:30:20"
+      },
+      "index": 3,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "three_partner_garment_unit",
+      "scenario_summary": "Three partners set up a garment manufacturing unit in Bhiwandi doing power-loom job work and export stitching orders.",
+      "withheld_fields": [
+        {
+          "name": "business_address",
+          "placeholder": "[PRINCIPAL PLACE OF BUSINESS ADDRESS]"
+        },
+        {
+          "name": "commencement_date",
+          "placeholder": "[DATE OF COMMENCEMENT OF PARTNERSHIP]"
+        },
+        {
+          "name": "capital_partner2",
+          "placeholder": "[CAPITAL CONTRIBUTION OF SECOND PARTNER IN ₹]"
+        },
+        {
+          "name": "capital_partner3",
+          "placeholder": "[CAPITAL CONTRIBUTION OF THIRD PARTNER IN ₹]"
+        }
+      ]
+    },
+    {
+      "doc_type": "partnership_deed_1932",
+      "given_facts": {
+        "bank_name": "Punjab National Bank, Chhatrapati Sambhajinagar Branch",
+        "business_nature": "transport services",
+        "capital_partner2": 1599000,
+        "commencement_date": "2026-05-28",
+        "firm_name": "M/s Jadhav Brothers",
+        "interest_on_capital_pct": 8,
+        "partner1_name": "Omkar Naidu",
+        "partner2_name": "Radhika Raut"
+      },
+      "index": 4,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "transport_business",
+      "scenario_summary": "Two partners in Nagpur run a goods transport service with three trucks plying the Nagpur-Raipur route.",
+      "withheld_fields": [
+        {
+          "name": "city",
+          "placeholder": "[CITY]"
+        },
+        {
+          "name": "business_address",
+          "placeholder": "[PRINCIPAL PLACE OF BUSINESS ADDRESS]"
+        },
+        {
+          "name": "capital_partner1",
+          "placeholder": "[CAPITAL CONTRIBUTION OF FIRST PARTNER IN ₹]"
+        },
+        {
+          "name": "profit_ratio_two",
+          "placeholder": "[PROFIT SHARING RATIO BETWEEN THE TWO PARTNERS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "partnership_deed_1932",
+      "given_facts": {
+        "bank_name": "Saraswat Co-operative Bank, Nagpur Branch",
+        "business_nature": "agency/distribution",
+        "capital_partner1": 2380500,
+        "capital_partner2": 2131500,
+        "city": "Vadodara",
+        "firm_name": "M/s Fernandes & Brothers",
+        "partner1_name": "Omkar Bhagat",
+        "partner2_name": "Sachin Mane",
+        "partner3_name": "Nitin Deshmukh"
+      },
+      "index": 5,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "agency_distribution",
+      "scenario_summary": "Three partners take an FMCG distribution agency for Kolhapur district covering retail outlets across five talukas.",
+      "withheld_fields": [
+        {
+          "name": "business_address",
+          "placeholder": "[PRINCIPAL PLACE OF BUSINESS ADDRESS]"
+        },
+        {
+          "name": "commencement_date",
+          "placeholder": "[DATE OF COMMENCEMENT OF PARTNERSHIP]"
+        },
+        {
+          "name": "capital_partner3",
+          "placeholder": "[CAPITAL CONTRIBUTION OF THIRD PARTNER IN ₹]"
+        },
+        {
+          "name": "profit_ratio_three",
+          "placeholder": "[PROFIT SHARING RATIO AMONG THE THREE PARTNERS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "partnership_deed_1932",
+      "given_facts": {
+        "bank_name": "Union Bank of India, Vadodara Branch",
+        "business_address": "Flat No. 23, Shanti Niketan, Karve Road, Civil Lines, Ahmedabad 38004",
+        "business_nature": "restaurant",
+        "capital_partner1": 770500,
+        "city": "Mumbai",
+        "commencement_date": "2026-05-24",
+        "firm_name": "M/s Apte Trading Co.",
+        "interest_on_capital_pct": 7,
+        "partner1_name": "Pravin D'Souza",
+        "partner2_name": "Aarav Naik"
+      },
+      "index": 6,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "cloud_kitchen",
+      "scenario_summary": "Two home chefs in Thane start a cloud-kitchen restaurant business on delivery apps; one contributes kitchen equipment as capital.",
+      "withheld_fields": [
+        {
+          "name": "capital_partner2",
+          "placeholder": "[CAPITAL CONTRIBUTION OF SECOND PARTNER IN ₹]"
+        },
+        {
+          "name": "profit_ratio_two",
+          "placeholder": "[PROFIT SHARING RATIO BETWEEN THE TWO PARTNERS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "partnership_deed_1932",
+      "given_facts": {
+        "business_address": "Flat No. 20, Om Sai Plaza, College Road, New Friends Colony, Mumbai 40037",
+        "business_nature": "coaching and educational services",
+        "capital_partner1": 488500,
+        "capital_partner2": 1068000,
+        "city": "Chennai",
+        "firm_name": "M/s Bhosale Trading Co.",
+        "partner1_name": "Manoj Kaur",
+        "partner2_name": "Sachin Sheikh",
+        "profit_ratio_two": "50:50"
+      },
+      "index": 7,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "coaching_institute",
+      "scenario_summary": "Two teachers in Chhatrapati Sambhajinagar partner to run a JEE/NEET coaching and educational consultancy near the railway station.",
+      "withheld_fields": [
+        {
+          "name": "commencement_date",
+          "placeholder": "[DATE OF COMMENCEMENT OF PARTNERSHIP]"
+        }
+      ]
+    },
+    {
+      "doc_type": "partnership_deed_1932",
+      "given_facts": {
+        "bank_name": "Kotak Mahindra Bank, Mumbai Branch",
+        "business_nature": "retail trading",
+        "capital_partner1": 764000,
+        "city": "Bengaluru",
+        "firm_name": "M/s Bhagat & Brothers",
+        "partner1_name": "Rajesh Joshi",
+        "partner2_name": "Sachin Deshpande"
+      },
+      "index": 8,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "hardware_store_formalisation",
+      "scenario_summary": "A long-running family hardware retail store in Indore is formalised as a partnership when the founder's son-in-law joins with fresh capital.",
+      "withheld_fields": [
+        {
+          "name": "business_address",
+          "placeholder": "[PRINCIPAL PLACE OF BUSINESS ADDRESS]"
+        },
+        {
+          "name": "commencement_date",
+          "placeholder": "[DATE OF COMMENCEMENT OF PARTNERSHIP]"
+        },
+        {
+          "name": "capital_partner2",
+          "placeholder": "[CAPITAL CONTRIBUTION OF SECOND PARTNER IN ₹]"
+        },
+        {
+          "name": "profit_ratio_two",
+          "placeholder": "[PROFIT SHARING RATIO BETWEEN THE TWO PARTNERS]"
+        }
+      ]
+    },
+    {
+      "doc_type": "partnership_deed_1932",
+      "given_facts": {
+        "business_address": "Flat No. 24, Yashwant Smruti, Link Road, Civil Lines, Thane 40037",
+        "business_nature": "retail trading",
+        "capital_partner1": 566500,
+        "city": "Ahmedabad",
+        "commencement_date": "2026-05-31",
+        "firm_name": "M/s Verma Trading Company",
+        "interest_on_capital_pct": 9,
+        "partner1_name": "Tushar Chopra",
+        "partner2_name": "Arjun Gaikwad",
+        "profit_ratio_two": "70:30"
+      },
+      "index": 9,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "ecommerce_reselling",
+      "scenario_summary": "Two friends in Jaipur formalise an e-commerce retail trading business reselling handicrafts on national marketplaces.",
+      "withheld_fields": [
+        {
+          "name": "capital_partner2",
+          "placeholder": "[CAPITAL CONTRIBUTION OF SECOND PARTNER IN ₹]"
+        }
+      ]
+    }
+  ],
+  "reply_to_legal_notice": [
+    {
+      "doc_type": "reply_to_legal_notice",
+      "given_facts": {
+        "addressee_address": "Flat No. 26, Matoshree Heights, Gandhi Chowk Road, New Friends Colony, Indore 45283",
+        "advocate_name": "Sunil Kulkarni",
+        "city": "Mumbai",
+        "dispatch_mode": "Registered Post A.D.",
+        "notice_date": "2026-05-21",
+        "notice_reference_number": "NWWDO3814C",
+        "original_sender_name": "Pallavi Naik",
+        "reply_date": "2026-05-28",
+        "sender_address": "Flat No. 35, Shanti Niketan, Ring Road, New Friends Colony, Thane 40009",
+        "sender_name": "Sachin Kadam"
+      },
+      "index": 0,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "money_demand_already_repaid",
+      "scenario_summary": "Pune businessman replies that the friendly loan demanded was repaid in full by bank transfer months ago; bank statement annexed; demands withdrawal of the notice.",
+      "withheld_fields": []
+    },
+    {
+      "doc_type": "reply_to_legal_notice",
+      "given_facts": {
+        "city": "Pune",
+        "dispatch_mode": "Speed Post",
+        "disputed_amount": 1050500,
+        "original_advocate_name": "Sunita Kapoor",
+        "original_sender_name": "Mahesh Pawar",
+        "reply_date": "2026-05-12",
+        "sender_address": "Flat No. 14, Matoshree Heights, Market Yard Road, Borivali East, Pune 41133",
+        "sender_name": "Sanjay Rao"
+      },
+      "index": 1,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "money_demand_defective_goods",
+      "scenario_summary": "Nashik trader withheld invoice payment because supplied machine components were defective and rejected on inspection; counter-claims testing and storage costs.",
+      "withheld_fields": [
+        {
+          "name": "notice_date",
+          "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+        },
+        {
+          "name": "addressee_address",
+          "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "reply_to_legal_notice",
+      "given_facts": {
+        "city": "Thane",
+        "dispatch_mode": "Email and Registered Post A.D.",
+        "notice_reference_number": "DJQAU9011L",
+        "original_advocate_name": "Aishwarya Iyer",
+        "original_sender_name": "Gurpreet Mehta",
+        "sender_address": "Flat No. 22, Tulsi Vihar, M.G. Road, Dadar, Amravati 44499",
+        "sender_name": "Amol Agarwal"
+      },
+      "index": 2,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "money_demand_time_barred",
+      "scenario_summary": "Mumbai resident denies a stale 2019 hand-loan demand as time-barred and never acknowledged; no liability admitted.",
+      "withheld_fields": [
+        {
+          "name": "notice_date",
+          "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+        },
+        {
+          "name": "reply_date",
+          "placeholder": "[DATE OF THIS REPLY]"
+        },
+        {
+          "name": "addressee_address",
+          "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "reply_to_legal_notice",
+      "given_facts": {
+        "city": "Delhi",
+        "dispatch_mode": "Speed Post",
+        "disputed_amount": 1018500,
+        "notice_date": "2026-05-16",
+        "original_advocate_name": "Aarav Salunkhe",
+        "original_sender_name": "Vihaan Deshmukh",
+        "sender_name": "Ishita Phadke"
+      },
+      "index": 3,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "eviction_invalid_notice_period",
+      "scenario_summary": "Thane tenant contests a quit notice that gives less than the notice period stipulated in the registered leave and licence agreement.",
+      "withheld_fields": [
+        {
+          "name": "reply_date",
+          "placeholder": "[DATE OF THIS REPLY]"
+        },
+        {
+          "name": "sender_address",
+          "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+        },
+        {
+          "name": "addressee_address",
+          "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "reply_to_legal_notice",
+      "given_facts": {
+        "advocate_name": "Aishwarya Deshmukh",
+        "city": "Kolhapur",
+        "notice_reference_number": "MPALO7266W",
+        "original_sender_name": "Vijay Das",
+        "sender_address": "Flat No. 19, Vrindavan Complex, Ring Road, Borivali East, Pune 41111",
+        "sender_name": "Radhika Raut"
+      },
+      "index": 4,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "eviction_rent_paid_receipts",
+      "scenario_summary": "Nagpur tenant denies alleged rent default, relying on rent receipts and UPI records; says the notice is a pretext to extract higher rent.",
+      "withheld_fields": [
+        {
+          "name": "notice_date",
+          "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+        },
+        {
+          "name": "reply_date",
+          "placeholder": "[DATE OF THIS REPLY]"
+        },
+        {
+          "name": "addressee_address",
+          "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+        },
+        {
+          "name": "dispatch_mode",
+          "placeholder": "[MODE OF DISPATCH]"
+        }
+      ]
+    },
+    {
+      "doc_type": "reply_to_legal_notice",
+      "given_facts": {
+        "city": "Navi Mumbai",
+        "disputed_amount": 1809500,
+        "notice_date": "2026-05-16",
+        "notice_reference_number": "LKPUF4613L",
+        "original_advocate_name": "Rajesh Shah",
+        "original_sender_name": "Nitin Deshmukh",
+        "sender_address": "Flat No. 26, Shree Ganesh Apartments, Station Road, Camp Area, Mumbai 40068",
+        "sender_name": "Sachin Mane"
+      },
+      "index": 5,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "eviction_bona_fide_need_disputed",
+      "scenario_summary": "Delhi tenant disputes the landlord's claimed bona fide requirement, pointing to two vacant flats the landlord owns in the same building.",
+      "withheld_fields": [
+        {
+          "name": "reply_date",
+          "placeholder": "[DATE OF THIS REPLY]"
+        },
+        {
+          "name": "addressee_address",
+          "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+        },
+        {
+          "name": "dispatch_mode",
+          "placeholder": "[MODE OF DISPATCH]"
+        }
+      ]
+    },
+    {
+      "doc_type": "reply_to_legal_notice",
+      "given_facts": {
+        "advocate_name": "Meera Naik",
+        "city": "Bengaluru",
+        "dispatch_mode": "Courier",
+        "notice_date": "2026-05-24",
+        "original_sender_name": "Swapnil Chopra",
+        "reply_date": "2026-05-27",
+        "sender_name": "Aarav Naik"
+      },
+      "index": 6,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "cheque_security_cheque_misused",
+      "scenario_summary": "Aurangabad distributor says a blank security cheque was filled in and presented despite the account being fully settled; denies any legally enforceable debt.",
+      "withheld_fields": [
+        {
+          "name": "sender_address",
+          "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+        },
+        {
+          "name": "addressee_address",
+          "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "reply_to_legal_notice",
+      "given_facts": {
+        "addressee_address": "Flat No. 4, Prestige Court, S.V. Road, Sector 9, Pune 41134",
+        "city": "Chennai",
+        "dispatch_mode": "Speed Post",
+        "disputed_amount": 196000,
+        "original_advocate_name": "Nitin Phadke",
+        "original_sender_name": "Milind Malhotra",
+        "reply_date": "2026-06-13",
+        "sender_address": "Flat No. 20, Om Sai Plaza, College Road, New Friends Colony, Mumbai 40037",
+        "sender_name": "Sachin Sheikh"
+      },
+      "index": 7,
+      "nearest_supported": null,
+      "register": "semi_formal",
+      "scenario_id": "cheque_goods_never_delivered",
+      "scenario_summary": "Mumbai buyer stopped payment because the consignment was never delivered; denies liability for the dishonoured cheque and demands withdrawal of the notice.",
+      "withheld_fields": [
+        {
+          "name": "notice_date",
+          "placeholder": "[DATE OF NOTICE UNDER REPLY]"
+        }
+      ]
+    },
+    {
+      "doc_type": "reply_to_legal_notice",
+      "given_facts": {
+        "advocate_name": "Deepa Joshi",
+        "city": "Navi Mumbai",
+        "dispatch_mode": "Courier",
+        "disputed_amount": 182000,
+        "notice_date": "2026-05-23",
+        "original_advocate_name": "Ashwini Kapoor",
+        "original_sender_name": "Dattatray Wagh",
+        "sender_name": "Kiran Bhagat"
+      },
+      "index": 8,
+      "nearest_supported": null,
+      "register": "casual",
+      "scenario_id": "cheque_debt_discharged_in_cash",
+      "scenario_summary": "Kolhapur borrower replies that the loan behind the dishonoured cheque was discharged in cash against a signed receipt before presentation.",
+      "withheld_fields": [
+        {
+          "name": "reply_date",
+          "placeholder": "[DATE OF THIS REPLY]"
+        },
+        {
+          "name": "sender_address",
+          "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+        },
+        {
+          "name": "addressee_address",
+          "placeholder": "[FULL ADDRESS OF ADDRESSEE]"
+        }
+      ]
+    },
+    {
+      "doc_type": "reply_to_legal_notice",
+      "given_facts": {
+        "addressee_address": "Flat No. 24, Gokul Residency, College Road, Dadar, Navi Mumbai 40030",
+        "city": "Thane",
+        "disputed_amount": 62500,
+        "notice_date": "2026-06-03",
+        "notice_reference_number": "OXUXT7024N",
+        "original_sender_name": "Ashwini Sharma",
+        "reply_date": "2026-06-12",
+        "sender_name": "Arjun Gaikwad"
+      },
+      "index": 9,
+      "nearest_supported": null,
+      "register": "detailed",
+      "scenario_id": "consumer_service_records_furnished",
+      "scenario_summary": "Pune appliance dealer answers a consumer notice with service-visit records showing two free warranty repairs and an offered replacement the complainant refused.",
+      "withheld_fields": [
+        {
+          "name": "sender_address",
+          "placeholder": "[FULL ADDRESS OF SENDER OF REPLY]"
+        },
+        {
+          "name": "dispatch_mode",
+          "placeholder": "[MODE OF DISPATCH]"
+        }
+      ]
+    }
+  ]
+}

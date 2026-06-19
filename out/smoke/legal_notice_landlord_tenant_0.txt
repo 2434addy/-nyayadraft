@@ -1,0 +1,64 @@
+[[[INSTRUCTION]]]
+Draft a legal notice from a landlord to a tenant demanding rent arrears and vacant possession. The landlord is Imran Mukherjee and the tenant is Bhushan Sharma. The premises is Flat No. 20, Green Valley Society, Station Road, Sector 9, Nashik 42238. The monthly rent is ₹60,000. The tenancy commenced on 30 June 2024. Rent arrears are for 9 months. Compliance window is 15 days. The notice is for recovery of rent arrears and demand for vacant possession. City: Mumbai.
+[[[DOCUMENT]]]
+LEGAL NOTICE
+
+To,
+Bhushan Sharma,
+Flat No. 20, Green Valley Society, Station Road, Sector 9, Nashik 42238.
+
+Date: 12 June 2026
+
+SUBJECT: LEGAL NOTICE TO TENANT FOR RECOVERY OF RENT ARREARS AND DEMAND FOR VACANT POSSESSION OF PREMISES
+
+Sir/Madam,
+
+Under instructions from and on behalf of my client, Imran Mukherjee (hereinafter referred to as "Landlord"), I issue this Legal Notice upon you, Bhushan Sharma, the tenant and occupant of the premises described below, as under:
+
+1. RELATIONSHIP OF LANDLORD AND TENANT
+
+1.1 My client, Imran Mukherjee, is the lawful owner and landlord of the residential premises described as Flat No. 20, Green Valley Society, Station Road, Sector 9, Nashik 42238 (hereinafter referred to as the "Premises"). You, Bhushan Sharma, are the tenant in occupation of the said Premises under and by virtue of a tenancy agreement entered into between you and my client.
+
+1.2 The tenancy of the Premises commenced on 30 June 2024 at a monthly rent of ₹60,000 (Rupees Sixty Thousand only) per month, payable on or before the 5th day of each calendar month.
+
+2. RENT IN ARREARS
+
+2.1 That you, the Tenant, have failed and neglected to pay the monthly rent of ₹60,000 per month for a period of 9 (nine) consecutive months. The total rent arrears outstanding and payable by you to my client as of the date of this notice amount to ₹5,40,000 (Rupees Five Lakhs Forty Thousand only), computed as 9 months × ₹60,000 per month.
+
+2.2 Despite repeated oral requests and reminders by my client to you to pay the said arrears of rent, you have wilfully failed, neglected, and refused to make payment, causing substantial financial loss and hardship to my client.
+
+3. DEMAND FOR PAYMENT OF ARREARS
+
+3.1 You are hereby called upon and demand is made upon you to pay to my client the total outstanding rent arrears of ₹5,40,000 (Rupees Five Lakhs Forty Thousand only) together with applicable interest and the costs of this notice, within 15 (fifteen) days from the date of receipt of this notice.
+
+4. DEMAND FOR VACANT POSSESSION
+
+4.1 In view of the persistent non-payment of rent over 9 consecutive months, my client is no longer willing to continue the tenancy. You are hereby called upon to hand over vacant and peaceful possession of the Premises — Flat No. 20, Green Valley Society, Station Road, Sector 9, Nashik 42238 — to my client within 15 (fifteen) days from the date of receipt of this notice.
+
+4.2 You are required to vacate the Premises along with all your belongings, remove any encumbrances or sub-occupants (if any), and hand over all keys, possessions, and access cards to my client within the aforesaid period.
+
+5. CONSEQUENCES OF NON-COMPLIANCE
+
+5.1 Please take notice that if you fail to comply with the demands set out in this notice within 15 (fifteen) days from the date of receipt hereof — whether to pay the outstanding rent arrears or to hand over vacant possession — my client shall, without any further notice or intimation, be constrained to initiate appropriate legal proceedings against you before the court of competent jurisdiction having jurisdiction over Mumbai.
+
+5.2 Such legal proceedings may include, without limitation, a suit for recovery of arrears of rent and damages, an eviction suit under applicable tenancy law, and any other appropriate action. All costs, charges, and consequences of such proceedings shall be entirely at your risk and account.
+
+6. RESERVATION OF RIGHTS
+
+6.1 This notice is issued without prejudice to all other rights and remedies available to my client, all of which are expressly reserved.
+
+Please govern yourself accordingly.
+
+Mode of dispatch: By Registered Post A.D.
+
+Yours faithfully,
+
+_____________________________
+Advocate for Imran Mukherjee
+Address: [VERIFY: Advocate's enrolled address to be inserted]
+Enrolment No.: [VERIFY: Advocate's bar council enrolment number]
+Date: 12 June 2026
+Place: Mumbai
+
+This is an AI-generated draft for review by the parties and is not legal advice.
+[[[END]]]

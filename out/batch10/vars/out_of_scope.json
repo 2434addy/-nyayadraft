@@ -1,0 +1,126 @@
+[
+  {
+    "doc_type": "out_of_scope",
+    "given_facts": {
+      "user_name": "Kiran Gill"
+    },
+    "index": 0,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "will_i_win_case",
+    "scenario_summary": "User asks whether they will win their pending court case.",
+    "withheld_fields": []
+  },
+  {
+    "doc_type": "out_of_scope",
+    "given_facts": {
+      "profession": "marketing manager",
+      "user_name": "Nikita Khan"
+    },
+    "index": 1,
+    "nearest_supported": "consumer_complaint_cpa2019",
+    "register": "casual",
+    "scenario_id": "should_i_sue_builder",
+    "scenario_summary": "User asks whether they should sue their builder for delay.",
+    "withheld_fields": []
+  },
+  {
+    "doc_type": "out_of_scope",
+    "given_facts": {
+      "city": "Nagpur"
+    },
+    "index": 2,
+    "nearest_supported": null,
+    "register": "casual",
+    "scenario_id": "divorce_petition",
+    "scenario_summary": "User asks for a divorce petition to file in family court.",
+    "withheld_fields": []
+  },
+  {
+    "doc_type": "out_of_scope",
+    "given_facts": {
+      "city": "Navi Mumbai",
+      "profession": "chartered accountant"
+    },
+    "index": 3,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "mutual_consent_divorce_terms",
+    "scenario_summary": "User wants a mutual-consent divorce settlement drafted.",
+    "withheld_fields": []
+  },
+  {
+    "doc_type": "out_of_scope",
+    "given_facts": {
+      "city": "Lucknow",
+      "user_name": "Priya Lokhande"
+    },
+    "index": 4,
+    "nearest_supported": null,
+    "register": "semi_formal",
+    "scenario_id": "bail_application",
+    "scenario_summary": "User asks for a bail application for a relative in custody.",
+    "withheld_fields": []
+  },
+  {
+    "doc_type": "out_of_scope",
+    "given_facts": {
+      "city": "Kolkata",
+      "profession": "interior designer"
+    },
+    "index": 5,
+    "nearest_supported": null,
+    "register": "semi_formal",
+    "scenario_id": "anticipatory_bail",
+    "scenario_summary": "User asks for an anticipatory bail application.",
+    "withheld_fields": []
+  },
+  {
+    "doc_type": "out_of_scope",
+    "given_facts": {},
+    "index": 6,
+    "nearest_supported": null,
+    "register": "detailed",
+    "scenario_id": "will_testament",
+    "scenario_summary": "User asks for a will/testament to be drafted.",
+    "withheld_fields": []
+  },
+  {
+    "doc_type": "out_of_scope",
+    "given_facts": {
+      "profession": "civil contractor",
+      "user_name": "Gurpreet Bhatt"
+    },
+    "index": 7,
+    "nearest_supported": null,
+    "register": "semi_formal",
+    "scenario_id": "draft_fir",
+    "scenario_summary": "User asks for an FIR/police complaint to be drafted.",
+    "withheld_fields": []
+  },
+  {
+    "doc_type": "out_of_scope",
+    "given_facts": {
+      "city": "Patna",
+      "profession": "caterer"
+    },
+    "index": 8,
+    "nearest_supported": null,
+    "register": "casual",
+    "scenario_id": "pil_draft",
+    "scenario_summary": "User wants a Public Interest Litigation drafted.",
+    "withheld_fields": []
+  },
+  {
+    "doc_type": "out_of_scope",
+    "given_facts": {
+      "profession": "real estate agent"
+    },
+    "index": 9,
+    "nearest_supported": "reply_to_legal_notice",
+    "register": "detailed",
+    "scenario_id": "gst_notice_reply",
+    "scenario_summary": "User wants a reply to a GST show-cause notice from the tax department.",
+    "withheld_fields": []
+  }
+]
