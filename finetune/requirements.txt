@@ -1,0 +1,23 @@
+# NyayaDraft QLoRA — pinned, mutually-compatible stack (CUDA 12.x GPU).
+# Validated combo for QLoRA SFT of Qwen2.5-7B (late-2024 releases).
+#
+# IMPORTANT: install a torch build that matches the box's CUDA FIRST, e.g.
+#   pip install torch==2.4.0 --index-url https://download.pytorch.org/cu121
+# then `pip install -r requirements.txt`. The torch pin below is the cu121 wheel
+# from PyPI and works on most cloud GPUs as-is.
+
+torch==2.4.0
+transformers==4.46.3
+trl==0.12.2
+peft==0.13.2
+bitsandbytes==0.44.1
+accelerate==1.1.1
+datasets==3.1.0
+pyyaml==6.0.2
+sentencepiece==0.2.0
+
+# --- optional ---------------------------------------------------------------
+# Vanilla-Claude baseline and LLM-as-judge in eval_model.py (needs ANTHROPIC_API_KEY):
+anthropic==0.39.0
+# Faster attention (only if a prebuilt wheel matches your torch/CUDA; SDPA is the default):
+# flash-attn==2.6.3
