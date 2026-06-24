@@ -333,40 +333,109 @@ WITNESSES:
 
 def b_out_of_scope(R):
     req = R.pick([
-        ("draft a Will bequeathing my house to my son", "a Will / testamentary document"),
-        ("file a mutual-consent divorce petition for me", "a matrimonial petition"),
-        ("prepare a bail application for my brother", "a bail application"),
-        ("draft a writ petition against the municipal corporation", "a writ petition"),
-        ("register an FIR and draft a criminal complaint", "a criminal complaint / FIR"),
-        ("prepare a sale deed and get my flat registered", "a sale deed / conveyance"),
-        ("draft a gift deed transferring my plot to my daughter", "a gift deed"),
-        ("make a general power of attorney for my father", "a power of attorney"),
+        ("draft a Will bequeathing my estate", "a Will"),
+        ("file a mutual-consent divorce petition", "a divorce petition"),
+        ("prepare a regular bail application", "a bail application"),
+        ("draft an anticipatory bail application", "an anticipatory bail application"),
+        ("draft a writ petition before the High Court", "a writ petition"),
+        ("lodge an FIR and draft a criminal complaint", "a criminal complaint"),
+        ("prepare a sale deed and get it registered", "a sale deed"),
+        ("draft a gift deed for my property", "a gift deed"),
+        ("make a general power of attorney", "a power of attorney"),
         ("file a trademark application for my brand", "a trademark application"),
-        ("draft an income-tax appeal before the Commissioner", "a tax appeal"),
-        ("incorporate a private limited company for my startup", "company incorporation papers"),
-        ("tell me whether I will win my property case", "an opinion on the outcome of a case"),
-        ("advise me on the best legal strategy to evade a contract", "legal strategy advice"),
+        ("draft an income-tax appeal before the Commissioner", "an income-tax appeal"),
+        ("complete my GST registration", "a GST registration"),
+        ("incorporate a private limited company", "company incorporation papers"),
+        ("file a patent application for my invention", "a patent application"),
+        ("register the copyright in my song", "a copyright registration"),
+        ("file a maintenance petition", "a maintenance petition"),
+        ("apply for a succession certificate", "a succession certificate petition"),
+        ("obtain probate of a Will", "a probate petition"),
+        ("draft an adoption deed", "an adoption deed"),
+        ("file a RERA complaint against my builder", "a RERA complaint"),
+        ("draft an RTI application", "an RTI application"),
+        ("get my name changed in the official gazette", "a gazette name-change notification"),
+        ("file a PIL on a civic issue", "a public-interest litigation"),
+        ("file an insolvency petition", "an insolvency petition"),
+        ("file a domestic-violence complaint", "a domestic-violence complaint"),
+        ("file an appeal before the State Consumer Commission", "a consumer appeal"),
+        ("prepare a vakalatnama for my advocate", "a vakalatnama"),
+        ("apply for mutation of property records", "a property mutation application"),
+        ("apply for a domicile certificate", "a domicile certificate application"),
+        ("draft a cohabitation agreement", "a cohabitation agreement"),
+        ("tell me whether I will succeed in my property dispute", "an opinion on the outcome of a case"),
+        ("advise me on the best strategy for my dispute", "legal strategy advice"),
+        ("tell me whether I should sue my neighbour", "advice on whether to litigate"),
+        ("advise me on the court fees and limitation for my claim", "advice on court fees and limitation"),
+        ("recommend a good advocate and likely fees", "a recommendation of counsel"),
     ])
-    asks = R.pick([
-        f"Can you {req[0]}?",
-        f"I need help — please {req[0]}.",
-        f"Kindly {req[0]} at the earliest.",
+    g, name, name_t = R.person()
+    city, _ = R.pick(CITIES)
+    phrasing = R.r.randint(0, 9)
+    if phrasing == 0:
+        user = f"Can you {req[0]}?"
+    elif phrasing == 1:
+        user = f"I need help \u2014 please {req[0]}."
+    elif phrasing == 2:
+        user = f"Kindly {req[0]} at the earliest."
+    elif phrasing == 3:
+        user = f"Could you {req[0]} for me?"
+    elif phrasing == 4:
+        user = f"Please {req[0]}. It is rather urgent."
+    elif phrasing == 5:
+        user = f"I would like you to {req[0]}."
+    elif phrasing == 6:
+        user = f"My name is {name} and I am from {city}. Can you {req[0]}?"
+    elif phrasing == 7:
+        user = f"I am {name}, residing in {city}; please {req[0]}."
+    elif phrasing == 8:
+        user = f"{name} here, from {city} \u2014 I need you to {req[0]}."
+    else:
+        user = f"Would you be able to {req[0]} on my behalf?"
+
+    opening = R.pick([
+        "Thank you for reaching out.",
+        "Thanks for writing in.",
+        "I appreciate you getting in touch.",
+        f"Thank you for getting in touch, {name.split()[0]}.",
+        "Thanks for the message.",
     ])
-    user = asks
-    doc = (f"Thank you for reaching out. I am a drafting assistant for Indian legal documents, "
-           f"and what you have asked for — {req[1]} — falls outside the document types I am able "
-           f"to draft, so I am unable to assist with it and I cannot offer legal advice, opinions, "
-           f"or predictions about how any matter may be decided.\n\n"
-           f"I can, however, prepare a clean first draft of any of the following: a general "
-           f"affidavit, a Maharashtra leave and license agreement, a memorandum of understanding "
-           f"between two parties, an employment offer or termination letter, a reply to a legal "
-           f"notice, a cheque-bounce demand notice, a legal notice for money recovery, a "
-           f"landlord-tenant legal notice, a partnership deed, or a consumer complaint.\n\n"
-           f"For the matter you have described, I would recommend that you consult a qualified "
-           f"advocate who can advise you properly and, where required, represent you. If any part "
-           f"of your need maps to one of the documents I do draft, share the details and I will "
-           f"prepare it for your review.")
-    return req[1].split("/")[0].strip().replace(" ", "_").replace("-", "_"), user, doc
+    middle = R.pick([
+        (f"I draft Indian legal documents, and {req[1]} is not among the document types I am "
+         f"able to prepare, so I cannot take this up. I also cannot give legal advice, opinions, "
+         f"or predictions about how any matter may be decided."),
+        (f"My role is limited to drafting certain Indian legal documents. What you have asked "
+         f"for \u2014 {req[1]} \u2014 falls outside that scope, and I am not able to offer legal advice "
+         f"or an opinion on how a matter might turn out."),
+        (f"I only draft a fixed set of Indian legal documents. Since {req[1]} is outside the "
+         f"document types I support, I am unable to assist with it, and I cannot provide legal "
+         f"advice or predict the outcome of any matter."),
+    ])
+    listing = R.pick([
+        ("What I can draft for you includes a general affidavit, a Maharashtra leave and "
+         "license agreement, a memorandum of understanding, an employment offer or termination "
+         "letter, a reply to a legal notice, a cheque-bounce demand notice, a money-recovery "
+         "legal notice, a landlord-tenant legal notice, a partnership deed, and a consumer "
+         "complaint."),
+        ("The documents I can prepare are a general affidavit, a leave and license agreement "
+         "for Maharashtra, a two-party memorandum of understanding, an employment offer or "
+         "termination letter, a reply to a legal notice, a cheque-bounce notice, a legal notice "
+         "for money recovery, a landlord-tenant notice, a partnership deed, and a consumer "
+         "complaint."),
+    ])
+    closing = R.pick([
+        ("For this matter, please consult a qualified advocate who can advise you and, if "
+         "required, represent you. If any part of your requirement maps to one of the documents "
+         "I do draft, share the details and I will prepare a draft for your review."),
+        ("I would suggest you approach a qualified advocate or legal practitioner for this, as "
+         "they can advise you properly. Should any part of your need match one of the documents "
+         "above, send me the particulars and I will draft it for your review."),
+        ("Kindly engage a qualified advocate for this matter, who can guide you and appear for "
+         "you where needed. If something you require corresponds to one of the documents I "
+         "support, do share the facts and I will prepare a clean draft."),
+    ])
+    doc = f"{opening} {middle}\n\n{listing}\n\n{closing}"
+    return f"oos_{slugify(req[1])}", user, doc
 
 
 def b_affidavit(R):

@@ -473,7 +473,7 @@ def _synth_address(
     road = rng.choice(roads) if roads else "M.G. Road"
     locality = rng.choice(localities) if localities else "Andheri West"
     prefix = str(city.get("pincode_prefix", "400"))
-    pincode = f"{prefix}{rng.randint(1, 99):02d}"
+    pincode = f"{prefix}{rng.randint(0, 999):03d}"
     return (
         f"Flat No. {flat}, {building}, {road}, {locality}, "
         f"{city['name']} {pincode}"

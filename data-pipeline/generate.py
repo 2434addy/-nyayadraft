@@ -320,6 +320,11 @@ def _message_text(message: Any) -> str:
     return "".join(parts)
 
 
+def _is_truncated(message: Any) -> bool:
+    """True when the model stopped because it hit max_tokens (output was cut off)."""
+    return getattr(message, "stop_reason", None) == "max_tokens"
+
+
 # --------------------------------------------------------------------------- #
 # Checkpoint / resume
 # --------------------------------------------------------------------------- #
@@ -435,7 +440,7 @@ def get_api_key(env: Mapping[str, str] | None = None) -> str:
             "ANTHROPIC_API_KEY is not set. Export it before running generation, "
             "e.g.  set ANTHROPIC_API_KEY=sk-...  (it is never read from code)."
         )
-    return key
+    return key.strip()
 
 
 # --------------------------------------------------------------------------- #
@@ -606,6 +611,14 @@ def run_sample(
             **params,
         )
         text = _message_text(message)
+        if _is_truncated(message):
+            summary["rejected"] += 1
+            record = _reject_record(
+                task, "truncated", "response truncated at max_tokens", raw=text
+            )
+            _append_jsonl(rejects_path, record)
+            print(f"\n=== REJECTED {record['id']}: {record['error_kind']} (truncated) ===")
+            continue
         outcome, record = _process_text(task, var, text, ctx)
         summary[outcome] += 1
         if outcome == "ok":
@@ -696,6 +709,14 @@ def run_batch(
         if not succeeded:
             summary["rejected"] += 1
             _append_jsonl(rejects_path, _reject_record(task, "api_error", payload))
+            continue
+        message = getattr(entry.result, "message", None)
+        if _is_truncated(message):
+            summary["rejected"] += 1
+            _append_jsonl(
+                rejects_path,
+                _reject_record(task, "truncated", "response truncated at max_tokens", raw=payload),
+            )
             continue
         outcome, record = _process_text(task, variations[task.record_id], payload, ctx)
         summary[outcome] += 1

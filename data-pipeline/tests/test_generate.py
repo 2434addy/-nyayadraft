@@ -98,7 +98,7 @@ def fake_batch_client(entries):
 class TestPlanTasks:
     def test_full_run_counts(self, config):
         tasks = generate.plan_tasks(config, mode="full")
-        assert len(tasks) == 1000  # complexity-weighted 1,000-doc distribution
+        assert len(tasks) == 920  # complexity-weighted 920-doc distribution
         counts = {
             doc_type: sum(1 for t in tasks if t.doc_type == doc_type)
             for doc_type in (
@@ -557,3 +557,53 @@ class TestReviewFlag:
     def test_fraction_extremes(self):
         assert generate.review_flag(1, 1.0, "any-id") is True
         assert generate.review_flag(1, 0.0, "any-id") is False
+
+
+class TestTruncation:
+    """A max_tokens-truncated reply must be rejected, never silently accepted as
+    a (partial) training pair — see generate._is_truncated."""
+
+    def test_sync_truncated_response_rejected(self, ctx, monkeypatch):
+        monkeypatch.setattr(
+            generate, "check_document", lambda doc_type, text: CheckResult(ok=True)
+        )
+        tasks = generate.plan_tasks(
+            ctx.config, mode="sample", sample_n=1, types=["cheque_bounce_138"]
+        )
+
+        class FakeMessages:
+            def create(self, **kwargs):
+                return SimpleNamespace(
+                    content=[SimpleNamespace(type="text", text=delimited_payload("ask", "PARTIAL"))],
+                    stop_reason="max_tokens",
+                )
+
+        client = SimpleNamespace(messages=FakeMessages())
+        summary = generate.run_sample(client, tasks, ctx)
+
+        assert summary == {"ok": 0, "rejected": 1}
+        assert not (ctx.out_dir / "samples.jsonl").exists()
+        rejects = [
+            json.loads(line)
+            for line in (ctx.out_dir / "rejects.jsonl").read_text(encoding="utf-8").splitlines()
+            if line.strip()
+        ]
+        assert rejects[0]["error_kind"] == "truncated"
+
+    def test_batch_truncated_response_rejected(self, ctx):
+        tasks = generate.plan_tasks(
+            ctx.config, mode="sample", sample_n=1, types=["cheque_bounce_138"]
+        )
+        entry = batch_entry(tasks[0].record_id, text=delimited_payload("ask", "PARTIAL"))
+        entry.result.message.stop_reason = "max_tokens"
+        client, _ = fake_batch_client([entry])
+        summary = generate.run_batch(client, tasks, ctx, poll_interval=0)
+
+        assert summary["rejected"] == 1
+        assert not (ctx.out_dir / "records.jsonl").exists()
+        rejects = [
+            json.loads(line)
+            for line in (ctx.out_dir / "rejects.jsonl").read_text(encoding="utf-8").splitlines()
+            if line.strip()
+        ]
+        assert rejects[0]["error_kind"] == "truncated"

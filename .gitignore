@@ -42,3 +42,14 @@ node_modules/
 Thumbs.db
 .claude-flow/
 .swarm/
+
+# Dataset
+*.jsonl
+
+# Adapter output
+finetune/out/
+
+# Temp files
+*.zip
+loop.ps1
+.omc/

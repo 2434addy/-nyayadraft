@@ -20,7 +20,7 @@
     {
       "id": "demand_language",
       "description": "Formal demand language (first- or third-person)",
-      "regex": "(?i)(calls?\\s+upon\\s+you|hereby\\s+demands?|demands?\\s+that\\s+you|requires?\\s+you\\s+to\\s+(pay|refund|make))",
+      "regex": "(?i)(call(s|ed)?\\s+upon|hereby\\s+demand(s|ed)?|demand(s|ed)?\\s+(that\\s+you|.{0,30}?to\\s+(pay|refund|make))|requires?\\s+you\\s+to\\s+(pay|refund|make))",
       "legal_basis": "CONFIDENT"
     },
     {
