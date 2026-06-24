@@ -49,8 +49,8 @@ optimizer state for the small LoRA params, with gradient checkpointing on.
 | **Recommended** | 24 GB | RTX 4090 / 3090, A10G, L4 | defaults (`--max-seq-len 4096`) | comfortable, full context |
 | **Comfortable** | 40–48 GB | A100-40G, A6000, L40S | defaults, can raise `--batch-size 2` | fastest; roomy for eval |
 
-¹ T4 has no bf16 — edit `train_qlora.py` to use `fp16=True` (set `bf16=False`)
-and `bnb_4bit_compute_dtype=torch.float16`.
+¹ T4/Turing and V100/Volta lack bf16; `train_qlora.py` auto-detects this
+(`torch.cuda.is_bf16_supported()`) and falls back to fp16 — no manual edit needed.
 
 **Eval/inference** needs far less (7B 4-bit generation ≈ 6–8 GB) — any 16 GB+ GPU.
 

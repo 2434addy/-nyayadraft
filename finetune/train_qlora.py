@@ -88,17 +88,22 @@ def main() -> int:
         tokenizer.pad_token = tokenizer.eos_token
     tokenizer.padding_side = "right"  # required for SFT loss alignment
 
+    # bf16 only on Ampere+ (A100/4090/L4/...). T4/Turing and V100/Volta lack it,
+    # so fall back to fp16 there instead of crashing in TrainingArguments validation.
+    bf16_ok = torch.cuda.is_available() and torch.cuda.is_bf16_supported()
+    compute_dtype = torch.bfloat16 if bf16_ok else torch.float16
+
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
         bnb_4bit_use_double_quant=True,
-        bnb_4bit_compute_dtype=torch.bfloat16,
+        bnb_4bit_compute_dtype=compute_dtype,
     )
     model = AutoModelForCausalLM.from_pretrained(
         args.model,
         quantization_config=bnb_config,
         device_map="auto",
-        torch_dtype=torch.bfloat16,
+        torch_dtype=compute_dtype,
         attn_implementation="flash_attention_2" if args.flash_attn else "sdpa",
     )
     model.config.use_cache = False  # incompatible with gradient checkpointing
@@ -151,7 +156,8 @@ def main() -> int:
         weight_decay=args.weight_decay,
         max_grad_norm=0.3,
         optim="paged_adamw_8bit",
-        bf16=True,
+        bf16=bf16_ok,
+        fp16=not bf16_ok,
         gradient_checkpointing=True,
         gradient_checkpointing_kwargs={"use_reentrant": False},
         max_seq_length=args.max_seq_len,

@@ -164,6 +164,8 @@ def judge_quality(client, judge_model: str, doc_type: str, reference: str, gen: 
 def aggregate(rows: list[dict]) -> dict:
     keys = ["gate_pass", "required_match", "forbidden_clean", "length_ok", "disclaimer_ok"]
     n = len(rows)
+    if n == 0:
+        return {**{k: 0.0 for k in keys}, "n": 0}
     agg = {k: sum(float(r["score"][k]) for r in rows) / n for k in keys}
     judged = [r["judge"] for r in rows if r.get("judge") is not None]
     if judged:

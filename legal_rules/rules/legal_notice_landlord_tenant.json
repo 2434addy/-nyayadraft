@@ -56,7 +56,7 @@
     {
       "id": "dispatch_mode",
       "description": "Records the mode of dispatch",
-      "regex": "(?i)(registered\\s+post(\\s+a\\.?\\s*d\\.?)?|speed\\s+post|by\\s+courier|\\br\\.?\\s*p\\.?\\s*a\\.?\\s*d\\.?\\b)",
+      "regex": "(?i)(registered\\s+post(\\s+a\\.?\\s*d\\.?)?|speed\\s+post|\\bcourier\\b|\\br\\.?\\s*p\\.?\\s*a\\.?\\s*d\\.?\\b)",
       "legal_basis": "CONFIDENT"
     }
   ],
