@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { buildPrompt } from "@/lib/prompt-templates";
+import { NYAYADRAFT_SYSTEM_PROMPT } from "@/lib/system-prompt";
 
 export const runtime = "nodejs";
 export const maxDuration = 300;
@@ -70,12 +71,29 @@ function extractText(output: unknown): string {
 
 function cleanOutput(text: string): string {
   return text
+    // Strip leading meta-instruction preamble lines the model sometimes echoes
+    // before the document proper. Anchored at the start; real documents open
+    // with a title, party block, or date line — never these phrasings.
+    .replace(/^(?:\s*(?:use\b|make sure\b|ensure\b|the (?:notice|document|deed|agreement|affidavit|complaint|letter|reply) should\b|the style\b|legal notice requires\b|this is a (?:general )?template\b)[^\n]*\n+)+/i, "")
     .replace(/Format ascribed below without deviation:\s*/gi, "")
     .replace(/This template[^.]*\./gi, "")
     .replace(/Sure! Below is a draft[^.]*\./gi, "")
     .replace(/Please note that[^.]*\./gi, "")
     .replace(/Note:\s*This is a template[^.]*\./gi, "")
-    .replace(/\[End of document\]/gi, "")
+    // Normalise residual bracketed artefacts the model emits in signature
+    // blocks, while preserving intentional [VERIFY: ...] legal placeholders.
+    .replace(/\[(?!\s*VERIFY)[^\]]*authoris[a-z]*\s+signatory[^\]]*\]/gi, "Authorised Signatory")
+    .replace(/\[(?!\s*VERIFY)([^\]]*(?:seal|attestation)[^\]]*)\]/gi, "($1)")
+    // Remove every remaining non-[VERIFY:] bracketed token: in a NyayaDraft
+    // document the only legitimate brackets are [VERIFY: ...] legal flags;
+    // anything else is a model placeholder artefact (signature labels,
+    // instruction echoes, stray field labels) and must not reach the user.
+    // (handles one level of nesting, e.g. "[STAMP PAPER OF ₹ [VALUE] …]", so no
+    // dangling fragment is left behind)
+    .replace(/\[(?!\s*VERIFY)[^[\]]*(?:\[[^[\]]*\][^[\]]*)*\]/g, "")
+    .replace(/[ \t]{2,}/g, " ")
+    .replace(/^[ \t]+$/gm, "")
+    .replace(/\n{3,}/g, "\n\n")
     .replace(/\(End\)/gi, "")
     .trim();
 }
@@ -132,8 +150,11 @@ export async function POST(request: Request) {
       headers,
       body: JSON.stringify({
         input: {
-          prompt,
-          sampling_params: { max_tokens: 4096, temperature: 0.7 },
+          messages: [
+            { role: "system", content: NYAYADRAFT_SYSTEM_PROMPT },
+            { role: "user", content: prompt },
+          ],
+          sampling_params: { max_tokens: 4096, temperature: 0.3 },
         },
       }),
     });
