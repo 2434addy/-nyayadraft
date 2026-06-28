@@ -13,6 +13,10 @@ builds the instruction prompt, calls the fine-tuned NyayaDraft model on a
 and returns `{ text }`. The Next.js app proxies to it; the RunPod key lives
 **here**, never in the browser or the Next app.
 
+Generation is now **auth-gated**: `requireUser` (`src/lib/auth.ts`) validates the
+caller's Supabase access token (`Authorization: Bearer <jwt>`) via `getUser` and
+rejects unauthenticated requests with 401, so only signed-in users can generate.
+
 ## Key Files
 | File | Description |
 |------|-------------|
@@ -20,13 +24,13 @@ and returns `{ text }`. The Next.js app proxies to it; the RunPod key lives
 | `package.json` | Scripts: `build` (`tsc`), `start` (`node server.js`), `dev` (`tsx watch src/server.ts`). Deps: `express`, `cors`, `dotenv`. `engines.node >=22` (the poll loop uses `Promise.withResolvers`). |
 | `tsconfig.json` | Compiles `src/**/*.ts` → `dist/` as CommonJS (ES2021 target, strict). |
 | `Procfile` | `web: node server.js` — the Render start command. |
-| `.env.example` | `RUNPOD_API_URL`, `RUNPOD_API_KEY` (required), `PORT` (Render-injected), `FRONTEND_ORIGIN` (comma-separated CORS allow-list). |
+| `.env.example` | `RUNPOD_API_URL`, `RUNPOD_API_KEY` (required), `PORT` (Render-injected), `FRONTEND_ORIGIN` (CORS allow-list), and `SUPABASE_URL` / `SUPABASE_ANON_KEY` (JWT verification). |
 | `README.md` | Endpoints, env vars, local run + smoke test, and the full Render deploy runbook. |
 
 ## Subdirectories
 | Directory | Purpose |
 |-----------|---------|
-| `src/` | TypeScript sources: the Express app plus the shared `lib/` prompt assets (see `src/AGENTS.md`). |
+| `src/` | TypeScript sources: the Express app, the `requireUser` auth middleware (`lib/auth.ts`), plus the shared `lib/` prompt assets (see `src/AGENTS.md`). |
 
 ## For AI Agents
 
@@ -46,6 +50,10 @@ and returns `{ text }`. The Next.js app proxies to it; the RunPod key lives
   `{ doc_type, details }` → `{ text }` (200) or `{ error }` (non-200). The Next
   proxy and `nyayadraft/app/page.tsx` depend on this exact shape — do not change it
   unilaterally.
+- **Auth gate:** `app.post("/api/generate", requireUser, …)` — `src/lib/auth.ts`
+  verifies the Supabase JWT with `getUser(token)` and sets `req.userId`. Needs
+  `SUPABASE_URL` + `SUPABASE_ANON_KEY`; without them the route returns 500, and a
+  missing/invalid token returns 401.
 
 ### Testing Requirements
 - Type-check / build: `npm run build` (must be clean).
@@ -62,7 +70,7 @@ and returns `{ text }`. The Next.js app proxies to it; the RunPod key lives
   keep them in parity.
 
 ### External
-- `express`, `cors`, `dotenv`.
+- `express`, `cors`, `dotenv`, `@supabase/supabase-js` (JWT verification).
 - RunPod serverless vLLM endpoint (hosts the fine-tuned Qwen2.5-7B adapter).
 - Render (deploy target; reads `Procfile` + `engines.node`).
 

@@ -4,6 +4,7 @@ import cors from "cors";
 
 import { buildPrompt } from "./lib/prompt-templates";
 import { NYAYADRAFT_SYSTEM_PROMPT } from "./lib/system-prompt";
+import { requireUser } from "./lib/auth";
 
 const PORT = Number(process.env.PORT) || 3001;
 const POLL_INTERVAL_MS = 2000;
@@ -120,7 +121,7 @@ app.get("/health", (_req: ExpressRequest, res: ExpressResponse) => {
   res.json({ status: "ok" });
 });
 
-app.post("/api/generate", async (req: ExpressRequest, res: ExpressResponse) => {
+app.post("/api/generate", requireUser, async (req: ExpressRequest, res: ExpressResponse) => {
   try {
     const apiUrl = process.env.RUNPOD_API_URL;
     const apiKey = process.env.RUNPOD_API_KEY;

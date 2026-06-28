@@ -4,13 +4,17 @@
 # nyayadraft (web app)
 
 ## Purpose
-Next.js 14 (App Router) single-page web app — the product UI. The user picks one
+Next.js 14 (App Router) web app — the product UI. The user picks one
 of the 11 document types, fills a dynamically-rendered form, and the app asks the
 fine-tuned NyayaDraft model to draft it. Output renders in a read-only textarea
 with copy/download. The app no longer talks to RunPod directly: its
 `/api/generate` route is a **thin server-side proxy** to the standalone Express
 backend (`../backend/`), which owns prompt building, the RunPod run/poll loop, and
 output cleaning. The RunPod key lives in the backend, never in this app.
+
+Access is gated by **Supabase auth** (email/password + Google OAuth). Each
+generated document is auto-saved to a per-user **draft history** shown in the
+sidebar, where it can be searched, reloaded, renamed, downloaded, or deleted.
 
 ## Key Files
 | File | Description |
@@ -19,7 +23,10 @@ output cleaning. The RunPod key lives in the backend, never in this app.
 | `tailwind.config.ts` | Tailwind theme (dark-mode default, CSS-variable tokens). |
 | `components.json` | shadcn/ui generator config. |
 | `tsconfig.json` | TS config; `@/*` path alias → app root. |
-| `.env.local` / `.env.example` | `NEXT_PUBLIC_API_URL` — base URL of the `backend/` service (no trailing slash; `http://localhost:3001` for local dev, the Render URL in prod). RunPod creds live in `backend/.env`, not here. |
+| `.env.local` / `.env.example` | `NEXT_PUBLIC_API_URL` (backend base URL) plus `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` (auth + draft history). RunPod creds live in `backend/.env`, not here. |
+| `supabase/schema.sql` | The `drafts` table + RLS. **Run once** in the Supabase SQL editor before draft history works. |
+| `lib/supabase.ts` / `lib/drafts.ts` | Browser Supabase client (singleton) and per-user drafts CRUD; `lib/draft-utils.ts` holds pure title/search/download helpers. |
+| `components/auth-provider.tsx` | `AuthProvider` + `useAuth()` — live session/user/loading from Supabase, wrapped around the app in `app/layout.tsx`. |
 
 ## Subdirectories
 | Directory | Purpose |
@@ -43,10 +50,17 @@ output cleaning. The RunPod key lives in the backend, never in this app.
   be nested under `input.sampling_params`. A top-level `max_tokens` is silently
   ignored by the worker and output truncates to ~100 tokens. See
   `backend/src/server.ts`.
+- **Auth & draft history (Supabase):** `lib/supabase.ts` is the browser client;
+  `components/auth-provider.tsx` exposes `useAuth()`. `app/page.tsx` redirects to
+  `/auth/login` when there is no session and forwards `Authorization: Bearer
+  <access_token>` to `/api/generate` (the proxy and backend now require it).
+  Generation auto-saves via `lib/drafts.ts`; the `drafts` table + RLS live in
+  `supabase/schema.sql` and must be applied to the project once.
 
 ### Testing Requirements
-- `npx tsc --noEmit` and `npx next lint` (both must be clean; no test runner is
-  configured).
+- `npx tsc --noEmit`, `npx next lint`, and `npx next build` (all must be clean; no
+  unit-test runner is configured — pure helpers in `lib/draft-utils.ts` are
+  importable standalone under Bun for ad-hoc checks).
 - To exercise generation end-to-end: start the backend
   (`cd backend && npm run build && node server.js`) with its `RUNPOD_API_URL` /
   `RUNPOD_API_KEY` set, point `NEXT_PUBLIC_API_URL` at it, then run the app. The

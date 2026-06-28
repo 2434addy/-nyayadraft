@@ -34,11 +34,15 @@ export async function POST(request: Request) {
 
   const target = `${apiBase.replace(/\/+$/, "")}/api/generate`;
 
+  const headers: Record<string, string> = { "Content-Type": "application/json" };
+  const authHeader = request.headers.get("authorization");
+  if (authHeader) headers.Authorization = authHeader;
+
   let upstream: Response;
   try {
     upstream = await fetch(target, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers,
       body: JSON.stringify(body),
     });
   } catch (error) {
