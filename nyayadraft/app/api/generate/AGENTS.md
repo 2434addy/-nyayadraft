@@ -26,7 +26,7 @@ backend's JSON response and HTTP status unchanged. All RunPod interaction
   `{ doc_type, details }` to `/api/generate` and reads `{ text }` / `{ error }`.
   This route preserves that shape, so the proxy is transparent to the client.
 - `NEXT_PUBLIC_API_URL` (no trailing slash) selects the backend:
-  `http://localhost:3001` in `.env.local` for local dev, the Railway URL in
+  `http://localhost:3001` in `.env.local` for local dev, the Render URL in
   production.
 - **RunPod contract (moved to the backend, still critical):** generation params
   MUST be nested under `input.sampling_params`. A **top-level** `max_tokens` is

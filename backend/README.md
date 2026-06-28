@@ -24,7 +24,7 @@ Copy `.env.example` to `.env` and fill in your values:
 | ----------------- | -------- | -------------------------------------------------------------------------------------------- |
 | `RUNPOD_API_URL`  | yes      | The `/run` endpoint of your RunPod serverless deployment.                                     |
 | `RUNPOD_API_KEY`  | yes      | RunPod API key (sent as `Authorization: Bearer <key>`).                                       |
-| `PORT`            | no       | Port to listen on. Defaults to `3001`. Railway injects this automatically.                    |
+| `PORT`            | no       | Port to listen on. Defaults to `3001`. Render injects this automatically.                     |
 | `FRONTEND_ORIGIN` | no       | Comma-separated allowed CORS origins (your Vercel URL). Unset reflects the request origin.    |
 
 ## Run locally
@@ -46,33 +46,33 @@ curl -X POST http://localhost:3001/api/generate \
   -d '{"doc_type":"affidavit_general","details":{"name":"Test","city":"Mumbai"}}'
 ```
 
-## Deploy to Railway
+## Deploy to Render
 
-The repo ships with `railway.json` (build + start config) and a `Procfile`
-(`web: node server.js`), so deployment is mostly automatic.
+The repo ships a `Procfile` (`web: node server.js`), so [Render](https://render.com)
+can build and start the service with almost no extra configuration.
 
-1. **Create the service.** In the [Railway](https://railway.app) dashboard:
-   _New Project → Deploy from GitHub repo_, then set the service **Root
-   Directory** to `backend` (this folder). Railway's Nixpacks builder reads
-   `package.json` and runs `npm install && npm run build` (per `railway.json`),
-   then starts the app with `node server.js`.
+1. **Create the service.** In the [Render](https://render.com) dashboard:
+   _New → Web Service_, connect the GitHub repo, then set the service **Root
+   Directory** to `backend` (this folder). Render reads `package.json`; set the
+   **Build Command** to `npm install && npm run build` and the **Start Command**
+   to `node server.js` (the `Procfile` already declares this).
 
-2. **Set environment variables** (service → _Variables_):
+2. **Set environment variables** (service → _Environment_):
    - `RUNPOD_API_URL`
    - `RUNPOD_API_KEY`
    - `FRONTEND_ORIGIN` = your Vercel URL, e.g. `https://nyayadraft.vercel.app`
-   - Leave `PORT` unset — Railway provides it and the server reads `process.env.PORT`.
+   - Leave `PORT` unset — Render provides it and the server reads `process.env.PORT`.
 
-3. **Deploy.** Railway builds and starts the service, exposing it at a generated
-   domain (e.g. `https://nyayadraft-backend.up.railway.app`). The health check at
-   `/health` must return `200` for the deploy to go live.
+3. **Deploy.** Render builds and starts the service, exposing it at a generated
+   domain (e.g. `https://nyayadraft-backend.onrender.com`). Set the **Health Check
+   Path** to `/health` so the deploy only goes live once it returns `200`.
 
 4. **Point the frontend at it.** In the Vercel project for `nyayadraft/`, set
-   `NEXT_PUBLIC_API_URL` to the Railway URL (no trailing slash). The Next.js
+   `NEXT_PUBLIC_API_URL` to the Render URL (no trailing slash). The Next.js
    route at `app/api/generate/route.ts` proxies to `${NEXT_PUBLIC_API_URL}/api/generate`.
 
 > The Node version is pinned to `>=22` (`package.json` `engines`) because the
-> poll loop uses `Promise.withResolvers`. Nixpacks honours this when selecting
+> poll loop uses `Promise.withResolvers`. Render honours this field when selecting
 > the runtime.
 
 ## Project layout
@@ -86,7 +86,6 @@ backend/
       prompt-templates.ts   # buildPrompt(doc_type, details) -> instruction prompt
       system-prompt.ts      # frozen NyayaDraft system prompt (training-distribution)
       documents.ts          # the 11 doc-type field catalogue (shared schema)
-  railway.json         # Railway build/start/healthcheck config
   Procfile             # web: node server.js
   tsconfig.json        # compiles src/ -> dist/ (CommonJS)
 ```
