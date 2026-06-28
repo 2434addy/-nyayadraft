@@ -17,7 +17,7 @@ styles/fonts, and the server-side generation API route.
 ## Subdirectories
 | Directory | Purpose |
 |-----------|---------|
-| `api/generate/` | Server-side RunPod proxy that builds the prompt and returns the drafted document (see `api/generate/AGENTS.md`). |
+| `api/generate/` | Thin server-side proxy that forwards generation requests to the standalone Express backend (see `api/generate/AGENTS.md`). |
 | `fonts/` | Local Geist variable-font `.woff` files used by `layout.tsx`. |
 
 ## For AI Agents
@@ -26,7 +26,7 @@ styles/fonts, and the server-side generation API route.
 - `page.tsx` is the only client component; it holds form state and posts
   `{ doc_type, details }` to `/api/generate`. Form fields come from
   `lib/documents.ts` — render logic keys off each doc type's `fields`.
-- Keep secrets out of client code. All RunPod access is in `api/generate/route.ts`.
+- Keep secrets out of client code. RunPod access now lives in the standalone Express backend (`../../backend/`); the route only proxies to `NEXT_PUBLIC_API_URL`.
 
 ### Testing Requirements
 - `npx tsc --noEmit` and `npx next lint` from the app root (`nyayadraft/`).
@@ -38,7 +38,7 @@ styles/fonts, and the server-side generation API route.
 ## Dependencies
 
 ### Internal
-- `@/lib/documents`, `@/lib/utils`, `@/components/ui/*` (page); `@/lib/prompt-templates` (route).
+- `@/lib/documents`, `@/lib/utils`, `@/components/ui/*` (page). The route imports nothing from `@/lib` — it proxies to the backend.
 
 ### External
 - `next`, `react`, `lucide-react`.

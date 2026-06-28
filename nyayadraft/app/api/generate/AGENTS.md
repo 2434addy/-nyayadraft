@@ -1,55 +1,53 @@
 <!-- Parent: ../../AGENTS.md -->
-<!-- Generated: 2026-06-27 | Updated: 2026-06-27 -->
+<!-- Generated: 2026-06-27 | Updated: 2026-06-28 -->
 
 # api/generate
 
 ## Purpose
-The single server-side API route. Validates the request, builds the model prompt
-from `doc_type` + `details`, calls the RunPod serverless (vLLM) endpoint, polls
-for completion, normalises the worker's output shape, strips any stray
-meta-commentary, and returns `{ text }`.
+The single server-side API route, now a thin **proxy**. It validates that the
+request body is JSON, forwards `{ doc_type, details }` to the standalone
+generation backend at `${NEXT_PUBLIC_API_URL}/api/generate`, and relays the
+backend's JSON response and HTTP status unchanged. All RunPod interaction
+(prompt building, the run/poll loop, output cleaning) now lives in `backend/`
+(an Express service), not here.
 
 ## Key Files
 | File | Description |
 |------|-------------|
-| `route.ts` | `POST` handler (`runtime = "nodejs"`, `maxDuration = 300`). Submits the job to `RUNPOD_API_URL`, polls `/status/<id>` every 2s up to 5 min, then returns the cleaned document. |
+| `route.ts` | `POST` handler (`runtime = "nodejs"`, `maxDuration = 300`). Reads `NEXT_PUBLIC_API_URL`, POSTs the body to `<base>/api/generate`, and returns the upstream `{ text }` / `{ error }` with its status. |
 
 ## For AI Agents
 
 ### Working In This Directory
-- **RunPod contract (critical):** generation params MUST be nested under
-  `input.sampling_params`:
-  ```ts
-  body: JSON.stringify({
-    input: { prompt, sampling_params: { max_tokens: 4096, temperature: 0.7 } },
-  })
-  ```
-  A **top-level** `max_tokens` is silently ignored by the worker, which then
-  falls back to its ~100-token default and truncates every document mid-sentence.
-  Verify via `usage.output` in the response: a real document is ~1000–1500 tokens.
-- `max_tokens: 4096` is sized to the training `--max-seq-len` (4096; longest
-  record ~3.6k tokens) so even the longest doc types finish at natural EOS.
-- `extractText()` must concatenate **all** array chunks (vLLM may return an
-  ordered list of token batches) — accumulate every chunk's first choice; never
-  return on the first chunk, or streamed output truncates.
-- `cleanOutput()` strips known preamble/postamble artifacts. The model is trained
-  to emit no commentary, but it can prepend a stray empty `()` — extend the
-  cleaner if that needs removing.
-- Prompts are built by `@/lib/prompt-templates` (`buildPrompt`), keyed by the
-  same `doc_type` ids used everywhere else.
+- This route owns **no** model logic. To change prompt building, the RunPod
+  run/poll loop, `extractText`, or `cleanOutput`, edit `backend/src/server.ts`
+  (and `backend/src/lib/*`) — not this file.
+- The client→server contract is unchanged: `page.tsx` still POSTs
+  `{ doc_type, details }` to `/api/generate` and reads `{ text }` / `{ error }`.
+  This route preserves that shape, so the proxy is transparent to the client.
+- `NEXT_PUBLIC_API_URL` (no trailing slash) selects the backend:
+  `http://localhost:3001` in `.env.local` for local dev, the Railway URL in
+  production.
+- **RunPod contract (moved to the backend, still critical):** generation params
+  MUST be nested under `input.sampling_params`. A **top-level** `max_tokens` is
+  silently ignored by the worker, which falls back to its ~100-token default and
+  truncates every document mid-sentence. See `backend/src/server.ts`.
 
 ### Testing Requirements
 - Type/lint: `npx tsc --noEmit`, `npx next lint`.
-- End-to-end requires `RUNPOD_API_URL` + `RUNPOD_API_KEY` in `../../../.env.local`;
-  the worker cold-starts in ~1–2 min. Assert the result is long and ends naturally
-  (not capped at ~100 tokens) and carries no meta-commentary.
+- End-to-end: start the backend (`cd backend && npm run build && node server.js`)
+  with its own `RUNPOD_API_URL` + `RUNPOD_API_KEY` set, point
+  `NEXT_PUBLIC_API_URL` at it, then `POST /api/generate`. Assert the result is
+  long, ends naturally (not capped at ~100 tokens), and carries no
+  meta-commentary.
 
 ## Dependencies
 
 ### Internal
-- `@/lib/prompt-templates` (`buildPrompt`).
+- None — the route no longer imports `@/lib/*`; prompt building moved to
+  `backend/`.
 
 ### External
-- RunPod serverless vLLM endpoint; Next.js `NextResponse`.
+- The NyayaDraft Express backend (`backend/`); Next.js `NextResponse`.
 
 <!-- MANUAL: Any manually added notes below this line are preserved on regeneration -->
