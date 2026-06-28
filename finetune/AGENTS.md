@@ -1,5 +1,5 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-06-27 | Updated: 2026-06-27 -->
+<!-- Generated: 2026-06-27 | Updated: 2026-06-28 -->
 
 # finetune (QLoRA training + eval)
 
@@ -34,7 +34,7 @@ the full GPU runbook (VRAM tiers, environment pins, commands).
   must stay identical; the collator masks everything before it. If you change one,
   change both and re-run `verify_finetune_data.py`.
 - Greedy decoding (`do_sample=False`) is intentional in eval for reproducible
-  legal text. (The live app uses temperature 0.7 — a separate product choice.)
+  legal text. (The live app/backend uses temperature 0.3 — a separate product choice.)
 - Eval imports `legal_rules`; keep this folder inside the repo so it resolves.
 
 ### Testing Requirements
