@@ -55,3 +55,9 @@ finetune/out/
 *.zip
 loop.ps1
 .omc/
+
+loop_state.md
+CLAUDE.md
+AGENTS.md
+.claude/
+out/
